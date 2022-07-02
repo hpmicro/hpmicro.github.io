@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Console Coremark 示例 &mdash; HPM SDK Project Documentation</title>
+      <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/tabs.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/css/custom.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js"></script>
+        <script src="../../../_static/jquery.js"></script>
+        <script src="../../../_static/underscore.js"></script>
+        <script src="../../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="../../../_static/doctools.js"></script>
+        <script src="../../../_static/tabs.js"></script>
+        <script type="module" src="../../../_static/js/dark-mode-toggle.min.mjs"></script>
+        <script src="../../../_static/js/ga-tracker.js"></script>
+    <script src="../../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" />
+  <meta name="color-scheme" content="dark light">
+  
+  <link rel="stylesheet" href="../../../_static/css/light.css" type="text/css" media="(prefers-color-scheme: light)"/>
+  <link rel="stylesheet" href="../../../_static/css/dark.css" type="text/css" media="(prefers-color-scheme: dark)"/>
+
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../../../index_zh.html">
+            <img src="../../../_static/logo.png" class="logo" alt="Logo"/>
+          </a>
+              <div class="version">
+                latest
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+  
+  <div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="versions">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      <span class="fa fa-book"> HPM SDK Project</span>
+      v: latest
+      <span class="fa fa-caret-down"></span>
+    </span>
+    <div class="rst-other-versions">
+      <dl>
+        <dt>Document Release Versions</dt>
+        
+          <dd>
+            <a onclick="RelativeAddress('/latest/html/index_zh.html')">latest</a>
+          </dd>
+        
+          <dd>
+            <a onclick="RelativeAddress('/0.12.1/html/index_zh.html')">0.12.1</a>
+          </dd>
+        
+      </dl>
+      <dl>
+        <dt>Downloads</dt>
+        
+        <dd><a href="/latest/hpmsdk.pdf">PDF</a></dd>
+      </dl>
+      <dl>
+        <dt>HPMicro</dt>
+          <dd>
+            <a href="https://www.hpmicro.com/">Project Home</a>
+          </dd>
+          <dd>
+            <a href="https://www.hpmicro.com/">SDK</a>
+          </dd>
+          <dd>
+            <a href="https://www.hpmicro.com/">Releases</a>
+          </dd>
+      </dl>
+    </div>
+  </div>
+  <script language="javascript">
+    function RelativeAddress(url1) {
+      var str=window.location.href;
+      window.location.href=str.match(/(\S*)\/(en|zh)/)[0]+url1;
+      
+    }
+  </script>
+  
+              <p class="caption" role="heading"><span class="caption-text">目录</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../CHANGELOG.html">Change Log</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../README_zh.html">HPM SDK 概述</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../README_zh.html#id1">HPM SDK使用说明</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../README_zh.html#id5">社区支持</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../boards/index_zh.html">HPM 开发板介绍</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../index_zh.html">HPM SDK 例程</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../doc/src/sdk_doc/README_zh.html">HPM SDK文档生成</a></li>
+</ul>
+
+  
+  <div class="toctree-wrapper compound">
+    <p class="caption"><span class="caption-text">Reference</span></p>
+    <ul>
+      
+      <li class="toctree-l1">
+        <a class="reference internal" onclick="ApiRelativeAddress()">API DOC</a>
+      </li>
+      
+    </ul>
+  </div>
+  <script language="javascript">
+    function ApiRelativeAddress() {
+      var str=window.location.href;
+      window.location.href=str.match(/(\S*)sdk_doc/)[1]+"api_doc/html/index.html";
+      
+    }
+  </script>
+  
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../index_zh.html">hpm_sdk readme</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+  <!--  -->
+  
+  
+  
+  
+
+  <li><a href="../../../index_zh.html">Docs</a> &raquo;</li>
+  
+  <li>Console Coremark 示例</li>
+
+
+  <li class="wy-breadcrumbs-aside">
+    <dark-mode-toggle id="dark-mode-toggle" appearance="toggle" permanent="true"/>
+  </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+  
+    <div class="wy-alert wy-alert-danger">
+     This is the documentation for the latest (main) development branch of
+     HPM SDK. If you are looking for the documentation of previous releases, use
+     the drop-down menu on the left and select the desired version.
+    </div>
+  
+  
+           <div itemprop="articleBody">
+             
+  <section id="console-coremark">
+<h1>Console Coremark 示例<a class="headerlink" href="#console-coremark" title="Permalink to this heading">¶</a></h1>
+<section id="id1">
+<h2>概览<a class="headerlink" href="#id1" title="Permalink to this heading">¶</a></h2>
+<p>多核 命令上终端 Coremark 示例同时在核０和核１上跑 “coremark”并将结果打印到终端</p>
+</section>
+<section id="id2">
+<h2>开发板设置<a class="headerlink" href="#id2" title="Permalink to this heading">¶</a></h2>
+<p>BOOT_PIN 必须拨到 0-OFF, 1-OFF</p>
+<section id="id3">
+<h3>生成和编译多核工程<a class="headerlink" href="#id3" title="Permalink to this heading">¶</a></h3>
+<p>本示例中：<strong>core0</strong> 示例在FLASH中原地执行， <strong>core1</strong> 工程在ILM里执行。</p>
+<p>用户必须先生成 <strong>core0</strong> 工程，然后生成和编译 __core1__工程</p>
+<p>用户必须在生成和编译完core1工程后再编译 <strong>core0</strong> 工程</p>
+</section>
+<section id="core1">
+<h3>生成core1工程<a class="headerlink" href="#core1" title="Permalink to this heading">¶</a></h3>
+<p><strong>CMAKE_BUILD_TYPE</strong> 必须是下列选项中的一种：</p>
+<ul class="simple">
+<li><p><em>“sec_core_img”</em></p></li>
+<li><p><em>“sec_core_img_release”</em></p></li>
+</ul>
+<p>若通过SDK env 包来生成工程，需要用 <em>“-t sec_core_img”</em></p>
+</section>
+<section id="core0">
+<h3>生成core0工程<a class="headerlink" href="#core0" title="Permalink to this heading">¶</a></h3>
+<p><strong>CMAKE_BUILD_TYPE</strong> 必须是下列选项中的一种：</p>
+<ul class="simple">
+<li><p><em>“debug”</em></p></li>
+<li><p>*”release”</p></li>
+</ul>
+</section>
+</section>
+<section id="id4">
+<h2>运行现象<a class="headerlink" href="#id4" title="Permalink to this heading">¶</a></h2>
+<ul class="simple">
+<li><p>下载core0示例到设备，断开调试器，然后按复位键</p></li>
+</ul>
+<p>当该程序正确运行时，会打印类似如下示例</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>----------------------------------------------------------------------
+<span class="nv">$$</span><span class="se">\ </span>  <span class="nv">$$</span><span class="se">\ </span><span class="nv">$$$$$$</span>$<span class="se">\ </span> <span class="nv">$$</span><span class="se">\ </span>     <span class="nv">$$</span><span class="se">\ </span><span class="nv">$$</span><span class="se">\</span>
+<span class="nv">$$</span> <span class="p">|</span>  <span class="nv">$$</span> <span class="p">|</span><span class="nv">$$</span>  __<span class="nv">$$</span><span class="se">\ </span><span class="nv">$$</span>$<span class="se">\ </span>   <span class="nv">$$</span>$ <span class="p">|</span><span class="se">\_</span>_<span class="p">|</span>
+<span class="nv">$$</span> <span class="p">|</span>  <span class="nv">$$</span> <span class="p">|</span><span class="nv">$$</span> <span class="p">|</span>  <span class="nv">$$</span> <span class="p">|</span><span class="nv">$$$$</span><span class="se">\ </span> <span class="nv">$$$$</span> <span class="p">|</span><span class="nv">$$</span><span class="se">\ </span> <span class="nv">$$$$$$</span>$<span class="se">\ </span> <span class="nv">$$$$$$</span><span class="se">\ </span>  <span class="nv">$$$$$$</span><span class="se">\</span>
+<span class="nv">$$$$$$$$</span> <span class="p">|</span><span class="nv">$$$$$$</span>$  <span class="p">|</span><span class="nv">$$</span><span class="se">\$</span>$<span class="se">\$</span>$ <span class="nv">$$</span> <span class="p">|</span><span class="nv">$$</span> <span class="p">|</span><span class="nv">$$</span>  _____<span class="p">|</span><span class="nv">$$</span>  __<span class="nv">$$</span><span class="se">\ </span><span class="nv">$$</span>  __<span class="nv">$$</span><span class="se">\</span>
+<span class="nv">$$</span>  __<span class="nv">$$</span> <span class="p">|</span><span class="nv">$$</span>  ____/ <span class="nv">$$</span> <span class="se">\$</span><span class="nv">$$</span>  <span class="nv">$$</span> <span class="p">|</span><span class="nv">$$</span> <span class="p">|</span><span class="nv">$$</span> /      <span class="nv">$$</span> <span class="p">|</span>  <span class="se">\_</span>_<span class="p">|</span><span class="nv">$$</span> /  <span class="nv">$$</span> <span class="p">|</span>
+<span class="nv">$$</span> <span class="p">|</span>  <span class="nv">$$</span> <span class="p">|</span><span class="nv">$$</span> <span class="p">|</span>      <span class="nv">$$</span> <span class="p">|</span><span class="se">\$</span>  /<span class="nv">$$</span> <span class="p">|</span><span class="nv">$$</span> <span class="p">|</span><span class="nv">$$</span> <span class="p">|</span>      <span class="nv">$$</span> <span class="p">|</span>      <span class="nv">$$</span> <span class="p">|</span>  <span class="nv">$$</span> <span class="p">|</span>
+<span class="nv">$$</span> <span class="p">|</span>  <span class="nv">$$</span> <span class="p">|</span><span class="nv">$$</span> <span class="p">|</span>      <span class="nv">$$</span> <span class="p">|</span> <span class="se">\_</span>/ <span class="nv">$$</span> <span class="p">|</span><span class="nv">$$</span> <span class="p">|</span><span class="se">\$</span><span class="nv">$$$$$$</span><span class="se">\ </span><span class="nv">$$</span> <span class="p">|</span>      <span class="se">\$</span><span class="nv">$$$$</span>$  <span class="p">|</span>
+<span class="se">\_</span>_<span class="p">|</span>  <span class="se">\_</span>_<span class="p">|</span><span class="se">\_</span>_<span class="p">|</span>      <span class="se">\_</span>_<span class="p">|</span>     <span class="se">\_</span>_<span class="p">|</span><span class="se">\_</span>_<span class="p">|</span> <span class="se">\_</span>______<span class="p">|</span><span class="se">\_</span>_<span class="p">|</span>       <span class="se">\_</span>_____/
+----------------------------------------------------------------------
+Dual-core Coremark example
+
+
+Copying secondary core image to destination memory...
+Starting secondary core...
+Run Coremark on Core1...
+
+Run Coremark on Core0...
+
+------------------------------------------------------
+<span class="p">|</span>                                                    <span class="p">|</span>
+<span class="p">|</span>          Core0 CoreMark Info:                      <span class="p">|</span>
+<span class="p">|</span>                                                    <span class="p">|</span>
+------------------------------------------------------
+2K performance run parameters <span class="k">for</span> coremark.
+CoreMark Size    : <span class="m">666</span>
+Total ticks      : <span class="m">371867026</span>
+Total <span class="nb">time</span> <span class="o">(</span>secs<span class="o">)</span>: <span class="m">15</span>.494459
+Iterations/Sec   : <span class="m">3872</span>.351941
+Iterations       : <span class="m">60000</span>
+Compiler version : GCC11.1.0
+Compiler flags   : -Wall -Wno-format -fomit-frame-pointer -fno-builtin -ffunction-sections -fdata-sections -mabi<span class="o">=</span>ilp32 -march<span class="o">=</span>rv32imac -g -O3 -funroll-all-loops -finline-limit<span class="o">=</span><span class="m">600</span> -ftree-dominator-optsg
+Memory location  : STACK
+seedcrc          : 0xe9f5
+<span class="o">[</span><span class="m">0</span><span class="o">]</span>crclist       : 0xe714
+<span class="o">[</span><span class="m">0</span><span class="o">]</span>crcmatrix     : 0x1fd7
+<span class="o">[</span><span class="m">0</span><span class="o">]</span>crcstate      : 0x8e3a
+<span class="o">[</span><span class="m">0</span><span class="o">]</span>crcfinal      : 0xbd59
+Correct operation validated. See README.md <span class="k">for</span> run and reporting rules.
+CoreMark <span class="m">1</span>.0 : <span class="m">3872</span>.351941 / GCC11.1.0 -Wall -Wno-format -fomit-frame-pointer -fno-builtin -ffunction-sections -fdata-sections -mabi<span class="o">=</span>ilp32 -march<span class="o">=</span>rv32imac -g -O3 -funroll-all-loops -finline-limit<span class="o">=</span><span class="m">600</span> -K
+
+
+
+------------------------------------------------------
+<span class="p">|</span>                                                    <span class="p">|</span>
+<span class="p">|</span>               Core1 CoreMark Info:                 <span class="p">|</span>
+<span class="p">|</span>                                                    <span class="p">|</span>
+------------------------------------------------------
+2K performance run parameters <span class="k">for</span> coremark.
+CoreMark Size    : <span class="m">666</span>
+Total ticks      : <span class="m">15608229</span>
+Total <span class="nb">time</span> <span class="o">(</span>secs<span class="o">)</span>: <span class="m">15</span>.608229
+Iterations/Sec   : <span class="m">3844</span>.126070
+Iterations       : <span class="m">60000</span>
+Compiler version : GCC11.1.0
+Compiler flags   : -Wall -Wno-format -fomit-frame-pointer -fno-builtin -ffunction-sections -fdata-sections -mabi<span class="o">=</span>ilp32 -march<span class="o">=</span>rv32imac -g -O3 -funroll-all-loops -finline-limit<span class="o">=</span><span class="m">600</span> -ftree-dominator-optsg
+Memory location  : STACK
+seedcrc          : 0xe9f5
+<span class="o">[</span><span class="m">0</span><span class="o">]</span>crclist       : 0xe714
+<span class="o">[</span><span class="m">0</span><span class="o">]</span>crcmatrix     : 0x1fd7
+<span class="o">[</span><span class="m">0</span><span class="o">]</span>crcstate      : 0x8e3a
+<span class="o">[</span><span class="m">0</span><span class="o">]</span>crcfinal      : 0xbd59
+Correct operation validated. See README.md <span class="k">for</span> run and reporting rules.
+CoreMark <span class="m">1</span>.0 : <span class="m">3844</span>.126070 / GCC11.1.0 -Wall -Wno-format -fomit-frame-pointer -fno-builtin -ffunction-sections -fdata-sections -mabi<span class="o">=</span>ilp32 -march<span class="o">=</span>rv32imac -g -O3 -funroll-all-loops -finline-limit<span class="o">=</span><span class="m">600</span> -K
+
+
+
+Press any key to start a new round of coremark <span class="nb">test</span>
+</pre></div>
+</div>
+<p>用户按任意键可以开启新一轮多核coremark测试</p>
+</section>
+</section>
+
+
+           </div>
+          </div>
+
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2020-2022, hpmicro.
+      <span class="lastupdated">Last updated on Jul 01, 2022.
+      </span></p>
+  </div>
+
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

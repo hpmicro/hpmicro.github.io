@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>6.7. Synchronous timer &mdash; HPM SDK Project Documentation</title>
+      <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/tabs.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/css/custom.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js"></script>
+        <script src="../../../_static/jquery.js"></script>
+        <script src="../../../_static/underscore.js"></script>
+        <script src="../../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="../../../_static/doctools.js"></script>
+        <script src="../../../_static/tabs.js"></script>
+        <script type="module" src="../../../_static/js/dark-mode-toggle.min.mjs"></script>
+        <script src="../../../_static/js/ga-tracker.js"></script>
+    <script src="../../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" />
+    <link rel="next" title="6.8. System control module" href="../sysctl/README.html" />
+    <link rel="prev" title="6.6. PLL controller" href="../pllctl/README.html" />
+  <meta name="color-scheme" content="dark light">
+  
+  <link rel="stylesheet" href="../../../_static/css/light.css" type="text/css" media="(prefers-color-scheme: light)"/>
+  <link rel="stylesheet" href="../../../_static/css/dark.css" type="text/css" media="(prefers-color-scheme: dark)"/>
+
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../../../index.html">
+            <img src="../../../_static/logo.png" class="logo" alt="Logo"/>
+          </a>
+              <div class="version">
+                0.12.1-0
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+  
+  <div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="versions">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      <span class="fa fa-book"> HPM SDK Project</span>
+      v: 0.12.1-0
+      <span class="fa fa-caret-down"></span>
+    </span>
+    <div class="rst-other-versions">
+      <dl>
+        <dt>Document Release Versions</dt>
+        
+          <dd>
+            <a onclick="RelativeAddress('/latest/html/index.html')">latest</a>
+          </dd>
+        
+      </dl>
+      <dl>
+        <dt>Downloads</dt>
+        
+        <dd><a href="/0.12.1-0/hpmsdk.pdf">PDF</a></dd>
+      </dl>
+      <dl>
+        <dt>HPMicro</dt>
+          <dd>
+            <a href="https://www.hpmicro.com/">Project Home</a>
+          </dd>
+          <dd>
+            <a href="https://www.hpmicro.com/">SDK</a>
+          </dd>
+          <dd>
+            <a href="https://www.hpmicro.com/">Releases</a>
+          </dd>
+      </dl>
+    </div>
+  </div>
+  <script language="javascript">
+    function RelativeAddress(url1) {
+      var str=window.location.href;
+      window.location.href=str.match(/(\S*)\/(en|zh)/)[0]+url1;
+      
+    }
+  </script>
+  
+              <p class="caption" role="heading"><span class="caption-text">Contents</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../../CHANGELOG.html">Change Log</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../README.html">HPM SDK Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../README.html#hpm-sdk-quick-start-guide">HPM SDK Quick Start Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../README.html#community-support">Community Support</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../boards/index.html">HPM Development Board Introduction</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../../index.html">HPM SDK Samples</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../../hello_world/README.html">1. Hello World</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../audio_codec/index.html">2. Audio Codec</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../coremark/README.html">3. Core Mark</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../touch_panel/README.html">4. Touch Panel</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../rtos/index.html">5. RTOS Samples</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../index.html">6. Drivers</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="../hall/README.html">6.1. Hall</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../pwm/README.html">6.2. Pwm</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../qei/README.html">6.3. QEI</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../jpeg/README.html">6.4. JPEG</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../mchtmr/README.html">6.5. machine timer</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../pllctl/README.html">6.6. PLL controller</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">6.7. Synchronous timer</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#overview">6.7.1. Overview</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#board-setting">6.7.2. Board Setting</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#running-the-example">6.7.3. Running the example</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../sysctl/README.html">6.8. System control module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../uart/uart_irq/README.html">6.9. Universal asynchronous transceiver UART</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../uart/uart_dma/README.html">6.10. Use DMA to receive and send UART data</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../uart/uart_dma_rx_idle/README.html">6.11. UART_DMA receive variable length data</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../sdxc/sd/README.html">6.12. SDXC low-level API demo</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../sdxc/sd_fatfs/README.html">6.13. SDCard FATFS demo</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../can/README.html">6.14. CAN Demo</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../rtc/README.html">6.15. RTC Demo</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../acmp/README.html">6.16. ACMP</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../butn/README.html">6.17. BUTN</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../cam/README.html">6.18. CAM</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../gpio/README.html">6.19. GPIO</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../gpiom/README.html">6.20. GPIOM</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../gptmr/README.html">6.21. GPTMR</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../i2s/index.html">6.22. I2S example</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../lcdc/README.html">6.23. LCDC</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../pdma/README.html">6.24. PDMA</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../plic/README.html">6.25. PLIC</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../vad/README.html">6.26. VAD</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../wdg/README.html">6.27. WDG API demo</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../spi/index.html">6.28. SPI Samples</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../i2c/index.html">6.29. I2C Samples</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../dma/README.html">6.30. DMA example</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../dram/README.html">6.31. DRAM example</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../ptpc/README.html">6.32. PTPC</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../mbx/README.html">6.33. MBX</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../l1c/README.html">6.34. l1 cache</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../motor_ctrl/index.html">7. Motor Control</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../jpeg/index.html">8. JPEG</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../tinycrypt/index.html">9. Tinycrypt</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../multicore/index.html">10. Multicore Samples</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../rom_api/index.html">11. ROMAPI Samples</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../tflm/README.html">12. TensorFlowLiteMicro</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../tinyusb/index.html">13. USB Communication</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../littlevgl/index.html">14. littlevgl</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../tinyuf2/README.html">15. TinyUF2</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../rgb_led/README.html">16. RGB LED</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../hpm_math/index.html">17. HPMicro MATH</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../lwip/index.html">18. lwIP</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../memstress/index.html">19. memstress</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../../doc/src/sdk_doc/README.html">HPM SDK Doc Generation</a></li>
+</ul>
+
+  
+  <div class="toctree-wrapper compound">
+    <p class="caption"><span class="caption-text">Reference</span></p>
+    <ul>
+      
+      <li class="toctree-l1">
+        <a class="reference internal" onclick="ApiRelativeAddress()">API DOC</a>
+      </li>
+      
+    </ul>
+  </div>
+  <script language="javascript">
+    function ApiRelativeAddress() {
+      var str=window.location.href;
+      window.location.href=str.match(/(\S*)sdk_doc/)[1]+"api_doc/html/index.html";
+      
+    }
+  </script>
+  
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../index.html">hpm_sdk readme</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+  <!--  -->
+  
+  
+  
+  
+
+  <li><a href="../../../index.html">Docs</a> &raquo;</li>
+  
+     <li><a href="../../index.html">HPM SDK Samples</a> &raquo;</li>
+  
+     <li><a href="../index.html"><span class="section-number">6. </span>Drivers</a> &raquo;</li>
+  
+  <li><span class="section-number">6.7. </span>Synchronous timer</li>
+
+
+  <li class="wy-breadcrumbs-aside">
+    <dark-mode-toggle id="dark-mode-toggle" appearance="toggle" permanent="true"/>
+  </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+  
+    <div class="wy-alert wy-alert-danger">
+      The <a onclick="RelativeAddressLatest('/latest/html','samples/drivers/synt/README')">latest development version</a>
+      of this page may be more current than this released 0.12.1-0 version.
+    </div>
+    <script language="javascript">
+      function RelativeAddressLatest(url1,name) {
+        var str=window.location.href;
+        window.location.href=str.match(/(\S*)\/(en|zh)/)[0]+url1+"/"+name+".html";
+        
+      }
+    </script>
+  
+  
+           <div itemprop="articleBody">
+             
+  <section id="synchronous-timer">
+<h1><span class="section-number">6.7. </span>Synchronous timer<a class="headerlink" href="#synchronous-timer" title="Permalink to this heading">¶</a></h1>
+<section id="overview">
+<h2><span class="section-number">6.7.1. </span>Overview<a class="headerlink" href="#overview" title="Permalink to this heading">¶</a></h2>
+<hr class="docutils" />
+<p><strong>synt</strong> The synchronous timer drive example project shows that the counting information of the synchronous timer can be obtained in real time by setting the synchronous timer module.</p>
+<ul class="simple">
+<li><p>In the example code, the synchronization timer is initialized, the device counts the overload value, the count value in the synchronization timer is read in a cycle, and the number of cycles is set to 100</p></li>
+</ul>
+</section>
+<section id="board-setting">
+<h2><span class="section-number">6.7.2. </span>Board Setting<a class="headerlink" href="#board-setting" title="Permalink to this heading">¶</a></h2>
+<hr class="docutils" />
+<ul class="simple">
+<li><p>No special settings</p></li>
+</ul>
+</section>
+<section id="running-the-example">
+<h2><span class="section-number">6.7.3. </span>Running the example<a class="headerlink" href="#running-the-example" title="Permalink to this heading">¶</a></h2>
+<hr class="docutils" />
+<p>When the project runs correctly, the serial port terminal will output the following information (the count value printed each time will be different):</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">&gt;</span> <span class="n">synt</span> <span class="n">example</span>
+<span class="o">&gt;</span> <span class="p">[</span><span class="mi">0</span><span class="p">]:</span> <span class="mh">0x3b4db</span>
+<span class="o">&gt;</span> <span class="p">[</span><span class="mi">1</span><span class="p">]:</span> <span class="mh">0x12a703</span>
+<span class="o">&gt;</span> <span class="p">[</span><span class="mi">2</span><span class="p">]:</span> <span class="mh">0x21dcca</span>
+<span class="o">&gt;</span> <span class="p">[</span><span class="mi">3</span><span class="p">]:</span> <span class="mh">0x3112b9</span>
+<span class="o">&gt;</span> <span class="p">[</span><span class="mi">4</span><span class="p">]:</span> <span class="mh">0x4048b7</span>
+<span class="o">&gt;</span> <span class="p">[</span><span class="mi">5</span><span class="p">]:</span> <span class="mh">0x4f7e9f</span>
+<span class="o">&gt;</span> <span class="p">[</span><span class="mi">6</span><span class="p">]:</span> <span class="mh">0x5eb498</span>
+<span class="o">&gt;</span> <span class="p">[</span><span class="mi">7</span><span class="p">]:</span> <span class="mh">0x6dea33</span>
+<span class="o">&gt;</span> <span class="p">[</span><span class="mi">8</span><span class="p">]:</span> <span class="mh">0x7d201c</span>
+<span class="o">&gt;</span> <span class="p">[</span><span class="mi">9</span><span class="p">]:</span> <span class="mh">0x3cd76</span>
+<span class="o">&gt;</span> <span class="p">[</span><span class="mi">10</span><span class="p">]:</span> <span class="mh">0x12bf0c</span>
+<span class="o">&gt;</span> <span class="p">[</span><span class="mi">11</span><span class="p">]:</span> <span class="mh">0x22390e</span>
+<span class="o">&gt;</span> <span class="p">[</span><span class="mi">12</span><span class="p">]:</span> <span class="mh">0x31b2fc</span>
+<span class="o">&gt;</span> <span class="p">[</span><span class="mi">13</span><span class="p">]:</span> <span class="mh">0x412ce8</span>
+<span class="o">&gt;</span> <span class="p">[</span><span class="mi">14</span><span class="p">]:</span> <span class="mh">0x50a6eb</span>
+<span class="o">&gt;</span> <span class="p">[</span><span class="mi">15</span><span class="p">]:</span> <span class="mh">0x6020c5</span>
+<span class="o">&gt;</span> <span class="p">[</span><span class="mi">16</span><span class="p">]:</span> <span class="mh">0x6f9a8c</span>
+<span class="o">&gt;</span> <span class="p">[</span><span class="mi">17</span><span class="p">]:</span> <span class="mh">0x7f1477</span>
+<span class="o">&gt;</span> <span class="p">[</span><span class="mi">18</span><span class="p">]:</span> <span class="mh">0x605ed</span>
+<span class="o">&gt;</span> <span class="p">[</span><span class="mi">19</span><span class="p">]:</span> <span class="mh">0x153bb8</span>
+<span class="o">&gt;</span> <span class="p">[</span><span class="mi">20</span><span class="p">]:</span> <span class="mh">0x24b5a2</span>
+<span class="o">&gt;</span> <span class="p">[</span><span class="mi">21</span><span class="p">]:</span> <span class="mh">0x342fd5</span>
+<span class="o">&gt;</span> <span class="p">[</span><span class="mi">22</span><span class="p">]:</span> <span class="mh">0x43a9e5</span>
+<span class="o">&gt;</span> <span class="p">[</span><span class="mi">23</span><span class="p">]:</span> <span class="mh">0x5323d4</span>
+<span class="o">&gt;</span> <span class="p">[</span><span class="mi">24</span><span class="p">]:</span> <span class="mh">0x629dc0</span>
+<span class="o">&gt;</span> <span class="p">[</span><span class="mi">25</span><span class="p">]:</span> <span class="mh">0x7217d6</span>
+<span class="o">&gt;</span> <span class="p">[</span><span class="mi">26</span><span class="p">]:</span> <span class="mh">0x8191c0</span>
+<span class="o">&gt;</span> <span class="p">[</span><span class="mi">27</span><span class="p">]:</span> <span class="mh">0x88322</span>
+<span class="o">&gt;</span> <span class="p">[</span><span class="mi">28</span><span class="p">]:</span> <span class="mh">0x17b939</span>
+<span class="o">&gt;</span> <span class="p">[</span><span class="mi">29</span><span class="p">]:</span> <span class="mh">0x273348</span>
+<span class="o">&gt;</span> <span class="p">[</span><span class="mi">30</span><span class="p">]:</span> <span class="mh">0x36ad1e</span>
+<span class="o">&gt;</span> <span class="p">[</span><span class="mi">31</span><span class="p">]:</span> <span class="mh">0x4626fa</span>
+<span class="o">&gt;</span> <span class="p">[</span><span class="mi">32</span><span class="p">]:</span> <span class="mh">0x55a108</span>
+<span class="o">&gt;</span> <span class="p">[</span><span class="mi">33</span><span class="p">]:</span> <span class="mh">0x651ada</span>
+<span class="o">&gt;</span> <span class="p">[</span><span class="mi">34</span><span class="p">]:</span> <span class="mh">0x7494b4</span>
+<span class="o">&gt;</span> <span class="p">[</span><span class="mi">35</span><span class="p">]:</span> <span class="mh">0x840e89</span>
+<span class="o">&gt;</span> <span class="p">[</span><span class="mi">36</span><span class="p">]:</span> <span class="mh">0xb0000</span>
+<span class="o">&gt;</span> <span class="p">[</span><span class="mi">37</span><span class="p">]:</span> <span class="mh">0x1a3591</span>
+<span class="o">&gt;</span> <span class="p">[</span><span class="mi">38</span><span class="p">]:</span> <span class="mh">0x29afa2</span>
+<span class="o">&gt;</span> <span class="p">[</span><span class="mi">39</span><span class="p">]:</span> <span class="mh">0x392989</span>
+<span class="o">&gt;</span> <span class="p">[</span><span class="mi">40</span><span class="p">]:</span> <span class="mh">0x48a38c</span>
+<span class="o">&gt;</span> <span class="p">[</span><span class="mi">41</span><span class="p">]:</span> <span class="mh">0x581d76</span>
+<span class="o">&gt;</span> <span class="p">[</span><span class="mi">42</span><span class="p">]:</span> <span class="mh">0x679748</span>
+<span class="o">&gt;</span> <span class="p">[</span><span class="mi">43</span><span class="p">]:</span> <span class="mh">0x77110d</span>
+<span class="o">&gt;</span> <span class="p">[</span><span class="mi">44</span><span class="p">]:</span> <span class="mh">0x868af4</span>
+<span class="o">&gt;</span> <span class="p">[</span><span class="mi">45</span><span class="p">]:</span> <span class="mh">0xd7c48</span>
+<span class="o">&gt;</span> <span class="p">[</span><span class="mi">46</span><span class="p">]:</span> <span class="mh">0x1cb215</span>
+<span class="o">&gt;</span> <span class="p">[</span><span class="mi">47</span><span class="p">]:</span> <span class="mh">0x2c2bf2</span>
+<span class="o">&gt;</span> <span class="p">[</span><span class="mi">48</span><span class="p">]:</span> <span class="mh">0x3ba5ec</span>
+<span class="o">&gt;</span> <span class="p">[</span><span class="mi">49</span><span class="p">]:</span> <span class="mh">0x4b1fef</span>
+<span class="o">&gt;</span> <span class="p">[</span><span class="mi">50</span><span class="p">]:</span> <span class="mh">0x5a99fd</span>
+<span class="o">&gt;</span> <span class="p">[</span><span class="mi">51</span><span class="p">]:</span> <span class="mh">0x6a13d0</span>
+<span class="o">&gt;</span> <span class="p">[</span><span class="mi">52</span><span class="p">]:</span> <span class="mh">0x798da9</span>
+<span class="o">&gt;</span> <span class="p">[</span><span class="mi">53</span><span class="p">]:</span> <span class="mh">0x7f30</span>
+<span class="o">&gt;</span> <span class="p">[</span><span class="mi">54</span><span class="p">]:</span> <span class="mh">0xf7105</span>
+<span class="o">&gt;</span> <span class="p">[</span><span class="mi">55</span><span class="p">]:</span> <span class="mh">0x1ea6d1</span>
+<span class="o">&gt;</span> <span class="p">[</span><span class="mi">56</span><span class="p">]:</span> <span class="mh">0x2e20bf</span>
+<span class="o">&gt;</span> <span class="p">[</span><span class="mi">57</span><span class="p">]:</span> <span class="mh">0x3d9aa7</span>
+<span class="o">&gt;</span> <span class="p">[</span><span class="mi">58</span><span class="p">]:</span> <span class="mh">0x4d14a9</span>
+<span class="o">&gt;</span> <span class="p">[</span><span class="mi">59</span><span class="p">]:</span> <span class="mh">0x5c8eb8</span>
+<span class="o">&gt;</span> <span class="p">[</span><span class="mi">60</span><span class="p">]:</span> <span class="mh">0x6c08a0</span>
+<span class="o">&gt;</span> <span class="p">[</span><span class="mi">61</span><span class="p">]:</span> <span class="mh">0x7b828c</span>
+<span class="o">&gt;</span> <span class="p">[</span><span class="mi">62</span><span class="p">]:</span> <span class="mh">0x273fe</span>
+<span class="o">&gt;</span> <span class="p">[</span><span class="mi">63</span><span class="p">]:</span> <span class="mh">0x11a9e2</span>
+<span class="o">&gt;</span> <span class="p">[</span><span class="mi">64</span><span class="p">]:</span> <span class="mh">0x2123cc</span>
+<span class="o">&gt;</span> <span class="p">[</span><span class="mi">65</span><span class="p">]:</span> <span class="mh">0x309df0</span>
+<span class="o">&gt;</span> <span class="p">[</span><span class="mi">66</span><span class="p">]:</span> <span class="mh">0x4017c8</span>
+<span class="o">&gt;</span> <span class="p">[</span><span class="mi">67</span><span class="p">]:</span> <span class="mh">0x4f91ca</span>
+<span class="o">&gt;</span> <span class="p">[</span><span class="mi">68</span><span class="p">]:</span> <span class="mh">0x5f0bd8</span>
+<span class="o">&gt;</span> <span class="p">[</span><span class="mi">69</span><span class="p">]:</span> <span class="mh">0x6e8598</span>
+<span class="o">&gt;</span> <span class="p">[</span><span class="mi">70</span><span class="p">]:</span> <span class="mh">0x7dff84</span>
+<span class="o">&gt;</span> <span class="p">[</span><span class="mi">71</span><span class="p">]:</span> <span class="mh">0x4f0e4</span>
+<span class="o">&gt;</span> <span class="p">[</span><span class="mi">72</span><span class="p">]:</span> <span class="mh">0x1426b4</span>
+<span class="o">&gt;</span> <span class="p">[</span><span class="mi">73</span><span class="p">]:</span> <span class="mh">0x23a0c6</span>
+<span class="o">&gt;</span> <span class="p">[</span><span class="mi">74</span><span class="p">]:</span> <span class="mh">0x331a7a</span>
+<span class="o">&gt;</span> <span class="p">[</span><span class="mi">75</span><span class="p">]:</span> <span class="mh">0x429464</span>
+<span class="o">&gt;</span> <span class="p">[</span><span class="mi">76</span><span class="p">]:</span> <span class="mh">0x520e67</span>
+<span class="o">&gt;</span> <span class="p">[</span><span class="mi">77</span><span class="p">]:</span> <span class="mh">0x618875</span>
+<span class="o">&gt;</span> <span class="p">[</span><span class="mi">78</span><span class="p">]:</span> <span class="mh">0x710260</span>
+<span class="o">&gt;</span> <span class="p">[</span><span class="mi">79</span><span class="p">]:</span> <span class="mh">0x807c25</span>
+<span class="o">&gt;</span> <span class="p">[</span><span class="mi">80</span><span class="p">]:</span> <span class="mh">0x76d94</span>
+<span class="o">&gt;</span> <span class="p">[</span><span class="mi">81</span><span class="p">]:</span> <span class="mh">0x16a377</span>
+<span class="o">&gt;</span> <span class="p">[</span><span class="mi">82</span><span class="p">]:</span> <span class="mh">0x261d60</span>
+<span class="o">&gt;</span> <span class="p">[</span><span class="mi">83</span><span class="p">]:</span> <span class="mh">0x359701</span>
+<span class="o">&gt;</span> <span class="p">[</span><span class="mi">84</span><span class="p">]:</span> <span class="mh">0x4510eb</span>
+<span class="o">&gt;</span> <span class="p">[</span><span class="mi">85</span><span class="p">]:</span> <span class="mh">0x548ad8</span>
+<span class="o">&gt;</span> <span class="p">[</span><span class="mi">86</span><span class="p">]:</span> <span class="mh">0x6404e5</span>
+<span class="o">&gt;</span> <span class="p">[</span><span class="mi">87</span><span class="p">]:</span> <span class="mh">0x737ef1</span>
+<span class="o">&gt;</span> <span class="p">[</span><span class="mi">88</span><span class="p">]:</span> <span class="mh">0x82f8de</span>
+<span class="o">&gt;</span> <span class="p">[</span><span class="mi">89</span><span class="p">]:</span> <span class="mh">0x9ea88</span>
+<span class="o">&gt;</span> <span class="p">[</span><span class="mi">90</span><span class="p">]:</span> <span class="mh">0x192058</span>
+<span class="o">&gt;</span> <span class="p">[</span><span class="mi">91</span><span class="p">]:</span> <span class="mh">0x289a69</span>
+<span class="o">&gt;</span> <span class="p">[</span><span class="mi">92</span><span class="p">]:</span> <span class="mh">0x381469</span>
+<span class="o">&gt;</span> <span class="p">[</span><span class="mi">93</span><span class="p">]:</span> <span class="mh">0x478e53</span>
+<span class="o">&gt;</span> <span class="p">[</span><span class="mi">94</span><span class="p">]:</span> <span class="mh">0x570856</span>
+<span class="o">&gt;</span> <span class="p">[</span><span class="mi">95</span><span class="p">]:</span> <span class="mh">0x668240</span>
+<span class="o">&gt;</span> <span class="p">[</span><span class="mi">96</span><span class="p">]:</span> <span class="mh">0x75fc4b</span>
+<span class="o">&gt;</span> <span class="p">[</span><span class="mi">97</span><span class="p">]:</span> <span class="mh">0x857649</span>
+<span class="o">&gt;</span> <span class="p">[</span><span class="mi">98</span><span class="p">]:</span> <span class="mh">0xc67ce</span>
+<span class="o">&gt;</span> <span class="p">[</span><span class="mi">99</span><span class="p">]:</span> <span class="mh">0x1b9db1</span>
+</pre></div>
+</div>
+</section>
+</section>
+
+
+           </div>
+          </div>
+
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="../pllctl/README.html" class="btn btn-neutral float-left" title="6.6. PLL controller" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="../sysctl/README.html" class="btn btn-neutral float-right" title="6.8. System control module" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2020-2022, hpmicro.
+      <span class="lastupdated">Last updated on Jul 01, 2022.
+      </span></p>
+  </div>
+
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

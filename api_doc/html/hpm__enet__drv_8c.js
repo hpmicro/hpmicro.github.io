@@ -1,0 +1,28 @@
+var hpm__enet__drv_8c =
+[
+    [ "enet_adjust_ptp_time_freq", "group__enet__interface.html#ga39728672c004f92451662ee9315fd383", null ],
+    [ "enet_check_received_frame", "group__enet__interface.html#gad076ed1579664645114b831208cf055e", null ],
+    [ "enet_controller_init", "group__enet__interface.html#gabd6a65db84b5859e70e73f5a575d3965", null ],
+    [ "enet_dma_flush", "group__enet__interface.html#ga9302aeb46f3ee471c98cb889b0181b40", null ],
+    [ "enet_dma_init", "hpm__enet__drv_8c.html#afc3ce1243ea948b667e619d2295ed18c", null ],
+    [ "enet_dma_rx_desc_chain_init", "group__enet__interface.html#ga0ff4f0756c4a6e52792c01bd712b39ac", null ],
+    [ "enet_dma_tx_desc_chain_init", "group__enet__interface.html#gaf6848b5fc209bac8932936a235535631", null ],
+    [ "enet_eanble_timestamp", "hpm__enet__drv_8c.html#a1d0af4e85cfde7e6102a1f62caa815a9", null ],
+    [ "enet_enable_ptp_frame_type", "group__enet__interface.html#ga4f4be702511cdfc964bfb825dd5a1561", null ],
+    [ "enet_get_ptp_timestamp", "group__enet__interface.html#ga475480b624c8bacc978686afe20c50f2", null ],
+    [ "enet_get_received_frame", "group__enet__interface.html#ga968d4b7debaf3121348013b533595be4", null ],
+    [ "enet_get_received_frame_interrupt", "group__enet__interface.html#ga2937fe2458aeeca62bf699ed866d141a", null ],
+    [ "enet_init_ptp", "group__enet__interface.html#gaf7a6f41ed9e4cb0b165c87306d0bc4c6", null ],
+    [ "enet_mac_init", "hpm__enet__drv_8c.html#af65a40f06f957d666df5fd997bda88ab", null ],
+    [ "enet_mask_interrupt_event", "hpm__enet__drv_8c.html#ab797330bf93a6e76ccd88c9d5dff9134", null ],
+    [ "enet_mode_init", "hpm__enet__drv_8c.html#a4afe6f3e2025d5931c1e281e0a0fb034", null ],
+    [ "enet_prepare_transmission_descriptors", "group__enet__interface.html#gafc454b556e55088916ec1f2fe7b3805a", null ],
+    [ "enet_read_phy", "group__enet__interface.html#ga7c828a6e6da4573e91ed490be41b2724", null ],
+    [ "enet_set_ptp_timestamp", "group__enet__interface.html#gafd932026487c35ba3c50769216c5aebd", null ],
+    [ "enet_set_ptp_version", "group__enet__interface.html#gacbe7b2b681b77e2515700e791049fa1c", null ],
+    [ "enet_set_snapshot_ptp_message_type", "group__enet__interface.html#ga6e46b48560cf6d29aeaf36cf5e4b00ca", null ],
+    [ "enet_set_subsecond_increment", "hpm__enet__drv_8c.html#a154a53a74acd4c38ac7e713b30174913", null ],
+    [ "enet_timestamp_enable", "hpm__enet__drv_8c.html#a94882d076da533e624427b81cb87e8c0", null ],
+    [ "enet_update_ptp_timeoffset", "group__enet__interface.html#ga557075dbf1988b3f63776e6735770da9", null ],
+    [ "enet_write_phy", "group__enet__interface.html#gac54a2012a702fccb28805d5f04e8106e", null ]
+];

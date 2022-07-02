@@ -1,0 +1,28 @@
+var structPCFG__Type =
+[
+    [ "BANDGAP", "structPCFG__Type.html#a5d7f7fe65fb17ab7c44673234ba93033", null ],
+    [ "DCDC_ADVMODE", "structPCFG__Type.html#a2ed915788a156b1238c16c3b57cdd805", null ],
+    [ "DCDC_ADVPARAM", "structPCFG__Type.html#a2c91d236b231f510313dbfa8d0cf814b", null ],
+    [ "DCDC_CURRENT", "structPCFG__Type.html#a3ec93835c570a8190308f3a3558b5489", null ],
+    [ "DCDC_DEBUG", "structPCFG__Type.html#a91da04710464777e7d3e05a4f0d0aff6", null ],
+    [ "DCDC_LPMODE", "structPCFG__Type.html#a53f0a476896eb49e4842552f26217092", null ],
+    [ "DCDC_MISC", "structPCFG__Type.html#a8fadc33fca188ab59772d6c618598347", null ],
+    [ "DCDC_MODE", "structPCFG__Type.html#a8f8df9a060162436678df7424ba9a351", null ],
+    [ "DCDC_PROT", "structPCFG__Type.html#a881eacb50ae5005a4a72cc396e50f204", null ],
+    [ "DCDC_RESUME_TIME", "structPCFG__Type.html#ab7e9a678c667c523452c20a7ddbe14f1", null ],
+    [ "DCDC_START_TIME", "structPCFG__Type.html#a737858fc7e8524639f66e22a2e5536ee", null ],
+    [ "DEBUG_STOP", "structPCFG__Type.html#ab2899d3bbb09e8423d80c147b59f5d96", null ],
+    [ "LDO1P1", "structPCFG__Type.html#ad92e87f4d70ee70ef94ff295c5c7c62f", null ],
+    [ "LDO2P5", "structPCFG__Type.html#a0c149c853457f56eca1deb868af6cc3a", null ],
+    [ "POWER_TRAP", "structPCFG__Type.html#a38df381abfad790b324a8ba9b77a45cd", null ],
+    [ "RC24M", "structPCFG__Type.html#ad9b8a99e2d52df9d1c5744ed3ffe4d5d", null ],
+    [ "RC24M_TRACK", "structPCFG__Type.html#ab9cd8312c4740f6409083bef26cb707f", null ],
+    [ "RESERVED0", "structPCFG__Type.html#af852800484a1d2a17f7ada93d6926e2b", null ],
+    [ "RESERVED1", "structPCFG__Type.html#aae789d53757675d414dc0e1c94f5f04c", null ],
+    [ "RESERVED2", "structPCFG__Type.html#a6a4a4f95840f7cdb06fc2e3537487a09", null ],
+    [ "SCG_CTRL", "structPCFG__Type.html#a5ea98a64a70d5168d18e16bd351006d1", null ],
+    [ "STATUS", "structPCFG__Type.html#a0d62f2a603c345a60540054e4afd381e", null ],
+    [ "TRACK_TARGET", "structPCFG__Type.html#ad5bd208da45ea64681a181e0c6c369c7", null ],
+    [ "WAKE_CAUSE", "structPCFG__Type.html#abc93b34544aecc7da6b60c9b32e53d44", null ],
+    [ "WAKE_MASK", "structPCFG__Type.html#a4802778bdb815d9e481a0a4c506c4278", null ]
+];

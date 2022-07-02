@@ -1,0 +1,26 @@
+var structLCDC__Type =
+[
+    [ "ALPHAS", "structLCDC__Type.html#a98efca5a29de6ae77367727099dd8ce7", null ],
+    [ "BG_CL", "structLCDC__Type.html#a3d14914f90fcfeecdd229847cf9d8d75", null ],
+    [ "BGND_CL", "structLCDC__Type.html#a05de52df3969077d3dd6e7dacd01d2bd", null ],
+    [ "CLUT_LOAD", "structLCDC__Type.html#a6681c8ccbbed6631199dfefcedd4c7c3", null ],
+    [ "CSC_COEF0", "structLCDC__Type.html#a7913388d56f87dbb69bc24e23117cfe2", null ],
+    [ "CSC_COEF1", "structLCDC__Type.html#a6cb88785e7cf1863bb6476b87e22081a", null ],
+    [ "CSC_COEF2", "structLCDC__Type.html#a8b24537bf6a1cdff82baa49977e32c26", null ],
+    [ "CTRL", "structLCDC__Type.html#aba7432639047cca2897a83b3d55bab6c", null ],
+    [ "DISP_WN_SIZE", "structLCDC__Type.html#ac90d6f00511815ab6954bf3809fff46e", null ],
+    [ "DMA_ST", "structLCDC__Type.html#a5afc96384453d39e003dbcea7bcba8ae", null ],
+    [ "HSYNC_PARA", "structLCDC__Type.html#a23e3eb6baf8ee46e49bb1070efe806a9", null ],
+    [ "INT_EN", "structLCDC__Type.html#af0973c396d4efc10e279025493841139", null ],
+    [ "LAYCTRL", "structLCDC__Type.html#a371f646d2dd56a1b41aa27e3bea4baa3", null ],
+    [ "LAYER", "structLCDC__Type.html#a24d839673af0b0d347cb97a6a92f3336", null ],
+    [ "LAYPOS", "structLCDC__Type.html#a6fc376ba7eb53538b7de91445a5f0055", null ],
+    [ "LAYSIZE", "structLCDC__Type.html#acae6f25478ebba82decf10cb791e0eb1", null ],
+    [ "LINECFG", "structLCDC__Type.html#a3b3fc234109c319bccc847e74f394514", null ],
+    [ "RESERVED0", "structLCDC__Type.html#a1c6872e61638b98b1a0eca83e3f3084f", null ],
+    [ "RESERVED1", "structLCDC__Type.html#af43ce0f34aaa16c43f67e26f83b876a1", null ],
+    [ "ST", "structLCDC__Type.html#a9e1b32b683bceabca10ec55b16d23916", null ],
+    [ "START0", "structLCDC__Type.html#ae1dffb4a027bf8428a39661381bfa907", null ],
+    [ "TXFIFO", "structLCDC__Type.html#a93b2d0322896c9a4f540451e38410a4c", null ],
+    [ "VSYNC_PARA", "structLCDC__Type.html#a51a2350a443b4ce5896dd0dcc83bb02e", null ]
+];

@@ -1,0 +1,23 @@
+var searchData=
+[
+  ['bacc_5fdisable_5ffast_5fread_0',['bacc_disable_fast_read',['../group__bacc__interface.html#ga3d0f5ffd4f3229de722c6da7bdfda301',1,'hpm_bacc_drv.h']]],
+  ['bacc_5fdisable_5ffast_5fwrite_1',['bacc_disable_fast_write',['../group__bacc__interface.html#gaceece15e74b49498feb799493305f630',1,'hpm_bacc_drv.h']]],
+  ['bacc_5fenable_5ffast_5fread_2',['bacc_enable_fast_read',['../group__bacc__interface.html#ga1cbc4e52738568d80f02ca4e97530d4e',1,'hpm_bacc_drv.h']]],
+  ['bacc_5fenable_5ffast_5fwrite_3',['bacc_enable_fast_write',['../group__bacc__interface.html#gaf4749cff43c8fc27e9c3cb83985f483b',1,'hpm_bacc_drv.h']]],
+  ['bacc_5fset_5ftiming_4',['bacc_set_timing',['../group__bacc__interface.html#ga90e58bf4853d46b6a7e7740b785f5c54',1,'hpm_bacc_drv.h']]],
+  ['bacc_5ftiming_5fgap_5fpost_5',['bacc_timing_gap_post',['../group__bacc__interface.html#gab0b6e297f02db61f177308c6702eec2f',1,'hpm_bacc_drv.h']]],
+  ['bacc_5ftiming_5fgap_5fpre_6',['bacc_timing_gap_pre',['../group__bacc__interface.html#ga0861e3bb4714d7805a8708551b8dfb8e',1,'hpm_bacc_drv.h']]],
+  ['bkey_5fget_5fkey_5fdata_7',['bkey_get_key_data',['../group__bkey__interface.html#ga6b8d7bd775f71ed63abab3035af50f3e',1,'hpm_bkey_drv.h']]],
+  ['bkey_5flock_8',['bkey_lock',['../group__bkey__interface.html#ga4d4a5ab88c9abaa2f0fae087c45af545',1,'hpm_bkey_drv.h']]],
+  ['bkey_5fselect_5fkey_9',['bkey_select_key',['../group__bkey__interface.html#gacd3e1f01e2bc46f7f7505a6de6258df6',1,'hpm_bkey_drv.h']]],
+  ['bkey_5fset_5fkey_5fdata_10',['bkey_set_key_data',['../group__bkey__interface.html#ga8b9d010a2f5641d8c4834fd4186e2fad',1,'hpm_bkey_drv.h']]],
+  ['bpor_5fdisable_5freg_5fvalue_5fretention_11',['bpor_disable_reg_value_retention',['../group__bpor__interface.html#ga118d5b78db72857d2999434947cf676c',1,'hpm_bpor_drv.h']]],
+  ['bpor_5fenable_5freg_5fvalue_5fretention_12',['bpor_enable_reg_value_retention',['../group__bpor__interface.html#ga64fdbcd2810da268b4ee354110db2500',1,'hpm_bpor_drv.h']]],
+  ['bpor_5fget_5fpower_5fon_5fcause_13',['bpor_get_power_on_cause',['../group__bpor__interface.html#gad72555e5a46b0fa34febc247758c5f0a',1,'hpm_bpor_drv.h']]],
+  ['bpor_5fselect_5fpower_5fon_5fcause_14',['bpor_select_power_on_cause',['../group__bpor__interface.html#ga6cc93f5243d1e22067a37e683508a10c',1,'hpm_bpor_drv.h']]],
+  ['bpor_5fset_5fpower_5fdown_5fcounter_15',['bpor_set_power_down_counter',['../group__bpor__interface.html#gad0b507af6887806563dea637127c661d',1,'hpm_bpor_drv.h']]],
+  ['butn_5fdisable_5firq_16',['butn_disable_irq',['../group__butn__interface.html#gad845202019208e3f75986904e8fa365a',1,'hpm_butn_drv.h']]],
+  ['butn_5fenable_5firq_17',['butn_enable_irq',['../group__butn__interface.html#ga66e7fa3163155f8bfb8740786a328e59',1,'hpm_butn_drv.h']]],
+  ['butn_5fget_5fstatus_18',['butn_get_status',['../group__butn__interface.html#gabcf58e0acf6e4333ef8326685f2be19d',1,'hpm_butn_drv.h']]],
+  ['butn_5fset_5fintense_19',['butn_set_intense',['../group__butn__interface.html#ga739027f928173f7476db2cd8cb2dae9a',1,'hpm_butn_drv.h']]]
+];

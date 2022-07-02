@@ -1,0 +1,28 @@
+var structdram__sdram__config__t =
+[
+    [ "act_to_act_in_ns", "structdram__sdram__config__t.html#a2bf5abd4ada4fc0dcf134d9195bf0ac7", null ],
+    [ "act_to_precharge_in_ns", "structdram__sdram__config__t.html#a078287d2fdab2867e4bb3e089487fc43", null ],
+    [ "act_to_rw_in_ns", "structdram__sdram__config__t.html#a7a41d3b4254e285d755b9dd75c0e593f", null ],
+    [ "auto_refresh_count_in_one_burst", "structdram__sdram__config__t.html#a632e24f9fe801818eac4c57eb0c1d840", null ],
+    [ "bank_num", "structdram__sdram__config__t.html#ae188e522eaecfb9d563db31461168a93", null ],
+    [ "base_address", "structdram__sdram__config__t.html#af727559512301116420c1dee69217987", null ],
+    [ "burst_len_in_byte", "structdram__sdram__config__t.html#ab102d93839ca73f5efbe8e48f8ed6112", null ],
+    [ "cas_latency", "structdram__sdram__config__t.html#a116c1399c7a1b0fb770daf93dbcba049", null ],
+    [ "cke_off_in_ns", "structdram__sdram__config__t.html#a6708c8b59dfd67a96c0f8ce0d66a51d8", null ],
+    [ "col_addr_bits", "structdram__sdram__config__t.html#a292253e673a3f2e862ec7e54d99c78bf", null ],
+    [ "cs", "structdram__sdram__config__t.html#a41f8b12326a4911707f4db75233c2e27", null ],
+    [ "cs_mux_pin", "structdram__sdram__config__t.html#a078253b33787cb4cd8d309ab7d727e1e", null ],
+    [ "data_width_in_byte", "structdram__sdram__config__t.html#a9a95df84687fbde827b7cfaf6a3fda7e", null ],
+    [ "delay_cell_value", "structdram__sdram__config__t.html#a4265d676e90ea336ae1855dba1399e31", null ],
+    [ "idle_timeout_in_ns", "structdram__sdram__config__t.html#adcf82609d81929ad4c56923b8ee4ab83", null ],
+    [ "port_size", "structdram__sdram__config__t.html#a5c0eef5dedb64e90bc1915005ee14c93", null ],
+    [ "precharge_to_act_in_ns", "structdram__sdram__config__t.html#a00ff826bb6bf1e22e927d1b939171415", null ],
+    [ "prescaler", "structdram__sdram__config__t.html#a15bffc5bed7df1c8cbf69cf99e12517d", null ],
+    [ "refresh_count", "structdram__sdram__config__t.html#aa49fe34b7228d49e98971632476a95b9", null ],
+    [ "refresh_in_ms", "structdram__sdram__config__t.html#a7cab0baac33da81dbc93c7ca08292dc9", null ],
+    [ "refresh_recover_in_ns", "structdram__sdram__config__t.html#af34081f91e49aa304e48e8924a50c364", null ],
+    [ "refresh_to_refresh_in_ns", "structdram__sdram__config__t.html#a3f4b17648063d8ab16fdfd02cca4e695", null ],
+    [ "self_refresh_recover_in_ns", "structdram__sdram__config__t.html#a563937e83f91a52697ea112ecebf0007", null ],
+    [ "size_in_byte", "structdram__sdram__config__t.html#aa4d02d7b32caf43f82e453f8d9774808", null ],
+    [ "write_recover_in_ns", "structdram__sdram__config__t.html#a8bed6547df753168697824b4a2409a62", null ]
+];

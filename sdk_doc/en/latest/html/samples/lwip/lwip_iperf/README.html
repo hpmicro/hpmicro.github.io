@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>18.2. TCP/UDP Throughput Test &mdash; HPM SDK Project Documentation</title>
+      <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/tabs.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/css/custom.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js"></script>
+        <script src="../../../_static/jquery.js"></script>
+        <script src="../../../_static/underscore.js"></script>
+        <script src="../../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="../../../_static/doctools.js"></script>
+        <script src="../../../_static/tabs.js"></script>
+        <script type="module" src="../../../_static/js/dark-mode-toggle.min.mjs"></script>
+        <script src="../../../_static/js/ga-tracker.js"></script>
+    <script src="../../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" />
+    <link rel="next" title="19. memstress" href="../../memstress/index.html" />
+    <link rel="prev" title="18.1. TCP Echo" href="../lwip_tcpecho/README.html" />
+  <meta name="color-scheme" content="dark light">
+  
+  <link rel="stylesheet" href="../../../_static/css/light.css" type="text/css" media="(prefers-color-scheme: light)"/>
+  <link rel="stylesheet" href="../../../_static/css/dark.css" type="text/css" media="(prefers-color-scheme: dark)"/>
+
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../../../index.html">
+            <img src="../../../_static/logo.png" class="logo" alt="Logo"/>
+          </a>
+              <div class="version">
+                latest
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+  
+  <div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="versions">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      <span class="fa fa-book"> HPM SDK Project</span>
+      v: latest
+      <span class="fa fa-caret-down"></span>
+    </span>
+    <div class="rst-other-versions">
+      <dl>
+        <dt>Document Release Versions</dt>
+        
+          <dd>
+            <a onclick="RelativeAddress('/latest/html/index.html')">latest</a>
+          </dd>
+        
+          <dd>
+            <a onclick="RelativeAddress('/0.12.1/html/index.html')">0.12.1</a>
+          </dd>
+        
+      </dl>
+      <dl>
+        <dt>Downloads</dt>
+        
+        <dd><a href="/latest/hpmsdk.pdf">PDF</a></dd>
+      </dl>
+      <dl>
+        <dt>HPMicro</dt>
+          <dd>
+            <a href="https://www.hpmicro.com/">Project Home</a>
+          </dd>
+          <dd>
+            <a href="https://www.hpmicro.com/">SDK</a>
+          </dd>
+          <dd>
+            <a href="https://www.hpmicro.com/">Releases</a>
+          </dd>
+      </dl>
+    </div>
+  </div>
+  <script language="javascript">
+    function RelativeAddress(url1) {
+      var str=window.location.href;
+      window.location.href=str.match(/(\S*)\/(en|zh)/)[0]+url1;
+      
+    }
+  </script>
+  
+              <p class="caption" role="heading"><span class="caption-text">Contents</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../../CHANGELOG.html">Change Log</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../README.html">HPM SDK Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../README.html#hpm-sdk-quick-start-guide">HPM SDK Quick Start Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../README.html#community-support">Community Support</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../boards/index.html">HPM Development Board Introduction</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../../index.html">HPM SDK Samples</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../../hello_world/README.html">1. Hello World</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../audio_codec/index.html">2. Audio Codec</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../coremark/README.html">3. Core Mark</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../touch_panel/README.html">4. Touch Panel</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../rtos/index.html">5. RTOS Samples</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../drivers/index.html">6. Drivers</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../motor_ctrl/index.html">7. Motor Control</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../jpeg/index.html">8. JPEG</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../tinycrypt/index.html">9. Tinycrypt</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../multicore/index.html">10. Multicore Samples</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../rom_api/index.html">11. ROMAPI Samples</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../tflm/README.html">12. TensorFlowLiteMicro</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../tinyusb/index.html">13. USB Communication</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../littlevgl/index.html">14. littlevgl</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../tinyuf2/README.html">15. TinyUF2</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../rgb_led/README.html">16. RGB LED</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../hpm_math/index.html">17. HPMicro MATH</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../index.html">18. lwIP</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="../lwip_tcpecho/README.html">18.1. TCP Echo</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">18.2. TCP/UDP Throughput Test</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#overview">18.2.1. Overview</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#board-setting">18.2.2. Board Setting</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#project-configuration">18.2.3. Project Configuration</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#run-example">18.2.4. Run Example</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../memstress/index.html">19. memstress</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../../doc/src/sdk_doc/README.html">HPM SDK Doc Generation</a></li>
+</ul>
+
+  
+  <div class="toctree-wrapper compound">
+    <p class="caption"><span class="caption-text">Reference</span></p>
+    <ul>
+      
+      <li class="toctree-l1">
+        <a class="reference internal" onclick="ApiRelativeAddress()">API DOC</a>
+      </li>
+      
+    </ul>
+  </div>
+  <script language="javascript">
+    function ApiRelativeAddress() {
+      var str=window.location.href;
+      window.location.href=str.match(/(\S*)sdk_doc/)[1]+"api_doc/html/index.html";
+      
+    }
+  </script>
+  
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../index.html">hpm_sdk readme</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+  <!--  -->
+  
+  
+  
+  
+
+  <li><a href="../../../index.html">Docs</a> &raquo;</li>
+  
+     <li><a href="../../index.html">HPM SDK Samples</a> &raquo;</li>
+  
+     <li><a href="../index.html"><span class="section-number">18. </span>lwIP</a> &raquo;</li>
+  
+  <li><span class="section-number">18.2. </span>TCP/UDP Throughput Test</li>
+
+
+  <li class="wy-breadcrumbs-aside">
+    <dark-mode-toggle id="dark-mode-toggle" appearance="toggle" permanent="true"/>
+  </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+  
+    <div class="wy-alert wy-alert-danger">
+     This is the documentation for the latest (main) development branch of
+     HPM SDK. If you are looking for the documentation of previous releases, use
+     the drop-down menu on the left and select the desired version.
+    </div>
+  
+  
+           <div itemprop="articleBody">
+             
+  <section id="tcp-udp-throughput-test">
+<h1><span class="section-number">18.2. </span>TCP/UDP Throughput Test<a class="headerlink" href="#tcp-udp-throughput-test" title="Permalink to this heading">¶</a></h1>
+<section id="overview">
+<h2><span class="section-number">18.2.1. </span>Overview<a class="headerlink" href="#overview" title="Permalink to this heading">¶</a></h2>
+<p>This  example shows TCP/UDP throughput performance test through iperf (https://iperf.fr/iperf-download.php) with a total of four mode as follows:</p>
+<ul class="simple">
+<li><p>MCU acts as TCP Server / PC acts as TCP Client</p></li>
+<li><p>MCU acts as TCP Client / PC acts  as TCP Server</p></li>
+<li><p>MCU acts as UDP Server / PC acts as UDP Client</p></li>
+<li><p>MCU acts as UDP Client / PC acts as UDP Server</p></li>
+</ul>
+</section>
+<section id="board-setting">
+<h2><span class="section-number">18.2.2. </span>Board Setting<a class="headerlink" href="#board-setting" title="Permalink to this heading">¶</a></h2>
+<ul class="simple">
+<li><p>Connect a USB port on PC to the PWR DEBUG port on the development board with a USB Type-C cable</p></li>
+<li><p>Connect an Ethernet port on PC to a RGMII port or a RMII port on the development board with an Ethernet cable</p></li>
+</ul>
+</section>
+<section id="project-configuration">
+<h2><span class="section-number">18.2.3. </span>Project Configuration<a class="headerlink" href="#project-configuration" title="Permalink to this heading">¶</a></h2>
+<ul>
+<li><p>In the file <span class="xref myst">cmakelists.txt</span> ,  set a matched Ethernet PHY type according to the development board schematic，</p>
+<p>e.g. “set(COFNIG_ENET_PHY_DP83848 1)”</p>
+</li>
+</ul>
+</section>
+<section id="run-example">
+<h2><span class="section-number">18.2.4. </span>Run Example<a class="headerlink" href="#run-example" title="Permalink to this heading">¶</a></h2>
+<ul>
+<li><p>Compiling and Downloading</p></li>
+<li><p>Running log is shown in the serial terminal as follows:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>This is an ethernet demo: Iperf
+LwIP Version: 2.1.2
+Local IP: 192.168.11.201
+Speed Rate:100Mbps
+Reference Clock: Internal Clock
+Enet phy init passes !
+Static IP: 192.168.11.201
+NETMASK  : 255.255.255.0
+Gateway  : 192.168.11.1
+
+1: TCP Server Mode
+2: TCP Client Mode
+3: UDP Server Mode
+4: UDP Client Mode
+Please enter the test mode code:
+</pre></div>
+</div>
+</li>
+<li><p>Select a test mode and Run iperf</p>
+<ul>
+<li><p>TCP Server mode</p>
+<ul>
+<li><p>Press “RESETN” key on the development board, and wait for the hints</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="mi">1</span><span class="p">:</span> <span class="n">TCP</span> <span class="n">Server</span> <span class="n">Mode</span>
+<span class="mi">2</span><span class="p">:</span> <span class="n">TCP</span> <span class="n">Client</span> <span class="n">Mode</span>
+<span class="mi">3</span><span class="p">:</span> <span class="n">UDP</span> <span class="n">Server</span> <span class="n">Mode</span>
+<span class="mi">4</span><span class="p">:</span> <span class="n">UDP</span> <span class="n">Client</span> <span class="n">Mode</span>
+<span class="n">Please</span> <span class="n">enter</span> <span class="n">the</span> <span class="n">test</span> <span class="n">mode</span> <span class="n">code</span><span class="p">:</span>
+</pre></div>
+</div>
+</li>
+<li><p>Enter a test mode code in the serial terminal</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Please</span> <span class="n">enter</span> <span class="n">the</span> <span class="n">test</span> <span class="n">mode</span> <span class="n">code</span><span class="p">:</span> <span class="mi">1</span> 
+</pre></div>
+</div>
+</li>
+<li><p>Run iperf  in command line</p></li>
+</ul>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">iperf</span> <span class="o">-</span><span class="n">c</span> <span class="mf">192.168.11.201</span> <span class="o">-</span><span class="n">i</span> <span class="mi">1</span>
+</pre></div>
+</div>
+<ul>
+<li><p>Watch the result</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">------------------------------------------------------------</span>
+<span class="n">Client</span> <span class="n">connecting</span> <span class="n">to</span> <span class="mf">192.168.11.201</span><span class="p">,</span> <span class="n">TCP</span> <span class="n">port</span> <span class="mi">5001</span>
+<span class="n">TCP</span> <span class="n">window</span> <span class="n">size</span><span class="p">:</span> <span class="mf">64.0</span> <span class="n">KByte</span> <span class="p">(</span><span class="n">default</span><span class="p">)</span>
+<span class="o">------------------------------------------------------------</span>
+<span class="p">[</span><span class="mi">304</span><span class="p">]</span> <span class="n">local</span> <span class="mf">192.168.11.5</span> <span class="n">port</span> <span class="mi">59602</span> <span class="n">connected</span> <span class="k">with</span> <span class="mf">192.168.11.201</span> <span class="n">port</span> <span class="mi">5001</span>
+<span class="p">[</span> <span class="n">ID</span><span class="p">]</span> <span class="n">Interval</span>       <span class="n">Transfer</span>     <span class="n">Bandwidth</span>
+<span class="p">[</span><span class="mi">304</span><span class="p">]</span>  <span class="mf">0.0</span><span class="o">-</span> <span class="mf">1.0</span> <span class="n">sec</span>  <span class="mf">11.3</span> <span class="n">MBytes</span>  <span class="mf">94.9</span> <span class="n">Mbits</span><span class="o">/</span><span class="n">sec</span>
+<span class="p">[</span><span class="mi">304</span><span class="p">]</span>  <span class="mf">1.0</span><span class="o">-</span> <span class="mf">2.0</span> <span class="n">sec</span>  <span class="mf">11.3</span> <span class="n">MBytes</span>  <span class="mf">94.5</span> <span class="n">Mbits</span><span class="o">/</span><span class="n">sec</span>
+<span class="p">[</span><span class="mi">304</span><span class="p">]</span>  <span class="mf">2.0</span><span class="o">-</span> <span class="mf">3.0</span> <span class="n">sec</span>  <span class="mf">11.3</span> <span class="n">MBytes</span>  <span class="mf">94.4</span> <span class="n">Mbits</span><span class="o">/</span><span class="n">sec</span>
+<span class="p">[</span><span class="mi">304</span><span class="p">]</span>  <span class="mf">3.0</span><span class="o">-</span> <span class="mf">4.0</span> <span class="n">sec</span>  <span class="mf">11.3</span> <span class="n">MBytes</span>  <span class="mf">94.5</span> <span class="n">Mbits</span><span class="o">/</span><span class="n">sec</span>
+<span class="p">[</span><span class="mi">304</span><span class="p">]</span>  <span class="mf">4.0</span><span class="o">-</span> <span class="mf">5.0</span> <span class="n">sec</span>  <span class="mf">11.3</span> <span class="n">MBytes</span>  <span class="mf">94.4</span> <span class="n">Mbits</span><span class="o">/</span><span class="n">sec</span>
+<span class="p">[</span><span class="mi">304</span><span class="p">]</span>  <span class="mf">5.0</span><span class="o">-</span> <span class="mf">6.0</span> <span class="n">sec</span>  <span class="mf">11.3</span> <span class="n">MBytes</span>  <span class="mf">94.5</span> <span class="n">Mbits</span><span class="o">/</span><span class="n">sec</span>
+<span class="p">[</span><span class="mi">304</span><span class="p">]</span>  <span class="mf">6.0</span><span class="o">-</span> <span class="mf">7.0</span> <span class="n">sec</span>  <span class="mf">11.3</span> <span class="n">MBytes</span>  <span class="mf">94.4</span> <span class="n">Mbits</span><span class="o">/</span><span class="n">sec</span>
+<span class="p">[</span><span class="mi">304</span><span class="p">]</span>  <span class="mf">7.0</span><span class="o">-</span> <span class="mf">8.0</span> <span class="n">sec</span>  <span class="mf">11.3</span> <span class="n">MBytes</span>  <span class="mf">94.5</span> <span class="n">Mbits</span><span class="o">/</span><span class="n">sec</span>
+<span class="p">[</span><span class="mi">304</span><span class="p">]</span>  <span class="mf">8.0</span><span class="o">-</span> <span class="mf">9.0</span> <span class="n">sec</span>  <span class="mf">11.3</span> <span class="n">MBytes</span>  <span class="mf">94.4</span> <span class="n">Mbits</span><span class="o">/</span><span class="n">sec</span>
+<span class="p">[</span><span class="mi">304</span><span class="p">]</span>  <span class="mf">9.0</span><span class="o">-</span><span class="mf">10.0</span> <span class="n">sec</span>  <span class="mf">11.3</span> <span class="n">MBytes</span>  <span class="mf">94.4</span> <span class="n">Mbits</span><span class="o">/</span><span class="n">sec</span>
+<span class="p">[</span><span class="mi">304</span><span class="p">]</span>  <span class="mf">0.0</span><span class="o">-</span><span class="mf">10.0</span> <span class="n">sec</span>   <span class="mi">113</span> <span class="n">MBytes</span>  <span class="mf">94.4</span> <span class="n">Mbits</span><span class="o">/</span><span class="n">sec</span>
+</pre></div>
+</div>
+</li>
+</ul>
+</li>
+<li><p>TCP Client mode</p>
+<ul>
+<li><p>Press “RESETN” key on the development board, and wait for the hints</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="mi">1</span><span class="p">:</span> <span class="n">TCP</span> <span class="n">Server</span> <span class="n">Mode</span>
+<span class="mi">2</span><span class="p">:</span> <span class="n">TCP</span> <span class="n">Client</span> <span class="n">Mode</span>
+<span class="mi">3</span><span class="p">:</span> <span class="n">UDP</span> <span class="n">Server</span> <span class="n">Mode</span>
+<span class="mi">4</span><span class="p">:</span> <span class="n">UDP</span> <span class="n">Client</span> <span class="n">Mode</span>
+<span class="n">Please</span> <span class="n">enter</span> <span class="n">the</span> <span class="n">test</span> <span class="n">mode</span> <span class="n">code</span><span class="p">:</span>
+</pre></div>
+</div>
+</li>
+<li><p>Run iperf  in command line</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">iperf</span> <span class="o">-</span><span class="n">s</span> <span class="o">-</span><span class="n">i</span> <span class="mi">1</span>	
+</pre></div>
+</div>
+</li>
+<li><p>Enter a test mode code in the serial terminal</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Please</span> <span class="n">enter</span> <span class="n">the</span> <span class="n">test</span> <span class="n">mode</span> <span class="n">code</span><span class="p">:</span> <span class="mi">2</span>
+</pre></div>
+</div>
+</li>
+<li><p>Watch the result</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">------------------------------------------------------------</span>
+<span class="n">Server</span> <span class="n">listening</span> <span class="n">on</span> <span class="n">TCP</span> <span class="n">port</span> <span class="mi">5001</span>
+<span class="n">TCP</span> <span class="n">window</span> <span class="n">size</span><span class="p">:</span> <span class="mf">64.0</span> <span class="n">KByte</span> <span class="p">(</span><span class="n">default</span><span class="p">)</span>
+<span class="o">------------------------------------------------------------</span>
+<span class="p">[</span><span class="mi">364</span><span class="p">]</span> <span class="n">local</span> <span class="mf">192.168.11.5</span> <span class="n">port</span> <span class="mi">5001</span> <span class="n">connected</span> <span class="k">with</span> <span class="mf">192.168.11.201</span> <span class="n">port</span> <span class="mi">49153</span>
+<span class="p">[</span> <span class="n">ID</span><span class="p">]</span> <span class="n">Interval</span>       <span class="n">Transfer</span>     <span class="n">Bandwidth</span>
+<span class="p">[</span><span class="mi">364</span><span class="p">]</span>  <span class="mf">0.0</span><span class="o">-</span> <span class="mf">1.0</span> <span class="n">sec</span>  <span class="mf">10.7</span> <span class="n">MBytes</span>  <span class="mf">89.6</span> <span class="n">Mbits</span><span class="o">/</span><span class="n">sec</span>
+<span class="p">[</span><span class="mi">364</span><span class="p">]</span>  <span class="mf">1.0</span><span class="o">-</span> <span class="mf">2.0</span> <span class="n">sec</span>  <span class="mf">11.2</span> <span class="n">MBytes</span>  <span class="mf">94.1</span> <span class="n">Mbits</span><span class="o">/</span><span class="n">sec</span>
+<span class="p">[</span><span class="mi">364</span><span class="p">]</span>  <span class="mf">2.0</span><span class="o">-</span> <span class="mf">3.0</span> <span class="n">sec</span>  <span class="mf">11.2</span> <span class="n">MBytes</span>  <span class="mf">94.1</span> <span class="n">Mbits</span><span class="o">/</span><span class="n">sec</span>
+<span class="p">[</span><span class="mi">364</span><span class="p">]</span>  <span class="mf">3.0</span><span class="o">-</span> <span class="mf">4.0</span> <span class="n">sec</span>  <span class="mf">11.2</span> <span class="n">MBytes</span>  <span class="mf">94.1</span> <span class="n">Mbits</span><span class="o">/</span><span class="n">sec</span>
+<span class="p">[</span><span class="mi">364</span><span class="p">]</span>  <span class="mf">4.0</span><span class="o">-</span> <span class="mf">5.0</span> <span class="n">sec</span>  <span class="mf">11.2</span> <span class="n">MBytes</span>  <span class="mf">94.2</span> <span class="n">Mbits</span><span class="o">/</span><span class="n">sec</span>
+<span class="p">[</span><span class="mi">364</span><span class="p">]</span>  <span class="mf">5.0</span><span class="o">-</span> <span class="mf">6.0</span> <span class="n">sec</span>  <span class="mf">11.2</span> <span class="n">MBytes</span>  <span class="mf">94.1</span> <span class="n">Mbits</span><span class="o">/</span><span class="n">sec</span>
+<span class="p">[</span><span class="mi">364</span><span class="p">]</span>  <span class="mf">6.0</span><span class="o">-</span> <span class="mf">7.0</span> <span class="n">sec</span>  <span class="mf">11.2</span> <span class="n">MBytes</span>  <span class="mf">94.1</span> <span class="n">Mbits</span><span class="o">/</span><span class="n">sec</span>
+<span class="p">[</span><span class="mi">364</span><span class="p">]</span>  <span class="mf">7.0</span><span class="o">-</span> <span class="mf">8.0</span> <span class="n">sec</span>  <span class="mf">11.2</span> <span class="n">MBytes</span>  <span class="mf">94.2</span> <span class="n">Mbits</span><span class="o">/</span><span class="n">sec</span>
+<span class="p">[</span><span class="mi">364</span><span class="p">]</span>  <span class="mf">8.0</span><span class="o">-</span> <span class="mf">9.0</span> <span class="n">sec</span>  <span class="mf">11.2</span> <span class="n">MBytes</span>  <span class="mf">94.0</span> <span class="n">Mbits</span><span class="o">/</span><span class="n">sec</span>
+<span class="p">[</span><span class="mi">364</span><span class="p">]</span>  <span class="mf">9.0</span><span class="o">-</span><span class="mf">10.0</span> <span class="n">sec</span>  <span class="mf">11.2</span> <span class="n">MBytes</span>  <span class="mf">94.2</span> <span class="n">Mbits</span><span class="o">/</span><span class="n">sec</span>
+<span class="p">[</span><span class="mi">364</span><span class="p">]</span>  <span class="mf">0.0</span><span class="o">-</span><span class="mf">10.0</span> <span class="n">sec</span>   <span class="mi">112</span> <span class="n">MBytes</span>  <span class="mf">93.6</span> <span class="n">Mbits</span><span class="o">/</span><span class="n">sec</span>
+</pre></div>
+</div>
+</li>
+</ul>
+</li>
+<li><p>UDP Server mode</p>
+<ul>
+<li><p>Press “RESETN” key on the development board, and wait for the hints</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="mi">1</span><span class="p">:</span> <span class="n">TCP</span> <span class="n">Server</span> <span class="n">Mode</span>
+<span class="mi">2</span><span class="p">:</span> <span class="n">TCP</span> <span class="n">Client</span> <span class="n">Mode</span>
+<span class="mi">3</span><span class="p">:</span> <span class="n">UDP</span> <span class="n">Server</span> <span class="n">Mode</span>
+<span class="mi">4</span><span class="p">:</span> <span class="n">UDP</span> <span class="n">Client</span> <span class="n">Mode</span>
+<span class="n">Please</span> <span class="n">enter</span> <span class="n">the</span> <span class="n">test</span> <span class="n">mode</span> <span class="n">code</span><span class="p">:</span>
+</pre></div>
+</div>
+</li>
+<li><p>Enter a test mode code in the serial terminal</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Please</span> <span class="n">enter</span> <span class="n">the</span> <span class="n">test</span> <span class="n">mode</span> <span class="n">code</span><span class="p">:</span> <span class="mi">3</span>
+</pre></div>
+</div>
+</li>
+<li><p>Run iperf  in command line</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">iperf</span> <span class="o">-</span><span class="n">u</span> <span class="o">-</span><span class="n">c</span> <span class="mf">192.168.11.201</span> <span class="o">-</span><span class="n">i</span> <span class="mi">1</span> <span class="o">-</span><span class="n">b</span> <span class="mi">100</span><span class="n">M</span>
+</pre></div>
+</div>
+</li>
+<li><p>Watch test result</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">------------------------------------------------------------</span>
+<span class="n">Client</span> <span class="n">connecting</span> <span class="n">to</span> <span class="mf">192.168.11.201</span><span class="p">,</span> <span class="n">UDP</span> <span class="n">port</span> <span class="mi">5001</span>
+<span class="n">Sending</span> <span class="mi">1470</span> <span class="n">byte</span> <span class="n">datagrams</span>
+<span class="n">UDP</span> <span class="n">buffer</span> <span class="n">size</span><span class="p">:</span> <span class="mf">64.0</span> <span class="n">KByte</span> <span class="p">(</span><span class="n">default</span><span class="p">)</span>
+<span class="o">------------------------------------------------------------</span>
+<span class="p">[</span><span class="mi">304</span><span class="p">]</span> <span class="n">local</span> <span class="mf">192.168.11.5</span> <span class="n">port</span> <span class="mi">61844</span> <span class="n">connected</span> <span class="k">with</span> <span class="mf">192.168.11.201</span> <span class="n">port</span> <span class="mi">5001</span>
+<span class="p">[</span> <span class="n">ID</span><span class="p">]</span> <span class="n">Interval</span>       <span class="n">Transfer</span>     <span class="n">Bandwidth</span>
+<span class="p">[</span><span class="mi">304</span><span class="p">]</span>  <span class="mf">0.0</span><span class="o">-</span> <span class="mf">1.0</span> <span class="n">sec</span>  <span class="mf">11.3</span> <span class="n">MBytes</span>  <span class="mf">94.6</span> <span class="n">Mbits</span><span class="o">/</span><span class="n">sec</span>
+<span class="p">[</span><span class="mi">304</span><span class="p">]</span>  <span class="mf">1.0</span><span class="o">-</span> <span class="mf">2.0</span> <span class="n">sec</span>  <span class="mf">11.3</span> <span class="n">MBytes</span>  <span class="mf">94.4</span> <span class="n">Mbits</span><span class="o">/</span><span class="n">sec</span>
+<span class="p">[</span><span class="mi">304</span><span class="p">]</span>  <span class="mf">2.0</span><span class="o">-</span> <span class="mf">3.0</span> <span class="n">sec</span>  <span class="mf">11.3</span> <span class="n">MBytes</span>  <span class="mf">94.5</span> <span class="n">Mbits</span><span class="o">/</span><span class="n">sec</span>
+<span class="p">[</span><span class="mi">304</span><span class="p">]</span>  <span class="mf">3.0</span><span class="o">-</span> <span class="mf">4.0</span> <span class="n">sec</span>  <span class="mf">11.2</span> <span class="n">MBytes</span>  <span class="mf">94.2</span> <span class="n">Mbits</span><span class="o">/</span><span class="n">sec</span>
+<span class="p">[</span><span class="mi">304</span><span class="p">]</span>  <span class="mf">4.0</span><span class="o">-</span> <span class="mf">5.0</span> <span class="n">sec</span>  <span class="mf">11.3</span> <span class="n">MBytes</span>  <span class="mf">94.8</span> <span class="n">Mbits</span><span class="o">/</span><span class="n">sec</span>
+<span class="p">[</span><span class="mi">304</span><span class="p">]</span>  <span class="mf">5.0</span><span class="o">-</span> <span class="mf">6.0</span> <span class="n">sec</span>  <span class="mf">11.2</span> <span class="n">MBytes</span>  <span class="mf">94.1</span> <span class="n">Mbits</span><span class="o">/</span><span class="n">sec</span>
+<span class="p">[</span><span class="mi">304</span><span class="p">]</span>  <span class="mf">6.0</span><span class="o">-</span> <span class="mf">7.0</span> <span class="n">sec</span>  <span class="mf">11.3</span> <span class="n">MBytes</span>  <span class="mf">94.8</span> <span class="n">Mbits</span><span class="o">/</span><span class="n">sec</span>
+<span class="p">[</span><span class="mi">304</span><span class="p">]</span>  <span class="mf">7.0</span><span class="o">-</span> <span class="mf">8.0</span> <span class="n">sec</span>  <span class="mf">11.2</span> <span class="n">MBytes</span>  <span class="mf">94.2</span> <span class="n">Mbits</span><span class="o">/</span><span class="n">sec</span>
+<span class="p">[</span><span class="mi">304</span><span class="p">]</span>  <span class="mf">8.0</span><span class="o">-</span> <span class="mf">9.0</span> <span class="n">sec</span>  <span class="mf">11.2</span> <span class="n">MBytes</span>  <span class="mf">94.4</span> <span class="n">Mbits</span><span class="o">/</span><span class="n">sec</span>
+<span class="p">[</span><span class="mi">304</span><span class="p">]</span>  <span class="mf">9.0</span><span class="o">-</span><span class="mf">10.0</span> <span class="n">sec</span>  <span class="mf">11.3</span> <span class="n">MBytes</span>  <span class="mf">94.7</span> <span class="n">Mbits</span><span class="o">/</span><span class="n">sec</span>
+<span class="p">[</span><span class="mi">304</span><span class="p">]</span>  <span class="mf">0.0</span><span class="o">-</span><span class="mf">10.0</span> <span class="n">sec</span>   <span class="mi">113</span> <span class="n">MBytes</span>  <span class="mf">94.5</span> <span class="n">Mbits</span><span class="o">/</span><span class="n">sec</span>
+<span class="p">[</span><span class="mi">304</span><span class="p">]</span> <span class="n">Server</span> <span class="n">Report</span><span class="p">:</span>
+<span class="p">[</span><span class="mi">304</span><span class="p">]</span>  <span class="mf">0.0</span><span class="o">-</span><span class="mf">10.0</span> <span class="n">sec</span>   <span class="mi">113</span> <span class="n">MBytes</span>  <span class="mf">94.5</span> <span class="n">Mbits</span><span class="o">/</span><span class="n">sec</span>  <span class="mf">0.002</span> <span class="n">ms</span>    <span class="mi">0</span><span class="o">/</span><span class="mi">80328</span> <span class="p">(</span><span class="mi">0</span><span class="o">%</span><span class="p">)</span>
+<span class="p">[</span><span class="mi">304</span><span class="p">]</span> <span class="n">Sent</span> <span class="mi">80328</span> <span class="n">datagrams</span>
+</pre></div>
+</div>
+</li>
+</ul>
+</li>
+<li><p>UDP Client mode</p>
+<ul>
+<li><p>Press “RESETN” key on the development board, and wait for the hints</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="mi">1</span><span class="p">:</span> <span class="n">TCP</span> <span class="n">Server</span> <span class="n">Mode</span>
+<span class="mi">2</span><span class="p">:</span> <span class="n">TCP</span> <span class="n">Client</span> <span class="n">Mode</span>
+<span class="mi">3</span><span class="p">:</span> <span class="n">UDP</span> <span class="n">Server</span> <span class="n">Mode</span>
+<span class="mi">4</span><span class="p">:</span> <span class="n">UDP</span> <span class="n">Client</span> <span class="n">Mode</span>
+<span class="n">Please</span> <span class="n">enter</span> <span class="n">the</span> <span class="n">test</span> <span class="n">mode</span> <span class="n">code</span><span class="p">:</span>
+</pre></div>
+</div>
+</li>
+<li><p>Run iperf  in command line</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">iperf</span> <span class="o">-</span><span class="n">u</span> <span class="o">-</span><span class="n">s</span> <span class="o">-</span><span class="n">i</span> <span class="mi">1</span> <span class="o">-</span><span class="n">b</span> <span class="mi">100</span><span class="n">M</span>
+</pre></div>
+</div>
+</li>
+<li><p>Enter a test mode code in the serial terminal</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Please</span> <span class="n">enter</span> <span class="n">the</span> <span class="n">test</span> <span class="n">mode</span> <span class="n">code</span><span class="p">:</span> <span class="mi">4</span>
+</pre></div>
+</div>
+</li>
+<li><p>Watch test result</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span> <span class="o">------------------------------------------------------------</span>
+<span class="n">Server</span> <span class="n">listening</span> <span class="n">on</span> <span class="n">UDP</span> <span class="n">port</span> <span class="mi">5001</span>
+<span class="n">Receiving</span> <span class="mi">1470</span> <span class="n">byte</span> <span class="n">datagrams</span>
+<span class="n">UDP</span> <span class="n">buffer</span> <span class="n">size</span><span class="p">:</span> <span class="mf">64.0</span> <span class="n">KByte</span> <span class="p">(</span><span class="n">default</span><span class="p">)</span>
+<span class="o">------------------------------------------------------------</span>
+<span class="p">[</span>  <span class="mi">3</span><span class="p">]</span> <span class="n">local</span> <span class="mf">192.168.11.5</span> <span class="n">port</span> <span class="mi">5001</span> <span class="n">connected</span> <span class="k">with</span> <span class="mf">192.168.11.201</span> <span class="n">port</span> <span class="mi">49153</span>
+<span class="p">[</span> <span class="n">ID</span><span class="p">]</span> <span class="n">Interval</span>       <span class="n">Transfer</span>     <span class="n">Bandwidth</span>        <span class="n">Jitter</span>   <span class="n">Lost</span><span class="o">/</span><span class="n">Total</span> <span class="n">Datagrams</span>
+<span class="p">[</span>  <span class="mi">3</span><span class="p">]</span>  <span class="mf">0.0</span><span class="o">-</span> <span class="mf">1.0</span> <span class="n">sec</span>  <span class="mf">11.3</span> <span class="n">MBytes</span>  <span class="mf">94.6</span> <span class="n">Mbits</span><span class="o">/</span><span class="n">sec</span>   <span class="mf">0.208</span> <span class="n">ms</span>  <span class="mi">137</span><span class="o">/</span> <span class="mi">8183</span> <span class="p">(</span><span class="mf">1.7</span><span class="o">%</span><span class="p">)</span>
+<span class="p">[</span>  <span class="mi">3</span><span class="p">]</span> <span class="mf">0.00</span><span class="o">-</span><span class="mf">1.00</span> <span class="n">sec</span>  <span class="mi">6033</span> <span class="n">datagrams</span> <span class="n">received</span> <span class="n">out</span><span class="o">-</span><span class="n">of</span><span class="o">-</span><span class="n">order</span>
+<span class="p">[</span>  <span class="mi">3</span><span class="p">]</span>  <span class="mf">1.0</span><span class="o">-</span> <span class="mf">2.0</span> <span class="n">sec</span>  <span class="mf">11.2</span> <span class="n">MBytes</span>  <span class="mf">94.1</span> <span class="n">Mbits</span><span class="o">/</span><span class="n">sec</span>   <span class="mf">0.203</span> <span class="n">ms</span>    <span class="mi">0</span><span class="o">/</span> <span class="mi">8000</span> <span class="p">(</span><span class="mi">0</span><span class="o">%</span><span class="p">)</span>
+<span class="p">[</span>  <span class="mi">3</span><span class="p">]</span> <span class="mf">1.00</span><span class="o">-</span><span class="mf">2.00</span> <span class="n">sec</span>  <span class="mi">6000</span> <span class="n">datagrams</span> <span class="n">received</span> <span class="n">out</span><span class="o">-</span><span class="n">of</span><span class="o">-</span><span class="n">order</span>
+<span class="p">[</span>  <span class="mi">3</span><span class="p">]</span>  <span class="mf">2.0</span><span class="o">-</span> <span class="mf">3.0</span> <span class="n">sec</span>  <span class="mf">11.2</span> <span class="n">MBytes</span>  <span class="mf">94.1</span> <span class="n">Mbits</span><span class="o">/</span><span class="n">sec</span>   <span class="mf">0.208</span> <span class="n">ms</span>    <span class="mi">0</span><span class="o">/</span> <span class="mi">8000</span> <span class="p">(</span><span class="mi">0</span><span class="o">%</span><span class="p">)</span>
+<span class="p">[</span>  <span class="mi">3</span><span class="p">]</span> <span class="mf">2.00</span><span class="o">-</span><span class="mf">3.00</span> <span class="n">sec</span>  <span class="mi">6000</span> <span class="n">datagrams</span> <span class="n">received</span> <span class="n">out</span><span class="o">-</span><span class="n">of</span><span class="o">-</span><span class="n">order</span>
+<span class="p">[</span>  <span class="mi">3</span><span class="p">]</span>  <span class="mf">3.0</span><span class="o">-</span> <span class="mf">4.0</span> <span class="n">sec</span>  <span class="mf">11.2</span> <span class="n">MBytes</span>  <span class="mf">94.1</span> <span class="n">Mbits</span><span class="o">/</span><span class="n">sec</span>   <span class="mf">0.207</span> <span class="n">ms</span>    <span class="mi">0</span><span class="o">/</span> <span class="mi">8000</span> <span class="p">(</span><span class="mi">0</span><span class="o">%</span><span class="p">)</span>
+<span class="p">[</span>  <span class="mi">3</span><span class="p">]</span> <span class="mf">3.00</span><span class="o">-</span><span class="mf">4.00</span> <span class="n">sec</span>  <span class="mi">6000</span> <span class="n">datagrams</span> <span class="n">received</span> <span class="n">out</span><span class="o">-</span><span class="n">of</span><span class="o">-</span><span class="n">order</span>
+<span class="p">[</span>  <span class="mi">3</span><span class="p">]</span>  <span class="mf">4.0</span><span class="o">-</span> <span class="mf">5.0</span> <span class="n">sec</span>  <span class="mf">11.2</span> <span class="n">MBytes</span>  <span class="mf">94.1</span> <span class="n">Mbits</span><span class="o">/</span><span class="n">sec</span>   <span class="mf">0.208</span> <span class="n">ms</span>    <span class="mi">0</span><span class="o">/</span> <span class="mi">8000</span> <span class="p">(</span><span class="mi">0</span><span class="o">%</span><span class="p">)</span>
+<span class="p">[</span>  <span class="mi">3</span><span class="p">]</span> <span class="mf">4.00</span><span class="o">-</span><span class="mf">5.00</span> <span class="n">sec</span>  <span class="mi">6000</span> <span class="n">datagrams</span> <span class="n">received</span> <span class="n">out</span><span class="o">-</span><span class="n">of</span><span class="o">-</span><span class="n">orderS</span>
+<span class="p">[</span>  <span class="mi">3</span><span class="p">]</span>  <span class="mf">5.0</span><span class="o">-</span> <span class="mf">6.0</span> <span class="n">sec</span>  <span class="mf">11.2</span> <span class="n">MBytes</span>  <span class="mf">94.1</span> <span class="n">Mbits</span><span class="o">/</span><span class="n">sec</span>   <span class="mf">0.207</span> <span class="n">ms</span>    <span class="mi">0</span><span class="o">/</span> <span class="mi">8000</span> <span class="p">(</span><span class="mi">0</span><span class="o">%</span><span class="p">)</span>
+<span class="p">[</span>  <span class="mi">3</span><span class="p">]</span> <span class="mf">5.00</span><span class="o">-</span><span class="mf">6.00</span> <span class="n">sec</span>  <span class="mi">6000</span> <span class="n">datagrams</span> <span class="n">received</span> <span class="n">out</span><span class="o">-</span><span class="n">of</span><span class="o">-</span><span class="n">order</span>
+<span class="p">[</span>  <span class="mi">3</span><span class="p">]</span>  <span class="mf">6.0</span><span class="o">-</span> <span class="mf">7.0</span> <span class="n">sec</span>  <span class="mf">11.2</span> <span class="n">MBytes</span>  <span class="mf">94.1</span> <span class="n">Mbits</span><span class="o">/</span><span class="n">sec</span>   <span class="mf">0.208</span> <span class="n">ms</span>    <span class="mi">0</span><span class="o">/</span> <span class="mi">8000</span> <span class="p">(</span><span class="mi">0</span><span class="o">%</span><span class="p">)</span>
+<span class="p">[</span>  <span class="mi">3</span><span class="p">]</span> <span class="mf">6.00</span><span class="o">-</span><span class="mf">7.00</span> <span class="n">sec</span>  <span class="mi">6000</span> <span class="n">datagrams</span> <span class="n">received</span> <span class="n">out</span><span class="o">-</span><span class="n">of</span><span class="o">-</span><span class="n">order</span>
+<span class="p">[</span>  <span class="mi">3</span><span class="p">]</span>  <span class="mf">7.0</span><span class="o">-</span> <span class="mf">8.0</span> <span class="n">sec</span>  <span class="mf">11.2</span> <span class="n">MBytes</span>  <span class="mf">94.1</span> <span class="n">Mbits</span><span class="o">/</span><span class="n">sec</span>   <span class="mf">0.209</span> <span class="n">ms</span>    <span class="mi">0</span><span class="o">/</span> <span class="mi">8000</span> <span class="p">(</span><span class="mi">0</span><span class="o">%</span><span class="p">)</span>
+<span class="p">[</span>  <span class="mi">3</span><span class="p">]</span> <span class="mf">7.00</span><span class="o">-</span><span class="mf">8.00</span> <span class="n">sec</span>  <span class="mi">6000</span> <span class="n">datagrams</span> <span class="n">received</span> <span class="n">out</span><span class="o">-</span><span class="n">of</span><span class="o">-</span><span class="n">order</span>
+<span class="p">[</span>  <span class="mi">3</span><span class="p">]</span>  <span class="mf">8.0</span><span class="o">-</span> <span class="mf">9.0</span> <span class="n">sec</span>  <span class="mf">11.2</span> <span class="n">MBytes</span>  <span class="mf">94.1</span> <span class="n">Mbits</span><span class="o">/</span><span class="n">sec</span>   <span class="mf">0.206</span> <span class="n">ms</span>    <span class="mi">0</span><span class="o">/</span> <span class="mi">8000</span> <span class="p">(</span><span class="mi">0</span><span class="o">%</span><span class="p">)</span>
+<span class="p">[</span>  <span class="mi">3</span><span class="p">]</span> <span class="mf">8.00</span><span class="o">-</span><span class="mf">9.00</span> <span class="n">sec</span>  <span class="mi">6000</span> <span class="n">datagrams</span> <span class="n">received</span> <span class="n">out</span><span class="o">-</span><span class="n">of</span><span class="o">-</span><span class="n">order</span>
+<span class="p">[</span>  <span class="mi">3</span><span class="p">]</span>  <span class="mf">0.0</span><span class="o">-</span><span class="mf">10.0</span> <span class="n">sec</span>   <span class="mi">112</span> <span class="n">MBytes</span>  <span class="mf">94.1</span> <span class="n">Mbits</span><span class="o">/</span><span class="n">sec</span>   <span class="mf">0.234</span> <span class="n">ms</span>  <span class="mi">135</span><span class="o">/</span><span class="mi">79952</span> <span class="p">(</span><span class="mf">0.17</span><span class="o">%</span><span class="p">)</span>
+<span class="p">[</span>  <span class="mi">3</span><span class="p">]</span> <span class="mf">0.00</span><span class="o">-</span><span class="mf">9.97</span> <span class="n">sec</span>  <span class="mi">59861</span> <span class="n">datagrams</span> <span class="n">received</span> <span class="n">out</span><span class="o">-</span><span class="n">of</span><span class="o">-</span><span class="n">order</span>
+</pre></div>
+</div>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</section>
+</section>
+
+
+           </div>
+          </div>
+
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="../lwip_tcpecho/README.html" class="btn btn-neutral float-left" title="18.1. TCP Echo" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="../../memstress/index.html" class="btn btn-neutral float-right" title="19. memstress" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2020-2022, hpmicro.
+      <span class="lastupdated">Last updated on Jul 01, 2022.
+      </span></p>
+  </div>
+
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

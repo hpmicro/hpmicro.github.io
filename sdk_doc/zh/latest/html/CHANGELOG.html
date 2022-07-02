@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Change Log &mdash; HPM SDK Project Documentation</title>
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="_static/tabs.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/custom.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/tabs.js"></script>
+        <script type="module" src="_static/js/dark-mode-toggle.min.mjs"></script>
+        <script src="_static/js/ga-tracker.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="HPM SDK 概述" href="README_zh.html" />
+    <link rel="prev" title="hpm sdk" href="index_zh.html" />
+  <meta name="color-scheme" content="dark light">
+  
+  <link rel="stylesheet" href="_static/css/light.css" type="text/css" media="(prefers-color-scheme: light)"/>
+  <link rel="stylesheet" href="_static/css/dark.css" type="text/css" media="(prefers-color-scheme: dark)"/>
+
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="index_zh.html">
+            <img src="_static/logo.png" class="logo" alt="Logo"/>
+          </a>
+              <div class="version">
+                latest
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+  
+  <div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="versions">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      <span class="fa fa-book"> HPM SDK Project</span>
+      v: latest
+      <span class="fa fa-caret-down"></span>
+    </span>
+    <div class="rst-other-versions">
+      <dl>
+        <dt>Document Release Versions</dt>
+        
+          <dd>
+            <a onclick="RelativeAddress('/latest/html/index_zh.html')">latest</a>
+          </dd>
+        
+          <dd>
+            <a onclick="RelativeAddress('/0.12.1/html/index_zh.html')">0.12.1</a>
+          </dd>
+        
+      </dl>
+      <dl>
+        <dt>Downloads</dt>
+        
+        <dd><a href="/latest/hpmsdk.pdf">PDF</a></dd>
+      </dl>
+      <dl>
+        <dt>HPMicro</dt>
+          <dd>
+            <a href="https://www.hpmicro.com/">Project Home</a>
+          </dd>
+          <dd>
+            <a href="https://www.hpmicro.com/">SDK</a>
+          </dd>
+          <dd>
+            <a href="https://www.hpmicro.com/">Releases</a>
+          </dd>
+      </dl>
+    </div>
+  </div>
+  <script language="javascript">
+    function RelativeAddress(url1) {
+      var str=window.location.href;
+      window.location.href=str.match(/(\S*)\/(en|zh)/)[0]+url1;
+      
+    }
+  </script>
+  
+              <p class="caption" role="heading"><span class="caption-text">目录</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Change Log</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#id1">[0.12.1] - 2022-07-01:</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#fixed">Fixed:</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#id2">[0.12.0] - 2022-06-30:</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#changed">Changed:</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id3">Fixed:</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#added">Added:</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#id4">[0.11.0] - 2022-05-31:</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id5">Changed:</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id6">Fixed:</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#id7">Added:</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#hpm6300-2022-05-16">[0.10.0_hpm6300] - 2022-05-16:</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id8">Changed:</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id9">Fixed:</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id10">Added:</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#id11">[0.10.0] - 2022-04-30:</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id12">Changed:</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id13">Added:</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id14">Fixed:</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#id15">[0.9.0] - 2022-04-01:</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id16">Changed:</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id17">Added:</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id18">Fixed:</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#id19">[0.8.0] - 2022-03-04:</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id20">Changed:</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id21">Fixed:</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id22">Added:</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#id23">[0.7.3] - 2022-02-23:</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id24">Changed:</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#id25">[0.7.2] - 2022-02-21:</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id26">Changed:</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id27">Fixed:</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#id28">[0.7.1] - 2022-02-13:</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id29">Changed:</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id30">Fixed:</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id31">Added:</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#id32">[0.7.0] - 2022-01-30:</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id33">Changed:</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id34">Fixed:</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id35">Added:</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="README_zh.html">HPM SDK 概述</a></li>
+<li class="toctree-l1"><a class="reference internal" href="README_zh.html#id1">HPM SDK使用说明</a></li>
+<li class="toctree-l1"><a class="reference internal" href="README_zh.html#id5">社区支持</a></li>
+<li class="toctree-l1"><a class="reference internal" href="boards/index_zh.html">HPM 开发板介绍</a></li>
+<li class="toctree-l1"><a class="reference internal" href="samples/index_zh.html">HPM SDK 例程</a></li>
+<li class="toctree-l1"><a class="reference internal" href="doc/src/sdk_doc/README_zh.html">HPM SDK文档生成</a></li>
+</ul>
+
+  
+  <div class="toctree-wrapper compound">
+    <p class="caption"><span class="caption-text">Reference</span></p>
+    <ul>
+      
+      <li class="toctree-l1">
+        <a class="reference internal" onclick="ApiRelativeAddress()">API DOC</a>
+      </li>
+      
+    </ul>
+  </div>
+  <script language="javascript">
+    function ApiRelativeAddress() {
+      var str=window.location.href;
+      window.location.href=str.match(/(\S*)sdk_doc/)[1]+"api_doc/html/index.html";
+      
+    }
+  </script>
+  
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index_zh.html">hpm_sdk readme</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+  <!--  -->
+  
+  
+  
+  
+
+  <li><a href="index_zh.html">Docs</a> &raquo;</li>
+  
+  <li>Change Log</li>
+
+
+  <li class="wy-breadcrumbs-aside">
+    <dark-mode-toggle id="dark-mode-toggle" appearance="toggle" permanent="true"/>
+  </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+  
+    <div class="wy-alert wy-alert-danger">
+     This is the documentation for the latest (main) development branch of
+     HPM SDK. If you are looking for the documentation of previous releases, use
+     the drop-down menu on the left and select the desired version.
+    </div>
+  
+  
+           <div itemprop="articleBody">
+             
+  <section id="change-log">
+<h1>Change Log<a class="headerlink" href="#change-log" title="Permalink to this heading">¶</a></h1>
+<section id="id1">
+<h2>[0.12.1] - 2022-07-01:<a class="headerlink" href="#id1" title="Permalink to this heading">¶</a></h2>
+<p>Main changes since 0.12.0</p>
+<section id="fixed">
+<h3>Fixed:<a class="headerlink" href="#fixed" title="Permalink to this heading">¶</a></h3>
+<ul class="simple">
+<li><p>update lwipopt.h for updated enet driver</p></li>
+</ul>
+</section>
+</section>
+<section id="id2">
+<h2>[0.12.0] - 2022-06-30:<a class="headerlink" href="#id2" title="Permalink to this heading">¶</a></h2>
+<p>Tested with SES 6.32</p>
+<p>Main changes since 0.11.0</p>
+<section id="changed">
+<h3>Changed:<a class="headerlink" href="#changed" title="Permalink to this heading">¶</a></h3>
+<ul class="simple">
+<li><p>boards: hpm6360evk has been renamed to hpm6300evk</p></li>
+<li><p>boards: Use CSR_CYCLE in the clock_delay function</p></li>
+<li><p>soc: hpm_soc.h: include hpm_common.h</p></li>
+<li><p>driver: rename hpm_pmu_drv.c to hpm_pcfg_drv.h</p></li>
+<li><p>driver: spi: change to non-blocking interfaces</p></li>
+<li><p>driver: dma: update driver to adapt to different DMA instance constraints</p></li>
+<li><p>components: enet_phy: update dp83867 driver</p></li>
+<li><p>components: enet_phy: remove rtl8211 driver</p></li>
+<li><p>cmake: enable nano newlib by default</p></li>
+<li><p>cmake: move distclean to the beginning</p></li>
+<li><p>middleware: littlevgl enable PDMA by default</p></li>
+<li><p>middleware: tinyusb: upgrade to 0.13.0</p></li>
+<li><p>samples: tinyusb: device: cdc_msc: adjust buffer size</p></li>
+<li><p>samples: drivers: plic: use gpio toggle count as nested irq</p></li>
+</ul>
+</section>
+<section id="id3">
+<h3>Fixed:<a class="headerlink" href="#id3" title="Permalink to this heading">¶</a></h3>
+<ul class="simple">
+<li><p>drivers: pwm: fix function name inconsistency bug</p></li>
+<li><p>drivers: enet: remove “board.h” in enet driver</p></li>
+<li><p>drivers: clock: Fix bugs in hpm6360 clock driver</p></li>
+<li><p>drivers: clock: returns wrong adc/dac clock in HPM6360</p></li>
+<li><p>drivers: dram: failed to configure 8bit mode.</p></li>
+<li><p>freertos: fix issue about running on core1</p></li>
+<li><p>boards: hpm6300evk pmp_entry set initial value</p></li>
+<li><p>middleware: littlevgl: fix pdma cache op issue</p></li>
+<li><p>middleware: littlevgl: fix doxygen markdown for pdma driver</p></li>
+<li><p>middleware: lvgl: ses: update ram linker.</p></li>
+<li><p>middleware: hpm_math: fix ffa cache size error</p></li>
+<li><p>samples: audio_codec: remove the wrong dependency</p></li>
+<li><p>samples: FATFS demo cannot support write/read if FATFS passes unaligned buffer address</p></li>
+</ul>
+</section>
+<section id="added">
+<h3>Added:<a class="headerlink" href="#added" title="Permalink to this heading">¶</a></h3>
+<ul class="simple">
+<li><p>samples: add memstress and flash stress</p></li>
+<li><p>drivers: clock: add implement common delay function based on mcycle and mcycleh register</p></li>
+<li><p>boards: add hpm6300evk support</p></li>
+<li><p>boards: hpm6750evkmini: motor control support</p></li>
+<li><p>soc: add svd files</p></li>
+<li><p>middleware: lwip: iperf: enable iperf and add udp function</p></li>
+<li><p>samples: lwip: add lwip_iperf</p></li>
+</ul>
+</section>
+</section>
+<section id="id4">
+<h2>[0.11.0] - 2022-05-31:<a class="headerlink" href="#id4" title="Permalink to this heading">¶</a></h2>
+<p>Main changes since 0.10.0-hpm6360-er</p>
+<section id="id5">
+<h3>Changed:<a class="headerlink" href="#id5" title="Permalink to this heading">¶</a></h3>
+<ul class="simple">
+<li><p>readme: change the location of the starting document</p></li>
+<li><p>components: change hal_adc_xx to hpm_adc_xx</p></li>
+<li><p>drivers: update the I2C driver</p></li>
+<li><p>cmake: change default rv_arch to rv32imac</p></li>
+<li><p>cmake: modified in a zephyr-compatible way</p></li>
+<li><p>drivers: uart: redefined struct with zephyr</p></li>
+<li><p>cmake: change soc and board name</p></li>
+<li><p>cmake: ses: support enable ext_dsp in project file.</p></li>
+<li><p>samples/tinyusb/host: optimize the toggle rate of the blinking led</p></li>
+<li><p>samples/tinyusb/device: replace mchtimer with board_timer for led_linking_taskk</p></li>
+<li><p>samples/tinyusb/device: optimize the implement of led_blinking_task</p></li>
+<li><p>soc: update IP header and soc header files</p></li>
+</ul>
+</section>
+<section id="id6">
+<h3>Fixed:<a class="headerlink" href="#id6" title="Permalink to this heading">¶</a></h3>
+<ul class="simple">
+<li><p>samples: motor_ctrl: bldc_block: fix some error</p></li>
+<li><p>middleware: hpm_math: fix andes toolchain compile error</p></li>
+<li><p>middleware: hpm_math: fix libdsp.a error</p></li>
+<li><p>middleware: hpm_math: add ext-dsp for SES</p></li>
+<li><p>samples: openocd_algo: fix func_table placement.</p></li>
+<li><p>boards: hpm6360evk: correct cpu frequency</p></li>
+<li><p>boards: fix warning caused by code irregularities</p></li>
+<li><p>boards: LED status is not the same between hpm6750mini rev-A and rev-B</p></li>
+<li><p>boards: update board_led_write.</p></li>
+</ul>
+</section>
+</section>
+<section id="id7">
+<h2>Added:<a class="headerlink" href="#id7" title="Permalink to this heading">¶</a></h2>
+<ul class="simple">
+<li><p>driver: add spi_setup_dma_transfer() API</p></li>
+<li><p>middleware: hpm_math: add software fft function</p></li>
+<li><p>middleware: hpm_math: add ffa to hpm_math</p></li>
+<li><p>samples: i2c: update the sample b2b</p></li>
+<li><p>samples: hpm_math: add fft_performance demo</p></li>
+<li><p>samples: add SPI DMA sample</p></li>
+<li><p>samples: multicore coremark using debug console only</p></li>
+<li><p>samples: 1588: add ptp v1 master/slave</p></li>
+</ul>
+</section>
+<section id="hpm6300-2022-05-16">
+<h2>[0.10.0_hpm6300] - 2022-05-16:<a class="headerlink" href="#hpm6300-2022-05-16" title="Permalink to this heading">¶</a></h2>
+<p>Main changes since 0.10.0</p>
+<section id="id8">
+<h3>Changed:<a class="headerlink" href="#id8" title="Permalink to this heading">¶</a></h3>
+<ul class="simple">
+<li><p>ip register header file update</p></li>
+<li><p>ses_proj: using generated complete cpu_regs_xml to replace general cpu registers xml</p></li>
+<li><p>drivers: gpiom: move gpiom_gpio_t into hpm_gpiom_src.h</p></li>
+<li><p>drivers: update the enet driver</p></li>
+<li><p>samples: dram: change sdram test address in dma demo</p></li>
+<li><p>samples: drivers: mbx: exclude flash targets for core0 as well.</p></li>
+<li><p>samples: lwip: update ethernetif.c</p></li>
+</ul>
+</section>
+<section id="id9">
+<h3>Fixed:<a class="headerlink" href="#id9" title="Permalink to this heading">¶</a></h3>
+<ul class="simple">
+<li><p>drivers: ptpc: update ptpc_init_timer_with_initial.</p></li>
+<li><p>drivers: can: bug fix and update</p></li>
+<li><p>soc: correct vector table inclusion and swi name</p></li>
+<li><p>env.sh: fix HPM_SDK_BASE setting problem with msys.</p></li>
+<li><p>samples: sha256_example: failed to run case 13 and 14 with gcc.</p></li>
+</ul>
+</section>
+<section id="id10">
+<h3>Added:<a class="headerlink" href="#id10" title="Permalink to this heading">¶</a></h3>
+<ul class="simple">
+<li><p>soc: add HPM6360 support</p></li>
+<li><p>drivers: add ffa, pllctlv2, dac</p></li>
+<li><p>boards: add hpm6360evk support</p></li>
+<li><p>components: add adcx module</p></li>
+<li><p>components/enet_phy: add the RTL8201 driver</p></li>
+<li><p>samples: drivers: dac, ffa</p></li>
+<li><p>samples: rgb_red: add evkmini ver B support</p></li>
+</ul>
+</section>
+</section>
+<section id="id11">
+<h2>[0.10.0] - 2022-04-30:<a class="headerlink" href="#id11" title="Permalink to this heading">¶</a></h2>
+<p>Main changes since 0.9.0</p>
+<section id="id12">
+<h3>Changed:<a class="headerlink" href="#id12" title="Permalink to this heading">¶</a></h3>
+<ul class="simple">
+<li><p>drivers: gptmr: split irq enable/disable interface</p></li>
+<li><p>drivers: can: 155 Update SJW setting in CAN driver</p></li>
+<li><p>soc: HPM6750: rename safe stack symbol in link script</p></li>
+<li><p>components: debug_console: wait uart tx flag on writing.</p></li>
+</ul>
+</section>
+<section id="id13">
+<h3>Added:<a class="headerlink" href="#id13" title="Permalink to this heading">¶</a></h3>
+<ul class="simple">
+<li><p>drivers: enet: add 1588 support</p></li>
+<li><p>drivers: can: Add TDC support</p></li>
+<li><p>drivers: mchtmr: add counter init API.</p></li>
+<li><p>drivers: dma: add dma_disable_channel() API</p></li>
+<li><p>middleware: add wav decoder</p></li>
+<li><p>samples: lwip: add ptp demos</p></li>
+<li><p>samples: tinyusb: add msc, cdc demo</p></li>
+<li><p>samples: audio_codec: add wav player demo</p></li>
+<li><p>samples: add tinyuf2 initial support</p></li>
+<li><p>samples: add initial uart dma rx idle demo</p></li>
+</ul>
+</section>
+<section id="id14">
+<h3>Fixed:<a class="headerlink" href="#id14" title="Permalink to this heading">¶</a></h3>
+<ul class="simple">
+<li><p>soc: HPM6750: sysctl: fix cpu lp mode API.</p></li>
+<li><p>drivers: uart: correct baudrate calculation.</p></li>
+<li><p>drivers: usb: fix: no response in device mode when a USB cable is pluged out</p></li>
+<li><p>boards: correct the pin setting related to USB</p></li>
+</ul>
+</section>
+</section>
+<section id="id15">
+<h2>[0.9.0] - 2022-04-01:<a class="headerlink" href="#id15" title="Permalink to this heading">¶</a></h2>
+<p>Main changes since 0.8.0</p>
+<section id="id16">
+<h3>Changed:<a class="headerlink" href="#id16" title="Permalink to this heading">¶</a></h3>
+<ul class="simple">
+<li><p>drivers: update WDG, UART, DMA, DMAMUX driver</p></li>
+<li><p>drivers: enet remove enet_intf_selection</p></li>
+<li><p>drivers: can: support configure bit timing via low-level bit timing parameters</p></li>
+<li><p>drivers: optimize gpio driver</p></li>
+<li><p>samples: exclude flash targets for mbx core1</p></li>
+<li><p>samples: adjust SES project setting for coremark</p></li>
+<li><p>samples: jpeg: update and integration jpeg decode samples</p></li>
+<li><p>ses: use relpath for linker script in project file</p></li>
+<li><p>ses: add HPM device name in generated project file</p></li>
+<li><p>soc: HPM6750: add an interface selection api</p></li>
+</ul>
+</section>
+<section id="id17">
+<h3>Added:<a class="headerlink" href="#id17" title="Permalink to this heading">¶</a></h3>
+<ul class="simple">
+<li><p>soc: HPM6750: add ram linker for core1</p></li>
+<li><p>ses: support to use Andes toolchain</p></li>
+<li><p>middleware: add hpm_math (replacing hpm_dsp)</p></li>
+<li><p>samples: add lwip httpd</p></li>
+<li><p>drivers: add section and alignment general instructions in hpm_common.h</p></li>
+</ul>
+</section>
+<section id="id18">
+<h3>Fixed:<a class="headerlink" href="#id18" title="Permalink to this heading">¶</a></h3>
+<ul class="simple">
+<li><p>boards: hpm6750evk: fix bldc adc pinmux error</p></li>
+<li><p>boards : hpm6750evk : pinmux : fix spi init pins error</p></li>
+<li><p>samples: sdp: fix non-cacheable data initialization issue</p></li>
+<li><p>samples: littlevgl: fix wrong picture patch in README</p></li>
+</ul>
+</section>
+</section>
+<section id="id19">
+<h2>[0.8.0] - 2022-03-04:<a class="headerlink" href="#id19" title="Permalink to this heading">¶</a></h2>
+<p>All changes since 0.7.3</p>
+<section id="id20">
+<h3>Changed:<a class="headerlink" href="#id20" title="Permalink to this heading">¶</a></h3>
+<ul class="simple">
+<li><p>rename middleware/sdmmc to middleware/hpm_sdmmc</p></li>
+<li><p>place isr into .isr_vector section for irq non-vector mode</p></li>
+<li><p>change csr functions to support llvm</p></li>
+</ul>
+</section>
+<section id="id21">
+<h3>Fixed:<a class="headerlink" href="#id21" title="Permalink to this heading">¶</a></h3>
+<ul class="simple">
+<li><p>ses: fix issue in register xml</p></li>
+<li><p>freertor: fix trap handler at non-vector mode</p></li>
+<li><p>sdxc: fix software reset issue</p></li>
+</ul>
+</section>
+<section id="id22">
+<h3>Added:<a class="headerlink" href="#id22" title="Permalink to this heading">¶</a></h3>
+<ul class="simple">
+<li><p>add sdk doc</p></li>
+<li><p>add more sample doc</p></li>
+<li><p>add multicore demo</p></li>
+<li><p>i2c/uart: add dma support</p></li>
+<li><p>add tensorflow lite for microcontroller</p></li>
+</ul>
+</section>
+</section>
+<section id="id23">
+<h2>[0.7.3] - 2022-02-23:<a class="headerlink" href="#id23" title="Permalink to this heading">¶</a></h2>
+<p>All changes since 0.7.2</p>
+<section id="id24">
+<h3>Changed:<a class="headerlink" href="#id24" title="Permalink to this heading">¶</a></h3>
+<ul class="simple">
+<li><p>freertos: change exception handling</p></li>
+</ul>
+</section>
+</section>
+<section id="id25">
+<h2>[0.7.2] - 2022-02-21:<a class="headerlink" href="#id25" title="Permalink to this heading">¶</a></h2>
+<p>All changes since 0.7.1</p>
+<section id="id26">
+<h3>Changed:<a class="headerlink" href="#id26" title="Permalink to this heading">¶</a></h3>
+<ul class="simple">
+<li><p>freertos: change freertos irq stack definition, passed in CMakeLists.txt, defined in linker</p></li>
+<li><p>soc: hpm6750: add DISABLE_IRQ_PREEMPTIVE to check if it needs to enable irq preemption</p></li>
+</ul>
+</section>
+<section id="id27">
+<h3>Fixed:<a class="headerlink" href="#id27" title="Permalink to this heading">¶</a></h3>
+<ul class="simple">
+<li><p>freertos: disable irq preemption</p></li>
+</ul>
+</section>
+</section>
+<section id="id28">
+<h2>[0.7.1] - 2022-02-13:<a class="headerlink" href="#id28" title="Permalink to this heading">¶</a></h2>
+<p>All changes since 0.7.0</p>
+<section id="id29">
+<h3>Changed:<a class="headerlink" href="#id29" title="Permalink to this heading">¶</a></h3>
+<ul class="simple">
+<li><p>drivers: adc12: update adc12_prd_config_t</p></li>
+<li><p>samples: can: update case with interrupt and communication between two boards</p></li>
+</ul>
+</section>
+<section id="id30">
+<h3>Fixed:<a class="headerlink" href="#id30" title="Permalink to this heading">¶</a></h3>
+<ul class="simple">
+<li><p>drivers: can: fix blocking transcation issue</p></li>
+<li><p>samples: mbx: support run this example in SES</p></li>
+<li><p>SES: startup: add fpu enable if abi is set to enable hw fp</p></li>
+</ul>
+</section>
+<section id="id31">
+<h3>Added:<a class="headerlink" href="#id31" title="Permalink to this heading">¶</a></h3>
+<ul class="simple">
+<li><p>samples: multicore: add flash based multicore example</p></li>
+<li><p>drivers: can: add apis to recvieve message for non-blocking use</p></li>
+</ul>
+</section>
+</section>
+<section id="id32">
+<h2>[0.7.0] - 2022-01-30:<a class="headerlink" href="#id32" title="Permalink to this heading">¶</a></h2>
+<p>All changes since 0.6.2</p>
+<section id="id33">
+<h3>Changed:<a class="headerlink" href="#id33" title="Permalink to this heading">¶</a></h3>
+<ul class="simple">
+<li><p>update default CPU frequency to 816MHz from 648MHz</p></li>
+<li><p>update the ip headers</p></li>
+<li><p>drivers: gpio: replace gpio_XXX_pins with gpio_XXX_port</p></li>
+<li><p>drivers: gpio: remove pin level enum definition</p></li>
+<li><p>drivers: i2s: driver update to remove mclk_div</p></li>
+<li><p>drivers: ptpc: update driver</p></li>
+<li><p>drivers: common: update get first set bit API</p></li>
+<li><p>drivers: uart: split one enable with parameter into enable and disable interfaces</p></li>
+<li><p>drivers: pwm: change name of output_channel config API</p></li>
+<li><p>drivers: trgm: split separate API to enable/disable io output</p></li>
+<li><p>soc: HPM6750: initialize noncacheable data in startup</p></li>
+<li><p>soc: HPM6750: l1c: update fence.i call</p></li>
+<li><p>samples: hello_world: add LED flashing</p></li>
+<li><p>samples: littlevgl: remove lvgl example</p></li>
+</ul>
+</section>
+<section id="id34">
+<h3>Fixed:<a class="headerlink" href="#id34" title="Permalink to this heading">¶</a></h3>
+<ul class="simple">
+<li><p>hpm6750evkmini: correct refresh cycle number of sdram</p></li>
+<li><p>hpm6750evkmini: Fix the SDRAM memory range issue in flash_sdram_xip linker file</p></li>
+<li><p>SES: remove no_relax option for linker, since segger has provide a patch to its ld for ses v6.10.</p></li>
+<li><p>drivers: gpio: fix read pin issue:</p></li>
+<li><p>drivers: usb: fix usb disconnection under linux environment</p></li>
+<li><p>drivers: sdxc: Fixed the compatibility issue on different SD/eMMC cards in the sdcard_fatfs demo</p></li>
+<li><p>drivers: gptmr: incorrect DMAEN configuration condition</p></li>
+<li><p>drivers: gptmr: clear CNTRST bit after set.</p></li>
+<li><p>SDK_DECLARE_EXT_ISR_M cannot work in the c++ file</p></li>
+<li><p>FreeRTOS: fix ISR_STACK setting</p></li>
+<li><p>components: touch: gt911: fix gpio write pin call</p></li>
+</ul>
+</section>
+<section id="id35">
+<h3>Added:<a class="headerlink" href="#id35" title="Permalink to this heading">¶</a></h3>
+<ul class="simple">
+<li><p>SEG: add register definition file in generated embedded studio project</p></li>
+<li><p>samples: drivers: gpiom: Add example to demonstrate gpiom’s function</p></li>
+<li><p>drivers: common: add macro to put data into noncacheable sections</p></li>
+<li><p>middleware: integrate lwip</p></li>
+</ul>
+</section>
+</section>
+</section>
+
+
+           </div>
+          </div>
+
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="index_zh.html" class="btn btn-neutral float-left" title="hpm sdk" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="README_zh.html" class="btn btn-neutral float-right" title="HPM SDK 概述" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2020-2022, hpmicro.
+      <span class="lastupdated">Last updated on Jul 01, 2022.
+      </span></p>
+  </div>
+
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
