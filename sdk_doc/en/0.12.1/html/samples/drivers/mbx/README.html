@@ -5,31 +5,31 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>6.33. MBX &mdash; HPM SDK Project Documentation</title>
-      <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
-      <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
-      <link rel="stylesheet" href="../../../_static/tabs.css" type="text/css" />
-      <link rel="stylesheet" href="../../../_static/css/custom.css" type="text/css" />
+      <link rel="stylesheet" href="../../../static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../../static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../../../static/tabs.css" type="text/css" />
+      <link rel="stylesheet" href="../../../static/css/custom.css" type="text/css" />
   <!--[if lt IE 9]>
     <script src="../../../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-        <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js"></script>
-        <script src="../../../_static/jquery.js"></script>
-        <script src="../../../_static/underscore.js"></script>
-        <script src="../../../_static/_sphinx_javascript_frameworks_compat.js"></script>
-        <script src="../../../_static/doctools.js"></script>
-        <script src="../../../_static/tabs.js"></script>
+        <script data-url_root="../../../" id="documentation_options" src="../../../static/documentation_options.js"></script>
+        <script src="../../../static/jquery.js"></script>
+        <script src="../../../static/underscore.js"></script>
+        <script src="../../../static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="../../../static/doctools.js"></script>
+        <script src="../../../static/tabs.js"></script>
         <script type="module" src="../../../_static/js/dark-mode-toggle.min.mjs"></script>
         <script src="../../../_static/js/ga-tracker.js"></script>
-    <script src="../../../_static/js/theme.js"></script>
+    <script src="../../../static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../../genindex.html" />
     <link rel="search" title="Search" href="../../../search.html" />
     <link rel="next" title="6.34. l1 cache" href="../l1c/README.html" />
     <link rel="prev" title="6.32. PTPC" href="../ptpc/README.html" />
   <meta name="color-scheme" content="dark light">
   
-  <link rel="stylesheet" href="../../../_static/css/light.css" type="text/css" media="(prefers-color-scheme: light)"/>
-  <link rel="stylesheet" href="../../../_static/css/dark.css" type="text/css" media="(prefers-color-scheme: dark)"/>
+  <link rel="stylesheet" href="../../../static/css/light.css" type="text/css" media="(prefers-color-scheme: light)"/>
+  <link rel="stylesheet" href="../../../static/css/dark.css" type="text/css" media="(prefers-color-scheme: dark)"/>
 
 </head>
 
@@ -39,7 +39,7 @@
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
             <a href="../../../index.html">
-            <img src="../../../_static/logo.png" class="logo" alt="Logo"/>
+            <img src="../../../static/logo.png" class="logo" alt="Logo"/>
           </a>
               <div class="version">
                 0.12.1-0
@@ -257,33 +257,33 @@
 <p>To run this example, a dual core debug script and two gdb client will be needed.</p>
 <ul class="simple">
 <li><p>start openocd with the config file for dual core, then two gdbserver will listen to two ports for each core
-<img alt="dualcore_openocd" src="../../../_images/mbx_dualcore_openocd.png" /></p></li>
+<img alt="dualcore_openocd" src="../../../images/mbx_dualcore_openocd.png" /></p></li>
 <li><p>generate and build projects for each core using ninja</p>
 <ul>
 <li><p>generate and build project for core0 with ninja
-<img alt="build_core0" src="../../../_images/mbx_gen_proj_build_core0.png" /></p></li>
+<img alt="build_core0" src="../../../images/mbx_gen_proj_build_core0.png" /></p></li>
 <li><p>generate and build project for core1 with ninja
-<img alt="build_core1" src="../../../_images/mbx_gen_proj_build_core1.png" /></p></li>
+<img alt="build_core1" src="../../../images/mbx_gen_proj_build_core1.png" /></p></li>
 </ul>
 </li>
 <li><p>start two gdb clients and connect two each port</p>
 <ul>
 <li><p>connect and load application for core0 to port 3333
-<img alt="gdb_core0" src="../../../_images/mbx_gdb_load_core0.png" /></p></li>
+<img alt="gdb_core0" src="../../../images/mbx_gdb_load_core0.png" /></p></li>
 <li><p>connect and load application for core1 to port 3334
-<img alt="gdb_core1" src="../../../_images/mbx_gdb_load_core1.png" /></p></li>
+<img alt="gdb_core1" src="../../../images/mbx_gdb_load_core1.png" /></p></li>
 </ul>
 </li>
 <li><p>start console application connecting to two consoles
-<img alt="console" src="../../../_images/mbx_console.png" /></p></li>
+<img alt="console" src="../../../images/mbx_console.png" /></p></li>
 <li><p>start to run application for each core, following content should be shown on debug console</p>
 <ul>
 <li><p>for core0:
-<img alt="core0_console_output" src="../../../_images/mbx_core0_console_output.png" /></p></li>
+<img alt="core0_console_output" src="../../../images/mbx_core0_console_output.png" /></p></li>
 <li><p>for core1:
-<img alt="core1_console_output" src="../../../_images/mbx_core1_console_output.png" /></p></li>
+<img alt="core1_console_output" src="../../../images/mbx_core1_console_output.png" /></p></li>
 <li><p>once core1 application starts, core1 will receive messages from core0 then send them back, then in the console of core0:
-<img alt="core0_console_output2" src="../../../_images/mbx_core0_console_output2.png" /></p></li>
+<img alt="core0_console_output2" src="../../../images/mbx_core0_console_output2.png" /></p></li>
 </ul>
 </li>
 </ul>

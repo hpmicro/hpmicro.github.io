@@ -5,31 +5,31 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>6.33. MBX &mdash; HPM SDK Project Documentation</title>
-      <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
-      <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
-      <link rel="stylesheet" href="../../../_static/tabs.css" type="text/css" />
-      <link rel="stylesheet" href="../../../_static/css/custom.css" type="text/css" />
+      <link rel="stylesheet" href="../../../static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../../static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../../../static/tabs.css" type="text/css" />
+      <link rel="stylesheet" href="../../../static/css/custom.css" type="text/css" />
   <!--[if lt IE 9]>
     <script src="../../../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-        <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js"></script>
-        <script src="../../../_static/jquery.js"></script>
-        <script src="../../../_static/underscore.js"></script>
-        <script src="../../../_static/_sphinx_javascript_frameworks_compat.js"></script>
-        <script src="../../../_static/doctools.js"></script>
-        <script src="../../../_static/tabs.js"></script>
+        <script data-url_root="../../../" id="documentation_options" src="../../../static/documentation_options.js"></script>
+        <script src="../../../static/jquery.js"></script>
+        <script src="../../../static/underscore.js"></script>
+        <script src="../../../static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="../../../static/doctools.js"></script>
+        <script src="../../../static/tabs.js"></script>
         <script type="module" src="../../../_static/js/dark-mode-toggle.min.mjs"></script>
         <script src="../../../_static/js/ga-tracker.js"></script>
-    <script src="../../../_static/js/theme.js"></script>
+    <script src="../../../static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../../genindex.html" />
     <link rel="search" title="Search" href="../../../search.html" />
     <link rel="next" title="6.34. 一级高速缓存" href="../l1c/README_zh.html" />
     <link rel="prev" title="6.32. PTPC" href="../ptpc/README_zh.html" />
   <meta name="color-scheme" content="dark light">
   
-  <link rel="stylesheet" href="../../../_static/css/light.css" type="text/css" media="(prefers-color-scheme: light)"/>
-  <link rel="stylesheet" href="../../../_static/css/dark.css" type="text/css" media="(prefers-color-scheme: dark)"/>
+  <link rel="stylesheet" href="../../../static/css/light.css" type="text/css" media="(prefers-color-scheme: light)"/>
+  <link rel="stylesheet" href="../../../static/css/dark.css" type="text/css" media="(prefers-color-scheme: dark)"/>
 
 </head>
 
@@ -39,7 +39,7 @@
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
             <a href="../../../index_zh.html">
-            <img src="../../../_static/logo.png" class="logo" alt="Logo"/>
+            <img src="../../../static/logo.png" class="logo" alt="Logo"/>
           </a>
               <div class="version">
                 0.12.1-0
@@ -257,33 +257,33 @@
 <p>运行此程序，需要使用双核调试脚本，并需要两个gdb客户端分别对Core 0和Core 1进行调试</p>
 <ul class="simple">
 <li><p>使用双核调试脚本启动openocd，此时可以看到gdb server将会为两个核分别开启一个端口
-<img alt="dualcore_openocd" src="../../../_images/mbx_dualcore_openocd.png" /></p></li>
+<img alt="dualcore_openocd" src="../../../images/mbx_dualcore_openocd.png" /></p></li>
 <li><p>为每个核生成工程，使用ninja编译工程</p>
 <ul>
 <li><p>Core 0：
-<img alt="build_core0" src="../../../_images/mbx_gen_proj_build_core0.png" /></p></li>
+<img alt="build_core0" src="../../../images/mbx_gen_proj_build_core0.png" /></p></li>
 <li><p>Core 1:
-<img alt="build_core1" src="../../../_images/mbx_gen_proj_build_core1.png" /></p></li>
+<img alt="build_core1" src="../../../images/mbx_gen_proj_build_core1.png" /></p></li>
 </ul>
 </li>
 <li><p>启动两个gdb client连接gdb server</p>
 <ul>
 <li><p>为Core 0将gdb client连接到端口3333
-<img alt="gdb_core0" src="../../../_images/mbx_gdb_load_core0.png" /></p></li>
+<img alt="gdb_core0" src="../../../images/mbx_gdb_load_core0.png" /></p></li>
 <li><p>为Core 1将gdb client连接到端口3334
-<img alt="gdb_core1" src="../../../_images/mbx_gdb_load_core1.png" /></p></li>
+<img alt="gdb_core1" src="../../../images/mbx_gdb_load_core1.png" /></p></li>
 </ul>
 </li>
 <li><p>启动串口工具，分别连接到Core 0和Core 1两个调试串口
-<img alt="console" src="../../../_images/mbx_console.png" /></p></li>
+<img alt="console" src="../../../images/mbx_console.png" /></p></li>
 <li><p>在gdb中启动示例程序</p>
 <ul>
 <li><p>Core 0:
-<img alt="core0_console_output" src="../../../_images/mbx_core0_console_output.png" /></p></li>
+<img alt="core0_console_output" src="../../../images/mbx_core0_console_output.png" /></p></li>
 <li><p>Core 1:
-<img alt="core1_console_output" src="../../../_images/mbx_core1_console_output.png" /></p></li>
+<img alt="core1_console_output" src="../../../images/mbx_core1_console_output.png" /></p></li>
 <li><p>一旦Core1程序启动之后, Core 1将会将从Core 0接收到的信息返回给Core 0，测试将在Core 0的调试串口将可以看到:
-<img alt="core0_console_output2" src="../../../_images/mbx_core0_console_output2.png" /></p></li>
+<img alt="core0_console_output2" src="../../../images/mbx_core0_console_output2.png" /></p></li>
 </ul>
 </li>
 </ul>

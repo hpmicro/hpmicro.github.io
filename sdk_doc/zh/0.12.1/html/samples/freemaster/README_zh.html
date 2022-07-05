@@ -5,29 +5,29 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Freemaster &mdash; HPM SDK Project Documentation</title>
-      <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
-      <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
-      <link rel="stylesheet" href="../../_static/tabs.css" type="text/css" />
-      <link rel="stylesheet" href="../../_static/css/custom.css" type="text/css" />
+      <link rel="stylesheet" href="../../static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../../static/tabs.css" type="text/css" />
+      <link rel="stylesheet" href="../../static/css/custom.css" type="text/css" />
   <!--[if lt IE 9]>
     <script src="../../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
-        <script src="../../_static/jquery.js"></script>
-        <script src="../../_static/underscore.js"></script>
-        <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
-        <script src="../../_static/doctools.js"></script>
-        <script src="../../_static/tabs.js"></script>
+        <script data-url_root="../../" id="documentation_options" src="../../static/documentation_options.js"></script>
+        <script src="../../static/jquery.js"></script>
+        <script src="../../static/underscore.js"></script>
+        <script src="../../static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="../../static/doctools.js"></script>
+        <script src="../../static/tabs.js"></script>
         <script type="module" src="../../_static/js/dark-mode-toggle.min.mjs"></script>
         <script src="../../_static/js/ga-tracker.js"></script>
-    <script src="../../_static/js/theme.js"></script>
+    <script src="../../static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
   <meta name="color-scheme" content="dark light">
   
-  <link rel="stylesheet" href="../../_static/css/light.css" type="text/css" media="(prefers-color-scheme: light)"/>
-  <link rel="stylesheet" href="../../_static/css/dark.css" type="text/css" media="(prefers-color-scheme: dark)"/>
+  <link rel="stylesheet" href="../../static/css/light.css" type="text/css" media="(prefers-color-scheme: light)"/>
+  <link rel="stylesheet" href="../../static/css/dark.css" type="text/css" media="(prefers-color-scheme: dark)"/>
 
 </head>
 
@@ -37,7 +37,7 @@
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
             <a href="../../index_zh.html">
-            <img src="../../_static/logo.png" class="logo" alt="Logo"/>
+            <img src="../../static/logo.png" class="logo" alt="Logo"/>
           </a>
               <div class="version">
                 0.12.1-0
@@ -197,13 +197,13 @@
 <h2>运行现象<a class="headerlink" href="#id3" title="Permalink to this heading">¶</a></h2>
 <ul>
 <li><p>确保你已经成功编译了工程，并已经生成elf格式文件</p></li>
-<li><p>在工程目录下找到<a class="reference download internal" download="" href="../../_downloads/dd5396c10ea86fc47390b2dc0e10cd29/freemaster.pmpx"><span class="xref download myst">freemaster.pmpx</span></a>的文件并双击打开</p></li>
+<li><p>在工程目录下找到<a class="reference download internal" download="" href="../../downloads/dd5396c10ea86fc47390b2dc0e10cd29/freemaster.pmpx"><span class="xref download myst">freemaster.pmpx</span></a>的文件并双击打开</p></li>
 <li><p>在<strong>freemaster</strong>中加入编译生成的elf文件</p>
 <ul>
 <li><p>如果使用gnu-gcc或者nds-gcc编译，请使用如下方式配置：</p>
 <ul>
 <li><p>点击 Project-&gt;Options 可以出现下图，按照下图所示顺序和内容进行配置：</p>
-<p><img alt="image-1" src="../../_images/freemaster_load_elf.jpg" /></p>
+<p><img alt="image-1" src="../../images/freemaster_load_elf.jpg" /></p>
 </li>
 </ul>
 </li>
@@ -211,7 +211,7 @@
 <p><strong>注意: 这里需要修改Default symbol载入的文件格式为map格式</strong></p>
 <ul>
 <li><p>打开配置File format的下拉列表并点击，如下图：</p>
-<p><img alt="image-2" src="../../_images/freemaster_cfg_map_1.jpg" /></p>
+<p><img alt="image-2" src="../../images/freemaster_cfg_map_1.jpg" /></p>
 </li>
 <li><p>然后按照如下内容进行配置，下文列出代码，方便拷贝</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">HPM_SEGGER_MAP</span>
@@ -221,12 +221,12 @@
 </li>
 </ul>
 <p>配置后应当如图所示：</p>
-<p><img alt="image-3" src="../../_images/freemaster_cfg_map_2.jpg" /></p>
+<p><img alt="image-3" src="../../images/freemaster_cfg_map_2.jpg" /></p>
 </li>
 </ul>
 </li>
 <li><p><strong>freemaster</strong>选择正确的串口，点击 Project-&gt;Options-&gt;Comm 并按照下图进行配置</p>
-<p><img alt="image-4" src="../../_images/freemaster_cfg_com.jpg" /></p>
+<p><img alt="image-4" src="../../images/freemaster_cfg_com.jpg" /></p>
 </li>
 <li><p>通过<strong>freemaster</strong>观察变量变化</p>
 <ol class="arabic simple">
@@ -235,7 +235,7 @@
 <li><p>修改<code class="docutils literal notranslate"><span class="pre">var32inc</span></code>可以观测到图像斜率变化</p></li>
 </ol>
 <p>可以参考下图进行操作：</p>
-<p><img alt="image-5" src="../../_images/freemaster_demo_run.png" /></p>
+<p><img alt="image-5" src="../../images/freemaster_demo_run.png" /></p>
 </li>
 <li><p>可以通过双击上图区域3的空白行自行添加变量</p></li>
 </ul>
