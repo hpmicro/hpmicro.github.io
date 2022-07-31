@@ -12,6 +12,15 @@ var hpm__usb__drv_8h =
       [ "usb_dir_in", "group__usb__interface.html#ggac8a76acd5a4f562121857c3b5fa12f62a7e072c1670e0569278bf13f7254468b4", null ],
       [ "usb_dir_in_mask", "group__usb__interface.html#ggac8a76acd5a4f562121857c3b5fa12f62a221cb59897a7fb73e55c7da15e555fd5", null ]
     ] ],
+    [ "usb_line_state_t", "group__usb__interface.html#ga685cf8597bcb51d5290f93fedb57d948", [
+      [ "usb_line_state0", "group__usb__interface.html#gga685cf8597bcb51d5290f93fedb57d948abe4875891a55ad4af5e1835150267b20", null ],
+      [ "usb_line_state1", "group__usb__interface.html#gga685cf8597bcb51d5290f93fedb57d948a0bec168a8e4b7ff9d58a23b3f6f85048", null ],
+      [ "usb_line_state2", "group__usb__interface.html#gga685cf8597bcb51d5290f93fedb57d948a38e6adc51df2b4901e16260ed31c4a56", null ]
+    ] ],
+    [ "usb_transceiver_t", "group__usb__interface.html#gabb913c906ebdab67d51368a0d79d4f76", [
+      [ "usb_tran_parallel", "group__usb__interface.html#ggabb913c906ebdab67d51368a0d79d4f76ae4d9da7a25dfe8f360dd05e403e53df0", null ],
+      [ "usb_tran_serial", "group__usb__interface.html#ggabb913c906ebdab67d51368a0d79d4f76a5b1d81d437dcc85e4f221870a21eb947", null ]
+    ] ],
     [ "usb_xfer_type_t", "group__usb__interface.html#gad74e07f65d6e7c0bd897ffeffedbd0c9", [
       [ "usb_xfer_control", "group__usb__interface.html#ggad74e07f65d6e7c0bd897ffeffedbd0c9ae1c42deb77d05e7eb5bfdd07572a499d", null ],
       [ "usb_xfer_isochronous", "group__usb__interface.html#ggad74e07f65d6e7c0bd897ffeffedbd0c9a74b1e326fd6b9902b3e1087ad5e1116e", null ],

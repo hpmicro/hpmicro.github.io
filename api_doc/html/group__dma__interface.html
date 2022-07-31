@@ -241,9 +241,18 @@ Functions</h2></td></tr>
 <tr class="memitem:ga039e493f1eaf6f489f6623d2f8fe53fb"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__dma__interface.html#ga039e493f1eaf6f489f6623d2f8fe53fb">dma_has_linked_pointer_configured</a> (<a class="el" href="structDMA__Type.html">DMA_Type</a> *ptr, uint32_t ch_index)</td></tr>
 <tr class="memdesc:ga039e493f1eaf6f489f6623d2f8fe53fb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if linked pointer has been configured.  <a href="group__dma__interface.html#ga039e493f1eaf6f489f6623d2f8fe53fb">More...</a><br /></td></tr>
 <tr class="separator:ga039e493f1eaf6f489f6623d2f8fe53fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gad1cc48363010c353a4254301ecdcee1b"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="group__common__interface.html#ga087efae82a4b174a0363363d9d5ece19">hpm_stat_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__dma__interface.html#gad1cc48363010c353a4254301ecdcee1b">dma_check_transfer_status</a> (<a class="el" href="structDMA__Type.html">DMA_Type</a> *ptr, uint8_t ch_index)</td></tr>
-<tr class="memdesc:gad1cc48363010c353a4254301ecdcee1b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check transfer status.  <a href="group__dma__interface.html#gad1cc48363010c353a4254301ecdcee1b">More...</a><br /></td></tr>
-<tr class="separator:gad1cc48363010c353a4254301ecdcee1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac04beeabb4ee9071ea056c86dd3e6bf9"><td class="memItemLeft" align="right" valign="top">static uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__dma__interface.html#gac04beeabb4ee9071ea056c86dd3e6bf9">dma_check_transfer_status</a> (<a class="el" href="structDMA__Type.html">DMA_Type</a> *ptr, uint8_t ch_index)</td></tr>
+<tr class="memdesc:gac04beeabb4ee9071ea056c86dd3e6bf9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check transfer status.  <a href="group__dma__interface.html#gac04beeabb4ee9071ea056c86dd3e6bf9">More...</a><br /></td></tr>
+<tr class="separator:gac04beeabb4ee9071ea056c86dd3e6bf9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa9c3b81c8228a1c2f029b96d30599a29"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__dma__interface.html#gaa9c3b81c8228a1c2f029b96d30599a29">dma_enable_channel_interrupt</a> (<a class="el" href="structDMA__Type.html">DMA_Type</a> *ptr, uint8_t ch_index, int32_t interrupt_mask)</td></tr>
+<tr class="memdesc:gaa9c3b81c8228a1c2f029b96d30599a29"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable DMA Channel interrupt.  <a href="group__dma__interface.html#gaa9c3b81c8228a1c2f029b96d30599a29">More...</a><br /></td></tr>
+<tr class="separator:gaa9c3b81c8228a1c2f029b96d30599a29"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga815c97886bac31930f00eac312183af3"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__dma__interface.html#ga815c97886bac31930f00eac312183af3">dma_disable_channel_interrupt</a> (<a class="el" href="structDMA__Type.html">DMA_Type</a> *ptr, uint8_t ch_index, int32_t interrupt_mask)</td></tr>
+<tr class="memdesc:ga815c97886bac31930f00eac312183af3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Disable DMA Channel interrupt.  <a href="group__dma__interface.html#ga815c97886bac31930f00eac312183af3">More...</a><br /></td></tr>
+<tr class="separator:ga815c97886bac31930f00eac312183af3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga745d72153480ef961132c8ea99874e5e"><td class="memItemLeft" align="right" valign="top">static uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__dma__interface.html#ga745d72153480ef961132c8ea99874e5e">dma_check_channel_interrupt_mask</a> (<a class="el" href="structDMA__Type.html">DMA_Type</a> *ptr, uint8_t ch_index)</td></tr>
+<tr class="memdesc:ga745d72153480ef961132c8ea99874e5e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check Channel interrupt master.  <a href="group__dma__interface.html#ga745d72153480ef961132c8ea99874e5e">More...</a><br /></td></tr>
+<tr class="separator:ga745d72153480ef961132c8ea99874e5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga271df872d11a113e6cd90e3caaf351ea"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__dma__interface.html#ga271df872d11a113e6cd90e3caaf351ea">dma_clear_irq_status</a> (<a class="el" href="structDMA__Type.html">DMA_Type</a> *ptr, uint32_t mask)</td></tr>
 <tr class="memdesc:ga271df872d11a113e6cd90e3caaf351ea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get clear IRQ status.  <a href="group__dma__interface.html#ga271df872d11a113e6cd90e3caaf351ea">More...</a><br /></td></tr>
 <tr class="separator:ga271df872d11a113e6cd90e3caaf351ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1100,6 +1109,54 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="ga745d72153480ef961132c8ea99874e5e" name="ga745d72153480ef961132c8ea99874e5e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga745d72153480ef961132c8ea99874e5e">&#9670;&nbsp;</a></span>dma_check_channel_interrupt_mask()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static uint32_t dma_check_channel_interrupt_mask </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structDMA__Type.html">DMA_Type</a> *&#160;</td>
+          <td class="paramname"><em>ptr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>ch_index</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><code>#include &lt;<a class="el" href="hpm__dma__drv_8h.html">drivers/inc/hpm_dma_drv.h</a>&gt;</code></p>
+
+<p>Check Channel interrupt master. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">ptr</td><td>DMA base address </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">ch_index</td><td>Target channel index to be checked </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>uint32_t Interrupt mask </dd></dl>
+
+</div>
+</div>
 <a id="gabf373eb89a9ed7b8413fc4ec7aa53890" name="gabf373eb89a9ed7b8413fc4ec7aa53890"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#gabf373eb89a9ed7b8413fc4ec7aa53890">&#9670;&nbsp;</a></span>dma_check_enabled_channel()</h2>
 
@@ -1148,8 +1205,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="gad1cc48363010c353a4254301ecdcee1b" name="gad1cc48363010c353a4254301ecdcee1b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gad1cc48363010c353a4254301ecdcee1b">&#9670;&nbsp;</a></span>dma_check_transfer_status()</h2>
+<a id="gac04beeabb4ee9071ea056c86dd3e6bf9" name="gac04beeabb4ee9071ea056c86dd3e6bf9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gac04beeabb4ee9071ea056c86dd3e6bf9">&#9670;&nbsp;</a></span>dma_check_transfer_status()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1158,7 +1215,7 @@ Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static <a class="el" href="group__common__interface.html#ga087efae82a4b174a0363363d9d5ece19">hpm_stat_t</a> dma_check_transfer_status </td>
+          <td class="memname">static uint32_t dma_check_transfer_status </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structDMA__Type.html">DMA_Type</a> *&#160;</td>
           <td class="paramname"><em>ptr</em>, </td>
@@ -1192,13 +1249,15 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>status_dma_transfer_done if transfer is finished without error </dd>
-<dd>
-status_dma_transfer_error if any error occurred during transferring </dd>
-<dd>
-status_dma_transfer_abort if transfer is aborted </dd>
-<dd>
-status_dma_transfer_ongoing if transfer is still ongoing </dd></dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">1</td><td>if transfer is still ongoing </td></tr>
+    <tr><td class="paramname">2</td><td>if any error occurred during transferring </td></tr>
+    <tr><td class="paramname">4</td><td>if transfer is aborted </td></tr>
+    <tr><td class="paramname">8</td><td>if transfer is finished without error </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -1335,6 +1394,60 @@ status_dma_transfer_ongoing if transfer is still ongoing </dd></dl>
 
 </div>
 </div>
+<a id="ga815c97886bac31930f00eac312183af3" name="ga815c97886bac31930f00eac312183af3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga815c97886bac31930f00eac312183af3">&#9670;&nbsp;</a></span>dma_disable_channel_interrupt()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void dma_disable_channel_interrupt </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structDMA__Type.html">DMA_Type</a> *&#160;</td>
+          <td class="paramname"><em>ptr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>ch_index</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int32_t&#160;</td>
+          <td class="paramname"><em>interrupt_mask</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><code>#include &lt;<a class="el" href="hpm__dma__drv_8h.html">drivers/inc/hpm_dma_drv.h</a>&gt;</code></p>
+
+<p>Disable DMA Channel interrupt. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">ptr</td><td>DMA base address </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">ch_index</td><td>Target channel index </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">interrupt_mask</td><td>Interrupt mask </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="gad55a6133efdb23298830cdfd881ec8f7" name="gad55a6133efdb23298830cdfd881ec8f7"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#gad55a6133efdb23298830cdfd881ec8f7">&#9670;&nbsp;</a></span>dma_enable_channel()</h2>
 
@@ -1380,6 +1493,60 @@ status_dma_transfer_ongoing if transfer is still ongoing </dd></dl>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>status_success if everything's okay </dd></dl>
+
+</div>
+</div>
+<a id="gaa9c3b81c8228a1c2f029b96d30599a29" name="gaa9c3b81c8228a1c2f029b96d30599a29"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaa9c3b81c8228a1c2f029b96d30599a29">&#9670;&nbsp;</a></span>dma_enable_channel_interrupt()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void dma_enable_channel_interrupt </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structDMA__Type.html">DMA_Type</a> *&#160;</td>
+          <td class="paramname"><em>ptr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>ch_index</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int32_t&#160;</td>
+          <td class="paramname"><em>interrupt_mask</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><code>#include &lt;<a class="el" href="hpm__dma__drv_8h.html">drivers/inc/hpm_dma_drv.h</a>&gt;</code></p>
+
+<p>Enable DMA Channel interrupt. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">ptr</td><td>DMA base address </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">ch_index</td><td>Target channel index </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">interrupt_mask</td><td>Interrupt mask </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -1664,7 +1831,7 @@ status_dma_transfer_ongoing if transfer is still ongoing </dd></dl>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Wed Jul 6 2022 09:39:55 for HPM SDK by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
+    <li class="footer">Generated on Sun Jul 31 2022 11:56:28 for HPM SDK by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>
 </body>

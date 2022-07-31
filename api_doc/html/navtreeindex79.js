@@ -248,6 +248,6 @@ var NAVTREEINDEX79 =
 "HPM6350_2hpm__iomux_8h.html#aff28c039c5b736a0b6d6c15604a37567":[3,0,3,3,6,587],
 "HPM6350_2hpm__iomux_8h_source.html":[3,0,3,3,6],
 "HPM6350_2hpm__pmic__iomux_8h.html":[3,0,3,3,7],
-"HPM6350_2hpm__pmic__iomux_8h.html#a0066720e87a752084ffdd19f211a6ac6":[3,0,3,3,7,19],
-"HPM6350_2hpm__pmic__iomux_8h.html#a01decb7c4eee175c750e88a23d32a0a2":[3,0,3,3,7,32]
+"HPM6350_2hpm__pmic__iomux_8h.html#a01decb7c4eee175c750e88a23d32a0a2":[3,0,3,3,7,32],
+"HPM6350_2hpm__pmic__iomux_8h.html#a02b3a0679091d5f91c07c84da43abb49":[3,0,3,3,7,7]
 };

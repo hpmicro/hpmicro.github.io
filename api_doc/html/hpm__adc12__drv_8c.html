@@ -89,7 +89,6 @@ $(document).ready(function(){initNavTree('hpm__adc12__drv_8c.html',''); initResi
 
 <div class="header">
   <div class="summary">
-<a href="#define-members">Macros</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle"><div class="title">hpm_adc12_drv.c File Reference</div></div>
 </div><!--header-->
@@ -97,15 +96,6 @@ $(document).ready(function(){initNavTree('hpm__adc12__drv_8c.html',''); initResi
 <div class="textblock"><code>#include &quot;<a class="el" href="hpm__adc12__drv_8h_source.html">hpm_adc12_drv.h</a>&quot;</code><br />
 <code>#include &quot;hpm_soc_feature.h&quot;</code><br />
 </div><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
-Macros</h2></td></tr>
-<tr class="memitem:a468d7157710877056154850b2bcb7afe"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hpm__adc12__drv_8c.html#a468d7157710877056154850b2bcb7afe">ADC12_IS_CHANNEL_INVALID</a>(PTR,  CH)</td></tr>
-<tr class="separator:a468d7157710877056154850b2bcb7afe"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa8461bfb163931972692de73888e6043"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hpm__adc12__drv_8c.html#aa8461bfb163931972692de73888e6043">ADC12_IS_TRIG_CH_INVLAID</a>(CH)&#160;&#160;&#160;(CH &gt; ADC12_SOC_MAX_TRIG_CH_NUM)</td></tr>
-<tr class="separator:aa8461bfb163931972692de73888e6043"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3a47eb8fdffe8cfa7973facb569f187c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hpm__adc12__drv_8c.html#a3a47eb8fdffe8cfa7973facb569f187c">ADC12_IS_TRIG_LEN_INVLAID</a>(TRIG_LEN)&#160;&#160;&#160;(TRIG_LEN &gt; <a class="el" href="HPM6750_2hpm__soc__feature_8h.html#ab8bb2b014dd2780fa7f17cd6c21eed3d">ADC_SOC_MAX_TRIG_CH_LEN</a>)</td></tr>
-<tr class="separator:a3a47eb8fdffe8cfa7973facb569f187c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:ga78f1545f1bdc6cfe61d08dd7280c6226"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__adc12__interface.html#ga78f1545f1bdc6cfe61d08dd7280c6226">adc12_get_default_config</a> (<a class="el" href="structadc12__config__t.html">adc12_config_t</a> *config)</td></tr>
@@ -122,9 +112,9 @@ Functions</h2></td></tr>
 <tr class="memitem:gaa5d18a9bcfd09ecf69c8a4ea52ba026c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__common__interface.html#ga087efae82a4b174a0363363d9d5ece19">hpm_stat_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__adc12__interface.html#gaa5d18a9bcfd09ecf69c8a4ea52ba026c">adc12_init_channel</a> (<a class="el" href="structADC12__Type.html">ADC12_Type</a> *ptr, <a class="el" href="structadc12__channel__config__t.html">adc12_channel_config_t</a> *config)</td></tr>
 <tr class="memdesc:gaa5d18a9bcfd09ecf69c8a4ea52ba026c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize an ADC12 channel.  <a href="group__adc12__interface.html#gaa5d18a9bcfd09ecf69c8a4ea52ba026c">More...</a><br /></td></tr>
 <tr class="separator:gaa5d18a9bcfd09ecf69c8a4ea52ba026c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga6b663e7fa90b2b5569ecd03f145c0954"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__adc12__interface.html#ga6b663e7fa90b2b5569ecd03f145c0954">adc12_init_seq_dma</a> (<a class="el" href="structADC12__Type.html">ADC12_Type</a> *ptr, <a class="el" href="structadc12__dma__config__t.html">adc12_dma_config_t</a> *dma_config)</td></tr>
-<tr class="memdesc:ga6b663e7fa90b2b5569ecd03f145c0954"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configure the start address of DMA write operation for the preemption mode.  <a href="group__adc12__interface.html#ga6b663e7fa90b2b5569ecd03f145c0954">More...</a><br /></td></tr>
-<tr class="separator:ga6b663e7fa90b2b5569ecd03f145c0954"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga423c716b99ab4717b25ed5efe51f5128"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__common__interface.html#ga087efae82a4b174a0363363d9d5ece19">hpm_stat_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__adc12__interface.html#ga423c716b99ab4717b25ed5efe51f5128">adc12_init_seq_dma</a> (<a class="el" href="structADC12__Type.html">ADC12_Type</a> *ptr, <a class="el" href="structadc12__dma__config__t.html">adc12_dma_config_t</a> *dma_config)</td></tr>
+<tr class="memdesc:ga423c716b99ab4717b25ed5efe51f5128"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configure the start address of DMA write operation for the preemption mode.  <a href="group__adc12__interface.html#ga423c716b99ab4717b25ed5efe51f5128">More...</a><br /></td></tr>
+<tr class="separator:ga423c716b99ab4717b25ed5efe51f5128"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga60f2a7f772ee8cd3cd17a0d6b863ef29"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__common__interface.html#ga087efae82a4b174a0363363d9d5ece19">hpm_stat_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__adc12__interface.html#ga60f2a7f772ee8cd3cd17a0d6b863ef29">adc12_set_prd_config</a> (<a class="el" href="structADC12__Type.html">ADC12_Type</a> *ptr, <a class="el" href="structadc12__prd__config__t.html">adc12_prd_config_t</a> *config)</td></tr>
 <tr class="memdesc:ga60f2a7f772ee8cd3cd17a0d6b863ef29"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configure the the period mode for an ADC12 instance.  <a href="group__adc12__interface.html#ga60f2a7f772ee8cd3cd17a0d6b863ef29">More...</a><br /></td></tr>
 <tr class="separator:ga60f2a7f772ee8cd3cd17a0d6b863ef29"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -144,76 +134,6 @@ Functions</h2></td></tr>
 <tr class="memdesc:gafe860902f8a045fbbf30e8f72e3d6c37"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the result in the period mode.  <a href="group__adc12__interface.html#gafe860902f8a045fbbf30e8f72e3d6c37">More...</a><br /></td></tr>
 <tr class="separator:gafe860902f8a045fbbf30e8f72e3d6c37"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Macro Definition Documentation</h2>
-<a id="a468d7157710877056154850b2bcb7afe" name="a468d7157710877056154850b2bcb7afe"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a468d7157710877056154850b2bcb7afe">&#9670;&nbsp;</a></span>ADC12_IS_CHANNEL_INVALID</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define ADC12_IS_CHANNEL_INVALID</td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">PTR, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">CH&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">                                           ((CH &gt; <a class="code hl_define" href="HPM6750_2hpm__soc__feature_8h.html#a177192710ddc50c0cbbaa75656b5f0c1">ADC12_SOC_MAX_CH_NUM</a> &amp;&amp; CH != <a class="code hl_define" href="HPM6750_2hpm__soc__feature_8h.html#a09359173bcc9c8919c0d53bbdb2e0d88">ADC12_SOC_TEMP_CH_NUM</a>) || \</div>
-<div class="line">                                           ((uint32_t)PTR == <a class="code hl_define" href="HPM6750_2hpm__soc__feature_8h.html#a9ac37a27839b690386ba8569b4c7bb5c">ADC12_SOC_INVALID_TEMP_BASE</a> &amp;&amp; CH == <a class="code hl_define" href="HPM6750_2hpm__soc__feature_8h.html#a09359173bcc9c8919c0d53bbdb2e0d88">ADC12_SOC_TEMP_CH_NUM</a>))</div>
-<div class="ttc" id="aHPM6750_2hpm__soc__feature_8h_html_a09359173bcc9c8919c0d53bbdb2e0d88"><div class="ttname"><a href="HPM6750_2hpm__soc__feature_8h.html#a09359173bcc9c8919c0d53bbdb2e0d88">ADC12_SOC_TEMP_CH_NUM</a></div><div class="ttdeci">#define ADC12_SOC_TEMP_CH_NUM</div><div class="ttdef"><b>Definition:</b> hpm_soc_feature.h:125</div></div>
-<div class="ttc" id="aHPM6750_2hpm__soc__feature_8h_html_a177192710ddc50c0cbbaa75656b5f0c1"><div class="ttname"><a href="HPM6750_2hpm__soc__feature_8h.html#a177192710ddc50c0cbbaa75656b5f0c1">ADC12_SOC_MAX_CH_NUM</a></div><div class="ttdeci">#define ADC12_SOC_MAX_CH_NUM</div><div class="ttdef"><b>Definition:</b> hpm_soc_feature.h:124</div></div>
-<div class="ttc" id="aHPM6750_2hpm__soc__feature_8h_html_a9ac37a27839b690386ba8569b4c7bb5c"><div class="ttname"><a href="HPM6750_2hpm__soc__feature_8h.html#a9ac37a27839b690386ba8569b4c7bb5c">ADC12_SOC_INVALID_TEMP_BASE</a></div><div class="ttdeci">#define ADC12_SOC_INVALID_TEMP_BASE</div><div class="ttdef"><b>Definition:</b> hpm_soc_feature.h:126</div></div>
-</div><!-- fragment -->
-</div>
-</div>
-<a id="aa8461bfb163931972692de73888e6043" name="aa8461bfb163931972692de73888e6043"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa8461bfb163931972692de73888e6043">&#9670;&nbsp;</a></span>ADC12_IS_TRIG_CH_INVLAID</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define ADC12_IS_TRIG_CH_INVLAID</td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">CH</td><td>)</td>
-          <td>&#160;&#160;&#160;(CH &gt; ADC12_SOC_MAX_TRIG_CH_NUM)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a3a47eb8fdffe8cfa7973facb569f187c" name="a3a47eb8fdffe8cfa7973facb569f187c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3a47eb8fdffe8cfa7973facb569f187c">&#9670;&nbsp;</a></span>ADC12_IS_TRIG_LEN_INVLAID</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define ADC12_IS_TRIG_LEN_INVLAID</td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">TRIG_LEN</td><td>)</td>
-          <td>&#160;&#160;&#160;(TRIG_LEN &gt; <a class="el" href="HPM6750_2hpm__soc__feature_8h.html#ab8bb2b014dd2780fa7f17cd6c21eed3d">ADC_SOC_MAX_TRIG_CH_LEN</a>)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <h2 class="groupheader">Function Documentation</h2>
 <a id="ab38b22e2804c72cc06bc7d3606621d04" name="ab38b22e2804c72cc06bc7d3606621d04"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ab38b22e2804c72cc06bc7d3606621d04">&#9670;&nbsp;</a></span>adc12_do_calibration()</h2>
@@ -257,7 +177,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_14bc92f4b96c8519b376567118ac28b3.html">drivers</a></li><li class="navelem"><a class="el" href="dir_507bca872cbea0e05b5ebdf850947a53.html">src</a></li><li class="navelem"><a class="el" href="hpm__adc12__drv_8c.html">hpm_adc12_drv.c</a></li>
-    <li class="footer">Generated on Wed Jul 6 2022 09:39:52 for HPM SDK by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
+    <li class="footer">Generated on Sun Jul 31 2022 11:56:25 for HPM SDK by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>
 </body>

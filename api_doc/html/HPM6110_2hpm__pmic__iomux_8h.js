@@ -22,7 +22,7 @@ var HPM6110_2hpm__pmic__iomux_8h =
     [ "IOC_PY04_FUNC_CTL_SOC_PY_04", "HPM6110_2hpm__pmic__iomux_8h.html#a7afeff937b1e82c7748422b08022a726", null ],
     [ "IOC_PY05_FUNC_CTL_PGPIO_Y_05", "HPM6110_2hpm__pmic__iomux_8h.html#ad54311b272545371bf7bbcf6ea7cbe61", null ],
     [ "IOC_PY05_FUNC_CTL_PTMR_CAPT_0", "HPM6110_2hpm__pmic__iomux_8h.html#a182d54af3eb014da1cf91c6ece9a1e3b", null ],
-    [ "IOC_PY05_FUNC_CTL_PWDG", "HPM6110_2hpm__pmic__iomux_8h.html#a1217a003067abde3706c78a2f13b268b", null ],
+    [ "IOC_PY05_FUNC_CTL_PWDG_RST", "HPM6110_2hpm__pmic__iomux_8h.html#ab210039fd064a41a54f0ce0491bd7bf1", null ],
     [ "IOC_PY05_FUNC_CTL_SOC_PY_05", "HPM6110_2hpm__pmic__iomux_8h.html#a3f6080b3fcd45a2649bf5aade4c79a5c", null ],
     [ "IOC_PY06_FUNC_CTL_PGPIO_Y_06", "HPM6110_2hpm__pmic__iomux_8h.html#a0ecf2ba1fbb3289d05b8252395ab9021", null ],
     [ "IOC_PY06_FUNC_CTL_PTMR_COMP_1", "HPM6110_2hpm__pmic__iomux_8h.html#a059888cde8c3eb27edb85d82d375ecfe", null ],

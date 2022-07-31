@@ -1,6 +1,10 @@
 var HPM6750_2hpm__misc_8h =
 [
     [ "ADDRESS_IN_CORE0_DLM_SYSTEM", "HPM6750_2hpm__misc_8h.html#aa7caff130f2d29aa8cba2bf25225131f", null ],
+    [ "ADDRESS_IN_CORE0_DLM_SYSTEM", "HPM6750_2hpm__misc_8h.html#aa7caff130f2d29aa8cba2bf25225131f", null ],
+    [ "ADDRESS_IN_CORE0_ILM_SYSTEM", "HPM6750_2hpm__misc_8h.html#ade4faeac53d5fcf768c2407c7f9aa015", null ],
+    [ "ADDRESS_IN_CORE1_DLM_SYSTEM", "HPM6750_2hpm__misc_8h.html#a85e4c43d56124cef1a60841015e3aeb9", null ],
+    [ "ADDRESS_IN_CORE1_ILM_SYSTEM", "HPM6750_2hpm__misc_8h.html#a48b3f0e48ac714d7e74f48f9e00e7c88", null ],
     [ "ADDRESS_IN_DLM", "HPM6750_2hpm__misc_8h.html#a00cdf68184c087303e0015feff54e1f2", null ],
     [ "ADDRESS_IN_ILM", "HPM6750_2hpm__misc_8h.html#aeade63f4a9290ea2209cb168536b648b", null ],
     [ "CORE0_DLM_SYSTEM_BASE", "HPM6750_2hpm__misc_8h.html#afd4f50ae5a9c0635fd014f8f4f793402", null ],

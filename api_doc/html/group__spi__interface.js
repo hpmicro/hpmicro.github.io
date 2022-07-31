@@ -122,5 +122,7 @@ var group__spi__interface =
     [ "spi_setup_dma_transfer", "group__spi__interface.html#ga085530c65ea8efb8433c27a8346ca5dd", null ],
     [ "spi_slave_get_default_control_config", "group__spi__interface.html#ga011f364572dba586730f36c93f589557", null ],
     [ "spi_slave_get_default_format_config", "group__spi__interface.html#ga5a4c398026975ffff16080bdf1ba99f7", null ],
-    [ "spi_transfer", "group__spi__interface.html#ga0806810be06ba3f20f573f7465c620ea", null ]
+    [ "spi_transfer", "group__spi__interface.html#ga0806810be06ba3f20f573f7465c620ea", null ],
+    [ "spi_wait_for_busy_status", "group__spi__interface.html#ga3292349e298ddb9f64819946afcea7d2", null ],
+    [ "spi_wait_for_idle_status", "group__spi__interface.html#ga0bd47db6a31f4592c25b0b0ce4d26635", null ]
 ];

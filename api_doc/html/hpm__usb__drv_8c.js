@@ -14,5 +14,6 @@ var hpm__usb__drv_8c =
     [ "usb_hcd_init", "group__usb__interface.html#ga0570e2f862011ae43270784768f347b3", null ],
     [ "usb_hcd_port_reset", "group__usb__interface.html#ga9bcce6385820752906a63201939d4170", null ],
     [ "usb_phy_deinit", "hpm__usb__drv_8c.html#a3d74463f1ce9062d866b6371dd2c94f0", null ],
+    [ "usb_phy_get_line_state", "hpm__usb__drv_8c.html#af4db15f9ad88140c5cb1a91996fd9d19", null ],
     [ "usb_phy_init", "hpm__usb__drv_8c.html#afba322d2bf27345b62509932cc6e4559", null ]
 ];

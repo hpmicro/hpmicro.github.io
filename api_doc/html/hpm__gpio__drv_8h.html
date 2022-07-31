@@ -89,6 +89,7 @@ $(document).ready(function(){initNavTree('hpm__gpio__drv_8h.html',''); initResiz
 
 <div class="header">
   <div class="summary">
+<a href="#define-members">Macros</a> &#124;
 <a href="#typedef-members">Typedefs</a> &#124;
 <a href="#enum-members">Enumerations</a> &#124;
 <a href="#func-members">Functions</a>  </div>
@@ -100,6 +101,15 @@ $(document).ready(function(){initNavTree('hpm__gpio__drv_8h.html',''); initResiz
 </div>
 <p><a href="hpm__gpio__drv_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
+Macros</h2></td></tr>
+<tr class="memitem:abd173241c3a00a6b93daed19cd906abe"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hpm__gpio__drv_8h.html#abd173241c3a00a6b93daed19cd906abe">PORT_PIN_COUNT</a>&#160;&#160;&#160;(32U)</td></tr>
+<tr class="separator:abd173241c3a00a6b93daed19cd906abe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0c821147e78d11124b1d0d5c00999243"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hpm__gpio__drv_8h.html#a0c821147e78d11124b1d0d5c00999243">GPIO_GET_PORT_INDEX</a>(x)&#160;&#160;&#160;(x / <a class="el" href="hpm__gpio__drv_8h.html#abd173241c3a00a6b93daed19cd906abe">PORT_PIN_COUNT</a>)</td></tr>
+<tr class="separator:a0c821147e78d11124b1d0d5c00999243"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a91f872fbfbf7bb97ef12f2d6258eedce"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hpm__gpio__drv_8h.html#a91f872fbfbf7bb97ef12f2d6258eedce">GPIO_GET_PIN_INDEX</a>(x)&#160;&#160;&#160;(x % <a class="el" href="hpm__gpio__drv_8h.html#abd173241c3a00a6b93daed19cd906abe">PORT_PIN_COUNT</a>)</td></tr>
+<tr class="separator:a91f872fbfbf7bb97ef12f2d6258eedce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
 Typedefs</h2></td></tr>
 <tr class="memitem:gad7182efe68dbafcf2a7ed1160981bf3e"><td class="memItemLeft" align="right" valign="top">typedef enum <a class="el" href="group__gpio__interface.html#ga027ed1423986f66573a6f676734f181d">gpio_interrupt_trigger</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gpio__interface.html#gad7182efe68dbafcf2a7ed1160981bf3e">gpio_interrupt_trigger_t</a></td></tr>
@@ -175,9 +185,9 @@ Functions</h2></td></tr>
 <tr class="memitem:ga04704cce5da40c201f2f40a1b638ea61"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gpio__interface.html#ga04704cce5da40c201f2f40a1b638ea61">gpio_disable_port_output_with_mask</a> (<a class="el" href="structGPIO__Type.html">GPIO_Type</a> *ptr, uint32_t port, uint32_t mask)</td></tr>
 <tr class="memdesc:ga04704cce5da40c201f2f40a1b638ea61"><td class="mdescLeft">&#160;</td><td class="mdescRight">Disable pins output of specific port according to the given mask.  <a href="group__gpio__interface.html#ga04704cce5da40c201f2f40a1b638ea61">More...</a><br /></td></tr>
 <tr class="separator:ga04704cce5da40c201f2f40a1b638ea61"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gab5a7399f3b3a06aea6d092a6b8caf79d"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gpio__interface.html#gab5a7399f3b3a06aea6d092a6b8caf79d">gpio_get_port_interrupt_flags</a> (<a class="el" href="structGPIO__Type.html">GPIO_Type</a> *ptr, uint32_t port)</td></tr>
-<tr class="memdesc:gab5a7399f3b3a06aea6d092a6b8caf79d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get current interrupt flags on specific port.  <a href="group__gpio__interface.html#gab5a7399f3b3a06aea6d092a6b8caf79d">More...</a><br /></td></tr>
-<tr class="separator:gab5a7399f3b3a06aea6d092a6b8caf79d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga88bfa1a7e4f8ddc297ea3ac3ca0bda8e"><td class="memItemLeft" align="right" valign="top">static uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gpio__interface.html#ga88bfa1a7e4f8ddc297ea3ac3ca0bda8e">gpio_get_port_interrupt_flags</a> (<a class="el" href="structGPIO__Type.html">GPIO_Type</a> *ptr, uint32_t port)</td></tr>
+<tr class="memdesc:ga88bfa1a7e4f8ddc297ea3ac3ca0bda8e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get current interrupt flags on specific port.  <a href="group__gpio__interface.html#ga88bfa1a7e4f8ddc297ea3ac3ca0bda8e">More...</a><br /></td></tr>
+<tr class="separator:ga88bfa1a7e4f8ddc297ea3ac3ca0bda8e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga7f026a6f6561e2740473364aa4f15d92"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gpio__interface.html#ga7f026a6f6561e2740473364aa4f15d92">gpio_clear_port_interrupt_flags_with_mask</a> (<a class="el" href="structGPIO__Type.html">GPIO_Type</a> *ptr, uint32_t port, uint32_t mask)</td></tr>
 <tr class="memdesc:ga7f026a6f6561e2740473364aa4f15d92"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clear interrupt flags with given mask on specific port.  <a href="group__gpio__interface.html#ga7f026a6f6561e2740473364aa4f15d92">More...</a><br /></td></tr>
 <tr class="separator:ga7f026a6f6561e2740473364aa4f15d92"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -197,13 +207,64 @@ Functions</h2></td></tr>
 <tr class="memdesc:gacd9a8d88162c584100917b404b4a1562"><td class="mdescLeft">&#160;</td><td class="mdescRight">Toggle pin interrupt trigger type.  <a href="group__gpio__interface.html#gacd9a8d88162c584100917b404b4a1562">More...</a><br /></td></tr>
 <tr class="separator:gacd9a8d88162c584100917b404b4a1562"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Macro Definition Documentation</h2>
+<a id="a91f872fbfbf7bb97ef12f2d6258eedce" name="a91f872fbfbf7bb97ef12f2d6258eedce"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a91f872fbfbf7bb97ef12f2d6258eedce">&#9670;&nbsp;</a></span>GPIO_GET_PIN_INDEX</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define GPIO_GET_PIN_INDEX</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">x</td><td>)</td>
+          <td>&#160;&#160;&#160;(x % <a class="el" href="hpm__gpio__drv_8h.html#abd173241c3a00a6b93daed19cd906abe">PORT_PIN_COUNT</a>)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0c821147e78d11124b1d0d5c00999243" name="a0c821147e78d11124b1d0d5c00999243"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0c821147e78d11124b1d0d5c00999243">&#9670;&nbsp;</a></span>GPIO_GET_PORT_INDEX</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define GPIO_GET_PORT_INDEX</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">x</td><td>)</td>
+          <td>&#160;&#160;&#160;(x / <a class="el" href="hpm__gpio__drv_8h.html#abd173241c3a00a6b93daed19cd906abe">PORT_PIN_COUNT</a>)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="abd173241c3a00a6b93daed19cd906abe" name="abd173241c3a00a6b93daed19cd906abe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abd173241c3a00a6b93daed19cd906abe">&#9670;&nbsp;</a></span>PORT_PIN_COUNT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define PORT_PIN_COUNT&#160;&#160;&#160;(32U)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_14bc92f4b96c8519b376567118ac28b3.html">drivers</a></li><li class="navelem"><a class="el" href="dir_445f1c1c73deccb146d16af27ad5c1d1.html">inc</a></li><li class="navelem"><a class="el" href="hpm__gpio__drv_8h.html">hpm_gpio_drv.h</a></li>
-    <li class="footer">Generated on Wed Jul 6 2022 09:39:52 for HPM SDK by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
+    <li class="footer">Generated on Sun Jul 31 2022 11:56:25 for HPM SDK by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>
 </body>

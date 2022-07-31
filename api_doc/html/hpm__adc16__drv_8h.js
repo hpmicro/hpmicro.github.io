@@ -1,5 +1,11 @@
 var hpm__adc16__drv_8h =
 [
+    [ "ADC16_IS_CHANNEL_INVALID", "group__adc16__interface.html#ga42e1f0a59984f701d99592e95ef75a42", null ],
+    [ "ADC16_IS_PMT_DMA_BUFF_LEN_INVLAID", "group__adc16__interface.html#gaeaf7153336312ddba69a2cf6e3d6a36e", null ],
+    [ "ADC16_IS_SEQ_DMA_BUFF_LEN_INVLAID", "group__adc16__interface.html#ga719a08b7baa4edc5b806fc1d7bcd56f1", null ],
+    [ "ADC16_IS_SEQ_LEN_INVLAID", "group__adc16__interface.html#gaf6edb41607caf349c6bc86e2ba1395f9", null ],
+    [ "ADC16_IS_TRIG_CH_INVLAID", "group__adc16__interface.html#ga0fa002d04be7ff092ea5388ac82c355c", null ],
+    [ "ADC16_IS_TRIG_LEN_INVLAID", "group__adc16__interface.html#gac5992f6c168f2ecb2ca774528f8a292b", null ],
     [ "adc16_conversion_mode_t", "group__adc16__interface.html#ga0fbba2f1f9b2fcc88c403d296cd9dd0d", [
       [ "adc16_conv_mode_oneshot", "group__adc16__interface.html#gga0fbba2f1f9b2fcc88c403d296cd9dd0dafefa67dcac64c5365c8a609abfd90d5b", null ],
       [ "adc16_conv_mode_period", "group__adc16__interface.html#gga0fbba2f1f9b2fcc88c403d296cd9dd0da7d8a964145f72ac23840584edb148c41", null ],
@@ -18,7 +24,6 @@ var hpm__adc16__drv_8h =
       [ "adc16_event_seq_single_complete", "group__adc16__interface.html#ggab49c1866b4d36c96b3794bdf0a4d3d6fa62283fd0d170cfaeeec4008649611506", null ],
       [ "adc16_event_dma_fifo_full", "group__adc16__interface.html#ggab49c1866b4d36c96b3794bdf0a4d3d6fa4cc825308b2d2033a10ee20cd68c2315", null ]
     ] ],
-    [ "adc16_channel_init", "group__adc16__interface.html#ga6ee417d4b6f4d33ec08b9af9335b2769", null ],
     [ "adc16_clear_status_flags", "group__adc16__interface.html#gae51a3a9480885246f0879a2e4b4343fe", null ],
     [ "adc16_disable_interrupts", "group__adc16__interface.html#gaaa08e54b2599803a03f9f762599e4aa1", null ],
     [ "adc16_enable_interrupts", "group__adc16__interface.html#ga4e3921519adb696b6204f468935cfa02", null ],
@@ -30,6 +35,7 @@ var hpm__adc16__drv_8h =
     [ "adc16_get_status_flags", "group__adc16__interface.html#ga31730cfce13c2229b018fd2899c8f9dd", null ],
     [ "adc16_get_wait_dis_status", "group__adc16__interface.html#ga01f92a88d5dc6a28872cbb815396148b", null ],
     [ "adc16_init", "group__adc16__interface.html#ga29ae18f3a045b012e3a712bd57211aa2", null ],
+    [ "adc16_init_channel", "group__adc16__interface.html#gad71c54ee3dff867577fa50905466ab30", null ],
     [ "adc16_init_pmt_dma", "group__adc16__interface.html#ga7d2a0bb0b5d434f5f4fc4d915e2f6b06", null ],
     [ "adc16_init_seq_dma", "group__adc16__interface.html#ga6973407b9e0a4920ebe1fb056fb2716c", null ],
     [ "adc16_set_pmt_config", "group__adc16__interface.html#gae8373223c527f7bb85a71321c020b038", null ],

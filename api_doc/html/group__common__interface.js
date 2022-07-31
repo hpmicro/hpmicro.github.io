@@ -44,6 +44,7 @@ var group__common__interface =
       [ "status_group_middleware_start", "group__common__interface.html#ggadb49720dc49f7d4e4cf9adbf2948e409a4669441701d0cc75e578945ed7ab8156", null ],
       [ "status_group_sdmmc", "group__common__interface.html#ggadb49720dc49f7d4e4cf9adbf2948e409a70ec3e27ce858eef2b4efcfc1c509662", null ],
       [ "status_group_audio_codec", "group__common__interface.html#ggadb49720dc49f7d4e4cf9adbf2948e409a3981bb92d058e1f8044c001fe75db0af", null ],
+      [ "status_group_dma_manager", "group__common__interface.html#ggadb49720dc49f7d4e4cf9adbf2948e409a7669b4cce1a2af96021e02d1c85505dd", null ],
       [ "status_success", "group__common__interface.html#ggaae05225933a42f81e7c4a9fb286596f9a99d8737a9b635c0c9d87d7ac65801ce7", null ],
       [ "status_fail", "group__common__interface.html#ggaae05225933a42f81e7c4a9fb286596f9ab3c0359cb713a70f593f2e46ab12bb39", null ],
       [ "status_invalid_argument", "group__common__interface.html#ggaae05225933a42f81e7c4a9fb286596f9a380c9b8304ad8399f1be634d6f5c4701", null ],

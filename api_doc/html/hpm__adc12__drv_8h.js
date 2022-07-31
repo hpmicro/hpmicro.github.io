@@ -1,5 +1,12 @@
 var hpm__adc12__drv_8h =
 [
+    [ "ADC12_IS_CHANNEL_INVALID", "group__adc12__interface.html#ga468d7157710877056154850b2bcb7afe", null ],
+    [ "ADC12_IS_PMT_DMA_BUFF_LEN_INVLAID", "group__adc12__interface.html#ga445a4a18d3dc04454b07c4b6a794a5a4", null ],
+    [ "ADC12_IS_SEQ_DMA_BUFF_LEN_INVLAID", "group__adc12__interface.html#gace2478509112dcd2dd13cd978bf78351", null ],
+    [ "ADC12_IS_SEQ_LEN_INVLAID", "group__adc12__interface.html#ga794c667bb94a600b7ef493e52c5c1d4b", null ],
+    [ "ADC12_IS_SIGNAL_TYPE_INVALID", "group__adc12__interface.html#ga3992d2b6165d0ac8161aa52ee05669d6", null ],
+    [ "ADC12_IS_TRIG_CH_INVLAID", "group__adc12__interface.html#gaa8461bfb163931972692de73888e6043", null ],
+    [ "ADC12_IS_TRIG_LEN_INVLAID", "group__adc12__interface.html#ga3a47eb8fdffe8cfa7973facb569f187c", null ],
     [ "adc12_conversion_mode_t", "group__adc12__interface.html#ga4adb189f64a24a885497c6a5e7855d47", [
       [ "adc12_conv_mode_oneshot", "group__adc12__interface.html#gga4adb189f64a24a885497c6a5e7855d47acbbde1ee9d17f7236b9b1a9f5e1efccc", null ],
       [ "adc12_conv_mode_period", "group__adc12__interface.html#gga4adb189f64a24a885497c6a5e7855d47a0cde3eb48015f167be0a29906e0bebac", null ],
@@ -26,7 +33,8 @@ var hpm__adc12__drv_8h =
     ] ],
     [ "adc12_sample_signal_t", "group__adc12__interface.html#gac39e2f0d4c899dbc13f237e20418dea2", [
       [ "adc12_sample_signal_single_ended", "group__adc12__interface.html#ggac39e2f0d4c899dbc13f237e20418dea2ad46535381a9438ff4c5b2d5fedc824f4", null ],
-      [ "adc12_sample_signal_differential", "group__adc12__interface.html#ggac39e2f0d4c899dbc13f237e20418dea2afdd131e009b2d41f340449f1e3f7348f", null ]
+      [ "adc12_sample_signal_differential", "group__adc12__interface.html#ggac39e2f0d4c899dbc13f237e20418dea2afdd131e009b2d41f340449f1e3f7348f", null ],
+      [ "adc12_sample_signal_count", "group__adc12__interface.html#ggac39e2f0d4c899dbc13f237e20418dea2a9cbfcdc1e79f30f31bd0f26380a9b595", null ]
     ] ],
     [ "adc12_clear_status_flags", "group__adc12__interface.html#ga976ccf163fdce57fdd2a5b47defe6a03", null ],
     [ "adc12_disable_interrupts", "group__adc12__interface.html#ga4cc106c0c8134cb793fa93df9e7d4fb1", null ],
@@ -41,7 +49,7 @@ var hpm__adc12__drv_8h =
     [ "adc12_init", "group__adc12__interface.html#ga1638d81a6447e0deeebb40ebde932dac", null ],
     [ "adc12_init_channel", "group__adc12__interface.html#gaa5d18a9bcfd09ecf69c8a4ea52ba026c", null ],
     [ "adc12_init_pmt_dma", "group__adc12__interface.html#ga2fab3d40d8b501b436719835e7d7aaf2", null ],
-    [ "adc12_init_seq_dma", "group__adc12__interface.html#ga6b663e7fa90b2b5569ecd03f145c0954", null ],
+    [ "adc12_init_seq_dma", "group__adc12__interface.html#ga423c716b99ab4717b25ed5efe51f5128", null ],
     [ "adc12_set_pmt_config", "group__adc12__interface.html#ga537418bcdeb9157adba6be65546aeb49", null ],
     [ "adc12_set_prd_config", "group__adc12__interface.html#ga60f2a7f772ee8cd3cd17a0d6b863ef29", null ],
     [ "adc12_set_seq_config", "group__adc12__interface.html#ga7cb22a7bfe2132f595a4c03129f52db7", null ],

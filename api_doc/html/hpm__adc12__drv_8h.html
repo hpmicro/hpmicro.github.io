@@ -90,6 +90,7 @@ $(document).ready(function(){initNavTree('hpm__adc12__drv_8h.html',''); initResi
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Data Structures</a> &#124;
+<a href="#define-members">Macros</a> &#124;
 <a href="#enum-members">Enumerations</a>  </div>
   <div class="headertitle"><div class="title">hpm_adc12_drv.h File Reference</div></div>
 </div><!--header-->
@@ -130,10 +131,35 @@ Data Structures</h2></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">ADC12 trigger configuration struct for the preemption mode.  <a href="structadc12__pmt__config__t.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
+Macros</h2></td></tr>
+<tr class="memitem:ga3992d2b6165d0ac8161aa52ee05669d6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__adc12__interface.html#ga3992d2b6165d0ac8161aa52ee05669d6">ADC12_IS_SIGNAL_TYPE_INVALID</a>(TYPE)&#160;&#160;&#160;(TYPE &gt; (uint32_t)<a class="el" href="group__adc12__interface.html#ggac39e2f0d4c899dbc13f237e20418dea2a9cbfcdc1e79f30f31bd0f26380a9b595">adc12_sample_signal_count</a>)</td></tr>
+<tr class="memdesc:ga3992d2b6165d0ac8161aa52ee05669d6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Define ADC12 validity check for the signal type.  <a href="group__adc12__interface.html#ga3992d2b6165d0ac8161aa52ee05669d6">More...</a><br /></td></tr>
+<tr class="separator:ga3992d2b6165d0ac8161aa52ee05669d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga468d7157710877056154850b2bcb7afe"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__adc12__interface.html#ga468d7157710877056154850b2bcb7afe">ADC12_IS_CHANNEL_INVALID</a>(PTR,  CH)</td></tr>
+<tr class="memdesc:ga468d7157710877056154850b2bcb7afe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Define ADC12 validity check for the channel number.  <a href="group__adc12__interface.html#ga468d7157710877056154850b2bcb7afe">More...</a><br /></td></tr>
+<tr class="separator:ga468d7157710877056154850b2bcb7afe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa8461bfb163931972692de73888e6043"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__adc12__interface.html#gaa8461bfb163931972692de73888e6043">ADC12_IS_TRIG_CH_INVLAID</a>(CH)&#160;&#160;&#160;(CH &gt; ADC12_SOC_MAX_TRIG_CH_NUM)</td></tr>
+<tr class="memdesc:gaa8461bfb163931972692de73888e6043"><td class="mdescLeft">&#160;</td><td class="mdescRight">Define ADC12 validity check for the trigger number.  <a href="group__adc12__interface.html#gaa8461bfb163931972692de73888e6043">More...</a><br /></td></tr>
+<tr class="separator:gaa8461bfb163931972692de73888e6043"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga3a47eb8fdffe8cfa7973facb569f187c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__adc12__interface.html#ga3a47eb8fdffe8cfa7973facb569f187c">ADC12_IS_TRIG_LEN_INVLAID</a>(TRIG_LEN)&#160;&#160;&#160;(TRIG_LEN &gt; <a class="el" href="HPM6750_2hpm__soc__feature_8h.html#ab8bb2b014dd2780fa7f17cd6c21eed3d">ADC_SOC_MAX_TRIG_CH_LEN</a>)</td></tr>
+<tr class="memdesc:ga3a47eb8fdffe8cfa7973facb569f187c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Define ADC12 validity check for the trigger length.  <a href="group__adc12__interface.html#ga3a47eb8fdffe8cfa7973facb569f187c">More...</a><br /></td></tr>
+<tr class="separator:ga3a47eb8fdffe8cfa7973facb569f187c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga794c667bb94a600b7ef493e52c5c1d4b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__adc12__interface.html#ga794c667bb94a600b7ef493e52c5c1d4b">ADC12_IS_SEQ_LEN_INVLAID</a>(LEN)&#160;&#160;&#160;((LEN == 0) || (LEN &gt; <a class="el" href="HPM6750_2hpm__soc__feature_8h.html#a48f987e19c946a0b5c45536743d0b656">ADC_SOC_SEQ_MAX_LEN</a>))</td></tr>
+<tr class="memdesc:ga794c667bb94a600b7ef493e52c5c1d4b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Define ADC12 validity check for the sequence length.  <a href="group__adc12__interface.html#ga794c667bb94a600b7ef493e52c5c1d4b">More...</a><br /></td></tr>
+<tr class="separator:ga794c667bb94a600b7ef493e52c5c1d4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gace2478509112dcd2dd13cd978bf78351"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__adc12__interface.html#gace2478509112dcd2dd13cd978bf78351">ADC12_IS_SEQ_DMA_BUFF_LEN_INVLAID</a>(LEN)&#160;&#160;&#160;((LEN == 0) || (LEN &gt; <a class="el" href="HPM6750_2hpm__soc__feature_8h.html#ad077905ebb9a5f49342a508df47f1f61">ADC_SOC_SEQ_MAX_DMA_BUFF_LEN_IN_4BYTES</a>))</td></tr>
+<tr class="memdesc:gace2478509112dcd2dd13cd978bf78351"><td class="mdescLeft">&#160;</td><td class="mdescRight">Define ADC12 validity check for the DMA buffer length in the sequence mode.  <a href="group__adc12__interface.html#gace2478509112dcd2dd13cd978bf78351">More...</a><br /></td></tr>
+<tr class="separator:gace2478509112dcd2dd13cd978bf78351"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga445a4a18d3dc04454b07c4b6a794a5a4"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__adc12__interface.html#ga445a4a18d3dc04454b07c4b6a794a5a4">ADC12_IS_PMT_DMA_BUFF_LEN_INVLAID</a>(LEN)&#160;&#160;&#160;((LEN == 0) || (LEN &gt; <a class="el" href="HPM6750_2hpm__soc__feature_8h.html#ac7a2197dac0b7c2a588e41e17f752e90">ADC_SOC_PMT_MAX_DMA_BUFF_LEN_IN_4BYTES</a>))</td></tr>
+<tr class="memdesc:ga445a4a18d3dc04454b07c4b6a794a5a4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Define ADC12 validity check for the DMA buffer length in the preemption mode.  <a href="group__adc12__interface.html#ga445a4a18d3dc04454b07c4b6a794a5a4">More...</a><br /></td></tr>
+<tr class="separator:ga445a4a18d3dc04454b07c4b6a794a5a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
 Enumerations</h2></td></tr>
 <tr class="memitem:gac39e2f0d4c899dbc13f237e20418dea2"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__adc12__interface.html#gac39e2f0d4c899dbc13f237e20418dea2">adc12_sample_signal_t</a> { <a class="el" href="group__adc12__interface.html#ggac39e2f0d4c899dbc13f237e20418dea2ad46535381a9438ff4c5b2d5fedc824f4">adc12_sample_signal_single_ended</a> = 0
-, <a class="el" href="group__adc12__interface.html#ggac39e2f0d4c899dbc13f237e20418dea2afdd131e009b2d41f340449f1e3f7348f">adc12_sample_signal_differential</a>
+, <a class="el" href="group__adc12__interface.html#ggac39e2f0d4c899dbc13f237e20418dea2afdd131e009b2d41f340449f1e3f7348f">adc12_sample_signal_differential</a> = 1
+, <a class="el" href="group__adc12__interface.html#ggac39e2f0d4c899dbc13f237e20418dea2a9cbfcdc1e79f30f31bd0f26380a9b595">adc12_sample_signal_count</a> = 2
  }</td></tr>
 <tr class="memdesc:gac39e2f0d4c899dbc13f237e20418dea2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Define ADC12 sample signal types.  <a href="group__adc12__interface.html#gac39e2f0d4c899dbc13f237e20418dea2">More...</a><br /></td></tr>
 <tr class="separator:gac39e2f0d4c899dbc13f237e20418dea2"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -200,9 +226,9 @@ Functions</h2></td></tr>
 <tr class="memitem:ga2fab3d40d8b501b436719835e7d7aaf2"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__adc12__interface.html#ga2fab3d40d8b501b436719835e7d7aaf2">adc12_init_pmt_dma</a> (<a class="el" href="structADC12__Type.html">ADC12_Type</a> *ptr, uint32_t addr)</td></tr>
 <tr class="memdesc:ga2fab3d40d8b501b436719835e7d7aaf2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configure the start address of DMA write operation for the preemption mode.  <a href="group__adc12__interface.html#ga2fab3d40d8b501b436719835e7d7aaf2">More...</a><br /></td></tr>
 <tr class="separator:ga2fab3d40d8b501b436719835e7d7aaf2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga6b663e7fa90b2b5569ecd03f145c0954"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__adc12__interface.html#ga6b663e7fa90b2b5569ecd03f145c0954">adc12_init_seq_dma</a> (<a class="el" href="structADC12__Type.html">ADC12_Type</a> *ptr, <a class="el" href="structadc12__dma__config__t.html">adc12_dma_config_t</a> *config)</td></tr>
-<tr class="memdesc:ga6b663e7fa90b2b5569ecd03f145c0954"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configure the start address of DMA write operation for the preemption mode.  <a href="group__adc12__interface.html#ga6b663e7fa90b2b5569ecd03f145c0954">More...</a><br /></td></tr>
-<tr class="separator:ga6b663e7fa90b2b5569ecd03f145c0954"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga423c716b99ab4717b25ed5efe51f5128"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__common__interface.html#ga087efae82a4b174a0363363d9d5ece19">hpm_stat_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__adc12__interface.html#ga423c716b99ab4717b25ed5efe51f5128">adc12_init_seq_dma</a> (<a class="el" href="structADC12__Type.html">ADC12_Type</a> *ptr, <a class="el" href="structadc12__dma__config__t.html">adc12_dma_config_t</a> *config)</td></tr>
+<tr class="memdesc:ga423c716b99ab4717b25ed5efe51f5128"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configure the start address of DMA write operation for the preemption mode.  <a href="group__adc12__interface.html#ga423c716b99ab4717b25ed5efe51f5128">More...</a><br /></td></tr>
+<tr class="separator:ga423c716b99ab4717b25ed5efe51f5128"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader">Status</div></td></tr>
 <tr class="memitem:gaf6e5628b28d54a63b4aa0541b5fb9ccd"><td class="memItemLeft" align="right" valign="top">static uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__adc12__interface.html#gaf6e5628b28d54a63b4aa0541b5fb9ccd">adc12_get_status_flags</a> (<a class="el" href="structADC12__Type.html">ADC12_Type</a> *ptr)</td></tr>
 <tr class="memdesc:gaf6e5628b28d54a63b4aa0541b5fb9ccd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get all ADC12 status flags.  <a href="group__adc12__interface.html#gaf6e5628b28d54a63b4aa0541b5fb9ccd">More...</a><br /></td></tr>
@@ -240,7 +266,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_14bc92f4b96c8519b376567118ac28b3.html">drivers</a></li><li class="navelem"><a class="el" href="dir_445f1c1c73deccb146d16af27ad5c1d1.html">inc</a></li><li class="navelem"><a class="el" href="hpm__adc12__drv_8h.html">hpm_adc12_drv.h</a></li>
-    <li class="footer">Generated on Wed Jul 6 2022 09:39:52 for HPM SDK by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
+    <li class="footer">Generated on Sun Jul 31 2022 11:56:25 for HPM SDK by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>
 </body>

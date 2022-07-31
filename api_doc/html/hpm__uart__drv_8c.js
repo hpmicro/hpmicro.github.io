@@ -15,5 +15,6 @@ var hpm__uart__drv_8c =
     [ "uart_receive_data", "group__uart__interface.html#ga1c64e085c9c2d10f4fe8f9ca6e34fa38", null ],
     [ "uart_send_byte", "group__uart__interface.html#ga768c24bffe679cf9a18c4b7a14deff3b", null ],
     [ "uart_send_data", "group__uart__interface.html#ga44ab912005a3f999aa77c67eaa649ffd", null ],
+    [ "uart_set_baudrate", "group__uart__interface.html#ga2c8de76bae1caada7c302a05bb351083", null ],
     [ "uart_set_signal_level", "group__uart__interface.html#gad319f13e3e38f2852fa94df527c16d87", null ]
 ];

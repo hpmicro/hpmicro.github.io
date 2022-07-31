@@ -91,6 +91,7 @@ $(document).ready(function(){initNavTree('group__cam__interface.html',''); initR
   <div class="summary">
 <a href="#nested-classes">Data Structures</a> &#124;
 <a href="#define-members">Macros</a> &#124;
+<a href="#enum-members">Enumerations</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle"><div class="title">CAM driver APIs</div></div>
 </div><!--header-->
@@ -181,6 +182,36 @@ Macros</h2></td></tr>
 <tr class="memitem:ga05b65c98d470413e65e3e1de89621443"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__cam__interface.html#ga05b65c98d470413e65e3e1de89621443">CAM_COLOR_FORMAT_YUV444</a>&#160;&#160;&#160;(<a class="el" href="hpm__cam__regs_8h.html#ac42d532e3598df71b5aca6d388832e1f">CAM_CR1_COLOR_FORMATS_SET</a>(8))</td></tr>
 <tr class="separator:ga05b65c98d470413e65e3e1de89621443"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
+Enumerations</h2></td></tr>
+<tr class="memitem:gae47207b1b5add1049dd788f773590909"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__cam__interface.html#gae47207b1b5add1049dd788f773590909">cam_input_pixel_byte_order_t</a> { <br />
+&#160;&#160;<a class="el" href="group__cam__interface.html#ggae47207b1b5add1049dd788f773590909a863cd02c71a24e02ff44085e4178a1ad">cam_input_pixel_yuv444</a> = 0
+, <a class="el" href="group__cam__interface.html#ggae47207b1b5add1049dd788f773590909a2ee9b226f79c5f9f1608c65efefad354">cam_input_pixel_yvu444</a> = 1
+, <a class="el" href="group__cam__interface.html#ggae47207b1b5add1049dd788f773590909ad6152699c04f7eda7cca7404d7f23ab7">cam_input_pixel_uyv444</a> = 2
+, <a class="el" href="group__cam__interface.html#ggae47207b1b5add1049dd788f773590909ab2adb77adabc40c1bde5e21d46aac14b">cam_input_pixel_vyu444</a> = 3
+, <br />
+&#160;&#160;<a class="el" href="group__cam__interface.html#ggae47207b1b5add1049dd788f773590909a32fa9d4e5e2344780ce488185286ea59">cam_input_pixel_uvy444</a> = 4
+, <a class="el" href="group__cam__interface.html#ggae47207b1b5add1049dd788f773590909ac74fb9c6930c4205baa88ef11352222a">cam_input_pixel_vuy444</a> = 5
+, <a class="el" href="group__cam__interface.html#ggae47207b1b5add1049dd788f773590909af7950f4105f7bdd46fc3bcc923bbd241">cam_input_pixel_yuyv422</a> = 0
+, <a class="el" href="group__cam__interface.html#ggae47207b1b5add1049dd788f773590909a6ff176c7efc00ad490db8e3c36ac2087">cam_input_pixel_yvyu422</a> = 1
+, <br />
+&#160;&#160;<a class="el" href="group__cam__interface.html#ggae47207b1b5add1049dd788f773590909a821b0842342356ffaf0c1314d39a7249">cam_input_pixel_uyvy422</a> = 2
+, <a class="el" href="group__cam__interface.html#ggae47207b1b5add1049dd788f773590909a5a511e74cb6ae7d4ff13ebacca1a1148">cam_input_pixel_vyuy422</a> = 3
+, <a class="el" href="group__cam__interface.html#ggae47207b1b5add1049dd788f773590909a4cf20003c55886285cbefe0bd9cb4e55">cam_input_pixel_rgb565</a> = 0
+, <a class="el" href="group__cam__interface.html#ggae47207b1b5add1049dd788f773590909a1430c239342ab59c11bd95b9b50526e9">cam_input_pixel_bgr565</a> = 1
+, <br />
+&#160;&#160;<a class="el" href="group__cam__interface.html#ggae47207b1b5add1049dd788f773590909a0aecc1419ff4828c0dc0eb21f65f4776">cam_input_pixel_gbr888</a> = 0
+, <a class="el" href="group__cam__interface.html#ggae47207b1b5add1049dd788f773590909acfeeef8d7f9dfafd1b19fd1b5f5c559f">cam_input_pixel_grb888</a> = 1
+, <a class="el" href="group__cam__interface.html#ggae47207b1b5add1049dd788f773590909ad2e9e3f1db9e98572c98e733db480fb9">cam_input_pixel_bgr888</a> = 2
+, <a class="el" href="group__cam__interface.html#ggae47207b1b5add1049dd788f773590909a3893eee302d3f296eec0147622322bdd">cam_input_pixel_rgb888</a> = 3
+, <br />
+&#160;&#160;<a class="el" href="group__cam__interface.html#ggae47207b1b5add1049dd788f773590909a44e6b0ee76c76407faf54e97a33a4b2f">cam_input_pixel_brg888</a> = 4
+, <a class="el" href="group__cam__interface.html#ggae47207b1b5add1049dd788f773590909a7508faf4f74c14490abfc683521366f7">cam_input_pixel_rbg888</a> = 5
+<br />
+ }</td></tr>
+<tr class="memdesc:gae47207b1b5add1049dd788f773590909"><td class="mdescLeft">&#160;</td><td class="mdescRight">cam input pixel byte order  <a href="group__cam__interface.html#gae47207b1b5add1049dd788f773590909">More...</a><br /></td></tr>
+<tr class="separator:gae47207b1b5add1049dd788f773590909"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:gaaf8be10cc0d53c62250444aaa0bdd89b"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__cam__interface.html#gaaf8be10cc0d53c62250444aaa0bdd89b">cam_set_color_key</a> (<a class="el" href="structCAM__Type.html">CAM_Type</a> *ptr, uint32_t high, uint32_t low)</td></tr>
@@ -198,6 +229,24 @@ Functions</h2></td></tr>
 <tr class="memitem:gadbf25b323989cb0b5e6051dfb0d90156"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__cam__interface.html#gadbf25b323989cb0b5e6051dfb0d90156">cam_stop</a> (<a class="el" href="structCAM__Type.html">CAM_Type</a> *ptr)</td></tr>
 <tr class="memdesc:gadbf25b323989cb0b5e6051dfb0d90156"><td class="mdescLeft">&#160;</td><td class="mdescRight">CAM stop.  <a href="group__cam__interface.html#gadbf25b323989cb0b5e6051dfb0d90156">More...</a><br /></td></tr>
 <tr class="separator:gadbf25b323989cb0b5e6051dfb0d90156"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga36d161a5e52a8baf90346caecb740eae"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__cam__interface.html#ga36d161a5e52a8baf90346caecb740eae">cam_enable_binary_output</a> (<a class="el" href="structCAM__Type.html">CAM_Type</a> *ptr)</td></tr>
+<tr class="memdesc:ga36d161a5e52a8baf90346caecb740eae"><td class="mdescLeft">&#160;</td><td class="mdescRight">CAM enable binary output.  <a href="group__cam__interface.html#ga36d161a5e52a8baf90346caecb740eae">More...</a><br /></td></tr>
+<tr class="separator:ga36d161a5e52a8baf90346caecb740eae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga937d37e7e1617ab17ae30b34774e7a98"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__cam__interface.html#ga937d37e7e1617ab17ae30b34774e7a98">cam_disable_binary_output</a> (<a class="el" href="structCAM__Type.html">CAM_Type</a> *ptr)</td></tr>
+<tr class="memdesc:ga937d37e7e1617ab17ae30b34774e7a98"><td class="mdescLeft">&#160;</td><td class="mdescRight">CAM disable binary output.  <a href="group__cam__interface.html#ga937d37e7e1617ab17ae30b34774e7a98">More...</a><br /></td></tr>
+<tr class="separator:ga937d37e7e1617ab17ae30b34774e7a98"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad51faf8a0ba5eafce7e00e62c496029e"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__cam__interface.html#gad51faf8a0ba5eafce7e00e62c496029e">cam_set_binary_threshold</a> (<a class="el" href="structCAM__Type.html">CAM_Type</a> *ptr, uint8_t threshold)</td></tr>
+<tr class="memdesc:gad51faf8a0ba5eafce7e00e62c496029e"><td class="mdescLeft">&#160;</td><td class="mdescRight">CAM set binary threshold.  <a href="group__cam__interface.html#gad51faf8a0ba5eafce7e00e62c496029e">More...</a><br /></td></tr>
+<tr class="separator:gad51faf8a0ba5eafce7e00e62c496029e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac0e4d7fc7a56ef1fc7052e489ec2b00f"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__cam__interface.html#gac0e4d7fc7a56ef1fc7052e489ec2b00f">cam_enable_argb8888_output</a> (<a class="el" href="structCAM__Type.html">CAM_Type</a> *ptr)</td></tr>
+<tr class="memdesc:gac0e4d7fc7a56ef1fc7052e489ec2b00f"><td class="mdescLeft">&#160;</td><td class="mdescRight">CAM enable argb8888 output.  <a href="group__cam__interface.html#gac0e4d7fc7a56ef1fc7052e489ec2b00f">More...</a><br /></td></tr>
+<tr class="separator:gac0e4d7fc7a56ef1fc7052e489ec2b00f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga22b9750f7a0fdced650f5853ea67bf76"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__cam__interface.html#ga22b9750f7a0fdced650f5853ea67bf76">cam_disable_argb8888_output</a> (<a class="el" href="structCAM__Type.html">CAM_Type</a> *ptr)</td></tr>
+<tr class="memdesc:ga22b9750f7a0fdced650f5853ea67bf76"><td class="mdescLeft">&#160;</td><td class="mdescRight">CAM disable argb8888 output.  <a href="group__cam__interface.html#ga22b9750f7a0fdced650f5853ea67bf76">More...</a><br /></td></tr>
+<tr class="separator:ga22b9750f7a0fdced650f5853ea67bf76"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga2970a026ee1ed154f614c8c98c46e48d"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__cam__interface.html#ga2970a026ee1ed154f614c8c98c46e48d">cam_set_input_pixel_byte_order</a> (<a class="el" href="structCAM__Type.html">CAM_Type</a> *ptr, <a class="el" href="group__cam__interface.html#gae47207b1b5add1049dd788f773590909">cam_input_pixel_byte_order_t</a> order)</td></tr>
+<tr class="memdesc:ga2970a026ee1ed154f614c8c98c46e48d"><td class="mdescLeft">&#160;</td><td class="mdescRight">CAM set input pixel byte order.  <a href="group__cam__interface.html#ga2970a026ee1ed154f614c8c98c46e48d">More...</a><br /></td></tr>
+<tr class="separator:ga2970a026ee1ed154f614c8c98c46e48d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p >CAM driver APIs. </p>
@@ -756,7 +805,192 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<h2 class="groupheader">Enumeration Type Documentation</h2>
+<a id="gae47207b1b5add1049dd788f773590909" name="gae47207b1b5add1049dd788f773590909"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gae47207b1b5add1049dd788f773590909">&#9670;&nbsp;</a></span>cam_input_pixel_byte_order_t</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="group__cam__interface.html#gae47207b1b5add1049dd788f773590909">cam_input_pixel_byte_order_t</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><code>#include &lt;<a class="el" href="hpm__cam__drv_8h.html">drivers/inc/hpm_cam_drv.h</a>&gt;</code></p>
+
+<p>cam input pixel byte order </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ggae47207b1b5add1049dd788f773590909a863cd02c71a24e02ff44085e4178a1ad" name="ggae47207b1b5add1049dd788f773590909a863cd02c71a24e02ff44085e4178a1ad"></a>cam_input_pixel_yuv444&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ggae47207b1b5add1049dd788f773590909a2ee9b226f79c5f9f1608c65efefad354" name="ggae47207b1b5add1049dd788f773590909a2ee9b226f79c5f9f1608c65efefad354"></a>cam_input_pixel_yvu444&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ggae47207b1b5add1049dd788f773590909ad6152699c04f7eda7cca7404d7f23ab7" name="ggae47207b1b5add1049dd788f773590909ad6152699c04f7eda7cca7404d7f23ab7"></a>cam_input_pixel_uyv444&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ggae47207b1b5add1049dd788f773590909ab2adb77adabc40c1bde5e21d46aac14b" name="ggae47207b1b5add1049dd788f773590909ab2adb77adabc40c1bde5e21d46aac14b"></a>cam_input_pixel_vyu444&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ggae47207b1b5add1049dd788f773590909a32fa9d4e5e2344780ce488185286ea59" name="ggae47207b1b5add1049dd788f773590909a32fa9d4e5e2344780ce488185286ea59"></a>cam_input_pixel_uvy444&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ggae47207b1b5add1049dd788f773590909ac74fb9c6930c4205baa88ef11352222a" name="ggae47207b1b5add1049dd788f773590909ac74fb9c6930c4205baa88ef11352222a"></a>cam_input_pixel_vuy444&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ggae47207b1b5add1049dd788f773590909af7950f4105f7bdd46fc3bcc923bbd241" name="ggae47207b1b5add1049dd788f773590909af7950f4105f7bdd46fc3bcc923bbd241"></a>cam_input_pixel_yuyv422&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ggae47207b1b5add1049dd788f773590909a6ff176c7efc00ad490db8e3c36ac2087" name="ggae47207b1b5add1049dd788f773590909a6ff176c7efc00ad490db8e3c36ac2087"></a>cam_input_pixel_yvyu422&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ggae47207b1b5add1049dd788f773590909a821b0842342356ffaf0c1314d39a7249" name="ggae47207b1b5add1049dd788f773590909a821b0842342356ffaf0c1314d39a7249"></a>cam_input_pixel_uyvy422&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ggae47207b1b5add1049dd788f773590909a5a511e74cb6ae7d4ff13ebacca1a1148" name="ggae47207b1b5add1049dd788f773590909a5a511e74cb6ae7d4ff13ebacca1a1148"></a>cam_input_pixel_vyuy422&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ggae47207b1b5add1049dd788f773590909a4cf20003c55886285cbefe0bd9cb4e55" name="ggae47207b1b5add1049dd788f773590909a4cf20003c55886285cbefe0bd9cb4e55"></a>cam_input_pixel_rgb565&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ggae47207b1b5add1049dd788f773590909a1430c239342ab59c11bd95b9b50526e9" name="ggae47207b1b5add1049dd788f773590909a1430c239342ab59c11bd95b9b50526e9"></a>cam_input_pixel_bgr565&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ggae47207b1b5add1049dd788f773590909a0aecc1419ff4828c0dc0eb21f65f4776" name="ggae47207b1b5add1049dd788f773590909a0aecc1419ff4828c0dc0eb21f65f4776"></a>cam_input_pixel_gbr888&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ggae47207b1b5add1049dd788f773590909acfeeef8d7f9dfafd1b19fd1b5f5c559f" name="ggae47207b1b5add1049dd788f773590909acfeeef8d7f9dfafd1b19fd1b5f5c559f"></a>cam_input_pixel_grb888&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ggae47207b1b5add1049dd788f773590909ad2e9e3f1db9e98572c98e733db480fb9" name="ggae47207b1b5add1049dd788f773590909ad2e9e3f1db9e98572c98e733db480fb9"></a>cam_input_pixel_bgr888&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ggae47207b1b5add1049dd788f773590909a3893eee302d3f296eec0147622322bdd" name="ggae47207b1b5add1049dd788f773590909a3893eee302d3f296eec0147622322bdd"></a>cam_input_pixel_rgb888&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ggae47207b1b5add1049dd788f773590909a44e6b0ee76c76407faf54e97a33a4b2f" name="ggae47207b1b5add1049dd788f773590909a44e6b0ee76c76407faf54e97a33a4b2f"></a>cam_input_pixel_brg888&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ggae47207b1b5add1049dd788f773590909a7508faf4f74c14490abfc683521366f7" name="ggae47207b1b5add1049dd788f773590909a7508faf4f74c14490abfc683521366f7"></a>cam_input_pixel_rbg888&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+</div>
+</div>
 <h2 class="groupheader">Function Documentation</h2>
+<a id="ga22b9750f7a0fdced650f5853ea67bf76" name="ga22b9750f7a0fdced650f5853ea67bf76"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga22b9750f7a0fdced650f5853ea67bf76">&#9670;&nbsp;</a></span>cam_disable_argb8888_output()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void cam_disable_argb8888_output </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structCAM__Type.html">CAM_Type</a> *&#160;</td>
+          <td class="paramname"><em>ptr</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><code>#include &lt;<a class="el" href="hpm__cam__drv_8h.html">drivers/inc/hpm_cam_drv.h</a>&gt;</code></p>
+
+<p>CAM disable argb8888 output. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">ptr</td><td>CAM base address </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ga937d37e7e1617ab17ae30b34774e7a98" name="ga937d37e7e1617ab17ae30b34774e7a98"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga937d37e7e1617ab17ae30b34774e7a98">&#9670;&nbsp;</a></span>cam_disable_binary_output()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void cam_disable_binary_output </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structCAM__Type.html">CAM_Type</a> *&#160;</td>
+          <td class="paramname"><em>ptr</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><code>#include &lt;<a class="el" href="hpm__cam__drv_8h.html">drivers/inc/hpm_cam_drv.h</a>&gt;</code></p>
+
+<p>CAM disable binary output. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">ptr</td><td>CAM base address </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="gac0e4d7fc7a56ef1fc7052e489ec2b00f" name="gac0e4d7fc7a56ef1fc7052e489ec2b00f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gac0e4d7fc7a56ef1fc7052e489ec2b00f">&#9670;&nbsp;</a></span>cam_enable_argb8888_output()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void cam_enable_argb8888_output </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structCAM__Type.html">CAM_Type</a> *&#160;</td>
+          <td class="paramname"><em>ptr</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><code>#include &lt;<a class="el" href="hpm__cam__drv_8h.html">drivers/inc/hpm_cam_drv.h</a>&gt;</code></p>
+
+<p>CAM enable argb8888 output. </p>
+<p >This function is used to enable CAM argb8888 pixel output after the CAM is initialized by the cam_init and input pixel byte order is configured by the cam_set_input_pixel_byte_order.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">ptr</td><td>CAM base address </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ga36d161a5e52a8baf90346caecb740eae" name="ga36d161a5e52a8baf90346caecb740eae"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga36d161a5e52a8baf90346caecb740eae">&#9670;&nbsp;</a></span>cam_enable_binary_output()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void cam_enable_binary_output </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structCAM__Type.html">CAM_Type</a> *&#160;</td>
+          <td class="paramname"><em>ptr</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><code>#include &lt;<a class="el" href="hpm__cam__drv_8h.html">drivers/inc/hpm_cam_drv.h</a>&gt;</code></p>
+
+<p>CAM enable binary output. </p>
+<p >This function is used to enable CAM binary output after the CAM is initialized by the cam_init.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">ptr</td><td>CAM base address </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="ga142b63f5aa4e908207a5ac82c30f9b28" name="ga142b63f5aa4e908207a5ac82c30f9b28"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga142b63f5aa4e908207a5ac82c30f9b28">&#9670;&nbsp;</a></span>cam_get_default_config()</h2>
 
@@ -848,6 +1082,53 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="gad51faf8a0ba5eafce7e00e62c496029e" name="gad51faf8a0ba5eafce7e00e62c496029e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gad51faf8a0ba5eafce7e00e62c496029e">&#9670;&nbsp;</a></span>cam_set_binary_threshold()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void cam_set_binary_threshold </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structCAM__Type.html">CAM_Type</a> *&#160;</td>
+          <td class="paramname"><em>ptr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>threshold</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><code>#include &lt;<a class="el" href="hpm__cam__drv_8h.html">drivers/inc/hpm_cam_drv.h</a>&gt;</code></p>
+
+<p>CAM set binary threshold. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">ptr</td><td>CAM base address </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">threshold</td><td>threshold value of binary output </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="gaaf8be10cc0d53c62250444aaa0bdd89b" name="gaaf8be10cc0d53c62250444aaa0bdd89b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#gaaf8be10cc0d53c62250444aaa0bdd89b">&#9670;&nbsp;</a></span>cam_set_color_key()</h2>
 
@@ -896,6 +1177,53 @@ Functions</h2></td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">ptr</td><td>CAM base address </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">high</td><td>color key high limits </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">low</td><td>color key low limits </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ga2970a026ee1ed154f614c8c98c46e48d" name="ga2970a026ee1ed154f614c8c98c46e48d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga2970a026ee1ed154f614c8c98c46e48d">&#9670;&nbsp;</a></span>cam_set_input_pixel_byte_order()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void cam_set_input_pixel_byte_order </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structCAM__Type.html">CAM_Type</a> *&#160;</td>
+          <td class="paramname"><em>ptr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__cam__interface.html#gae47207b1b5add1049dd788f773590909">cam_input_pixel_byte_order_t</a>&#160;</td>
+          <td class="paramname"><em>order</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><code>#include &lt;<a class="el" href="hpm__cam__drv_8h.html">drivers/inc/hpm_cam_drv.h</a>&gt;</code></p>
+
+<p>CAM set input pixel byte order. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">ptr</td><td>CAM base address </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">order</td><td>cam_input_pixel_byte_order_t </td></tr>
   </table>
   </dd>
 </dl>
@@ -963,7 +1291,7 @@ Functions</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Wed Jul 6 2022 09:39:55 for HPM SDK by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
+    <li class="footer">Generated on Sun Jul 31 2022 11:56:28 for HPM SDK by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>
 </body>

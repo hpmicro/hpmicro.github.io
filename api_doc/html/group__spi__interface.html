@@ -247,6 +247,12 @@ Functions</h2></td></tr>
 <tr class="memitem:ga085530c65ea8efb8433c27a8346ca5dd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__common__interface.html#ga087efae82a4b174a0363363d9d5ece19">hpm_stat_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__spi__interface.html#ga085530c65ea8efb8433c27a8346ca5dd">spi_setup_dma_transfer</a> (<a class="el" href="structSPI__Type.html">SPI_Type</a> *ptr, <a class="el" href="structspi__control__config__t.html">spi_control_config_t</a> *config, uint8_t *cmd, uint32_t *addr, uint32_t wsize, uint32_t rsize)</td></tr>
 <tr class="memdesc:ga085530c65ea8efb8433c27a8346ca5dd"><td class="mdescLeft">&#160;</td><td class="mdescRight">spi setup dma transfer  <a href="group__spi__interface.html#ga085530c65ea8efb8433c27a8346ca5dd">More...</a><br /></td></tr>
 <tr class="separator:ga085530c65ea8efb8433c27a8346ca5dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga0bd47db6a31f4592c25b0b0ce4d26635"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__common__interface.html#ga087efae82a4b174a0363363d9d5ece19">hpm_stat_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__spi__interface.html#ga0bd47db6a31f4592c25b0b0ce4d26635">spi_wait_for_idle_status</a> (<a class="el" href="structSPI__Type.html">SPI_Type</a> *ptr)</td></tr>
+<tr class="memdesc:ga0bd47db6a31f4592c25b0b0ce4d26635"><td class="mdescLeft">&#160;</td><td class="mdescRight">spi wait for idle status  <a href="group__spi__interface.html#ga0bd47db6a31f4592c25b0b0ce4d26635">More...</a><br /></td></tr>
+<tr class="separator:ga0bd47db6a31f4592c25b0b0ce4d26635"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga3292349e298ddb9f64819946afcea7d2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__common__interface.html#ga087efae82a4b174a0363363d9d5ece19">hpm_stat_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__spi__interface.html#ga3292349e298ddb9f64819946afcea7d2">spi_wait_for_busy_status</a> (<a class="el" href="structSPI__Type.html">SPI_Type</a> *ptr)</td></tr>
+<tr class="memdesc:ga3292349e298ddb9f64819946afcea7d2"><td class="mdescLeft">&#160;</td><td class="mdescRight">spi wait for busy status  <a href="group__spi__interface.html#ga3292349e298ddb9f64819946afcea7d2">More...</a><br /></td></tr>
+<tr class="separator:ga3292349e298ddb9f64819946afcea7d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p >SPI driver APIs. </p>
@@ -883,12 +889,80 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="ga3292349e298ddb9f64819946afcea7d2" name="ga3292349e298ddb9f64819946afcea7d2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga3292349e298ddb9f64819946afcea7d2">&#9670;&nbsp;</a></span>spi_wait_for_busy_status()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__common__interface.html#ga087efae82a4b174a0363363d9d5ece19">hpm_stat_t</a> spi_wait_for_busy_status </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structSPI__Type.html">SPI_Type</a> *&#160;</td>
+          <td class="paramname"><em>ptr</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><code>#include &lt;<a class="el" href="hpm__spi__drv_8h.html">drivers/inc/hpm_spi_drv.h</a>&gt;</code></p>
+
+<p>spi wait for busy status </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">ptr</td><td>SPI base address </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">hpm_stat_t</td><td>status_success if spi in busy status </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ga0bd47db6a31f4592c25b0b0ce4d26635" name="ga0bd47db6a31f4592c25b0b0ce4d26635"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga0bd47db6a31f4592c25b0b0ce4d26635">&#9670;&nbsp;</a></span>spi_wait_for_idle_status()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__common__interface.html#ga087efae82a4b174a0363363d9d5ece19">hpm_stat_t</a> spi_wait_for_idle_status </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structSPI__Type.html">SPI_Type</a> *&#160;</td>
+          <td class="paramname"><em>ptr</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><code>#include &lt;<a class="el" href="hpm__spi__drv_8h.html">drivers/inc/hpm_spi_drv.h</a>&gt;</code></p>
+
+<p>spi wait for idle status </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">ptr</td><td>SPI base address </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">hpm_stat_t</td><td>status_success if spi in idle status </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Wed Jul 6 2022 09:39:55 for HPM SDK by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
+    <li class="footer">Generated on Sun Jul 31 2022 11:56:28 for HPM SDK by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>
 </body>

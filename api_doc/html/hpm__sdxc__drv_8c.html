@@ -100,16 +100,6 @@ $(document).ready(function(){initNavTree('hpm__sdxc__drv_8c.html',''); initResiz
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:a625e915f71738d802e37fee8d8723541"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hpm__sdxc__drv_8c.html#a625e915f71738d802e37fee8d8723541">SDXC_STS_CMD_ERR</a></td></tr>
-<tr class="separator:a625e915f71738d802e37fee8d8723541"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af25560ebeea21fc82ead7277826653bc"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hpm__sdxc__drv_8c.html#af25560ebeea21fc82ead7277826653bc">SDXC_STS_DATA_ERR</a></td></tr>
-<tr class="separator:af25560ebeea21fc82ead7277826653bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adec3ce578445887ea4db534983a02c19"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hpm__sdxc__drv_8c.html#adec3ce578445887ea4db534983a02c19">SDXC_STS_ERROR</a>&#160;&#160;&#160;(<a class="el" href="hpm__sdxc__regs_8h.html#ae14eddddff2c0b9089d113dc49373330">SDXC_INT_STAT_ERR_INTERRUPT_MASK</a> | <a class="el" href="hpm__sdxc__drv_8c.html#a625e915f71738d802e37fee8d8723541">SDXC_STS_CMD_ERR</a> | <a class="el" href="hpm__sdxc__drv_8c.html#af25560ebeea21fc82ead7277826653bc">SDXC_STS_DATA_ERR</a>)</td></tr>
-<tr class="separator:adec3ce578445887ea4db534983a02c19"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0b409a1003769ad28ebb04d117e49e9d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hpm__sdxc__drv_8c.html#a0b409a1003769ad28ebb04d117e49e9d">SDXC_STS_CMD_FLAGS</a>&#160;&#160;&#160;(<a class="el" href="hpm__sdxc__drv_8c.html#a625e915f71738d802e37fee8d8723541">SDXC_STS_CMD_ERR</a> | <a class="el" href="hpm__sdxc__regs_8h.html#a86f4809b08406fa29e93ba604844625a">SDXC_INT_STAT_CMD_COMPLETE_MASK</a>)</td></tr>
-<tr class="separator:a0b409a1003769ad28ebb04d117e49e9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab059dd8331b722cdb50a215527a99288"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hpm__sdxc__drv_8c.html#ab059dd8331b722cdb50a215527a99288">SDXC_STS_ALL_FLAGS</a></td></tr>
-<tr class="separator:ab059dd8331b722cdb50a215527a99288"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aabcbe4af8b71ecf49b92c313edc3d2cd"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hpm__sdxc__drv_8c.html#aabcbe4af8b71ecf49b92c313edc3d2cd">SDXC_DMA_MAX_XFER_LEN_26BIT</a>&#160;&#160;&#160;((1UL &lt;&lt; 26) - 4U)</td></tr>
 <tr class="separator:aabcbe4af8b71ecf49b92c313edc3d2cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0ef6e613f3cc7b44d558a7278fe0851b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hpm__sdxc__drv_8c.html#a0ef6e613f3cc7b44d558a7278fe0851b">SDXC_DMA_MAX_XFER_LEN_16BIT</a>&#160;&#160;&#160;((1UL &lt;&lt; 16) - 4U)</td></tr>
@@ -136,8 +126,6 @@ Enumerations</h2></td></tr>
 Functions</h2></td></tr>
 <tr class="memitem:a6d66ac5662cc48a8a34e192eff992c27"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="group__common__interface.html#ga087efae82a4b174a0363363d9d5ece19">hpm_stat_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hpm__sdxc__drv_8c.html#a6d66ac5662cc48a8a34e192eff992c27">sdxc_set_transfer_config</a> (<a class="el" href="structSDXC__Type.html">SDXC_Type</a> *base, uint32_t xfer_flags, uint32_t block_size, uint32_t block_cnt, uint32_t *new_flags)</td></tr>
 <tr class="separator:a6d66ac5662cc48a8a34e192eff992c27"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af70ecad2078bf510a05272ae0ec53c7a"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="group__common__interface.html#ga087efae82a4b174a0363363d9d5ece19">hpm_stat_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hpm__sdxc__drv_8c.html#af70ecad2078bf510a05272ae0ec53c7a">sdxc_receive_cmd_response</a> (<a class="el" href="structSDXC__Type.html">SDXC_Type</a> *base, <a class="el" href="group__sdxc__interface.html#ga7f7195eb5f19cd35b9fb42b632d4511e">sdxc_command_t</a> *cmd)</td></tr>
-<tr class="separator:af70ecad2078bf510a05272ae0ec53c7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abc64bebedd7bce7e4000ca9673d5395f"><td class="memItemLeft" align="right" valign="top">static uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hpm__sdxc__drv_8c.html#abc64bebedd7bce7e4000ca9673d5395f">sdxc_read_data_port</a> (<a class="el" href="structSDXC__Type.html">SDXC_Type</a> *base, <a class="el" href="group__sdxc__interface.html#ga91fe68da7e2017c9f4cf786fb0d97b80">sdxc_data_t</a> *data, uint32_t transferred_words)</td></tr>
 <tr class="separator:abc64bebedd7bce7e4000ca9673d5395f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a054c91865ecc9b6a06981dfae85354c6"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="group__common__interface.html#ga087efae82a4b174a0363363d9d5ece19">hpm_stat_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hpm__sdxc__drv_8c.html#a054c91865ecc9b6a06981dfae85354c6">sdxc_read_by_data_port_blocking</a> (<a class="el" href="structSDXC__Type.html">SDXC_Type</a> *base, <a class="el" href="group__sdxc__interface.html#ga91fe68da7e2017c9f4cf786fb0d97b80">sdxc_data_t</a> *data)</td></tr>
@@ -152,18 +140,27 @@ Functions</h2></td></tr>
 <tr class="separator:ab830a4cdf362b71f051612182a228b72"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2a06ab2e77f979ed0175ea67977a0bfc"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hpm__sdxc__drv_8c.html#a2a06ab2e77f979ed0175ea67977a0bfc">sdxc_is_bus_idle</a> (<a class="el" href="structSDXC__Type.html">SDXC_Type</a> *base)</td></tr>
 <tr class="separator:a2a06ab2e77f979ed0175ea67977a0bfc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gadbd59858bc0a4299da544b32645d77c7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__common__interface.html#ga087efae82a4b174a0363363d9d5ece19">hpm_stat_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sdxc__interface.html#gadbd59858bc0a4299da544b32645d77c7">sdxc_receive_cmd_response</a> (<a class="el" href="structSDXC__Type.html">SDXC_Type</a> *base, <a class="el" href="group__sdxc__interface.html#ga7f7195eb5f19cd35b9fb42b632d4511e">sdxc_command_t</a> *cmd)</td></tr>
+<tr class="memdesc:gadbd59858bc0a4299da544b32645d77c7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Receive command response.  <a href="group__sdxc__interface.html#gadbd59858bc0a4299da544b32645d77c7">More...</a><br /></td></tr>
+<tr class="separator:gadbd59858bc0a4299da544b32645d77c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga234d3b0deb7f4f11f98570b5cd8d0fc2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__common__interface.html#ga087efae82a4b174a0363363d9d5ece19">hpm_stat_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sdxc__interface.html#ga234d3b0deb7f4f11f98570b5cd8d0fc2">sdxc_get_capabilities</a> (<a class="el" href="structSDXC__Type.html">SDXC_Type</a> *base, <a class="el" href="structsdxc__capabilities__t.html">sdxc_capabilities_t</a> *capabilities)</td></tr>
 <tr class="memdesc:ga234d3b0deb7f4f11f98570b5cd8d0fc2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get SDXC capabilities.  <a href="group__sdxc__interface.html#ga234d3b0deb7f4f11f98570b5cd8d0fc2">More...</a><br /></td></tr>
 <tr class="separator:ga234d3b0deb7f4f11f98570b5cd8d0fc2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga30197db1d82678f456626bb6f47d3e2a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__common__interface.html#ga087efae82a4b174a0363363d9d5ece19">hpm_stat_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sdxc__interface.html#ga30197db1d82678f456626bb6f47d3e2a">sdxc_send_command</a> (<a class="el" href="structSDXC__Type.html">SDXC_Type</a> *base, <a class="el" href="group__sdxc__interface.html#ga7f7195eb5f19cd35b9fb42b632d4511e">sdxc_command_t</a> *cmd)</td></tr>
 <tr class="memdesc:ga30197db1d82678f456626bb6f47d3e2a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send Command via SDXC.  <a href="group__sdxc__interface.html#ga30197db1d82678f456626bb6f47d3e2a">More...</a><br /></td></tr>
 <tr class="separator:ga30197db1d82678f456626bb6f47d3e2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab72d27dc5881670acade5fa1d938675c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__common__interface.html#ga087efae82a4b174a0363363d9d5ece19">hpm_stat_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sdxc__interface.html#gab72d27dc5881670acade5fa1d938675c">sdxc_parse_interrupt_status</a> (<a class="el" href="structSDXC__Type.html">SDXC_Type</a> *base)</td></tr>
+<tr class="memdesc:gab72d27dc5881670acade5fa1d938675c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parse the SDXC interrupt status to HPM encoded status.  <a href="group__sdxc__interface.html#gab72d27dc5881670acade5fa1d938675c">More...</a><br /></td></tr>
+<tr class="separator:gab72d27dc5881670acade5fa1d938675c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gabeae58ec5cd7899ec0c8b91afdfc94e9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__common__interface.html#ga087efae82a4b174a0363363d9d5ece19">hpm_stat_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sdxc__interface.html#gabeae58ec5cd7899ec0c8b91afdfc94e9">sdxc_wait_cmd_done</a> (<a class="el" href="structSDXC__Type.html">SDXC_Type</a> *base, <a class="el" href="group__sdxc__interface.html#ga7f7195eb5f19cd35b9fb42b632d4511e">sdxc_command_t</a> *cmd, bool polling_cmd_done)</td></tr>
 <tr class="memdesc:gabeae58ec5cd7899ec0c8b91afdfc94e9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wait until SDXC command completes.  <a href="group__sdxc__interface.html#gabeae58ec5cd7899ec0c8b91afdfc94e9">More...</a><br /></td></tr>
 <tr class="separator:gabeae58ec5cd7899ec0c8b91afdfc94e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gab8a5e4767ee4378088c66aadea3b1fcf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sdxc__interface.html#gab8a5e4767ee4378088c66aadea3b1fcf">sdxc_init</a> (<a class="el" href="structSDXC__Type.html">SDXC_Type</a> *base, const <a class="el" href="group__sdxc__interface.html#ga3d92b894abf506070f8c933b3ac06c94">sdxc_config_t</a> *config)</td></tr>
 <tr class="memdesc:gab8a5e4767ee4378088c66aadea3b1fcf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize SDXC controller.  <a href="group__sdxc__interface.html#gab8a5e4767ee4378088c66aadea3b1fcf">More...</a><br /></td></tr>
 <tr class="separator:gab8a5e4767ee4378088c66aadea3b1fcf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga73feb9897b8f5cf319e847a99e156a1b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sdxc__interface.html#ga73feb9897b8f5cf319e847a99e156a1b">sdxc_set_data_timeout</a> (<a class="el" href="structSDXC__Type.html">SDXC_Type</a> *base, uint32_t timeout_in_ms, uint32_t *actual_timeout_ms)</td></tr>
+<tr class="memdesc:ga73feb9897b8f5cf319e847a99e156a1b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the Data Timeout Counter value for an SD/eMMC device.  <a href="group__sdxc__interface.html#ga73feb9897b8f5cf319e847a99e156a1b">More...</a><br /></td></tr>
+<tr class="separator:ga73feb9897b8f5cf319e847a99e156a1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaa9ce2278139e0437c932acc51ea606cf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sdxc__interface.html#gaa9ce2278139e0437c932acc51ea606cf">sdxc_set_mmc_boot_config</a> (<a class="el" href="structSDXC__Type.html">SDXC_Type</a> *base, const <a class="el" href="group__sdxc__interface.html#ga8ba1b1dbff8c251b15d95d37c2dd7abd">sdxc_boot_config_t</a> *config)</td></tr>
 <tr class="memdesc:gaa9ce2278139e0437c932acc51ea606cf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set MMC boot configuration.  <a href="group__sdxc__interface.html#gaa9ce2278139e0437c932acc51ea606cf">More...</a><br /></td></tr>
 <tr class="separator:gaa9ce2278139e0437c932acc51ea606cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -191,9 +188,15 @@ Functions</h2></td></tr>
 <tr class="memitem:ga3ae9522477d9e42e05bb8ffc2550bce1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sdxc__interface.html#ga3ae9522477d9e42e05bb8ffc2550bce1">sdxc_set_data_bus_width</a> (<a class="el" href="structSDXC__Type.html">SDXC_Type</a> *base, <a class="el" href="group__sdxc__interface.html#ga941f114fc357db2e037b077829030011">sdxc_bus_width_t</a> width)</td></tr>
 <tr class="memdesc:ga3ae9522477d9e42e05bb8ffc2550bce1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set SDXC Data bus width.  <a href="group__sdxc__interface.html#ga3ae9522477d9e42e05bb8ffc2550bce1">More...</a><br /></td></tr>
 <tr class="separator:ga3ae9522477d9e42e05bb8ffc2550bce1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae6f2e82b50fd078a88a5278c1ef22ba7"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sdxc__interface.html#gae6f2e82b50fd078a88a5278c1ef22ba7">sdxc_get_data_bus_width</a> (<a class="el" href="structSDXC__Type.html">SDXC_Type</a> *base)</td></tr>
+<tr class="memdesc:gae6f2e82b50fd078a88a5278c1ef22ba7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get SDXC Data bus width.  <a href="group__sdxc__interface.html#gae6f2e82b50fd078a88a5278c1ef22ba7">More...</a><br /></td></tr>
+<tr class="separator:gae6f2e82b50fd078a88a5278c1ef22ba7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gac5fb3d55059ad32729acbb387f34b6ab"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sdxc__interface.html#gac5fb3d55059ad32729acbb387f34b6ab">sdxc_set_speed_mode</a> (<a class="el" href="structSDXC__Type.html">SDXC_Type</a> *base, <a class="el" href="group__sdxc__interface.html#gae78c116c8128539ed4fdf8b1793d4f22">sdxc_speed_mode_t</a> mode)</td></tr>
 <tr class="memdesc:gac5fb3d55059ad32729acbb387f34b6ab"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set SDXC speed mode.  <a href="group__sdxc__interface.html#gac5fb3d55059ad32729acbb387f34b6ab">More...</a><br /></td></tr>
 <tr class="separator:gac5fb3d55059ad32729acbb387f34b6ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac11989ec620ff7b92909fd56ff289200"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__common__interface.html#ga087efae82a4b174a0363363d9d5ece19">hpm_stat_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sdxc__interface.html#gac11989ec620ff7b92909fd56ff289200">sdxc_transfer_nonblocking</a> (<a class="el" href="structSDXC__Type.html">SDXC_Type</a> *base, <a class="el" href="group__sdxc__interface.html#gae6d375f36b682792289d9be721fa1ca7">sdxc_adma_config_t</a> *dma_config, <a class="el" href="group__sdxc__interface.html#gabd45a27b4d377a7701dbd86e52fc08e8">sdxc_xfer_t</a> *xfer)</td></tr>
+<tr class="memdesc:gac11989ec620ff7b92909fd56ff289200"><td class="mdescLeft">&#160;</td><td class="mdescRight">Start SDXC transfer in nonblocking way.  <a href="group__sdxc__interface.html#gac11989ec620ff7b92909fd56ff289200">More...</a><br /></td></tr>
+<tr class="separator:gac11989ec620ff7b92909fd56ff289200"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gafa155b89ce0f4d2145046ac8741f5436"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__common__interface.html#ga087efae82a4b174a0363363d9d5ece19">hpm_stat_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sdxc__interface.html#gafa155b89ce0f4d2145046ac8741f5436">sdxc_transfer_blocking</a> (<a class="el" href="structSDXC__Type.html">SDXC_Type</a> *base, <a class="el" href="group__sdxc__interface.html#gae6d375f36b682792289d9be721fa1ca7">sdxc_adma_config_t</a> *dma_config, <a class="el" href="group__sdxc__interface.html#gabd45a27b4d377a7701dbd86e52fc08e8">sdxc_xfer_t</a> *xfer)</td></tr>
 <tr class="memdesc:gafa155b89ce0f4d2145046ac8741f5436"><td class="mdescLeft">&#160;</td><td class="mdescRight">Start SDXC transfer in blocking way.  <a href="group__sdxc__interface.html#gafa155b89ce0f4d2145046ac8741f5436">More...</a><br /></td></tr>
 <tr class="separator:gafa155b89ce0f4d2145046ac8741f5436"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -238,109 +241,6 @@ Variables</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">#define SDXC_DMA_MAX_XFER_LEN_26BIT&#160;&#160;&#160;((1UL &lt;&lt; 26) - 4U)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ab059dd8331b722cdb50a215527a99288" name="ab059dd8331b722cdb50a215527a99288"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab059dd8331b722cdb50a215527a99288">&#9670;&nbsp;</a></span>SDXC_STS_ALL_FLAGS</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define SDXC_STS_ALL_FLAGS</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">            (<a class="code hl_define" href="hpm__sdxc__regs_8h.html#ae14eddddff2c0b9089d113dc49373330">SDXC_INT_STAT_ERR_INTERRUPT_MASK</a> | <a class="code hl_define" href="hpm__sdxc__regs_8h.html#aad46a06ffce19aaa84e795ec79743dc8">SDXC_INT_STAT_CQE_EVENT_MASK</a> | \</div>
-<div class="line">            SDXC_INT_STAT_FX_EVENT_MASK | <a class="code hl_define" href="hpm__sdxc__regs_8h.html#a1e260471133904ae3ac8c886ed7168a1">SDXC_INT_STAT_RE_TUNE_EVENT_MASK</a> | <a class="code hl_define" href="hpm__sdxc__regs_8h.html#abd5b34a64c92b7c535d16d8eb65999af">SDXC_INT_STAT_CARD_INTERRUPT_MASK</a> | \</div>
-<div class="line">            SDXC_INT_STAT_CARD_REMOVAL_MASK | <a class="code hl_define" href="hpm__sdxc__regs_8h.html#ae7bb0b2bdeece792f4b00583feb32c2a">SDXC_INT_STAT_CARD_INSERTION_MASK</a> | <a class="code hl_define" href="hpm__sdxc__regs_8h.html#ae9a9bba65ad61701d18330a4062f5f2d">SDXC_INT_STAT_BUF_RD_READY_MASK</a> | \</div>
-<div class="line">            SDXC_INT_STAT_BUF_WR_READY_MASK | <a class="code hl_define" href="hpm__sdxc__regs_8h.html#abd29fba0e4752221ce06e5c50b5380b1">SDXC_INT_STAT_DMA_INTERRUPT_MASK</a> | <a class="code hl_define" href="hpm__sdxc__regs_8h.html#a6a270132e8a546da1071a290aee6e729">SDXC_INT_STAT_BGAP_EVENT_MASK</a> | \</div>
-<div class="line">            SDXC_INT_STAT_XFER_COMPLETE_MASK | <a class="code hl_define" href="hpm__sdxc__regs_8h.html#a86f4809b08406fa29e93ba604844625a">SDXC_INT_STAT_CMD_COMPLETE_MASK</a> | <a class="code hl_define" href="hpm__sdxc__regs_8h.html#a4117cdfb077297e964622dcff8ccc3b8">SDXC_INT_STAT_BOOT_ACK_ERR_MASK</a> |  \</div>
-<div class="line">            SDXC_INT_STAT_RESP_ERR_MASK | <a class="code hl_define" href="hpm__sdxc__regs_8h.html#a6a4d4c6b5f1941db1e1b3335ef055e52">SDXC_INT_STAT_TUNING_ERR_MASK</a> | <a class="code hl_define" href="hpm__sdxc__regs_8h.html#a03041abb73166580a23176b26ec416ca">SDXC_INT_STAT_ADMA_ERR_MASK</a> |   \</div>
-<div class="line">            SDXC_INT_STAT_AUTO_CMD_ERR_MASK | <a class="code hl_define" href="hpm__sdxc__regs_8h.html#ab06912c3ab32bb5f6627b03bdcfcda25">SDXC_INT_STAT_CUR_LMT_ERR_MASK</a> | <a class="code hl_define" href="hpm__sdxc__regs_8h.html#ae353c1f5e99dc167c8f204668bfec8d4">SDXC_INT_STAT_DATA_END_BIT_ERR_MASK</a> |\</div>
-<div class="line">            SDXC_INT_STAT_DATA_CRC_ERR_MASK | <a class="code hl_define" href="hpm__sdxc__regs_8h.html#a2eed2875d5c81559ee018c5d4ea6858b">SDXC_INT_STAT_DATA_TOUT_ERR_MASK</a> | <a class="code hl_define" href="hpm__sdxc__regs_8h.html#afc95e3571b909b6e3858b7ad66de814e">SDXC_INT_STAT_CMD_IDX_ERR_MASK</a> |\</div>
-<div class="line">            SDXC_INT_STAT_CMD_END_BIT_ERR_MASK | <a class="code hl_define" href="hpm__sdxc__regs_8h.html#a29db956b5dbf778ceb8f6f65ad6b429c">SDXC_INT_STAT_CMD_CRC_ERR_MASK</a> | <a class="code hl_define" href="hpm__sdxc__regs_8h.html#af759e6193b3a5704a8dcfd65095656e5">SDXC_INT_STAT_CMD_TOUT_ERR_MASK</a>)</div>
-<div class="ttc" id="ahpm__sdxc__regs_8h_html_a03041abb73166580a23176b26ec416ca"><div class="ttname"><a href="hpm__sdxc__regs_8h.html#a03041abb73166580a23176b26ec416ca">SDXC_INT_STAT_ADMA_ERR_MASK</a></div><div class="ttdeci">#define SDXC_INT_STAT_ADMA_ERR_MASK</div><div class="ttdef"><b>Definition:</b> hpm_sdxc_regs.h:1173</div></div>
-<div class="ttc" id="ahpm__sdxc__regs_8h_html_a1e260471133904ae3ac8c886ed7168a1"><div class="ttname"><a href="hpm__sdxc__regs_8h.html#a1e260471133904ae3ac8c886ed7168a1">SDXC_INT_STAT_RE_TUNE_EVENT_MASK</a></div><div class="ttdeci">#define SDXC_INT_STAT_RE_TUNE_EVENT_MASK</div><div class="ttdef"><b>Definition:</b> hpm_sdxc_regs.h:1368</div></div>
-<div class="ttc" id="ahpm__sdxc__regs_8h_html_a29db956b5dbf778ceb8f6f65ad6b429c"><div class="ttname"><a href="hpm__sdxc__regs_8h.html#a29db956b5dbf778ceb8f6f65ad6b429c">SDXC_INT_STAT_CMD_CRC_ERR_MASK</a></div><div class="ttdeci">#define SDXC_INT_STAT_CMD_CRC_ERR_MASK</div><div class="ttdef"><b>Definition:</b> hpm_sdxc_regs.h:1302</div></div>
-<div class="ttc" id="ahpm__sdxc__regs_8h_html_a2eed2875d5c81559ee018c5d4ea6858b"><div class="ttname"><a href="hpm__sdxc__regs_8h.html#a2eed2875d5c81559ee018c5d4ea6858b">SDXC_INT_STAT_DATA_TOUT_ERR_MASK</a></div><div class="ttdeci">#define SDXC_INT_STAT_DATA_TOUT_ERR_MASK</div><div class="ttdef"><b>Definition:</b> hpm_sdxc_regs.h:1255</div></div>
-<div class="ttc" id="ahpm__sdxc__regs_8h_html_a4117cdfb077297e964622dcff8ccc3b8"><div class="ttname"><a href="hpm__sdxc__regs_8h.html#a4117cdfb077297e964622dcff8ccc3b8">SDXC_INT_STAT_BOOT_ACK_ERR_MASK</a></div><div class="ttdeci">#define SDXC_INT_STAT_BOOT_ACK_ERR_MASK</div><div class="ttdef"><b>Definition:</b> hpm_sdxc_regs.h:1117</div></div>
-<div class="ttc" id="ahpm__sdxc__regs_8h_html_a6a270132e8a546da1071a290aee6e729"><div class="ttname"><a href="hpm__sdxc__regs_8h.html#a6a270132e8a546da1071a290aee6e729">SDXC_INT_STAT_BGAP_EVENT_MASK</a></div><div class="ttdeci">#define SDXC_INT_STAT_BGAP_EVENT_MASK</div><div class="ttdef"><b>Definition:</b> hpm_sdxc_regs.h:1468</div></div>
-<div class="ttc" id="ahpm__sdxc__regs_8h_html_a6a4d4c6b5f1941db1e1b3335ef055e52"><div class="ttname"><a href="hpm__sdxc__regs_8h.html#a6a4d4c6b5f1941db1e1b3335ef055e52">SDXC_INT_STAT_TUNING_ERR_MASK</a></div><div class="ttdeci">#define SDXC_INT_STAT_TUNING_ERR_MASK</div><div class="ttdef"><b>Definition:</b> hpm_sdxc_regs.h:1151</div></div>
-<div class="ttc" id="ahpm__sdxc__regs_8h_html_a86f4809b08406fa29e93ba604844625a"><div class="ttname"><a href="hpm__sdxc__regs_8h.html#a86f4809b08406fa29e93ba604844625a">SDXC_INT_STAT_CMD_COMPLETE_MASK</a></div><div class="ttdeci">#define SDXC_INT_STAT_CMD_COMPLETE_MASK</div><div class="ttdef"><b>Definition:</b> hpm_sdxc_regs.h:1497</div></div>
-<div class="ttc" id="ahpm__sdxc__regs_8h_html_aad46a06ffce19aaa84e795ec79743dc8"><div class="ttname"><a href="hpm__sdxc__regs_8h.html#aad46a06ffce19aaa84e795ec79743dc8">SDXC_INT_STAT_CQE_EVENT_MASK</a></div><div class="ttdeci">#define SDXC_INT_STAT_CQE_EVENT_MASK</div><div class="ttdef"><b>Definition:</b> hpm_sdxc_regs.h:1344</div></div>
-<div class="ttc" id="ahpm__sdxc__regs_8h_html_ab06912c3ab32bb5f6627b03bdcfcda25"><div class="ttname"><a href="hpm__sdxc__regs_8h.html#ab06912c3ab32bb5f6627b03bdcfcda25">SDXC_INT_STAT_CUR_LMT_ERR_MASK</a></div><div class="ttdeci">#define SDXC_INT_STAT_CUR_LMT_ERR_MASK</div><div class="ttdef"><b>Definition:</b> hpm_sdxc_regs.h:1208</div></div>
-<div class="ttc" id="ahpm__sdxc__regs_8h_html_abd29fba0e4752221ce06e5c50b5380b1"><div class="ttname"><a href="hpm__sdxc__regs_8h.html#abd29fba0e4752221ce06e5c50b5380b1">SDXC_INT_STAT_DMA_INTERRUPT_MASK</a></div><div class="ttdeci">#define SDXC_INT_STAT_DMA_INTERRUPT_MASK</div><div class="ttdef"><b>Definition:</b> hpm_sdxc_regs.h:1454</div></div>
-<div class="ttc" id="ahpm__sdxc__regs_8h_html_abd5b34a64c92b7c535d16d8eb65999af"><div class="ttname"><a href="hpm__sdxc__regs_8h.html#abd5b34a64c92b7c535d16d8eb65999af">SDXC_INT_STAT_CARD_INTERRUPT_MASK</a></div><div class="ttdeci">#define SDXC_INT_STAT_CARD_INTERRUPT_MASK</div><div class="ttdef"><b>Definition:</b> hpm_sdxc_regs.h:1383</div></div>
-<div class="ttc" id="ahpm__sdxc__regs_8h_html_ae14eddddff2c0b9089d113dc49373330"><div class="ttname"><a href="hpm__sdxc__regs_8h.html#ae14eddddff2c0b9089d113dc49373330">SDXC_INT_STAT_ERR_INTERRUPT_MASK</a></div><div class="ttdeci">#define SDXC_INT_STAT_ERR_INTERRUPT_MASK</div><div class="ttdef"><b>Definition:</b> hpm_sdxc_regs.h:1331</div></div>
-<div class="ttc" id="ahpm__sdxc__regs_8h_html_ae353c1f5e99dc167c8f204668bfec8d4"><div class="ttname"><a href="hpm__sdxc__regs_8h.html#ae353c1f5e99dc167c8f204668bfec8d4">SDXC_INT_STAT_DATA_END_BIT_ERR_MASK</a></div><div class="ttdeci">#define SDXC_INT_STAT_DATA_END_BIT_ERR_MASK</div><div class="ttdef"><b>Definition:</b> hpm_sdxc_regs.h:1222</div></div>
-<div class="ttc" id="ahpm__sdxc__regs_8h_html_ae7bb0b2bdeece792f4b00583feb32c2a"><div class="ttname"><a href="hpm__sdxc__regs_8h.html#ae7bb0b2bdeece792f4b00583feb32c2a">SDXC_INT_STAT_CARD_INSERTION_MASK</a></div><div class="ttdeci">#define SDXC_INT_STAT_CARD_INSERTION_MASK</div><div class="ttdef"><b>Definition:</b> hpm_sdxc_regs.h:1410</div></div>
-<div class="ttc" id="ahpm__sdxc__regs_8h_html_ae9a9bba65ad61701d18330a4062f5f2d"><div class="ttname"><a href="hpm__sdxc__regs_8h.html#ae9a9bba65ad61701d18330a4062f5f2d">SDXC_INT_STAT_BUF_RD_READY_MASK</a></div><div class="ttdeci">#define SDXC_INT_STAT_BUF_RD_READY_MASK</div><div class="ttdef"><b>Definition:</b> hpm_sdxc_regs.h:1424</div></div>
-<div class="ttc" id="ahpm__sdxc__regs_8h_html_af759e6193b3a5704a8dcfd65095656e5"><div class="ttname"><a href="hpm__sdxc__regs_8h.html#af759e6193b3a5704a8dcfd65095656e5">SDXC_INT_STAT_CMD_TOUT_ERR_MASK</a></div><div class="ttdeci">#define SDXC_INT_STAT_CMD_TOUT_ERR_MASK</div><div class="ttdef"><b>Definition:</b> hpm_sdxc_regs.h:1317</div></div>
-<div class="ttc" id="ahpm__sdxc__regs_8h_html_afc95e3571b909b6e3858b7ad66de814e"><div class="ttname"><a href="hpm__sdxc__regs_8h.html#afc95e3571b909b6e3858b7ad66de814e">SDXC_INT_STAT_CMD_IDX_ERR_MASK</a></div><div class="ttdeci">#define SDXC_INT_STAT_CMD_IDX_ERR_MASK</div><div class="ttdef"><b>Definition:</b> hpm_sdxc_regs.h:1269</div></div>
-</div><!-- fragment -->
-</div>
-</div>
-<a id="a625e915f71738d802e37fee8d8723541" name="a625e915f71738d802e37fee8d8723541"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a625e915f71738d802e37fee8d8723541">&#9670;&nbsp;</a></span>SDXC_STS_CMD_ERR</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define SDXC_STS_CMD_ERR</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">            (<a class="code hl_define" href="hpm__sdxc__regs_8h.html#af759e6193b3a5704a8dcfd65095656e5">SDXC_INT_STAT_CMD_TOUT_ERR_MASK</a> | <a class="code hl_define" href="hpm__sdxc__regs_8h.html#a29db956b5dbf778ceb8f6f65ad6b429c">SDXC_INT_STAT_CMD_CRC_ERR_MASK</a> |\</div>
-<div class="line">            SDXC_INT_STAT_CMD_END_BIT_ERR_MASK | <a class="code hl_define" href="hpm__sdxc__regs_8h.html#afc95e3571b909b6e3858b7ad66de814e">SDXC_INT_STAT_CMD_IDX_ERR_MASK</a> | <a class="code hl_define" href="hpm__sdxc__regs_8h.html#ab235191ad795f045025ffabc7a7e7847">SDXC_INT_STAT_AUTO_CMD_ERR_MASK</a>)</div>
-<div class="ttc" id="ahpm__sdxc__regs_8h_html_ab235191ad795f045025ffabc7a7e7847"><div class="ttname"><a href="hpm__sdxc__regs_8h.html#ab235191ad795f045025ffabc7a7e7847">SDXC_INT_STAT_AUTO_CMD_ERR_MASK</a></div><div class="ttdeci">#define SDXC_INT_STAT_AUTO_CMD_ERR_MASK</div><div class="ttdef"><b>Definition:</b> hpm_sdxc_regs.h:1189</div></div>
-</div><!-- fragment -->
-</div>
-</div>
-<a id="a0b409a1003769ad28ebb04d117e49e9d" name="a0b409a1003769ad28ebb04d117e49e9d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0b409a1003769ad28ebb04d117e49e9d">&#9670;&nbsp;</a></span>SDXC_STS_CMD_FLAGS</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define SDXC_STS_CMD_FLAGS&#160;&#160;&#160;(<a class="el" href="hpm__sdxc__drv_8c.html#a625e915f71738d802e37fee8d8723541">SDXC_STS_CMD_ERR</a> | <a class="el" href="hpm__sdxc__regs_8h.html#a86f4809b08406fa29e93ba604844625a">SDXC_INT_STAT_CMD_COMPLETE_MASK</a>)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="af25560ebeea21fc82ead7277826653bc" name="af25560ebeea21fc82ead7277826653bc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af25560ebeea21fc82ead7277826653bc">&#9670;&nbsp;</a></span>SDXC_STS_DATA_ERR</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define SDXC_STS_DATA_ERR</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">            (<a class="code hl_define" href="hpm__sdxc__regs_8h.html#a2eed2875d5c81559ee018c5d4ea6858b">SDXC_INT_STAT_DATA_TOUT_ERR_MASK</a>| <a class="code hl_define" href="hpm__sdxc__regs_8h.html#a46a49175b5f1eccdd8364c1f420f7c0a">SDXC_INT_STAT_DATA_CRC_ERR_MASK</a> | \</div>
-<div class="line">            SDXC_INT_STAT_DATA_END_BIT_ERR_MASK)</div>
-<div class="ttc" id="ahpm__sdxc__regs_8h_html_a46a49175b5f1eccdd8364c1f420f7c0a"><div class="ttname"><a href="hpm__sdxc__regs_8h.html#a46a49175b5f1eccdd8364c1f420f7c0a">SDXC_INT_STAT_DATA_CRC_ERR_MASK</a></div><div class="ttdeci">#define SDXC_INT_STAT_DATA_CRC_ERR_MASK</div><div class="ttdef"><b>Definition:</b> hpm_sdxc_regs.h:1237</div></div>
-</div><!-- fragment -->
-</div>
-</div>
-<a id="adec3ce578445887ea4db534983a02c19" name="adec3ce578445887ea4db534983a02c19"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#adec3ce578445887ea4db534983a02c19">&#9670;&nbsp;</a></span>SDXC_STS_ERROR</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define SDXC_STS_ERROR&#160;&#160;&#160;(<a class="el" href="hpm__sdxc__regs_8h.html#ae14eddddff2c0b9089d113dc49373330">SDXC_INT_STAT_ERR_INTERRUPT_MASK</a> | <a class="el" href="hpm__sdxc__drv_8c.html#a625e915f71738d802e37fee8d8723541">SDXC_STS_CMD_ERR</a> | <a class="el" href="hpm__sdxc__drv_8c.html#af25560ebeea21fc82ead7277826653bc">SDXC_STS_DATA_ERR</a>)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -474,42 +374,6 @@ Variables</h2></td></tr>
           <td></td>
           <td class="paramtype">uint32_t&#160;</td>
           <td class="paramname"><em>transferred_words</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="af70ecad2078bf510a05272ae0ec53c7a" name="af70ecad2078bf510a05272ae0ec53c7a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af70ecad2078bf510a05272ae0ec53c7a">&#9670;&nbsp;</a></span>sdxc_receive_cmd_response()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static <a class="el" href="group__common__interface.html#ga087efae82a4b174a0363363d9d5ece19">hpm_stat_t</a> sdxc_receive_cmd_response </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structSDXC__Type.html">SDXC_Type</a> *&#160;</td>
-          <td class="paramname"><em>base</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="group__sdxc__interface.html#ga7f7195eb5f19cd35b9fb42b632d4511e">sdxc_command_t</a> *&#160;</td>
-          <td class="paramname"><em>cmd</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -755,7 +619,7 @@ Variables</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_14bc92f4b96c8519b376567118ac28b3.html">drivers</a></li><li class="navelem"><a class="el" href="dir_507bca872cbea0e05b5ebdf850947a53.html">src</a></li><li class="navelem"><a class="el" href="hpm__sdxc__drv_8c.html">hpm_sdxc_drv.c</a></li>
-    <li class="footer">Generated on Wed Jul 6 2022 09:39:52 for HPM SDK by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
+    <li class="footer">Generated on Sun Jul 31 2022 11:56:25 for HPM SDK by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>
 </body>

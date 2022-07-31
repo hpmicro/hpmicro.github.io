@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html class="writer-html5" lang="en" >
 <head>
-  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>8.1. JPEG_DECODE decode &mdash; HPM SDK Project Documentation</title>
@@ -24,7 +24,7 @@
     <script src="../../../static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../../genindex.html" />
     <link rel="search" title="Search" href="../../../search.html" />
-    <link rel="next" title="8.2. LIBJPEG_TURBO encode" href="../libjpeg_turbo_encode/README.html" />
+    <link rel="next" title="8.2. JPEG encode" href="../jpeg_encode/README.html" />
     <link rel="prev" title="8. JPEG" href="../index.html" />
   <meta name="color-scheme" content="dark light">
   
@@ -65,6 +65,10 @@
         
           <dd>
             <a onclick="RelativeAddress('/latest/html/index.html')">latest</a>
+          </dd>
+        
+          <dd>
+            <a onclick="RelativeAddress('/0.13.0/html/index.html')">0.13.0</a>
           </dd>
         
       </dl>
@@ -118,7 +122,7 @@
 <li class="toctree-l4"><a class="reference internal" href="#running-the-example">8.1.4. Running the example</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="../libjpeg_turbo_encode/README.html">8.2. LIBJPEG_TURBO encode</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../jpeg_encode/README.html">8.2. JPEG encode</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../../tinycrypt/index.html">9. Tinycrypt</a></li>
@@ -132,6 +136,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../../hpm_math/index.html">17. HPMicro MATH</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../lwip/index.html">18. lwIP</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../memstress/index.html">19. memstress</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../dma_manager/README.html">20. DMA Manager</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../../../doc/src/sdk_doc/README.html">HPM SDK Doc Generation</a></li>
@@ -207,7 +212,7 @@
 <section id="overview">
 <h2><span class="section-number">8.1.1. </span>Overview<a class="headerlink" href="#overview" title="Permalink to this heading">¶</a></h2>
 <hr class="docutils" />
-<p><strong>libjpeg_turbo_decode</strong> decoding example project shows to convert JPG picture data into RGB data.</p>
+<p><strong>libjpeg_turbo_decode</strong> decoding example project shows to convert JPG picture data(Default scan storage device root directory) into RGB data.</p>
 <ul class="simple">
 <li><p>JPEG images stored in <strong>USB</strong> or <strong>SD card</strong> are converted into
 rgb565 data through <strong>software libjpeg_turbo library</strong> or <strong>hardware JPEG module</strong>, the decoded data is displayed on <strong>the LCD screen</strong>.</p></li>
@@ -276,14 +281,14 @@ When the project runs correctly, the LCD screen correctly displays the picture i
 
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
         <a href="../index.html" class="btn btn-neutral float-left" title="8. JPEG" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="../libjpeg_turbo_encode/README.html" class="btn btn-neutral float-right" title="8.2. LIBJPEG_TURBO encode" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="../jpeg_encode/README.html" class="btn btn-neutral float-right" title="8.2. JPEG encode" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>
 
   <div role="contentinfo">
     <p>&#169; Copyright 2020-2022, hpmicro.
-      <span class="lastupdated">Last updated on Jul 06, 2022.
+      <span class="lastupdated">Last updated on Jul 31, 2022.
       </span></p>
   </div>
 

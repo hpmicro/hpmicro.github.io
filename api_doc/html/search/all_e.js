@@ -1,7 +1,7 @@
 var searchData=
 [
-  ['oe_0',['OE',['../structGPIO__Type.html#a6254546b9543ceb837a918c7852beeef',1,'GPIO_Type']]],
-  ['oe_1',['oe',['../structenet__rx__desc__t.html#a51175752e5bbb23c40df7dc569ab8d67',1,'enet_rx_desc_t']]],
+  ['oe_0',['oe',['../structenet__rx__desc__t.html#a51175752e5bbb23c40df7dc569ab8d67',1,'enet_rx_desc_t']]],
+  ['oe_1',['OE',['../structGPIO__Type.html#a6254546b9543ceb837a918c7852beeef',1,'GPIO_Type']]],
   ['off_5fwait_2',['OFF_WAIT',['../structSYSCTL__Type.html#a6b347bf299684b42173c826e7e17f97a',1,'SYSCTL_Type']]],
   ['offset_3',['OFFSET',['../structPDMA__Type.html#a1e809c40c9a61db2a0048090b3da1311',1,'PDMA_Type']]],
   ['offset_4',['offset',['../structfw__info__table__t.html#ac4ffa7b20d0f634610cf13dc493e722d',1,'fw_info_table_t']]],

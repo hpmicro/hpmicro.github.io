@@ -43,6 +43,7 @@ var group__Jpeg__interface =
       [ "jpeg_table_huffbase", "group__Jpeg__interface.html#gga5f6ee13a4bf1e9df59d56d2a315b7a14a71bfe656917a2bee46f8501c06333634", null ],
       [ "jpeg_table_huffsymb", "group__Jpeg__interface.html#gga5f6ee13a4bf1e9df59d56d2a315b7a14a61960a9e7c836c2f95baff963b32b188", null ]
     ] ],
+    [ "jpeg_clear_cfg", "group__Jpeg__interface.html#gacbb900144db114e92a19e6cc394bc640", null ],
     [ "jpeg_clear_status", "group__Jpeg__interface.html#ga211981033925f7c40c95329a2ac03f70", null ],
     [ "jpeg_disable", "group__Jpeg__interface.html#gaaf35df19e281c79ffac0df8d297c9f21", null ],
     [ "jpeg_disable_irq", "group__Jpeg__interface.html#ga41ebc602e449bde9e59f39800d03a384", null ],

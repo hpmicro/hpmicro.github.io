@@ -1,9 +1,9 @@
 var NAVTREEINDEX66 =
 {
-"HPM6350_2hpm__batt__iomux_8h.html#af18b5866a1ee9b9b122b48ebb28bd3b7":[3,0,3,3,1,8],
-"HPM6350_2hpm__batt__iomux_8h.html#af34c0d395c8ea8b83b118e5b336cc47a":[3,0,3,3,1,14],
-"HPM6350_2hpm__batt__iomux_8h.html#af87ed293c115a7bb28cf08a86dc8f890":[3,0,3,3,1,33],
-"HPM6350_2hpm__batt__iomux_8h.html#afa5c6704fa34968627a6c848634a50a5":[3,0,3,3,1,41],
+"HPM6350_2hpm__batt__iomux_8h.html#af08019ef32e6dbc5a71afdec3f8aa1df":[3,0,3,3,1,20],
+"HPM6350_2hpm__batt__iomux_8h.html#af34c0d395c8ea8b83b118e5b336cc47a":[3,0,3,3,1,12],
+"HPM6350_2hpm__batt__iomux_8h.html#af4372e401de6cb9100b414d2af9c1b1a":[3,0,3,3,1,2],
+"HPM6350_2hpm__batt__iomux_8h.html#af7fae9864b2e44dedec804532ad81a31":[3,0,3,3,1,18],
 "HPM6350_2hpm__batt__iomux_8h_source.html":[3,0,3,3,1],
 "HPM6350_2hpm__csr__regs_8h.html":[3,0,3,3,2],
 "HPM6350_2hpm__csr__regs_8h.html#a00287bb728bf00ef0f5aa61cb3f46e49":[3,0,3,3,2,805],

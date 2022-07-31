@@ -296,6 +296,9 @@ Functions</h2></td></tr>
 <tr class="memitem:ga44ab912005a3f999aa77c67eaa649ffd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__common__interface.html#ga087efae82a4b174a0363363d9d5ece19">hpm_stat_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__uart__interface.html#ga44ab912005a3f999aa77c67eaa649ffd">uart_send_data</a> (<a class="el" href="structUART__Type.html">UART_Type</a> *ptr, uint8_t *buf, uint32_t size_in_byte)</td></tr>
 <tr class="memdesc:ga44ab912005a3f999aa77c67eaa649ffd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send bytes blocking.  <a href="group__uart__interface.html#ga44ab912005a3f999aa77c67eaa649ffd">More...</a><br /></td></tr>
 <tr class="separator:ga44ab912005a3f999aa77c67eaa649ffd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga2c8de76bae1caada7c302a05bb351083"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__common__interface.html#ga087efae82a4b174a0363363d9d5ece19">hpm_stat_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__uart__interface.html#ga2c8de76bae1caada7c302a05bb351083">uart_set_baudrate</a> (<a class="el" href="structUART__Type.html">UART_Type</a> *ptr, uint32_t baudrate, uint32_t src_clock_hz)</td></tr>
+<tr class="memdesc:ga2c8de76bae1caada7c302a05bb351083"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets UART baudrate.  <a href="group__uart__interface.html#ga2c8de76bae1caada7c302a05bb351083">More...</a><br /></td></tr>
+<tr class="separator:ga2c8de76bae1caada7c302a05bb351083"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p >UART driver APIs. </p>
@@ -1759,6 +1762,60 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="ga2c8de76bae1caada7c302a05bb351083" name="ga2c8de76bae1caada7c302a05bb351083"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga2c8de76bae1caada7c302a05bb351083">&#9670;&nbsp;</a></span>uart_set_baudrate()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__common__interface.html#ga087efae82a4b174a0363363d9d5ece19">hpm_stat_t</a> uart_set_baudrate </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structUART__Type.html">UART_Type</a> *&#160;</td>
+          <td class="paramname"><em>ptr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>baudrate</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>src_clock_hz</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><code>#include &lt;<a class="el" href="hpm__uart__drv_8h.html">drivers/inc/hpm_uart_drv.h</a>&gt;</code></p>
+
+<p>Sets UART baudrate. </p>
+<p >This function configures the UART module baud rate. This function is used to update the UART module baud rate after the UART module is initialized by the uart_init.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ptr</td><td>UART base address </td></tr>
+    <tr><td class="paramname">baudrate</td><td>UART baudrate to be set </td></tr>
+    <tr><td class="paramname">src_clock_hz</td><td>UART clock source frequency in Hz. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">status_uart_no_suitable_baudrate_parameter_found</td><td>Baudrate is not supported in the current clock source </td></tr>
+    <tr><td class="paramname">status_success</td><td>Set baudrate succeeded. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="gad319f13e3e38f2852fa94df527c16d87" name="gad319f13e3e38f2852fa94df527c16d87"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#gad319f13e3e38f2852fa94df527c16d87">&#9670;&nbsp;</a></span>uart_set_signal_level()</h2>
 
@@ -1810,7 +1867,7 @@ Functions</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Wed Jul 6 2022 09:39:55 for HPM SDK by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
+    <li class="footer">Generated on Sun Jul 31 2022 11:56:28 for HPM SDK by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>
 </body>

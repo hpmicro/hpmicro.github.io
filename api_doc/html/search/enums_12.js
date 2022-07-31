@@ -9,5 +9,7 @@ var searchData=
   ['uart_5fstat_6',['uart_stat',['../group__uart__interface.html#gae69840830cbc90d093d4aea69262a84c',1,'hpm_uart_drv.h']]],
   ['usb_5fcontroller_5fmode_5ft_7',['usb_controller_mode_t',['../group__usb__interface.html#gaca5d4f37e7d8e31787c6009341537914',1,'hpm_usb_drv.h']]],
   ['usb_5fdir_5ft_8',['usb_dir_t',['../group__usb__interface.html#gac8a76acd5a4f562121857c3b5fa12f62',1,'hpm_usb_drv.h']]],
-  ['usb_5fxfer_5ftype_5ft_9',['usb_xfer_type_t',['../group__usb__interface.html#gad74e07f65d6e7c0bd897ffeffedbd0c9',1,'hpm_usb_drv.h']]]
+  ['usb_5fline_5fstate_5ft_9',['usb_line_state_t',['../group__usb__interface.html#ga685cf8597bcb51d5290f93fedb57d948',1,'hpm_usb_drv.h']]],
+  ['usb_5ftransceiver_5ft_10',['usb_transceiver_t',['../group__usb__interface.html#gabb913c906ebdab67d51368a0d79d4f76',1,'hpm_usb_drv.h']]],
+  ['usb_5fxfer_5ftype_5ft_11',['usb_xfer_type_t',['../group__usb__interface.html#gad74e07f65d6e7c0bd897ffeffedbd0c9',1,'hpm_usb_drv.h']]]
 ];

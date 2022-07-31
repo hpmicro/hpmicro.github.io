@@ -231,8 +231,8 @@ $(document).ready(function(){initNavTree('globals_d.html',''); initResizable(); 
 <li>DAC_DMA_EN_BUF1_CMPT_SHIFT&#160;:&#160;<a class="el" href="hpm__dac__regs_8h.html#aa0bedafc4c131ae11fbc4d1cc61efbc2">hpm_dac_regs.h</a></li>
 <li>dac_enable_conversion()&#160;:&#160;<a class="el" href="hpm__dac__drv_8h.html#aebe8c3ba3fab40fe248015fc4bc3d1fb">hpm_dac_drv.h</a>, <a class="el" href="hpm__dac__drv_8c.html#aebe8c3ba3fab40fe248015fc4bc3d1fb">hpm_dac_drv.c</a></li>
 <li>dac_enable_interrupts()&#160;:&#160;<a class="el" href="hpm__dac__drv_8h.html#a3b7f5025c8f44d622dad16daddd24190">hpm_dac_drv.h</a>, <a class="el" href="hpm__dac__drv_8c.html#a3b7f5025c8f44d622dad16daddd24190">hpm_dac_drv.c</a></li>
-<li>dac_external_dma_request_enable()&#160;:&#160;<a class="el" href="hpm__dac__drv_8h.html#ab864e771a99fda4bf78a0977302a0ddf">hpm_dac_drv.h</a></li>
 <li>dac_external_DMA_request_enable()&#160;:&#160;<a class="el" href="hpm__dac__drv_8c.html#a88bf5bf016b5e751e0d4a62d3c109e6b">hpm_dac_drv.c</a></li>
+<li>dac_external_dma_request_enable()&#160;:&#160;<a class="el" href="hpm__dac__drv_8h.html#ab864e771a99fda4bf78a0977302a0ddf">hpm_dac_drv.h</a></li>
 <li>DAC_FIFO_EMPTY_EVENT&#160;:&#160;<a class="el" href="hpm__dac__drv_8h.html#a0afda314146d1e9260e2d9ee0777ad8e">hpm_dac_drv.h</a></li>
 <li>dac_get_current_buffer_index()&#160;:&#160;<a class="el" href="hpm__dac__drv_8h.html#aac9cddf9ca6443a09b5fc6947332d86f">hpm_dac_drv.h</a>, <a class="el" href="hpm__dac__drv_8c.html#aac9cddf9ca6443a09b5fc6947332d86f">hpm_dac_drv.c</a></li>
 <li>dac_get_current_buffer_offset()&#160;:&#160;<a class="el" href="hpm__dac__drv_8h.html#a72d5f40c637fa7bf1add69e6b425ee7e">hpm_dac_drv.h</a>, <a class="el" href="hpm__dac__drv_8c.html#a72d5f40c637fa7bf1add69e6b425ee7e">hpm_dac_drv.c</a></li>
@@ -280,8 +280,8 @@ $(document).ready(function(){initNavTree('globals_d.html',''); initResizable(); 
 <li>dac_round_mode_oneshot&#160;:&#160;<a class="el" href="hpm__dac__drv_8h.html#a04eacbf72dc7053ef4ee327d59898a4ba252e80e577d5d3357c0f6d5ab528288f">hpm_dac_drv.h</a></li>
 <li>dac_round_mode_t&#160;:&#160;<a class="el" href="hpm__dac__drv_8h.html#a04eacbf72dc7053ef4ee327d59898a4b">hpm_dac_drv.h</a></li>
 <li>dac_set_buffer_config()&#160;:&#160;<a class="el" href="hpm__dac__drv_8h.html#abfbbfb594a1830138c45ea25f0e35284">hpm_dac_drv.h</a>, <a class="el" href="hpm__dac__drv_8c.html#abfbbfb594a1830138c45ea25f0e35284">hpm_dac_drv.c</a></li>
-<li>dac_set_buffer_DMA_reset()&#160;:&#160;<a class="el" href="hpm__dac__drv_8c.html#a8b8c1d8964f0e2a29af37988c0595330">hpm_dac_drv.c</a></li>
 <li>dac_set_buffer_dma_reset()&#160;:&#160;<a class="el" href="hpm__dac__drv_8h.html#ad2e38036983c7b2f68dd18e6a67b78b5">hpm_dac_drv.h</a></li>
+<li>dac_set_buffer_DMA_reset()&#160;:&#160;<a class="el" href="hpm__dac__drv_8c.html#a8b8c1d8964f0e2a29af37988c0595330">hpm_dac_drv.c</a></li>
 <li>dac_set_buffer_sw_trigger()&#160;:&#160;<a class="el" href="hpm__dac__drv_8h.html#ad3d1a25ab46c37a8a5fd987897270cf8">hpm_dac_drv.h</a>, <a class="el" href="hpm__dac__drv_8c.html#ad3d1a25ab46c37a8a5fd987897270cf8">hpm_dac_drv.c</a></li>
 <li>dac_set_direct_config()&#160;:&#160;<a class="el" href="hpm__dac__drv_8h.html#ab0addca4c6588da150834d9774e6d7a0">hpm_dac_drv.h</a>, <a class="el" href="hpm__dac__drv_8c.html#ab0addca4c6588da150834d9774e6d7a0">hpm_dac_drv.c</a></li>
 <li>dac_set_hw_trigger_enable()&#160;:&#160;<a class="el" href="hpm__dac__drv_8h.html#a62748b108fcbde37e930abe0186d4f12">hpm_dac_drv.h</a>, <a class="el" href="hpm__dac__drv_8c.html#a62748b108fcbde37e930abe0186d4f12">hpm_dac_drv.c</a></li>
@@ -611,14 +611,16 @@ $(document).ready(function(){initNavTree('globals_d.html',''); initResizable(); 
 <li>DMA_CHCTRL_TRANSIZE_TRANSIZE_MASK&#160;:&#160;<a class="el" href="hpm__dma__regs_8h.html#aa86737017cd2ac328d1aadedf62052a0">hpm_dma_regs.h</a></li>
 <li>DMA_CHCTRL_TRANSIZE_TRANSIZE_SET&#160;:&#160;<a class="el" href="hpm__dma__regs_8h.html#a914c4b097e668eee6c269df8c1c1731e">hpm_dma_regs.h</a></li>
 <li>DMA_CHCTRL_TRANSIZE_TRANSIZE_SHIFT&#160;:&#160;<a class="el" href="hpm__dma__regs_8h.html#a161ade2a27de052228d8e31f0e40fb0c">hpm_dma_regs.h</a></li>
+<li>dma_check_channel_interrupt_mask()&#160;:&#160;<a class="el" href="group__dma__interface.html#ga745d72153480ef961132c8ea99874e5e">hpm_dma_drv.h</a></li>
 <li>dma_check_enabled_channel()&#160;:&#160;<a class="el" href="group__dma__interface.html#gabf373eb89a9ed7b8413fc4ec7aa53890">hpm_dma_drv.h</a></li>
-<li>dma_check_transfer_status()&#160;:&#160;<a class="el" href="group__dma__interface.html#gad1cc48363010c353a4254301ecdcee1b">hpm_dma_drv.h</a></li>
+<li>dma_check_transfer_status()&#160;:&#160;<a class="el" href="group__dma__interface.html#gac04beeabb4ee9071ea056c86dd3e6bf9">hpm_dma_drv.h</a></li>
 <li>DMA_CHEN_CHEN_GET&#160;:&#160;<a class="el" href="hpm__dma__regs_8h.html#a4a0035af0b6b363f040db364d1bc56f3">hpm_dma_regs.h</a></li>
 <li>DMA_CHEN_CHEN_MASK&#160;:&#160;<a class="el" href="hpm__dma__regs_8h.html#a13f39a5a7c2749d84b1fee9e025314c9">hpm_dma_regs.h</a></li>
 <li>DMA_CHEN_CHEN_SHIFT&#160;:&#160;<a class="el" href="hpm__dma__regs_8h.html#aee219a7a03b4b83617b7862fd2b54028">hpm_dma_regs.h</a></li>
 <li>dma_clear_irq_status()&#160;:&#160;<a class="el" href="group__dma__interface.html#ga271df872d11a113e6cd90e3caaf351ea">hpm_dma_drv.h</a></li>
 <li>dma_default_channel_config()&#160;:&#160;<a class="el" href="group__dma__interface.html#ga68a6913c8d41fc26a2da98874833badd">hpm_dma_drv.h</a>, <a class="el" href="group__dma__interface.html#ga68a6913c8d41fc26a2da98874833badd">hpm_dma_drv.c</a></li>
 <li>dma_disable_channel()&#160;:&#160;<a class="el" href="group__dma__interface.html#gafcbbf9231ea6ee738585b6b571f79671">hpm_dma_drv.h</a></li>
+<li>dma_disable_channel_interrupt()&#160;:&#160;<a class="el" href="group__dma__interface.html#ga815c97886bac31930f00eac312183af3">hpm_dma_drv.h</a></li>
 <li>DMA_DMACFG_ADDRWIDTH_GET&#160;:&#160;<a class="el" href="hpm__dma__regs_8h.html#a15438d8604ee7a2ea60e7ba9e7d85fd5">hpm_dma_regs.h</a></li>
 <li>DMA_DMACFG_ADDRWIDTH_MASK&#160;:&#160;<a class="el" href="hpm__dma__regs_8h.html#a4c5fe1c4552063d0177b94a58113361a">hpm_dma_regs.h</a></li>
 <li>DMA_DMACFG_ADDRWIDTH_SHIFT&#160;:&#160;<a class="el" href="hpm__dma__regs_8h.html#ad37b431c556f2d16801ae227ce51b37b">hpm_dma_regs.h</a></li>
@@ -651,6 +653,7 @@ $(document).ready(function(){initNavTree('globals_d.html',''); initResizable(); 
 <li>DMA_DMACTRL_RESET_SET&#160;:&#160;<a class="el" href="hpm__dma__regs_8h.html#aae22c0dde40aa28cd558d0425b1f9488">hpm_dma_regs.h</a></li>
 <li>DMA_DMACTRL_RESET_SHIFT&#160;:&#160;<a class="el" href="hpm__dma__regs_8h.html#ad77c65b88d31deca1e506bc4234618ff">hpm_dma_regs.h</a></li>
 <li>dma_enable_channel()&#160;:&#160;<a class="el" href="group__dma__interface.html#gad55a6133efdb23298830cdfd881ec8f7">hpm_dma_drv.h</a></li>
+<li>dma_enable_channel_interrupt()&#160;:&#160;<a class="el" href="group__dma__interface.html#gaa9c3b81c8228a1c2f029b96d30599a29">hpm_dma_drv.h</a></li>
 <li>dma_get_irq_status()&#160;:&#160;<a class="el" href="group__dma__interface.html#ga427cd8a6fe137c2fb43c6f15ef68029a">hpm_dma_drv.h</a></li>
 <li>dma_handshake_config_t&#160;:&#160;<a class="el" href="group__dma__interface.html#ga6d6f4f5ff9740a0016f93c215a00d0bf">hpm_dma_drv.h</a></li>
 <li>DMA_HANDSHAKE_MODE_HANDSHAKE&#160;:&#160;<a class="el" href="group__dma__interface.html#ga118bec6d1d493e9cefc5022575d76675">hpm_dma_drv.h</a></li>
@@ -690,6 +693,7 @@ $(document).ready(function(){initNavTree('globals_d.html',''); initResizable(); 
 <li>dma_setup_handshake()&#160;:&#160;<a class="el" href="group__dma__interface.html#ga32cd518d2b4b8ff56fcb831c762e6d43">hpm_dma_drv.h</a>, <a class="el" href="group__dma__interface.html#ga32cd518d2b4b8ff56fcb831c762e6d43">hpm_dma_drv.c</a></li>
 <li>DMA_SOC_BUS_NUM&#160;:&#160;<a class="el" href="HPM6360_2hpm__soc__feature_8h.html#adc8df9390cb265c3595c6c118d7944d9">hpm_soc_feature.h</a></li>
 <li>DMA_SOC_CHANNEL_NUM&#160;:&#160;<a class="el" href="HPM6360_2hpm__soc__feature_8h.html#a656f45b6bf057f160f7d3d40c15bfd64">hpm_soc_feature.h</a></li>
+<li>DMA_SOC_MAX_COUNT&#160;:&#160;<a class="el" href="HPM6360_2hpm__soc__feature_8h.html#abaaa27ed9f0cd0f66584bb43a11747ea">hpm_soc_feature.h</a></li>
 <li>DMA_SOC_TRANSFER_PER_BURST_MAX&#160;:&#160;<a class="el" href="HPM6360_2hpm__soc__feature_8h.html#a9385b7b952ec07732e3ceddabb3c5e21">hpm_soc_feature.h</a></li>
 <li>DMA_SOC_TRANSFER_WIDTH_MAX&#160;:&#160;<a class="el" href="HPM6360_2hpm__soc__feature_8h.html#a77458aa6f01a836f6463b3f0f39a2fd2">hpm_soc_feature.h</a></li>
 <li>dma_start_memcpy()&#160;:&#160;<a class="el" href="group__dma__interface.html#ga464989bba9b4f94b68127636e3333d82">hpm_dma_drv.h</a>, <a class="el" href="group__dma__interface.html#ga464989bba9b4f94b68127636e3333d82">hpm_dma_drv.c</a></li>
@@ -1034,7 +1038,7 @@ $(document).ready(function(){initNavTree('globals_d.html',''); initResizable(); 
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Wed Jul 6 2022 09:39:56 for HPM SDK by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
+    <li class="footer">Generated on Sun Jul 31 2022 11:56:29 for HPM SDK by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>
 </body>

@@ -174,9 +174,9 @@ Functions</h2></td></tr>
 <tr class="memitem:ga04704cce5da40c201f2f40a1b638ea61"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gpio__interface.html#ga04704cce5da40c201f2f40a1b638ea61">gpio_disable_port_output_with_mask</a> (<a class="el" href="structGPIO__Type.html">GPIO_Type</a> *ptr, uint32_t port, uint32_t mask)</td></tr>
 <tr class="memdesc:ga04704cce5da40c201f2f40a1b638ea61"><td class="mdescLeft">&#160;</td><td class="mdescRight">Disable pins output of specific port according to the given mask.  <a href="group__gpio__interface.html#ga04704cce5da40c201f2f40a1b638ea61">More...</a><br /></td></tr>
 <tr class="separator:ga04704cce5da40c201f2f40a1b638ea61"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gab5a7399f3b3a06aea6d092a6b8caf79d"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gpio__interface.html#gab5a7399f3b3a06aea6d092a6b8caf79d">gpio_get_port_interrupt_flags</a> (<a class="el" href="structGPIO__Type.html">GPIO_Type</a> *ptr, uint32_t port)</td></tr>
-<tr class="memdesc:gab5a7399f3b3a06aea6d092a6b8caf79d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get current interrupt flags on specific port.  <a href="group__gpio__interface.html#gab5a7399f3b3a06aea6d092a6b8caf79d">More...</a><br /></td></tr>
-<tr class="separator:gab5a7399f3b3a06aea6d092a6b8caf79d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga88bfa1a7e4f8ddc297ea3ac3ca0bda8e"><td class="memItemLeft" align="right" valign="top">static uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gpio__interface.html#ga88bfa1a7e4f8ddc297ea3ac3ca0bda8e">gpio_get_port_interrupt_flags</a> (<a class="el" href="structGPIO__Type.html">GPIO_Type</a> *ptr, uint32_t port)</td></tr>
+<tr class="memdesc:ga88bfa1a7e4f8ddc297ea3ac3ca0bda8e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get current interrupt flags on specific port.  <a href="group__gpio__interface.html#ga88bfa1a7e4f8ddc297ea3ac3ca0bda8e">More...</a><br /></td></tr>
+<tr class="separator:ga88bfa1a7e4f8ddc297ea3ac3ca0bda8e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga7f026a6f6561e2740473364aa4f15d92"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gpio__interface.html#ga7f026a6f6561e2740473364aa4f15d92">gpio_clear_port_interrupt_flags_with_mask</a> (<a class="el" href="structGPIO__Type.html">GPIO_Type</a> *ptr, uint32_t port, uint32_t mask)</td></tr>
 <tr class="memdesc:ga7f026a6f6561e2740473364aa4f15d92"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clear interrupt flags with given mask on specific port.  <a href="group__gpio__interface.html#ga7f026a6f6561e2740473364aa4f15d92">More...</a><br /></td></tr>
 <tr class="separator:ga7f026a6f6561e2740473364aa4f15d92"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -895,8 +895,8 @@ false if the interrupt flag is not set </dd></dl>
 
 </div>
 </div>
-<a id="gab5a7399f3b3a06aea6d092a6b8caf79d" name="gab5a7399f3b3a06aea6d092a6b8caf79d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gab5a7399f3b3a06aea6d092a6b8caf79d">&#9670;&nbsp;</a></span>gpio_get_port_interrupt_flags()</h2>
+<a id="ga88bfa1a7e4f8ddc297ea3ac3ca0bda8e" name="ga88bfa1a7e4f8ddc297ea3ac3ca0bda8e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga88bfa1a7e4f8ddc297ea3ac3ca0bda8e">&#9670;&nbsp;</a></span>gpio_get_port_interrupt_flags()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -905,7 +905,7 @@ false if the interrupt flag is not set </dd></dl>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static bool gpio_get_port_interrupt_flags </td>
+          <td class="memname">static uint32_t gpio_get_port_interrupt_flags </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structGPIO__Type.html">GPIO_Type</a> *&#160;</td>
           <td class="paramname"><em>ptr</em>, </td>
@@ -1635,7 +1635,7 @@ false if the interrupt flag is not set </dd></dl>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Wed Jul 6 2022 09:39:55 for HPM SDK by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
+    <li class="footer">Generated on Sun Jul 31 2022 11:56:28 for HPM SDK by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>
 </body>

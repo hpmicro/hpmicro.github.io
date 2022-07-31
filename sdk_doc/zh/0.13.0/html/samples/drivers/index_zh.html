@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>6. 驱动 &mdash; HPM SDK Project Documentation</title>
+      <link rel="stylesheet" href="../../static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../../static/tabs.css" type="text/css" />
+      <link rel="stylesheet" href="../../static/css/custom.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../../" id="documentation_options" src="../../static/documentation_options.js"></script>
+        <script src="../../static/jquery.js"></script>
+        <script src="../../static/underscore.js"></script>
+        <script src="../../static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="../../static/doctools.js"></script>
+        <script src="../../static/tabs.js"></script>
+        <script type="module" src="../../_static/js/dark-mode-toggle.min.mjs"></script>
+        <script src="../../_static/js/ga-tracker.js"></script>
+    <script src="../../static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="6.1. 霍尔" href="hall/README_zh.html" />
+    <link rel="prev" title="5.1. FreeRTOS Hello" href="../rtos/freertos_hello/README_zh.html" />
+  <meta name="color-scheme" content="dark light">
+  
+  <link rel="stylesheet" href="../../static/css/light.css" type="text/css" media="(prefers-color-scheme: light)"/>
+  <link rel="stylesheet" href="../../static/css/dark.css" type="text/css" media="(prefers-color-scheme: dark)"/>
+
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../../index_zh.html">
+            <img src="../../static/logo.png" class="logo" alt="Logo"/>
+          </a>
+              <div class="version">
+                0.13.0-0
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+  
+  <div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="versions">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      <span class="fa fa-book"> HPM SDK Project</span>
+      v: 0.13.0-0
+      <span class="fa fa-caret-down"></span>
+    </span>
+    <div class="rst-other-versions">
+      <dl>
+        <dt>Document Release Versions</dt>
+        
+          <dd>
+            <a onclick="RelativeAddress('/latest/html/index_zh.html')">latest</a>
+          </dd>
+        
+      </dl>
+      <dl>
+        <dt>Downloads</dt>
+        
+        <dd><a href="/0.13.0-0/hpmsdk.pdf">PDF</a></dd>
+      </dl>
+      <dl>
+        <dt>HPMicro</dt>
+          <dd>
+            <a href="https://www.hpmicro.com/">Project Home</a>
+          </dd>
+          <dd>
+            <a href="https://www.hpmicro.com/">SDK</a>
+          </dd>
+          <dd>
+            <a href="https://www.hpmicro.com/">Releases</a>
+          </dd>
+      </dl>
+    </div>
+  </div>
+  <script language="javascript">
+    function RelativeAddress(url1) {
+      var str=window.location.href;
+      window.location.href=str.match(/(\S*)\/(en|zh)/)[0]+url1;
+      
+    }
+  </script>
+  
+              <p class="caption" role="heading"><span class="caption-text">目录</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../CHANGELOG.html">Change Log</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../README_zh.html">HPM SDK 概述</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../README_zh.html#id1">HPM SDK使用说明</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../README_zh.html#id5">社区支持</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../boards/index_zh.html">HPM 开发板介绍</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../index_zh.html">HPM SDK 例程</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../hello_world/README_zh.html">1. Hello World</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../audio_codec/index_zh.html">2. 音频编解码</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../coremark/README_zh.html">3. Core Mark</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../touch_panel/README_zh.html">4. Touch Panel</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../rtos/index_zh.html">5. RTOS 例程</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">6. 驱动</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="hall/README_zh.html">6.1. 霍尔</a></li>
+<li class="toctree-l3"><a class="reference internal" href="pwm/README_zh.html">6.2. Pwm</a></li>
+<li class="toctree-l3"><a class="reference internal" href="qei/README_zh.html">6.3. 编码器QEI</a></li>
+<li class="toctree-l3"><a class="reference internal" href="jpeg/README_zh.html">6.4. JPEG</a></li>
+<li class="toctree-l3"><a class="reference internal" href="mchtmr/README_zh.html">6.5. 机器定时器</a></li>
+<li class="toctree-l3"><a class="reference internal" href="pllctl/README_zh.html">6.6. 锁相环控制器PLLCTL</a></li>
+<li class="toctree-l3"><a class="reference internal" href="synt/README_zh.html">6.7. 同步定时器</a></li>
+<li class="toctree-l3"><a class="reference internal" href="sysctl/README_zh.html">6.8. 系统控制模块</a></li>
+<li class="toctree-l3"><a class="reference internal" href="uart/uart_irq/README_zh.html">6.9. 通用异步收发器UART</a></li>
+<li class="toctree-l3"><a class="reference internal" href="uart/uart_dma/README_zh.html">6.10. DMA接收和发送数据UART</a></li>
+<li class="toctree-l3"><a class="reference internal" href="uart/uart_dma_rx_idle/README_zh.html">6.11. UART_DMA接收不定长数据</a></li>
+<li class="toctree-l3"><a class="reference internal" href="sdxc/sd/README_zh.html">6.12. SDXC 底层 API 示例</a></li>
+<li class="toctree-l3"><a class="reference internal" href="sdxc/sd_fatfs/README_zh.html">6.13. SDXC FATFS示例</a></li>
+<li class="toctree-l3"><a class="reference internal" href="can/README_zh.html">6.14. CAN 示例</a></li>
+<li class="toctree-l3"><a class="reference internal" href="rtc/README_zh.html">6.15. RTC 示例</a></li>
+<li class="toctree-l3"><a class="reference internal" href="acmp/README_zh.html">6.16. ACMP</a></li>
+<li class="toctree-l3"><a class="reference internal" href="butn/README_zh.html">6.17. BUTN</a></li>
+<li class="toctree-l3"><a class="reference internal" href="cam/README_zh.html">6.18. CAM</a></li>
+<li class="toctree-l3"><a class="reference internal" href="gpio/README_zh.html">6.19. GPIO</a></li>
+<li class="toctree-l3"><a class="reference internal" href="gpiom/README_zh.html">6.20. GPIOM</a></li>
+<li class="toctree-l3"><a class="reference internal" href="gptmr/README_zh.html">6.21. GPTMR</a></li>
+<li class="toctree-l3"><a class="reference internal" href="i2s/index_zh.html">6.22. I2S例程</a></li>
+<li class="toctree-l3"><a class="reference internal" href="lcdc/README_zh.html">6.23. LCDC</a></li>
+<li class="toctree-l3"><a class="reference internal" href="pdma/README_zh.html">6.24. PDMA</a></li>
+<li class="toctree-l3"><a class="reference internal" href="plic/README_zh.html">6.25. PLIC</a></li>
+<li class="toctree-l3"><a class="reference internal" href="vad/README_zh.html">6.26. VAD</a></li>
+<li class="toctree-l3"><a class="reference internal" href="wdg/README_zh.html">6.27. WDG 示例</a></li>
+<li class="toctree-l3"><a class="reference internal" href="spi/index_zh.html">6.28. SPI 例程</a></li>
+<li class="toctree-l3"><a class="reference internal" href="i2c/index_zh.html">6.29. I2C 例程</a></li>
+<li class="toctree-l3"><a class="reference internal" href="dma/README_zh.html">6.30. DMA example</a></li>
+<li class="toctree-l3"><a class="reference internal" href="dram/README_zh.html">6.31. DRAM example</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ptpc/README_zh.html">6.32. PTPC</a></li>
+<li class="toctree-l3"><a class="reference internal" href="mbx/README_zh.html">6.33. MBX</a></li>
+<li class="toctree-l3"><a class="reference internal" href="l1c/README_zh.html">6.34. 一级高速缓存</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../motor_ctrl/index_zh.html">7. 电机控制</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../jpeg/index_zh.html">8. JPEG</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../tinycrypt/index_zh.html">9. Tinycrypt</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../multicore/index_zh.html">10. 多核例程</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../rom_api/index_zh.html">11. ROMAPI 例程</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../tflm/README_zh.html">12. TensorFlowLiteMicro</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../tinyusb/index_zh.html">13. USB 通讯</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../littlevgl/index_zh.html">14. littlevgl</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../tinyuf2/README_zh.html">15. TinyUF2</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../rgb_led/README_zh.html">16. RGB LED</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../hpm_math/index_zh.html">17. HPMICRO MATH</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../lwip/index_zh.html">18. lwIP</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../memstress/index_zh.html">19. 内存测试</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../dma_manager/README_zh.html">20. DMA Manager</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../doc/src/sdk_doc/README_zh.html">HPM SDK文档生成</a></li>
+</ul>
+
+  
+  <div class="toctree-wrapper compound">
+    <p class="caption"><span class="caption-text">Reference</span></p>
+    <ul>
+      
+      <li class="toctree-l1">
+        <a class="reference internal" onclick="ApiRelativeAddress()">API DOC</a>
+      </li>
+      
+    </ul>
+  </div>
+  <script language="javascript">
+    function ApiRelativeAddress() {
+      var str=window.location.href;
+      window.location.href=str.match(/(\S*)sdk_doc/)[1]+"api_doc/html/index.html";
+      
+    }
+  </script>
+  
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index_zh.html">hpm_sdk readme</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+  <!--  -->
+  
+  
+  
+  
+
+  <li><a href="../../index_zh.html">Docs</a> &raquo;</li>
+  
+     <li><a href="../index_zh.html">HPM SDK 例程</a> &raquo;</li>
+  
+  <li><span class="section-number">6. </span>驱动</li>
+
+
+  <li class="wy-breadcrumbs-aside">
+    <dark-mode-toggle id="dark-mode-toggle" appearance="toggle" permanent="true"/>
+  </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+  
+    <div class="wy-alert wy-alert-danger">
+      The <a onclick="RelativeAddressLatest('/latest/html','samples/drivers/index_zh')">latest development version</a>
+      of this page may be more current than this released 0.13.0-0 version.
+    </div>
+    <script language="javascript">
+      function RelativeAddressLatest(url1,name) {
+        var str=window.location.href;
+        window.location.href=str.match(/(\S*)\/(en|zh)/)[0]+url1+"/"+name+".html";
+        
+      }
+    </script>
+  
+  
+           <div itemprop="articleBody">
+             
+  <section id="id1">
+<h1><span class="section-number">6. </span>驱动<a class="headerlink" href="#id1" title="Permalink to this heading">¶</a></h1>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="hall/README_zh.html">6.1. 霍尔</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="hall/README_zh.html#id2">6.1.1. 概述</a></li>
+<li class="toctree-l2"><a class="reference internal" href="hall/README_zh.html#id3">6.1.2. 配置</a></li>
+<li class="toctree-l2"><a class="reference internal" href="hall/README_zh.html#id4">6.1.3. 运行现象</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="pwm/README_zh.html">6.2. Pwm</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="pwm/README_zh.html#id1">6.2.1. 概述</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pwm/README_zh.html#id2">6.2.2. 配置</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pwm/README_zh.html#id3">6.2.3. 运行现象</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="qei/README_zh.html">6.3. 编码器QEI</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="qei/README_zh.html#id1">6.3.1. 概述</a></li>
+<li class="toctree-l2"><a class="reference internal" href="qei/README_zh.html#id2">6.3.2. 配置</a></li>
+<li class="toctree-l2"><a class="reference internal" href="qei/README_zh.html#id3">6.3.3. 运行现象</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="jpeg/README_zh.html">6.4. JPEG</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="jpeg/README_zh.html#id1">6.4.1. 概述</a></li>
+<li class="toctree-l2"><a class="reference internal" href="jpeg/README_zh.html#id2">6.4.2. 硬件设置</a></li>
+<li class="toctree-l2"><a class="reference internal" href="jpeg/README_zh.html#id3">6.4.3. 运行现象</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="mchtmr/README_zh.html">6.5. 机器定时器</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="mchtmr/README_zh.html#id2">6.5.1. 概述</a></li>
+<li class="toctree-l2"><a class="reference internal" href="mchtmr/README_zh.html#id3">6.5.2. 硬件设置</a></li>
+<li class="toctree-l2"><a class="reference internal" href="mchtmr/README_zh.html#id4">6.5.3. 运行现象</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="pllctl/README_zh.html">6.6. 锁相环控制器PLLCTL</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="pllctl/README_zh.html#id1">6.6.1. 概述</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pllctl/README_zh.html#id2">6.6.2. 硬件设置</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pllctl/README_zh.html#id3">6.6.3. 运行现象</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="synt/README_zh.html">6.7. 同步定时器</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="synt/README_zh.html#id2">6.7.1. 概述</a></li>
+<li class="toctree-l2"><a class="reference internal" href="synt/README_zh.html#id3">6.7.2. 硬件设置</a></li>
+<li class="toctree-l2"><a class="reference internal" href="synt/README_zh.html#id4">6.7.3. 运行现象</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="sysctl/README_zh.html">6.8. 系统控制模块</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="sysctl/README_zh.html#id2">6.8.1. 概述</a></li>
+<li class="toctree-l2"><a class="reference internal" href="sysctl/README_zh.html#id3">6.8.2. 硬件设置</a></li>
+<li class="toctree-l2"><a class="reference internal" href="sysctl/README_zh.html#id4">6.8.3. 运行现象</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="uart/uart_irq/README_zh.html">6.9. 通用异步收发器UART</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="uart/uart_irq/README_zh.html#id1">6.9.1. 概述</a></li>
+<li class="toctree-l2"><a class="reference internal" href="uart/uart_irq/README_zh.html#id2">6.9.2. 端口设置</a></li>
+<li class="toctree-l2"><a class="reference internal" href="uart/uart_irq/README_zh.html#id3">6.9.3. 运行现象</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="uart/uart_dma/README_zh.html">6.10. DMA接收和发送数据UART</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="uart/uart_dma/README_zh.html#id1">6.10.1. 概述</a></li>
+<li class="toctree-l2"><a class="reference internal" href="uart/uart_dma/README_zh.html#id2">6.10.2. 端口设置</a></li>
+<li class="toctree-l2"><a class="reference internal" href="uart/uart_dma/README_zh.html#id3">6.10.3. 运行现象</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="uart/uart_dma_rx_idle/README_zh.html">6.11. UART_DMA接收不定长数据</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="uart/uart_dma_rx_idle/README_zh.html#id1">6.11.1. 概述</a></li>
+<li class="toctree-l2"><a class="reference internal" href="uart/uart_dma_rx_idle/README_zh.html#id2">6.11.2. 端口设置</a></li>
+<li class="toctree-l2"><a class="reference internal" href="uart/uart_dma_rx_idle/README_zh.html#id3">6.11.3. 硬件设置</a></li>
+<li class="toctree-l2"><a class="reference internal" href="uart/uart_dma_rx_idle/README_zh.html#id4">6.11.4. 运行现象</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="sdxc/sd/README_zh.html">6.12. SDXC 底层 API 示例</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="sdxc/sd/README_zh.html#id1">6.12.1. 概览</a></li>
+<li class="toctree-l2"><a class="reference internal" href="sdxc/sd/README_zh.html#id2">6.12.2. 板级设置</a></li>
+<li class="toctree-l2"><a class="reference internal" href="sdxc/sd/README_zh.html#id3">6.12.3. 运行示例</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="sdxc/sd_fatfs/README_zh.html">6.13. SDXC FATFS示例</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="sdxc/sd_fatfs/README_zh.html#id1">6.13.1. 概览</a></li>
+<li class="toctree-l2"><a class="reference internal" href="sdxc/sd_fatfs/README_zh.html#id2">6.13.2. 板级设置</a></li>
+<li class="toctree-l2"><a class="reference internal" href="sdxc/sd_fatfs/README_zh.html#id3">6.13.3. 运行示例</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="can/README_zh.html">6.14. CAN 示例</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="can/README_zh.html#id1">6.14.1. 概述</a></li>
+<li class="toctree-l2"><a class="reference internal" href="can/README_zh.html#id2">6.14.2. 硬件设置</a></li>
+<li class="toctree-l2"><a class="reference internal" href="can/README_zh.html#id3">6.14.3. 运行现象</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="can/README_zh.html#id4">6.14.3.1. 注意事项:</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="rtc/README_zh.html">6.15. RTC 示例</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="rtc/README_zh.html#id1">6.15.1. 概述</a></li>
+<li class="toctree-l2"><a class="reference internal" href="rtc/README_zh.html#id2">6.15.2. 硬件设置</a></li>
+<li class="toctree-l2"><a class="reference internal" href="rtc/README_zh.html#id3">6.15.3. 运行现象</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="acmp/README_zh.html">6.16. ACMP</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="acmp/README_zh.html#id1">6.16.1. 概述</a></li>
+<li class="toctree-l2"><a class="reference internal" href="acmp/README_zh.html#id2">6.16.2. 硬件设置</a></li>
+<li class="toctree-l2"><a class="reference internal" href="acmp/README_zh.html#id3">6.16.3. 运行现象</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="butn/README_zh.html">6.17. BUTN</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="butn/README_zh.html#id1">6.17.1. 概述</a></li>
+<li class="toctree-l2"><a class="reference internal" href="butn/README_zh.html#id2">6.17.2. 硬件设置</a></li>
+<li class="toctree-l2"><a class="reference internal" href="butn/README_zh.html#id3">6.17.3. 运行现象</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="cam/README_zh.html">6.18. CAM</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="cam/README_zh.html#id1">6.18.1. 概述</a></li>
+<li class="toctree-l2"><a class="reference internal" href="cam/README_zh.html#id2">6.18.2. 硬件设置</a></li>
+<li class="toctree-l2"><a class="reference internal" href="cam/README_zh.html#id3">6.18.3. 工程设置</a></li>
+<li class="toctree-l2"><a class="reference internal" href="cam/README_zh.html#id4">6.18.4. 注意事项</a></li>
+<li class="toctree-l2"><a class="reference internal" href="cam/README_zh.html#id5">6.18.5. 运行现象</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="gpio/README_zh.html">6.19. GPIO</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="gpio/README_zh.html#id1">6.19.1. 概述</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gpio/README_zh.html#id2">6.19.2. 硬件设置</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gpio/README_zh.html#id3">6.19.3. 运行现象</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="gpiom/README_zh.html">6.20. GPIOM</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="gpiom/README_zh.html#id1">6.20.1. 概述</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gpiom/README_zh.html#id2">6.20.2. 硬件设置</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gpiom/README_zh.html#id3">6.20.3. 运行现象</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="gptmr/README_zh.html">6.21. GPTMR</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="gptmr/README_zh.html#id1">6.21.1. 概述</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gptmr/README_zh.html#id2">6.21.2. 硬件设置</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gptmr/README_zh.html#id3">6.21.3. 运行现象</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="i2s/index_zh.html">6.22. I2S例程</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="i2s/i2s/README_zh.html">6.22.1. I2S</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="i2s/i2s/README_zh.html#id1">6.22.1.1. 概述</a></li>
+<li class="toctree-l3"><a class="reference internal" href="i2s/i2s/README_zh.html#id2">6.22.1.2. 硬件设置</a></li>
+<li class="toctree-l3"><a class="reference internal" href="i2s/i2s/README_zh.html#id3">6.22.1.3. 运行现象</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="i2s/i2s_dma/README_zh.html">6.22.2. I2S DMA</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="i2s/i2s_dma/README_zh.html#id1">6.22.2.1. 概述</a></li>
+<li class="toctree-l3"><a class="reference internal" href="i2s/i2s_dma/README_zh.html#id2">6.22.2.2. 硬件设置</a></li>
+<li class="toctree-l3"><a class="reference internal" href="i2s/i2s_dma/README_zh.html#id3">6.22.2.3. 运行现象</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="i2s/i2s_interrupt/README_zh.html">6.22.3. I2S Interrupt</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="i2s/i2s_interrupt/README_zh.html#id1">6.22.3.1. 概述</a></li>
+<li class="toctree-l3"><a class="reference internal" href="i2s/i2s_interrupt/README_zh.html#id2">6.22.3.2. 硬件设置</a></li>
+<li class="toctree-l3"><a class="reference internal" href="i2s/i2s_interrupt/README_zh.html#id3">6.22.3.3. 运行现象</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="lcdc/README_zh.html">6.23. LCDC</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="lcdc/README_zh.html#id1">6.23.1. 概述</a></li>
+<li class="toctree-l2"><a class="reference internal" href="lcdc/README_zh.html#id2">6.23.2. 硬件配置</a></li>
+<li class="toctree-l2"><a class="reference internal" href="lcdc/README_zh.html#id3">6.23.3. 运行</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="pdma/README_zh.html">6.24. PDMA</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="pdma/README_zh.html#id1">6.24.1. 概述</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pdma/README_zh.html#id2">6.24.2. 硬件设置</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pdma/README_zh.html#id3">6.24.3. 运行现象</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="plic/README_zh.html">6.25. PLIC</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="plic/README_zh.html#id1">6.25.1. 概述</a></li>
+<li class="toctree-l2"><a class="reference internal" href="plic/README_zh.html#id2">6.25.2. 硬件设置</a></li>
+<li class="toctree-l2"><a class="reference internal" href="plic/README_zh.html#id3">6.25.3. 运行现象</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="vad/README_zh.html">6.26. VAD</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="vad/README_zh.html#id1">6.26.1. 概述</a></li>
+<li class="toctree-l2"><a class="reference internal" href="vad/README_zh.html#id2">6.26.2. 硬件设置</a></li>
+<li class="toctree-l2"><a class="reference internal" href="vad/README_zh.html#id3">6.26.3. 运行现象</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="wdg/README_zh.html">6.27. WDG 示例</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="wdg/README_zh.html#id1">6.27.1. 概览</a></li>
+<li class="toctree-l2"><a class="reference internal" href="wdg/README_zh.html#id2">6.27.2. 板级设置</a></li>
+<li class="toctree-l2"><a class="reference internal" href="wdg/README_zh.html#id3">6.27.3. 运行示例</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="spi/index_zh.html">6.28. SPI 例程</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="spi/polling/master/README_zh.html">6.28.1. SPI_POLLING_MASTER</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="spi/polling/master/README_zh.html#id1">6.28.1.1. 概述</a></li>
+<li class="toctree-l3"><a class="reference internal" href="spi/polling/master/README_zh.html#id2">6.28.1.2. 硬件设置</a></li>
+<li class="toctree-l3"><a class="reference internal" href="spi/polling/master/README_zh.html#id3">6.28.1.3. 运行现象</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="spi/polling/slave/README_zh.html">6.28.2. SPI_POLLING_SLAVE</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="spi/polling/slave/README_zh.html#id1">6.28.2.1. 概述</a></li>
+<li class="toctree-l3"><a class="reference internal" href="spi/polling/slave/README_zh.html#id2">6.28.2.2. 硬件设置</a></li>
+<li class="toctree-l3"><a class="reference internal" href="spi/polling/slave/README_zh.html#id3">6.28.2.3. 运行现象</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="spi/dma/master/README_zh.html">6.28.3. SPI_DMA_MASTER</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="spi/dma/master/README_zh.html#id1">6.28.3.1. 概述</a></li>
+<li class="toctree-l3"><a class="reference internal" href="spi/dma/master/README_zh.html#id2">6.28.3.2. 硬件设置</a></li>
+<li class="toctree-l3"><a class="reference internal" href="spi/dma/master/README_zh.html#id3">6.28.3.3. 运行现象</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="spi/dma/slave/README_zh.html">6.28.4. SPI_DMA_SLAVE</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="spi/dma/slave/README_zh.html#id1">6.28.4.1. 概述</a></li>
+<li class="toctree-l3"><a class="reference internal" href="spi/dma/slave/README_zh.html#id2">6.28.4.2. 硬件设置</a></li>
+<li class="toctree-l3"><a class="reference internal" href="spi/dma/slave/README_zh.html#id3">6.28.4.3. 运行现象</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="spi/master_trans_large_amount_of_data/README_zh.html">6.28.5. SPI_MASTER_TRANS_LARGE_AMOUNT_OF_DATA</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="spi/master_trans_large_amount_of_data/README_zh.html#id1">6.28.5.1. 概述</a></li>
+<li class="toctree-l3"><a class="reference internal" href="spi/master_trans_large_amount_of_data/README_zh.html#id2">6.28.5.2. 硬件设置</a></li>
+<li class="toctree-l3"><a class="reference internal" href="spi/master_trans_large_amount_of_data/README_zh.html#id3">6.28.5.3. 运行现象</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="i2c/index_zh.html">6.29. I2C 例程</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="i2c/polling/master/README_zh.html">6.29.1. i2c_polling_master</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="i2c/polling/master/README_zh.html#id1">6.29.1.1. 概述</a></li>
+<li class="toctree-l3"><a class="reference internal" href="i2c/polling/master/README_zh.html#id2">6.29.1.2. 硬件设置</a></li>
+<li class="toctree-l3"><a class="reference internal" href="i2c/polling/master/README_zh.html#id3">6.29.1.3. 运行现象</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="i2c/polling/slave/README_zh.html">6.29.2. i2c_polling_slave</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="i2c/polling/slave/README_zh.html#id1">6.29.2.1. 概述</a></li>
+<li class="toctree-l3"><a class="reference internal" href="i2c/polling/slave/README_zh.html#id2">6.29.2.2. 硬件设置</a></li>
+<li class="toctree-l3"><a class="reference internal" href="i2c/polling/slave/README_zh.html#id3">6.29.2.3. 运行现象</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="i2c/dma/master/README_zh.html">6.29.3. i2c_dma_master</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="i2c/dma/master/README_zh.html#id1">6.29.3.1. 概述</a></li>
+<li class="toctree-l3"><a class="reference internal" href="i2c/dma/master/README_zh.html#id2">6.29.3.2. 硬件设置</a></li>
+<li class="toctree-l3"><a class="reference internal" href="i2c/dma/master/README_zh.html#id3">6.29.3.3. 运行现象</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="i2c/dma/slave/README_zh.html">6.29.4. i2c_dma_slave</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="i2c/dma/slave/README_zh.html#id1">6.29.4.1. 概述</a></li>
+<li class="toctree-l3"><a class="reference internal" href="i2c/dma/slave/README_zh.html#id2">6.29.4.2. 硬件设置</a></li>
+<li class="toctree-l3"><a class="reference internal" href="i2c/dma/slave/README_zh.html#id3">6.29.4.3. 运行现象</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="dma/README_zh.html">6.30. DMA example</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="dma/README_zh.html#id1">6.30.1. 概述</a></li>
+<li class="toctree-l2"><a class="reference internal" href="dma/README_zh.html#id2">6.30.2. 硬件设置</a></li>
+<li class="toctree-l2"><a class="reference internal" href="dma/README_zh.html#id3">6.30.3. 运行现象</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="dram/README_zh.html">6.31. DRAM example</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="dram/README_zh.html#id1">6.31.1. 概述</a></li>
+<li class="toctree-l2"><a class="reference internal" href="dram/README_zh.html#id2">6.31.2. 硬件设置</a></li>
+<li class="toctree-l2"><a class="reference internal" href="dram/README_zh.html#id3">6.31.3. 运行现象</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="ptpc/README_zh.html">6.32. PTPC</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="ptpc/README_zh.html#id1">6.32.1. 概述</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ptpc/README_zh.html#id2">6.32.2. 硬件设置</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ptpc/README_zh.html#id3">6.32.3. 运行现象</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="mbx/README_zh.html">6.33. MBX</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="mbx/README_zh.html#id1">6.33.1. 概述</a></li>
+<li class="toctree-l2"><a class="reference internal" href="mbx/README_zh.html#board-setting">6.33.2. Board Setting</a></li>
+<li class="toctree-l2"><a class="reference internal" href="mbx/README_zh.html#running-the-example">6.33.3. Running the Example</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="l1c/README_zh.html">6.34. 一级高速缓存</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="l1c/README_zh.html#id2">6.34.1. 概述</a></li>
+<li class="toctree-l2"><a class="reference internal" href="l1c/README_zh.html#id3">6.34.2. 端口设置</a></li>
+<li class="toctree-l2"><a class="reference internal" href="l1c/README_zh.html#id4">6.34.3. 运行现象</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</section>
+
+
+           </div>
+          </div>
+
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="../rtos/freertos_hello/README_zh.html" class="btn btn-neutral float-left" title="5.1. FreeRTOS Hello" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="hall/README_zh.html" class="btn btn-neutral float-right" title="6.1. 霍尔" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2020-2022, hpmicro.
+      <span class="lastupdated">Last updated on Jul 31, 2022.
+      </span></p>
+  </div>
+
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

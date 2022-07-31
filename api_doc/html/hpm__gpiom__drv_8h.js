@@ -8,8 +8,8 @@ var hpm__gpiom__drv_8h =
     [ "gpiom_check_pin_visibility", "group__gpiom__interface.html#gae225a13eaf9bb2efafe910c0fd59e1ea", null ],
     [ "gpiom_disable_pin_visibility", "group__gpiom__interface.html#ga01208ee6cc208e932f2f3ad51115d07f", null ],
     [ "gpiom_enable_pin_visibility", "group__gpiom__interface.html#ga226d99f5430a17d93810331c400b70f4", null ],
-    [ "gpiom_get_pin_controler", "group__gpiom__interface.html#gacd148ae8a72cc3546aebab9f9ab50a46", null ],
+    [ "gpiom_get_pin_controller", "group__gpiom__interface.html#ga459f792988c44dd8670b40824d175f0c", null ],
     [ "gpiom_lock_pin", "group__gpiom__interface.html#ga6c170012f8da154b5b54ba2dcca4f04f", null ],
     [ "gpiom_pin_is_locked", "group__gpiom__interface.html#ga54493e727a53599e68ecf6585c4bda0c", null ],
-    [ "gpiom_set_pin_controler", "group__gpiom__interface.html#gad5ec024ff6006a6ad705f49cf2c9e638", null ]
+    [ "gpiom_set_pin_controller", "group__gpiom__interface.html#ga31f2d55d58543b1f8ca6d1d72ff43f39", null ]
 ];

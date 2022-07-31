@@ -1,5 +1,8 @@
 var hpm__gpio__drv_8h =
 [
+    [ "GPIO_GET_PIN_INDEX", "hpm__gpio__drv_8h.html#a91f872fbfbf7bb97ef12f2d6258eedce", null ],
+    [ "GPIO_GET_PORT_INDEX", "hpm__gpio__drv_8h.html#a0c821147e78d11124b1d0d5c00999243", null ],
+    [ "PORT_PIN_COUNT", "hpm__gpio__drv_8h.html#abd173241c3a00a6b93daed19cd906abe", null ],
     [ "gpio_interrupt_trigger_t", "group__gpio__interface.html#gad7182efe68dbafcf2a7ed1160981bf3e", null ],
     [ "gpio_interrupt_trigger", "group__gpio__interface.html#ga027ed1423986f66573a6f676734f181d", [
       [ "gpio_interrupt_trigger_level_high", "group__gpio__interface.html#gga027ed1423986f66573a6f676734f181da846270f87fce1489f24140683fee771c", null ],
@@ -19,7 +22,7 @@ var hpm__gpio__drv_8h =
     [ "gpio_enable_pin_interrupt", "group__gpio__interface.html#gad7d872375fd34e61b989f45c4d4f6acd", null ],
     [ "gpio_enable_port_interrupt_with_mask", "group__gpio__interface.html#gab118a289275cd260dd12eaa305b76d69", null ],
     [ "gpio_enable_port_output_with_mask", "group__gpio__interface.html#ga2f04729a2e192f161d2b2f138b7b25e3", null ],
-    [ "gpio_get_port_interrupt_flags", "group__gpio__interface.html#gab5a7399f3b3a06aea6d092a6b8caf79d", null ],
+    [ "gpio_get_port_interrupt_flags", "group__gpio__interface.html#ga88bfa1a7e4f8ddc297ea3ac3ca0bda8e", null ],
     [ "gpio_read_pin", "group__gpio__interface.html#gab3eab86f611cf6a27f2eedbd5acd19fe", null ],
     [ "gpio_read_port", "group__gpio__interface.html#gaeab55fd6ebb722ae6991cb44a0930825", null ],
     [ "gpio_set_pin_input", "group__gpio__interface.html#ga259476313474ac0ffa504a70320c92fa", null ],

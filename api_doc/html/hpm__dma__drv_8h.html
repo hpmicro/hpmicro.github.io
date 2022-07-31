@@ -243,9 +243,18 @@ Functions</h2></td></tr>
 <tr class="memitem:ga039e493f1eaf6f489f6623d2f8fe53fb"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__dma__interface.html#ga039e493f1eaf6f489f6623d2f8fe53fb">dma_has_linked_pointer_configured</a> (<a class="el" href="structDMA__Type.html">DMA_Type</a> *ptr, uint32_t ch_index)</td></tr>
 <tr class="memdesc:ga039e493f1eaf6f489f6623d2f8fe53fb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if linked pointer has been configured.  <a href="group__dma__interface.html#ga039e493f1eaf6f489f6623d2f8fe53fb">More...</a><br /></td></tr>
 <tr class="separator:ga039e493f1eaf6f489f6623d2f8fe53fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gad1cc48363010c353a4254301ecdcee1b"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="group__common__interface.html#ga087efae82a4b174a0363363d9d5ece19">hpm_stat_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__dma__interface.html#gad1cc48363010c353a4254301ecdcee1b">dma_check_transfer_status</a> (<a class="el" href="structDMA__Type.html">DMA_Type</a> *ptr, uint8_t ch_index)</td></tr>
-<tr class="memdesc:gad1cc48363010c353a4254301ecdcee1b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check transfer status.  <a href="group__dma__interface.html#gad1cc48363010c353a4254301ecdcee1b">More...</a><br /></td></tr>
-<tr class="separator:gad1cc48363010c353a4254301ecdcee1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac04beeabb4ee9071ea056c86dd3e6bf9"><td class="memItemLeft" align="right" valign="top">static uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__dma__interface.html#gac04beeabb4ee9071ea056c86dd3e6bf9">dma_check_transfer_status</a> (<a class="el" href="structDMA__Type.html">DMA_Type</a> *ptr, uint8_t ch_index)</td></tr>
+<tr class="memdesc:gac04beeabb4ee9071ea056c86dd3e6bf9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check transfer status.  <a href="group__dma__interface.html#gac04beeabb4ee9071ea056c86dd3e6bf9">More...</a><br /></td></tr>
+<tr class="separator:gac04beeabb4ee9071ea056c86dd3e6bf9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa9c3b81c8228a1c2f029b96d30599a29"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__dma__interface.html#gaa9c3b81c8228a1c2f029b96d30599a29">dma_enable_channel_interrupt</a> (<a class="el" href="structDMA__Type.html">DMA_Type</a> *ptr, uint8_t ch_index, int32_t interrupt_mask)</td></tr>
+<tr class="memdesc:gaa9c3b81c8228a1c2f029b96d30599a29"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable DMA Channel interrupt.  <a href="group__dma__interface.html#gaa9c3b81c8228a1c2f029b96d30599a29">More...</a><br /></td></tr>
+<tr class="separator:gaa9c3b81c8228a1c2f029b96d30599a29"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga815c97886bac31930f00eac312183af3"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__dma__interface.html#ga815c97886bac31930f00eac312183af3">dma_disable_channel_interrupt</a> (<a class="el" href="structDMA__Type.html">DMA_Type</a> *ptr, uint8_t ch_index, int32_t interrupt_mask)</td></tr>
+<tr class="memdesc:ga815c97886bac31930f00eac312183af3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Disable DMA Channel interrupt.  <a href="group__dma__interface.html#ga815c97886bac31930f00eac312183af3">More...</a><br /></td></tr>
+<tr class="separator:ga815c97886bac31930f00eac312183af3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga745d72153480ef961132c8ea99874e5e"><td class="memItemLeft" align="right" valign="top">static uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__dma__interface.html#ga745d72153480ef961132c8ea99874e5e">dma_check_channel_interrupt_mask</a> (<a class="el" href="structDMA__Type.html">DMA_Type</a> *ptr, uint8_t ch_index)</td></tr>
+<tr class="memdesc:ga745d72153480ef961132c8ea99874e5e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check Channel interrupt master.  <a href="group__dma__interface.html#ga745d72153480ef961132c8ea99874e5e">More...</a><br /></td></tr>
+<tr class="separator:ga745d72153480ef961132c8ea99874e5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga271df872d11a113e6cd90e3caaf351ea"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__dma__interface.html#ga271df872d11a113e6cd90e3caaf351ea">dma_clear_irq_status</a> (<a class="el" href="structDMA__Type.html">DMA_Type</a> *ptr, uint32_t mask)</td></tr>
 <tr class="memdesc:ga271df872d11a113e6cd90e3caaf351ea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get clear IRQ status.  <a href="group__dma__interface.html#ga271df872d11a113e6cd90e3caaf351ea">More...</a><br /></td></tr>
 <tr class="separator:ga271df872d11a113e6cd90e3caaf351ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -271,7 +280,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_14bc92f4b96c8519b376567118ac28b3.html">drivers</a></li><li class="navelem"><a class="el" href="dir_445f1c1c73deccb146d16af27ad5c1d1.html">inc</a></li><li class="navelem"><a class="el" href="hpm__dma__drv_8h.html">hpm_dma_drv.h</a></li>
-    <li class="footer">Generated on Wed Jul 6 2022 09:39:52 for HPM SDK by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
+    <li class="footer">Generated on Sun Jul 31 2022 11:56:25 for HPM SDK by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>
 </body>

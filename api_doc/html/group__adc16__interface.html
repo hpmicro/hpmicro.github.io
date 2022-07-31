@@ -90,6 +90,7 @@ $(document).ready(function(){initNavTree('group__adc16__interface.html',''); ini
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Data Structures</a> &#124;
+<a href="#define-members">Macros</a> &#124;
 <a href="#enum-members">Enumerations</a>  </div>
   <div class="headertitle"><div class="title">ADC16 driver APIs</div></div>
 </div><!--header-->
@@ -128,6 +129,27 @@ Data Structures</h2></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">ADC16 trigger configuration struct for the preemption mode.  <a href="structadc16__pmt__config__t.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
+Macros</h2></td></tr>
+<tr class="memitem:ga42e1f0a59984f701d99592e95ef75a42"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__adc16__interface.html#ga42e1f0a59984f701d99592e95ef75a42">ADC16_IS_CHANNEL_INVALID</a>(CH)&#160;&#160;&#160;(CH &gt; <a class="el" href="HPM6750_2hpm__soc__feature_8h.html#a698e8e1f965faad7da251d9938332248">ADC16_SOC_MAX_CH_NUM</a> &amp;&amp; CH != <a class="el" href="HPM6750_2hpm__soc__feature_8h.html#a8da939032a4d932a36c84c45d40f251a">ADC16_SOC_TEMP_CH_NUM</a>)</td></tr>
+<tr class="memdesc:ga42e1f0a59984f701d99592e95ef75a42"><td class="mdescLeft">&#160;</td><td class="mdescRight">Define ADC16 validity check for the channel number.  <a href="group__adc16__interface.html#ga42e1f0a59984f701d99592e95ef75a42">More...</a><br /></td></tr>
+<tr class="separator:ga42e1f0a59984f701d99592e95ef75a42"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga0fa002d04be7ff092ea5388ac82c355c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__adc16__interface.html#ga0fa002d04be7ff092ea5388ac82c355c">ADC16_IS_TRIG_CH_INVLAID</a>(CH)&#160;&#160;&#160;(CH &gt; <a class="el" href="HPM6360_2hpm__soc__feature_8h.html#acd9c06a18f6ff3e923c84200e959914d">ADC16_SOC_MAX_TRIG_CH_NUM</a>)</td></tr>
+<tr class="memdesc:ga0fa002d04be7ff092ea5388ac82c355c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Define ADC16 validity check for the trigger number.  <a href="group__adc16__interface.html#ga0fa002d04be7ff092ea5388ac82c355c">More...</a><br /></td></tr>
+<tr class="separator:ga0fa002d04be7ff092ea5388ac82c355c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac5992f6c168f2ecb2ca774528f8a292b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__adc16__interface.html#gac5992f6c168f2ecb2ca774528f8a292b">ADC16_IS_TRIG_LEN_INVLAID</a>(TRIG_LEN)&#160;&#160;&#160;(TRIG_LEN &gt; <a class="el" href="HPM6750_2hpm__soc__feature_8h.html#ab8bb2b014dd2780fa7f17cd6c21eed3d">ADC_SOC_MAX_TRIG_CH_LEN</a>)</td></tr>
+<tr class="memdesc:gac5992f6c168f2ecb2ca774528f8a292b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Define ADC16 validity check for the trigger length.  <a href="group__adc16__interface.html#gac5992f6c168f2ecb2ca774528f8a292b">More...</a><br /></td></tr>
+<tr class="separator:gac5992f6c168f2ecb2ca774528f8a292b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf6edb41607caf349c6bc86e2ba1395f9"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__adc16__interface.html#gaf6edb41607caf349c6bc86e2ba1395f9">ADC16_IS_SEQ_LEN_INVLAID</a>(LEN)&#160;&#160;&#160;((LEN == 0) || (LEN &gt; <a class="el" href="HPM6750_2hpm__soc__feature_8h.html#a48f987e19c946a0b5c45536743d0b656">ADC_SOC_SEQ_MAX_LEN</a>))</td></tr>
+<tr class="memdesc:gaf6edb41607caf349c6bc86e2ba1395f9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Define ADC16 validity check for the sequence length.  <a href="group__adc16__interface.html#gaf6edb41607caf349c6bc86e2ba1395f9">More...</a><br /></td></tr>
+<tr class="separator:gaf6edb41607caf349c6bc86e2ba1395f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga719a08b7baa4edc5b806fc1d7bcd56f1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__adc16__interface.html#ga719a08b7baa4edc5b806fc1d7bcd56f1">ADC16_IS_SEQ_DMA_BUFF_LEN_INVLAID</a>(LEN)&#160;&#160;&#160;((LEN == 0) || (LEN &gt; <a class="el" href="HPM6750_2hpm__soc__feature_8h.html#ad077905ebb9a5f49342a508df47f1f61">ADC_SOC_SEQ_MAX_DMA_BUFF_LEN_IN_4BYTES</a>))</td></tr>
+<tr class="memdesc:ga719a08b7baa4edc5b806fc1d7bcd56f1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Define ADC16 validity check for the DMA buffer length in the sequence mode.  <a href="group__adc16__interface.html#ga719a08b7baa4edc5b806fc1d7bcd56f1">More...</a><br /></td></tr>
+<tr class="separator:ga719a08b7baa4edc5b806fc1d7bcd56f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaeaf7153336312ddba69a2cf6e3d6a36e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__adc16__interface.html#gaeaf7153336312ddba69a2cf6e3d6a36e">ADC16_IS_PMT_DMA_BUFF_LEN_INVLAID</a>(LEN)&#160;&#160;&#160;((LEN == 0) || (LEN &gt; <a class="el" href="HPM6750_2hpm__soc__feature_8h.html#ac7a2197dac0b7c2a588e41e17f752e90">ADC_SOC_PMT_MAX_DMA_BUFF_LEN_IN_4BYTES</a>))</td></tr>
+<tr class="memdesc:gaeaf7153336312ddba69a2cf6e3d6a36e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Define ADC16 validity check for the DMA buffer length in the preemption mode.  <a href="group__adc16__interface.html#gaeaf7153336312ddba69a2cf6e3d6a36e">More...</a><br /></td></tr>
+<tr class="separator:gaeaf7153336312ddba69a2cf6e3d6a36e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
 Enumerations</h2></td></tr>
 <tr class="memitem:ga0fbba2f1f9b2fcc88c403d296cd9dd0d"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__adc16__interface.html#ga0fbba2f1f9b2fcc88c403d296cd9dd0d">adc16_conversion_mode_t</a> { <a class="el" href="group__adc16__interface.html#gga0fbba2f1f9b2fcc88c403d296cd9dd0dafefa67dcac64c5365c8a609abfd90d5b">adc16_conv_mode_oneshot</a> = 0
@@ -165,9 +187,9 @@ Enumerations</h2></td></tr>
 <tr class="memitem:ga29ae18f3a045b012e3a712bd57211aa2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__common__interface.html#ga087efae82a4b174a0363363d9d5ece19">hpm_stat_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__adc16__interface.html#ga29ae18f3a045b012e3a712bd57211aa2">adc16_init</a> (<a class="el" href="structADC16__Type.html">ADC16_Type</a> *ptr, <a class="el" href="structadc16__config__t.html">adc16_config_t</a> *config)</td></tr>
 <tr class="memdesc:ga29ae18f3a045b012e3a712bd57211aa2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize an ADC16 instance.  <a href="group__adc16__interface.html#ga29ae18f3a045b012e3a712bd57211aa2">More...</a><br /></td></tr>
 <tr class="separator:ga29ae18f3a045b012e3a712bd57211aa2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga6ee417d4b6f4d33ec08b9af9335b2769"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__common__interface.html#ga087efae82a4b174a0363363d9d5ece19">hpm_stat_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__adc16__interface.html#ga6ee417d4b6f4d33ec08b9af9335b2769">adc16_channel_init</a> (<a class="el" href="structADC16__Type.html">ADC16_Type</a> *ptr, <a class="el" href="structadc16__channel__config__t.html">adc16_channel_config_t</a> *config)</td></tr>
-<tr class="memdesc:ga6ee417d4b6f4d33ec08b9af9335b2769"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize an ADC16 channel.  <a href="group__adc16__interface.html#ga6ee417d4b6f4d33ec08b9af9335b2769">More...</a><br /></td></tr>
-<tr class="separator:ga6ee417d4b6f4d33ec08b9af9335b2769"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad71c54ee3dff867577fa50905466ab30"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__common__interface.html#ga087efae82a4b174a0363363d9d5ece19">hpm_stat_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__adc16__interface.html#gad71c54ee3dff867577fa50905466ab30">adc16_init_channel</a> (<a class="el" href="structADC16__Type.html">ADC16_Type</a> *ptr, <a class="el" href="structadc16__channel__config__t.html">adc16_channel_config_t</a> *config)</td></tr>
+<tr class="memdesc:gad71c54ee3dff867577fa50905466ab30"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize an ADC16 channel.  <a href="group__adc16__interface.html#gad71c54ee3dff867577fa50905466ab30">More...</a><br /></td></tr>
+<tr class="separator:gad71c54ee3dff867577fa50905466ab30"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gad9104b000a0efa16b6b65e31d2b017ed"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__common__interface.html#ga087efae82a4b174a0363363d9d5ece19">hpm_stat_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__adc16__interface.html#gad9104b000a0efa16b6b65e31d2b017ed">adc16_set_prd_config</a> (<a class="el" href="structADC16__Type.html">ADC16_Type</a> *ptr, <a class="el" href="structadc16__prd__config__t.html">adc16_prd_config_t</a> *config)</td></tr>
 <tr class="memdesc:gad9104b000a0efa16b6b65e31d2b017ed"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configure the the period mode for an ADC16 instance.  <a href="group__adc16__interface.html#gad9104b000a0efa16b6b65e31d2b017ed">More...</a><br /></td></tr>
 <tr class="separator:gad9104b000a0efa16b6b65e31d2b017ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -227,6 +249,139 @@ Enumerations</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p >ADC16 driver APIs. </p>
+<h2 class="groupheader">Macro Definition Documentation</h2>
+<a id="ga42e1f0a59984f701d99592e95ef75a42" name="ga42e1f0a59984f701d99592e95ef75a42"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga42e1f0a59984f701d99592e95ef75a42">&#9670;&nbsp;</a></span>ADC16_IS_CHANNEL_INVALID</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ADC16_IS_CHANNEL_INVALID</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">CH</td><td>)</td>
+          <td>&#160;&#160;&#160;(CH &gt; <a class="el" href="HPM6750_2hpm__soc__feature_8h.html#a698e8e1f965faad7da251d9938332248">ADC16_SOC_MAX_CH_NUM</a> &amp;&amp; CH != <a class="el" href="HPM6750_2hpm__soc__feature_8h.html#a8da939032a4d932a36c84c45d40f251a">ADC16_SOC_TEMP_CH_NUM</a>)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><code>#include &lt;<a class="el" href="hpm__adc16__drv_8h.html">drivers/inc/hpm_adc16_drv.h</a>&gt;</code></p>
+
+<p>Define ADC16 validity check for the channel number. </p>
+
+</div>
+</div>
+<a id="gaeaf7153336312ddba69a2cf6e3d6a36e" name="gaeaf7153336312ddba69a2cf6e3d6a36e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaeaf7153336312ddba69a2cf6e3d6a36e">&#9670;&nbsp;</a></span>ADC16_IS_PMT_DMA_BUFF_LEN_INVLAID</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ADC16_IS_PMT_DMA_BUFF_LEN_INVLAID</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">LEN</td><td>)</td>
+          <td>&#160;&#160;&#160;((LEN == 0) || (LEN &gt; <a class="el" href="HPM6750_2hpm__soc__feature_8h.html#ac7a2197dac0b7c2a588e41e17f752e90">ADC_SOC_PMT_MAX_DMA_BUFF_LEN_IN_4BYTES</a>))</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><code>#include &lt;<a class="el" href="hpm__adc16__drv_8h.html">drivers/inc/hpm_adc16_drv.h</a>&gt;</code></p>
+
+<p>Define ADC16 validity check for the DMA buffer length in the preemption mode. </p>
+
+</div>
+</div>
+<a id="ga719a08b7baa4edc5b806fc1d7bcd56f1" name="ga719a08b7baa4edc5b806fc1d7bcd56f1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga719a08b7baa4edc5b806fc1d7bcd56f1">&#9670;&nbsp;</a></span>ADC16_IS_SEQ_DMA_BUFF_LEN_INVLAID</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ADC16_IS_SEQ_DMA_BUFF_LEN_INVLAID</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">LEN</td><td>)</td>
+          <td>&#160;&#160;&#160;((LEN == 0) || (LEN &gt; <a class="el" href="HPM6750_2hpm__soc__feature_8h.html#ad077905ebb9a5f49342a508df47f1f61">ADC_SOC_SEQ_MAX_DMA_BUFF_LEN_IN_4BYTES</a>))</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><code>#include &lt;<a class="el" href="hpm__adc16__drv_8h.html">drivers/inc/hpm_adc16_drv.h</a>&gt;</code></p>
+
+<p>Define ADC16 validity check for the DMA buffer length in the sequence mode. </p>
+
+</div>
+</div>
+<a id="gaf6edb41607caf349c6bc86e2ba1395f9" name="gaf6edb41607caf349c6bc86e2ba1395f9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaf6edb41607caf349c6bc86e2ba1395f9">&#9670;&nbsp;</a></span>ADC16_IS_SEQ_LEN_INVLAID</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ADC16_IS_SEQ_LEN_INVLAID</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">LEN</td><td>)</td>
+          <td>&#160;&#160;&#160;((LEN == 0) || (LEN &gt; <a class="el" href="HPM6750_2hpm__soc__feature_8h.html#a48f987e19c946a0b5c45536743d0b656">ADC_SOC_SEQ_MAX_LEN</a>))</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><code>#include &lt;<a class="el" href="hpm__adc16__drv_8h.html">drivers/inc/hpm_adc16_drv.h</a>&gt;</code></p>
+
+<p>Define ADC16 validity check for the sequence length. </p>
+
+</div>
+</div>
+<a id="ga0fa002d04be7ff092ea5388ac82c355c" name="ga0fa002d04be7ff092ea5388ac82c355c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga0fa002d04be7ff092ea5388ac82c355c">&#9670;&nbsp;</a></span>ADC16_IS_TRIG_CH_INVLAID</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ADC16_IS_TRIG_CH_INVLAID</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">CH</td><td>)</td>
+          <td>&#160;&#160;&#160;(CH &gt; <a class="el" href="HPM6360_2hpm__soc__feature_8h.html#acd9c06a18f6ff3e923c84200e959914d">ADC16_SOC_MAX_TRIG_CH_NUM</a>)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><code>#include &lt;<a class="el" href="hpm__adc16__drv_8h.html">drivers/inc/hpm_adc16_drv.h</a>&gt;</code></p>
+
+<p>Define ADC16 validity check for the trigger number. </p>
+
+</div>
+</div>
+<a id="gac5992f6c168f2ecb2ca774528f8a292b" name="gac5992f6c168f2ecb2ca774528f8a292b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gac5992f6c168f2ecb2ca774528f8a292b">&#9670;&nbsp;</a></span>ADC16_IS_TRIG_LEN_INVLAID</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ADC16_IS_TRIG_LEN_INVLAID</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">TRIG_LEN</td><td>)</td>
+          <td>&#160;&#160;&#160;(TRIG_LEN &gt; <a class="el" href="HPM6750_2hpm__soc__feature_8h.html#ab8bb2b014dd2780fa7f17cd6c21eed3d">ADC_SOC_MAX_TRIG_CH_LEN</a>)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><code>#include &lt;<a class="el" href="hpm__adc16__drv_8h.html">drivers/inc/hpm_adc16_drv.h</a>&gt;</code></p>
+
+<p>Define ADC16 validity check for the trigger length. </p>
+
+</div>
+</div>
 <h2 class="groupheader">Enumeration Type Documentation</h2>
 <a id="ga0fbba2f1f9b2fcc88c403d296cd9dd0d" name="ga0fbba2f1f9b2fcc88c403d296cd9dd0d"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga0fbba2f1f9b2fcc88c403d296cd9dd0d">&#9670;&nbsp;</a></span>adc16_conversion_mode_t</h2>
@@ -293,53 +448,6 @@ Enumerations</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="ga6ee417d4b6f4d33ec08b9af9335b2769" name="ga6ee417d4b6f4d33ec08b9af9335b2769"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga6ee417d4b6f4d33ec08b9af9335b2769">&#9670;&nbsp;</a></span>adc16_channel_init()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="group__common__interface.html#ga087efae82a4b174a0363363d9d5ece19">hpm_stat_t</a> adc16_channel_init </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structADC16__Type.html">ADC16_Type</a> *&#160;</td>
-          <td class="paramname"><em>ptr</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="structadc16__channel__config__t.html">adc16_channel_config_t</a> *&#160;</td>
-          <td class="paramname"><em>config</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p><code>#include &lt;<a class="el" href="hpm__adc16__drv_8h.html">drivers/inc/hpm_adc16_drv.h</a>&gt;</code></p>
-
-<p>Initialize an ADC16 channel. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">ptr</td><td>An ADC16 peripheral base address. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">config</td><td>A pointer to the configuration struct of <a class="el" href="structadc16__channel__config__t.html">adc16_channel_config_t</a>. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>A result of initializing an ADC16 channel. </dd></dl>
-<dl class="retval"><dt>Return values</dt><dd>
-  <table class="retval">
-    <tr><td class="paramname">status_success</td><td>Initialize an ADC16 channel successfully. Please refert to <a class="el" href="group__common__interface.html#ga087efae82a4b174a0363363d9d5ece19">hpm_stat_t</a>. </td></tr>
-    <tr><td class="paramname">status_invalid_argument</td><td>Initialize an ADC16 channel unsuccessfully due to passing one or more invalid arguments. Please refert to <a class="el" href="group__common__interface.html#ga087efae82a4b174a0363363d9d5ece19">hpm_stat_t</a>. </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
 <a id="gae51a3a9480885246f0879a2e4b4343fe" name="gae51a3a9480885246f0879a2e4b4343fe"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#gae51a3a9480885246f0879a2e4b4343fe">&#9670;&nbsp;</a></span>adc16_clear_status_flags()</h2>
 
@@ -834,6 +942,53 @@ Enumerations</h2></td></tr>
 
 </div>
 </div>
+<a id="gad71c54ee3dff867577fa50905466ab30" name="gad71c54ee3dff867577fa50905466ab30"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gad71c54ee3dff867577fa50905466ab30">&#9670;&nbsp;</a></span>adc16_init_channel()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__common__interface.html#ga087efae82a4b174a0363363d9d5ece19">hpm_stat_t</a> adc16_init_channel </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structADC16__Type.html">ADC16_Type</a> *&#160;</td>
+          <td class="paramname"><em>ptr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structadc16__channel__config__t.html">adc16_channel_config_t</a> *&#160;</td>
+          <td class="paramname"><em>config</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><code>#include &lt;<a class="el" href="hpm__adc16__drv_8h.html">drivers/inc/hpm_adc16_drv.h</a>&gt;</code></p>
+
+<p>Initialize an ADC16 channel. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">ptr</td><td>An ADC16 peripheral base address. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">config</td><td>A pointer to the configuration struct of <a class="el" href="structadc16__channel__config__t.html">adc16_channel_config_t</a>. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A result of initializing an ADC16 channel. </dd></dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">status_success</td><td>Initialize an ADC16 channel successfully. Please refert to <a class="el" href="group__common__interface.html#ga087efae82a4b174a0363363d9d5ece19">hpm_stat_t</a>. </td></tr>
+    <tr><td class="paramname">status_invalid_argument</td><td>Initialize an ADC16 channel unsuccessfully due to passing one or more invalid arguments. Please refert to <a class="el" href="group__common__interface.html#ga087efae82a4b174a0363363d9d5ece19">hpm_stat_t</a>. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="ga7d2a0bb0b5d434f5f4fc4d915e2f6b06" name="ga7d2a0bb0b5d434f5f4fc4d915e2f6b06"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga7d2a0bb0b5d434f5f4fc4d915e2f6b06">&#9670;&nbsp;</a></span>adc16_init_pmt_dma()</h2>
 
@@ -1194,7 +1349,7 @@ Enumerations</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Wed Jul 6 2022 09:39:55 for HPM SDK by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
+    <li class="footer">Generated on Sun Jul 31 2022 11:56:28 for HPM SDK by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>
 </body>
