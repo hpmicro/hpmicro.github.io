@@ -1,7 +1,18 @@
 var NAVTREEINDEX325 =
 {
+"structSYSCTL__Type.html#afc818348363279d811e3d37d1f65a78f":[2,0,166,73],
+"structSYSCTL__Type.html#afcf91645c22c41c2e75e84c506a96911":[2,0,166,12],
+"structSYSCTL__Type.html#afd0b544914ec5027a9e75ab64fe25868":[2,0,166,110],
+"structSYSCTL__Type.html#afd5460372cfb0b3526751f086be94770":[2,0,166,10],
+"structSYSCTL__Type.html#afd75176435d63978d6727d7877977090":[2,0,166,100],
+"structSYSCTL__Type.html#aff4d99d3c3a58402f21ca44d30773512":[2,0,166,20],
+"structTAMP__Type.html":[2,0,167],
+"structTAMP__Type.html#a013cd158417a6f3018b3ad4661485393":[2,0,167,1],
+"structTAMP__Type.html#a4087dc0df229e2015c3a50fba1144e54":[2,0,167,2],
+"structTAMP__Type.html#a43a5794c0b8d4a4706f233bd790ca06b":[2,0,167,0],
+"structTAMP__Type.html#a549e2cfcb964a79ab088eb2febf53787":[2,0,167,3],
 "structTAMP__Type.html#a873278e26762ac6fa67132acb4ffdc48":[2,0,167,6],
-"structTAMP__Type.html#add6b9a5f09a8a9537909d304952b2e5c":[2,0,167,5],
+"structTAMP__Type.html#a943a4d78413e7fd798b9104567a6c6cb":[2,0,167,5],
 "structTAMP__Type.html#af0cebe737c071d6b1ad5a43c751e556f":[2,0,167,4],
 "structTRGM__Type.html":[2,0,170],
 "structTRGM__Type.html#a4dbbf61200950d27773ed4b459114ca1":[2,0,170,4],
@@ -238,16 +249,5 @@ var NAVTREEINDEX325 =
 "structadc16__prd__config__t.html#a3684b9f51e3b4be30c5604824cab5b1f":[1,2,5,0],
 "structadc16__prd__config__t.html#a5791bef50cc6ec5cfded67f4edd97b49":[1,2,5,1],
 "structadc16__prd__config__t.html#ab230d65e33359247eb94a7890aa7a4bc":[1,2,5,2],
-"structadc16__seq__config__t.html":[1,2,7],
-"structadc16__seq__config__t.html#a816bc448e079e0674b453cabdde323ff":[1,2,7,1],
-"structadc16__seq__config__t.html#a9bb32aece189d39ac4dde58ba89279a9":[1,2,7,5],
-"structadc16__seq__config__t.html#aac9b19360bd9de3ae8322b668fc29ef3":[1,2,7,2],
-"structadc16__seq__config__t.html#aafca2939fa8bea31aa173296c5432ac7":[1,2,7,0],
-"structadc16__seq__config__t.html#ae23cb011454e134124a4d5fff007f020":[1,2,7,4],
-"structadc16__seq__config__t.html#ae52f470689de1e37099840813cb15333":[1,2,7,3],
-"structadc16__seq__dma__data__t.html":[1,2,3],
-"structadc16__seq__dma__data__t.html#a4861268580f265d915d743da2d402a2c":[1,2,3,0],
-"structadc16__seq__dma__data__t.html#a557c98cdf515919827a0f79cdee2df63":[1,2,3,2],
-"structadc16__seq__dma__data__t.html#a734a735f4ffba520a65a5b53303137ee":[1,2,3,1],
-"structadc16__seq__dma__data__t.html#aa202e95f3c99e29d01badc99a8cdb91a":[1,2,3,3]
+"structadc16__seq__config__t.html":[1,2,7]
 };

@@ -1,5 +1,16 @@
 var NAVTREEINDEX315 =
 {
+"hpm__uart__regs_8h.html#abac08564a8978878ca2dfc6ce0f7906d":[3,0,3,11,59,4],
+"hpm__uart__regs_8h.html#abb41e97ea52cc9f927e02232f2e0c5a2":[3,0,3,11,59,136],
+"hpm__uart__regs_8h.html#abca411099a35e7816b6627184abe5cbc":[3,0,3,11,59,93],
+"hpm__uart__regs_8h.html#abca45a8405d22b6850b9b96fd0055fa3":[3,0,3,11,59,135],
+"hpm__uart__regs_8h.html#abec87cbcb3950b29289ffd4bb22f6955":[3,0,3,11,59,88],
+"hpm__uart__regs_8h.html#ac15b0159f578ea17dccf662c772ac0dd":[3,0,3,11,59,48],
+"hpm__uart__regs_8h.html#ac9d2f9dca5da139fa4c1002a4f46c7b3":[3,0,3,11,59,38],
+"hpm__uart__regs_8h.html#ac9db32f7071cd8f9d009b67f37e321c6":[3,0,3,11,59,105],
+"hpm__uart__regs_8h.html#ace9fa0bfbb9eff49bb024f1a17fda5fd":[3,0,3,11,59,55],
+"hpm__uart__regs_8h.html#ad1fe29eb9966b4094cb8ee413d49a50c":[3,0,3,11,59,32],
+"hpm__uart__regs_8h.html#ad2b790278cc4a8c0b40a2589ab9d7b3c":[3,0,3,11,59,12],
 "hpm__uart__regs_8h.html#ad3f7c28d53dfd2a194febb63deaf3a61":[3,0,3,11,59,96],
 "hpm__uart__regs_8h.html#ad573ea24389bff13fd08fe4117570820":[3,0,3,11,59,63],
 "hpm__uart__regs_8h.html#ad67c21fa13a1168e3d3e51d2cb7823b4":[3,0,3,11,59,2],
@@ -238,16 +249,5 @@ var NAVTREEINDEX315 =
 "hpm__usb__regs_8h.html#a564a5c6fbb6c67451f6018e9da4e276d":[3,0,3,11,60,224],
 "hpm__usb__regs_8h.html#a569d9d6ba26e4aeb4b02c0648352e20d":[3,0,3,11,60,168],
 "hpm__usb__regs_8h.html#a56ef65d3218c68d91d87283e94ac97b5":[3,0,3,11,60,31],
-"hpm__usb__regs_8h.html#a589187538362111b758315a3ed3858c1":[3,0,3,11,60,358],
-"hpm__usb__regs_8h.html#a58a9c9e274220fc4403ea70ada4ace70":[3,0,3,11,60,164],
-"hpm__usb__regs_8h.html#a58e1425253382dcb07202c60a5e6cfe4":[3,0,3,11,60,592],
-"hpm__usb__regs_8h.html#a5a81d7b4dbe24654247d5d0a355d823e":[3,0,3,11,60,227],
-"hpm__usb__regs_8h.html#a5ab336bcffeb8dc03664d02b8fb9e970":[3,0,3,11,60,156],
-"hpm__usb__regs_8h.html#a5b8e146076d3eeb8b842d92ff95ff62a":[3,0,3,11,60,330],
-"hpm__usb__regs_8h.html#a5bb3ca2234aa6471c300e585d0428335":[3,0,3,11,60,552],
-"hpm__usb__regs_8h.html#a5ca2e072dc9622a0c0ade185931424b2":[3,0,3,11,60,229],
-"hpm__usb__regs_8h.html#a5d0deb8131ed1cb5a2a5f619da7e1e7c":[3,0,3,11,60,280],
-"hpm__usb__regs_8h.html#a5d95cbd80d8fac02d24b0c98a21a60a8":[3,0,3,11,60,221],
-"hpm__usb__regs_8h.html#a5da4ffc37d09cde601b2dd90b15854da":[3,0,3,11,60,215],
-"hpm__usb__regs_8h.html#a5ddfe78497554a746d69933394135c32":[3,0,3,11,60,209]
+"hpm__usb__regs_8h.html#a589187538362111b758315a3ed3858c1":[3,0,3,11,60,358]
 };

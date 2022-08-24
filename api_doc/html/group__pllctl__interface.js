@@ -8,8 +8,8 @@ var group__pllctl__interface =
     [ "PLLCTL_PLL_LOCK_SS_SPREAD", "group__pllctl__interface.html#ga1f37591a670ff29ea323745bc131a524", null ],
     [ "PLLCTL_PLL_VCO_FREQ_MAX", "group__pllctl__interface.html#ga636a8bfde463b9c73d40821ee11b78d2", null ],
     [ "PLLCTL_PLL_VCO_FREQ_MIN", "group__pllctl__interface.html#gac6656cca9e1d4470de33b82e0ef21b91", [
-      [ "status_pllctl_not_enabled", "group__pllctl__interface.html#gga9e93d8eae633734dfeb29e24a1f3a7c0a3fa666edd89077065fc97eb95942931a", null ],
-      [ "status_pllctl_out_of_range", "group__pllctl__interface.html#gga9e93d8eae633734dfeb29e24a1f3a7c0a67a02dd116738171c1afa34d31bf3543", null ]
+      [ "status_pllctl_not_enabled", "group__pllctl__interface.html#ggaeb8e1c282570d629a6b603a94a4650d6a3fa666edd89077065fc97eb95942931a", null ],
+      [ "status_pllctl_out_of_range", "group__pllctl__interface.html#ggaeb8e1c282570d629a6b603a94a4650d6a67a02dd116738171c1afa34d31bf3543", null ]
     ] ],
     [ "pllctl_div_is_stable", "group__pllctl__interface.html#gae0adf14235ee37388f6f6dd7ddccc3f8", null ],
     [ "pllctl_get_div", "group__pllctl__interface.html#ga876316522e5ce6207a83afbc9614612f", null ],

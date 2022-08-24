@@ -13,8 +13,8 @@ var structPLIC__Type =
     [ "RESERVED2", "structPLIC__Type.html#a23854600317ab8da3bbf8d246c5df4df", null ],
     [ "RESERVED3", "structPLIC__Type.html#af0f392dffc7f8f32787e0789ff215d30", null ],
     [ "RESERVED4", "structPLIC__Type.html#aad1d230935512f031e3b23eaabea7be4", null ],
-    [ "TARGETCONFIG", "structPLIC__Type.html#a8808794d6959dbaa50cfc6e4fa8c6e21", null ],
-    [ "TARGETINT", "structPLIC__Type.html#a61f4c73ce67a17c8b695b6fdd9d9ebbf", null ],
+    [ "TARGETCONFIG", "structPLIC__Type.html#a2298f2719e6819479895032ef060b37b", null ],
+    [ "TARGETINT", "structPLIC__Type.html#aeac2eb32181211d6b80471a1be326391", null ],
     [ "THRESHOLD", "structPLIC__Type.html#a4a7c10c48482e4aa36131d09221cc1b8", null ],
     [ "TRIGGER", "structPLIC__Type.html#a46bcf354f7cd59976d7005fdfea72966", null ]
 ];

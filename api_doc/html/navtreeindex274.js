@@ -1,5 +1,16 @@
 var NAVTREEINDEX274 =
 {
+"hpm__dao__regs_8h.html#a5fd66943b086a611a02f915dac1613d3":[3,0,3,11,15,45],
+"hpm__dao__regs_8h.html#a625304f988e9771a7b3eb2424854ba59":[3,0,3,11,15,16],
+"hpm__dao__regs_8h.html#a66698b2670c5060f52b04f6d1f1f8c95":[3,0,3,11,15,44],
+"hpm__dao__regs_8h.html#a687d3cfdb8297fdfad3c925b65fd2f10":[3,0,3,11,15,31],
+"hpm__dao__regs_8h.html#a6928d169805db875e0a8a2c3c7d0c17c":[3,0,3,11,15,43],
+"hpm__dao__regs_8h.html#a6f1f81f437d96dec9597662f176e43c7":[3,0,3,11,15,1],
+"hpm__dao__regs_8h.html#a6f5ffb4723284e2a6927fd537689fcaa":[3,0,3,11,15,52],
+"hpm__dao__regs_8h.html#a70a252a409f53519f491b04d33a14fdf":[3,0,3,11,15,3],
+"hpm__dao__regs_8h.html#a731b897a1e0428f6f42aca71c1b0379e":[3,0,3,11,15,59],
+"hpm__dao__regs_8h.html#a86487a8e3589d34fce20b8dc0f06e196":[3,0,3,11,15,24],
+"hpm__dao__regs_8h.html#a86b179e88d02bfb1d3c9d9c0be38b85e":[3,0,3,11,15,15],
 "hpm__dao__regs_8h.html#a89da999c7338ca03258b40010c40435e":[3,0,3,11,15,21],
 "hpm__dao__regs_8h.html#a91c1a8df9c68953964da3c744efe478b":[3,0,3,11,15,30],
 "hpm__dao__regs_8h.html#a932ab1429ce0169e75f6a1a112dfba78":[3,0,3,11,15,12],
@@ -238,16 +249,5 @@ var NAVTREEINDEX274 =
 "hpm__dram__regs_8h.html":[3,0,3,11,18],
 "hpm__dram__regs_8h.html#a026422b82a2cde88c617c762065caaa4":[3,0,3,11,18,16],
 "hpm__dram__regs_8h.html#a02b5584a89c23eb1ef0215637266df5e":[3,0,3,11,18,37],
-"hpm__dram__regs_8h.html#a04aa801db3583bfea40b7892b060e2d3":[3,0,3,11,18,132],
-"hpm__dram__regs_8h.html#a04b8650254cd16237f020a5fdcc7763e":[3,0,3,11,18,80],
-"hpm__dram__regs_8h.html#a0578f4d8c9df4110f8923869841d83a6":[3,0,3,11,18,67],
-"hpm__dram__regs_8h.html#a072bfc48f2bc59abc015d02b9e8c01a6":[3,0,3,11,18,59],
-"hpm__dram__regs_8h.html#a0a22db711191cd30420ee3ddc720e35e":[3,0,3,11,18,203],
-"hpm__dram__regs_8h.html#a0b8ef6d831c2646165b7a88278b4584d":[3,0,3,11,18,210],
-"hpm__dram__regs_8h.html#a0be8bb67202870d8a1df5bedd89e1e5b":[3,0,3,11,18,220],
-"hpm__dram__regs_8h.html#a0db6427feeb65534d52001fee0245dbb":[3,0,3,11,18,173],
-"hpm__dram__regs_8h.html#a0e094e7ca7189cb193b40cddbc143d27":[3,0,3,11,18,157],
-"hpm__dram__regs_8h.html#a0f666b52ce9e77dc5b165a4e1fc82fc0":[3,0,3,11,18,172],
-"hpm__dram__regs_8h.html#a0fb26b28b256f53feed8d575ea4f4b56":[3,0,3,11,18,197],
-"hpm__dram__regs_8h.html#a11d1586e904d6a70670dce39898ba803":[3,0,3,11,18,28]
+"hpm__dram__regs_8h.html#a04aa801db3583bfea40b7892b060e2d3":[3,0,3,11,18,132]
 };

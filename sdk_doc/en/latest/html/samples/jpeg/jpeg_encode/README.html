@@ -68,7 +68,7 @@
           </dd>
         
           <dd>
-            <a onclick="RelativeAddress('/0.13.0/html/index.html')">0.13.0</a>
+            <a onclick="RelativeAddress('/0.13.1/html/index.html')">0.13.1</a>
           </dd>
         
       </dl>
@@ -120,7 +120,8 @@
 <li class="toctree-l4"><a class="reference internal" href="#overview">8.2.1. Overview</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#board-setting">8.2.2. Board Setting</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#engineering-configuration">8.2.3. Engineering configuration</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#running-the-example">8.2.4. Running the example</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#store-picture-size">8.2.4. Store picture size</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#running-the-example">8.2.5. Running the example</a></li>
 </ul>
 </li>
 </ul>
@@ -232,8 +233,16 @@
 <li><p>File <span class="xref myst">cmakelists.txt</span>. If <code class="docutils literal notranslate"><span class="pre">set</span> <span class="pre">(config_sdfatfs_mode</span> <span class="pre">1)</span></code> is configured, Jpg pictures are stored in <strong>SD card</strong> by default; to configure <code class="docutils literal notranslate"><span class="pre">set</span> <span class="pre">(config_tinyusbhost_mode</span> <span class="pre">1)</span></code>, Jpg pictures are stored in <strong>USB</strong> by default</p></li>
 </ul>
 </section>
+<section id="store-picture-size">
+<h2><span class="section-number">8.2.4. </span>Store picture size<a class="headerlink" href="#store-picture-size" title="Permalink to this heading">¶</a></h2>
+<hr class="docutils" />
+<ul class="simple">
+<li><p>The image format stored in this routine is JPG, and the resolution size is 800*480</p></li>
+<li><p>If higher resolution encoding is supported, a camera that supports high resolution can be used as the RGB data source to store JPG files through the encoding function</p></li>
+</ul>
+</section>
 <section id="running-the-example">
-<h2><span class="section-number">8.2.4. </span>Running the example<a class="headerlink" href="#running-the-example" title="Permalink to this heading">¶</a></h2>
+<h2><span class="section-number">8.2.5. </span>Running the example<a class="headerlink" href="#running-the-example" title="Permalink to this heading">¶</a></h2>
 <hr class="docutils" />
 <ul class="simple">
 <li><p>SD card mode:
@@ -269,7 +278,7 @@ When the project runs correctly, the pictures captured by the camera are stored 
 
   <div role="contentinfo">
     <p>&#169; Copyright 2020-2022, hpmicro.
-      <span class="lastupdated">Last updated on Jul 31, 2022.
+      <span class="lastupdated">Last updated on Aug 23, 2022.
       </span></p>
   </div>
 

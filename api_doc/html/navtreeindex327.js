@@ -1,5 +1,16 @@
 var NAVTREEINDEX327 =
 {
+"structenet__ptp__config__t.html#ad55d2149bc5f536ce7761e8eda8f92d0":[1,16,8,2],
+"structenet__ptp__config__t.html#addae91bd5db96bf7cfc45e8613b02330":[1,16,8,0],
+"structenet__ptp__config__t.html#afe97ffb426331c3fffc26278bb9b8566":[1,16,8,3],
+"structenet__ptp__time__t.html":[1,16,7],
+"structenet__ptp__time__t.html#a061c5f99986e123d4e89584877c0b331":[1,16,7,0],
+"structenet__ptp__time__t.html#a55970670aa8ef874d565cbfa32ed9ccd":[1,16,7,1],
+"structenet__ptp__time__t.html#aedc999d85a3e21f5fecc31b60a5bf30a":[1,16,7,2],
+"structenet__rx__desc__t.html":[1,16,3],
+"structenet__rx__desc__t.html#a0aabbdb1ad8698d4396cad20f3b7a3ba":[1,16,3,16],
+"structenet__rx__desc__t.html#a0b834e84db8b3ac9c71eb8ed42e5f65f":[1,16,3,33],
+"structenet__rx__desc__t.html#a0be515f08f7ab0158891d43c65d64c68":[1,16,3,7],
 "structenet__rx__desc__t.html#a0f24a48ca9096b89b7bc8d6649b53f5d":[1,16,3,11],
 "structenet__rx__desc__t.html#a108e79253a0d6c4194bf6ab33bac18d9":[1,16,3,54],
 "structenet__rx__desc__t.html#a17b9c06017c208ff0b02678146e3ff8c":[1,16,3,59],
@@ -238,16 +249,5 @@ var NAVTREEINDEX327 =
 "structlcdc__control.html#ae0f3fc5e816050c32602a2f099e80632":[1,28,0,5],
 "structlcdc__layer__config.html":[1,28,3],
 "structlcdc__layer__config.html#a3661cfc8ed2f31de5f9744a3d20b1930":[1,28,3,4],
-"structlcdc__layer__config.html#a4874c1c99ba71a657d131bea17cfa7f6":[1,28,3,5],
-"structlcdc__layer__config.html#a6393edb56269bfff4c60e81195c54ba6":[1,28,3,12],
-"structlcdc__layer__config.html#a6ad1a85d97cd13495aa567faaf041ffd":[1,28,3,1],
-"structlcdc__layer__config.html#a758b74475251941b762d348bfa5db72d":[1,28,3,8],
-"structlcdc__layer__config.html#a89f7ac6db32733069a5c40e212d632c5":[1,28,3,0],
-"structlcdc__layer__config.html#a9d8deafaa31087f7cd47480ba6c2c136":[1,28,3,9],
-"structlcdc__layer__config.html#ab690ff7578e0c9df885f76b3e4a3dbf6":[1,28,3,11],
-"structlcdc__layer__config.html#acf15aa5417e43369dd1e3427eee569f0":[1,28,3,3],
-"structlcdc__layer__config.html#ad2bb8679cd69b8aa7b4eed9f0a662d31":[1,28,3,10],
-"structlcdc__layer__config.html#ad4fb55d888e3baa675dc04cce7edecbc":[1,28,3,2],
-"structlcdc__layer__config.html#ad6afc63d3fae5614671d2cc35a29a095":[1,28,3,7],
-"structlcdc__layer__config.html#af50a570603bf9cb174f110acb0c03206":[1,28,3,6]
+"structlcdc__layer__config.html#a4874c1c99ba71a657d131bea17cfa7f6":[1,28,3,5]
 };

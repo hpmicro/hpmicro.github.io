@@ -107,6 +107,7 @@ var group__irq__interface =
     [ "intc_complete_irq", "group__irq__interface.html#ga019a8d352dcb0b9a579f3b5713658997", null ],
     [ "intc_disable_irq", "group__irq__interface.html#ga2808925b711e245f67684070f7ce2e65", null ],
     [ "intc_enable_irq", "group__irq__interface.html#ga64165a4f1ba7daca080f307ea8b8a030", null ],
+    [ "intc_m_claim_swi", "group__irq__interface.html#gae1bd7b85a69b5e1d9851380706548215", null ],
     [ "intc_m_complete_swi", "group__irq__interface.html#gaad4ba35a0915ea4d397b1ee1c84fa2a4", null ],
     [ "intc_m_disable_swi", "group__irq__interface.html#ga14f156af70cd1f3df99216ef0a4cfd15", null ],
     [ "intc_m_enable_swi", "group__irq__interface.html#gaa47ac420a4dc9403f7dfe7f9f18ed78b", null ],

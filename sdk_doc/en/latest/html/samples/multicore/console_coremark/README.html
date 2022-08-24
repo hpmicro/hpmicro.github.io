@@ -66,7 +66,7 @@
           </dd>
         
           <dd>
-            <a onclick="RelativeAddress('/0.13.0/html/index.html')">0.13.0</a>
+            <a onclick="RelativeAddress('/0.13.1/html/index.html')">0.13.1</a>
           </dd>
         
       </dl>
@@ -188,17 +188,8 @@ printed out to the console</p></li>
 <section id="generate-and-build-multi-core-projects">
 <h2>Generate and Build Multi-core projects<a class="headerlink" href="#generate-and-build-multi-core-projects" title="Permalink to this heading">¶</a></h2>
 <p>In this project, the core0 application runs in FLASH while the core1 application runs in its own ILM</p>
-<p><strong>core0</strong> project must be generated first, then generate and build <strong>core1</strong> project</p>
-<p><strong>core0</strong> project must be built after the core1 project has been built successfully.</p>
-<section id="generate-core1-project">
-<h3>Generate core1 project<a class="headerlink" href="#generate-core1-project" title="Permalink to this heading">¶</a></h3>
-<p><strong>CMAKE_BUILD_TYPE</strong> must be one of the following options:</p>
-<ul class="simple">
-<li><p><em>“sec_core_img”</em></p></li>
-<li><p><em>“sec_core_img_release”</em></p></li>
-</ul>
-<p>The <em>“-t sec_core_img”</em> should be used when generating the project in the SDK env package</p>
-</section>
+<p><strong>core0</strong> project must be generated first, as a link project, <strong>core1</strong> project will be generated automatically.</p>
+<p><strong>core0</strong> project must be built after the <strong>core1</strong> project has been built successfully.</p>
 <section id="generate-core0-project">
 <h3>Generate core0 project<a class="headerlink" href="#generate-core0-project" title="Permalink to this heading">¶</a></h3>
 <p><strong>CMAKE_BUILD_TYPE</strong> must be one of the following options:</p>
@@ -298,7 +289,7 @@ Press any key to start a new round of coremark <span class="nb">test</span>
 
   <div role="contentinfo">
     <p>&#169; Copyright 2020-2022, hpmicro.
-      <span class="lastupdated">Last updated on Jul 31, 2022.
+      <span class="lastupdated">Last updated on Aug 23, 2022.
       </span></p>
   </div>
 

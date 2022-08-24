@@ -1,5 +1,16 @@
 var NAVTREEINDEX268 =
 {
+"hpm__bmon__regs_8h.html#afb7637222725cea01bfb0d54784f3e75":[3,0,3,11,7,6],
+"hpm__bmon__regs_8h.html#affbec95374bf3a1b9c3904819384de72":[3,0,3,11,7,2],
+"hpm__bmon__regs_8h_source.html":[3,0,3,11,7],
+"hpm__bpor__drv_8h.html":[3,0,2,0,5],
+"hpm__bpor__drv_8h_source.html":[3,0,2,0,5],
+"hpm__bpor__regs_8h.html":[3,0,3,11,8],
+"hpm__bpor__regs_8h.html#a00f0b8085bcb53ee77f056d91133486f":[3,0,3,11,8,9],
+"hpm__bpor__regs_8h.html#a22c592c7122197367378c7a6b3a6e5cd":[3,0,3,11,8,1],
+"hpm__bpor__regs_8h.html#a6525fae042a2c7a88582dfce7449538f":[3,0,3,11,8,14],
+"hpm__bpor__regs_8h.html#a76ec586c588802a2f54aae3df1989398":[3,0,3,11,8,6],
+"hpm__bpor__regs_8h.html#a82477752c64dfd02619d5f34f70fa228":[3,0,3,11,8,11],
 "hpm__bpor__regs_8h.html#a8d6cb1a8b01d732d3971cfbf522d45c6":[3,0,3,11,8,3],
 "hpm__bpor__regs_8h.html#a8d8d389d34325b074d03b177804f5b44":[3,0,3,11,8,13],
 "hpm__bpor__regs_8h.html#a93f0d6931f73e2defd0a15a6d3b5158b":[3,0,3,11,8,5],
@@ -238,16 +249,5 @@ var NAVTREEINDEX268 =
 "hpm__cam__regs_8h.html#a29b20f14cffa12e0440da59a6786fbfa":[3,0,3,11,11,495],
 "hpm__cam__regs_8h.html#a2a083d79ea15760921629d82a16d9161":[3,0,3,11,11,235],
 "hpm__cam__regs_8h.html#a2a615b63ed6f54d16a27c7a8876834ca":[3,0,3,11,11,490],
-"hpm__cam__regs_8h.html#a2b193be4d8e0b0129aaa49c2020602ce":[3,0,3,11,11,336],
-"hpm__cam__regs_8h.html#a2bbf49e764e00658b457dbeae1f6cf15":[3,0,3,11,11,368],
-"hpm__cam__regs_8h.html#a2cdde1c45c9d6e0774b0159b1a350375":[3,0,3,11,11,58],
-"hpm__cam__regs_8h.html#a2cfc42da74000519046fcd4b363ce6c3":[3,0,3,11,11,274],
-"hpm__cam__regs_8h.html#a2da4aeb5b83216d5e032ac128042cbd5":[3,0,3,11,11,427],
-"hpm__cam__regs_8h.html#a2e80b0a88d96c47fe71e2d74fe8c422e":[3,0,3,11,11,268],
-"hpm__cam__regs_8h.html#a2ea67bfc35584b51b8ddc1cc631b4c2e":[3,0,3,11,11,151],
-"hpm__cam__regs_8h.html#a2ef4ed0637c994dc607ea29a9bf31741":[3,0,3,11,11,444],
-"hpm__cam__regs_8h.html#a30b47591fbbe4995d1ec4ab3c790c9e2":[3,0,3,11,11,239],
-"hpm__cam__regs_8h.html#a314d753f3a7ea8aacb1c66442b7c6c88":[3,0,3,11,11,135],
-"hpm__cam__regs_8h.html#a318324d53f38abf7b807bb25669e299a":[3,0,3,11,11,23],
-"hpm__cam__regs_8h.html#a31f09464d0d1ed723e1e86b032abc1f1":[3,0,3,11,11,338]
+"hpm__cam__regs_8h.html#a2b193be4d8e0b0129aaa49c2020602ce":[3,0,3,11,11,336]
 };

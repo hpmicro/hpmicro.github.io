@@ -1,5 +1,16 @@
 var NAVTREEINDEX314 =
 {
+"hpm__tamp__regs_8h.html#aeea3d606fac594d5a903c3762f4796c0":[3,0,3,11,57,31],
+"hpm__tamp__regs_8h.html#aefbed05143ba462df972b8536c7a2021":[3,0,3,11,57,35],
+"hpm__tamp__regs_8h.html#af110137b8aaba0205a66e809ff26572d":[3,0,3,11,57,4],
+"hpm__tamp__regs_8h.html#af67356e458e4bf12f6a897b9935dfdcb":[3,0,3,11,57,55],
+"hpm__tamp__regs_8h.html#afde2acb6e9df5565921557bd624d3310":[3,0,3,11,57,38],
+"hpm__tamp__regs_8h_source.html":[3,0,3,11,57],
+"hpm__trgm__drv_8h.html":[3,0,2,0,51],
+"hpm__trgm__drv_8h_source.html":[3,0,2,0,51],
+"hpm__tsns__drv_8c.html":[3,0,2,1,31],
+"hpm__tsns__drv_8h.html":[3,0,2,0,52],
+"hpm__tsns__drv_8h_source.html":[3,0,2,0,52],
 "hpm__tsns__regs_8h.html":[3,0,3,11,58],
 "hpm__tsns__regs_8h.html#a00497f74eeb2a98792bdb8107c4f1da5":[3,0,3,11,58,31],
 "hpm__tsns__regs_8h.html#a0249042015538336461d18043897d66f":[3,0,3,11,58,60],
@@ -238,16 +249,5 @@ var NAVTREEINDEX314 =
 "hpm__uart__regs_8h.html#ab9ac27272f36ff4d605e5eba9fef847f":[3,0,3,11,59,41],
 "hpm__uart__regs_8h.html#ab9ae4bae5131c568a65b01859ec363c2":[3,0,3,11,59,14],
 "hpm__uart__regs_8h.html#aba02fb181984baa49efcef261e1f3a72":[3,0,3,11,59,129],
-"hpm__uart__regs_8h.html#aba9a1033d06432bd3ce251543ad4670e":[3,0,3,11,59,64],
-"hpm__uart__regs_8h.html#abac08564a8978878ca2dfc6ce0f7906d":[3,0,3,11,59,4],
-"hpm__uart__regs_8h.html#abb41e97ea52cc9f927e02232f2e0c5a2":[3,0,3,11,59,136],
-"hpm__uart__regs_8h.html#abca411099a35e7816b6627184abe5cbc":[3,0,3,11,59,93],
-"hpm__uart__regs_8h.html#abca45a8405d22b6850b9b96fd0055fa3":[3,0,3,11,59,135],
-"hpm__uart__regs_8h.html#abec87cbcb3950b29289ffd4bb22f6955":[3,0,3,11,59,88],
-"hpm__uart__regs_8h.html#ac15b0159f578ea17dccf662c772ac0dd":[3,0,3,11,59,48],
-"hpm__uart__regs_8h.html#ac9d2f9dca5da139fa4c1002a4f46c7b3":[3,0,3,11,59,38],
-"hpm__uart__regs_8h.html#ac9db32f7071cd8f9d009b67f37e321c6":[3,0,3,11,59,105],
-"hpm__uart__regs_8h.html#ace9fa0bfbb9eff49bb024f1a17fda5fd":[3,0,3,11,59,55],
-"hpm__uart__regs_8h.html#ad1fe29eb9966b4094cb8ee413d49a50c":[3,0,3,11,59,32],
-"hpm__uart__regs_8h.html#ad2b790278cc4a8c0b40a2589ab9d7b3c":[3,0,3,11,59,12]
+"hpm__uart__regs_8h.html#aba9a1033d06432bd3ce251543ad4670e":[3,0,3,11,59,64]
 };

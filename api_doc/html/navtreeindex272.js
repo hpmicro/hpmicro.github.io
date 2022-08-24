@@ -1,5 +1,16 @@
 var NAVTREEINDEX272 =
 {
+"hpm__can__regs_8h.html#ab90bec9f2d81d184db750d6e83bf5c66":[3,0,3,11,12,44],
+"hpm__can__regs_8h.html#ab9c11e06f8b9667629b27c0ff673c0d1":[3,0,3,11,12,114],
+"hpm__can__regs_8h.html#abaf642da987aa40e75be2e049369eaff":[3,0,3,11,12,317],
+"hpm__can__regs_8h.html#abb06038140bdf1237235cb4e7728edef":[3,0,3,11,12,259],
+"hpm__can__regs_8h.html#abbe54f5ea0cd9f2901e83bfef870e82d":[3,0,3,11,12,24],
+"hpm__can__regs_8h.html#abd5d3157260c4f40af117d9aacead006":[3,0,3,11,12,99],
+"hpm__can__regs_8h.html#abd823f766d389d36bd12b88ad730b3f6":[3,0,3,11,12,191],
+"hpm__can__regs_8h.html#ac01406dd803abe629d3321b6392b8ae2":[3,0,3,11,12,219],
+"hpm__can__regs_8h.html#ac09f4fdbe8b160dd5c75ce0bbe7764d3":[3,0,3,11,12,282],
+"hpm__can__regs_8h.html#ac17f0dbfa90d2c72340c9d011a7ef578":[3,0,3,11,12,34],
+"hpm__can__regs_8h.html#ac17f850677ce97348ce58a0f6ffa435b":[3,0,3,11,12,81],
 "hpm__can__regs_8h.html#ac208138b6a514862685e5dad256ed908":[3,0,3,11,12,110],
 "hpm__can__regs_8h.html#ac210340c457f87019f1a584e535a5ee7":[3,0,3,11,12,163],
 "hpm__can__regs_8h.html#ac22e3ca639fa49f8839f3b290039e0c6":[3,0,3,11,12,271],
@@ -238,16 +249,5 @@ var NAVTREEINDEX272 =
 "hpm__dac__drv_8h.html#a04eacbf72dc7053ef4ee327d59898a4b":[3,0,2,0,10,12],
 "hpm__dac__drv_8h.html#a04eacbf72dc7053ef4ee327d59898a4ba140614833262866538fbcb1cf627d963":[3,0,2,0,10,12,1],
 "hpm__dac__drv_8h.html#a04eacbf72dc7053ef4ee327d59898a4ba252e80e577d5d3357c0f6d5ab528288f":[3,0,2,0,10,12,0],
-"hpm__dac__drv_8h.html#a0afda314146d1e9260e2d9ee0777ad8e":[3,0,2,0,10,7],
-"hpm__dac__drv_8h.html#a0bd825a98d852d94ff47e480300fe76d":[3,0,2,0,10,11],
-"hpm__dac__drv_8h.html#a0bd825a98d852d94ff47e480300fe76da22c2fc4a868c753e2c2b4930d0de841b":[3,0,2,0,10,11,2],
-"hpm__dac__drv_8h.html#a0bd825a98d852d94ff47e480300fe76dac17766ffd675f08ed6abe0c8117d510a":[3,0,2,0,10,11,1],
-"hpm__dac__drv_8h.html#a0bd825a98d852d94ff47e480300fe76dad3f0a15a60fab6271a15c8dfaf263b99":[3,0,2,0,10,11,0],
-"hpm__dac__drv_8h.html#a30c4be8bbbe71cdde5cec4c2b027e5f4":[3,0,2,0,10,6],
-"hpm__dac__drv_8h.html#a3b7f5025c8f44d622dad16daddd24190":[3,0,2,0,10,15],
-"hpm__dac__drv_8h.html#a3d4a7467d27f1c991cfb10872596ff93":[3,0,2,0,10,10],
-"hpm__dac__drv_8h.html#a3d4a7467d27f1c991cfb10872596ff93a7ce0322ea4edbc17b8b25e66f18de793":[3,0,2,0,10,10,1],
-"hpm__dac__drv_8h.html#a3d4a7467d27f1c991cfb10872596ff93ad65ef4a14d24184d48a112166ddd12c5":[3,0,2,0,10,10,0],
-"hpm__dac__drv_8h.html#a40c08af4578c06ede8ff05c5c955eb5d":[3,0,2,0,10,30],
-"hpm__dac__drv_8h.html#a4702f72beafbfd74c25834ee65b9f8c3":[3,0,2,0,10,5]
+"hpm__dac__drv_8h.html#a0afda314146d1e9260e2d9ee0777ad8e":[3,0,2,0,10,7]
 };

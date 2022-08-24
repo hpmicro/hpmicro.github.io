@@ -1,5 +1,6 @@
 var hpm__i2s__drv_8h =
 [
+    [ "I2S_CHANNEL_SLOT_MASK", "group__i2s__interface.html#ga806d0a8a814a9ae14ea061e2adeb03a3", null ],
     [ "I2S_DATA_LINE_0", "group__i2s__interface.html#gac9ec1cd72f6b5783705453fdbc93fc95", null ],
     [ "I2S_DATA_LINE_1", "group__i2s__interface.html#ga9cba662c9fe299dc0d1e880e7672e5ba", null ],
     [ "I2S_DATA_LINE_2", "group__i2s__interface.html#ga437c3a49c76b2948ada2ada4e8fcec0c", null ],

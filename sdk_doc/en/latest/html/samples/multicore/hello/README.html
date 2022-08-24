@@ -68,7 +68,7 @@
           </dd>
         
           <dd>
-            <a onclick="RelativeAddress('/0.13.0/html/index.html')">0.13.0</a>
+            <a onclick="RelativeAddress('/0.13.1/html/index.html')">0.13.1</a>
           </dd>
         
       </dl>
@@ -226,20 +226,15 @@
 <section id="generate-and-build-multi-core-projects">
 <h2><span class="section-number">10.1.3. </span>Generate and Build Multi-core projects<a class="headerlink" href="#generate-and-build-multi-core-projects" title="Permalink to this heading">¶</a></h2>
 <p>In this project, the core0 application runs in FLASH while the core1 application runs in its own ILM</p>
-<p><strong>Core1</strong> project must be generated and built first</p>
-<p><strong>Core0</strong> project must be generated after the core1 project has been built successfully.</p>
-<section id="generate-core1-project">
-<h3><span class="section-number">10.1.3.1. </span>Generate core1 project<a class="headerlink" href="#generate-core1-project" title="Permalink to this heading">¶</a></h3>
+<p><strong>Core0</strong> project must be generated first, as a linked project, <strong>Core1</strong> project will be generated automatically</p>
+<p><strong>Core0</strong> project must be built after the <strong>Core1</strong>  project has been built successfully.</p>
+<section id="generate-core0-project">
+<h3><span class="section-number">10.1.3.1. </span>Generate Core0 project<a class="headerlink" href="#generate-core0-project" title="Permalink to this heading">¶</a></h3>
 <p><strong>CMAKE_BUILD_TYPE</strong> must be one of the following options:</p>
 <ul class="simple">
-<li><p><em>“SEC_CORE_IMG_RELEASE”</em></p></li>
-<li><p><em>“SEC_CORE_IMG_DEBUG”</em></p></li>
+<li><p><em>“debug”</em></p></li>
+<li><p><em>“release”</em></p></li>
 </ul>
-<p>The <em>“-t sec_core_img”</em> should be used when generating the project in the SDK env package</p>
-</section>
-<section id="generate-core0-project">
-<h3><span class="section-number">10.1.3.2. </span>Generate core0 project<a class="headerlink" href="#generate-core0-project" title="Permalink to this heading">¶</a></h3>
-<p><strong>CMAKE_BUILD_TYPE</strong> has no restriction</p>
 </section>
 </section>
 <section id="debugging-the-example">
@@ -296,7 +291,7 @@
 
   <div role="contentinfo">
     <p>&#169; Copyright 2020-2022, hpmicro.
-      <span class="lastupdated">Last updated on Jul 31, 2022.
+      <span class="lastupdated">Last updated on Aug 23, 2022.
       </span></p>
   </div>
 

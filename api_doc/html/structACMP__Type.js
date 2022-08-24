@@ -1,7 +1,7 @@
 var structACMP__Type =
 [
     [ "CFG", "structACMP__Type.html#a7599a70749a9216200b8db16d7b3e39c", null ],
-    [ "CHANNEL", "structACMP__Type.html#ab10beb7d59e65c26ddcbafe26a21307a", null ],
+    [ "CHANNEL", "structACMP__Type.html#a9a65ba033adb8b0cca62b2a38dbf892a", null ],
     [ "DACCFG", "structACMP__Type.html#a429385471178e5501b8d172e7107b0d2", null ],
     [ "DMAEN", "structACMP__Type.html#a9eabe437f7fd6766cc50b7c8ddfcc031", null ],
     [ "IRQEN", "structACMP__Type.html#a644714083fada11311138de3c10580b4", null ],

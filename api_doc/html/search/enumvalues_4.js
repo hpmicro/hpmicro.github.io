@@ -1,10 +1,10 @@
 var searchData=
 [
-  ['endptctrl_5fenable_0',['ENDPTCTRL_ENABLE',['../hpm__usb__drv_8c.html#a4d29ca5db06e2ae647d1ec22548a9d2aaa7783b77c5b1bc879d15345b75b6a7c3',1,'hpm_usb_drv.c']]],
-  ['endptctrl_5fstall_1',['ENDPTCTRL_STALL',['../hpm__usb__drv_8c.html#a4d29ca5db06e2ae647d1ec22548a9d2aaa81987f688b3d5fed49e30c62e86a08a',1,'hpm_usb_drv.c']]],
-  ['endptctrl_5ftoggle_5finhibit_2',['ENDPTCTRL_TOGGLE_INHIBIT',['../hpm__usb__drv_8c.html#a4d29ca5db06e2ae647d1ec22548a9d2aa7b8afedc3da989980d15afb0e7df8685',1,'hpm_usb_drv.c']]],
-  ['endptctrl_5ftoggle_5freset_3',['ENDPTCTRL_TOGGLE_RESET',['../hpm__usb__drv_8c.html#a4d29ca5db06e2ae647d1ec22548a9d2aa29200b2c0c315aa06845751c28440c36',1,'hpm_usb_drv.c']]],
-  ['endptctrl_5ftype_4',['ENDPTCTRL_TYPE',['../hpm__usb__drv_8c.html#a4d29ca5db06e2ae647d1ec22548a9d2aa56e38e104c0dfe70266fc028dbdc0be0',1,'hpm_usb_drv.c']]],
+  ['endptctrl_5fenable_0',['ENDPTCTRL_ENABLE',['../hpm__usb__drv_8c.html#a592aba11ab30da4dbf57e9736c8387a1aa7783b77c5b1bc879d15345b75b6a7c3',1,'hpm_usb_drv.c']]],
+  ['endptctrl_5fstall_1',['ENDPTCTRL_STALL',['../hpm__usb__drv_8c.html#a592aba11ab30da4dbf57e9736c8387a1aa81987f688b3d5fed49e30c62e86a08a',1,'hpm_usb_drv.c']]],
+  ['endptctrl_5ftoggle_5finhibit_2',['ENDPTCTRL_TOGGLE_INHIBIT',['../hpm__usb__drv_8c.html#a592aba11ab30da4dbf57e9736c8387a1a7b8afedc3da989980d15afb0e7df8685',1,'hpm_usb_drv.c']]],
+  ['endptctrl_5ftoggle_5freset_3',['ENDPTCTRL_TOGGLE_RESET',['../hpm__usb__drv_8c.html#a592aba11ab30da4dbf57e9736c8387a1a29200b2c0c315aa06845751c28440c36',1,'hpm_usb_drv.c']]],
+  ['endptctrl_5ftype_4',['ENDPTCTRL_TYPE',['../hpm__usb__drv_8c.html#a592aba11ab30da4dbf57e9736c8387a1a56e38e104c0dfe70266fc028dbdc0be0',1,'hpm_usb_drv.c']]],
   ['enet_5fcic_5fbypass_5',['enet_cic_bypass',['../group__enet__interface.html#gga81d472689685a7a5f4e4e707bef506b0ad46119cd555bfb190e099160c0a2a553',1,'hpm_enet_drv.h']]],
   ['enet_5fcic_5finsert_5fipv4_5fheader_6',['enet_cic_insert_ipv4_header',['../group__enet__interface.html#gga81d472689685a7a5f4e4e707bef506b0aab9d2b78d909827f69d230561dc7aa50',1,'hpm_enet_drv.h']]],
   ['enet_5fcic_5finsert_5ftcp_5fudp_5ficmp_7',['enet_cic_insert_tcp_udp_icmp',['../group__enet__interface.html#gga81d472689685a7a5f4e4e707bef506b0ad84fd57c9c2e76e55b5233b94efb1618',1,'hpm_enet_drv.h']]],

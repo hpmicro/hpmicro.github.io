@@ -1,9 +1,9 @@
 var structHALL__Type =
 [
-    [ "COUNT", "structHALL__Type.html#ace810832161f30d31d76732989fbe46f", null ],
+    [ "COUNT", "structHALL__Type.html#a14fe4210b908bc5a23429a3c1b6d2eed", null ],
     [ "CR", "structHALL__Type.html#a2dcf3e7e3b923b7c5650eb0df29d3a31", null ],
     [ "DMAEN", "structHALL__Type.html#a55a58d444377185f24310e77ae6ac372", null ],
-    [ "HIS", "structHALL__Type.html#a30da5ebf70eab5f3eb4f2fd92da7b50a", null ],
+    [ "HIS", "structHALL__Type.html#a6d57918911c809ec6ea40d6b3a5838c5", null ],
     [ "HIS0", "structHALL__Type.html#afcdb16f20e809f2e772bb58c1e93881f", null ],
     [ "HIS1", "structHALL__Type.html#a697961775b31856c7a8a0510077f9da5", null ],
     [ "IRQEN", "structHALL__Type.html#a135c0dfa87c4a0ccfd625303d0c10005", null ],

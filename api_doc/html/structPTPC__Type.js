@@ -8,7 +8,7 @@ var structPTPC__Type =
     [ "INT_EN", "structPTPC__Type.html#a917333ee5167fcfb4a306ecd6c11d16e", null ],
     [ "INT_STS", "structPTPC__Type.html#abdfa9a6c49a8107bfe5eeba4b6b8b0a8", null ],
     [ "PPS_CTRL", "structPTPC__Type.html#af21ffb407b888b561cf5012057399d20", null ],
-    [ "PTPC", "structPTPC__Type.html#af93f6aefc4b73279b77bf2371bddaf5c", null ],
+    [ "PTPC", "structPTPC__Type.html#ab026e9c9a639e1716444a954823f8cfa", null ],
     [ "RESERVED0", "structPTPC__Type.html#a37ba8beeb1e8629922fd66cd0280f13c", null ],
     [ "RESERVED1", "structPTPC__Type.html#afd1e7b2cf934173f71a14d8597049798", null ],
     [ "TARH", "structPTPC__Type.html#a6942df1fdc5bbc472c71271189313252", null ],

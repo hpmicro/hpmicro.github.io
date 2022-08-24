@@ -1,8 +1,8 @@
 var group__otp__interface =
 [
     [ "otp_lock_option_t", "group__otp__interface.html#gac83f4aa4e08e84001044bef8b5de1a13", [
-      [ "otp_write_disallowed", "group__otp__interface.html#gga173f34c053cf8ba70e5f775cd03196f4ac35edaf7167583a2dece7fead6a8d4b4", null ],
-      [ "otp_write_disallowed", "group__otp__interface.html#ggaa62371d642974c67a0c0efa77d54fcbdac35edaf7167583a2dece7fead6a8d4b4", null ],
+      [ "otp_write_disallowed", "group__otp__interface.html#gga3143b57146ef21ea3727156d369558f2ac35edaf7167583a2dece7fead6a8d4b4", null ],
+      [ "otp_write_disallowed", "group__otp__interface.html#gga82f2c6e4d47f62f6b65c5887eb096fd5ac35edaf7167583a2dece7fead6a8d4b4", null ],
       [ "otp_no_lock", "group__otp__interface.html#ggac83f4aa4e08e84001044bef8b5de1a13a0c2fed07674d60af1747d3366d920c25", null ],
       [ "otp_read_only", "group__otp__interface.html#ggac83f4aa4e08e84001044bef8b5de1a13ab89fcf33d8b0bf2f2184f031ee9634de", null ],
       [ "otp_permanent_no_lock", "group__otp__interface.html#ggac83f4aa4e08e84001044bef8b5de1a13a9b437aca3df46a8fa01d0f40e56933e2", null ],

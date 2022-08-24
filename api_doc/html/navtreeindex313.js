@@ -1,5 +1,16 @@
 var NAVTREEINDEX313 =
 {
+"hpm__spi__regs_8h.html#a77d6651c2d0bd41d36de50944d98560a":[3,0,3,11,55,278],
+"hpm__spi__regs_8h.html#a79808bf9bbd36909f5c3a13635312de2":[3,0,3,11,55,76],
+"hpm__spi__regs_8h.html#a7a33f3000f6e163cc27da10a233e8fb5":[3,0,3,11,55,41],
+"hpm__spi__regs_8h.html#a7b5041f9c9fd57751a5cf22c59b694fc":[3,0,3,11,55,18],
+"hpm__spi__regs_8h.html#a7b7891b09a84ebca8d1ac5b67ef0cac1":[3,0,3,11,55,283],
+"hpm__spi__regs_8h.html#a7d40b7d6f6dec60739d06f75f54f9533":[3,0,3,11,55,225],
+"hpm__spi__regs_8h.html#a7dee93d8ca5bb58897f27bd165393976":[3,0,3,11,55,113],
+"hpm__spi__regs_8h.html#a7e40688fefbdfc12b9d90ac2f1d6033f":[3,0,3,11,55,30],
+"hpm__spi__regs_8h.html#a7ec150fe70b2873988ffea9b62edf18f":[3,0,3,11,55,235],
+"hpm__spi__regs_8h.html#a7f1b6a498be4957a35036a1556199498":[3,0,3,11,55,107],
+"hpm__spi__regs_8h.html#a7f37c21890021f2c51e620b6177f6ffc":[3,0,3,11,55,89],
 "hpm__spi__regs_8h.html#a809a2d16a853b8626004dfac75f3d3eb":[3,0,3,11,55,49],
 "hpm__spi__regs_8h.html#a80b64ec2484d7b113390f6a0dfd1fdcb":[3,0,3,11,55,286],
 "hpm__spi__regs_8h.html#a810ba6931219f5ead8a586cb3040c61b":[3,0,3,11,55,167],
@@ -238,16 +249,5 @@ var NAVTREEINDEX313 =
 "hpm__tamp__regs_8h.html#ae5ca4c8420b90cde51eff01d3306291e":[3,0,3,11,57,47],
 "hpm__tamp__regs_8h.html#ae5ce9d3ebc80c75802926cda9af95178":[3,0,3,11,57,51],
 "hpm__tamp__regs_8h.html#aebdaa3d150393e0349ef459011375246":[3,0,3,11,57,44],
-"hpm__tamp__regs_8h.html#aed0a575b353612bd1eefb62e849e8e34":[3,0,3,11,57,8],
-"hpm__tamp__regs_8h.html#aeea3d606fac594d5a903c3762f4796c0":[3,0,3,11,57,31],
-"hpm__tamp__regs_8h.html#aefbed05143ba462df972b8536c7a2021":[3,0,3,11,57,35],
-"hpm__tamp__regs_8h.html#af110137b8aaba0205a66e809ff26572d":[3,0,3,11,57,4],
-"hpm__tamp__regs_8h.html#af67356e458e4bf12f6a897b9935dfdcb":[3,0,3,11,57,55],
-"hpm__tamp__regs_8h.html#afde2acb6e9df5565921557bd624d3310":[3,0,3,11,57,38],
-"hpm__tamp__regs_8h_source.html":[3,0,3,11,57],
-"hpm__trgm__drv_8h.html":[3,0,2,0,51],
-"hpm__trgm__drv_8h_source.html":[3,0,2,0,51],
-"hpm__tsns__drv_8c.html":[3,0,2,1,31],
-"hpm__tsns__drv_8h.html":[3,0,2,0,52],
-"hpm__tsns__drv_8h_source.html":[3,0,2,0,52]
+"hpm__tamp__regs_8h.html#aed0a575b353612bd1eefb62e849e8e34":[3,0,3,11,57,8]
 };

@@ -11,5 +11,9 @@ var group__i2s__common__interface =
     [ "I2S_PROTOCOL_LSB_JUSTIFIED", "group__i2s__common__interface.html#ga49431c09fef3e9e853671c33720b89cf", null ],
     [ "I2S_PROTOCOL_MSB_JUSTIFIED", "group__i2s__common__interface.html#ga591acf7217def0c129dd61b8582ecd56", null ],
     [ "I2S_PROTOCOL_PCM", "group__i2s__common__interface.html#ga86d7996f9c01e74c88f6b37ce16029f7", null ],
-    [ "I2S_PROTOCOL_RIGHT_JUSTIFIED", "group__i2s__common__interface.html#ga1ff2874bec118b14d8f5956f0a0ac91c", null ]
+    [ "I2S_PROTOCOL_RIGHT_JUSTIFIED", "group__i2s__common__interface.html#ga1ff2874bec118b14d8f5956f0a0ac91c", [
+      [ "i2s_mono_left", "group__i2s__common__interface.html#gga2f80701c36e79c0640d91c788feee0b3a8cf666ec23f3a140febd49c1597b37dc", null ],
+      [ "i2s_mono_right", "group__i2s__common__interface.html#gga2f80701c36e79c0640d91c788feee0b3a756a9255c61782829eb14a646c56b3af", null ],
+      [ "i2s_stereo", "group__i2s__common__interface.html#gga2f80701c36e79c0640d91c788feee0b3a187a344007b04c3c449fe0575786b4d1", null ]
+    ] ]
 ];

@@ -1,5 +1,16 @@
 var NAVTREEINDEX326 =
 {
+"structadc16__seq__config__t.html#a816bc448e079e0674b453cabdde323ff":[1,2,7,1],
+"structadc16__seq__config__t.html#a9bb32aece189d39ac4dde58ba89279a9":[1,2,7,5],
+"structadc16__seq__config__t.html#aac9b19360bd9de3ae8322b668fc29ef3":[1,2,7,2],
+"structadc16__seq__config__t.html#aafca2939fa8bea31aa173296c5432ac7":[1,2,7,0],
+"structadc16__seq__config__t.html#ae23cb011454e134124a4d5fff007f020":[1,2,7,4],
+"structadc16__seq__config__t.html#ae52f470689de1e37099840813cb15333":[1,2,7,3],
+"structadc16__seq__dma__data__t.html":[1,2,3],
+"structadc16__seq__dma__data__t.html#a4861268580f265d915d743da2d402a2c":[1,2,3,0],
+"structadc16__seq__dma__data__t.html#a557c98cdf515919827a0f79cdee2df63":[1,2,3,2],
+"structadc16__seq__dma__data__t.html#a734a735f4ffba520a65a5b53303137ee":[1,2,3,1],
+"structadc16__seq__dma__data__t.html#aa202e95f3c99e29d01badc99a8cdb91a":[1,2,3,3],
 "structadc16__seq__queue__config__t.html":[1,2,6],
 "structadc16__seq__queue__config__t.html#a187ec3d905c73db1352c08e925cd1976":[1,2,6,1],
 "structadc16__seq__queue__config__t.html#ac4d07201beda600b4e6b59b5869daee4":[1,2,6,0],
@@ -238,16 +249,5 @@ var NAVTREEINDEX326 =
 "structenet__mac__config__t.html#aa71aed5b43321564af2a5f8c5019ace0":[1,16,1,2],
 "structenet__mac__config__t.html#ad75c4ef76d0fd20a0a488834e46a9072":[1,16,1,0],
 "structenet__ptp__config__t.html":[1,16,8],
-"structenet__ptp__config__t.html#ab1ff972c7fd6f10d61197465457bfc50":[1,16,8,1],
-"structenet__ptp__config__t.html#ad55d2149bc5f536ce7761e8eda8f92d0":[1,16,8,2],
-"structenet__ptp__config__t.html#addae91bd5db96bf7cfc45e8613b02330":[1,16,8,0],
-"structenet__ptp__config__t.html#afe97ffb426331c3fffc26278bb9b8566":[1,16,8,3],
-"structenet__ptp__time__t.html":[1,16,7],
-"structenet__ptp__time__t.html#a061c5f99986e123d4e89584877c0b331":[1,16,7,0],
-"structenet__ptp__time__t.html#a55970670aa8ef874d565cbfa32ed9ccd":[1,16,7,1],
-"structenet__ptp__time__t.html#aedc999d85a3e21f5fecc31b60a5bf30a":[1,16,7,2],
-"structenet__rx__desc__t.html":[1,16,3],
-"structenet__rx__desc__t.html#a0aabbdb1ad8698d4396cad20f3b7a3ba":[1,16,3,16],
-"structenet__rx__desc__t.html#a0b834e84db8b3ac9c71eb8ed42e5f65f":[1,16,3,33],
-"structenet__rx__desc__t.html#a0be515f08f7ab0158891d43c65d64c68":[1,16,3,7]
+"structenet__ptp__config__t.html#ab1ff972c7fd6f10d61197465457bfc50":[1,16,8,1]
 };
