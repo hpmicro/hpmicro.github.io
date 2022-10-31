@@ -107,6 +107,7 @@ var group__pwm__interface =
     [ "pwm_clear_status", "group__pwm__interface.html#gafc78b9d33fe88de46d57ba49b58185e3", null ],
     [ "pwm_cmp_disable_half_clock", "group__pwm__interface.html#ga6dfe72fff59cd9a3c6d6668477cb89af", null ],
     [ "pwm_cmp_enable_half_clock", "group__pwm__interface.html#gaf6276b63203a02ddb4a8038335a814e4", null ],
+    [ "pwm_cmp_force_value", "group__pwm__interface.html#ga8848a309237e0ff575539b4a56ff2aab", null ],
     [ "pwm_cmp_update_cmp_value", "group__pwm__interface.html#ga996d3cc87106819c86c84a4211896baf", null ],
     [ "pwm_cmp_update_jitter_value", "group__pwm__interface.html#gae0eff51b13322ba010249ddef3f7b74a", null ],
     [ "pwm_config_cmp", "group__pwm__interface.html#gae558b81939126252a9f4133e270a1db2", null ],

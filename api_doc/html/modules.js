@@ -22,6 +22,8 @@ var modules =
     [ "GPIOM driver APIs", "group__gpiom__interface.html", "group__gpiom__interface" ],
     [ "GPTMR driver APIs", "group__gptmr__interface.html", "group__gptmr__interface" ],
     [ "HALL driver APIs", "group__hall__interface.html", "group__hall__interface" ],
+    [ "HPMicro Math Functions", "group__hpmmath.html", "group__hpmmath" ],
+    [ "HPMicro Motor Control Library", "group__middleware__mcl__interfaces.html", "group__middleware__mcl__interfaces" ],
     [ "I2C driver APIs", "group__i2c__interface.html", "group__i2c__interface" ],
     [ "I2S common driver APIs", "group__i2s__common__interface.html", "group__i2s__common__interface" ],
     [ "I2S driver APIs", "group__i2s__interface.html", "group__i2s__interface" ],

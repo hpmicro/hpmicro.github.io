@@ -68,7 +68,7 @@
           </dd>
         
           <dd>
-            <a onclick="RelativeAddress('/0.13.1/html/index.html')">0.13.1</a>
+            <a onclick="RelativeAddress('/0.14.0/html/index.html')">0.14.0</a>
           </dd>
         
       </dl>
@@ -103,7 +103,6 @@
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../../../CHANGELOG.html">Change Log</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../README.html">HPM SDK Overview</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../README.html#hpm-sdk-quick-start-guide">HPM SDK Quick Start Guide</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../README.html#community-support">Community Support</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../boards/index.html">HPM Development Board Introduction</a></li>
 <li class="toctree-l1 current"><a class="reference internal" href="../../index.html">HPM SDK Samples</a><ul class="current">
@@ -137,6 +136,9 @@
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../../memstress/index.html">19. memstress</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../dma_manager/README.html">20. DMA Manager</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../segger_rtt/README.html">21. Segger RTT</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../cherryusb/index.html">22. USB Communication</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../dhrystone/README.html">23. dhrystone</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../../../doc/src/sdk_doc/README.html">HPM SDK Doc Generation</a></li>
@@ -239,7 +241,7 @@
 <ul>
 <li><p>Compiling and Downloading</p></li>
 <li><p>Running log is shown in the serial terminal as follows:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>This is an ethernet demo: Iperf
+<p>This is an ethernet demo: Iperf
 LwIP Version: 2.1.2
 Local IP: 192.168.11.201
 Speed Rate:100Mbps
@@ -247,15 +249,12 @@ Reference Clock: Internal Clock
 Enet phy init passes !
 Static IP: 192.168.11.201
 NETMASK  : 255.255.255.0
-Gateway  : 192.168.11.1
-
-1: TCP Server Mode
+Gateway  : 192.168.11.1</p>
+<p>1: TCP Server Mode
 2: TCP Client Mode
 3: UDP Server Mode
 4: UDP Client Mode
-Please enter the test mode code:
-</pre></div>
-</div>
+Please enter the test mode code:</p>
 </li>
 <li><p>Select a test mode and Run iperf</p>
 <ul>
@@ -266,7 +265,7 @@ Please enter the test mode code:
 <span class="mi">2</span><span class="p">:</span> <span class="n">TCP</span> <span class="n">Client</span> <span class="n">Mode</span>
 <span class="mi">3</span><span class="p">:</span> <span class="n">UDP</span> <span class="n">Server</span> <span class="n">Mode</span>
 <span class="mi">4</span><span class="p">:</span> <span class="n">UDP</span> <span class="n">Client</span> <span class="n">Mode</span>
-<span class="n">Please</span> <span class="n">enter</span> <span class="n">the</span> <span class="n">test</span> <span class="n">mode</span> <span class="n">code</span><span class="p">:</span>
+<span class="n">Please</span> <span class="n">enter</span> <span class="n">one</span> <span class="n">of</span> <span class="n">modes</span> <span class="n">above</span> <span class="p">(</span><span class="n">e</span><span class="o">.</span><span class="n">g</span><span class="o">.</span> <span class="mi">1</span> <span class="ow">or</span> <span class="mi">2</span> <span class="o">...</span><span class="p">):</span>
 </pre></div>
 </div>
 </li>
@@ -469,7 +468,7 @@ Please enter the test mode code:
 
   <div role="contentinfo">
     <p>&#169; Copyright 2020-2022, hpmicro.
-      <span class="lastupdated">Last updated on Aug 23, 2022.
+      <span class="lastupdated">Last updated on Oct 31, 2022.
       </span></p>
   </div>
 

@@ -122,6 +122,7 @@ var HPM6360_2hpm__l1c__drv_8h =
     [ "l1c_dc_enable", "group__l1cache__interface.html#ga396f339bd99a225560e50e6e064b78b0", null ],
     [ "l1c_dc_fill_lock", "group__l1cache__interface.html#gac13c83c883d3d557bcdd656905891fbc", null ],
     [ "l1c_dc_flush", "group__l1cache__interface.html#ga7fffa472821d4dd12c05b432519ad51b", null ],
+    [ "l1c_dc_flush_all", "group__l1cache__interface.html#ga2e5855f88a9fb6e0f0216a01d24fb8ee", null ],
     [ "l1c_dc_get_config", "group__l1cache__interface.html#ga7a37292514a1f6931d01e4392cfde28e", null ],
     [ "l1c_dc_invalidate", "group__l1cache__interface.html#gad211f4a8e8d756b6b92977d208f8e5de", null ],
     [ "l1c_dc_invalidate_all", "group__l1cache__interface.html#ga9efa0a0e60cfa4950524b9c0c92f4eaf", null ],

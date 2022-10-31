@@ -41,6 +41,7 @@ var group__usb__interface =
     [ "usb_dcd_disconnect", "group__usb__interface.html#gab7681ff335b3134cf4fe056a4d06be49", null ],
     [ "usb_dcd_edpt_clear_stall", "group__usb__interface.html#gae98b1372cf7dda04bf8669fbe56ba969", null ],
     [ "usb_dcd_edpt_close", "group__usb__interface.html#ga206094a9ee1dab3d52df63a36185b9b7", null ],
+    [ "usb_dcd_edpt_get_type", "group__usb__interface.html#ga6615e90df81dfa952badf5cbe5a2853a", null ],
     [ "usb_dcd_edpt_open", "group__usb__interface.html#gab2450ed6584f4fc6056d785c4b340f19", null ],
     [ "usb_dcd_edpt_stall", "group__usb__interface.html#ga363402a353d7b62397b3e742f3013ef9", null ],
     [ "usb_dcd_edpt_xfer", "group__usb__interface.html#gaadf458a5102a42b971d1ff9c69cdc712", null ],
@@ -58,12 +59,15 @@ var group__usb__interface =
     [ "usb_get_port_speed", "group__usb__interface.html#ga14d1d0f4ba442713328d0e9a6f3d89ee", null ],
     [ "usb_get_status_flags", "group__usb__interface.html#ga4f6763a3c0dba2fce55d681a0cc46bb9", null ],
     [ "usb_get_suspend_status", "group__usb__interface.html#ga21870c361bfd4242f6bab55ce1572dd7", null ],
+    [ "usb_hcd_enable_port_power", "group__usb__interface.html#gaf2018b3df6e99d84ca0a5f3c30a67103", null ],
     [ "usb_hcd_get_frame_index", "group__usb__interface.html#ga38d5124bffeb5eb639b182346f0d96b0", null ],
     [ "usb_hcd_get_port_csc", "group__usb__interface.html#ga330e7a78985b4fa69d85d3a14e4410dd", null ],
     [ "usb_hcd_init", "group__usb__interface.html#ga0570e2f862011ae43270784768f347b3", null ],
     [ "usb_hcd_port_reset", "group__usb__interface.html#ga9bcce6385820752906a63201939d4170", null ],
+    [ "usb_hcd_run", "group__usb__interface.html#ga72c81c5dcd874b15192fa072aa50a129", null ],
     [ "usb_hcd_set_async_list_addr", "group__usb__interface.html#gac06958a62e1061688cdc0f60e8f783dd", null ],
     [ "usb_hcd_set_command", "group__usb__interface.html#ga4ae736cf1c923257d9bb16a692536bf6", null ],
     [ "usb_hcd_set_periodic_list_addr", "group__usb__interface.html#ga772642c91cf81c227d201d4a39e81d67", null ],
+    [ "usb_hcd_stop", "group__usb__interface.html#ga641f92202a1b5877b2d5d53334f80bc2", null ],
     [ "usb_control_request_t", "group__usb__interface.html#gae147b28fcfb6c35c2bfa5b8805c3343e", null ]
 ];

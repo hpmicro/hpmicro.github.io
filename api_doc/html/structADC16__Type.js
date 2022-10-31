@@ -13,7 +13,7 @@ var structADC16__Type =
     [ "INT_EN", "structADC16__Type.html#a7624a07eeaf16ae5b6e3b03286820c9b", null ],
     [ "INT_STS", "structADC16__Type.html#ab734189d5a292e031cb511800a9ac377", null ],
     [ "PRD_CFG", "structADC16__Type.html#a2c4093e1b10d4e1c264ed0b22b7f969c", null ],
-    [ "PRD_CFG", "structADC16__Type.html#a038ded3a5e1988e51483558bd72ee93c", null ],
+    [ "PRD_CFG", "structADC16__Type.html#afb1842eecec54b898e22d281d1136f05", null ],
     [ "PRD_RESULT", "structADC16__Type.html#a14729215d3ee617e91bd6296604da928", null ],
     [ "PRD_THSHD_CFG", "structADC16__Type.html#adf5b00c6f5b2e4c7a6310af59d9450d1", null ],
     [ "RESERVED0", "structADC16__Type.html#a8fa2cb2bbf439197c8eff8791f187595", null ],

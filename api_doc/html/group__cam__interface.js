@@ -7,7 +7,7 @@ var group__cam__interface =
       [ "color_format", "structcam__config__t.html#a16b4724fb56eff06e2439889471bbc02", null ],
       [ "csc_config", "structcam__config__t.html#a730ff5e646f20d04386090b0d396436f", null ],
       [ "data_pack_msb", "structcam__config__t.html#ab1930e942b5bd3fd3ac1f2e87cb20f93", null ],
-      [ "data_store_mode", "structcam__config__t.html#af30e87713500f549dc31306a04cea19c", null ],
+      [ "data_store_mode", "structcam__config__t.html#a1973b7aaa7f8376a199711b36177cccb", null ],
       [ "enable_buffer2", "structcam__config__t.html#a2f5f22b3fdb8ffdb790cbc3416331efb", null ],
       [ "height", "structcam__config__t.html#a844453da0a610a8cd7c687a28a245a93", null ],
       [ "hsync_active_low", "structcam__config__t.html#a672388c75172bfafb94f693d2ee7dfb3", null ],
@@ -80,5 +80,6 @@ var group__cam__interface =
     [ "cam_set_color_key", "group__cam__interface.html#gaaf8be10cc0d53c62250444aaa0bdd89b", null ],
     [ "cam_set_input_pixel_byte_order", "group__cam__interface.html#ga2970a026ee1ed154f614c8c98c46e48d", null ],
     [ "cam_start", "group__cam__interface.html#ga3c2529c07f6eff54b8d1ecfa525ca2eb", null ],
-    [ "cam_stop", "group__cam__interface.html#gadbf25b323989cb0b5e6051dfb0d90156", null ]
+    [ "cam_stop", "group__cam__interface.html#gadbf25b323989cb0b5e6051dfb0d90156", null ],
+    [ "cam_update_buffer", "group__cam__interface.html#gaabf8b8289bfa11d705895a7377506ee9", null ]
 ];

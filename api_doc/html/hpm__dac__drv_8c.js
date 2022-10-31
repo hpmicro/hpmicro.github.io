@@ -16,6 +16,5 @@ var hpm__dac__drv_8c =
     [ "dac_set_output_frequency", "hpm__dac__drv_8c.html#a9077d35262989cac9bbc6241e6bc8cad", null ],
     [ "dac_set_status_flags", "hpm__dac__drv_8c.html#a557c97a55972ee28ca0ae3dd77b80464", null ],
     [ "dac_set_step_config", "hpm__dac__drv_8c.html#a7f5364c83981e36e6baa782a5b75f3a7", null ],
-    [ "dac_set_step_sw_trigger", "hpm__dac__drv_8c.html#a40c08af4578c06ede8ff05c5c955eb5d", null ],
-    [ "dac_cfg0", "hpm__dac__drv_8c.html#a20d7e12294d4cd2279b890c95d23fe1b", null ]
+    [ "dac_set_step_sw_trigger", "hpm__dac__drv_8c.html#a40c08af4578c06ede8ff05c5c955eb5d", null ]
 ];

@@ -18,7 +18,7 @@ var group__pcfg__interface =
     [ "PCFG_DEBUG_STOP_SOURCE_DISABLE_CORE1", "group__pcfg__interface.html#ga9591111cc942c379f28cc5d9fb9ae1e3", null ],
     [ "PCFG_DEBUG_STOP_SOURCE_ENABLE_CORE0", "group__pcfg__interface.html#ga1768d361cad03e9d5432272578efb689", null ],
     [ "PCFG_DEBUG_STOP_SOURCE_ENABLE_CORE1", "group__pcfg__interface.html#gad3478218270f69932b4b07d43955c90d", [
-      [ "status_pcfg_ldo_out_of_range", "group__pcfg__interface.html#gga8628933cde20921c453a6d2607bdad62a1555f9fe3b96f09ea67c3982838c3985", null ]
+      [ "status_pcfg_ldo_out_of_range", "group__pcfg__interface.html#gga9e93d8eae633734dfeb29e24a1f3a7c0a1555f9fe3b96f09ea67c3982838c3985", null ]
     ] ],
     [ "pcfg_irc24m_reference_t", "group__pcfg__interface.html#gacbc65524f0416acc0573a12467136c97", [
       [ "pcfg_irc24m_reference_32k", "group__pcfg__interface.html#ggacbc65524f0416acc0573a12467136c97a787901ad98bf25814a95c16a409dd73c", null ],

@@ -33,7 +33,7 @@ var group__can__interface =
       [ "filter_list_num", "structcan__config__t.html#af51a142c8ed9655c03d40eee6e246b4e", null ],
       [ "irq_error_enable_mask", "structcan__config__t.html#a09d5b060e49721baa8831c7cc77a213b", null ],
       [ "irq_txrx_enable_mask", "structcan__config__t.html#a48bd1ee8818eecc1ac71315a4bc715e8", null ],
-      [ "mode", "structcan__config__t.html#a56637ddd0f1bd16f09c9ec6dd7bd4c7c", null ],
+      [ "mode", "structcan__config__t.html#a8c5cf03988f9268851dabd73ab9c82c2", null ],
       [ "use_lowlevel_timing_setting", "structcan__config__t.html#a7206818b05e7ba6ea85cc907a73b5db1", null ]
     ] ],
     [ "CAN_ERROR_ARBITRAITION_LOST_INT_ENABLE", "group__can__interface.html#ga791d95172a7cfd90e2cb2e5a797938ad", null ],
@@ -70,7 +70,7 @@ var group__can__interface =
     [ "CAN_STB_MORE_THAN_HALF_FULL", "group__can__interface.html#gaf8b4612501a0582068c54890b79b0c80", null ],
     [ "can_bit_timing_option_t", "group__can__interface.html#ga262601289513f1abac3f06d2f55bc624", null ],
     [ "can_filter_id_mode_t", "group__can__interface.html#gafb42b10b1f2a2ca45872da968340a0a4", null ],
-    [ "can_mode_t", "group__can__interface.html#gab5b7b7696ab6975f9682d9b4e39f5ec4", null ],
+    [ "can_node_mode_t", "group__can__interface.html#ga52f54c24e8e9ae0e017b12e3d561ce2d", null ],
     [ "can_receive_buf_t", "group__can__interface.html#gaead5fa76fd408804e2cd0828a2fe6ecc", null ],
     [ "can_transmit_buf_t", "group__can__interface.html#gaf4926adb0f6c2361ea40b6a26a108a4d", [
       [ "status_can_bit_error", "group__can__interface.html#gga06fc87d81c62e9abb8790b6e5713c55bae96b1ac882763cb4c8d2451495b6e164", null ],
@@ -143,7 +143,7 @@ var group__can__interface =
     [ "can_set_bit_timing", "group__can__interface.html#gace01a30f4853415ffd8a46a69eef1921", null ],
     [ "can_set_fast_speed_timing", "group__can__interface.html#ga87a6964bf3e2d2ad391b626c60f79363", null ],
     [ "can_set_filter", "group__can__interface.html#gae03b8c0387b3a0867505f5781ae35214", null ],
-    [ "can_set_mode", "group__can__interface.html#ga4fc72b28895e4d8fc087020d3131275c", null ],
+    [ "can_set_node_mode", "group__can__interface.html#ga0546791b59326060a6572a93cbcd4fc4", null ],
     [ "can_set_receive_buffer_overflow_mode", "group__can__interface.html#gaf4fafca8d57538f0d52b456b670003e2", null ],
     [ "can_set_slow_speed_timing", "group__can__interface.html#ga47e798ab81b91c1d129685cd54a6c2b9", null ],
     [ "can_set_transmitter_delay_compensation", "group__can__interface.html#gabaaf1ac9262c86fad5f3ca03c9abe63f", null ],

@@ -80,11 +80,23 @@ var group__spi__interface =
       [ "spi_dual_io_mode", "group__spi__interface.html#ggafff636ea73cfd28e417690fcfcacc5f9af1e1ca2d0ebd45c2305977fe8d060938", null ],
       [ "spi_quad_io_mode", "group__spi__interface.html#ggafff636ea73cfd28e417690fcfcacc5f9a179a6b44f520254c8220f027c3035dcb", null ]
     ] ],
+    [ "spi_dma_enable_t", "group__spi__interface.html#ga2c8676764b385d09b4e9e2b4d353d8c1", [
+      [ "spi_tx_dma_enable", "group__spi__interface.html#gga2c8676764b385d09b4e9e2b4d353d8c1a08d828f01f93e2552890d96467df5c91", null ],
+      [ "spi_rx_dma_enable", "group__spi__interface.html#gga2c8676764b385d09b4e9e2b4d353d8c1adb471155f65aa3496c662d09c600297e", null ]
+    ] ],
     [ "spi_dummy_count_t", "group__spi__interface.html#gac15a19c9674d3a82d5cd58bfbe9096ba", [
       [ "spi_dummy_count_1", "group__spi__interface.html#ggac15a19c9674d3a82d5cd58bfbe9096baa9a79496f619dc35cf573304b23daeb7c", null ],
       [ "spi_dummy_count_2", "group__spi__interface.html#ggac15a19c9674d3a82d5cd58bfbe9096baa76e0518b9444026b754f14565b008c30", null ],
       [ "spi_dummy_count_3", "group__spi__interface.html#ggac15a19c9674d3a82d5cd58bfbe9096baa1c49d9467b2c767d5020f07c157f0b05", null ],
       [ "spi_dummy_count_4", "group__spi__interface.html#ggac15a19c9674d3a82d5cd58bfbe9096baacf582dc4728f105408f70ff5ba747755", null ]
+    ] ],
+    [ "spi_interrupt_t", "group__spi__interface.html#ga8557f7a2d6b673c86868c02184980e12", [
+      [ "spi_rx_fifo_overflow_int", "group__spi__interface.html#gga8557f7a2d6b673c86868c02184980e12a56948d2f74a9ea7f43b3e028f905d8f4", null ],
+      [ "spi_tx_fifo_underflow_int", "group__spi__interface.html#gga8557f7a2d6b673c86868c02184980e12a358bee49efe4665b033c3e284e936437", null ],
+      [ "spi_rx_fifo_threshold_int", "group__spi__interface.html#gga8557f7a2d6b673c86868c02184980e12a629039949e0fadcd4f87fc682cd99681", null ],
+      [ "spi_tx_fifo_threshold_int", "group__spi__interface.html#gga8557f7a2d6b673c86868c02184980e12a096e74ab237d4f82d526bdb6530b09a2", null ],
+      [ "spi_end_int", "group__spi__interface.html#gga8557f7a2d6b673c86868c02184980e12ac84380ad248d497ff43bbedb04c4c66d", null ],
+      [ "spi_slave_cmd_int", "group__spi__interface.html#gga8557f7a2d6b673c86868c02184980e12a840fe3f2725b002cf0b2bfc117d13213", null ]
     ] ],
     [ "spi_mode_selection_t", "group__spi__interface.html#ga9ac2dd2dcd0b2c3b5fb1363eac489a3e", [
       [ "spi_master_mode", "group__spi__interface.html#gga9ac2dd2dcd0b2c3b5fb1363eac489a3eaa45f1c195fc0e4f77a6871bd3c72ad30", null ],
@@ -114,15 +126,32 @@ var group__spi__interface =
       [ "spi_trans_dummy_write", "group__spi__interface.html#ggae719b4eb51210f7a6878861fcb374d15a19c72838dd5f1436b0d12764565d1f23", null ],
       [ "spi_trans_dummy_read", "group__spi__interface.html#ggae719b4eb51210f7a6878861fcb374d15a938f0767762b6a2f353bb987314826c5", null ]
     ] ],
+    [ "spi_clear_interrupt_status", "group__spi__interface.html#ga9708ee3711c2126bf5abb15b304ecdff", null ],
+    [ "spi_control_init", "group__spi__interface.html#gadfc7b3d8df21dcdb70b00ec76896512e", null ],
+    [ "spi_disable_dma", "group__spi__interface.html#ga46ec6520540c21decf07e5a82965a0c5", null ],
+    [ "spi_disable_interrupt", "group__spi__interface.html#gaff0c4e65f11fd06a4aaf56bc49d4bf53", null ],
+    [ "spi_enable_dma", "group__spi__interface.html#ga68ac78d70cc136fe264d65f32d07b7f9", null ],
+    [ "spi_enable_interrupt", "group__spi__interface.html#gaca5a18ff3cabe7bb292313b8ce20b154", null ],
     [ "spi_format_init", "group__spi__interface.html#ga6aa789fed3d323a5cf9d541649a909ec", null ],
+    [ "spi_get_data_length_in_bits", "group__spi__interface.html#gaee5cb066ffeae9e6c6f3146ad9673679", null ],
+    [ "spi_get_data_length_in_bytes", "group__spi__interface.html#gacdb3db6c42352184bacb17222cb7635f", null ],
+    [ "spi_get_interrupt_status", "group__spi__interface.html#ga71c5807b3273462e5e32f6c379fe6250", null ],
     [ "spi_master_get_default_control_config", "group__spi__interface.html#ga20fe4a9fd4254d69da5b3b5fa33f8f8c", null ],
     [ "spi_master_get_default_format_config", "group__spi__interface.html#ga31168318ca7a3f8145d6991412bffdb3", null ],
     [ "spi_master_get_default_timing_config", "group__spi__interface.html#ga3398ff3ef43abb865ba061fdac3922bd", null ],
     [ "spi_master_timing_init", "group__spi__interface.html#ga5f947eba318d5cf434442208fa013890", null ],
-    [ "spi_setup_dma_transfer", "group__spi__interface.html#ga085530c65ea8efb8433c27a8346ca5dd", null ],
+    [ "spi_read_command", "group__spi__interface.html#ga8dc3d203a1773ffb50514cdb9bced308", null ],
+    [ "spi_read_data", "group__spi__interface.html#ga8b614bbd1672d0e1abef6a3e95c1040f", null ],
+    [ "spi_set_rx_fifo_threshold", "group__spi__interface.html#gac397be35fa26126ce85d46ca94d13c03", null ],
+    [ "spi_set_tx_fifo_threshold", "group__spi__interface.html#gafc52355500b35061094306f08e1a13ce", null ],
+    [ "spi_setup_dma_transfer", "group__spi__interface.html#ga302f08c4fb52f1c0ac5049b2b91a8d87", null ],
     [ "spi_slave_get_default_control_config", "group__spi__interface.html#ga011f364572dba586730f36c93f589557", null ],
     [ "spi_slave_get_default_format_config", "group__spi__interface.html#ga5a4c398026975ffff16080bdf1ba99f7", null ],
-    [ "spi_transfer", "group__spi__interface.html#ga0806810be06ba3f20f573f7465c620ea", null ],
+    [ "spi_transfer", "group__spi__interface.html#ga6541675ce7395a67e896f900a6171133", null ],
     [ "spi_wait_for_busy_status", "group__spi__interface.html#ga3292349e298ddb9f64819946afcea7d2", null ],
-    [ "spi_wait_for_idle_status", "group__spi__interface.html#ga0bd47db6a31f4592c25b0b0ce4d26635", null ]
+    [ "spi_wait_for_idle_status", "group__spi__interface.html#ga0bd47db6a31f4592c25b0b0ce4d26635", null ],
+    [ "spi_write_address", "group__spi__interface.html#gadf1e05aae5113bde63bc975a18a85f67", null ],
+    [ "spi_write_command", "group__spi__interface.html#gad353177892d840687cd3ce3605bf0621", null ],
+    [ "spi_write_data", "group__spi__interface.html#ga4f7dfe7ae3b9d7f280fc1aa47e228586", null ],
+    [ "spi_write_read_data", "group__spi__interface.html#gabff410d7a08e77b7a8094df27d266605", null ]
 ];

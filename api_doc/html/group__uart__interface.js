@@ -29,7 +29,7 @@ var group__uart__interface =
     [ "uart_signal_t", "group__uart__interface.html#gaabeb807de70635ecab1bc70dd6db895f", null ],
     [ "uart_stat_t", "group__uart__interface.html#ga659e30f9f0a4734cae0990ff25eb455b", null ],
     [ "word_length_t", "group__uart__interface.html#ga50f85e080d19ed16e340907c20b18d39", [
-      [ "status_uart_no_suitable_baudrate_parameter_found", "group__uart__interface.html#gga85c7862086c1f92e4fb4108e176d8140adffac1505396eaee4888bd9ae472a6c7", null ]
+      [ "status_uart_no_suitable_baudrate_parameter_found", "group__uart__interface.html#gga4d29ca5db06e2ae647d1ec22548a9d2aadffac1505396eaee4888bd9ae472a6c7", null ]
     ] ],
     [ "num_of_stop_bits", "group__uart__interface.html#ga9e23a53453170c361033984d8b1a35d5", [
       [ "stop_bits_1", "group__uart__interface.html#gga9e23a53453170c361033984d8b1a35d5aea231f5ce8b7fea0c8281f4d62bde700", null ],

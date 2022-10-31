@@ -4,7 +4,7 @@
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>8.2. JPEG_ENCODE编码 &mdash; HPM SDK Project Documentation</title>
+  <title>8.2. JPEG编码 &mdash; HPM SDK Project Documentation</title>
       <link rel="stylesheet" href="../../../static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="../../../static/css/theme.css" type="text/css" />
       <link rel="stylesheet" href="../../../static/tabs.css" type="text/css" />
@@ -25,7 +25,7 @@
     <link rel="index" title="Index" href="../../../genindex.html" />
     <link rel="search" title="Search" href="../../../search.html" />
     <link rel="next" title="9. Tinycrypt" href="../../tinycrypt/index_zh.html" />
-    <link rel="prev" title="8.1. JPEG_DECODE解码" href="../jpeg_decode/README_zh.html" />
+    <link rel="prev" title="8.1. JPEG 解码" href="../jpeg_decode/README_zh.html" />
   <meta name="color-scheme" content="dark light">
   
   <link rel="stylesheet" href="../../../static/css/light.css" type="text/css" media="(prefers-color-scheme: light)"/>
@@ -68,7 +68,7 @@
           </dd>
         
           <dd>
-            <a onclick="RelativeAddress('/0.13.1/html/index_zh.html')">0.13.1</a>
+            <a onclick="RelativeAddress('/0.14.0/html/index_zh.html')">0.14.0</a>
           </dd>
         
       </dl>
@@ -103,8 +103,6 @@
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../../../CHANGELOG.html">Change Log</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../README_zh.html">HPM SDK 概述</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../README_zh.html#id1">HPM SDK使用说明</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../README_zh.html#id5">社区支持</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../boards/index_zh.html">HPM 开发板介绍</a></li>
 <li class="toctree-l1 current"><a class="reference internal" href="../../index_zh.html">HPM SDK 例程</a><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="../../hello_world/README_zh.html">1. Hello World</a></li>
@@ -115,8 +113,8 @@
 <li class="toctree-l2"><a class="reference internal" href="../../drivers/index_zh.html">6. 驱动</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../motor_ctrl/index_zh.html">7. 电机控制</a></li>
 <li class="toctree-l2 current"><a class="reference internal" href="../index_zh.html">8. JPEG</a><ul class="current">
-<li class="toctree-l3"><a class="reference internal" href="../jpeg_decode/README_zh.html">8.1. JPEG_DECODE解码</a></li>
-<li class="toctree-l3 current"><a class="current reference internal" href="#">8.2. JPEG_ENCODE编码</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../jpeg_decode/README_zh.html">8.1. JPEG 解码</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">8.2. JPEG编码</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="#id1">8.2.1. 概述</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#id2">8.2.2. 硬件设置</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#id3">8.2.3. 工程配置</a></li>
@@ -138,6 +136,9 @@
 <li class="toctree-l2"><a class="reference internal" href="../../lwip/index_zh.html">18. lwIP</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../memstress/index_zh.html">19. 内存测试</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../dma_manager/README_zh.html">20. DMA Manager</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../segger_rtt/README_zh.html">21. Segger RTT</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../cherryusb/index_zh.html">22. USB 通讯</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../dhrystone/README_zh.html">23. dhrystone</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../../../doc/src/sdk_doc/README_zh.html">HPM SDK文档生成</a></li>
@@ -188,7 +189,7 @@
   
      <li><a href="../index_zh.html"><span class="section-number">8. </span>JPEG</a> &raquo;</li>
   
-  <li><span class="section-number">8.2. </span>JPEG_ENCODE编码</li>
+  <li><span class="section-number">8.2. </span>JPEG编码</li>
 
 
   <li class="wy-breadcrumbs-aside">
@@ -208,61 +209,56 @@
   
            <div itemprop="articleBody">
              
-  <section id="jpeg-encode">
-<h1><span class="section-number">8.2. </span>JPEG_ENCODE编码<a class="headerlink" href="#jpeg-encode" title="Permalink to this heading">¶</a></h1>
+  <section id="jpeg">
+<h1><span class="section-number">8.2. </span>JPEG编码<a class="headerlink" href="#jpeg" title="Permalink to this heading">¶</a></h1>
 <section id="id1">
 <h2><span class="section-number">8.2.1. </span>概述<a class="headerlink" href="#id1" title="Permalink to this heading">¶</a></h2>
 <hr class="docutils" />
-<p><strong>jpeg_encode</strong>编码示例工程展示了如何将摄像头采集的RGB565数据通过libjpeg_turbo库或硬件JPEG模块，转换为JPG数据并保存在存储介质中。</p>
-<ul class="simple">
-<li><p>通过<strong>摄像头</strong>获取RGB565数据，通过代码库将RGB565数据转换为YUV图像数据，并压缩成JPG图像文件，并将JPG图片存储于<strong>USB</strong>或<strong>SD卡</strong>内。</p></li>
-</ul>
+<p>JPEG编码示例工程展示了如何将摄像头采集数据通过PEG模块或者软件库编码为JPG图像数据并保存在存储介质中。</p>
 </section>
 <section id="id2">
 <h2><span class="section-number">8.2.2. </span>硬件设置<a class="headerlink" href="#id2" title="Permalink to this heading">¶</a></h2>
 <hr class="docutils" />
 <ul class="simple">
 <li><p><strong>USB盘</strong>连接到开发板<code class="docutils literal notranslate"><span class="pre">USB0</span></code>，或<strong>SD内存卡</strong>插入到开发板<code class="docutils literal notranslate"><span class="pre">sd</span> <span class="pre">card</span></code></p></li>
-<li><p><strong>CAM摄像头</strong>连接到开发板<code class="docutils literal notranslate"><span class="pre">CAM</span></code></p></li>
+<li><p><strong>CAM摄像头</strong> 和 <strong>LCD屏</strong>连接到开发板</p></li>
 </ul>
 </section>
 <section id="id3">
 <h2><span class="section-number">8.2.3. </span>工程配置<a class="headerlink" href="#id3" title="Permalink to this heading">¶</a></h2>
 <hr class="docutils" />
 <ul class="simple">
-<li><p>文件<span class="xref myst">CMakeLists.txt</span>中配置<code class="docutils literal notranslate"><span class="pre">set(CONFIG_SDFATFS_MODE</span> <span class="pre">1)</span></code>，则默认将JPG图片存储在<strong>SD卡</strong>内；配置
-<code class="docutils literal notranslate"><span class="pre">set(CONFIG_TINYUSBHOST_MODE</span> <span class="pre">1)</span></code>，则默认将JPG图片存储在<strong>USB</strong>内</p></li>
+<li><p>文件<a class="reference download internal" download="" href="../../../downloads/40b39c9c0dd0101a61a9dac759b452b9/CMakeLists.txt"><span class="xref download myst">CMakeLists.txt</span></a> :</p>
+<ul>
+<li><p><code class="docutils literal notranslate"><span class="pre">set</span> <span class="pre">(JPEG_USE_SDCARD</span> <span class="pre">1)</span></code> 将编码后的jpeg文件(.jpg)存到SD卡中; <code class="docutils literal notranslate"><span class="pre">set</span> <span class="pre">(JPEG_USE_UDISK</span> <span class="pre">1)</span></code> 将文件存到u盘中。这两个为排他选项</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">set</span> <span class="pre">(JPEG_HW_MODE</span> <span class="pre">1)</span></code> 通过JPEG模块编码; <code class="docutils literal notranslate"><span class="pre">set</span> <span class="pre">(JPEG_HW_MODE</span> <span class="pre">0)</span></code>通过软件库编码</p></li>
+</ul>
+</li>
 </ul>
 </section>
 <section id="id4">
 <h2><span class="section-number">8.2.4. </span>存储图片大小<a class="headerlink" href="#id4" title="Permalink to this heading">¶</a></h2>
 <hr class="docutils" />
 <ul class="simple">
-<li><p>本例程中存储的图片格式为JPG，分辨率大小为800*480</p></li>
-<li><p>如果支持更高分辨率的编码，可采用支持高分辨率的摄像头作为RGB数据源，通过编码功能存储JPG文件</p></li>
+<li><p>本例程中存储的图片格式为JPG，分辨率大小为640*480</p></li>
 </ul>
 </section>
 <section id="id5">
 <h2><span class="section-number">8.2.5. </span>运行现象<a class="headerlink" href="#id5" title="Permalink to this heading">¶</a></h2>
 <hr class="docutils" />
 <ul class="simple">
-<li><p>SD卡方式：
-当工程正确运行后，摄像头捕获的图片，存储在SD卡中，命名为Camera.jpg，而串口终端会输出如下信息：</p></li>
+<li><p>按需要更改CMakeLists.txt中关于目标存储/编码方式的配置</p></li>
+<li><p>连接摄像头、LCD屏和存储介质到开发板</p></li>
+<li><p>将开发板上电</p></li>
+<li><p>下载编译后的elf文件到开发板</p></li>
+<li><p>如果一切正常:</p>
+<ul>
+<li><p>摄像头预览图像会被显示在LCD屏上</p></li>
+<li><p>按下GPIO按键(请确认具体开发板 <a class="reference internal" href="../../../boards/index_zh.html#lab-board-resource"><span class="std std-ref">按键</span></a> 部分描述)将把当前预览帧编码为jpeg文件存储到介质中</p></li>
+<li><p>同时编码后的图像会被再次解码并显示到LCD屏，直到GPIO按键再次被按下，将切换回预览模式</p></li>
 </ul>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">&gt;</span> <span class="n">storage</span> <span class="n">picture</span> <span class="n">data</span> <span class="n">by</span> <span class="n">SD</span> <span class="n">card</span>
-<span class="o">&gt;</span> <span class="n">File</span> <span class="n">Name</span><span class="p">:</span> <span class="n">Camera</span><span class="o">.</span><span class="n">jpg</span>
-<span class="o">&gt;</span> <span class="n">Libjpeg</span><span class="o">-</span><span class="n">turbo</span> <span class="n">encode</span> <span class="n">completed</span>
-</pre></div>
-</div>
-<ul class="simple">
-<li><p>USB方式：
-当工程正确运行后，摄像头捕获的图片，存储在USB中，命名为Camera.jpg，而串口终端会输出如下信息：</p></li>
+</li>
 </ul>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">&gt;</span> <span class="n">storage</span> <span class="n">picture</span> <span class="n">data</span> <span class="n">by</span> <span class="n">tinyusb</span> <span class="n">mode</span>
-<span class="o">&gt;</span> <span class="n">File</span> <span class="n">Name</span><span class="p">:</span> <span class="n">Camera</span><span class="o">.</span><span class="n">jpg</span>
-<span class="o">&gt;</span> <span class="n">Libjpeg</span><span class="o">-</span><span class="n">turbo</span> <span class="n">encode</span> <span class="n">completed</span>
-</pre></div>
-</div>
 </section>
 </section>
 
@@ -271,7 +267,7 @@
           </div>
 
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="../jpeg_decode/README_zh.html" class="btn btn-neutral float-left" title="8.1. JPEG_DECODE解码" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="../jpeg_decode/README_zh.html" class="btn btn-neutral float-left" title="8.1. JPEG 解码" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
         <a href="../../tinycrypt/index_zh.html" class="btn btn-neutral float-right" title="9. Tinycrypt" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
@@ -279,7 +275,7 @@
 
   <div role="contentinfo">
     <p>&#169; Copyright 2020-2022, hpmicro.
-      <span class="lastupdated">Last updated on Aug 23, 2022.
+      <span class="lastupdated">Last updated on Oct 31, 2022.
       </span></p>
   </div>
 

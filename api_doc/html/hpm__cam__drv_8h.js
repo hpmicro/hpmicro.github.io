@@ -64,5 +64,6 @@ var hpm__cam__drv_8h =
     [ "cam_set_color_key", "group__cam__interface.html#gaaf8be10cc0d53c62250444aaa0bdd89b", null ],
     [ "cam_set_input_pixel_byte_order", "group__cam__interface.html#ga2970a026ee1ed154f614c8c98c46e48d", null ],
     [ "cam_start", "group__cam__interface.html#ga3c2529c07f6eff54b8d1ecfa525ca2eb", null ],
-    [ "cam_stop", "group__cam__interface.html#gadbf25b323989cb0b5e6051dfb0d90156", null ]
+    [ "cam_stop", "group__cam__interface.html#gadbf25b323989cb0b5e6051dfb0d90156", null ],
+    [ "cam_update_buffer", "group__cam__interface.html#gaabf8b8289bfa11d705895a7377506ee9", null ]
 ];

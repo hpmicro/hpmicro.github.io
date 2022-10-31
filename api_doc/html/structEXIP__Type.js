@@ -9,7 +9,7 @@ var structEXIP__Type =
     [ "KEY3", "structEXIP__Type.html#aa23dc2903ec507139be253694fb6771d", null ],
     [ "RESERVED0", "structEXIP__Type.html#ac8716d983e70b8971f8af67068cdb597", null ],
     [ "RESERVED1", "structEXIP__Type.html#a10aba3e58c4d9b725132dd3c4e359a7a", null ],
-    [ "RGN", "structEXIP__Type.html#aa1e57ca48e81bf7a506d6a6a1fa7af39", null ],
+    [ "RGN", "structEXIP__Type.html#a57ca001549d602979b0c7c1079f78b4b", null ],
     [ "RGN_EA", "structEXIP__Type.html#a0bbcf6517f9dfc02442122318a5d194b", null ],
     [ "RGN_SA", "structEXIP__Type.html#a22b0b51320c113ac9f5406a0d7ad6246", null ],
     [ "STA", "structEXIP__Type.html#ab18725d84f81275fbc3fb6d66039ec35", null ]

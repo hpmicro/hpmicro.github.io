@@ -25,7 +25,7 @@
     <link rel="index" title="Index" href="../../../genindex.html" />
     <link rel="search" title="Search" href="../../../search.html" />
     <link rel="next" title="9. Tinycrypt" href="../../tinycrypt/index.html" />
-    <link rel="prev" title="8.1. JPEG_DECODE decode" href="../jpeg_decode/README.html" />
+    <link rel="prev" title="8.1. JPEG decode" href="../jpeg_decode/README.html" />
   <meta name="color-scheme" content="dark light">
   
   <link rel="stylesheet" href="../../../static/css/light.css" type="text/css" media="(prefers-color-scheme: light)"/>
@@ -68,7 +68,7 @@
           </dd>
         
           <dd>
-            <a onclick="RelativeAddress('/0.13.1/html/index.html')">0.13.1</a>
+            <a onclick="RelativeAddress('/0.14.0/html/index.html')">0.14.0</a>
           </dd>
         
       </dl>
@@ -103,7 +103,6 @@
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../../../CHANGELOG.html">Change Log</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../README.html">HPM SDK Overview</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../README.html#hpm-sdk-quick-start-guide">HPM SDK Quick Start Guide</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../README.html#community-support">Community Support</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../boards/index.html">HPM Development Board Introduction</a></li>
 <li class="toctree-l1 current"><a class="reference internal" href="../../index.html">HPM SDK Samples</a><ul class="current">
@@ -115,7 +114,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../../drivers/index.html">6. Drivers</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../motor_ctrl/index.html">7. Motor Control</a></li>
 <li class="toctree-l2 current"><a class="reference internal" href="../index.html">8. JPEG</a><ul class="current">
-<li class="toctree-l3"><a class="reference internal" href="../jpeg_decode/README.html">8.1. JPEG_DECODE decode</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../jpeg_decode/README.html">8.1. JPEG decode</a></li>
 <li class="toctree-l3 current"><a class="current reference internal" href="#">8.2. JPEG encode</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="#overview">8.2.1. Overview</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#board-setting">8.2.2. Board Setting</a></li>
@@ -138,6 +137,9 @@
 <li class="toctree-l2"><a class="reference internal" href="../../lwip/index.html">18. lwIP</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../memstress/index.html">19. memstress</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../dma_manager/README.html">20. DMA Manager</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../segger_rtt/README.html">21. Segger RTT</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../cherryusb/index.html">22. USB Communication</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../dhrystone/README.html">23. dhrystone</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../../../doc/src/sdk_doc/README.html">HPM SDK Doc Generation</a></li>
@@ -213,55 +215,46 @@
 <section id="overview">
 <h2><span class="section-number">8.2.1. </span>Overview<a class="headerlink" href="#overview" title="Permalink to this heading">¶</a></h2>
 <hr class="docutils" />
-<p><strong>jpeg_encode</strong> example project shows how to pass the rgb565 data collected by the camera through libjpeg_turbo library Or hardware JPEG module is converted into JPG data and saved in the storage medium.</p>
-<ul class="simple">
-<li><p>the rgb565 data is obtained through <strong>the camera</strong>, the rgb565 data is converted into JPEG data through the code base, and the JPG pictures are stored in <strong>USB</strong> or <strong>SD card</strong></p></li>
-</ul>
+<p>JPEG decoding example project demonstrates how to encode an image capture from camera sensor to a JPG file using either JPEG module or software jpeg library</p>
 </section>
 <section id="board-setting">
 <h2><span class="section-number">8.2.2. </span>Board Setting<a class="headerlink" href="#board-setting" title="Permalink to this heading">¶</a></h2>
 <hr class="docutils" />
 <ul class="simple">
 <li><p>Connect the <strong>USB disk</strong> to the development board <code class="docutils literal notranslate"><span class="pre">usb0</span></code>, or insert the <strong>SD memory card</strong> into the development board <code class="docutils literal notranslate"><span class="pre">SD</span> <span class="pre">card</span></code></p></li>
-<li><p><strong>Cam camera</strong> connected to development board <code class="docutils literal notranslate"><span class="pre">cam</span></code></p></li>
+<li><p>Connect <strong>LCD screen</strong> and <strong>Cam camera</strong> to development board</p></li>
 </ul>
 </section>
 <section id="engineering-configuration">
 <h2><span class="section-number">8.2.3. </span>Engineering configuration<a class="headerlink" href="#engineering-configuration" title="Permalink to this heading">¶</a></h2>
 <hr class="docutils" />
 <ul class="simple">
-<li><p>File <span class="xref myst">cmakelists.txt</span>. If <code class="docutils literal notranslate"><span class="pre">set</span> <span class="pre">(config_sdfatfs_mode</span> <span class="pre">1)</span></code> is configured, Jpg pictures are stored in <strong>SD card</strong> by default; to configure <code class="docutils literal notranslate"><span class="pre">set</span> <span class="pre">(config_tinyusbhost_mode</span> <span class="pre">1)</span></code>, Jpg pictures are stored in <strong>USB</strong> by default</p></li>
+<li><p>File <a class="reference download internal" download="" href="../../../downloads/40b39c9c0dd0101a61a9dac759b452b9/CMakeLists.txt"><span class="xref download myst">CMakeLists.txt</span></a>. If <code class="docutils literal notranslate"><span class="pre">set</span> <span class="pre">(JPEG_USE_SDCARD</span> <span class="pre">1)</span></code> is configured, jpeg files are stored in SD card or <code class="docutils literal notranslate"><span class="pre">set</span> <span class="pre">(JPEG_USE_UDISK</span> <span class="pre">1)</span></code>, they will be saved to udisk.</p></li>
 </ul>
 </section>
 <section id="store-picture-size">
 <h2><span class="section-number">8.2.4. </span>Store picture size<a class="headerlink" href="#store-picture-size" title="Permalink to this heading">¶</a></h2>
 <hr class="docutils" />
 <ul class="simple">
-<li><p>The image format stored in this routine is JPG, and the resolution size is 800*480</p></li>
-<li><p>If higher resolution encoding is supported, a camera that supports high resolution can be used as the RGB data source to store JPG files through the encoding function</p></li>
+<li><p>The image format stored in this routine is JPG, and the resolution size is 640*480</p></li>
 </ul>
 </section>
 <section id="running-the-example">
 <h2><span class="section-number">8.2.5. </span>Running the example<a class="headerlink" href="#running-the-example" title="Permalink to this heading">¶</a></h2>
 <hr class="docutils" />
 <ul class="simple">
-<li><p>SD card mode:
-When the project runs correctly, the pictures captured by the camera are stored in the SD card and named camera Jpg, and the serial terminal will output the following information:</p></li>
+<li><p>Configure storage in CMakeLists.txt</p></li>
+<li><p>Connect camera senor, LCD pannel and storage to board</p></li>
+<li><p>Power on the board</p></li>
+<li><p>Download built elf into development board and run the demo</p></li>
+<li><p>If everything goes well:</p>
+<ul>
+<li><p>camera sensor preview will be shown on LCD panel</p></li>
+<li><p>press GPIO button (please check <a class="reference internal" href="../../../boards/index.html#lab-board-resource"><span class="std std-ref">Button</span></a> section of specific board) will save current frame and encode to jpeg file and save to target storage</p></li>
+<li><p>encoded image will be decoded and shown on LCD pannel until GPIO button is pressed again. Once it’s been pressed, preview will be resumed.</p></li>
 </ul>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">&gt;</span> <span class="n">storage</span> <span class="n">picture</span> <span class="n">data</span> <span class="n">by</span> <span class="n">SD</span> <span class="n">card</span>
-<span class="o">&gt;</span> <span class="n">File</span> <span class="n">Name</span><span class="p">:</span> <span class="n">Camera</span><span class="o">.</span><span class="n">jpg</span>
-<span class="o">&gt;</span> <span class="n">Libjpeg</span><span class="o">-</span><span class="n">turbo</span> <span class="n">encode</span> <span class="n">completed</span>
-</pre></div>
-</div>
-<ul class="simple">
-<li><p>USB mode:
-When the project runs correctly, the pictures captured by the camera are stored in USB and named camera Jpg, and the serial terminal will output the following information:</p></li>
+</li>
 </ul>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">&gt;</span> <span class="n">storage</span> <span class="n">picture</span> <span class="n">data</span> <span class="n">by</span> <span class="n">tinyusb</span> <span class="n">mode</span>
-<span class="o">&gt;</span> <span class="n">File</span> <span class="n">Name</span><span class="p">:</span> <span class="n">Camera</span><span class="o">.</span><span class="n">jpg</span>
-<span class="o">&gt;</span> <span class="n">Libjpeg</span><span class="o">-</span><span class="n">turbo</span> <span class="n">encode</span> <span class="n">completed</span>
-</pre></div>
-</div>
 </section>
 </section>
 
@@ -270,7 +263,7 @@ When the project runs correctly, the pictures captured by the camera are stored 
           </div>
 
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="../jpeg_decode/README.html" class="btn btn-neutral float-left" title="8.1. JPEG_DECODE decode" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="../jpeg_decode/README.html" class="btn btn-neutral float-left" title="8.1. JPEG decode" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
         <a href="../../tinycrypt/index.html" class="btn btn-neutral float-right" title="9. Tinycrypt" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
@@ -278,7 +271,7 @@ When the project runs correctly, the pictures captured by the camera are stored 
 
   <div role="contentinfo">
     <p>&#169; Copyright 2020-2022, hpmicro.
-      <span class="lastupdated">Last updated on Aug 23, 2022.
+      <span class="lastupdated">Last updated on Oct 31, 2022.
       </span></p>
   </div>
 

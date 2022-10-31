@@ -68,7 +68,7 @@
           </dd>
         
           <dd>
-            <a onclick="RelativeAddress('/0.13.1/html/index.html')">0.13.1</a>
+            <a onclick="RelativeAddress('/0.14.0/html/index.html')">0.14.0</a>
           </dd>
         
       </dl>
@@ -103,7 +103,6 @@
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../../CHANGELOG.html">Change Log</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../README.html">HPM SDK Overview</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../README.html#hpm-sdk-quick-start-guide">HPM SDK Quick Start Guide</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../README.html#community-support">Community Support</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../boards/index.html">HPM Development Board Introduction</a></li>
 <li class="toctree-l1 current"><a class="reference internal" href="../index.html">HPM SDK Samples</a><ul class="current">
@@ -119,6 +118,8 @@
 <li class="toctree-l2 current"><a class="current reference internal" href="#">10. Multicore Samples</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="hello/README.html">10.1. Hello demo</a></li>
 <li class="toctree-l3"><a class="reference internal" href="lvgl_coremark/README.html">10.2. LVGL Coremark Demo</a></li>
+<li class="toctree-l3"><a class="reference internal" href="console_coremark/README.html">10.3. Console Coremark Demo</a></li>
+<li class="toctree-l3"><a class="reference internal" href="erpc/README.html">10.4. eRPC demo</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../rom_api/index.html">11. ROMAPI Samples</a></li>
@@ -131,6 +132,9 @@
 <li class="toctree-l2"><a class="reference internal" href="../lwip/index.html">18. lwIP</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../memstress/index.html">19. memstress</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../dma_manager/README.html">20. DMA Manager</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../segger_rtt/README.html">21. Segger RTT</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../cherryusb/index.html">22. USB Communication</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../dhrystone/README.html">23. dhrystone</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../../doc/src/sdk_doc/README.html">HPM SDK Doc Generation</a></li>
@@ -224,6 +228,27 @@
 <li class="toctree-l2"><a class="reference internal" href="lvgl_coremark/README.html#running-the-example">10.2.4. Running the example</a></li>
 </ul>
 </li>
+<li class="toctree-l1"><a class="reference internal" href="console_coremark/README.html">10.3. Console Coremark Demo</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="console_coremark/README.html#overview">10.3.1. Overview</a></li>
+<li class="toctree-l2"><a class="reference internal" href="console_coremark/README.html#board-setting">10.3.2. Board Setting</a></li>
+<li class="toctree-l2"><a class="reference internal" href="console_coremark/README.html#generate-and-build-multi-core-projects">10.3.3. Generate and Build Multi-core projects</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="console_coremark/README.html#generate-core0-project">10.3.3.1. Generate core0 project</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="console_coremark/README.html#running-the-example">10.3.4. Running the example</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="erpc/README.html">10.4. eRPC demo</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="erpc/README.html#overview">10.4.1. Overview</a></li>
+<li class="toctree-l2"><a class="reference internal" href="erpc/README.html#idl-file-generate-project-files">10.4.2. IDL file generate project files</a></li>
+<li class="toctree-l2"><a class="reference internal" href="erpc/README.html#importing-client-server-files">10.4.3. Importing client/server files</a></li>
+<li class="toctree-l2"><a class="reference internal" href="erpc/README.html#generate-core1-project">10.4.4. Generate core1 project</a></li>
+<li class="toctree-l2"><a class="reference internal" href="erpc/README.html#generate-core0-project">10.4.5. Generate core0 project</a></li>
+<li class="toctree-l2"><a class="reference internal" href="erpc/README.html#build-project">10.4.6. Build project</a></li>
+<li class="toctree-l2"><a class="reference internal" href="erpc/README.html#debugging">10.4.7. Debugging</a></li>
+<li class="toctree-l2"><a class="reference internal" href="erpc/README.html#running-results">10.4.8. Running Results</a></li>
+</ul>
+</li>
 </ul>
 </div>
 </section>
@@ -241,7 +266,7 @@
 
   <div role="contentinfo">
     <p>&#169; Copyright 2020-2022, hpmicro.
-      <span class="lastupdated">Last updated on Aug 23, 2022.
+      <span class="lastupdated">Last updated on Oct 31, 2022.
       </span></p>
   </div>
 

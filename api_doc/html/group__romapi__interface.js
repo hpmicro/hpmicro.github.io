@@ -7,6 +7,10 @@ var group__romapi__interface =
       [ "tag", "unionapi__boot__arg__t.html#a955852db840420641186243c5681eef9", null ],
       [ "U", "unionapi__boot__arg__t.html#af935d6432c99111460c370192fe3b21f", null ]
     ] ],
+    [ "sm3_context_t", "structsm3__context__t.html", null ],
+    [ "sm4_context_t", "structsm4__context__t.html", [
+      [ "mode", "structsm4__context__t.html#af0a329bfaf6acae133360fdb2bed9bbc", null ]
+    ] ],
     [ "otp_driver_interface_t", "structotp__driver__interface__t.html", [
       [ "deinit", "structotp__driver__interface__t.html#a373a9fb159d1d3c1236497dcad866768", null ],
       [ "init", "structotp__driver__interface__t.html#a7fc748df40ea8a2ad3ca9bc64d69720e", null ],
@@ -76,11 +80,30 @@ var group__romapi__interface =
       [ "sdp_ip_init", "structsdp__driver__interface__t.html#a4f729e07b5cafc683632f4d775247588", null ],
       [ "version", "structsdp__driver__interface__t.html#aa8a9b5b2ed083e9d0d2f7d66d2047c24", null ]
     ] ],
+    [ "sm3_api_interface_t", "structsm3__api__interface__t.html", [
+      [ "finalize", "structsm3__api__interface__t.html#a2ca4006e64a7d22cfa255f601d50fe80", null ],
+      [ "init", "structsm3__api__interface__t.html#a4613dca427b7f6615de9c3b314acc5df", null ],
+      [ "update", "structsm3__api__interface__t.html#ad7a5e907cddceab1acf0677b7e3e8e01", null ],
+      [ "version", "structsm3__api__interface__t.html#aa5a752b58eed58adea51e69d078c32d1", null ]
+    ] ],
+    [ "sm4_api_interface_t", "structsm4__api__interface__t.html", [
+      [ "ccm_dec_verify", "structsm4__api__interface__t.html#a505103062e3e5020d4570d507a3d12a0", null ],
+      [ "ccm_gen_enc", "structsm4__api__interface__t.html#af4f41af4946753f6a42bfa4f9cbb5f05", null ],
+      [ "crypt_cbc", "structsm4__api__interface__t.html#a323920f65d5724a71db47900fc5aac7c", null ],
+      [ "crypt_ctr", "structsm4__api__interface__t.html#ac511e2f5d42bea290acb17786df6036d", null ],
+      [ "crypt_ecb", "structsm4__api__interface__t.html#a917a33c276143e7171bef22e6baa72e9", null ],
+      [ "setkey_dec", "structsm4__api__interface__t.html#a8c1ab1efdf2715fd278ca9304cc7b766", null ],
+      [ "setkey_enc", "structsm4__api__interface__t.html#a86ad3dae4c7ee3cc9cb0bf75604a8933", null ],
+      [ "version", "structsm4__api__interface__t.html#afb6fe5cf6fda00e4b3d71b886eef5d22", null ]
+    ] ],
     [ "bootloader_api_table_t", "structbootloader__api__table__t.html", [
       [ "copyright", "structbootloader__api__table__t.html#a6544bf89d7e61e0bb81de3f556559d83", null ],
       [ "otp_driver_if", "structbootloader__api__table__t.html#a3075a346ce210f5b7a25126bf24be58c", null ],
+      [ "reserved0", "structbootloader__api__table__t.html#a0c62d2f1991a3323409dae8914b38a9f", null ],
       [ "run_bootloader", "structbootloader__api__table__t.html#af95776237272f015daa2de2febc70187", null ],
       [ "sdp_driver_if", "structbootloader__api__table__t.html#a7f124b943268660ca5737103a751d081", null ],
+      [ "sm3_api_if", "structbootloader__api__table__t.html#a72576d22b6905b141763f3baa3191113", null ],
+      [ "sm4_api_if", "structbootloader__api__table__t.html#ad6317e697474de6b386b8a5dd4ef49d1", null ],
       [ "version", "structbootloader__api__table__t.html#af6cf4d754b27da406a1d5c9329b3d016", null ],
       [ "xpi_driver_if", "structbootloader__api__table__t.html#a89e351ce5574baed172ecd21d5e099b4", null ],
       [ "xpi_nor_driver_if", "structbootloader__api__table__t.html#a3cb28c103277f5326a32d8bf560849d6", null ],
@@ -112,6 +135,10 @@ var group__romapi__interface =
     [ "HPM_XPI1_BASE", "group__romapi__interface.html#ga3fd7cffb6202312d1df7464f87b526a7", null ],
     [ "ROM_API_TABLE_ROOT", "group__romapi__interface.html#gaa411a5a540550533a3aeffef4afeb756", null ],
     [ "ROM_API_TABLE_ROOT", "group__romapi__interface.html#gaa411a5a540550533a3aeffef4afeb756", null ],
+    [ "SM4_DECRYPT", "group__romapi__interface.html#ga28e49d7757f796206e0557d4d65fa5b5", null ],
+    [ "SM4_DECRYPT", "group__romapi__interface.html#ga28e49d7757f796206e0557d4d65fa5b5", null ],
+    [ "SM4_ENCRYPT", "group__romapi__interface.html#gac91cc2de34e7af9df3a2cef8dc242be1", null ],
+    [ "SM4_ENCRYPT", "group__romapi__interface.html#gac91cc2de34e7af9df3a2cef8dc242be1", null ],
     [ "rom_enter_bootloader", "group__romapi__interface.html#gabdd06249f094468bb05ceaf2d6c14aba", null ],
     [ "rom_sdp_aes_crypt_cbc", "group__romapi__interface.html#ga044dfd3ad02ae8eb40fe98e9d88019b6", null ],
     [ "rom_sdp_aes_crypt_ecb", "group__romapi__interface.html#gaf15af67d61f1cc1863369ef05e095a34", null ],
@@ -123,6 +150,13 @@ var group__romapi__interface =
     [ "rom_sdp_init", "group__romapi__interface.html#gaa1a7db36b5e594b6fbdd736320e0ae5b", null ],
     [ "rom_sdp_memcpy", "group__romapi__interface.html#ga52e3ec6c4f91b5041983eeb64fdcc3c8", null ],
     [ "rom_sdp_memset", "group__romapi__interface.html#ga02a75c20fd79e82e79877a5c4e202512", null ],
+    [ "rom_sm3_finalize", "group__romapi__interface.html#ga5299ac6028b07d40e00dccfb66b68a6b", null ],
+    [ "rom_sm3_init", "group__romapi__interface.html#ga000434e673cbb0a85e263cddf05f85d2", null ],
+    [ "rom_sm3_update", "group__romapi__interface.html#ga81130e5a417949167bab9b3c1b2e2335", null ],
+    [ "rom_sm4_crypt_cbc", "group__romapi__interface.html#gafbc6dbf2cc1dddee016e1c797a969a8c", null ],
+    [ "rom_sm4_crypt_ecb", "group__romapi__interface.html#gade97e2580a7999cbd2ebb6ec262a8a08", null ],
+    [ "rom_sm4_setkey_dec", "group__romapi__interface.html#gaa9bd6de9e857bd70b02a9970b0a06028", null ],
+    [ "rom_sm4_setkey_enc", "group__romapi__interface.html#ga3c0ce02147629320ba74595123dea9f2", null ],
     [ "rom_xpi_nor_auto_config", "group__romapi__interface.html#ga0eb6978aa391e2761d0c04e3d398d095", null ],
     [ "rom_xpi_nor_erase", "group__romapi__interface.html#gab4aa92e8ccdb567ea46a99f867ead45b", null ],
     [ "rom_xpi_nor_erase_block", "group__romapi__interface.html#ga7f5541d645b09587e57a946abee86f74", null ],
@@ -133,6 +167,7 @@ var group__romapi__interface =
     [ "rom_xpi_nor_erase_sector_nonblocking", "group__romapi__interface.html#gaafa98732a2b3526f72c8325d20eadfe7", null ],
     [ "rom_xpi_nor_get_config", "group__romapi__interface.html#gaf816942157bc7e474a6d39b646c31749", null ],
     [ "rom_xpi_nor_get_property", "group__romapi__interface.html#gaf37589b18a165b154fd0d3b2a22f8b10", null ],
+    [ "rom_xpi_nor_get_status", "group__romapi__interface.html#gad3f40eac364247903239e2f689485415", null ],
     [ "rom_xpi_nor_init", "group__romapi__interface.html#ga1376058beb27fdb41e7d687b699269ad", null ],
     [ "rom_xpi_nor_page_program_nonblocking", "group__romapi__interface.html#gaa510c92b2bc085a14ea31d2aff48cda1", null ],
     [ "rom_xpi_nor_program", "group__romapi__interface.html#gae4b6f4f0b3c8addf155c472450ef56e7", null ],

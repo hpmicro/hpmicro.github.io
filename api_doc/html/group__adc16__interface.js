@@ -37,7 +37,6 @@ var group__adc16__interface =
     ] ],
     [ "adc16_prd_config_t", "structadc16__prd__config__t.html", [
       [ "ch", "structadc16__prd__config__t.html#a3684b9f51e3b4be30c5604824cab5b1f", null ],
-      [ "clk_src_freq_in_hz", "structadc16__prd__config__t.html#a5791bef50cc6ec5cfded67f4edd97b49", null ],
       [ "period_count", "structadc16__prd__config__t.html#ab230d65e33359247eb94a7890aa7a4bc", null ],
       [ "prescale", "structadc16__prd__config__t.html#a0d324703155883053146e2dbfca9dc51", null ]
     ] ],
@@ -96,7 +95,7 @@ var group__adc16__interface =
     [ "adc16_init", "group__adc16__interface.html#ga29ae18f3a045b012e3a712bd57211aa2", null ],
     [ "adc16_init_channel", "group__adc16__interface.html#gad71c54ee3dff867577fa50905466ab30", null ],
     [ "adc16_init_pmt_dma", "group__adc16__interface.html#ga7d2a0bb0b5d434f5f4fc4d915e2f6b06", null ],
-    [ "adc16_init_seq_dma", "group__adc16__interface.html#ga6973407b9e0a4920ebe1fb056fb2716c", null ],
+    [ "adc16_init_seq_dma", "group__adc16__interface.html#gafbf9182408fe2273020418d57bfce958", null ],
     [ "adc16_set_pmt_config", "group__adc16__interface.html#gae8373223c527f7bb85a71321c020b038", null ],
     [ "adc16_set_pmt_queue_enable", "group__adc16__interface.html#ga46bf5e0678374a216b2ddd3f259f2aef", null ],
     [ "adc16_set_prd_config", "group__adc16__interface.html#gad9104b000a0efa16b6b65e31d2b017ed", null ],

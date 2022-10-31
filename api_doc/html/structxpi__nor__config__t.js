@@ -1,6 +1,6 @@
 var structxpi__nor__config__t =
 [
-    [ "chn_info", "structxpi__nor__config__t.html#a5dc0be889161b1ed9cc17bbeebb5ef61", null ],
+    [ "chn_info", "structxpi__nor__config__t.html#a0f1dce8b75cc1d8dcb4313d590189ba9", null ],
     [ "clk_freq", "structxpi__nor__config__t.html#a3c86ebed4e884ff34c8d78b76ba0a816", null ],
     [ "column_addr_size", "structxpi__nor__config__t.html#a9464083fc3d1efe3cfc29714318fc47d", null ],
     [ "config_in_progress", "structxpi__nor__config__t.html#ae835dd34758f67e558f88b9d8b635f4c", null ],

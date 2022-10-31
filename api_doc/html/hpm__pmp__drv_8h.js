@@ -32,6 +32,7 @@ var hpm__pmp__drv_8h =
     [ "WRITE_EN", "hpm__pmp__drv_8h.html#a00e40b41acbc71a93e48609b506a3d79", null ],
     [ "pmp_entry_t", "hpm__pmp__drv_8h.html#a960b72c0c4d0ed96810c1afe1fa75475", null ],
     [ "pmp_config", "hpm__pmp__drv_8h.html#afc7ce37c9e795eaa644b0fce57ecbbb9", null ],
+    [ "pmp_config_entry", "hpm__pmp__drv_8h.html#a703d6b791fb9fa8df58cbca0960cc965", null ],
     [ "pmp_disable", "hpm__pmp__drv_8h.html#a9e143a06f0c8ca3b38336641af9f744f", null ],
     [ "read_pma_addr", "hpm__pmp__drv_8h.html#a45df9c707228af453ba946582beace1f", null ],
     [ "read_pma_cfg", "hpm__pmp__drv_8h.html#a7619a98be6ed37ad56a9de3f8e93415c", null ],

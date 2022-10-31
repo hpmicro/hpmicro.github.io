@@ -6,6 +6,7 @@ var hpm__usb__drv_8c =
     [ "usb_dcd_disconnect", "group__usb__interface.html#gab7681ff335b3134cf4fe056a4d06be49", null ],
     [ "usb_dcd_edpt_clear_stall", "group__usb__interface.html#gae98b1372cf7dda04bf8669fbe56ba969", null ],
     [ "usb_dcd_edpt_close", "group__usb__interface.html#ga206094a9ee1dab3d52df63a36185b9b7", null ],
+    [ "usb_dcd_edpt_get_type", "group__usb__interface.html#ga6615e90df81dfa952badf5cbe5a2853a", null ],
     [ "usb_dcd_edpt_open", "group__usb__interface.html#gab2450ed6584f4fc6056d785c4b340f19", null ],
     [ "usb_dcd_edpt_stall", "group__usb__interface.html#ga363402a353d7b62397b3e742f3013ef9", null ],
     [ "usb_dcd_edpt_xfer", "group__usb__interface.html#gaadf458a5102a42b971d1ff9c69cdc712", null ],

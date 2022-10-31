@@ -6,6 +6,7 @@ var group__enet__interface =
       [ "size", "structenet__buff__config__t.html#a420d3e69a8c573c4524cd97caa97398d", null ]
     ] ],
     [ "enet_mac_config_t", "structenet__mac__config__t.html", [
+      [ "dma_pbl", "structenet__mac__config__t.html#afca52e51fa6c457bb98a1b905b72ad60", null ],
       [ "mac_addr_high", "structenet__mac__config__t.html#ad75c4ef76d0fd20a0a488834e46a9072", null ],
       [ "mac_addr_low", "structenet__mac__config__t.html#a57ef1082c798368320e5d01756e1d957", null ],
       [ "valid_max_count", "structenet__mac__config__t.html#aa71aed5b43321564af2a5f8c5019ace0", null ]
@@ -184,6 +185,14 @@ var group__enet__interface =
       [ "enet_csr_60m_to_100m_mdc_csr_div_16", "group__enet__interface.html#gga10b93c4ec2c99d13e22cbc1de5869cc6a3566a27b3ecee9f2d003397745b82b03", null ],
       [ "enet_csr_60m_to_100m_mdc_csr_div_18", "group__enet__interface.html#gga10b93c4ec2c99d13e22cbc1de5869cc6a1b61caa2f8734f4996ff6b94834939c5", null ]
     ] ],
+    [ "enet_duplex_mode_t", "group__enet__interface.html#gacf0c750606f890977d3e78d4ac605256", [
+      [ "enet_half_duplex", "group__enet__interface.html#ggacf0c750606f890977d3e78d4ac605256aed29d09156c0e8c826270f7f1edf6581", null ],
+      [ "enet_full_duplex", "group__enet__interface.html#ggacf0c750606f890977d3e78d4ac605256a9a23fb5402568ab6619d2df00e348540", null ]
+    ] ],
+    [ "enet_gmii_status_t", "group__enet__interface.html#gabef91af3e4e364c1a00ce26448416324", [
+      [ "enet_gmii_idle", "group__enet__interface.html#ggabef91af3e4e364c1a00ce26448416324a5146831b0d44273ca6950c922512c1ca", null ],
+      [ "enet_gmii_busy", "group__enet__interface.html#ggabef91af3e4e364c1a00ce26448416324af48df086cdcc677620f9a7e74389f8dd", null ]
+    ] ],
     [ "enet_inf_type_t", "group__enet__interface.html#ga1d0f4f56326364f7d55dfd77c144f34e", [
       [ "enet_inf_rmii", "group__enet__interface.html#gga1d0f4f56326364f7d55dfd77c144f34eafdc282acccc710ef5fbe14cc50f2d618", null ],
       [ "enet_inf_rgmii", "group__enet__interface.html#gga1d0f4f56326364f7d55dfd77c144f34eac31e3cd703d3af3dc7fee6ce8a47eec9", null ]
@@ -193,6 +202,11 @@ var group__enet__interface =
       [ "enet_cic_insert_ipv4_header", "group__enet__interface.html#gga81d472689685a7a5f4e4e707bef506b0aab9d2b78d909827f69d230561dc7aa50", null ],
       [ "enet_cic_insert_tcp_udp_icmp", "group__enet__interface.html#gga81d472689685a7a5f4e4e707bef506b0ad84fd57c9c2e76e55b5233b94efb1618", null ],
       [ "enet_cic_insert_tcp_upd_icmp", "group__enet__interface.html#gga81d472689685a7a5f4e4e707bef506b0a9abae248039879f2cf4f41bbe8a60500", null ]
+    ] ],
+    [ "enet_line_speed_t", "group__enet__interface.html#gaf1e9aeda8546fd009b449e7082a60aaa", [
+      [ "enet_line_speed_1000mbps", "group__enet__interface.html#ggaf1e9aeda8546fd009b449e7082a60aaaa5f843060f898bc1515c8897844705165", null ],
+      [ "enet_line_speed_10mbps", "group__enet__interface.html#ggaf1e9aeda8546fd009b449e7082a60aaaa643ae79e520a29ebc28ea361b4ae2428", null ],
+      [ "enet_line_speed_100mbps", "group__enet__interface.html#ggaf1e9aeda8546fd009b449e7082a60aaaa941285fff6bb950c3c2fbd9a1171660b", null ]
     ] ],
     [ "enet_pbl_t", "group__enet__interface.html#ga10a5a7221752a599b3f53edf3f74ee6f", [
       [ "enet_pbl_1", "group__enet__interface.html#gga10a5a7221752a599b3f53edf3f74ee6fa437cce7e017d0a24c17c885047bcd044", null ],
@@ -205,10 +219,6 @@ var group__enet__interface =
     [ "enet_phy_op_t", "group__enet__interface.html#gabb7ccd07663339170d67aa832f3bb9e0", [
       [ "enet_phy_op_read", "group__enet__interface.html#ggabb7ccd07663339170d67aa832f3bb9e0a5d33c24bf8101526a07deaeaf5fbdec6", null ],
       [ "enet_phy_op_write", "group__enet__interface.html#ggabb7ccd07663339170d67aa832f3bb9e0a5869ba83e7d2192fc412cdbbc413c1f3", null ]
-    ] ],
-    [ "enet_phy_status_t", "group__enet__interface.html#gaf15e1638850ddb6f8346536ed08fdad9", [
-      [ "enet_phy_idle", "group__enet__interface.html#ggaf15e1638850ddb6f8346536ed08fdad9a56a02fa459c607f4076647cf8d9b6cf0", null ],
-      [ "enet_phy_busy", "group__enet__interface.html#ggaf15e1638850ddb6f8346536ed08fdad9ab6b3bc89efe793d9345bc4c97bfa20f5", null ]
     ] ],
     [ "enet_ptp_count_res_t", "group__enet__interface.html#gaf8bd6400d1556a7fa148d920d39a822e", [
       [ "enet_ptp_count_res_high", "group__enet__interface.html#ggaf8bd6400d1556a7fa148d920d39a822ea7fe184225b167b5597550574fc524021", null ],
@@ -250,6 +260,8 @@ var group__enet__interface =
     [ "enet_init_ptp", "group__enet__interface.html#gaf7a6f41ed9e4cb0b165c87306d0bc4c6", null ],
     [ "enet_prepare_transmission_descriptors", "group__enet__interface.html#gafc454b556e55088916ec1f2fe7b3805a", null ],
     [ "enet_read_phy", "group__enet__interface.html#ga7c828a6e6da4573e91ed490be41b2724", null ],
+    [ "enet_set_duplex_mode", "group__enet__interface.html#ga09fe3c0163ad4508ffbc5159710eea56", null ],
+    [ "enet_set_line_speed", "group__enet__interface.html#gab40aadb29a0d4c430d436fe9b06a958b", null ],
     [ "enet_set_ptp_timestamp", "group__enet__interface.html#gafd932026487c35ba3c50769216c5aebd", null ],
     [ "enet_set_ptp_version", "group__enet__interface.html#gacbe7b2b681b77e2515700e791049fa1c", null ],
     [ "enet_set_snapshot_ptp_message_type", "group__enet__interface.html#ga6e46b48560cf6d29aeaf36cf5e4b00ca", null ],

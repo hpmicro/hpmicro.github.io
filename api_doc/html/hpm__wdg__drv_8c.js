@@ -2,6 +2,7 @@ var hpm__wdg__drv_8c =
 [
     [ "reset_interval_map_t", "structreset__interval__map__t.html", "structreset__interval__map__t" ],
     [ "interrupt_interval_map_t", "structinterrupt__interval__map__t.html", "structinterrupt__interval__map__t" ],
+    [ "DIFF_MAX", "hpm__wdg__drv_8c.html#a5e4fab53bdfa11c48433c8ee18bc6093", null ],
     [ "ONE_SECOND_TICKS_IN_NS", "hpm__wdg__drv_8c.html#a55a870b7777a1f0c62f0402c028a9881", null ],
     [ "TICKS_1G", "hpm__wdg__drv_8c.html#a3592c20185a4d3aca9f5938901882585", null ],
     [ "TICKS_1K", "hpm__wdg__drv_8c.html#a2f4c050047030eb67bb4f8534c4ceec9", null ],

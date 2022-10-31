@@ -19,6 +19,6 @@ var structcan__config__t =
     [ "filter_list_num", "structcan__config__t.html#af51a142c8ed9655c03d40eee6e246b4e", null ],
     [ "irq_error_enable_mask", "structcan__config__t.html#a09d5b060e49721baa8831c7cc77a213b", null ],
     [ "irq_txrx_enable_mask", "structcan__config__t.html#a48bd1ee8818eecc1ac71315a4bc715e8", null ],
-    [ "mode", "structcan__config__t.html#a56637ddd0f1bd16f09c9ec6dd7bd4c7c", null ],
+    [ "mode", "structcan__config__t.html#a8c5cf03988f9268851dabd73ab9c82c2", null ],
     [ "use_lowlevel_timing_setting", "structcan__config__t.html#a7206818b05e7ba6ea85cc907a73b5db1", null ]
 ];

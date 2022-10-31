@@ -46,7 +46,8 @@ var hpm__display__common_8h =
       [ "display_pixel_format_rgb444", "group__Display__common__interface.html#ggac346bc56771052a8fe919c3ec23d7c9caf38f8ea04a5aa191afff274565d6270a", null ],
       [ "display_pixel_format_gbr422", "group__Display__common__interface.html#ggac346bc56771052a8fe919c3ec23d7c9ca420e290b0a8e0d9bc1335b86ca436b45", null ],
       [ "display_pixel_format_yuv422", "group__Display__common__interface.html#ggac346bc56771052a8fe919c3ec23d7c9cadd92021da86b2d931d85b7db7b2dbe6e", null ],
-      [ "display_pixel_format_ycbcr422", "group__Display__common__interface.html#ggac346bc56771052a8fe919c3ec23d7c9cae3ee6a687ea621f79d3cb71de4357c07", null ]
+      [ "display_pixel_format_ycbcr422", "group__Display__common__interface.html#ggac346bc56771052a8fe919c3ec23d7c9cae3ee6a687ea621f79d3cb71de4357c07", null ],
+      [ "display_pixel_format_y8", "group__Display__common__interface.html#ggac346bc56771052a8fe919c3ec23d7c9ca592ef15d8f648f802bfe4649a5ffcb20", null ]
     ] ],
     [ "display_yuv_format", "group__Display__common__interface.html#ga46cfb210522fb7fa332acd7fe6462151", [
       [ "display_yuv_mode_422_u1y1v1y2", "group__Display__common__interface.html#gga46cfb210522fb7fa332acd7fe6462151a440c7395f13084f60fc4d6b9d215f81a", null ],

@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>22.7. USB HID HOST &mdash; HPM SDK Project Documentation</title>
+      <link rel="stylesheet" href="../../../../static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../../../static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../../../../static/tabs.css" type="text/css" />
+      <link rel="stylesheet" href="../../../../static/css/custom.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../../../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../../../../" id="documentation_options" src="../../../../static/documentation_options.js"></script>
+        <script src="../../../../static/jquery.js"></script>
+        <script src="../../../../static/underscore.js"></script>
+        <script src="../../../../static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="../../../../static/doctools.js"></script>
+        <script src="../../../../static/tabs.js"></script>
+        <script type="module" src="../../../../_static/js/dark-mode-toggle.min.mjs"></script>
+        <script src="../../../../_static/js/ga-tracker.js"></script>
+    <script src="../../../../static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../../search.html" />
+    <link rel="next" title="22.8. USB MSC HOST" href="../msc/README.html" />
+    <link rel="prev" title="22.6. USB MSC RAM DISK" href="../../device/msc/ram_disk/README.html" />
+  <meta name="color-scheme" content="dark light">
+  
+  <link rel="stylesheet" href="../../../../static/css/light.css" type="text/css" media="(prefers-color-scheme: light)"/>
+  <link rel="stylesheet" href="../../../../static/css/dark.css" type="text/css" media="(prefers-color-scheme: dark)"/>
+
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../../../../index.html">
+            <img src="../../../../static/logo.png" class="logo" alt="Logo"/>
+          </a>
+              <div class="version">
+                0.14.0-0
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+  
+  <div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="versions">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      <span class="fa fa-book"> HPM SDK Project</span>
+      v: 0.14.0-0
+      <span class="fa fa-caret-down"></span>
+    </span>
+    <div class="rst-other-versions">
+      <dl>
+        <dt>Document Release Versions</dt>
+        
+          <dd>
+            <a onclick="RelativeAddress('/latest/html/index.html')">latest</a>
+          </dd>
+        
+      </dl>
+      <dl>
+        <dt>Downloads</dt>
+        
+        <dd><a href="/0.14.0-0/hpmsdk.pdf">PDF</a></dd>
+      </dl>
+      <dl>
+        <dt>HPMicro</dt>
+          <dd>
+            <a href="https://www.hpmicro.com/">Project Home</a>
+          </dd>
+          <dd>
+            <a href="https://www.hpmicro.com/">SDK</a>
+          </dd>
+          <dd>
+            <a href="https://www.hpmicro.com/">Releases</a>
+          </dd>
+      </dl>
+    </div>
+  </div>
+  <script language="javascript">
+    function RelativeAddress(url1) {
+      var str=window.location.href;
+      window.location.href=str.match(/(\S*)\/(en|zh)/)[0]+url1;
+      
+    }
+  </script>
+  
+              <p class="caption" role="heading"><span class="caption-text">Contents</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../../../CHANGELOG.html">Change Log</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../README.html">HPM SDK Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../README.html#community-support">Community Support</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../boards/index.html">HPM Development Board Introduction</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../../../index.html">HPM SDK Samples</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../../../hello_world/README.html">1. Hello World</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../audio_codec/index.html">2. Audio Codec</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../coremark/README.html">3. Core Mark</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../touch_panel/README.html">4. Touch Panel</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../rtos/index.html">5. RTOS Samples</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../drivers/index.html">6. Drivers</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../motor_ctrl/index.html">7. Motor Control</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../jpeg/index.html">8. JPEG</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../tinycrypt/index.html">9. Tinycrypt</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../multicore/index.html">10. Multicore Samples</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../rom_api/index.html">11. ROMAPI Samples</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../tflm/README.html">12. TensorFlowLiteMicro</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../tinyusb/index.html">13. USB Communication</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../littlevgl/index.html">14. littlevgl</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../tinyuf2/README.html">15. TinyUF2</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../rgb_led/README.html">16. RGB LED</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../hpm_math/index.html">17. HPMicro MATH</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../lwip/index.html">18. lwIP</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../memstress/index.html">19. memstress</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../dma_manager/README.html">20. DMA Manager</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../segger_rtt/README.html">21. Segger RTT</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../../index.html">22. USB Communication</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="../../device/cdc_acm/README.html">22.1. USB CDC Serial</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../device/composite/cdc_acm_hid_msc/README.html">22.2. USB COMPOSITE DEVICE</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../device/hid/custom_inout/README.html">22.3. USB HID Custom Inout</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../device/hid/keyboard/README.html">22.4. USB HID KEYBOARD</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../device/hid/mouse/README.html">22.5. USB HID MOUSE</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../device/msc/ram_disk/README.html">22.6. USB MSC RAM DISK</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">22.7. USB HID HOST</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#overview">22.7.1. Overview</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#board-setting">22.7.2. Board Setting</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#running-the-example">22.7.3. Running the example</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../msc/README.html">22.8. USB MSC HOST</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../../dhrystone/README.html">23. dhrystone</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../doc/src/sdk_doc/README.html">HPM SDK Doc Generation</a></li>
+</ul>
+
+  
+  <div class="toctree-wrapper compound">
+    <p class="caption"><span class="caption-text">Reference</span></p>
+    <ul>
+      
+      <li class="toctree-l1">
+        <a class="reference internal" onclick="ApiRelativeAddress()">API DOC</a>
+      </li>
+      
+    </ul>
+  </div>
+  <script language="javascript">
+    function ApiRelativeAddress() {
+      var str=window.location.href;
+      window.location.href=str.match(/(\S*)sdk_doc/)[1]+"api_doc/html/index.html";
+      
+    }
+  </script>
+  
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../../index.html">hpm_sdk readme</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+  <!--  -->
+  
+  
+  
+  
+
+  <li><a href="../../../../index.html">Docs</a> &raquo;</li>
+  
+     <li><a href="../../../index.html">HPM SDK Samples</a> &raquo;</li>
+  
+     <li><a href="../../index.html"><span class="section-number">22. </span>USB Communication</a> &raquo;</li>
+  
+  <li><span class="section-number">22.7. </span>USB HID HOST</li>
+
+
+  <li class="wy-breadcrumbs-aside">
+    <dark-mode-toggle id="dark-mode-toggle" appearance="toggle" permanent="true"/>
+  </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+  
+    <div class="wy-alert wy-alert-danger">
+      The <a onclick="RelativeAddressLatest('/latest/html','samples/cherryusb/host/hid/README')">latest development version</a>
+      of this page may be more current than this released 0.14.0-0 version.
+    </div>
+    <script language="javascript">
+      function RelativeAddressLatest(url1,name) {
+        var str=window.location.href;
+        window.location.href=str.match(/(\S*)\/(en|zh)/)[0]+url1+"/"+name+".html";
+        
+      }
+    </script>
+  
+  
+           <div itemprop="articleBody">
+             
+  <section id="usb-hid-host">
+<h1><span class="section-number">22.7. </span>USB HID HOST<a class="headerlink" href="#usb-hid-host" title="Permalink to this heading">¶</a></h1>
+<section id="overview">
+<h2><span class="section-number">22.7.1. </span>Overview<a class="headerlink" href="#overview" title="Permalink to this heading">¶</a></h2>
+<p>This  example project shows USB HID HOST</p>
+</section>
+<section id="board-setting">
+<h2><span class="section-number">22.7.2. </span>Board Setting<a class="headerlink" href="#board-setting" title="Permalink to this heading">¶</a></h2>
+<ul class="simple">
+<li><p>Connect a USB port on PC to the PWR DEBUG port on the development board with a USB Type-C cable</p></li>
+<li><p>Connect a USB port on PC to one of USB port on the development board with a USB Type-C cable</p></li>
+</ul>
+</section>
+<section id="running-the-example">
+<h2><span class="section-number">22.7.3. </span>Running the example<a class="headerlink" href="#running-the-example" title="Permalink to this heading">¶</a></h2>
+<ul class="simple">
+<li><p>Download the program to the development board to run, and use the serial port debugging assistant to view the output log</p></li>
+</ul>
+<section id="connected-with-a-keyboard">
+<h3><span class="section-number">22.7.3.1. </span>Connected with a keyboard<a class="headerlink" href="#connected-with-a-keyboard" title="Permalink to this heading">¶</a></h3>
+<ul class="simple">
+<li><p>When the USB port0 of the development board is connected with a keyboard, the serial port debugging assistant will display the following data:</p></li>
+</ul>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">[</span><span class="n">D</span><span class="o">/</span><span class="n">USB</span><span class="p">]</span> <span class="n">Port</span> <span class="n">change</span><span class="p">:</span><span class="mh">0x02</span>
+<span class="p">[</span><span class="n">D</span><span class="o">/</span><span class="n">USB</span><span class="p">]</span> <span class="n">Port</span> <span class="mi">1</span> <span class="n">change</span>
+<span class="p">[</span><span class="n">D</span><span class="o">/</span><span class="n">USB</span><span class="p">]</span> <span class="n">port</span> <span class="mi">1</span><span class="p">,</span> <span class="n">status</span><span class="p">:</span><span class="mh">0x101</span><span class="p">,</span> <span class="n">change</span><span class="p">:</span><span class="mh">0x01</span>
+<span class="p">[</span><span class="n">D</span><span class="o">/</span><span class="n">USB</span><span class="p">]</span> <span class="n">Port</span> <span class="mi">1</span><span class="p">,</span> <span class="n">status</span><span class="p">:</span><span class="mh">0x101</span><span class="p">,</span> <span class="n">change</span><span class="p">:</span><span class="mh">0x00</span>
+<span class="p">[</span><span class="n">D</span><span class="o">/</span><span class="n">USB</span><span class="p">]</span> <span class="n">Port</span> <span class="mi">1</span><span class="p">,</span> <span class="n">status</span><span class="p">:</span><span class="mh">0x101</span><span class="p">,</span> <span class="n">change</span><span class="p">:</span><span class="mh">0x00</span>
+<span class="p">[</span><span class="n">D</span><span class="o">/</span><span class="n">USB</span><span class="p">]</span> <span class="n">Port</span> <span class="mi">1</span><span class="p">,</span> <span class="n">status</span><span class="p">:</span><span class="mh">0x101</span><span class="p">,</span> <span class="n">change</span><span class="p">:</span><span class="mh">0x00</span>
+<span class="p">[</span><span class="n">D</span><span class="o">/</span><span class="n">USB</span><span class="p">]</span> <span class="n">Port</span> <span class="mi">1</span><span class="p">,</span> <span class="n">status</span><span class="p">:</span><span class="mh">0x101</span><span class="p">,</span> <span class="n">change</span><span class="p">:</span><span class="mh">0x00</span>
+<span class="p">[</span><span class="n">D</span><span class="o">/</span><span class="n">USB</span><span class="p">]</span> <span class="n">Port</span> <span class="mi">1</span><span class="p">,</span> <span class="n">status</span><span class="p">:</span><span class="mh">0x101</span><span class="p">,</span> <span class="n">change</span><span class="p">:</span><span class="mh">0x00</span>
+<span class="p">[</span><span class="n">I</span><span class="o">/</span><span class="n">USB</span><span class="p">]</span> <span class="n">New</span> <span class="n">low</span><span class="o">-</span><span class="n">speed</span> <span class="n">device</span> <span class="n">on</span> <span class="n">Hub</span> <span class="mi">1</span><span class="p">,</span> <span class="n">Port</span> <span class="mi">1</span> <span class="n">connected</span>
+<span class="p">[</span><span class="n">I</span><span class="o">/</span><span class="n">USB</span><span class="p">]</span> <span class="n">New</span> <span class="n">device</span> <span class="n">found</span><span class="p">,</span><span class="n">idVendor</span><span class="p">:</span><span class="mi">413</span><span class="n">c</span><span class="p">,</span><span class="n">idProduct</span><span class="p">:</span><span class="mi">2113</span><span class="p">,</span><span class="n">bcdDevice</span><span class="p">:</span><span class="mi">0108</span>
+<span class="p">[</span><span class="n">I</span><span class="o">/</span><span class="n">USB</span><span class="p">]</span> <span class="n">The</span> <span class="n">device</span> <span class="n">has</span> <span class="mi">2</span> <span class="n">interfaces</span>
+<span class="p">[</span><span class="n">I</span><span class="o">/</span><span class="n">USB</span><span class="p">]</span> <span class="n">Enumeration</span> <span class="n">success</span><span class="p">,</span> <span class="n">start</span> <span class="n">loading</span> <span class="k">class</span> <span class="nc">driver</span>
+<span class="p">[</span><span class="n">I</span><span class="o">/</span><span class="n">USB</span><span class="p">]</span> <span class="n">Loading</span> <span class="n">hid</span> <span class="k">class</span> <span class="nc">driver</span>
+<span class="p">[</span><span class="n">I</span><span class="o">/</span><span class="n">USB</span><span class="p">]</span> <span class="n">Ep</span><span class="o">=</span><span class="mi">81</span> <span class="n">Attr</span><span class="o">=</span><span class="mi">03</span> <span class="n">Mps</span><span class="o">=</span><span class="mi">8</span> <span class="n">Interval</span><span class="o">=</span><span class="mi">24</span> <span class="n">Mult</span><span class="o">=</span><span class="mi">00</span>
+<span class="p">[</span><span class="n">I</span><span class="o">/</span><span class="n">USB</span><span class="p">]</span> <span class="n">Register</span> <span class="n">HID</span> <span class="n">Class</span><span class="p">:</span><span class="o">/</span><span class="n">dev</span><span class="o">/</span><span class="n">input0</span>
+<span class="p">[</span><span class="n">E</span><span class="o">/</span><span class="n">USB</span><span class="p">]</span> <span class="n">do</span> <span class="ow">not</span> <span class="n">support</span> <span class="n">Class</span><span class="p">:</span><span class="mh">0x03</span><span class="p">,</span><span class="n">Subclass</span><span class="p">:</span><span class="mh">0x00</span><span class="p">,</span><span class="n">Protocl</span><span class="p">:</span><span class="mh">0x00</span>
+<span class="n">mount</span> <span class="n">a</span> <span class="n">keyboard</span>
+</pre></div>
+</div>
+<ul class="simple">
+<li><p>When the keyboard is pressed, the data sent by the keyboard will be displayed:</p></li>
+</ul>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="mh">0x00</span> <span class="mh">0x00</span> <span class="mh">0x16</span> <span class="mh">0x00</span> <span class="mh">0x00</span> <span class="mh">0x00</span> <span class="mh">0x00</span> <span class="mh">0x00</span> <span class="n">nbytes</span><span class="p">:</span><span class="mi">8</span>
+<span class="mh">0x00</span> <span class="mh">0x00</span> <span class="mh">0x16</span> <span class="mh">0x07</span> <span class="mh">0x00</span> <span class="mh">0x00</span> <span class="mh">0x00</span> <span class="mh">0x00</span> <span class="n">nbytes</span><span class="p">:</span><span class="mi">8</span>
+<span class="mh">0x00</span> <span class="mh">0x00</span> <span class="mh">0x07</span> <span class="mh">0x00</span> <span class="mh">0x00</span> <span class="mh">0x00</span> <span class="mh">0x00</span> <span class="mh">0x00</span> <span class="n">nbytes</span><span class="p">:</span><span class="mi">8</span>
+<span class="mh">0x00</span> <span class="mh">0x00</span> <span class="mh">0x16</span> <span class="mh">0x00</span> <span class="mh">0x00</span> <span class="mh">0x00</span> <span class="mh">0x00</span> <span class="mh">0x00</span> <span class="n">nbytes</span><span class="p">:</span><span class="mi">8</span>
+<span class="mh">0x00</span> <span class="mh">0x00</span> <span class="mh">0x16</span> <span class="mh">0x07</span> <span class="mh">0x00</span> <span class="mh">0x00</span> <span class="mh">0x00</span> <span class="mh">0x00</span> <span class="n">nbytes</span><span class="p">:</span><span class="mi">8</span>
+<span class="mh">0x00</span> <span class="mh">0x00</span> <span class="mh">0x07</span> <span class="mh">0x00</span> <span class="mh">0x00</span> <span class="mh">0x00</span> <span class="mh">0x00</span> <span class="mh">0x00</span> <span class="n">nbytes</span><span class="p">:</span><span class="mi">8</span>
+<span class="mh">0x00</span> <span class="mh">0x00</span> <span class="mh">0x16</span> <span class="mh">0x00</span> <span class="mh">0x00</span> <span class="mh">0x00</span> <span class="mh">0x00</span> <span class="mh">0x00</span> <span class="n">nbytes</span><span class="p">:</span><span class="mi">8</span>
+</pre></div>
+</div>
+</section>
+<section id="connected-with-a-mouse">
+<h3><span class="section-number">22.7.3.2. </span>Connected with a mouse<a class="headerlink" href="#connected-with-a-mouse" title="Permalink to this heading">¶</a></h3>
+<ul class="simple">
+<li><p>When the USB port0 of the development board is connected with a mouse, the serial port debugging assistant will display the following data:</p></li>
+</ul>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">[</span><span class="n">D</span><span class="o">/</span><span class="n">USB</span><span class="p">]</span> <span class="n">Port</span> <span class="n">change</span><span class="p">:</span><span class="mh">0x02</span>
+<span class="p">[</span><span class="n">D</span><span class="o">/</span><span class="n">USB</span><span class="p">]</span> <span class="n">Port</span> <span class="mi">1</span> <span class="n">change</span>
+<span class="p">[</span><span class="n">D</span><span class="o">/</span><span class="n">USB</span><span class="p">]</span> <span class="n">port</span> <span class="mi">1</span><span class="p">,</span> <span class="n">status</span><span class="p">:</span><span class="mh">0x100</span><span class="p">,</span> <span class="n">change</span><span class="p">:</span><span class="mh">0x01</span>
+<span class="p">[</span><span class="n">D</span><span class="o">/</span><span class="n">USB</span><span class="p">]</span> <span class="n">Port</span> <span class="mi">1</span><span class="p">,</span> <span class="n">status</span><span class="p">:</span><span class="mh">0x101</span><span class="p">,</span> <span class="n">change</span><span class="p">:</span><span class="mh">0x00</span>
+<span class="p">[</span><span class="n">D</span><span class="o">/</span><span class="n">USB</span><span class="p">]</span> <span class="n">Port</span> <span class="mi">1</span><span class="p">,</span> <span class="n">status</span><span class="p">:</span><span class="mh">0x101</span><span class="p">,</span> <span class="n">change</span><span class="p">:</span><span class="mh">0x00</span>
+<span class="p">[</span><span class="n">D</span><span class="o">/</span><span class="n">USB</span><span class="p">]</span> <span class="n">Port</span> <span class="mi">1</span><span class="p">,</span> <span class="n">status</span><span class="p">:</span><span class="mh">0x101</span><span class="p">,</span> <span class="n">change</span><span class="p">:</span><span class="mh">0x00</span>
+<span class="p">[</span><span class="n">D</span><span class="o">/</span><span class="n">USB</span><span class="p">]</span> <span class="n">Port</span> <span class="mi">1</span><span class="p">,</span> <span class="n">status</span><span class="p">:</span><span class="mh">0x101</span><span class="p">,</span> <span class="n">change</span><span class="p">:</span><span class="mh">0x00</span>
+<span class="p">[</span><span class="n">D</span><span class="o">/</span><span class="n">USB</span><span class="p">]</span> <span class="n">Port</span> <span class="mi">1</span><span class="p">,</span> <span class="n">status</span><span class="p">:</span><span class="mh">0x101</span><span class="p">,</span> <span class="n">change</span><span class="p">:</span><span class="mh">0x00</span>
+<span class="p">[</span><span class="n">I</span><span class="o">/</span><span class="n">USB</span><span class="p">]</span> <span class="n">New</span> <span class="n">full</span><span class="o">-</span><span class="n">speed</span> <span class="n">device</span> <span class="n">on</span> <span class="n">Hub</span> <span class="mi">1</span><span class="p">,</span> <span class="n">Port</span> <span class="mi">1</span> <span class="n">connected</span>
+<span class="p">[</span><span class="n">I</span><span class="o">/</span><span class="n">USB</span><span class="p">]</span> <span class="n">New</span> <span class="n">device</span> <span class="n">found</span><span class="p">,</span><span class="n">idVendor</span><span class="p">:</span><span class="mi">046</span><span class="n">d</span><span class="p">,</span><span class="n">idProduct</span><span class="p">:</span><span class="n">c542</span><span class="p">,</span><span class="n">bcdDevice</span><span class="p">:</span><span class="mi">0302</span>
+<span class="p">[</span><span class="n">I</span><span class="o">/</span><span class="n">USB</span><span class="p">]</span> <span class="n">The</span> <span class="n">device</span> <span class="n">has</span> <span class="mi">1</span> <span class="n">interfaces</span>
+<span class="p">[</span><span class="n">I</span><span class="o">/</span><span class="n">USB</span><span class="p">]</span> <span class="n">Enumeration</span> <span class="n">success</span><span class="p">,</span> <span class="n">start</span> <span class="n">loading</span> <span class="k">class</span> <span class="nc">driver</span>
+<span class="p">[</span><span class="n">I</span><span class="o">/</span><span class="n">USB</span><span class="p">]</span> <span class="n">Loading</span> <span class="n">hid</span> <span class="k">class</span> <span class="nc">driver</span>
+<span class="p">[</span><span class="n">I</span><span class="o">/</span><span class="n">USB</span><span class="p">]</span> <span class="n">Ep</span><span class="o">=</span><span class="mi">82</span> <span class="n">Attr</span><span class="o">=</span><span class="mi">03</span> <span class="n">Mps</span><span class="o">=</span><span class="mi">8</span> <span class="n">Interval</span><span class="o">=</span><span class="mi">04</span> <span class="n">Mult</span><span class="o">=</span><span class="mi">00</span>
+<span class="p">[</span><span class="n">I</span><span class="o">/</span><span class="n">USB</span><span class="p">]</span> <span class="n">Register</span> <span class="n">HID</span> <span class="n">Class</span><span class="p">:</span><span class="o">/</span><span class="n">dev</span><span class="o">/</span><span class="n">input0</span>
+<span class="n">mount</span> <span class="n">a</span> <span class="n">mouse</span>
+</pre></div>
+</div>
+<ul class="simple">
+<li><p>When moving or clicking the mouse, the data sent by the mouse will be displayed:</p></li>
+</ul>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="mh">0x01</span> <span class="mh">0x00</span> <span class="mh">0xfa</span> <span class="mh">0xff</span> <span class="mh">0x06</span> <span class="mh">0x00</span> <span class="mh">0x00</span> <span class="n">nbytes</span><span class="p">:</span><span class="mi">7</span>
+<span class="mh">0x01</span> <span class="mh">0x00</span> <span class="mh">0xf8</span> <span class="mh">0xff</span> <span class="mh">0x07</span> <span class="mh">0x00</span> <span class="mh">0x00</span> <span class="n">nbytes</span><span class="p">:</span><span class="mi">7</span>
+<span class="mh">0x01</span> <span class="mh">0x00</span> <span class="mh">0xf7</span> <span class="mh">0xff</span> <span class="mh">0x07</span> <span class="mh">0x00</span> <span class="mh">0x00</span> <span class="n">nbytes</span><span class="p">:</span><span class="mi">7</span>
+<span class="mh">0x01</span> <span class="mh">0x00</span> <span class="mh">0xf5</span> <span class="mh">0xff</span> <span class="mh">0x09</span> <span class="mh">0x00</span> <span class="mh">0x00</span> <span class="n">nbytes</span><span class="p">:</span><span class="mi">7</span>
+<span class="mh">0x01</span> <span class="mh">0x00</span> <span class="mh">0xf4</span> <span class="mh">0xff</span> <span class="mh">0x08</span> <span class="mh">0x00</span> <span class="mh">0x00</span> <span class="n">nbytes</span><span class="p">:</span><span class="mi">7</span>
+</pre></div>
+</div>
+</section>
+</section>
+</section>
+
+
+           </div>
+          </div>
+
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="../../device/msc/ram_disk/README.html" class="btn btn-neutral float-left" title="22.6. USB MSC RAM DISK" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="../msc/README.html" class="btn btn-neutral float-right" title="22.8. USB MSC HOST" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2020-2022, hpmicro.
+      <span class="lastupdated">Last updated on Oct 31, 2022.
+      </span></p>
+  </div>
+
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
