@@ -18,6 +18,7 @@
         <script src="../../static/underscore.js"></script>
         <script src="../../static/_sphinx_javascript_frameworks_compat.js"></script>
         <script src="../../static/doctools.js"></script>
+        <script src="../../static/sphinx_highlight.js"></script>
         <script src="../../static/tabs.js"></script>
         <script type="module" src="../../_static/js/dark-mode-toggle.min.mjs"></script>
         <script src="../../_static/js/ga-tracker.js"></script>
@@ -68,7 +69,7 @@
           </dd>
         
           <dd>
-            <a onclick="RelativeAddress('/0.14.0/html/index_zh.html')">0.14.0</a>
+            <a onclick="RelativeAddress('/1.0.0/html/index_zh.html')">1.0.0</a>
           </dd>
         
       </dl>
@@ -191,7 +192,7 @@
 <h1><span class="section-number">2. </span>HPM6750EVK2开发板<a class="headerlink" href="#hpm6750evk2" title="Permalink to this heading">¶</a></h1>
 <section id="id1">
 <h2><span class="section-number">2.1. </span>概述<a class="headerlink" href="#id1" title="Permalink to this heading">¶</a></h2>
-<p>HPM6750是一款主频达816Mhz的双核微控制器。该芯片拥有最大2M字节的连续片上RAM，并集成了丰富的存储接口，如SDRAM，Quad SPI NOR flash， SD/eMMC卡。同时它也提供多种音视频接口包括LCD显示，像素DMA，摄像头以及I2S音频接口。</p>
+<p>HPM6750是一款主频达816MHz的双核微控制器。该芯片拥有最大2M字节的连续片上RAM，并集成了丰富的存储接口，如SDRAM，Quad SPI NOR flash， SD/eMMC卡。同时它也提供多种音视频接口包括LCD显示，像素DMA，摄像头以及I2S音频接口。</p>
 <p><img alt="hpm6750evk" src="../../images/hpm6750evk2.png" /></p>
 </section>
 <section id="id2">
@@ -232,7 +233,6 @@
 <li><p>其他</p>
 <ul>
 <li><p>TF卡槽</p></li>
-<li><p>FT2232</p></li>
 <li><p>RGB LED</p></li>
 <li><p>CAN</p></li>
 </ul>
@@ -335,30 +335,61 @@
 </section>
 <section id="id6">
 <h2><span class="section-number">2.7. </span>引脚描述<a class="headerlink" href="#id6" title="Permalink to this heading">¶</a></h2>
-<ul>
-<li><p>J12端子的 <code class="docutils literal notranslate"><span class="pre">P-UH</span> <span class="pre">、P-UL</span></code>引脚为PWM输出引脚，如下图所示</p>
-<p><img alt="image-1" src="../../images/hpm6750evk_pwm_output_pin.png" /></p>
-</li>
+<ul class="simple">
+<li><p>UART0串口引脚：</p></li>
+</ul>
+<p>UART0的引脚引出至三个位置：</p>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>功能</p></th>
+<th class="head"><p>引脚</p></th>
+<th class="head"><p>位置1</p></th>
+<th class="head"><p>位置2</p></th>
+<th class="head"><p>位置3</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>UART0.TX</p></td>
+<td><p>PY06</p></td>
+<td><p>J109[1]</p></td>
+<td><p>JTAG P4[7]</p></td>
+<td><p>USB2UART0</p></td>
+</tr>
+<tr class="row-odd"><td><p>UART0.RX</p></td>
+<td><p>PY07</p></td>
+<td><p>J109[3]</p></td>
+<td><p>JTAG P4[9]</p></td>
+<td><p>USB2UART0</p></td>
+</tr>
+</tbody>
+</table>
+<p>注意：使用UART0时，请确保只有一处连接，避免多处连接造成功能不正常。例如，JTAG口连接了UART0，从USB2UART0接口发送数据给UART0就会异常。</p>
+<ul class="simple">
 <li><p>SPI引脚：</p></li>
 </ul>
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>功能</p></th>
+<th class="head"><p>引脚</p></th>
 <th class="head"><p>位置</p></th>
 </tr>
 </thead>
 <tbody>
 <tr class="row-even"><td><p>SPI2.CSN</p></td>
-<td><p>J20[7]</p></td>
+<td><p>PE31</p></td>
+<td><p>J11[7]</p></td>
 </tr>
 <tr class="row-odd"><td><p>SPI2.SCLK</p></td>
-<td><p>J20[8]</p></td>
+<td><p>PE27</p></td>
+<td><p>J11[8]</p></td>
 </tr>
 <tr class="row-even"><td><p>SPI2.MISO</p></td>
-<td><p>J20[9]</p></td>
+<td><p>PE28</p></td>
+<td><p>J11[9]</p></td>
 </tr>
 <tr class="row-odd"><td><p>SPI2.MOSI</p></td>
-<td><p>J20[10]</p></td>
+<td><p>PE30</p></td>
+<td><p>J11[10]</p></td>
 </tr>
 </tbody>
 </table>
@@ -368,15 +399,18 @@
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>功能</p></th>
+<th class="head"><p>引脚</p></th>
 <th class="head"><p>位置</p></th>
 </tr>
 </thead>
 <tbody>
 <tr class="row-even"><td><p>I2C0.SCL</p></td>
-<td><p>J20[3]</p></td>
+<td><p>PZ11</p></td>
+<td><p>J11[3]</p></td>
 </tr>
 <tr class="row-odd"><td><p>I2C0.SDA</p></td>
-<td><p>J20[4]</p></td>
+<td><p>PZ10</p></td>
+<td><p>J11[4]</p></td>
 </tr>
 </tbody>
 </table>
@@ -386,15 +420,39 @@
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>功能</p></th>
+<th class="head"><p>引脚</p></th>
 <th class="head"><p>位置</p></th>
 </tr>
 </thead>
 <tbody>
 <tr class="row-even"><td><p>UART13.TXD</p></td>
-<td><p>J20[5]</p></td>
+<td><p>PZ09</p></td>
+<td><p>J11[5]</p></td>
 </tr>
 <tr class="row-odd"><td><p>UART13.RXD</p></td>
-<td><p>J20[6]</p></td>
+<td><p>PZ08</p></td>
+<td><p>J11[6]</p></td>
+</tr>
+</tbody>
+</table>
+<ul class="simple">
+<li><p>PWM引脚:</p></li>
+</ul>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>功能</p></th>
+<th class="head"><p>引脚</p></th>
+<th class="head"><p>位置</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>PWM2.P[0]</p></td>
+<td><p>PD31</p></td>
+<td><p>J10[14]</p></td>
+</tr>
+<tr class="row-odd"><td><p>PWM2.P[1]</p></td>
+<td><p>PD30</p></td>
+<td><p>J10[13]</p></td>
 </tr>
 </tbody>
 </table>
@@ -404,14 +462,17 @@
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>功能</p></th>
+<th class="head"><p>引脚</p></th>
 <th class="head"><p>位置</p></th>
 </tr>
 </thead>
 <tbody>
 <tr class="row-even"><td><p>CMP.INN6</p></td>
+<td><p>PE21</p></td>
 <td><p>J10[8]</p></td>
 </tr>
 <tr class="row-odd"><td><p>CMP.COMP_1</p></td>
+<td><p>PE25</p></td>
 <td><p>J10[6]</p></td>
 </tr>
 </tbody>
@@ -422,14 +483,17 @@
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>功能</p></th>
+<th class="head"><p>引脚</p></th>
 <th class="head"><p>位置</p></th>
 </tr>
 </thead>
 <tbody>
 <tr class="row-even"><td><p>GPTMR4.CAPT_1</p></td>
+<td><p>PE25</p></td>
 <td><p>J10[6]</p></td>
 </tr>
 <tr class="row-odd"><td><p>GPTMR3.COMP_1</p></td>
+<td><p>PE24</p></td>
 <td><p>J10[7]</p></td>
 </tr>
 </tbody>
@@ -440,17 +504,21 @@
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>功能</p></th>
+<th class="head"><p>引脚</p></th>
 <th class="head"><p>位置</p></th>
 </tr>
 </thead>
 <tbody>
 <tr class="row-even"><td><p>ADC0/1/2.VINP11</p></td>
+<td><p>PE25</p></td>
 <td><p>J10[6]</p></td>
 </tr>
 <tr class="row-odd"><td><p>ADC0/1/2.VINP10</p></td>
+<td><p>PE24</p></td>
 <td><p>J10[7]</p></td>
 </tr>
 <tr class="row-even"><td><p>ADC0/1/2.VINP7</p></td>
+<td><p>PE21</p></td>
 <td><p>J10[8]</p></td>
 </tr>
 </tbody>
@@ -460,13 +528,60 @@
 </ul>
 <table class="docutils align-default">
 <thead>
-<tr class="row-odd"><th class="head text-left"><p>功能</p></th>
+<tr class="row-odd"><th class="head"><p>功能</p></th>
+<th class="head"><p>引脚</p></th>
 <th class="head"><p>位置</p></th>
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td class="text-left"><p>ADC3.INA2</p></td>
+<tr class="row-even"><td><p>ADC3.INA2</p></td>
+<td><p>PE29</p></td>
 <td><p>J10[5]</p></td>
+</tr>
+</tbody>
+</table>
+<ul class="simple">
+<li><p>耳机接口</p></li>
+</ul>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>功能</p></th>
+<th class="head"><p>位置</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>3.5mm耳机接口</p></td>
+<td><p>J13</p></td>
+</tr>
+</tbody>
+</table>
+<ul class="simple">
+<li><p>音频输入接口</p></li>
+</ul>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>功能</p></th>
+<th class="head"><p>位置</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>麦克风</p></td>
+<td><p>P3</p></td>
+</tr>
+</tbody>
+</table>
+<ul class="simple">
+<li><p>DAO接口</p></li>
+</ul>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>功能</p></th>
+<th class="head"><p>位置</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>喇叭接口</p></td>
+<td><p>J12</p></td>
 </tr>
 </tbody>
 </table>
@@ -486,7 +601,7 @@
 
   <div role="contentinfo">
     <p>&#169; Copyright 2020-2022, hpmicro.
-      <span class="lastupdated">Last updated on Oct 31, 2022.
+      <span class="lastupdated">Last updated on Dec 31, 2022.
       </span></p>
   </div>
 

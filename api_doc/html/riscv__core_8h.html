@@ -112,6 +112,9 @@ Macros</h2></td></tr>
 <tr class="memitem:a6e47bb37be423161621eef2bf509a718"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="riscv__core_8h.html#a6e47bb37be423161621eef2bf509a718">clear_csr</a>(csr_num,  bit)&#160;&#160;&#160;__asm volatile(&quot;csrc %0, %1&quot; : : &quot;i&quot;(csr_num), &quot;r&quot;(bit))</td></tr>
 <tr class="memdesc:a6e47bb37be423161621eef2bf509a718"><td class="mdescLeft">&#160;</td><td class="mdescRight">clear bits in csr  <a href="riscv__core_8h.html#a6e47bb37be423161621eef2bf509a718">More...</a><br /></td></tr>
 <tr class="separator:a6e47bb37be423161621eef2bf509a718"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a84c73adc1bddf2271f0faeee407be80c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="riscv__core_8h.html#a84c73adc1bddf2271f0faeee407be80c">read_clear_csr</a>(csr_num,  bit)&#160;&#160;&#160;({ uint32_t v; __asm volatile(&quot;csrrc %0, %1, %2&quot; : &quot;=r&quot;(v) : &quot;i&quot;(csr_num), &quot;r&quot;(bit)); v; })</td></tr>
+<tr class="memdesc:a84c73adc1bddf2271f0faeee407be80c"><td class="mdescLeft">&#160;</td><td class="mdescRight">read and clear bits in csr  <a href="riscv__core_8h.html#a84c73adc1bddf2271f0faeee407be80c">More...</a><br /></td></tr>
+<tr class="separator:a84c73adc1bddf2271f0faeee407be80c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1a8316ee010091f2994d0fc29ff35e95"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="riscv__core_8h.html#a1a8316ee010091f2994d0fc29ff35e95">set_csr</a>(csr_num,  bit)&#160;&#160;&#160;__asm volatile(&quot;csrs %0, %1&quot; : : &quot;i&quot;(csr_num), &quot;r&quot;(bit))</td></tr>
 <tr class="memdesc:a1a8316ee010091f2994d0fc29ff35e95"><td class="mdescLeft">&#160;</td><td class="mdescRight">set bits in csr  <a href="riscv__core_8h.html#a1a8316ee010091f2994d0fc29ff35e95">More...</a><br /></td></tr>
 <tr class="separator:a1a8316ee010091f2994d0fc29ff35e95"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -182,6 +185,44 @@ Macros</h2></td></tr>
 </div><div class="memdoc">
 
 <p>execute fence.i </p>
+
+</div>
+</div>
+<a id="a84c73adc1bddf2271f0faeee407be80c" name="a84c73adc1bddf2271f0faeee407be80c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a84c73adc1bddf2271f0faeee407be80c">&#9670;&#160;</a></span>read_clear_csr</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define read_clear_csr</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">csr_num, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">bit&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>&#160;&#160;&#160;({ uint32_t v; __asm volatile(&quot;csrrc %0, %1, %2&quot; : &quot;=r&quot;(v) : &quot;i&quot;(csr_num), &quot;r&quot;(bit)); v; })</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>read and clear bits in csr </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">csr_num</td><td>specific csr </td></tr>
+    <tr><td class="paramname">bit</td><td>bits to be cleared</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>csr value before cleared </dd></dl>
 
 </div>
 </div>
@@ -338,7 +379,7 @@ Macros</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_ea9599923402ca8ab47fc3e495999dea.html">arch</a></li><li class="navelem"><a class="el" href="dir_3c75b97fd2e926b9d7ac3bb5a854706c.html">riscv</a></li><li class="navelem"><a class="el" href="riscv__core_8h.html">riscv_core.h</a></li>
-    <li class="footer">Generated on Mon Oct 31 2022 20:47:06 for HPM SDK by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
+    <li class="footer">Generated on Sat Dec 31 2022 19:59:43 for HPM SDK by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
   </ul>
 </div>
 </body>

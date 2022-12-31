@@ -4,7 +4,7 @@ var structGPTMR__Type =
     [ "CAPNEG", "structGPTMR__Type.html#a0b657ce536683bce6c184f61b34c3d8a", null ],
     [ "CAPPOS", "structGPTMR__Type.html#a43b760ebccd0301fef0991a8de597d20", null ],
     [ "CAPPRD", "structGPTMR__Type.html#a415b77d63bc876ddae97c80c1e2d7261", null ],
-    [ "CHANNEL", "structGPTMR__Type.html#af7075cdc275631dab0a050d5b97ae824", null ],
+    [ "CHANNEL", "structGPTMR__Type.html#ad6cd1a512079c3cdefdba9546891d5de", null ],
     [ "CMP", "structGPTMR__Type.html#aba199a4bbd16851c732fe7ac22a5639b", null ],
     [ "CNT", "structGPTMR__Type.html#a649ad26ab078134061e627b30f853c52", null ],
     [ "CNTUPTVAL", "structGPTMR__Type.html#a04c90c94aecef11336bbe46ecf953d24", null ],

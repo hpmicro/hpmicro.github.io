@@ -84,7 +84,9 @@ var group__adc16__interface =
     ] ],
     [ "adc16_clear_status_flags", "group__adc16__interface.html#gae51a3a9480885246f0879a2e4b4343fe", null ],
     [ "adc16_disable_interrupts", "group__adc16__interface.html#gaaa08e54b2599803a03f9f762599e4aa1", null ],
+    [ "adc16_disable_temp_sensor", "group__adc16__interface.html#gac709701ab7b5aac39236d75cf8c51af2", null ],
     [ "adc16_enable_interrupts", "group__adc16__interface.html#ga4e3921519adb696b6204f468935cfa02", null ],
+    [ "adc16_enable_temp_sensor", "group__adc16__interface.html#gaa2417746b36c136797f3b96ea207b20d", null ],
     [ "adc16_get_channel_default_config", "group__adc16__interface.html#ga7092dae99754cdaf414a1927bc660764", null ],
     [ "adc16_get_conv_valid_status", "group__adc16__interface.html#ga40ec2d8e61c96342b5c249134dbb9c0a", null ],
     [ "adc16_get_default_config", "group__adc16__interface.html#ga528d2bc629d60cf2a651302d7b0b89de", null ],
@@ -101,5 +103,5 @@ var group__adc16__interface =
     [ "adc16_set_prd_config", "group__adc16__interface.html#gad9104b000a0efa16b6b65e31d2b017ed", null ],
     [ "adc16_set_seq_config", "group__adc16__interface.html#ga74997d3d122564904c4894470e23c220", null ],
     [ "adc16_set_seq_stop_pos", "group__adc16__interface.html#gaa499b8c9719aa2561b5d1a5880b233e3", null ],
-    [ "adc16_trigger_seq_by_sw", "group__adc16__interface.html#ga051f1805fa381d99407532021917e86b", null ]
+    [ "adc16_trigger_seq_by_sw", "group__adc16__interface.html#ga1ba1954e47c0f7dd4f2ad63586f1e0f8", null ]
 ];

@@ -141,7 +141,7 @@ $(document).ready(function(){initNavTree('globals_p.html',''); initResizable(); 
 <li>PCFG_CLOCK_GATE_MODE_ALWAYS_FOLLOW_FLOW&#160;:&#160;<a class="el" href="group__pcfg__interface.html#ga76eb49073b07e1dcfadf66cba2057f0c">hpm_pcfg_drv.h</a></li>
 <li>PCFG_CLOCK_GATE_MODE_ALWAYS_OFF&#160;:&#160;<a class="el" href="group__pcfg__interface.html#ga9b2ed4b7f5f3df390a04f9e8a7e9ce4d">hpm_pcfg_drv.h</a></li>
 <li>PCFG_CLOCK_GATE_MODE_ALWAYS_ON&#160;:&#160;<a class="el" href="group__pcfg__interface.html#ga907bd9192cf96463330b327fc5e6f1d4">hpm_pcfg_drv.h</a></li>
-<li>pcfg_config_debug_stop_source()&#160;:&#160;<a class="el" href="group__pcfg__interface.html#ga055a27d7de5a11cbdc103ccb5264d9c3">hpm_pcfg_drv.h</a></li>
+<li>pcfg_config_debug_stop_notification()&#160;:&#160;<a class="el" href="group__pcfg__interface.html#ga4c426ad8a3c255333cf68e5bb7577f74">hpm_pcfg_drv.h</a></li>
 <li>PCFG_CURRENT_MEASUREMENT_STEP&#160;:&#160;<a class="el" href="hpm__pcfg__drv_8c.html#ad2ae345f4894ff859e808296c354fa27">hpm_pcfg_drv.c</a></li>
 <li>PCFG_DCDC_ADVMODE_DC_C_GET&#160;:&#160;<a class="el" href="hpm__pcfg__regs_8h.html#a366f741dd8d057cb239cbc0ee3a480fe">hpm_pcfg_regs.h</a></li>
 <li>PCFG_DCDC_ADVMODE_DC_C_MASK&#160;:&#160;<a class="el" href="hpm__pcfg__regs_8h.html#a9e413442142d08de565f82dfe0395c6e">hpm_pcfg_regs.h</a></li>
@@ -195,6 +195,9 @@ $(document).ready(function(){initNavTree('globals_p.html',''); initResizable(); 
 <li>PCFG_DCDC_CURRENT_ESTI_EN_MASK&#160;:&#160;<a class="el" href="hpm__pcfg__regs_8h.html#a34cdf209a8313899cce892ed24ec1095">hpm_pcfg_regs.h</a></li>
 <li>PCFG_DCDC_CURRENT_ESTI_EN_SET&#160;:&#160;<a class="el" href="hpm__pcfg__regs_8h.html#a4ea1f7de3bba7f1e2cf4945faeabbcb7">hpm_pcfg_regs.h</a></li>
 <li>PCFG_DCDC_CURRENT_ESTI_EN_SHIFT&#160;:&#160;<a class="el" href="hpm__pcfg__regs_8h.html#a7c5248b2603f727cf8af83af726fc4c9">hpm_pcfg_regs.h</a></li>
+<li>pcfg_dcdc_current_hys_12_5mv&#160;:&#160;<a class="el" href="group__pcfg__interface.html#ggab69c667013b4225b29ea7bf5cd6eef18aded84d404af5087d67492da37c38d828">hpm_pcfg_drv.h</a></li>
+<li>pcfg_dcdc_current_hys_25mv&#160;:&#160;<a class="el" href="group__pcfg__interface.html#ggab69c667013b4225b29ea7bf5cd6eef18a269a211e6254ccc1ad48f6c85ba63a90">hpm_pcfg_drv.h</a></li>
+<li>pcfg_dcdc_current_hys_t&#160;:&#160;<a class="el" href="group__pcfg__interface.html#gab69c667013b4225b29ea7bf5cd6eef18">hpm_pcfg_drv.h</a></li>
 <li>PCFG_DCDC_CURRENT_LEVEL_GET&#160;:&#160;<a class="el" href="hpm__pcfg__regs_8h.html#a6d6676c4a0896844c77cb42c2e12432e">hpm_pcfg_regs.h</a></li>
 <li>PCFG_DCDC_CURRENT_LEVEL_MASK&#160;:&#160;<a class="el" href="hpm__pcfg__regs_8h.html#a7c7496dd92eb18fd26d1f208d40544db">hpm_pcfg_regs.h</a></li>
 <li>PCFG_DCDC_CURRENT_LEVEL_SHIFT&#160;:&#160;<a class="el" href="hpm__pcfg__regs_8h.html#a8ac0754c988a0cb3e1248b79d7a2e175">hpm_pcfg_regs.h</a></li>
@@ -212,10 +215,15 @@ $(document).ready(function(){initNavTree('globals_p.html',''); initResizable(); 
 <li>pcfg_dcdc_enable_power_loss_prot()&#160;:&#160;<a class="el" href="group__pcfg__interface.html#ga5612bd1d6cb03a2381fa3db9c44d09d2">hpm_pcfg_drv.h</a></li>
 <li>pcfg_dcdc_ensable_over_voltage_prot()&#160;:&#160;<a class="el" href="group__pcfg__interface.html#ga3aa31166e3c551ebaf91b7b551096f5b">hpm_pcfg_drv.h</a></li>
 <li>pcfg_dcdc_get_current_level()&#160;:&#160;<a class="el" href="group__pcfg__interface.html#ga21ec5635d0fbfc0488173b0142e99812">hpm_pcfg_drv.h</a>, <a class="el" href="group__pcfg__interface.html#ga21ec5635d0fbfc0488173b0142e99812">hpm_pcfg_drv.c</a></li>
+<li>pcfg_dcdc_get_resume_time_in_cycle()&#160;:&#160;<a class="el" href="group__pcfg__interface.html#gafbf4efc4c6e8e07ab36060de0ea87f36">hpm_pcfg_drv.h</a></li>
+<li>pcfg_dcdc_get_start_time_in_cycle()&#160;:&#160;<a class="el" href="group__pcfg__interface.html#ga2e81ebe00369f5f6e09c7dd863919235">hpm_pcfg_drv.h</a></li>
 <li>pcfg_dcdc_is_measure_current_valid()&#160;:&#160;<a class="el" href="group__pcfg__interface.html#ga1c396c7e60e179996cf2cd3946a5bc99">hpm_pcfg_drv.h</a></li>
 <li>pcfg_dcdc_is_over_voltage()&#160;:&#160;<a class="el" href="group__pcfg__interface.html#gae4f08e4672c7ed5ef4efcfad3ef0d3df">hpm_pcfg_drv.h</a></li>
 <li>pcfg_dcdc_is_power_loss()&#160;:&#160;<a class="el" href="group__pcfg__interface.html#ga9cef7782111ba2502956dcf88b147c0a">hpm_pcfg_drv.h</a></li>
 <li>pcfg_dcdc_is_stable()&#160;:&#160;<a class="el" href="group__pcfg__interface.html#ga500cf3c36adea02c8280fab6dcc73176">hpm_pcfg_drv.h</a></li>
+<li>pcfg_dcdc_lp_current_limit_200ma&#160;:&#160;<a class="el" href="group__pcfg__interface.html#gga1c68326e4f9a18b117487e215b663a29ac5060d97b5a40c60cf2b014432bb4706">hpm_pcfg_drv.h</a></li>
+<li>pcfg_dcdc_lp_current_limit_250ma&#160;:&#160;<a class="el" href="group__pcfg__interface.html#gga1c68326e4f9a18b117487e215b663a29a71b3d876d929e96c7a46076c2ec3816c">hpm_pcfg_drv.h</a></li>
+<li>pcfg_dcdc_lp_current_limit_t&#160;:&#160;<a class="el" href="group__pcfg__interface.html#ga1c68326e4f9a18b117487e215b663a29">hpm_pcfg_drv.h</a></li>
 <li>PCFG_DCDC_LPMODE_STBY_VOLT_GET&#160;:&#160;<a class="el" href="hpm__pcfg__regs_8h.html#af541ae870620f7ea925417d5b08f2e50">hpm_pcfg_regs.h</a></li>
 <li>PCFG_DCDC_LPMODE_STBY_VOLT_MASK&#160;:&#160;<a class="el" href="hpm__pcfg__regs_8h.html#af811ae5453b37c1ae97882d5ab5bccc7">hpm_pcfg_regs.h</a></li>
 <li>PCFG_DCDC_LPMODE_STBY_VOLT_SET&#160;:&#160;<a class="el" href="hpm__pcfg__regs_8h.html#ac1cdef69d0cfdf9928298f23504582c5">hpm_pcfg_regs.h</a></li>
@@ -260,17 +268,18 @@ $(document).ready(function(){initNavTree('globals_p.html',''); initResizable(); 
 <li>PCFG_DCDC_MISC_RC_SCALE_MASK&#160;:&#160;<a class="el" href="hpm__pcfg__regs_8h.html#aee4e2589189c156d164430821b97e170">hpm_pcfg_regs.h</a></li>
 <li>PCFG_DCDC_MISC_RC_SCALE_SET&#160;:&#160;<a class="el" href="hpm__pcfg__regs_8h.html#a60467a833aed86cb66aef7c9fde0eaf7">hpm_pcfg_regs.h</a></li>
 <li>PCFG_DCDC_MISC_RC_SCALE_SHIFT&#160;:&#160;<a class="el" href="hpm__pcfg__regs_8h.html#aedc81b677d7e175f3a0c67b759f99f73">hpm_pcfg_regs.h</a></li>
-<li>PCFG_DCDC_MODE_EXPERT&#160;:&#160;<a class="el" href="group__pcfg__interface.html#ga76748395b16ff688079571e8f50176ab">hpm_pcfg_drv.h</a></li>
-<li>PCFG_DCDC_MODE_GENERIC&#160;:&#160;<a class="el" href="group__pcfg__interface.html#ga8d490a0fcd04d0795428cce8ed5f77fb">hpm_pcfg_drv.h</a></li>
+<li>pcfg_dcdc_mode_basic&#160;:&#160;<a class="el" href="group__pcfg__interface.html#gga8ce9bb6fc809e2360386b68e62881432a6969c79cddde6aa9fb7af5d686150fb8">hpm_pcfg_drv.h</a></li>
+<li>pcfg_dcdc_mode_expert&#160;:&#160;<a class="el" href="group__pcfg__interface.html#gga8ce9bb6fc809e2360386b68e62881432a6ac2ef4a5178f7bc4cceb92107d63e98">hpm_pcfg_drv.h</a></li>
+<li>pcfg_dcdc_mode_general&#160;:&#160;<a class="el" href="group__pcfg__interface.html#gga8ce9bb6fc809e2360386b68e62881432a11cd143824217c48816a07c3d0113083">hpm_pcfg_drv.h</a></li>
 <li>PCFG_DCDC_MODE_MODE_GET&#160;:&#160;<a class="el" href="hpm__pcfg__regs_8h.html#ae6cda20da82d65973ea6c5a432da1774">hpm_pcfg_regs.h</a></li>
 <li>PCFG_DCDC_MODE_MODE_MASK&#160;:&#160;<a class="el" href="hpm__pcfg__regs_8h.html#abecb5bbbc5f4c179fc8c2b2be7b271f7">hpm_pcfg_regs.h</a></li>
 <li>PCFG_DCDC_MODE_MODE_SET&#160;:&#160;<a class="el" href="hpm__pcfg__regs_8h.html#a3756fb95a66a0de505aebbb1d082b3b3">hpm_pcfg_regs.h</a></li>
 <li>PCFG_DCDC_MODE_MODE_SHIFT&#160;:&#160;<a class="el" href="hpm__pcfg__regs_8h.html#ad363b3b6a8e838bf8bff382ec6891b0e">hpm_pcfg_regs.h</a></li>
-<li>PCFG_DCDC_MODE_PERFORMACE&#160;:&#160;<a class="el" href="group__pcfg__interface.html#gaeb96e2d3093a4aa10386cab39b0d227c">hpm_pcfg_drv.h</a></li>
+<li>pcfg_dcdc_mode_off&#160;:&#160;<a class="el" href="group__pcfg__interface.html#gga8ce9bb6fc809e2360386b68e62881432a408e45fce9c649dcc1bdd6fecde27b13">hpm_pcfg_drv.h</a></li>
 <li>PCFG_DCDC_MODE_READY_GET&#160;:&#160;<a class="el" href="hpm__pcfg__regs_8h.html#a5a41e210bb312b805277015265fc6fc0">hpm_pcfg_regs.h</a></li>
 <li>PCFG_DCDC_MODE_READY_MASK&#160;:&#160;<a class="el" href="hpm__pcfg__regs_8h.html#a53d0b172ac928a6ac7d52ed6b9c1c3bd">hpm_pcfg_regs.h</a></li>
 <li>PCFG_DCDC_MODE_READY_SHIFT&#160;:&#160;<a class="el" href="hpm__pcfg__regs_8h.html#a13b9fb3ee044e8b2f6d25db16059b9cf">hpm_pcfg_regs.h</a></li>
-<li>PCFG_DCDC_MODE_TURN_OFF&#160;:&#160;<a class="el" href="group__pcfg__interface.html#gab00a4e052e88f9caf25917578e3cd811">hpm_pcfg_drv.h</a></li>
+<li>pcfg_dcdc_mode_t&#160;:&#160;<a class="el" href="group__pcfg__interface.html#ga8ce9bb6fc809e2360386b68e62881432">hpm_pcfg_drv.h</a></li>
 <li>PCFG_DCDC_MODE_VOLT_GET&#160;:&#160;<a class="el" href="hpm__pcfg__regs_8h.html#ab2ac2762cc97f66960b1033962e23910">hpm_pcfg_regs.h</a></li>
 <li>PCFG_DCDC_MODE_VOLT_MASK&#160;:&#160;<a class="el" href="hpm__pcfg__regs_8h.html#a09223237831549974ecb01e4d8f07031">hpm_pcfg_regs.h</a></li>
 <li>PCFG_DCDC_MODE_VOLT_SET&#160;:&#160;<a class="el" href="hpm__pcfg__regs_8h.html#a7ab70732b64a94ed7f565c19e67477a6">hpm_pcfg_regs.h</a></li>
@@ -312,9 +321,12 @@ $(document).ready(function(){initNavTree('globals_p.html',''); initResizable(); 
 <li>PCFG_DCDC_RESUME_TIME_RESUME_TIME_MASK&#160;:&#160;<a class="el" href="hpm__pcfg__regs_8h.html#a3fed880f5ed3470e400e0839e81eccc7">hpm_pcfg_regs.h</a></li>
 <li>PCFG_DCDC_RESUME_TIME_RESUME_TIME_SET&#160;:&#160;<a class="el" href="hpm__pcfg__regs_8h.html#aba4b6e50289ebf9b16192f1c9e184d39">hpm_pcfg_regs.h</a></li>
 <li>PCFG_DCDC_RESUME_TIME_RESUME_TIME_SHIFT&#160;:&#160;<a class="el" href="hpm__pcfg__regs_8h.html#af411d184e58ce0e9b6e6c0962614587b">hpm_pcfg_regs.h</a></li>
-<li>pcfg_dcdc_set_lp_current_limit()&#160;:&#160;<a class="el" href="group__pcfg__interface.html#ga7880f8ea3596d0c4a44573dd23b164a3">hpm_pcfg_drv.h</a></li>
-<li>pcfg_dcdc_set_lpmode_voltage()&#160;:&#160;<a class="el" href="group__pcfg__interface.html#gae7d759a18709e354b54515d2ac82148c">hpm_pcfg_drv.h</a></li>
+<li>pcfg_dcdc_set_current_hys_range()&#160;:&#160;<a class="el" href="group__pcfg__interface.html#ga25218d77fcfb144b43516d4f5a2dab8a">hpm_pcfg_drv.h</a></li>
+<li>pcfg_dcdc_set_lp_current_limit()&#160;:&#160;<a class="el" href="group__pcfg__interface.html#gae490e8f6e5aad325e742223c1a8c7cd9">hpm_pcfg_drv.h</a></li>
+<li>pcfg_dcdc_set_lpmode_voltage()&#160;:&#160;<a class="el" href="group__pcfg__interface.html#gae7d759a18709e354b54515d2ac82148c">hpm_pcfg_drv.h</a>, <a class="el" href="group__pcfg__interface.html#gae7d759a18709e354b54515d2ac82148c">hpm_pcfg_drv.c</a></li>
 <li>pcfg_dcdc_set_mode()&#160;:&#160;<a class="el" href="group__pcfg__interface.html#ga89dd5a7e185c2ff174969213b3016df9">hpm_pcfg_drv.h</a></li>
+<li>pcfg_dcdc_set_resume_time_in_cycle()&#160;:&#160;<a class="el" href="group__pcfg__interface.html#gab0d0f78ce917bce3436b7d0a77b46aa9">hpm_pcfg_drv.h</a></li>
+<li>pcfg_dcdc_set_start_time_in_cycle()&#160;:&#160;<a class="el" href="group__pcfg__interface.html#gacd16a9214602fc62a9570a2ac26640b3">hpm_pcfg_drv.h</a></li>
 <li>pcfg_dcdc_set_voltage()&#160;:&#160;<a class="el" href="group__pcfg__interface.html#ga23eceb2163d0c2534ab504b4fe6583a8">hpm_pcfg_drv.h</a>, <a class="el" href="group__pcfg__interface.html#ga23eceb2163d0c2534ab504b4fe6583a8">hpm_pcfg_drv.c</a></li>
 <li>PCFG_DCDC_START_TIME_START_TIME_GET&#160;:&#160;<a class="el" href="hpm__pcfg__regs_8h.html#a6a8fbd6593f6ec95fd635652015e59c8">hpm_pcfg_regs.h</a></li>
 <li>PCFG_DCDC_START_TIME_START_TIME_MASK&#160;:&#160;<a class="el" href="hpm__pcfg__regs_8h.html#a47bddf68e82ff9671d21f8b413ea5f71">hpm_pcfg_regs.h</a></li>
@@ -332,14 +344,16 @@ $(document).ready(function(){initNavTree('globals_p.html',''); initResizable(); 
 <li>PCFG_DEBUG_STOP_SOURCE_DISABLE_CORE1&#160;:&#160;<a class="el" href="group__pcfg__interface.html#ga9591111cc942c379f28cc5d9fb9ae1e3">hpm_pcfg_drv.h</a></li>
 <li>PCFG_DEBUG_STOP_SOURCE_ENABLE_CORE0&#160;:&#160;<a class="el" href="group__pcfg__interface.html#ga1768d361cad03e9d5432272578efb689">hpm_pcfg_drv.h</a></li>
 <li>PCFG_DEBUG_STOP_SOURCE_ENABLE_CORE1&#160;:&#160;<a class="el" href="group__pcfg__interface.html#gad3478218270f69932b4b07d43955c90d">hpm_pcfg_drv.h</a></li>
+<li>pcfg_disable_cpu0_debug_stop_notfication()&#160;:&#160;<a class="el" href="group__pcfg__interface.html#ga935615d6f155a1e34d31e91dfa724687">hpm_pcfg_drv.h</a></li>
+<li>pcfg_disable_cpu1_debug_stop_notfication()&#160;:&#160;<a class="el" href="group__pcfg__interface.html#ga2c96e164545077449b21994d94ebb283">hpm_pcfg_drv.h</a></li>
 <li>pcfg_disable_dcdc_retention()&#160;:&#160;<a class="el" href="group__pcfg__interface.html#ga47ea944943e15ad4ec89520799f3507a">hpm_pcfg_drv.h</a></li>
 <li>pcfg_disable_power_trap()&#160;:&#160;<a class="el" href="group__pcfg__interface.html#gae0d0211371d35e8c8435fc2ce9034009">hpm_pcfg_drv.h</a></li>
 <li>pcfg_disable_wakeup_source()&#160;:&#160;<a class="el" href="group__pcfg__interface.html#ga9633fef8f90cdfff04d9a03c0561f433">hpm_pcfg_drv.h</a></li>
+<li>pcfg_enable_cpu0_debug_stop_notfication()&#160;:&#160;<a class="el" href="group__pcfg__interface.html#ga62d2e09d0399a0304e8407b26ec0f755">hpm_pcfg_drv.h</a></li>
+<li>pcfg_enable_cpu1_debug_stop_notfication()&#160;:&#160;<a class="el" href="group__pcfg__interface.html#gae6339a5aeea51aa3021551e951b13cb3">hpm_pcfg_drv.h</a></li>
 <li>pcfg_enable_dcdc_retention()&#160;:&#160;<a class="el" href="group__pcfg__interface.html#gaf3068bda81630f4e6ec60c497d77b01a">hpm_pcfg_drv.h</a></li>
 <li>pcfg_enable_power_trap()&#160;:&#160;<a class="el" href="group__pcfg__interface.html#ga139c758b419bbf416cd773b65c41d177">hpm_pcfg_drv.h</a></li>
 <li>pcfg_enable_wakeup_source()&#160;:&#160;<a class="el" href="group__pcfg__interface.html#gad80900699a7e9276d84ba0ad739ae357">hpm_pcfg_drv.h</a></li>
-<li>pcfg_get_dcdc_resume_time_in_cycle()&#160;:&#160;<a class="el" href="group__pcfg__interface.html#ga80c4fe53f77cf4058f44d118cd69cc8d">hpm_pcfg_drv.h</a></li>
-<li>pcfg_get_dcdc_start_time_in_cycle()&#160;:&#160;<a class="el" href="group__pcfg__interface.html#gac0bff37be542a8c997b360d0d2105074">hpm_pcfg_drv.h</a></li>
 <li>pcfg_get_wakeup_cause()&#160;:&#160;<a class="el" href="group__pcfg__interface.html#gae68502324b23f56153a1a471b2e32560">hpm_pcfg_drv.h</a></li>
 <li>pcfg_irc24m_config_track()&#160;:&#160;<a class="el" href="group__pcfg__interface.html#ga12c395d9b8f42ca1da12cc4146ab43f3">hpm_pcfg_drv.h</a>, <a class="el" href="group__pcfg__interface.html#ga12c395d9b8f42ca1da12cc4146ab43f3">hpm_pcfg_drv.c</a></li>
 <li>pcfg_irc24m_is_trimmed()&#160;:&#160;<a class="el" href="group__pcfg__interface.html#gaada6a35555ac757f9c50ca44ad36213e">hpm_pcfg_drv.h</a></li>
@@ -374,16 +388,19 @@ $(document).ready(function(){initNavTree('globals_p.html',''); initResizable(); 
 <li>PCFG_LDO2P5_VOLT_MASK&#160;:&#160;<a class="el" href="hpm__pcfg__regs_8h.html#a72a77c70977048616d5dd846dadb9371">hpm_pcfg_regs.h</a></li>
 <li>PCFG_LDO2P5_VOLT_SET&#160;:&#160;<a class="el" href="hpm__pcfg__regs_8h.html#a9069ad762c9bb19e45ba2d38cda8f0ae">hpm_pcfg_regs.h</a></li>
 <li>PCFG_LDO2P5_VOLT_SHIFT&#160;:&#160;<a class="el" href="hpm__pcfg__regs_8h.html#ab68e2a5870d82f43a34028a36f44e383">hpm_pcfg_regs.h</a></li>
-<li>pcfg_module_debug&#160;:&#160;<a class="el" href="group__pcfg__interface.html#ggaffa49d3c799c8aa54f7179a52ae1307ca92efd90bafa33f20e00ef376c2880588">hpm_pcfg_drv.h</a></li>
-<li>pcfg_module_fuse&#160;:&#160;<a class="el" href="group__pcfg__interface.html#ggaffa49d3c799c8aa54f7179a52ae1307ca5e406a53f8a5ded2036b19706798a748">hpm_pcfg_drv.h</a></li>
-<li>pcfg_module_gpio&#160;:&#160;<a class="el" href="group__pcfg__interface.html#ggaffa49d3c799c8aa54f7179a52ae1307ca248638cf6a367cf888807f380de78be9">hpm_pcfg_drv.h</a></li>
-<li>pcfg_module_ioc&#160;:&#160;<a class="el" href="group__pcfg__interface.html#ggaffa49d3c799c8aa54f7179a52ae1307caace4346a2827fe5e32eff4c24a856717">hpm_pcfg_drv.h</a></li>
-<li>pcfg_module_sram&#160;:&#160;<a class="el" href="group__pcfg__interface.html#ggaffa49d3c799c8aa54f7179a52ae1307ca5fca8b646cde191103e391762329aa00">hpm_pcfg_drv.h</a></li>
-<li>pcfg_module_t&#160;:&#160;<a class="el" href="group__pcfg__interface.html#gaffa49d3c799c8aa54f7179a52ae1307c">hpm_pcfg_drv.h</a></li>
-<li>pcfg_module_timer&#160;:&#160;<a class="el" href="group__pcfg__interface.html#ggaffa49d3c799c8aa54f7179a52ae1307cabee8d4d61d6652696a04f7cfdfabadbd">hpm_pcfg_drv.h</a></li>
-<li>pcfg_module_uart&#160;:&#160;<a class="el" href="group__pcfg__interface.html#ggaffa49d3c799c8aa54f7179a52ae1307ca5ebb6927e942d7dac3712b7b8081ccb1">hpm_pcfg_drv.h</a></li>
-<li>pcfg_module_vad&#160;:&#160;<a class="el" href="group__pcfg__interface.html#ggaffa49d3c799c8aa54f7179a52ae1307ca39e0f09aa9bd147076505f4d3a6de001">hpm_pcfg_drv.h</a></li>
-<li>pcfg_module_wdog&#160;:&#160;<a class="el" href="group__pcfg__interface.html#ggaffa49d3c799c8aa54f7179a52ae1307ca147a10a753bfd430748287ee1f7ad319">hpm_pcfg_drv.h</a></li>
+<li>PCFG_PERIPH_KEEP_CLOCK_OFF&#160;:&#160;<a class="el" href="group__pcfg__interface.html#ga27dd029abaa50d3b551e201a3ee6a08e">hpm_pcfg_drv.h</a></li>
+<li>PCFG_PERIPH_KEEP_CLOCK_ON&#160;:&#160;<a class="el" href="group__pcfg__interface.html#gac64ef2e43505826af4345b0f0c7054e7">hpm_pcfg_drv.h</a></li>
+<li>PCFG_PERIPH_SET_CLOCK_AUTO&#160;:&#160;<a class="el" href="group__pcfg__interface.html#ga595b3e060d9b0f8c1f4efa3987dd2513">hpm_pcfg_drv.h</a></li>
+<li>pcfg_pmc_periph_debug&#160;:&#160;<a class="el" href="group__pcfg__interface.html#gga4471d0183b961ae9bdb70f1b98a988a6a9ee71126ca0802136cec0ab14fc77dd0">hpm_pcfg_drv.h</a></li>
+<li>pcfg_pmc_periph_fuse&#160;:&#160;<a class="el" href="group__pcfg__interface.html#gga4471d0183b961ae9bdb70f1b98a988a6a26c4840c7dfbfc51c5c1dc85ee4e2ca0">hpm_pcfg_drv.h</a></li>
+<li>pcfg_pmc_periph_gpio&#160;:&#160;<a class="el" href="group__pcfg__interface.html#gga4471d0183b961ae9bdb70f1b98a988a6ae98d785364769c900e17fbd54b1413c1">hpm_pcfg_drv.h</a></li>
+<li>pcfg_pmc_periph_ioc&#160;:&#160;<a class="el" href="group__pcfg__interface.html#gga4471d0183b961ae9bdb70f1b98a988a6adeed753d24e0d99f672203806b2c49d7">hpm_pcfg_drv.h</a></li>
+<li>pcfg_pmc_periph_ram&#160;:&#160;<a class="el" href="group__pcfg__interface.html#gga4471d0183b961ae9bdb70f1b98a988a6a7d8bef6f359e5860a4569ec3cf7a6fec">hpm_pcfg_drv.h</a></li>
+<li>pcfg_pmc_periph_t&#160;:&#160;<a class="el" href="group__pcfg__interface.html#ga4471d0183b961ae9bdb70f1b98a988a6">hpm_pcfg_drv.h</a></li>
+<li>pcfg_pmc_periph_timer&#160;:&#160;<a class="el" href="group__pcfg__interface.html#gga4471d0183b961ae9bdb70f1b98a988a6a768ac104f3f92f2957e72835b574951b">hpm_pcfg_drv.h</a></li>
+<li>pcfg_pmc_periph_uart&#160;:&#160;<a class="el" href="group__pcfg__interface.html#gga4471d0183b961ae9bdb70f1b98a988a6aa518ad33f2409e21e50aa89e7a418b38">hpm_pcfg_drv.h</a></li>
+<li>pcfg_pmc_periph_vad&#160;:&#160;<a class="el" href="group__pcfg__interface.html#gga4471d0183b961ae9bdb70f1b98a988a6a9742741dcd73788768b52fed14b32adc">hpm_pcfg_drv.h</a></li>
+<li>pcfg_pmc_periph_wdog&#160;:&#160;<a class="el" href="group__pcfg__interface.html#gga4471d0183b961ae9bdb70f1b98a988a6af80646f30b0257d6fbc19925cb44d002">hpm_pcfg_drv.h</a></li>
 <li>PCFG_POWER_TRAP_RETENTION_GET&#160;:&#160;<a class="el" href="hpm__pcfg__regs_8h.html#ad75eafc3e7aa8c1f0e550c1e8c31da22">hpm_pcfg_regs.h</a></li>
 <li>PCFG_POWER_TRAP_RETENTION_MASK&#160;:&#160;<a class="el" href="hpm__pcfg__regs_8h.html#a319b01b93b755d43c218264c996729f7">hpm_pcfg_regs.h</a></li>
 <li>PCFG_POWER_TRAP_RETENTION_SET&#160;:&#160;<a class="el" href="hpm__pcfg__regs_8h.html#a1260af7fefb511963e934a6bd250dbd9">hpm_pcfg_regs.h</a></li>
@@ -425,9 +442,7 @@ $(document).ready(function(){initNavTree('globals_p.html',''); initResizable(); 
 <li>PCFG_SCG_CTRL_SCG_MASK&#160;:&#160;<a class="el" href="hpm__pcfg__regs_8h.html#a3c29f2c716d98803f37fb91f7d16cf0a">hpm_pcfg_regs.h</a></li>
 <li>PCFG_SCG_CTRL_SCG_SET&#160;:&#160;<a class="el" href="hpm__pcfg__regs_8h.html#a575acd03afc4cd14112302a61e4caabd">hpm_pcfg_regs.h</a></li>
 <li>PCFG_SCG_CTRL_SCG_SHIFT&#160;:&#160;<a class="el" href="hpm__pcfg__regs_8h.html#a6e15fa7acaa38b445af43fc310a121af">hpm_pcfg_regs.h</a></li>
-<li>pcfg_set_clock_gate_in_pmic()&#160;:&#160;<a class="el" href="group__pcfg__interface.html#gaea0abf6828ed933346302bc13ecaa8b7">hpm_pcfg_drv.h</a></li>
-<li>pcfg_set_dcdc_resume_time_in_cycle()&#160;:&#160;<a class="el" href="group__pcfg__interface.html#ga5aaa54f9d9ecbe6f8a4fc7a8ee4f1f21">hpm_pcfg_drv.h</a></li>
-<li>pcfg_set_dcdc_start_time_in_cycle()&#160;:&#160;<a class="el" href="group__pcfg__interface.html#ga700aed28d5fe936d2e7d4749d28190ed">hpm_pcfg_drv.h</a></li>
+<li>pcfg_set_periph_clock_mode()&#160;:&#160;<a class="el" href="group__pcfg__interface.html#ga87f910607d0913e9846f38dcd0eb4299">hpm_pcfg_drv.h</a></li>
 <li>PCFG_SOC_DCDC_MAX_VOLTAGE_IN_MV&#160;:&#160;<a class="el" href="HPM6360_2hpm__soc__feature_8h.html#afcbc934b8eb31f77e912a27481ed733b">hpm_soc_feature.h</a></li>
 <li>PCFG_SOC_DCDC_MIN_VOLTAGE_IN_MV&#160;:&#160;<a class="el" href="HPM6360_2hpm__soc__feature_8h.html#ae8859218911c51e1e47f00172a10cbeb">hpm_soc_feature.h</a></li>
 <li>PCFG_SOC_LDO1P1_MAX_VOLTAGE_IN_MV&#160;:&#160;<a class="el" href="HPM6360_2hpm__soc__feature_8h.html#a24fa84784adbadd1335c866c645dcb31">hpm_soc_feature.h</a></li>
@@ -810,7 +825,7 @@ $(document).ready(function(){initNavTree('globals_p.html',''); initResizable(); 
 <li>PDMA_OUT_PS_ULC_Y_SET&#160;:&#160;<a class="el" href="hpm__pdma__regs_8h.html#ac44c123248409b3c0c434f2b5f79d07e">hpm_pdma_regs.h</a></li>
 <li>PDMA_OUT_PS_ULC_Y_SHIFT&#160;:&#160;<a class="el" href="hpm__pdma__regs_8h.html#a3cd40a07a1e7cba3c5d5cbcd84b6847c">hpm_pdma_regs.h</a></li>
 <li>pdma_output_config_t&#160;:&#160;<a class="el" href="group__pdma__interface.html#ga224467e058590d488dcd3bbecf21d9d7">hpm_pdma_drv.h</a></li>
-<li>pdma_pixel_format()&#160;:&#160;<a class="el" href="hpm__pdma__drv_8c.html#aadaee02fb01d37914f998b3d665408db">hpm_pdma_drv.c</a></li>
+<li>pdma_pixel_format()&#160;:&#160;<a class="el" href="hpm__pdma__drv_8c.html#a9164b4fa26cd3dd398012ce97103bd95">hpm_pdma_drv.c</a></li>
 <li>pdma_plane&#160;:&#160;<a class="el" href="group__pdma__interface.html#ga0d60d4d77cbe8886819f1d5aeba54be0">hpm_pdma_drv.h</a></li>
 <li>pdma_plane_both&#160;:&#160;<a class="el" href="group__pdma__interface.html#gga0d60d4d77cbe8886819f1d5aeba54be0a0fbb1db30c5d2b82ccd717b57ebac777">hpm_pdma_drv.h</a></li>
 <li>pdma_plane_config_t&#160;:&#160;<a class="el" href="group__pdma__interface.html#ga5920b9855c54afba6ad776dd016b8546">hpm_pdma_drv.h</a></li>
@@ -1035,6 +1050,7 @@ $(document).ready(function(){initNavTree('globals_p.html',''); initResizable(); 
 <li>PDMA_YUV2RGB_COEF2_C3_MASK&#160;:&#160;<a class="el" href="hpm__pdma__regs_8h.html#a9201241adba499930523c68dd1ed8f40">hpm_pdma_regs.h</a></li>
 <li>PDMA_YUV2RGB_COEF2_C3_SET&#160;:&#160;<a class="el" href="hpm__pdma__regs_8h.html#a3e6111c5d642f23d330681e9914b1363">hpm_pdma_regs.h</a></li>
 <li>PDMA_YUV2RGB_COEF2_C3_SHIFT&#160;:&#160;<a class="el" href="hpm__pdma__regs_8h.html#a521ffd116490c0208a23bd7ab34cb870">hpm_pdma_regs.h</a></li>
+<li>PDMA_YUV_SCALE_DEFAULT_X_OFFSET&#160;:&#160;<a class="el" href="hpm__pdma__drv_8c.html#a1a08b10e3d0517422d287427c019dd9b">hpm_pdma_drv.c</a></li>
 <li>period_in_ns&#160;:&#160;<a class="el" href="hpm__i2c__drv_8c.html#a44f857b2d4c075fb9862168f9f68aa48">hpm_i2c_drv.c</a></li>
 <li>PGPR_PMIC_GPR00_GPR_GET&#160;:&#160;<a class="el" href="hpm__pgpr__regs_8h.html#ab2f9b7ea2abed3b59a98699a09066288">hpm_pgpr_regs.h</a></li>
 <li>PGPR_PMIC_GPR00_GPR_MASK&#160;:&#160;<a class="el" href="hpm__pgpr__regs_8h.html#a501f9c33bad21bd236f7b31344b95569">hpm_pgpr_regs.h</a></li>
@@ -1114,10 +1130,6 @@ $(document).ready(function(){initNavTree('globals_p.html',''); initResizable(); 
 <li>PLIC_INFO_VERSION_GET&#160;:&#160;<a class="el" href="hpm__plic__regs_8h.html#a478f8a6ba8fd1e2d59f44385d7563962">hpm_plic_regs.h</a></li>
 <li>PLIC_INFO_VERSION_MASK&#160;:&#160;<a class="el" href="hpm__plic__regs_8h.html#a5947ce87622ee4ebf8dfb8ecbd4b5c7c">hpm_plic_regs.h</a></li>
 <li>PLIC_INFO_VERSION_SHIFT&#160;:&#160;<a class="el" href="hpm__plic__regs_8h.html#a6afa0c41628f4ebec38f4fab7865eec5">hpm_plic_regs.h</a></li>
-<li>PLIC_INTEN_INTERRUPT_GET&#160;:&#160;<a class="el" href="hpm__plic__regs_8h.html#abad21530492b9008de3427ceb99b6fe2">hpm_plic_regs.h</a></li>
-<li>PLIC_INTEN_INTERRUPT_MASK&#160;:&#160;<a class="el" href="hpm__plic__regs_8h.html#a67a57e3f647147550e2f80cf142f7ac2">hpm_plic_regs.h</a></li>
-<li>PLIC_INTEN_INTERRUPT_SET&#160;:&#160;<a class="el" href="hpm__plic__regs_8h.html#ab2e11df4aa908403826056777514a512">hpm_plic_regs.h</a></li>
-<li>PLIC_INTEN_INTERRUPT_SHIFT&#160;:&#160;<a class="el" href="hpm__plic__regs_8h.html#ad8284daf354aadf99a46c2ffbcfcae69">hpm_plic_regs.h</a></li>
 <li>PLIC_NUMBER_NUM_INTERRUPT_GET&#160;:&#160;<a class="el" href="hpm__plic__regs_8h.html#a3b42341fbe26dc1ce46fd6f9d095326b">hpm_plic_regs.h</a></li>
 <li>PLIC_NUMBER_NUM_INTERRUPT_MASK&#160;:&#160;<a class="el" href="hpm__plic__regs_8h.html#ac92c8c5b6f6c24adbaf57f81d046ffb9">hpm_plic_regs.h</a></li>
 <li>PLIC_NUMBER_NUM_INTERRUPT_SHIFT&#160;:&#160;<a class="el" href="hpm__plic__regs_8h.html#ad6c3eef4d0cd407625f83851b0d0e202">hpm_plic_regs.h</a></li>
@@ -1293,6 +1305,10 @@ $(document).ready(function(){initNavTree('globals_p.html',''); initResizable(); 
 <li>PLIC_TARGETINT_INTEN_INTEN1&#160;:&#160;<a class="el" href="hpm__plic__regs_8h.html#a265423339064773c4d0fbb5b255c2a54">hpm_plic_regs.h</a></li>
 <li>PLIC_TARGETINT_INTEN_INTEN2&#160;:&#160;<a class="el" href="hpm__plic__regs_8h.html#aa4ebe09c2fa099965519f83fc9438d7d">hpm_plic_regs.h</a></li>
 <li>PLIC_TARGETINT_INTEN_INTEN3&#160;:&#160;<a class="el" href="hpm__plic__regs_8h.html#a290f1587e873afcbb21df32f2be78322">hpm_plic_regs.h</a></li>
+<li>PLIC_TARGETINT_INTEN_INTERRUPT_GET&#160;:&#160;<a class="el" href="hpm__plic__regs_8h.html#a0d0a4ad287f60aef477ce5b23e6d632d">hpm_plic_regs.h</a></li>
+<li>PLIC_TARGETINT_INTEN_INTERRUPT_MASK&#160;:&#160;<a class="el" href="hpm__plic__regs_8h.html#a05120924206eea5e1ce314638d4c8a32">hpm_plic_regs.h</a></li>
+<li>PLIC_TARGETINT_INTEN_INTERRUPT_SET&#160;:&#160;<a class="el" href="hpm__plic__regs_8h.html#a3fbc6aa151f6329b28cf6afe7d6a134c">hpm_plic_regs.h</a></li>
+<li>PLIC_TARGETINT_INTEN_INTERRUPT_SHIFT&#160;:&#160;<a class="el" href="hpm__plic__regs_8h.html#a0d86f1621e6fee0b5d511e9515df025a">hpm_plic_regs.h</a></li>
 <li>PLIC_TARGETINT_TARGET0&#160;:&#160;<a class="el" href="hpm__plic__regs_8h.html#a8ff44177ad39df4cab83b9702f515371">hpm_plic_regs.h</a></li>
 <li>PLIC_TARGETINT_TARGET1&#160;:&#160;<a class="el" href="hpm__plic__regs_8h.html#af57ca7aef90278de23e0affc08c09dab">hpm_plic_regs.h</a></li>
 <li>PLIC_TRIGGER_INTERRUPT_GET&#160;:&#160;<a class="el" href="hpm__plic__regs_8h.html#a9c510807400a8342e6066e65cd251f6b">hpm_plic_regs.h</a></li>
@@ -1486,19 +1502,6 @@ $(document).ready(function(){initNavTree('globals_p.html',''); initResizable(); 
 <li>PLLCTLV2_CLK_SRC_IRC24M&#160;:&#160;<a class="el" href="hpm__pllctlv2__drv_8h.html#ab565841c392138a2a556df7fb913957c">hpm_pllctlv2_drv.h</a></li>
 <li>PLLCTLV2_CLK_SRC_XTAL24M&#160;:&#160;<a class="el" href="hpm__pllctlv2__drv_8h.html#a238ce1f49e6e964d3b7968950c18c709">hpm_pllctlv2_drv.h</a></li>
 <li>pllctlv2_disable_spread_spectrum()&#160;:&#160;<a class="el" href="group__pllctlv2__interface.html#gaab6e8ae0bcedf38f02b74757d878426e">hpm_pllctlv2_drv.h</a></li>
-<li>PLLCTLV2_DIV_BUSY_GET&#160;:&#160;<a class="el" href="hpm__pllctlv2__regs_8h.html#ad29bcd9f88bea2182ea7545b7334a73e">hpm_pllctlv2_regs.h</a></li>
-<li>PLLCTLV2_DIV_BUSY_MASK&#160;:&#160;<a class="el" href="hpm__pllctlv2__regs_8h.html#a09dea2c974e90ac745c98b8059dbdaaf">hpm_pllctlv2_regs.h</a></li>
-<li>PLLCTLV2_DIV_BUSY_SHIFT&#160;:&#160;<a class="el" href="hpm__pllctlv2__regs_8h.html#adaff0ec2f161b47fa3750364c196307f">hpm_pllctlv2_regs.h</a></li>
-<li>PLLCTLV2_DIV_DIV_GET&#160;:&#160;<a class="el" href="hpm__pllctlv2__regs_8h.html#a4d864f261096ab9a20e359475a792faa">hpm_pllctlv2_regs.h</a></li>
-<li>PLLCTLV2_DIV_DIV_MASK&#160;:&#160;<a class="el" href="hpm__pllctlv2__regs_8h.html#a00ba72ade3cfc5e3eebef12a2a7e50e7">hpm_pllctlv2_regs.h</a></li>
-<li>PLLCTLV2_DIV_DIV_SET&#160;:&#160;<a class="el" href="hpm__pllctlv2__regs_8h.html#ad56185653ccafb4251dac7d521cd4f78">hpm_pllctlv2_regs.h</a></li>
-<li>PLLCTLV2_DIV_DIV_SHIFT&#160;:&#160;<a class="el" href="hpm__pllctlv2__regs_8h.html#a8796b3377a41170ebf9293c6c221d14f">hpm_pllctlv2_regs.h</a></li>
-<li>PLLCTLV2_DIV_ENABLE_GET&#160;:&#160;<a class="el" href="hpm__pllctlv2__regs_8h.html#ab082d6612b18162fafd0784f0cb3cb9c">hpm_pllctlv2_regs.h</a></li>
-<li>PLLCTLV2_DIV_ENABLE_MASK&#160;:&#160;<a class="el" href="hpm__pllctlv2__regs_8h.html#a7e793386911f6ba67a25859569ecfe51">hpm_pllctlv2_regs.h</a></li>
-<li>PLLCTLV2_DIV_ENABLE_SHIFT&#160;:&#160;<a class="el" href="hpm__pllctlv2__regs_8h.html#aab7d75203848ad5ecfca2055d6c9e8a6">hpm_pllctlv2_regs.h</a></li>
-<li>PLLCTLV2_DIV_RESPONSE_GET&#160;:&#160;<a class="el" href="hpm__pllctlv2__regs_8h.html#afc5cecb702b53cb81624a37177f64cde">hpm_pllctlv2_regs.h</a></li>
-<li>PLLCTLV2_DIV_RESPONSE_MASK&#160;:&#160;<a class="el" href="hpm__pllctlv2__regs_8h.html#a806d27dc8f20610a2c3537303f32bc35">hpm_pllctlv2_regs.h</a></li>
-<li>PLLCTLV2_DIV_RESPONSE_SHIFT&#160;:&#160;<a class="el" href="hpm__pllctlv2__regs_8h.html#a7e1871bded0bc2cdb476e69e1b769266">hpm_pllctlv2_regs.h</a></li>
 <li>pllctlv2_enable_spread_spectrum()&#160;:&#160;<a class="el" href="group__pllctlv2__interface.html#gab41eb08256054a6b3b4bd7a88e8a7e8d">hpm_pllctlv2_drv.h</a>, <a class="el" href="group__pllctlv2__interface.html#gab41eb08256054a6b3b4bd7a88e8a7e8d">hpm_pllctlv2_drv.c</a></li>
 <li>pllctlv2_get_pll_freq_in_hz()&#160;:&#160;<a class="el" href="group__pllctlv2__interface.html#ga5da82012c20e61d57c4eb25d07eec48b">hpm_pllctlv2_drv.h</a>, <a class="el" href="group__pllctlv2__interface.html#ga5da82012c20e61d57c4eb25d07eec48b">hpm_pllctlv2_drv.c</a></li>
 <li>pllctlv2_get_pll_postdiv_freq_in_hz()&#160;:&#160;<a class="el" href="group__pllctlv2__interface.html#ga17dbea12fc6c2bccb279beead41018a5">hpm_pllctlv2_drv.h</a>, <a class="el" href="group__pllctlv2__interface.html#ga17dbea12fc6c2bccb279beead41018a5">hpm_pllctlv2_drv.c</a></li>
@@ -1519,9 +1522,22 @@ $(document).ready(function(){initNavTree('globals_p.html',''); initResizable(); 
 <li>PLLCTLV2_PLL_CONFIG_SPREAD_MASK&#160;:&#160;<a class="el" href="hpm__pllctlv2__regs_8h.html#a7a3ea063b1681df00dedf8e7b5322a75">hpm_pllctlv2_regs.h</a></li>
 <li>PLLCTLV2_PLL_CONFIG_SPREAD_SET&#160;:&#160;<a class="el" href="hpm__pllctlv2__regs_8h.html#a0ae7ff6290a947eac59d321910230bf0">hpm_pllctlv2_regs.h</a></li>
 <li>PLLCTLV2_PLL_CONFIG_SPREAD_SHIFT&#160;:&#160;<a class="el" href="hpm__pllctlv2__regs_8h.html#a16012ea0bf06634a56b44140fa6a52fe">hpm_pllctlv2_regs.h</a></li>
+<li>PLLCTLV2_PLL_DIV_BUSY_GET&#160;:&#160;<a class="el" href="hpm__pllctlv2__regs_8h.html#a960c4a253db0584f980ca4efb881d892">hpm_pllctlv2_regs.h</a></li>
+<li>PLLCTLV2_PLL_DIV_BUSY_MASK&#160;:&#160;<a class="el" href="hpm__pllctlv2__regs_8h.html#a261d9735f7add499d1d5937687fb898f">hpm_pllctlv2_regs.h</a></li>
+<li>PLLCTLV2_PLL_DIV_BUSY_SHIFT&#160;:&#160;<a class="el" href="hpm__pllctlv2__regs_8h.html#ae809a116ff62f783b80318acf83a1dd1">hpm_pllctlv2_regs.h</a></li>
 <li>PLLCTLV2_PLL_DIV_DIV0&#160;:&#160;<a class="el" href="hpm__pllctlv2__regs_8h.html#aca2d8192e180feb46715a5e16b5e3b1e">hpm_pllctlv2_regs.h</a></li>
 <li>PLLCTLV2_PLL_DIV_DIV1&#160;:&#160;<a class="el" href="hpm__pllctlv2__regs_8h.html#a6dfea080c34e7993fcbfdaae59f91158">hpm_pllctlv2_regs.h</a></li>
 <li>PLLCTLV2_PLL_DIV_DIV2&#160;:&#160;<a class="el" href="hpm__pllctlv2__regs_8h.html#a44560caaa6359f5f48e67e7678060c39">hpm_pllctlv2_regs.h</a></li>
+<li>PLLCTLV2_PLL_DIV_DIV_GET&#160;:&#160;<a class="el" href="hpm__pllctlv2__regs_8h.html#a02586b7d02051a8fc3c88b3432a8d821">hpm_pllctlv2_regs.h</a></li>
+<li>PLLCTLV2_PLL_DIV_DIV_MASK&#160;:&#160;<a class="el" href="hpm__pllctlv2__regs_8h.html#adfb32aebc6338e1c7077674a5a786dde">hpm_pllctlv2_regs.h</a></li>
+<li>PLLCTLV2_PLL_DIV_DIV_SET&#160;:&#160;<a class="el" href="hpm__pllctlv2__regs_8h.html#a4399f95f13821ac7e0d074b3adc47319">hpm_pllctlv2_regs.h</a></li>
+<li>PLLCTLV2_PLL_DIV_DIV_SHIFT&#160;:&#160;<a class="el" href="hpm__pllctlv2__regs_8h.html#a014c7cfb45bf536e51559c88f9f664aa">hpm_pllctlv2_regs.h</a></li>
+<li>PLLCTLV2_PLL_DIV_ENABLE_GET&#160;:&#160;<a class="el" href="hpm__pllctlv2__regs_8h.html#a0a11f7bedc0a6abd3211ba6f112b5ae3">hpm_pllctlv2_regs.h</a></li>
+<li>PLLCTLV2_PLL_DIV_ENABLE_MASK&#160;:&#160;<a class="el" href="hpm__pllctlv2__regs_8h.html#a3363228206f034907eb8137fe6ccc180">hpm_pllctlv2_regs.h</a></li>
+<li>PLLCTLV2_PLL_DIV_ENABLE_SHIFT&#160;:&#160;<a class="el" href="hpm__pllctlv2__regs_8h.html#a0810a189c58d0a33ac403f3af6f836d1">hpm_pllctlv2_regs.h</a></li>
+<li>PLLCTLV2_PLL_DIV_RESPONSE_GET&#160;:&#160;<a class="el" href="hpm__pllctlv2__regs_8h.html#a38de5c8e6497199c7ec1bb7238e67747">hpm_pllctlv2_regs.h</a></li>
+<li>PLLCTLV2_PLL_DIV_RESPONSE_MASK&#160;:&#160;<a class="el" href="hpm__pllctlv2__regs_8h.html#a466c7e3e446c2cd1a8964d84ec8ce8df">hpm_pllctlv2_regs.h</a></li>
+<li>PLLCTLV2_PLL_DIV_RESPONSE_SHIFT&#160;:&#160;<a class="el" href="hpm__pllctlv2__regs_8h.html#aadccd3f2c02579122f70fbecfd1f1846">hpm_pllctlv2_regs.h</a></li>
 <li>PLLCTLV2_PLL_FREQ_MAX&#160;:&#160;<a class="el" href="hpm__pllctlv2__drv_8c.html#a69dd44599aaf7ad07929af67e9212095">hpm_pllctlv2_drv.c</a></li>
 <li>PLLCTLV2_PLL_FREQ_MIN&#160;:&#160;<a class="el" href="hpm__pllctlv2__drv_8c.html#a5b0109b6025d0ad973d02b3d8bc48249">hpm_pllctlv2_drv.c</a></li>
 <li>pllctlv2_pll_is_enabled()&#160;:&#160;<a class="el" href="group__pllctlv2__interface.html#gadc6f28103bfebec1d968f914b33d609a">hpm_pllctlv2_drv.h</a></li>
@@ -2517,7 +2533,7 @@ $(document).ready(function(){initNavTree('globals_p.html',''); initResizable(); 
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Mon Oct 31 2022 20:47:09 for HPM SDK by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
+    <li class="footer">Generated on Sat Dec 31 2022 19:59:46 for HPM SDK by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
   </ul>
 </div>
 </body>

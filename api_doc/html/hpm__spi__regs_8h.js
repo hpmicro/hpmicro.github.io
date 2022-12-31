@@ -193,6 +193,7 @@ var hpm__spi__regs_8h =
     [ "SPI_SLVST_READY_SHIFT", "hpm__spi__regs_8h.html#ac0473294e469e61ee3603fbeff01f17a", null ],
     [ "SPI_SLVST_UNDERRUN_GET", "hpm__spi__regs_8h.html#a48daba7a8f66fb72ae63b84ba9e1f031", null ],
     [ "SPI_SLVST_UNDERRUN_MASK", "hpm__spi__regs_8h.html#a6b8cc332d61e87d2b6969b38e3381ac0", null ],
+    [ "SPI_SLVST_UNDERRUN_SET", "hpm__spi__regs_8h.html#a5d5749a4e3752603d3fc2e1866c78b3d", null ],
     [ "SPI_SLVST_UNDERRUN_SHIFT", "hpm__spi__regs_8h.html#a2bd285612b3e914035b6a520c111d35a", null ],
     [ "SPI_SLVST_USR_STATUS_GET", "hpm__spi__regs_8h.html#a1d8608ac27971f75aa9bc74f7b7615c7", null ],
     [ "SPI_SLVST_USR_STATUS_MASK", "hpm__spi__regs_8h.html#af99986581d841d4854ba34d6e51150fd", null ],

@@ -18,14 +18,15 @@
         <script src="../../static/underscore.js"></script>
         <script src="../../static/_sphinx_javascript_frameworks_compat.js"></script>
         <script src="../../static/doctools.js"></script>
+        <script src="../../static/sphinx_highlight.js"></script>
         <script src="../../static/tabs.js"></script>
         <script type="module" src="../../_static/js/dark-mode-toggle.min.mjs"></script>
         <script src="../../_static/js/ga-tracker.js"></script>
     <script src="../../static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="4. Touch Panel" href="../touch_panel/README.html" />
-    <link rel="prev" title="2.3. lv_demo_music" href="../audio_codec/lvgl_audio_player/README.html" />
+    <link rel="next" title="4. dhrystone" href="../dhrystone/README.html" />
+    <link rel="prev" title="2.8. USB MSC HOST" href="../cherryusb/host/msc/README.html" />
   <meta name="color-scheme" content="dark light">
   
   <link rel="stylesheet" href="../../static/css/light.css" type="text/css" media="(prefers-color-scheme: light)"/>
@@ -68,7 +69,7 @@
           </dd>
         
           <dd>
-            <a onclick="RelativeAddress('/0.14.0/html/index.html')">0.14.0</a>
+            <a onclick="RelativeAddress('/1.0.0/html/index.html')">1.0.0</a>
           </dd>
         
       </dl>
@@ -106,34 +107,36 @@
 <li class="toctree-l1"><a class="reference internal" href="../../README.html#community-support">Community Support</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../boards/index.html">HPM Development Board Introduction</a></li>
 <li class="toctree-l1 current"><a class="reference internal" href="../index.html">HPM SDK Samples</a><ul class="current">
-<li class="toctree-l2"><a class="reference internal" href="../hello_world/README.html">1. Hello World</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../audio_codec/index.html">2. Audio Codec</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../audio_codec/index.html">1. Audio Codec</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../cherryusb/index.html">2. USB Communication</a></li>
 <li class="toctree-l2 current"><a class="current reference internal" href="#">3. Core Mark</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#overview">3.1. Overview</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#board-setting">3.2. Board Setting</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#running-the-example">3.3. Running the example</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="../touch_panel/README.html">4. Touch Panel</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../rtos/index.html">5. RTOS Samples</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../dhrystone/README.html">4. dhrystone</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../dma_manager/README.html">5. DMA Manager</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../drivers/index.html">6. Drivers</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../motor_ctrl/index.html">7. Motor Control</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../jpeg/index.html">8. JPEG</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../tinycrypt/index.html">9. Tinycrypt</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../multicore/index.html">10. Multicore Samples</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../rom_api/index.html">11. ROMAPI Samples</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../tflm/README.html">12. TensorFlowLiteMicro</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../tinyusb/index.html">13. USB Communication</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../littlevgl/index.html">14. littlevgl</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../tinyuf2/README.html">15. TinyUF2</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../rgb_led/README.html">16. RGB LED</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../hpm_math/index.html">17. HPMicro MATH</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../lwip/index.html">18. lwIP</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../memstress/index.html">19. memstress</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../dma_manager/README.html">20. DMA Manager</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../segger_rtt/README.html">21. Segger RTT</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../cherryusb/index.html">22. USB Communication</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../dhrystone/README.html">23. dhrystone</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../dsp/README.html">7. DSP</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../hello_world/README.html">8. Hello World</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../hpm_math/index.html">9. HPMicro MATH</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../jpeg/index.html">10. JPEG</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../littlevgl/index.html">11. littlevgl</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../lwip/index.html">12. lwIP</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../memstress/index.html">13. memstress</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../motor_ctrl/index.html">14. Motor Control</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../multicore/index.html">15. Multicore Samples</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../power_mode_switch/README.html">16. Power Mode Switch</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../rgb_led/README.html">17. RGB LED</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../rom_api/index.html">18. ROMAPI Samples</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../rtos/index.html">19. RTOS Samples</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../segger_rtt/README.html">20. Segger RTT</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../tflm/index.html">21. TensorFlowLiteMicro</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../tinycrypt/index.html">22. Tinycrypt</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../tinyuf2/README.html">23. TinyUF2</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../tinyusb/index.html">24. USB Communication</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../touch_panel/README.html">25. Touch Panel</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../../doc/src/sdk_doc/README.html">HPM SDK Doc Generation</a></li>
@@ -243,15 +246,15 @@
           </div>
 
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="../audio_codec/lvgl_audio_player/README.html" class="btn btn-neutral float-left" title="2.3. lv_demo_music" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="../touch_panel/README.html" class="btn btn-neutral float-right" title="4. Touch Panel" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="../cherryusb/host/msc/README.html" class="btn btn-neutral float-left" title="2.8. USB MSC HOST" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="../dhrystone/README.html" class="btn btn-neutral float-right" title="4. dhrystone" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>
 
   <div role="contentinfo">
     <p>&#169; Copyright 2020-2022, hpmicro.
-      <span class="lastupdated">Last updated on Oct 31, 2022.
+      <span class="lastupdated">Last updated on Dec 31, 2022.
       </span></p>
   </div>
 

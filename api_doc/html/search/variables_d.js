@@ -5,7 +5,7 @@ var searchData=
   ['npktptr_2',['NPKTPTR',['../structSDP__Type.html#a3fd053fd74be681d5b5104060cdbd84a',1,'SDP_Type']]],
   ['ns_5frollover_5fmode_3',['ns_rollover_mode',['../structptpc__config__t.html#aa4c6073b9049b6e94cbec80b65c0a2db',1,'ptpc_config_t']]],
   ['nsc_5fkey_5fctl_4',['NSC_KEY_CTL',['../structKEYM__Type.html#a30f37a37bbbe146017b45e4b472d3e2e',1,'KEYM_Type::NSC_KEY_CTL()'],['../structKEYMAN__Type.html#a999c73540cd609b0f2db66022e4e8d6f',1,'KEYMAN_Type::NSC_KEY_CTL()']]],
-  ['nsec_5',['nsec',['../structenet__ptp__time__t.html#a061c5f99986e123d4e89584877c0b331',1,'enet_ptp_time_t']]],
+  ['nsec_5',['nsec',['../structenet__ptp__ts__system__t.html#a38388fc4d7df1e4ecee9854ae8758a8b',1,'enet_ptp_ts_system_t::nsec()'],['../structenet__ptp__ts__update__t.html#a8cab6b46c79f4dd3f565850a1a8ce45c',1,'enet_ptp_ts_update_t::nsec()'],['../structenet__ptp__ts__target__t.html#ad62890db0be7ee3ae4f3e7ada7760287',1,'enet_ptp_ts_target_t::nsec()']]],
   ['num_6',['num',['../structbldc__contrl__spd__par.html#af13571e0493199ddb24e1327ed3f75bd',1,'bldc_contrl_spd_par']]],
   ['num_5fof_5fstop_5fbits_7',['num_of_stop_bits',['../structhpm__uart__config.html#a117ae5792d021773efa9dacd5a4951b9',1,'hpm_uart_config']]],
   ['num_5fpoints_8',['num_points',['../structfft__xfer__t.html#aabc5e2b787b94a3afae6d3921b813b84',1,'fft_xfer_t']]],

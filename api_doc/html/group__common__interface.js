@@ -24,7 +24,7 @@ var group__common__interface =
       [ "status_group_xpi", "group__common__interface.html#ggadb49720dc49f7d4e4cf9adbf2948e409a7e66290ae7cc7907829450695883cdf7", null ],
       [ "status_group_l1c", "group__common__interface.html#ggadb49720dc49f7d4e4cf9adbf2948e409aebb939a98324a8cf3982d7d006cd0d02", null ],
       [ "status_group_dma", "group__common__interface.html#ggadb49720dc49f7d4e4cf9adbf2948e409ad426390869b7b5fb3610d609d6d4ca99", null ],
-      [ "status_group_dram", "group__common__interface.html#ggadb49720dc49f7d4e4cf9adbf2948e409a3219d09f6bffc2a6c560b44b0179260c", null ],
+      [ "status_group_femc", "group__common__interface.html#ggadb49720dc49f7d4e4cf9adbf2948e409a69c079050aab69e41cda734106f80565", null ],
       [ "status_group_sdp", "group__common__interface.html#ggadb49720dc49f7d4e4cf9adbf2948e409ae484c9873b32f9d8c85bdb6f45c5e0ba", null ],
       [ "status_group_xpi_nor", "group__common__interface.html#ggadb49720dc49f7d4e4cf9adbf2948e409aec213710ecbde8211ed9613178abebb2", null ],
       [ "status_group_otp", "group__common__interface.html#ggadb49720dc49f7d4e4cf9adbf2948e409a852b00513609faab56caa1a16a37a432", null ],

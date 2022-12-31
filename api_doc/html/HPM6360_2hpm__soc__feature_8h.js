@@ -40,6 +40,7 @@ var HPM6360_2hpm__soc__feature_8h =
     [ "LCDC_SOC_LAYER_SUPPORTS_YUV", "HPM6360_2hpm__soc__feature_8h.html#afb4d7e283e5552c1b418d426eff6bd3f", null ],
     [ "LCDC_SOC_MAX_CSC_LAYER_COUNT", "HPM6360_2hpm__soc__feature_8h.html#a0d7da43ab3fce7e126f8b55cda2a2a83", null ],
     [ "LCDC_SOC_MAX_LAYER_COUNT", "HPM6360_2hpm__soc__feature_8h.html#a1335e3516678f48b7250e2b89573ae01", null ],
+    [ "OTP_SOC_UUID_IDX", "HPM6360_2hpm__soc__feature_8h.html#a7ce027a4e91d981d8810eb1a55187924", null ],
     [ "PCFG_SOC_DCDC_MAX_VOLTAGE_IN_MV", "HPM6360_2hpm__soc__feature_8h.html#afcbc934b8eb31f77e912a27481ed733b", null ],
     [ "PCFG_SOC_DCDC_MIN_VOLTAGE_IN_MV", "HPM6360_2hpm__soc__feature_8h.html#ae8859218911c51e1e47f00172a10cbeb", null ],
     [ "PCFG_SOC_LDO1P1_MAX_VOLTAGE_IN_MV", "HPM6360_2hpm__soc__feature_8h.html#a24fa84784adbadd1335c866c645dcb31", null ],

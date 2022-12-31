@@ -11,5 +11,5 @@ var hpm__adc12__drv_8c =
     [ "adc12_set_pmt_config", "group__adc12__interface.html#ga537418bcdeb9157adba6be65546aeb49", null ],
     [ "adc12_set_prd_config", "group__adc12__interface.html#ga60f2a7f772ee8cd3cd17a0d6b863ef29", null ],
     [ "adc12_set_seq_config", "group__adc12__interface.html#ga7cb22a7bfe2132f595a4c03129f52db7", null ],
-    [ "adc12_trigger_seq_by_sw", "group__adc12__interface.html#gaee7b408b57c8d0515ffb4ad4c5327eb2", null ]
+    [ "adc12_trigger_seq_by_sw", "group__adc12__interface.html#ga5697c916a8214ca305d81bf8f33b9aaa", null ]
 ];

@@ -258,6 +258,12 @@ Functions</h2></td></tr>
 <tr class="memitem:gad82fad940369303d6ff0e4ed44f7cf19"><td class="memItemLeft" align="right" valign="top">static uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__uart__interface.html#gad82fad940369303d6ff0e4ed44f7cf19">uart_get_modem_status</a> (<a class="el" href="structUART__Type.html">UART_Type</a> *ptr)</td></tr>
 <tr class="memdesc:gad82fad940369303d6ff0e4ed44f7cf19"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get modem status.  <a href="group__uart__interface.html#gad82fad940369303d6ff0e4ed44f7cf19">More...</a><br /></td></tr>
 <tr class="separator:gad82fad940369303d6ff0e4ed44f7cf19"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab90cf78727f9f8907b121cf1b8b1e54f"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__uart__interface.html#gab90cf78727f9f8907b121cf1b8b1e54f">uart_write_byte</a> (<a class="el" href="structUART__Type.html">UART_Type</a> *ptr, uint8_t c)</td></tr>
+<tr class="memdesc:gab90cf78727f9f8907b121cf1b8b1e54f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write byte to TX.  <a href="group__uart__interface.html#gab90cf78727f9f8907b121cf1b8b1e54f">More...</a><br /></td></tr>
+<tr class="separator:gab90cf78727f9f8907b121cf1b8b1e54f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8c22069f7bfd868e751c8112bbd7feff"><td class="memItemLeft" align="right" valign="top">static uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__uart__interface.html#ga8c22069f7bfd868e751c8112bbd7feff">uart_read_byte</a> (<a class="el" href="structUART__Type.html">UART_Type</a> *ptr)</td></tr>
+<tr class="memdesc:ga8c22069f7bfd868e751c8112bbd7feff"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read byte from RX.  <a href="group__uart__interface.html#ga8c22069f7bfd868e751c8112bbd7feff">More...</a><br /></td></tr>
+<tr class="separator:ga8c22069f7bfd868e751c8112bbd7feff"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga3cf6d551a9fe711feb1dad72eaa0ffce"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__uart__interface.html#ga3cf6d551a9fe711feb1dad72eaa0ffce">uart_check_modem_status</a> (<a class="el" href="structUART__Type.html">UART_Type</a> *ptr, <a class="el" href="group__uart__interface.html#ga7193376f1dd0e742c86cba09fc09dc72">uart_modem_stat_t</a> mask)</td></tr>
 <tr class="memdesc:ga3cf6d551a9fe711feb1dad72eaa0ffce"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check modem status with given mask.  <a href="group__uart__interface.html#ga3cf6d551a9fe711feb1dad72eaa0ffce">More...</a><br /></td></tr>
 <tr class="separator:ga3cf6d551a9fe711feb1dad72eaa0ffce"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -286,10 +292,10 @@ Functions</h2></td></tr>
 <tr class="memdesc:ga1aea4fca34f2a53105c3326dda7aafc2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialization.  <a href="group__uart__interface.html#ga1aea4fca34f2a53105c3326dda7aafc2">More...</a><br /></td></tr>
 <tr class="separator:ga1aea4fca34f2a53105c3326dda7aafc2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga768c24bffe679cf9a18c4b7a14deff3b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__common__interface.html#ga087efae82a4b174a0363363d9d5ece19">hpm_stat_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__uart__interface.html#ga768c24bffe679cf9a18c4b7a14deff3b">uart_send_byte</a> (<a class="el" href="structUART__Type.html">UART_Type</a> *ptr, uint8_t c)</td></tr>
-<tr class="memdesc:ga768c24bffe679cf9a18c4b7a14deff3b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send one byte.  <a href="group__uart__interface.html#ga768c24bffe679cf9a18c4b7a14deff3b">More...</a><br /></td></tr>
+<tr class="memdesc:ga768c24bffe679cf9a18c4b7a14deff3b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send one byte after checking thresh hold status.  <a href="group__uart__interface.html#ga768c24bffe679cf9a18c4b7a14deff3b">More...</a><br /></td></tr>
 <tr class="separator:ga768c24bffe679cf9a18c4b7a14deff3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gac68249468a133a73a3c8889e6f47ca45"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__common__interface.html#ga087efae82a4b174a0363363d9d5ece19">hpm_stat_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__uart__interface.html#gac68249468a133a73a3c8889e6f47ca45">uart_receive_byte</a> (<a class="el" href="structUART__Type.html">UART_Type</a> *ptr, uint8_t *c)</td></tr>
-<tr class="memdesc:gac68249468a133a73a3c8889e6f47ca45"><td class="mdescLeft">&#160;</td><td class="mdescRight">Receive one byte.  <a href="group__uart__interface.html#gac68249468a133a73a3c8889e6f47ca45">More...</a><br /></td></tr>
+<tr class="memdesc:gac68249468a133a73a3c8889e6f47ca45"><td class="mdescLeft">&#160;</td><td class="mdescRight">Receive one byte after checking data ready status.  <a href="group__uart__interface.html#gac68249468a133a73a3c8889e6f47ca45">More...</a><br /></td></tr>
 <tr class="separator:gac68249468a133a73a3c8889e6f47ca45"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gad319f13e3e38f2852fa94df527c16d87"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__uart__interface.html#gad319f13e3e38f2852fa94df527c16d87">uart_set_signal_level</a> (<a class="el" href="structUART__Type.html">UART_Type</a> *ptr, <a class="el" href="group__uart__interface.html#gaabeb807de70635ecab1bc70dd6db895f">uart_signal_t</a> signal, <a class="el" href="group__uart__interface.html#ga9e7c512e46b16def679a98e7832818d9">uart_signal_level_t</a> level)</td></tr>
 <tr class="memdesc:gad319f13e3e38f2852fa94df527c16d87"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set uart signal output level.  <a href="group__uart__interface.html#gad319f13e3e38f2852fa94df527c16d87">More...</a><br /></td></tr>
@@ -1467,6 +1473,48 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="ga8c22069f7bfd868e751c8112bbd7feff" name="ga8c22069f7bfd868e751c8112bbd7feff"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga8c22069f7bfd868e751c8112bbd7feff">&#9670;&#160;</a></span>uart_read_byte()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static uint8_t uart_read_byte </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structUART__Type.html">UART_Type</a> *&#160;</td>
+          <td class="paramname"><em>ptr</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><code>#include &lt;<a class="el" href="hpm__uart__drv_8h.html">drivers/inc/hpm_uart_drv.h</a>&gt;</code></p>
+
+<p>Read byte from RX. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ptr</td><td>UART base address </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">RX</td><td>byte </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="gac68249468a133a73a3c8889e6f47ca45" name="gac68249468a133a73a3c8889e6f47ca45"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#gac68249468a133a73a3c8889e6f47ca45">&#9670;&#160;</a></span>uart_receive_byte()</h2>
 
@@ -1495,7 +1543,7 @@ Functions</h2></td></tr>
 
 <p><code>#include &lt;<a class="el" href="hpm__uart__drv_8h.html">drivers/inc/hpm_uart_drv.h</a>&gt;</code></p>
 
-<p>Receive one byte. </p>
+<p>Receive one byte after checking data ready status. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">ptr</td><td>UART base address </td></tr>
@@ -1591,6 +1639,7 @@ Functions</h2></td></tr>
 <p><code>#include &lt;<a class="el" href="hpm__uart__drv_8h.html">drivers/inc/hpm_uart_drv.h</a>&gt;</code></p>
 
 <p>Reset both TX and RX Fifo. </p>
+<dl class="section note"><dt>Note</dt><dd>this API may modify other bit fields in FIFO control register</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">ptr</td><td>UART base address </td></tr>
@@ -1627,6 +1676,7 @@ Functions</h2></td></tr>
 <p><code>#include &lt;<a class="el" href="hpm__uart__drv_8h.html">drivers/inc/hpm_uart_drv.h</a>&gt;</code></p>
 
 <p>Reset RX Fifo. </p>
+<dl class="section note"><dt>Note</dt><dd>this API may modify other bit fields in FIFO control register</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">ptr</td><td>UART base address </td></tr>
@@ -1663,6 +1713,7 @@ Functions</h2></td></tr>
 <p><code>#include &lt;<a class="el" href="hpm__uart__drv_8h.html">drivers/inc/hpm_uart_drv.h</a>&gt;</code></p>
 
 <p>Reset TX Fifo. </p>
+<dl class="section note"><dt>Note</dt><dd>this API may modify other bit fields in FIFO control register</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">ptr</td><td>UART base address </td></tr>
@@ -1700,7 +1751,7 @@ Functions</h2></td></tr>
 
 <p><code>#include &lt;<a class="el" href="hpm__uart__drv_8h.html">drivers/inc/hpm_uart_drv.h</a>&gt;</code></p>
 
-<p>Send one byte. </p>
+<p>Send one byte after checking thresh hold status. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">ptr</td><td>UART base address </td></tr>
@@ -1869,12 +1920,59 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="gab90cf78727f9f8907b121cf1b8b1e54f" name="gab90cf78727f9f8907b121cf1b8b1e54f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gab90cf78727f9f8907b121cf1b8b1e54f">&#9670;&#160;</a></span>uart_write_byte()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void uart_write_byte </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structUART__Type.html">UART_Type</a> *&#160;</td>
+          <td class="paramname"><em>ptr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>c</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><code>#include &lt;<a class="el" href="hpm__uart__drv_8h.html">drivers/inc/hpm_uart_drv.h</a>&gt;</code></p>
+
+<p>Write byte to TX. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ptr</td><td>UART base address </td></tr>
+    <tr><td class="paramname">c</td><td>data to be sent </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Mon Oct 31 2022 20:47:08 for HPM SDK by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
+    <li class="footer">Generated on Sat Dec 31 2022 19:59:45 for HPM SDK by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
   </ul>
 </div>
 </body>

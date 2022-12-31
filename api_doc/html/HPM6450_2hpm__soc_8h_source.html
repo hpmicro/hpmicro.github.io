@@ -199,7 +199,7 @@ $(document).ready(function(){initNavTree('HPM6450_2hpm__soc_8h_source.html','');
 <div class="line"><a id="l00099" name="l00099"></a><span class="lineno"><a class="line" href="HPM6450_2hpm__soc_8h.html#a957e3435af85dfb5be0ebe8921595831">   99</a></span><span class="preprocessor">#define IRQn_XPI1          86                  </span><span class="comment">/* XPI1 IRQ */</span><span class="preprocessor"></span></div>
 <div class="line"><a id="l00100" name="l00100"></a><span class="lineno"><a class="line" href="HPM6450_2hpm__soc_8h.html#ae50cdb19c5365cea505a392b455b1420">  100</a></span><span class="preprocessor">#define IRQn_XDMA          87                  </span><span class="comment">/* XDMA IRQ */</span><span class="preprocessor"></span></div>
 <div class="line"><a id="l00101" name="l00101"></a><span class="lineno"><a class="line" href="HPM6450_2hpm__soc_8h.html#ac6ad4896b7d04b7c0800362d3eb08348">  101</a></span><span class="preprocessor">#define IRQn_HDMA          88                  </span><span class="comment">/* HDMA IRQ */</span><span class="preprocessor"></span></div>
-<div class="line"><a id="l00102" name="l00102"></a><span class="lineno"><a class="line" href="HPM6450_2hpm__soc_8h.html#a15ff010ed0be2f35178bd09f28e812df">  102</a></span><span class="preprocessor">#define IRQn_DRAM          89                  </span><span class="comment">/* DRAM IRQ */</span><span class="preprocessor"></span></div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno"><a class="line" href="HPM6450_2hpm__soc_8h.html#ab8cbef6e0183fbadc19be84ea4cc0bc1">  102</a></span><span class="preprocessor">#define IRQn_FEMC          89                  </span><span class="comment">/* FEMC IRQ */</span><span class="preprocessor"></span></div>
 <div class="line"><a id="l00103" name="l00103"></a><span class="lineno"><a class="line" href="HPM6450_2hpm__soc_8h.html#aab7b9c0375961b8e064a8a9544dbaab8">  103</a></span><span class="preprocessor">#define IRQn_RNG           90                  </span><span class="comment">/* RNG IRQ */</span><span class="preprocessor"></span></div>
 <div class="line"><a id="l00104" name="l00104"></a><span class="lineno"><a class="line" href="HPM6450_2hpm__soc_8h.html#a47496e3a66c12142e2860db54b294911">  104</a></span><span class="preprocessor">#define IRQn_I2S0          91                  </span><span class="comment">/* I2S0 IRQ */</span><span class="preprocessor"></span></div>
 <div class="line"><a id="l00105" name="l00105"></a><span class="lineno"><a class="line" href="HPM6450_2hpm__soc_8h.html#a0b3a1fa49fd85d81f14cd0616988efbe">  105</a></span><span class="preprocessor">#define IRQn_I2S1          92                  </span><span class="comment">/* I2S1 IRQ */</span><span class="preprocessor"></span></div>
@@ -776,12 +776,12 @@ $(document).ready(function(){initNavTree('HPM6450_2hpm__soc_8h_source.html','');
 <div class="line"><a id="l00676" name="l00676"></a><span class="lineno">  676</span><span class="comment">/* SDP base pointer */</span></div>
 <div class="line"><a id="l00677" name="l00677"></a><span class="lineno"><a class="line" href="HPM6450_2hpm__soc_8h.html#a1d6f4c848d7084fe4ca6dea80e98e2d0">  677</a></span><span class="preprocessor">#define HPM_SDP ((SDP_Type *) HPM_SDP_BASE)</span></div>
 <div class="line"><a id="l00678" name="l00678"></a><span class="lineno">  678</span> </div>
-<div class="line"><a id="l00679" name="l00679"></a><span class="lineno">  679</span><span class="preprocessor">#include &quot;<a class="code" href="hpm__dram__regs_8h.html">hpm_dram_regs.h</a>&quot;</span></div>
-<div class="line"><a id="l00680" name="l00680"></a><span class="lineno">  680</span><span class="comment">/* Address of DRAM instances */</span></div>
-<div class="line"><a id="l00681" name="l00681"></a><span class="lineno">  681</span><span class="comment">/* DRAM base address */</span></div>
-<div class="line"><a id="l00682" name="l00682"></a><span class="lineno"><a class="line" href="HPM6450_2hpm__soc_8h.html#a625e4d9d1deda3283879784f7c6637b7">  682</a></span><span class="preprocessor">#define HPM_DRAM_BASE (0xF3050000UL)</span></div>
-<div class="line"><a id="l00683" name="l00683"></a><span class="lineno">  683</span><span class="comment">/* DRAM base pointer */</span></div>
-<div class="line"><a id="l00684" name="l00684"></a><span class="lineno"><a class="line" href="HPM6450_2hpm__soc_8h.html#a0a7ea9dee69028c5ffe2c98775c8f9e9">  684</a></span><span class="preprocessor">#define HPM_DRAM ((DRAM_Type *) HPM_DRAM_BASE)</span></div>
+<div class="line"><a id="l00679" name="l00679"></a><span class="lineno">  679</span><span class="preprocessor">#include &quot;<a class="code" href="hpm__femc__regs_8h.html">hpm_femc_regs.h</a>&quot;</span></div>
+<div class="line"><a id="l00680" name="l00680"></a><span class="lineno">  680</span><span class="comment">/* Address of FEMC instances */</span></div>
+<div class="line"><a id="l00681" name="l00681"></a><span class="lineno">  681</span><span class="comment">/* FEMC base address */</span></div>
+<div class="line"><a id="l00682" name="l00682"></a><span class="lineno"><a class="line" href="HPM6450_2hpm__soc_8h.html#a7f00ad7a8f03f7b8e40a2153c1f15898">  682</a></span><span class="preprocessor">#define HPM_FEMC_BASE (0xF3050000UL)</span></div>
+<div class="line"><a id="l00683" name="l00683"></a><span class="lineno">  683</span><span class="comment">/* FEMC base pointer */</span></div>
+<div class="line"><a id="l00684" name="l00684"></a><span class="lineno"><a class="line" href="HPM6450_2hpm__soc_8h.html#afaeb074d40afc31ac8e95f23a1d5c3f6">  684</a></span><span class="preprocessor">#define HPM_FEMC ((FEMC_Type *) HPM_FEMC_BASE)</span></div>
 <div class="line"><a id="l00685" name="l00685"></a><span class="lineno">  685</span> </div>
 <div class="line"><a id="l00686" name="l00686"></a><span class="lineno">  686</span><span class="preprocessor">#include &quot;<a class="code" href="HPM6758_2hpm__sysctl__regs_8h.html">hpm_sysctl_regs.h</a>&quot;</span></div>
 <div class="line"><a id="l00687" name="l00687"></a><span class="lineno">  687</span><span class="comment">/* Address of SYSCTL instances */</span></div>
@@ -981,8 +981,8 @@ $(document).ready(function(){initNavTree('HPM6450_2hpm__soc_8h_source.html','');
 <div class="ttc" id="ahpm__dao__regs_8h_html"><div class="ttname"><a href="hpm__dao__regs_8h.html">hpm_dao_regs.h</a></div></div>
 <div class="ttc" id="ahpm__dma__regs_8h_html"><div class="ttname"><a href="hpm__dma__regs_8h.html">hpm_dma_regs.h</a></div></div>
 <div class="ttc" id="ahpm__dmamux__regs_8h_html"><div class="ttname"><a href="hpm__dmamux__regs_8h.html">hpm_dmamux_regs.h</a></div></div>
-<div class="ttc" id="ahpm__dram__regs_8h_html"><div class="ttname"><a href="hpm__dram__regs_8h.html">hpm_dram_regs.h</a></div></div>
 <div class="ttc" id="ahpm__enet__regs_8h_html"><div class="ttname"><a href="hpm__enet__regs_8h.html">hpm_enet_regs.h</a></div></div>
+<div class="ttc" id="ahpm__femc__regs_8h_html"><div class="ttname"><a href="hpm__femc__regs_8h.html">hpm_femc_regs.h</a></div></div>
 <div class="ttc" id="ahpm__gpio__regs_8h_html"><div class="ttname"><a href="hpm__gpio__regs_8h.html">hpm_gpio_regs.h</a></div></div>
 <div class="ttc" id="ahpm__gptmr__regs_8h_html"><div class="ttname"><a href="hpm__gptmr__regs_8h.html">hpm_gptmr_regs.h</a></div></div>
 <div class="ttc" id="ahpm__hall__regs_8h_html"><div class="ttname"><a href="hpm__hall__regs_8h.html">hpm_hall_regs.h</a></div></div>
@@ -1026,7 +1026,7 @@ $(document).ready(function(){initNavTree('HPM6450_2hpm__soc_8h_source.html','');
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_19d806e154b23a5f4c4c08b2e30365a6.html">soc</a></li><li class="navelem"><a class="el" href="dir_cb38c0aed1dd39f1816de38701bce0df.html">HPM6450</a></li><li class="navelem"><a class="el" href="HPM6450_2hpm__soc_8h.html">hpm_soc.h</a></li>
-    <li class="footer">Generated on Mon Oct 31 2022 20:47:05 for HPM SDK by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
+    <li class="footer">Generated on Sat Dec 31 2022 19:59:42 for HPM SDK by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
   </ul>
 </div>
 </body>

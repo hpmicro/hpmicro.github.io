@@ -154,7 +154,7 @@ Macros</h2></td></tr>
 <tr class="separator:ga79becbbcaa74a03a1f4c359c2cbb5b9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga420c16692557443ff3e2a72834932b3e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__irq__interface.html#ga420c16692557443ff3e2a72834932b3e">RESTORE_UCODE</a>()</td></tr>
 <tr class="separator:ga420c16692557443ff3e2a72834932b3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga028cecbe9b446a0478abc0cf5f0473f2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__irq__interface.html#ga028cecbe9b446a0478abc0cf5f0473f2">CONTEXT_REG_NUM</a>&#160;&#160;&#160;(4*(16 + 4 + 1))</td></tr>
+<tr class="memitem:ga028cecbe9b446a0478abc0cf5f0473f2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__irq__interface.html#ga028cecbe9b446a0478abc0cf5f0473f2">CONTEXT_REG_NUM</a>&#160;&#160;&#160;(4 * (16 + 4))</td></tr>
 <tr class="separator:ga028cecbe9b446a0478abc0cf5f0473f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga84c57d7bc6ecc4dcb457283e84636cb0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__irq__interface.html#ga84c57d7bc6ecc4dcb457283e84636cb0">SAVE_FPU_CONTEXT</a>()</td></tr>
 <tr class="separator:ga84c57d7bc6ecc4dcb457283e84636cb0"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -166,6 +166,10 @@ Macros</h2></td></tr>
 <tr class="memitem:gaec3abb01beb316a2d26f8b5fc22ef4de"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__irq__interface.html#gaec3abb01beb316a2d26f8b5fc22ef4de">RESTORE_CALLER_CONTEXT</a>()</td></tr>
 <tr class="memdesc:gaec3abb01beb316a2d26f8b5fc22ef4de"><td class="mdescLeft">&#160;</td><td class="mdescRight">Restore the caller registers based on the RISC-V ABI specification.  <a href="group__irq__interface.html#gaec3abb01beb316a2d26f8b5fc22ef4de">More...</a><br /></td></tr>
 <tr class="separator:gaec3abb01beb316a2d26f8b5fc22ef4de"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga866bd57a04fa82ed736240ac959df148"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__irq__interface.html#ga866bd57a04fa82ed736240ac959df148">SAVE_FPU_STATE</a>()</td></tr>
+<tr class="separator:ga866bd57a04fa82ed736240ac959df148"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf6214fb42ed95b7c5ba4aa8334192092"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__irq__interface.html#gaf6214fb42ed95b7c5ba4aa8334192092">RESTORE_FPU_STATE</a>()</td></tr>
+<tr class="separator:gaf6214fb42ed95b7c5ba4aa8334192092"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga024f4308fcafd04e84c8d2e1bc429459"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__irq__interface.html#ga024f4308fcafd04e84c8d2e1bc429459">SAVE_DSP_CONTEXT</a>()</td></tr>
 <tr class="separator:ga024f4308fcafd04e84c8d2e1bc429459"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga4dfb1913b45f247f5809188efe5c56a1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__irq__interface.html#ga4dfb1913b45f247f5809188efe5c56a1">RESTORE_DSP_CONTEXT</a>()</td></tr>
@@ -174,12 +178,12 @@ Macros</h2></td></tr>
 <tr class="separator:ga315b4748d2f2d7bc41489bb78c7c3238"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga962e667d5aad48066e9de6c6d3fcae4e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__irq__interface.html#ga962e667d5aad48066e9de6c6d3fcae4e">COMPLETE_IRQ_HANDLING_M</a>(irq_num)</td></tr>
 <tr class="separator:ga962e667d5aad48066e9de6c6d3fcae4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaaadeb8b3fdf5a817ea98802f33126c7a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__irq__interface.html#gaaadeb8b3fdf5a817ea98802f33126c7a">EXIT_NESTED_IRQ_HANDLING_M</a>()</td></tr>
+<tr class="separator:gaaadeb8b3fdf5a817ea98802f33126c7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaa501ecec0071e2ba38f644f68368b1b8"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__irq__interface.html#gaa501ecec0071e2ba38f644f68368b1b8">ENTER_NESTED_IRQ_HANDLING_S</a>()</td></tr>
 <tr class="separator:gaa501ecec0071e2ba38f644f68368b1b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gad6cb5faf68f836eefc2eb47afa478472"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__irq__interface.html#gad6cb5faf68f836eefc2eb47afa478472">COMPLETE_IRQ_HANDLING_S</a>(irq_num)</td></tr>
 <tr class="separator:gad6cb5faf68f836eefc2eb47afa478472"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaaadeb8b3fdf5a817ea98802f33126c7a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__irq__interface.html#gaaadeb8b3fdf5a817ea98802f33126c7a">EXIT_NESTED_IRQ_HANDLING_M</a>()</td></tr>
-<tr class="separator:gaaadeb8b3fdf5a817ea98802f33126c7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gafe839c6ff3a828d617b93e7799c858b3"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__irq__interface.html#gafe839c6ff3a828d617b93e7799c858b3">EXIT_NESTED_IRQ_HANDLING_S</a>()</td></tr>
 <tr class="separator:gafe839c6ff3a828d617b93e7799c858b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga80afb01c8d07feb35fd4bd8133c1e82e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__irq__interface.html#ga80afb01c8d07feb35fd4bd8133c1e82e">NESTED_IRQ_ENTER</a>()</td></tr>
@@ -250,7 +254,7 @@ Macros</h2></td></tr>
 <tr class="separator:ga79becbbcaa74a03a1f4c359c2cbb5b9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga420c16692557443ff3e2a72834932b3e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__irq__interface.html#ga420c16692557443ff3e2a72834932b3e">RESTORE_UCODE</a>()</td></tr>
 <tr class="separator:ga420c16692557443ff3e2a72834932b3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga028cecbe9b446a0478abc0cf5f0473f2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__irq__interface.html#ga028cecbe9b446a0478abc0cf5f0473f2">CONTEXT_REG_NUM</a>&#160;&#160;&#160;(4*(16 + 4 + 1))</td></tr>
+<tr class="memitem:ga028cecbe9b446a0478abc0cf5f0473f2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__irq__interface.html#ga028cecbe9b446a0478abc0cf5f0473f2">CONTEXT_REG_NUM</a>&#160;&#160;&#160;(4 * (16 + 4))</td></tr>
 <tr class="separator:ga028cecbe9b446a0478abc0cf5f0473f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga84c57d7bc6ecc4dcb457283e84636cb0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__irq__interface.html#ga84c57d7bc6ecc4dcb457283e84636cb0">SAVE_FPU_CONTEXT</a>()</td></tr>
 <tr class="separator:ga84c57d7bc6ecc4dcb457283e84636cb0"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -262,6 +266,10 @@ Macros</h2></td></tr>
 <tr class="memitem:gaec3abb01beb316a2d26f8b5fc22ef4de"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__irq__interface.html#gaec3abb01beb316a2d26f8b5fc22ef4de">RESTORE_CALLER_CONTEXT</a>()</td></tr>
 <tr class="memdesc:gaec3abb01beb316a2d26f8b5fc22ef4de"><td class="mdescLeft">&#160;</td><td class="mdescRight">Restore the caller registers based on the RISC-V ABI specification.  <a href="group__irq__interface.html#gaec3abb01beb316a2d26f8b5fc22ef4de">More...</a><br /></td></tr>
 <tr class="separator:gaec3abb01beb316a2d26f8b5fc22ef4de"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga866bd57a04fa82ed736240ac959df148"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__irq__interface.html#ga866bd57a04fa82ed736240ac959df148">SAVE_FPU_STATE</a>()</td></tr>
+<tr class="separator:ga866bd57a04fa82ed736240ac959df148"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf6214fb42ed95b7c5ba4aa8334192092"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__irq__interface.html#gaf6214fb42ed95b7c5ba4aa8334192092">RESTORE_FPU_STATE</a>()</td></tr>
+<tr class="separator:gaf6214fb42ed95b7c5ba4aa8334192092"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga024f4308fcafd04e84c8d2e1bc429459"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__irq__interface.html#ga024f4308fcafd04e84c8d2e1bc429459">SAVE_DSP_CONTEXT</a>()</td></tr>
 <tr class="separator:ga024f4308fcafd04e84c8d2e1bc429459"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga4dfb1913b45f247f5809188efe5c56a1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__irq__interface.html#ga4dfb1913b45f247f5809188efe5c56a1">RESTORE_DSP_CONTEXT</a>()</td></tr>
@@ -428,14 +436,13 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p><code>#include &lt;<a class="el" href="HPM6360_2hpm__interrupt_8h.html">soc/HPM6360/hpm_interrupt.h</a>&gt;</code></p>
-<b>Value:</b><div class="fragment"><div class="line">    {\</div>
-<div class="line">    clear_csr(<a class="code hl_define" href="HPM6110_2hpm__csr__regs_8h.html#a7086e667c65affe87d2c32115193d736">CSR_MSTATUS</a>, <a class="code hl_define" href="HPM6110_2hpm__csr__regs_8h.html#a8e27337cc82e0b08475a4229d85dee77">CSR_MSTATUS_MIE_MASK</a>);\</div>
-<div class="line">    __asm <span class="keyword">volatile</span>(<span class="stringliteral">&quot;lui t0, 0xe4200\n\            addi t0, t0, 0x4 \n&quot;</span>);\</div>
-<div class="line">    __asm <span class="keyword">volatile</span>(<span class="stringliteral">&quot;li t1, %0&quot;</span> : : <span class="stringliteral">&quot;i&quot;</span> (irq_num) :); \</div>
-<div class="line">    __asm <span class="keyword">volatile</span>(<span class="stringliteral">&quot;sw t1, 0(t0)\n\            fence io, io\n&quot;</span>); \</div>
+<b>Value:</b><div class="fragment"><div class="line">    { \</div>
+<div class="line">    __asm <span class="keyword">volatile</span>(<span class="stringliteral">&quot;\n\            lui a5, 0x1\n\            addi a5, a5, -2048\n\            csrc mie, a5\n&quot;</span>);  \</div>
+<div class="line">    __asm <span class="keyword">volatile</span>(<span class="stringliteral">&quot;\n\            lui a4, 0xe4200\n&quot;</span>);\</div>
+<div class="line">    __asm <span class="keyword">volatile</span>(<span class="stringliteral">&quot;li a3, %0&quot;</span> : : <span class="stringliteral">&quot;i&quot;</span> (irq_num) :); \</div>
+<div class="line">    __asm <span class="keyword">volatile</span>(<span class="stringliteral">&quot;sw a3, 4(a4)\n\            fence io, io\n&quot;</span>); \</div>
+<div class="line">    __asm <span class="keyword">volatile</span>(<span class="stringliteral">&quot;csrs mie, a5&quot;</span>); \</div>
 <div class="line">}</div>
-<div class="ttc" id="aHPM6110_2hpm__csr__regs_8h_html_a7086e667c65affe87d2c32115193d736"><div class="ttname"><a href="HPM6110_2hpm__csr__regs_8h.html#a7086e667c65affe87d2c32115193d736">CSR_MSTATUS</a></div><div class="ttdeci">#define CSR_MSTATUS</div><div class="ttdef"><b>Definition:</b> hpm_csr_regs.h:32</div></div>
-<div class="ttc" id="aHPM6110_2hpm__csr__regs_8h_html_a8e27337cc82e0b08475a4229d85dee77"><div class="ttname"><a href="HPM6110_2hpm__csr__regs_8h.html#a8e27337cc82e0b08475a4229d85dee77">CSR_MSTATUS_MIE_MASK</a></div><div class="ttdeci">#define CSR_MSTATUS_MIE_MASK</div><div class="ttdef"><b>Definition:</b> hpm_csr_regs.h:1110</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -456,11 +463,12 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p><code>#include &lt;<a class="el" href="HPM6750_2hpm__interrupt_8h.html">soc/HPM6750/hpm_interrupt.h</a>&gt;</code></p>
-<b>Value:</b><div class="fragment"><div class="line">    {\</div>
-<div class="line">    clear_csr(<a class="code hl_define" href="HPM6110_2hpm__csr__regs_8h.html#a7086e667c65affe87d2c32115193d736">CSR_MSTATUS</a>, <a class="code hl_define" href="HPM6110_2hpm__csr__regs_8h.html#a8e27337cc82e0b08475a4229d85dee77">CSR_MSTATUS_MIE_MASK</a>);\</div>
-<div class="line">    __asm <span class="keyword">volatile</span>(<span class="stringliteral">&quot;lui t0, 0xe4200\n\            addi t0, t0, 0x4 \n&quot;</span>);\</div>
-<div class="line">    __asm <span class="keyword">volatile</span>(<span class="stringliteral">&quot;li t1, %0&quot;</span> : : <span class="stringliteral">&quot;i&quot;</span> (irq_num) :); \</div>
-<div class="line">    __asm <span class="keyword">volatile</span>(<span class="stringliteral">&quot;sw t1, 0(t0)\n\            fence io, io\n&quot;</span>); \</div>
+<b>Value:</b><div class="fragment"><div class="line">    { \</div>
+<div class="line">    __asm <span class="keyword">volatile</span>(<span class="stringliteral">&quot;\n\            lui a5, 0x1\n\            addi a5, a5, -2048\n\            csrc mie, a5\n&quot;</span>);  \</div>
+<div class="line">    __asm <span class="keyword">volatile</span>(<span class="stringliteral">&quot;\n\            lui a4, 0xe4200\n&quot;</span>);\</div>
+<div class="line">    __asm <span class="keyword">volatile</span>(<span class="stringliteral">&quot;li a3, %0&quot;</span> : : <span class="stringliteral">&quot;i&quot;</span> (irq_num) :); \</div>
+<div class="line">    __asm <span class="keyword">volatile</span>(<span class="stringliteral">&quot;sw a3, 4(a4)\n\            fence io, io\n&quot;</span>); \</div>
+<div class="line">    __asm <span class="keyword">volatile</span>(<span class="stringliteral">&quot;csrs mie, a5&quot;</span>); \</div>
 <div class="line">}</div>
 </div><!-- fragment -->
 </div>
@@ -483,9 +491,11 @@ Functions</h2></td></tr>
 
 <p><code>#include &lt;<a class="el" href="HPM6360_2hpm__interrupt_8h.html">soc/HPM6360/hpm_interrupt.h</a>&gt;</code></p>
 <b>Value:</b><div class="fragment"><div class="line">    {\</div>
-<div class="line">    __asm <span class="keyword">volatile</span>(<span class="stringliteral">&quot;li t0, 0xe4000000 \n\            li t1, 0x201004 \n\            add t0, t0, t1 \n\            lui t1, 0 \n\            slli t2, t1, 0xc \n\            add t0, t0, t2 \n&quot;</span>);\</div>
-<div class="line">    __asm <span class="keyword">volatile</span>(<span class="stringliteral">&quot;li t1, %0&quot;</span> : : <span class="stringliteral">&quot;i&quot;</span> (irq_num) :); \</div>
-<div class="line">    __asm <span class="keyword">volatile</span>(<span class="stringliteral">&quot;sw t1, 0(t0) \n\            fence io, io \n\            li t6, 1\n\            addi t6, t6, -0x200\n\            csrrs t6, sie, t6 \n&quot;</span>); \</div>
+<div class="line">    __asm <span class="keyword">volatile</span>(<span class="stringliteral">&quot;\n\            lui a5, 0x1\n\            addi a5, a5, -2048\n\            csrc sie, a5\n&quot;</span>);  \</div>
+<div class="line">    __asm <span class="keyword">volatile</span>(<span class="stringliteral">&quot;\n\            lui a4, 0xe4201\n&quot;</span>);\</div>
+<div class="line">    __asm <span class="keyword">volatile</span>(<span class="stringliteral">&quot;li a3, %0&quot;</span> : : <span class="stringliteral">&quot;i&quot;</span> (irq_num) :); \</div>
+<div class="line">    __asm <span class="keyword">volatile</span>(<span class="stringliteral">&quot;sw a3, 4(a4)\n\            fence io, io\n&quot;</span>); \</div>
+<div class="line">    __asm <span class="keyword">volatile</span>(<span class="stringliteral">&quot;csrs sie, a5&quot;</span>); \</div>
 <div class="line">}</div>
 </div><!-- fragment -->
 </div>
@@ -497,7 +507,7 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define CONTEXT_REG_NUM&#160;&#160;&#160;(4*(16 + 4 + 1))</td>
+          <td class="memname">#define CONTEXT_REG_NUM&#160;&#160;&#160;(4 * (16 + 4))</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -513,7 +523,7 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define CONTEXT_REG_NUM&#160;&#160;&#160;(4*(16 + 4 + 1))</td>
+          <td class="memname">#define CONTEXT_REG_NUM&#160;&#160;&#160;(4 * (16 + 4))</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -554,13 +564,12 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p><code>#include &lt;<a class="el" href="HPM6360_2hpm__interrupt_8h.html">soc/HPM6360/hpm_interrupt.h</a>&gt;</code></p>
-<b>Value:</b><div class="fragment"><div class="line">    {\</div>
-<div class="line">    __asm <span class="keyword">volatile</span>(<span class="stringliteral">&quot;csrr t6, mepc\n\            sw t6, 17*4(sp) \n\            csrr t6, mstatus \n\            sw t6, 18*4(sp) \n\            csrr t6, %0\n\            sw t6, 19*4(sp) \n\    &quot;</span> : : <span class="stringliteral">&quot;i&quot;</span> <a class="code hl_define" href="HPM6110_2hpm__csr__regs_8h.html#af2e2a4b14e7cfa1affdf22f483766c9a">CSR_MXSTATUS</a>);\</div>
+<b>Value:</b><div class="fragment"><div class="line">    { \</div>
+<div class="line">    __asm <span class="keyword">volatile</span>(<span class="stringliteral">&quot;\n\            csrr s2, mepc    \n\            csrr s3, mstatus \n&quot;</span>);\</div>
+<div class="line">    SAVE_FPU_STATE(); \</div>
 <div class="line">    SAVE_DSP_CONTEXT(); \</div>
-<div class="line">    __asm <span class="keyword">volatile</span>(<span class="stringliteral">&quot;li t6, %0\n&quot;</span> : : <span class="stringliteral">&quot;i&quot;</span> (<a class="code hl_define" href="HPM6110_2hpm__csr__regs_8h.html#a8e27337cc82e0b08475a4229d85dee77">CSR_MSTATUS_MIE_MASK</a>)); \</div>
-<div class="line">    __asm <span class="keyword">volatile</span>(<span class="stringliteral">&quot;csrrs t6, mstatus, t6\n&quot;</span>); \</div>
+<div class="line">    __asm <span class="keyword">volatile</span> (<span class="stringliteral">&quot;\n\            c.li a5, 8\n\            csrs mstatus, a5\n&quot;</span>); \</div>
 <div class="line">}</div>
-<div class="ttc" id="aHPM6110_2hpm__csr__regs_8h_html_af2e2a4b14e7cfa1affdf22f483766c9a"><div class="ttname"><a href="HPM6110_2hpm__csr__regs_8h.html#af2e2a4b14e7cfa1affdf22f483766c9a">CSR_MXSTATUS</a></div><div class="ttdeci">#define CSR_MXSTATUS</div><div class="ttdef"><b>Definition:</b> hpm_csr_regs.h:131</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -580,10 +589,11 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p><code>#include &lt;<a class="el" href="HPM6750_2hpm__interrupt_8h.html">soc/HPM6750/hpm_interrupt.h</a>&gt;</code></p>
-<b>Value:</b><div class="fragment"><div class="line">    {\</div>
-<div class="line">    __asm <span class="keyword">volatile</span>(<span class="stringliteral">&quot;csrr t6, mepc\n\            sw t6, 17*4(sp) \n\            csrr t6, mstatus \n\            sw t6, 18*4(sp) \n\            csrr t6, %0\n\            sw t6, 19*4(sp) \n\    &quot;</span> : : <span class="stringliteral">&quot;i&quot;</span> <a class="code hl_define" href="HPM6110_2hpm__csr__regs_8h.html#af2e2a4b14e7cfa1affdf22f483766c9a">CSR_MXSTATUS</a>);\</div>
+<b>Value:</b><div class="fragment"><div class="line">    { \</div>
+<div class="line">    __asm <span class="keyword">volatile</span>(<span class="stringliteral">&quot;\n\            csrr s2, mepc    \n\            csrr s3, mstatus \n&quot;</span>);\</div>
+<div class="line">    SAVE_FPU_STATE(); \</div>
 <div class="line">    SAVE_DSP_CONTEXT(); \</div>
-<div class="line">    __asm <span class="keyword">volatile</span>(<span class="stringliteral">&quot;csrrsi t6, mstatus, 8\n&quot;</span>); \</div>
+<div class="line">    __asm <span class="keyword">volatile</span> (<span class="stringliteral">&quot;\n\            c.li a5, 8\n\            csrs mstatus, a5\n&quot;</span>); \</div>
 <div class="line">}</div>
 </div><!-- fragment -->
 </div>
@@ -604,14 +614,12 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p><code>#include &lt;<a class="el" href="HPM6360_2hpm__interrupt_8h.html">soc/HPM6360/hpm_interrupt.h</a>&gt;</code></p>
-<b>Value:</b><div class="fragment"><div class="line">    {\</div>
-<div class="line">    __asm <span class="keyword">volatile</span>(<span class="stringliteral">&quot;csrr t6, sepc \n\            sw t6, 17*4(sp) \n\            csrr t6, sstatus \n\            sw t6, 18*4(sp) \n\            csrr t6, %0\n\            sw t6, 19*4(sp) \n\    &quot;</span> : : <span class="stringliteral">&quot;i&quot;</span> <a class="code hl_define" href="HPM6110_2hpm__csr__regs_8h.html#a651e65251cc54d4a553702e4cf061ca7">CSR_SSTATUS</a>);\</div>
+<b>Value:</b><div class="fragment"><div class="line">     {\</div>
+<div class="line">     __asm <span class="keyword">volatile</span>(<span class="stringliteral">&quot;\n\            csrr s2, sepc    \n\            csrr s3, sstatus \n&quot;</span>);\</div>
+<div class="line">    SAVE_FPU_STATE(); \</div>
 <div class="line">    SAVE_DSP_CONTEXT(); \</div>
-<div class="line">    __asm <span class="keyword">volatile</span>(<span class="stringliteral">&quot;li t6, %0\n&quot;</span> : : <span class="stringliteral">&quot;i&quot;</span> (<a class="code hl_define" href="HPM6110_2hpm__csr__regs_8h.html#a382ef1e41eb1d32bcd9733e01e3cfd0a">CSR_SSTATUS_SIE_MASK</a>)); \</div>
-<div class="line">    __asm <span class="keyword">volatile</span>(<span class="stringliteral">&quot;csrrs t6, sstatus, t6\n&quot;</span>); \</div>
+<div class="line">    __asm <span class="keyword">volatile</span> (<span class="stringliteral">&quot;\n\            c.li a5, 8\n\            csrs sstatus, a5\n&quot;</span>); \</div>
 <div class="line">}</div>
-<div class="ttc" id="aHPM6110_2hpm__csr__regs_8h_html_a382ef1e41eb1d32bcd9733e01e3cfd0a"><div class="ttname"><a href="HPM6110_2hpm__csr__regs_8h.html#a382ef1e41eb1d32bcd9733e01e3cfd0a">CSR_SSTATUS_SIE_MASK</a></div><div class="ttdeci">#define CSR_SSTATUS_SIE_MASK</div><div class="ttdef"><b>Definition:</b> hpm_csr_regs.h:470</div></div>
-<div class="ttc" id="aHPM6110_2hpm__csr__regs_8h_html_a651e65251cc54d4a553702e4cf061ca7"><div class="ttname"><a href="HPM6110_2hpm__csr__regs_8h.html#a651e65251cc54d4a553702e4cf061ca7">CSR_SSTATUS</a></div><div class="ttdeci">#define CSR_SSTATUS</div><div class="ttdef"><b>Definition:</b> hpm_csr_regs.h:21</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -632,7 +640,8 @@ Functions</h2></td></tr>
 
 <p><code>#include &lt;<a class="el" href="HPM6360_2hpm__interrupt_8h.html">soc/HPM6360/hpm_interrupt.h</a>&gt;</code></p>
 <b>Value:</b><div class="fragment"><div class="line">    { \</div>
-<div class="line">    __asm <span class="keyword">volatile</span>(<span class="stringliteral">&quot;lw t6, 18*4(sp) \n\            csrw mstatus, t6 \n\            lw t6, 17*4(sp) \n\            csrw mepc, t6 \n\            lw t6, 19*4(sp) \n\            csrw %0, t6 \n&quot;</span> : : <span class="stringliteral">&quot;i&quot;</span> <a class="code hl_define" href="HPM6110_2hpm__csr__regs_8h.html#af2e2a4b14e7cfa1affdf22f483766c9a">CSR_MXSTATUS</a>);\</div>
+<div class="line">    __asm <span class="keyword">volatile</span>(<span class="stringliteral">&quot;\n\            csrw mstatus, s3 \n\            csrw mepc, s2 \n&quot;</span>);\</div>
+<div class="line">            RESTORE_FPU_STATE(); \</div>
 <div class="line">            RESTORE_DSP_CONTEXT(); \</div>
 <div class="line">}</div>
 </div><!-- fragment -->
@@ -655,7 +664,8 @@ Functions</h2></td></tr>
 
 <p><code>#include &lt;<a class="el" href="HPM6750_2hpm__interrupt_8h.html">soc/HPM6750/hpm_interrupt.h</a>&gt;</code></p>
 <b>Value:</b><div class="fragment"><div class="line">    { \</div>
-<div class="line">    __asm <span class="keyword">volatile</span>(<span class="stringliteral">&quot;lw t6, 18*4(sp) \n\            csrw mstatus, t6 \n\            lw t6, 17*4(sp) \n\            csrw mepc, t6 \n\            lw t6, 19*4(sp) \n\            csrw %0, t6 \n&quot;</span> : : <span class="stringliteral">&quot;i&quot;</span> <a class="code hl_define" href="HPM6110_2hpm__csr__regs_8h.html#af2e2a4b14e7cfa1affdf22f483766c9a">CSR_MXSTATUS</a>);\</div>
+<div class="line">    __asm <span class="keyword">volatile</span>(<span class="stringliteral">&quot;\n\            csrw mstatus, s3 \n\            csrw mepc, s2 \n&quot;</span>);\</div>
+<div class="line">            RESTORE_FPU_STATE(); \</div>
 <div class="line">            RESTORE_DSP_CONTEXT(); \</div>
 <div class="line">}</div>
 </div><!-- fragment -->
@@ -678,7 +688,8 @@ Functions</h2></td></tr>
 
 <p><code>#include &lt;<a class="el" href="HPM6360_2hpm__interrupt_8h.html">soc/HPM6360/hpm_interrupt.h</a>&gt;</code></p>
 <b>Value:</b><div class="fragment"><div class="line">    { \</div>
-<div class="line">    __asm <span class="keyword">volatile</span>(<span class="stringliteral">&quot;csrrci t6, sstatus, 2 \n\            lw t6, 18*4(sp) \n\            csrw sstatus, t6 \n\            lw t6, 17*4(sp) \n\            csrw sepc, t6 \n\            lw t6, 19*4(sp) \n\            csrw %0, t6 \n&quot;</span> : : <span class="stringliteral">&quot;i&quot;</span> <a class="code hl_define" href="HPM6110_2hpm__csr__regs_8h.html#a651e65251cc54d4a553702e4cf061ca7">CSR_SSTATUS</a>);\</div>
+<div class="line">    __asm <span class="keyword">volatile</span>(<span class="stringliteral">&quot;\n\            csrw sstatus, s3 \n\            csrw sepc, s2 \n&quot;</span>);\</div>
+<div class="line">            RESTORE_FPU_STATE(); \</div>
 <div class="line">            RESTORE_DSP_CONTEXT(); \</div>
 <div class="line">}</div>
 </div><!-- fragment -->
@@ -1283,6 +1294,8 @@ Functions</h2></td></tr>
 <div class="line">        SAVE_UCODE()                                    \</div>
 <div class="line">        set_csr(<a class="code hl_define" href="HPM6110_2hpm__csr__regs_8h.html#a7086e667c65affe87d2c32115193d736">CSR_MSTATUS</a>, <a class="code hl_define" href="HPM6110_2hpm__csr__regs_8h.html#a8e27337cc82e0b08475a4229d85dee77">CSR_MSTATUS_MIE_MASK</a>);</div>
 <div class="ttc" id="aHPM6110_2hpm__csr__regs_8h_html_a53d62065ed74fd3583cca895e6157c5f"><div class="ttname"><a href="HPM6110_2hpm__csr__regs_8h.html#a53d62065ed74fd3583cca895e6157c5f">CSR_MEPC</a></div><div class="ttdeci">#define CSR_MEPC</div><div class="ttdef"><b>Definition:</b> hpm_csr_regs.h:44</div></div>
+<div class="ttc" id="aHPM6110_2hpm__csr__regs_8h_html_a7086e667c65affe87d2c32115193d736"><div class="ttname"><a href="HPM6110_2hpm__csr__regs_8h.html#a7086e667c65affe87d2c32115193d736">CSR_MSTATUS</a></div><div class="ttdeci">#define CSR_MSTATUS</div><div class="ttdef"><b>Definition:</b> hpm_csr_regs.h:32</div></div>
+<div class="ttc" id="aHPM6110_2hpm__csr__regs_8h_html_a8e27337cc82e0b08475a4229d85dee77"><div class="ttname"><a href="HPM6110_2hpm__csr__regs_8h.html#a8e27337cc82e0b08475a4229d85dee77">CSR_MSTATUS_MIE_MASK</a></div><div class="ttdeci">#define CSR_MSTATUS_MIE_MASK</div><div class="ttdef"><b>Definition:</b> hpm_csr_regs.h:1110</div></div>
 <div class="ttc" id="agroup__irq__interface_html_gaba6cd808fbf7dfea3ec93dcf3aa4b9a2"><div class="ttname"><a href="group__irq__interface.html#gaba6cd808fbf7dfea3ec93dcf3aa4b9a2">SAVE_CSR</a></div><div class="ttdeci">#define SAVE_CSR(r)</div><div class="ttdef"><b>Definition:</b> hpm_interrupt.h:492</div></div>
 </div><!-- fragment -->
 </div>
@@ -1466,8 +1479,8 @@ Functions</h2></td></tr>
 
 <p><code>#include &lt;<a class="el" href="HPM6360_2hpm__interrupt_8h.html">soc/HPM6360/hpm_interrupt.h</a>&gt;</code></p>
 <b>Value:</b><div class="fragment"><div class="line">        { \</div>
-<div class="line">        __asm <span class="keyword">volatile</span>(<span class="stringliteral">&quot;lw ra,  0*4(sp)\n\            lw t0,  1*4(sp) \n\            lw t1,  2*4(sp) \n\            lw t2,  3*4(sp) \n\            lw a0,  4*4(sp) \n\            lw a1,  5*4(sp) \n\            lw a2,  6*4(sp) \n\            lw a3,  7*4(sp) \n\            lw a4,  8*4(sp) \n\            lw a5,  9*4(sp) \n\            lw a6, 10*4(sp) \n\            lw a7, 11*4(sp) \n\            lw t3, 12*4(sp) \n\            lw t4, 13*4(sp) \n\            lw t5, 14*4(sp) \n\            lw t6, 15*4(sp) \n&quot;</span>);\</div>
-<div class="line">            RESTORE_FPU_CONTEXT(); \</div>
+<div class="line">        __asm <span class="keyword">volatile</span>(<span class="stringliteral">&quot;\n\            c.lwsp ra,  0*4(sp) \n\            c.lwsp t0,  1*4(sp) \n\            c.lwsp t1,  2*4(sp) \n\            c.lwsp t2,  3*4(sp) \n\            c.lwsp s0,  4*4(sp) \n\            c.lwsp s1,  5*4(sp) \n\            c.lwsp a0,  6*4(sp) \n\            c.lwsp a1,  7*4(sp) \n\            c.lwsp a2,  8*4(sp) \n\            c.lwsp a3,  9*4(sp) \n\            c.lwsp a4, 10*4(sp) \n\            c.lwsp a5, 11*4(sp) \n\            c.lwsp a6, 12*4(sp) \n\            c.lwsp a7, 13*4(sp) \n\            c.lwsp s2, 14*4(sp) \n\            c.lwsp s3, 15*4(sp) \n\            c.lwsp t3, 16*4(sp) \n\            c.lwsp t4, 17*4(sp) \n\            c.lwsp t5, 18*4(sp) \n\            c.lwsp t6, 19*4(sp) \n&quot;</span>);\</div>
+<div class="line">        RESTORE_FPU_CONTEXT(); \</div>
 <div class="line">        __asm <span class="keyword">volatile</span>(<span class="stringliteral">&quot;addi sp, sp, %0&quot;</span> : : <span class="stringliteral">&quot;i&quot;</span>(<a class="code hl_define" href="group__irq__interface.html#ga028cecbe9b446a0478abc0cf5f0473f2">CONTEXT_REG_NUM</a>) :);\</div>
 <div class="line">}</div>
 <div class="ttc" id="agroup__irq__interface_html_ga028cecbe9b446a0478abc0cf5f0473f2"><div class="ttname"><a href="group__irq__interface.html#ga028cecbe9b446a0478abc0cf5f0473f2">CONTEXT_REG_NUM</a></div><div class="ttdeci">#define CONTEXT_REG_NUM</div><div class="ttdef"><b>Definition:</b> hpm_interrupt.h:536</div></div>
@@ -1493,8 +1506,8 @@ Functions</h2></td></tr>
 
 <p><code>#include &lt;<a class="el" href="HPM6750_2hpm__interrupt_8h.html">soc/HPM6750/hpm_interrupt.h</a>&gt;</code></p>
 <b>Value:</b><div class="fragment"><div class="line">        { \</div>
-<div class="line">        __asm <span class="keyword">volatile</span>(<span class="stringliteral">&quot;lw ra,  0*4(sp)\n\            lw t0,  1*4(sp) \n\            lw t1,  2*4(sp) \n\            lw t2,  3*4(sp) \n\            lw a0,  4*4(sp) \n\            lw a1,  5*4(sp) \n\            lw a2,  6*4(sp) \n\            lw a3,  7*4(sp) \n\            lw a4,  8*4(sp) \n\            lw a5,  9*4(sp) \n\            lw a6, 10*4(sp) \n\            lw a7, 11*4(sp) \n\            lw t3, 12*4(sp) \n\            lw t4, 13*4(sp) \n\            lw t5, 14*4(sp) \n\            lw t6, 15*4(sp) \n&quot;</span>);\</div>
-<div class="line">            RESTORE_FPU_CONTEXT(); \</div>
+<div class="line">        __asm <span class="keyword">volatile</span>(<span class="stringliteral">&quot;\n\            c.lwsp ra,  0*4(sp) \n\            c.lwsp t0,  1*4(sp) \n\            c.lwsp t1,  2*4(sp) \n\            c.lwsp t2,  3*4(sp) \n\            c.lwsp s0,  4*4(sp) \n\            c.lwsp s1,  5*4(sp) \n\            c.lwsp a0,  6*4(sp) \n\            c.lwsp a1,  7*4(sp) \n\            c.lwsp a2,  8*4(sp) \n\            c.lwsp a3,  9*4(sp) \n\            c.lwsp a4, 10*4(sp) \n\            c.lwsp a5, 11*4(sp) \n\            c.lwsp a6, 12*4(sp) \n\            c.lwsp a7, 13*4(sp) \n\            c.lwsp s2, 14*4(sp) \n\            c.lwsp s3, 15*4(sp) \n\            c.lwsp t3, 16*4(sp) \n\            c.lwsp t4, 17*4(sp) \n\            c.lwsp t5, 18*4(sp) \n\            c.lwsp t6, 19*4(sp) \n&quot;</span>);\</div>
+<div class="line">        RESTORE_FPU_CONTEXT(); \</div>
 <div class="line">        __asm <span class="keyword">volatile</span>(<span class="stringliteral">&quot;addi sp, sp, %0&quot;</span> : : <span class="stringliteral">&quot;i&quot;</span>(<a class="code hl_define" href="group__irq__interface.html#ga028cecbe9b446a0478abc0cf5f0473f2">CONTEXT_REG_NUM</a>) :);\</div>
 <div class="line">}</div>
 </div><!-- fragment -->
@@ -1656,6 +1669,44 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="gaf6214fb42ed95b7c5ba4aa8334192092" name="gaf6214fb42ed95b7c5ba4aa8334192092"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaf6214fb42ed95b7c5ba4aa8334192092">&#9670;&#160;</a></span>RESTORE_FPU_STATE <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define RESTORE_FPU_STATE</td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><code>#include &lt;<a class="el" href="HPM6360_2hpm__interrupt_8h.html">soc/HPM6360/hpm_interrupt.h</a>&gt;</code></p>
+
+</div>
+</div>
+<a id="gaf6214fb42ed95b7c5ba4aa8334192092" name="gaf6214fb42ed95b7c5ba4aa8334192092"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaf6214fb42ed95b7c5ba4aa8334192092">&#9670;&#160;</a></span>RESTORE_FPU_STATE <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define RESTORE_FPU_STATE</td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><code>#include &lt;<a class="el" href="HPM6750_2hpm__interrupt_8h.html">soc/HPM6750/hpm_interrupt.h</a>&gt;</code></p>
+
+</div>
+</div>
 <a id="ga39e77b4d0969d2ea3c9999ab6c908a2b" name="ga39e77b4d0969d2ea3c9999ab6c908a2b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga39e77b4d0969d2ea3c9999ab6c908a2b">&#9670;&#160;</a></span>RESTORE_MXSTATUS <span class="overload">[1/2]</span></h2>
 
@@ -1784,8 +1835,8 @@ Functions</h2></td></tr>
 <p><code>#include &lt;<a class="el" href="HPM6360_2hpm__interrupt_8h.html">soc/HPM6360/hpm_interrupt.h</a>&gt;</code></p>
 <b>Value:</b><div class="fragment"><div class="line">    { \</div>
 <div class="line">    __asm <span class="keyword">volatile</span>(<span class="stringliteral">&quot;addi sp, sp, %0&quot;</span> : : <span class="stringliteral">&quot;i&quot;</span>(-<a class="code hl_define" href="group__irq__interface.html#ga028cecbe9b446a0478abc0cf5f0473f2">CONTEXT_REG_NUM</a>) :);\</div>
-<div class="line">    __asm <span class="keyword">volatile</span>(<span class="stringliteral">&quot;sw ra,  0*4(sp)\n\            sw t0,  1*4(sp) \n\            sw t1,  2*4(sp) \n\            sw t2,  3*4(sp) \n\            sw a0,  4*4(sp) \n\            sw a1,  5*4(sp) \n\            sw a2,  6*4(sp) \n\            sw a3,  7*4(sp) \n\            sw a4,  8*4(sp) \n\            sw a5,  9*4(sp) \n\            sw a6, 10*4(sp) \n\            sw a7, 11*4(sp) \n\            sw t3, 12*4(sp) \n\            sw t4, 13*4(sp) \n\            sw t5, 14*4(sp) \n\            sw t6, 15*4(sp)&quot;</span>); \</div>
-<div class="line">            SAVE_FPU_CONTEXT(); \</div>
+<div class="line">    __asm <span class="keyword">volatile</span>(<span class="stringliteral">&quot;\n\            c.swsp ra,  0*4(sp) \n\            c.swsp t0,  1*4(sp) \n\            c.swsp t1,  2*4(sp) \n\            c.swsp t2,  3*4(sp) \n\            c.swsp s0,  4*4(sp) \n\            c.swsp s1,  5*4(sp) \n\            c.swsp a0,  6*4(sp) \n\            c.swsp a1,  7*4(sp) \n\            c.swsp a2,  8*4(sp) \n\            c.swsp a3,  9*4(sp) \n\            c.swsp a4, 10*4(sp) \n\            c.swsp a5, 11*4(sp) \n\            c.swsp a6, 12*4(sp) \n\            c.swsp a7, 13*4(sp) \n\            c.swsp s2, 14*4(sp) \n\            c.swsp s3, 15*4(sp) \n\            c.swsp t3, 16*4(sp) \n\            c.swsp t4, 17*4(sp) \n\            c.swsp t5, 18*4(sp) \n\            c.swsp t6, 19*4(sp)&quot;</span>); \</div>
+<div class="line">    SAVE_FPU_CONTEXT(); \</div>
 <div class="line">}</div>
 </div><!-- fragment -->
 <p>Save the caller registers based on the RISC-V ABI specification. </p>
@@ -1810,8 +1861,8 @@ Functions</h2></td></tr>
 <p><code>#include &lt;<a class="el" href="HPM6750_2hpm__interrupt_8h.html">soc/HPM6750/hpm_interrupt.h</a>&gt;</code></p>
 <b>Value:</b><div class="fragment"><div class="line">    { \</div>
 <div class="line">    __asm <span class="keyword">volatile</span>(<span class="stringliteral">&quot;addi sp, sp, %0&quot;</span> : : <span class="stringliteral">&quot;i&quot;</span>(-<a class="code hl_define" href="group__irq__interface.html#ga028cecbe9b446a0478abc0cf5f0473f2">CONTEXT_REG_NUM</a>) :);\</div>
-<div class="line">    __asm <span class="keyword">volatile</span>(<span class="stringliteral">&quot;sw ra,  0*4(sp)\n\            sw t0,  1*4(sp) \n\            sw t1,  2*4(sp) \n\            sw t2,  3*4(sp) \n\            sw a0,  4*4(sp) \n\            sw a1,  5*4(sp) \n\            sw a2,  6*4(sp) \n\            sw a3,  7*4(sp) \n\            sw a4,  8*4(sp) \n\            sw a5,  9*4(sp) \n\            sw a6, 10*4(sp) \n\            sw a7, 11*4(sp) \n\            sw t3, 12*4(sp) \n\            sw t4, 13*4(sp) \n\            sw t5, 14*4(sp) \n\            sw t6, 15*4(sp)&quot;</span>); \</div>
-<div class="line">            SAVE_FPU_CONTEXT(); \</div>
+<div class="line">    __asm <span class="keyword">volatile</span>(<span class="stringliteral">&quot;\n\            c.swsp ra,  0*4(sp) \n\            c.swsp t0,  1*4(sp) \n\            c.swsp t1,  2*4(sp) \n\            c.swsp t2,  3*4(sp) \n\            c.swsp s0,  4*4(sp) \n\            c.swsp s1,  5*4(sp) \n\            c.swsp a0,  6*4(sp) \n\            c.swsp a1,  7*4(sp) \n\            c.swsp a2,  8*4(sp) \n\            c.swsp a3,  9*4(sp) \n\            c.swsp a4, 10*4(sp) \n\            c.swsp a5, 11*4(sp) \n\            c.swsp a6, 12*4(sp) \n\            c.swsp a7, 13*4(sp) \n\            c.swsp s2, 14*4(sp) \n\            c.swsp s3, 15*4(sp) \n\            c.swsp t3, 16*4(sp) \n\            c.swsp t4, 17*4(sp) \n\            c.swsp t5, 18*4(sp) \n\            c.swsp t6, 19*4(sp)&quot;</span>); \</div>
+<div class="line">    SAVE_FPU_CONTEXT(); \</div>
 <div class="line">}</div>
 </div><!-- fragment -->
 <p>Save the caller registers based on the RISC-V ABI specification. </p>
@@ -1972,6 +2023,44 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="ga866bd57a04fa82ed736240ac959df148" name="ga866bd57a04fa82ed736240ac959df148"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga866bd57a04fa82ed736240ac959df148">&#9670;&#160;</a></span>SAVE_FPU_STATE <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SAVE_FPU_STATE</td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><code>#include &lt;<a class="el" href="HPM6360_2hpm__interrupt_8h.html">soc/HPM6360/hpm_interrupt.h</a>&gt;</code></p>
+
+</div>
+</div>
+<a id="ga866bd57a04fa82ed736240ac959df148" name="ga866bd57a04fa82ed736240ac959df148"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga866bd57a04fa82ed736240ac959df148">&#9670;&#160;</a></span>SAVE_FPU_STATE <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SAVE_FPU_STATE</td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><code>#include &lt;<a class="el" href="HPM6750_2hpm__interrupt_8h.html">soc/HPM6750/hpm_interrupt.h</a>&gt;</code></p>
+
+</div>
+</div>
 <a id="ga5648c18ae88142d1d1a5fb3db6b5954a" name="ga5648c18ae88142d1d1a5fb3db6b5954a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga5648c18ae88142d1d1a5fb3db6b5954a">&#9670;&#160;</a></span>SAVE_MXSTATUS <span class="overload">[1/2]</span></h2>
 
@@ -2088,8 +2177,8 @@ Functions</h2></td></tr>
 <div class="line">    RESTORE_CALLER_CONTEXT();\</div>
 <div class="line">    __asm <span class="keyword">volatile</span>(<span class="stringliteral">&quot;mret\n&quot;</span>);\</div>
 <div class="line">}</div>
-<div class="ttc" id="agroup__irq__interface_html_ga4b94f2a03395e6ce6d42463ecf74aa1e"><div class="ttname"><a href="group__irq__interface.html#ga4b94f2a03395e6ce6d42463ecf74aa1e">ISR_NAME_M</a></div><div class="ttdeci">#define ISR_NAME_M(irq_num)</div><div class="ttdef"><b>Definition:</b> hpm_interrupt.h:899</div></div>
-<div class="ttc" id="agroup__irq__interface_html_gabbaccfbed35b945162c27ef6d3748e77"><div class="ttname"><a href="group__irq__interface.html#gabbaccfbed35b945162c27ef6d3748e77">EXTERN_C</a></div><div class="ttdeci">#define EXTERN_C</div><div class="ttdef"><b>Definition:</b> hpm_interrupt.h:896</div></div>
+<div class="ttc" id="agroup__irq__interface_html_ga4b94f2a03395e6ce6d42463ecf74aa1e"><div class="ttname"><a href="group__irq__interface.html#ga4b94f2a03395e6ce6d42463ecf74aa1e">ISR_NAME_M</a></div><div class="ttdeci">#define ISR_NAME_M(irq_num)</div><div class="ttdef"><b>Definition:</b> hpm_interrupt.h:872</div></div>
+<div class="ttc" id="agroup__irq__interface_html_gabbaccfbed35b945162c27ef6d3748e77"><div class="ttname"><a href="group__irq__interface.html#gabbaccfbed35b945162c27ef6d3748e77">EXTERN_C</a></div><div class="ttdeci">#define EXTERN_C</div><div class="ttdef"><b>Definition:</b> hpm_interrupt.h:869</div></div>
 </div><!-- fragment -->
 <p>Declare an external interrupt handler for machine mode. </p>
 <dl class="params"><dt>Parameters</dt><dd>
@@ -2142,7 +2231,7 @@ Functions</h2></td></tr>
 <div class="line">    RESTORE_CALLER_CONTEXT();\</div>
 <div class="line">    __asm <span class="keyword">volatile</span>(<span class="stringliteral">&quot;mret\n&quot;</span>);\</div>
 <div class="line">}</div>
-<div class="ttc" id="agroup__irq__interface_html_gab7dffc953e93ba3203a4ef92d7937781"><div class="ttname"><a href="group__irq__interface.html#gab7dffc953e93ba3203a4ef92d7937781">HPM_EXTERN_C</a></div><div class="ttdeci">#define HPM_EXTERN_C</div><div class="ttdef"><b>Definition:</b> hpm_interrupt.h:655</div></div>
+<div class="ttc" id="agroup__irq__interface_html_gab7dffc953e93ba3203a4ef92d7937781"><div class="ttname"><a href="group__irq__interface.html#gab7dffc953e93ba3203a4ef92d7937781">HPM_EXTERN_C</a></div><div class="ttdeci">#define HPM_EXTERN_C</div><div class="ttdef"><b>Definition:</b> hpm_interrupt.h:636</div></div>
 </div><!-- fragment -->
 <p>Declare an external interrupt handler for machine mode. </p>
 <dl class="params"><dt>Parameters</dt><dd>
@@ -2194,7 +2283,7 @@ Functions</h2></td></tr>
 <div class="line">    RESTORE_CALLER_CONTEXT();\</div>
 <div class="line">    __asm <span class="keyword">volatile</span>(<span class="stringliteral">&quot;sret\n&quot;</span>);\</div>
 <div class="line">}</div>
-<div class="ttc" id="agroup__irq__interface_html_ga12822017b8332ed56f806e42db82294e"><div class="ttname"><a href="group__irq__interface.html#ga12822017b8332ed56f806e42db82294e">ISR_NAME_S</a></div><div class="ttdeci">#define ISR_NAME_S(irq_num)</div><div class="ttdef"><b>Definition:</b> hpm_interrupt.h:900</div></div>
+<div class="ttc" id="agroup__irq__interface_html_ga12822017b8332ed56f806e42db82294e"><div class="ttname"><a href="group__irq__interface.html#ga12822017b8332ed56f806e42db82294e">ISR_NAME_S</a></div><div class="ttdeci">#define ISR_NAME_S(irq_num)</div><div class="ttdef"><b>Definition:</b> hpm_interrupt.h:873</div></div>
 </div><!-- fragment -->
 <p>Declare an external interrupt handler for supervisor mode. </p>
 <dl class="params"><dt>Parameters</dt><dd>
@@ -3690,7 +3779,7 @@ Functions</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Mon Oct 31 2022 20:47:08 for HPM SDK by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
+    <li class="footer">Generated on Sat Dec 31 2022 19:59:45 for HPM SDK by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
   </ul>
 </div>
 </body>

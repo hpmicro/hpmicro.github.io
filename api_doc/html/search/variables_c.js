@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['mac_5faddr_0',['MAC_ADDR',['../structENET__Type.html#a1c619bab3a64d0bbe4ba707b4bd74d79',1,'ENET_Type']]],
+  ['mac_5faddr_0',['MAC_ADDR',['../structENET__Type.html#a9d09c5b3402cbbe71fb80205227b59db',1,'ENET_Type']]],
   ['mac_5faddr_5f0_5fhigh_1',['MAC_ADDR_0_HIGH',['../structENET__Type.html#a07b84b4682a72644e8d1946b6a771a48',1,'ENET_Type']]],
   ['mac_5faddr_5f0_5flow_2',['MAC_ADDR_0_LOW',['../structENET__Type.html#a6eb68bdd7cdb6edde5953c959cc4fa9b',1,'ENET_Type']]],
   ['mac_5faddr_5fhigh_3',['mac_addr_high',['../structenet__mac__config__t.html#ad75c4ef76d0fd20a0a488834e46a9072',1,'enet_mac_config_t']]],
@@ -51,16 +51,17 @@ var searchData=
   ['mode_5fcfg_5flist_48',['mode_cfg_list',['../structxpi__device__info__t.html#a67d9440aa18dbe077daac5d6f6149967',1,'xpi_device_info_t']]],
   ['mode_5fcfg_5fparam_49',['mode_cfg_param',['../structxpi__device__info__t.html#a4e457fa336dd9df1e17a722ca0b1e01f',1,'xpi_device_info_t']]],
   ['modem_5fconfig_50',['modem_config',['../structhpm__uart__config.html#adacd259970bdd4049e8e29bef8ef274a',1,'hpm_uart_config']]],
-  ['monitor_51',['MONITOR',['../structSYSCTL__Type.html#aad2fcb36ea673fab68e4c3386f510110',1,'SYSCTL_Type::MONITOR()'],['../structSYSCTL__Type.html#aa4faf47ba2b815594a9fa3b3efdbc2cf',1,'SYSCTL_Type::MONITOR()'],['../structSYSCTL__Type.html#a8ae0a37d397d0e2d42a3bb787e5ae1ac',1,'SYSCTL_Type::MONITOR()'],['../structSYSCTL__Type.html#a22ab7a60f54e08f57d04dbb85eecf227',1,'SYSCTL_Type::MONITOR()'],['../structSYSCTL__Type.html#aca8ed39e76d0258c74feb2f07922cf7d',1,'SYSCTL_Type::MONITOR()'],['../structSYSCTL__Type.html#a084e75601d59123f22fbc7ab7dfae672',1,'SYSCTL_Type::MONITOR()'],['../structSYSCTL__Type.html#ad39f8c8bad1da9f1efa253b71006d210',1,'SYSCTL_Type::MONITOR()'],['../structSYSCTL__Type.html#aa8f6e9b3f5bcfb4641fe2d439ee338dd',1,'SYSCTL_Type::MONITOR()'],['../structSYSCTL__Type.html#ab0be55db4819f3595641bb1349337770',1,'SYSCTL_Type::MONITOR()'],['../structSYSCTL__Type.html#a05340ca6216bb2a42ff254a29c3a2fae',1,'SYSCTL_Type::MONITOR()'],['../structSYSCTL__Type.html#a510fc332af03ebcdbe4ff761ac0965f7',1,'SYSCTL_Type::MONITOR()'],['../structBMON__Type.html#a6f57a7bd6b0825af1b572ffaa2f9df22',1,'BMON_Type::MONITOR()'],['../structMON__Type.html#ad720a7f1040081e7b727ff8df9ab750c',1,'MON_Type::MONITOR()'],['../structPMON__Type.html#ab11873b909c938a5e42a52bfa7b53f44',1,'PMON_Type::MONITOR()']]],
+  ['monitor_51',['MONITOR',['../structSYSCTL__Type.html#aad2fcb36ea673fab68e4c3386f510110',1,'SYSCTL_Type::MONITOR()'],['../structSYSCTL__Type.html#aa4faf47ba2b815594a9fa3b3efdbc2cf',1,'SYSCTL_Type::MONITOR()'],['../structSYSCTL__Type.html#a8ae0a37d397d0e2d42a3bb787e5ae1ac',1,'SYSCTL_Type::MONITOR()'],['../structSYSCTL__Type.html#a22ab7a60f54e08f57d04dbb85eecf227',1,'SYSCTL_Type::MONITOR()'],['../structSYSCTL__Type.html#aca8ed39e76d0258c74feb2f07922cf7d',1,'SYSCTL_Type::MONITOR()'],['../structSYSCTL__Type.html#adad47314841f6de15d669a9f2258bc32',1,'SYSCTL_Type::MONITOR()'],['../structSYSCTL__Type.html#ac212ee4cb836bb9afaf00577cbed0cd7',1,'SYSCTL_Type::MONITOR()'],['../structSYSCTL__Type.html#ad19949fe79127ef70d9efc4ae5d158d8',1,'SYSCTL_Type::MONITOR()'],['../structSYSCTL__Type.html#af7c2390f9fed5deb7f3499b50e187e81',1,'SYSCTL_Type::MONITOR()'],['../structSYSCTL__Type.html#a5874798766dd655ab59f1dda0ec69e4f',1,'SYSCTL_Type::MONITOR()'],['../structSYSCTL__Type.html#aa97a2ba57181d2b345359e50165b5a2e',1,'SYSCTL_Type::MONITOR()'],['../structSYSCTL__Type.html#afbbddf59ceadb43feb3347a990119379',1,'SYSCTL_Type::MONITOR()'],['../structBMON__Type.html#adbff1aef716fbf2b0a77470028b90ee9',1,'BMON_Type::MONITOR()'],['../structMON__Type.html#a801dff2513ee7e2009b055dc38e5f6af',1,'MON_Type::MONITOR()'],['../structPMON__Type.html#ad7b9b320df329d8f6e98d3c44a618ddd',1,'PMON_Type::MONITOR()']]],
   ['monoh_52',['MONOH',['../structMONO__Type.html#a2b6a489e889c2298b91ec28a7ac724f7',1,'MONO_Type']]],
   ['monol_53',['MONOL',['../structMONO__Type.html#a1c4d57bf761ce1e0d276e2e9c0701051',1,'MONO_Type']]],
   ['mosi_5fbidir_54',['mosi_bidir',['../structspi__common__format__config__t.html#addace38f33b9d2d11b9de77e3bd11a7f',1,'spi_common_format_config_t']]],
   ['motorpar_55',['motorpar',['../structbldc__contrl__foc__par.html#a99b02716df2e029e034caa554c35d459',1,'bldc_contrl_foc_par']]],
   ['msg_5ftype_56',['msg_type',['../structenet__rx__desc__t.html#a42c25b78b5a4ae73de2a8db5437a8596',1,'enet_rx_desc_t']]],
-  ['mshc_5fver_5fid_57',['MSHC_VER_ID',['../structSDXC__Type.html#abb42b6dac879f214686af7b1992e72b1',1,'SDXC_Type']]],
-  ['mshc_5fver_5ftype_58',['MSHC_VER_TYPE',['../structSDXC__Type.html#aaf86ca2c72b6aa6a2bc91a491873b03e',1,'SDXC_Type']]],
-  ['msr_59',['MSR',['../structUART__Type.html#a34261bb8a14896a64528cc10bdb37ac2',1,'UART_Type']]],
-  ['mtime_60',['MTIME',['../structMCHTMR__Type.html#a9c9ced702a7585a15c51b1ab437d7e1e',1,'MCHTMR_Type']]],
-  ['mtimecmp_61',['MTIMECMP',['../structMCHTMR__Type.html#aa72e3acee4b64d917b899798ea4cb441',1,'MCHTMR_Type']]],
-  ['muxcfg_62',['MUXCFG',['../structDMAMUX__Type.html#adf8d7ab0e0e7a6604705d100e7fe1ecc',1,'DMAMUX_Type']]]
+  ['mshc_5fctrl_57',['MSHC_CTRL',['../structSDXC__Type.html#a51d73f5f55e74d2f3e08f0bc8c32b744',1,'SDXC_Type']]],
+  ['mshc_5fver_5fid_58',['MSHC_VER_ID',['../structSDXC__Type.html#abb42b6dac879f214686af7b1992e72b1',1,'SDXC_Type']]],
+  ['mshc_5fver_5ftype_59',['MSHC_VER_TYPE',['../structSDXC__Type.html#aaf86ca2c72b6aa6a2bc91a491873b03e',1,'SDXC_Type']]],
+  ['msr_60',['MSR',['../structUART__Type.html#a34261bb8a14896a64528cc10bdb37ac2',1,'UART_Type']]],
+  ['mtime_61',['MTIME',['../structMCHTMR__Type.html#a9c9ced702a7585a15c51b1ab437d7e1e',1,'MCHTMR_Type']]],
+  ['mtimecmp_62',['MTIMECMP',['../structMCHTMR__Type.html#aa72e3acee4b64d917b899798ea4cb441',1,'MCHTMR_Type']]],
+  ['muxcfg_63',['MUXCFG',['../structDMAMUX__Type.html#adf8d7ab0e0e7a6604705d100e7fe1ecc',1,'DMAMUX_Type']]]
 ];

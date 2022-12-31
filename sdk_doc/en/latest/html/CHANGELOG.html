@@ -18,6 +18,7 @@
         <script src="static/underscore.js"></script>
         <script src="static/_sphinx_javascript_frameworks_compat.js"></script>
         <script src="static/doctools.js"></script>
+        <script src="static/sphinx_highlight.js"></script>
         <script src="static/tabs.js"></script>
         <script type="module" src="_static/js/dark-mode-toggle.min.mjs"></script>
         <script src="_static/js/ga-tracker.js"></script>
@@ -68,7 +69,7 @@
           </dd>
         
           <dd>
-            <a onclick="RelativeAddress('/0.14.0/html/index.html')">0.14.0</a>
+            <a onclick="RelativeAddress('/1.0.0/html/index.html')">1.0.0</a>
           </dd>
         
       </dl>
@@ -102,77 +103,83 @@
               <p class="caption" role="heading"><span class="caption-text">Contents</span></p>
 <ul class="current">
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Change Log</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#id1">[0.14.0] - 2022-10-31:</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#id1">[1.00.0] - 2022-12-31:</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#changed">Changed:</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#fixed">Fixed:</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#added">Added:</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#fixed">Fixed:</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="#id2">[0.13.0] - 2022-07-31:</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#id2">[0.14.0] - 2022-10-31:</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#id3">Changed:</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#id4">Fixed:</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#id5">Added:</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="#id6">[0.12.1] - 2022-07-01:</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#id7">Fixed:</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id6">[0.13.0] - 2022-07-31:</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id7">Changed:</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id8">Fixed:</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id9">Added:</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="#id8">[0.12.0] - 2022-06-30:</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#id9">Changed:</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#id10">Fixed:</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#id11">Added:</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id10">[0.12.1] - 2022-07-01:</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id11">Fixed:</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="#id12">[0.11.0] - 2022-05-31:</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#id12">[0.12.0] - 2022-06-30:</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#id13">Changed:</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#id14">Fixed:</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id15">Added:</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="#id15">Added:</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id16">[0.11.0] - 2022-05-31:</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id17">Changed:</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id18">Fixed:</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#id19">Added:</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#hpm6300-2022-05-16">[0.10.0_hpm6300] - 2022-05-16:</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#id16">Changed:</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#id17">Fixed:</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#id18">Added:</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="#id19">[0.10.0] - 2022-04-30:</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#id20">Changed:</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#id21">Added:</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#id22">Fixed:</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id21">Fixed:</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id22">Added:</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="#id23">[0.9.0] - 2022-04-01:</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#id23">[0.10.0] - 2022-04-30:</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#id24">Changed:</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#id25">Added:</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#id26">Fixed:</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="#id27">[0.8.0] - 2022-03-04:</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#id27">[0.9.0] - 2022-04-01:</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#id28">Changed:</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#id29">Fixed:</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#id30">Added:</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id29">Added:</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id30">Fixed:</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="#id31">[0.7.3] - 2022-02-23:</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#id31">[0.8.0] - 2022-03-04:</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#id32">Changed:</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id33">Fixed:</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id34">Added:</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="#id33">[0.7.2] - 2022-02-21:</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#id34">Changed:</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#id35">Fixed:</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id35">[0.7.3] - 2022-02-23:</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id36">Changed:</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="#id36">[0.7.1] - 2022-02-13:</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#id37">Changed:</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#id38">Fixed:</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#id39">Added:</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id37">[0.7.2] - 2022-02-21:</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id38">Changed:</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id39">Fixed:</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="#id40">[0.7.0] - 2022-01-30:</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#id40">[0.7.1] - 2022-02-13:</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#id41">Changed:</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#id42">Fixed:</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#id43">Added:</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#id44">[0.7.0] - 2022-01-30:</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id45">Changed:</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id46">Fixed:</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id47">Added:</a></li>
 </ul>
 </li>
 </ul>
@@ -248,11 +255,73 @@
   <section id="change-log">
 <h1>Change Log<a class="headerlink" href="#change-log" title="Permalink to this heading">¶</a></h1>
 <section id="id1">
-<h2>[0.14.0] - 2022-10-31:<a class="headerlink" href="#id1" title="Permalink to this heading">¶</a></h2>
-<p>Main changes since 0.13.0</p>
-<p>Tested Segger Embedded Studio Version: 6.34a</p>
+<h2>[1.00.0] - 2022-12-31:<a class="headerlink" href="#id1" title="Permalink to this heading">¶</a></h2>
+<p>Main changes since 0.14.0</p>
+<p>Tested Segger Embedded Studio Version: 7.10</p>
 <section id="changed">
 <h3>Changed:<a class="headerlink" href="#changed" title="Permalink to this heading">¶</a></h3>
+<ul class="simple">
+<li><p>boards: add version info in banner.</p></li>
+<li><p>board: lcdc: move panel para to board</p></li>
+<li><p>components: spi component to support to transfer different width of data in dma handshake mode</p></li>
+<li><p>drivers: rename dram to femc</p></li>
+<li><p>middleware: cherryusb update to v0.7.0</p></li>
+<li><p>middleware: erpc: update for support rtos</p></li>
+<li><p>middleware: hpm_mcl: update api naming</p></li>
+<li><p>samples: erpc: rename erpc_matrix_multiply_rpmsg to erpc_matrix_multiply_rpmsg_bm</p></li>
+<li><p>samples: erpc: reorganize erpc_matrix_multiply_rpmsg samples</p></li>
+<li><p>samples: erpc: move samples folder to erpc_matrix_multiply_rpmsg</p></li>
+<li><p>samples: update i2c/spi dma channel and dmamux channel definition</p></li>
+<li><p>ses: project template: use demo.* as output file naming.</p></li>
+<li><p>soc: HPM6750: toolchains: update linker files</p></li>
+<li><p>soc: HPM6360: toolchains: update linker files</p></li>
+</ul>
+</section>
+<section id="added">
+<h3>Added:<a class="headerlink" href="#added" title="Permalink to this heading">¶</a></h3>
+<ul class="simple">
+<li><p>arch: riscv: add read_clear_csr() API</p></li>
+<li><p>component: add wm8960 support</p></li>
+<li><p>component: add usb device iso transfer support</p></li>
+<li><p>drivers: hpm_common: include hpm_sdk_version.h.</p></li>
+<li><p>drivers: common: add NOP and WFI.</p></li>
+<li><p>drivers: uart: add api to recv/send byte directly.</p></li>
+<li><p>soc: HPM6750 linker files: rename rpmsg_sh_mem to sh_mem</p></li>
+<li><p>cmake: add sdk version header file generation.</p></li>
+<li><p>middleware: tinyusb: add audio class</p></li>
+<li><p>middleware: hpm_math: add NN library</p></li>
+<li><p>samples: erpc: add erpc_two_way_rpc_rpmsg_rtos sample</p></li>
+<li><p>samples: erpc: add erpc_matrix_multiply_rpmsg_rtos sample</p></li>
+<li><p>samples: add power mode switch demo. #282</p></li>
+<li><p>samples: drivers: adc: add a temperature measurement demo</p></li>
+<li><p>samples: drviers: femc: add sram sample</p></li>
+<li><p>samples: lwip demo for FreeRTOS</p></li>
+<li><p>samples: lwip demo of interrupt usage</p></li>
+<li><p>samples: tinyusb: add uac2 demo</p></li>
+<li><p>samples: tflm: add face detection demo</p></li>
+<li><p>samples: tflm: add MLPerf Tiny benchmark demo</p></li>
+<li><p>samples: lwip: common: feature: add a LPI interrupt process</p></li>
+</ul>
+</section>
+<section id="fixed">
+<h3>Fixed:<a class="headerlink" href="#fixed" title="Permalink to this heading">¶</a></h3>
+<ul class="simple">
+<li><p>drivers:interrupt: Fix FPU context crashing in nested irq case</p></li>
+<li><p>drivers: src: adc: fix adc result in period mode</p></li>
+<li><p>segger: update app directory structure in SES.</p></li>
+<li><p>soc: disable irq during cache maintenance</p></li>
+<li><p>middleware: lvgl: fps calculation to No.</p></li>
+<li><p>samples: get off level based on board api.</p></li>
+<li><p>samples: multicore: hello: core1 rgb led does not change correctly.</p></li>
+</ul>
+</section>
+</section>
+<section id="id2">
+<h2>[0.14.0] - 2022-10-31:<a class="headerlink" href="#id2" title="Permalink to this heading">¶</a></h2>
+<p>Main changes since 0.13.0</p>
+<p>Tested Segger Embedded Studio Version: 6.34a</p>
+<section id="id3">
+<h3>Changed:<a class="headerlink" href="#id3" title="Permalink to this heading">¶</a></h3>
 <ul class="simple">
 <li><p>drivers: inc: update adc driver</p></li>
 <li><p>drivers: gptmr: update reload value</p></li>
@@ -277,8 +346,8 @@
 <li><p>board: bump HPM6750 DCDC voltage to 1200mv</p></li>
 </ul>
 </section>
-<section id="fixed">
-<h3>Fixed:<a class="headerlink" href="#fixed" title="Permalink to this heading">¶</a></h3>
+<section id="id4">
+<h3>Fixed:<a class="headerlink" href="#id4" title="Permalink to this heading">¶</a></h3>
 <ul class="simple">
 <li><p>drivers: pdma: fix scale api issue</p></li>
 <li><p>drivers: i2c: update DATACNT processing</p></li>
@@ -309,8 +378,8 @@
 <li><p>boards: fix some rmii reference clock APIs</p></li>
 </ul>
 </section>
-<section id="added">
-<h3>Added:<a class="headerlink" href="#added" title="Permalink to this heading">¶</a></h3>
+<section id="id5">
+<h3>Added:<a class="headerlink" href="#id5" title="Permalink to this heading">¶</a></h3>
 <ul class="simple">
 <li><p>boards: add hpm6750evk2 support</p></li>
 <li><p>soc: add initfini.c</p></li>
@@ -336,11 +405,11 @@
 </ul>
 </section>
 </section>
-<section id="id2">
-<h2>[0.13.0] - 2022-07-31:<a class="headerlink" href="#id2" title="Permalink to this heading">¶</a></h2>
+<section id="id6">
+<h2>[0.13.0] - 2022-07-31:<a class="headerlink" href="#id6" title="Permalink to this heading">¶</a></h2>
 <p>Main changes since 0.12.1</p>
-<section id="id3">
-<h3>Changed:<a class="headerlink" href="#id3" title="Permalink to this heading">¶</a></h3>
+<section id="id7">
+<h3>Changed:<a class="headerlink" href="#id7" title="Permalink to this heading">¶</a></h3>
 <ul class="simple">
 <li><p>drivers: adc: fix sequence and preemption mode</p></li>
 <li><p>drivers: usb: automatically change transceiver type in host mode</p></li>
@@ -361,8 +430,8 @@
 <li><p>scripts: ses: update file path using $(HPM_SDK_BASE)</p></li>
 </ul>
 </section>
-<section id="id4">
-<h3>Fixed:<a class="headerlink" href="#id4" title="Permalink to this heading">¶</a></h3>
+<section id="id8">
+<h3>Fixed:<a class="headerlink" href="#id8" title="Permalink to this heading">¶</a></h3>
 <ul class="simple">
 <li><p>drivers: gpiom: fix spelling errors in API names</p></li>
 <li><p>drivers: enet: fix ptp time offset update</p></li>
@@ -383,8 +452,8 @@
 <li><p>cmake: ses: put app source into separate category in ses.</p></li>
 </ul>
 </section>
-<section id="id5">
-<h3>Added:<a class="headerlink" href="#id5" title="Permalink to this heading">¶</a></h3>
+<section id="id9">
+<h3>Added:<a class="headerlink" href="#id9" title="Permalink to this heading">¶</a></h3>
 <ul class="simple">
 <li><p>components: enet_phy: add rtl8211 driver</p></li>
 <li><p>components: hpm_spi: add initial SPI component</p></li>
@@ -400,22 +469,22 @@
 </ul>
 </section>
 </section>
-<section id="id6">
-<h2>[0.12.1] - 2022-07-01:<a class="headerlink" href="#id6" title="Permalink to this heading">¶</a></h2>
+<section id="id10">
+<h2>[0.12.1] - 2022-07-01:<a class="headerlink" href="#id10" title="Permalink to this heading">¶</a></h2>
 <p>Main changes since 0.12.0</p>
-<section id="id7">
-<h3>Fixed:<a class="headerlink" href="#id7" title="Permalink to this heading">¶</a></h3>
+<section id="id11">
+<h3>Fixed:<a class="headerlink" href="#id11" title="Permalink to this heading">¶</a></h3>
 <ul class="simple">
 <li><p>update lwipopt.h for updated enet driver</p></li>
 </ul>
 </section>
 </section>
-<section id="id8">
-<h2>[0.12.0] - 2022-06-30:<a class="headerlink" href="#id8" title="Permalink to this heading">¶</a></h2>
+<section id="id12">
+<h2>[0.12.0] - 2022-06-30:<a class="headerlink" href="#id12" title="Permalink to this heading">¶</a></h2>
 <p>Tested with SES 6.32</p>
 <p>Main changes since 0.11.0</p>
-<section id="id9">
-<h3>Changed:<a class="headerlink" href="#id9" title="Permalink to this heading">¶</a></h3>
+<section id="id13">
+<h3>Changed:<a class="headerlink" href="#id13" title="Permalink to this heading">¶</a></h3>
 <ul class="simple">
 <li><p>boards: hpm6360evk has been renamed to hpm6300evk</p></li>
 <li><p>boards: Use CSR_CYCLE in the clock_delay function</p></li>
@@ -433,8 +502,8 @@
 <li><p>samples: drivers: plic: use gpio toggle count as nested irq</p></li>
 </ul>
 </section>
-<section id="id10">
-<h3>Fixed:<a class="headerlink" href="#id10" title="Permalink to this heading">¶</a></h3>
+<section id="id14">
+<h3>Fixed:<a class="headerlink" href="#id14" title="Permalink to this heading">¶</a></h3>
 <ul class="simple">
 <li><p>drivers: pwm: fix function name inconsistency bug</p></li>
 <li><p>drivers: enet: remove “board.h” in enet driver</p></li>
@@ -451,8 +520,8 @@
 <li><p>samples: FATFS demo cannot support write/read if FATFS passes unaligned buffer address</p></li>
 </ul>
 </section>
-<section id="id11">
-<h3>Added:<a class="headerlink" href="#id11" title="Permalink to this heading">¶</a></h3>
+<section id="id15">
+<h3>Added:<a class="headerlink" href="#id15" title="Permalink to this heading">¶</a></h3>
 <ul class="simple">
 <li><p>samples: add memstress and flash stress</p></li>
 <li><p>drivers: clock: add implement common delay function based on mcycle and mcycleh register</p></li>
@@ -464,11 +533,11 @@
 </ul>
 </section>
 </section>
-<section id="id12">
-<h2>[0.11.0] - 2022-05-31:<a class="headerlink" href="#id12" title="Permalink to this heading">¶</a></h2>
+<section id="id16">
+<h2>[0.11.0] - 2022-05-31:<a class="headerlink" href="#id16" title="Permalink to this heading">¶</a></h2>
 <p>Main changes since 0.10.0-hpm6360-er</p>
-<section id="id13">
-<h3>Changed:<a class="headerlink" href="#id13" title="Permalink to this heading">¶</a></h3>
+<section id="id17">
+<h3>Changed:<a class="headerlink" href="#id17" title="Permalink to this heading">¶</a></h3>
 <ul class="simple">
 <li><p>readme: change the location of the starting document</p></li>
 <li><p>components: change hal_adc_xx to hpm_adc_xx</p></li>
@@ -484,8 +553,8 @@
 <li><p>soc: update IP header and soc header files</p></li>
 </ul>
 </section>
-<section id="id14">
-<h3>Fixed:<a class="headerlink" href="#id14" title="Permalink to this heading">¶</a></h3>
+<section id="id18">
+<h3>Fixed:<a class="headerlink" href="#id18" title="Permalink to this heading">¶</a></h3>
 <ul class="simple">
 <li><p>samples: motor_ctrl: bldc_block: fix some error</p></li>
 <li><p>middleware: hpm_math: fix andes toolchain compile error</p></li>
@@ -499,8 +568,8 @@
 </ul>
 </section>
 </section>
-<section id="id15">
-<h2>Added:<a class="headerlink" href="#id15" title="Permalink to this heading">¶</a></h2>
+<section id="id19">
+<h2>Added:<a class="headerlink" href="#id19" title="Permalink to this heading">¶</a></h2>
 <ul class="simple">
 <li><p>driver: add spi_setup_dma_transfer() API</p></li>
 <li><p>middleware: hpm_math: add software fft function</p></li>
@@ -515,8 +584,8 @@
 <section id="hpm6300-2022-05-16">
 <h2>[0.10.0_hpm6300] - 2022-05-16:<a class="headerlink" href="#hpm6300-2022-05-16" title="Permalink to this heading">¶</a></h2>
 <p>Main changes since 0.10.0</p>
-<section id="id16">
-<h3>Changed:<a class="headerlink" href="#id16" title="Permalink to this heading">¶</a></h3>
+<section id="id20">
+<h3>Changed:<a class="headerlink" href="#id20" title="Permalink to this heading">¶</a></h3>
 <ul class="simple">
 <li><p>ip register header file update</p></li>
 <li><p>ses_proj: using generated complete cpu_regs_xml to replace general cpu registers xml</p></li>
@@ -527,8 +596,8 @@
 <li><p>samples: lwip: update ethernetif.c</p></li>
 </ul>
 </section>
-<section id="id17">
-<h3>Fixed:<a class="headerlink" href="#id17" title="Permalink to this heading">¶</a></h3>
+<section id="id21">
+<h3>Fixed:<a class="headerlink" href="#id21" title="Permalink to this heading">¶</a></h3>
 <ul class="simple">
 <li><p>drivers: ptpc: update ptpc_init_timer_with_initial.</p></li>
 <li><p>drivers: can: bug fix and update</p></li>
@@ -537,8 +606,8 @@
 <li><p>samples: sha256_example: failed to run case 13 and 14 with gcc.</p></li>
 </ul>
 </section>
-<section id="id18">
-<h3>Added:<a class="headerlink" href="#id18" title="Permalink to this heading">¶</a></h3>
+<section id="id22">
+<h3>Added:<a class="headerlink" href="#id22" title="Permalink to this heading">¶</a></h3>
 <ul class="simple">
 <li><p>soc: add HPM6360 support</p></li>
 <li><p>drivers: add ffa, pllctlv2, dac</p></li>
@@ -550,11 +619,11 @@
 </ul>
 </section>
 </section>
-<section id="id19">
-<h2>[0.10.0] - 2022-04-30:<a class="headerlink" href="#id19" title="Permalink to this heading">¶</a></h2>
+<section id="id23">
+<h2>[0.10.0] - 2022-04-30:<a class="headerlink" href="#id23" title="Permalink to this heading">¶</a></h2>
 <p>Main changes since 0.9.0</p>
-<section id="id20">
-<h3>Changed:<a class="headerlink" href="#id20" title="Permalink to this heading">¶</a></h3>
+<section id="id24">
+<h3>Changed:<a class="headerlink" href="#id24" title="Permalink to this heading">¶</a></h3>
 <ul class="simple">
 <li><p>drivers: gptmr: split irq enable/disable interface</p></li>
 <li><p>drivers: can: 155 Update SJW setting in CAN driver</p></li>
@@ -562,8 +631,8 @@
 <li><p>components: debug_console: wait uart tx flag on writing.</p></li>
 </ul>
 </section>
-<section id="id21">
-<h3>Added:<a class="headerlink" href="#id21" title="Permalink to this heading">¶</a></h3>
+<section id="id25">
+<h3>Added:<a class="headerlink" href="#id25" title="Permalink to this heading">¶</a></h3>
 <ul class="simple">
 <li><p>drivers: enet: add 1588 support</p></li>
 <li><p>drivers: can: Add TDC support</p></li>
@@ -577,8 +646,8 @@
 <li><p>samples: add initial uart dma rx idle demo</p></li>
 </ul>
 </section>
-<section id="id22">
-<h3>Fixed:<a class="headerlink" href="#id22" title="Permalink to this heading">¶</a></h3>
+<section id="id26">
+<h3>Fixed:<a class="headerlink" href="#id26" title="Permalink to this heading">¶</a></h3>
 <ul class="simple">
 <li><p>soc: HPM6750: sysctl: fix cpu lp mode API.</p></li>
 <li><p>drivers: uart: correct baudrate calculation.</p></li>
@@ -587,11 +656,11 @@
 </ul>
 </section>
 </section>
-<section id="id23">
-<h2>[0.9.0] - 2022-04-01:<a class="headerlink" href="#id23" title="Permalink to this heading">¶</a></h2>
+<section id="id27">
+<h2>[0.9.0] - 2022-04-01:<a class="headerlink" href="#id27" title="Permalink to this heading">¶</a></h2>
 <p>Main changes since 0.8.0</p>
-<section id="id24">
-<h3>Changed:<a class="headerlink" href="#id24" title="Permalink to this heading">¶</a></h3>
+<section id="id28">
+<h3>Changed:<a class="headerlink" href="#id28" title="Permalink to this heading">¶</a></h3>
 <ul class="simple">
 <li><p>drivers: update WDG, UART, DMA, DMAMUX driver</p></li>
 <li><p>drivers: enet remove enet_intf_selection</p></li>
@@ -605,8 +674,8 @@
 <li><p>soc: HPM6750: add an interface selection api</p></li>
 </ul>
 </section>
-<section id="id25">
-<h3>Added:<a class="headerlink" href="#id25" title="Permalink to this heading">¶</a></h3>
+<section id="id29">
+<h3>Added:<a class="headerlink" href="#id29" title="Permalink to this heading">¶</a></h3>
 <ul class="simple">
 <li><p>soc: HPM6750: add ram linker for core1</p></li>
 <li><p>ses: support to use Andes toolchain</p></li>
@@ -615,8 +684,8 @@
 <li><p>drivers: add section and alignment general instructions in hpm_common.h</p></li>
 </ul>
 </section>
-<section id="id26">
-<h3>Fixed:<a class="headerlink" href="#id26" title="Permalink to this heading">¶</a></h3>
+<section id="id30">
+<h3>Fixed:<a class="headerlink" href="#id30" title="Permalink to this heading">¶</a></h3>
 <ul class="simple">
 <li><p>boards: hpm6750evk: fix bldc adc pinmux error</p></li>
 <li><p>boards : hpm6750evk : pinmux : fix spi init pins error</p></li>
@@ -625,27 +694,27 @@
 </ul>
 </section>
 </section>
-<section id="id27">
-<h2>[0.8.0] - 2022-03-04:<a class="headerlink" href="#id27" title="Permalink to this heading">¶</a></h2>
+<section id="id31">
+<h2>[0.8.0] - 2022-03-04:<a class="headerlink" href="#id31" title="Permalink to this heading">¶</a></h2>
 <p>All changes since 0.7.3</p>
-<section id="id28">
-<h3>Changed:<a class="headerlink" href="#id28" title="Permalink to this heading">¶</a></h3>
+<section id="id32">
+<h3>Changed:<a class="headerlink" href="#id32" title="Permalink to this heading">¶</a></h3>
 <ul class="simple">
 <li><p>rename middleware/sdmmc to middleware/hpm_sdmmc</p></li>
 <li><p>place isr into .isr_vector section for irq non-vector mode</p></li>
 <li><p>change csr functions to support llvm</p></li>
 </ul>
 </section>
-<section id="id29">
-<h3>Fixed:<a class="headerlink" href="#id29" title="Permalink to this heading">¶</a></h3>
+<section id="id33">
+<h3>Fixed:<a class="headerlink" href="#id33" title="Permalink to this heading">¶</a></h3>
 <ul class="simple">
 <li><p>ses: fix issue in register xml</p></li>
 <li><p>freertor: fix trap handler at non-vector mode</p></li>
 <li><p>sdxc: fix software reset issue</p></li>
 </ul>
 </section>
-<section id="id30">
-<h3>Added:<a class="headerlink" href="#id30" title="Permalink to this heading">¶</a></h3>
+<section id="id34">
+<h3>Added:<a class="headerlink" href="#id34" title="Permalink to this heading">¶</a></h3>
 <ul class="simple">
 <li><p>add sdk doc</p></li>
 <li><p>add more sample doc</p></li>
@@ -655,64 +724,64 @@
 </ul>
 </section>
 </section>
-<section id="id31">
-<h2>[0.7.3] - 2022-02-23:<a class="headerlink" href="#id31" title="Permalink to this heading">¶</a></h2>
+<section id="id35">
+<h2>[0.7.3] - 2022-02-23:<a class="headerlink" href="#id35" title="Permalink to this heading">¶</a></h2>
 <p>All changes since 0.7.2</p>
-<section id="id32">
-<h3>Changed:<a class="headerlink" href="#id32" title="Permalink to this heading">¶</a></h3>
+<section id="id36">
+<h3>Changed:<a class="headerlink" href="#id36" title="Permalink to this heading">¶</a></h3>
 <ul class="simple">
 <li><p>freertos: change exception handling</p></li>
 </ul>
 </section>
 </section>
-<section id="id33">
-<h2>[0.7.2] - 2022-02-21:<a class="headerlink" href="#id33" title="Permalink to this heading">¶</a></h2>
+<section id="id37">
+<h2>[0.7.2] - 2022-02-21:<a class="headerlink" href="#id37" title="Permalink to this heading">¶</a></h2>
 <p>All changes since 0.7.1</p>
-<section id="id34">
-<h3>Changed:<a class="headerlink" href="#id34" title="Permalink to this heading">¶</a></h3>
+<section id="id38">
+<h3>Changed:<a class="headerlink" href="#id38" title="Permalink to this heading">¶</a></h3>
 <ul class="simple">
 <li><p>freertos: change freertos irq stack definition, passed in CMakeLists.txt, defined in linker</p></li>
 <li><p>soc: hpm6750: add DISABLE_IRQ_PREEMPTIVE to check if it needs to enable irq preemption</p></li>
 </ul>
 </section>
-<section id="id35">
-<h3>Fixed:<a class="headerlink" href="#id35" title="Permalink to this heading">¶</a></h3>
+<section id="id39">
+<h3>Fixed:<a class="headerlink" href="#id39" title="Permalink to this heading">¶</a></h3>
 <ul class="simple">
 <li><p>freertos: disable irq preemption</p></li>
 </ul>
 </section>
 </section>
-<section id="id36">
-<h2>[0.7.1] - 2022-02-13:<a class="headerlink" href="#id36" title="Permalink to this heading">¶</a></h2>
+<section id="id40">
+<h2>[0.7.1] - 2022-02-13:<a class="headerlink" href="#id40" title="Permalink to this heading">¶</a></h2>
 <p>All changes since 0.7.0</p>
-<section id="id37">
-<h3>Changed:<a class="headerlink" href="#id37" title="Permalink to this heading">¶</a></h3>
+<section id="id41">
+<h3>Changed:<a class="headerlink" href="#id41" title="Permalink to this heading">¶</a></h3>
 <ul class="simple">
 <li><p>drivers: adc12: update adc12_prd_config_t</p></li>
 <li><p>samples: can: update case with interrupt and communication between two boards</p></li>
 </ul>
 </section>
-<section id="id38">
-<h3>Fixed:<a class="headerlink" href="#id38" title="Permalink to this heading">¶</a></h3>
+<section id="id42">
+<h3>Fixed:<a class="headerlink" href="#id42" title="Permalink to this heading">¶</a></h3>
 <ul class="simple">
 <li><p>drivers: can: fix blocking transcation issue</p></li>
 <li><p>samples: mbx: support run this example in SES</p></li>
 <li><p>SES: startup: add fpu enable if abi is set to enable hw fp</p></li>
 </ul>
 </section>
-<section id="id39">
-<h3>Added:<a class="headerlink" href="#id39" title="Permalink to this heading">¶</a></h3>
+<section id="id43">
+<h3>Added:<a class="headerlink" href="#id43" title="Permalink to this heading">¶</a></h3>
 <ul class="simple">
 <li><p>samples: multicore: add flash based multicore example</p></li>
 <li><p>drivers: can: add apis to recvieve message for non-blocking use</p></li>
 </ul>
 </section>
 </section>
-<section id="id40">
-<h2>[0.7.0] - 2022-01-30:<a class="headerlink" href="#id40" title="Permalink to this heading">¶</a></h2>
+<section id="id44">
+<h2>[0.7.0] - 2022-01-30:<a class="headerlink" href="#id44" title="Permalink to this heading">¶</a></h2>
 <p>All changes since 0.6.2</p>
-<section id="id41">
-<h3>Changed:<a class="headerlink" href="#id41" title="Permalink to this heading">¶</a></h3>
+<section id="id45">
+<h3>Changed:<a class="headerlink" href="#id45" title="Permalink to this heading">¶</a></h3>
 <ul class="simple">
 <li><p>update default CPU frequency to 816MHz from 648MHz</p></li>
 <li><p>update the ip headers</p></li>
@@ -730,8 +799,8 @@
 <li><p>samples: littlevgl: remove lvgl example</p></li>
 </ul>
 </section>
-<section id="id42">
-<h3>Fixed:<a class="headerlink" href="#id42" title="Permalink to this heading">¶</a></h3>
+<section id="id46">
+<h3>Fixed:<a class="headerlink" href="#id46" title="Permalink to this heading">¶</a></h3>
 <ul class="simple">
 <li><p>hpm6750evkmini: correct refresh cycle number of sdram</p></li>
 <li><p>hpm6750evkmini: Fix the SDRAM memory range issue in flash_sdram_xip linker file</p></li>
@@ -746,8 +815,8 @@
 <li><p>components: touch: gt911: fix gpio write pin call</p></li>
 </ul>
 </section>
-<section id="id43">
-<h3>Added:<a class="headerlink" href="#id43" title="Permalink to this heading">¶</a></h3>
+<section id="id47">
+<h3>Added:<a class="headerlink" href="#id47" title="Permalink to this heading">¶</a></h3>
 <ul class="simple">
 <li><p>SEG: add register definition file in generated embedded studio project</p></li>
 <li><p>samples: drivers: gpiom: Add example to demonstrate gpiom’s function</p></li>
@@ -771,7 +840,7 @@
 
   <div role="contentinfo">
     <p>&#169; Copyright 2020-2022, hpmicro.
-      <span class="lastupdated">Last updated on Oct 31, 2022.
+      <span class="lastupdated">Last updated on Dec 31, 2022.
       </span></p>
   </div>
 

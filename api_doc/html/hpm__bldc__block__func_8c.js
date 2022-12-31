@@ -1,6 +1,6 @@
 var hpm__bldc__block__func_8c =
 [
-    [ "al_pi_ctrl_func", "group__mcl__block__interface.html#gac919e01e2a496a6a37b113818d05c7be", null ],
-    [ "bldc_block_ctrl", "group__mcl__block__interface.html#ga2e43d5861e7ab330d8392d7b76b6a6fc", null ],
-    [ "bldc_block_step_get", "group__mcl__block__interface.html#gaeb453465b4f2d24ff43efc48d9f01a8c", null ]
+    [ "hpm_mcl_al_pi_ctrl_func", "group__mcl__block__interface.html#gad8532a74f44546dfd58fa312554f8354", null ],
+    [ "hpm_mcl_bldc_block_ctrl", "group__mcl__block__interface.html#ga7687d6c673155c934f34682eca1e57e2", null ],
+    [ "hpm_mcl_bldc_block_step_get", "group__mcl__block__interface.html#gacfb224d03107ba9a3a2a298f8bd163cf", null ]
 ];

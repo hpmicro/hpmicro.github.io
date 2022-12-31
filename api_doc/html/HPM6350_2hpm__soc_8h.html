@@ -133,7 +133,7 @@ $(document).ready(function(){initNavTree('HPM6350_2hpm__soc_8h.html',''); initRe
 <code>#include &quot;<a class="el" href="hpm__sdxc__regs_8h_source.html">hpm_sdxc_regs.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="hpm__i2c__regs_8h_source.html">hpm_i2c_regs.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="hpm__sdp__regs_8h_source.html">hpm_sdp_regs.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="hpm__dram__regs_8h_source.html">hpm_dram_regs.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="hpm__femc__regs_8h_source.html">hpm_femc_regs.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="hpm__ffa__regs_8h_source.html">hpm_ffa_regs.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="HPM6350_2hpm__sysctl__regs_8h_source.html">hpm_sysctl_regs.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="HPM6350_2hpm__ioc__regs_8h_source.html">hpm_ioc_regs.h</a>&quot;</code><br />
@@ -273,8 +273,8 @@ Macros</h2></td></tr>
 <tr class="separator:ae50cdb19c5365cea505a392b455b1420"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac6ad4896b7d04b7c0800362d3eb08348"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="HPM6350_2hpm__soc_8h.html#ac6ad4896b7d04b7c0800362d3eb08348">IRQn_HDMA</a>&#160;&#160;&#160;52                  /* HDMA IRQ */</td></tr>
 <tr class="separator:ac6ad4896b7d04b7c0800362d3eb08348"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a15ff010ed0be2f35178bd09f28e812df"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="HPM6350_2hpm__soc_8h.html#a15ff010ed0be2f35178bd09f28e812df">IRQn_DRAM</a>&#160;&#160;&#160;53                  /* DRAM IRQ */</td></tr>
-<tr class="separator:a15ff010ed0be2f35178bd09f28e812df"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab8cbef6e0183fbadc19be84ea4cc0bc1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="HPM6350_2hpm__soc_8h.html#ab8cbef6e0183fbadc19be84ea4cc0bc1">IRQn_FEMC</a>&#160;&#160;&#160;53                  /* FEMC IRQ */</td></tr>
+<tr class="separator:ab8cbef6e0183fbadc19be84ea4cc0bc1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aab7b9c0375961b8e064a8a9544dbaab8"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="HPM6350_2hpm__soc_8h.html#aab7b9c0375961b8e064a8a9544dbaab8">IRQn_RNG</a>&#160;&#160;&#160;54                  /* RNG IRQ */</td></tr>
 <tr class="separator:aab7b9c0375961b8e064a8a9544dbaab8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a47496e3a66c12142e2860db54b294911"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="HPM6350_2hpm__soc_8h.html#a47496e3a66c12142e2860db54b294911">IRQn_I2S0</a>&#160;&#160;&#160;55                  /* I2S0 IRQ */</td></tr>
@@ -591,10 +591,10 @@ Macros</h2></td></tr>
 <tr class="separator:a2166f337f81d4ad6896b0f5557998672"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1d6f4c848d7084fe4ca6dea80e98e2d0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="HPM6350_2hpm__soc_8h.html#a1d6f4c848d7084fe4ca6dea80e98e2d0">HPM_SDP</a>&#160;&#160;&#160;((<a class="el" href="structSDP__Type.html">SDP_Type</a> *) <a class="el" href="HPM6110_2hpm__soc_8h.html#a2166f337f81d4ad6896b0f5557998672">HPM_SDP_BASE</a>)</td></tr>
 <tr class="separator:a1d6f4c848d7084fe4ca6dea80e98e2d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a625e4d9d1deda3283879784f7c6637b7"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="HPM6350_2hpm__soc_8h.html#a625e4d9d1deda3283879784f7c6637b7">HPM_DRAM_BASE</a>&#160;&#160;&#160;(0xF3050000UL)</td></tr>
-<tr class="separator:a625e4d9d1deda3283879784f7c6637b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0a7ea9dee69028c5ffe2c98775c8f9e9"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="HPM6350_2hpm__soc_8h.html#a0a7ea9dee69028c5ffe2c98775c8f9e9">HPM_DRAM</a>&#160;&#160;&#160;((<a class="el" href="structDRAM__Type.html">DRAM_Type</a> *) <a class="el" href="HPM6110_2hpm__soc_8h.html#a625e4d9d1deda3283879784f7c6637b7">HPM_DRAM_BASE</a>)</td></tr>
-<tr class="separator:a0a7ea9dee69028c5ffe2c98775c8f9e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7f00ad7a8f03f7b8e40a2153c1f15898"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="HPM6350_2hpm__soc_8h.html#a7f00ad7a8f03f7b8e40a2153c1f15898">HPM_FEMC_BASE</a>&#160;&#160;&#160;(0xF3050000UL)</td></tr>
+<tr class="separator:a7f00ad7a8f03f7b8e40a2153c1f15898"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afaeb074d40afc31ac8e95f23a1d5c3f6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="HPM6350_2hpm__soc_8h.html#afaeb074d40afc31ac8e95f23a1d5c3f6">HPM_FEMC</a>&#160;&#160;&#160;((<a class="el" href="structFEMC__Type.html">FEMC_Type</a> *) <a class="el" href="HPM6110_2hpm__soc_8h.html#a7f00ad7a8f03f7b8e40a2153c1f15898">HPM_FEMC_BASE</a>)</td></tr>
+<tr class="separator:afaeb074d40afc31ac8e95f23a1d5c3f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5032a1a24c5caa3e4e918d790c9cf99c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="HPM6350_2hpm__soc_8h.html#a5032a1a24c5caa3e4e918d790c9cf99c">HPM_ROMC_BASE</a>&#160;&#160;&#160;(0xF3054000UL)</td></tr>
 <tr class="separator:a5032a1a24c5caa3e4e918d790c9cf99c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3bd78be79d1d52a3c852722ac44b2dfe"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="HPM6350_2hpm__soc_8h.html#a3bd78be79d1d52a3c852722ac44b2dfe">HPM_FFA_BASE</a>&#160;&#160;&#160;(0xF3058000UL)</td></tr>
@@ -1229,34 +1229,6 @@ Macros</h2></td></tr>
 
 </div>
 </div>
-<a id="a0a7ea9dee69028c5ffe2c98775c8f9e9" name="a0a7ea9dee69028c5ffe2c98775c8f9e9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0a7ea9dee69028c5ffe2c98775c8f9e9">&#9670;&#160;</a></span>HPM_DRAM</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define HPM_DRAM&#160;&#160;&#160;((<a class="el" href="structDRAM__Type.html">DRAM_Type</a> *) <a class="el" href="HPM6110_2hpm__soc_8h.html#a625e4d9d1deda3283879784f7c6637b7">HPM_DRAM_BASE</a>)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a625e4d9d1deda3283879784f7c6637b7" name="a625e4d9d1deda3283879784f7c6637b7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a625e4d9d1deda3283879784f7c6637b7">&#9670;&#160;</a></span>HPM_DRAM_BASE</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define HPM_DRAM_BASE&#160;&#160;&#160;(0xF3050000UL)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="abbea9b0f4c63c7a63893dcc8565138e9" name="abbea9b0f4c63c7a63893dcc8565138e9"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#abbea9b0f4c63c7a63893dcc8565138e9">&#9670;&#160;</a></span>HPM_ENET0</h2>
 
@@ -1279,6 +1251,34 @@ Macros</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">#define HPM_ENET0_BASE&#160;&#160;&#160;(0xF2000000UL)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="afaeb074d40afc31ac8e95f23a1d5c3f6" name="afaeb074d40afc31ac8e95f23a1d5c3f6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afaeb074d40afc31ac8e95f23a1d5c3f6">&#9670;&#160;</a></span>HPM_FEMC</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define HPM_FEMC&#160;&#160;&#160;((<a class="el" href="structFEMC__Type.html">FEMC_Type</a> *) <a class="el" href="HPM6110_2hpm__soc_8h.html#a7f00ad7a8f03f7b8e40a2153c1f15898">HPM_FEMC_BASE</a>)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7f00ad7a8f03f7b8e40a2153c1f15898" name="a7f00ad7a8f03f7b8e40a2153c1f15898"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7f00ad7a8f03f7b8e40a2153c1f15898">&#9670;&#160;</a></span>HPM_FEMC_BASE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define HPM_FEMC_BASE&#160;&#160;&#160;(0xF3050000UL)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -3497,20 +3497,6 @@ Macros</h2></td></tr>
 
 </div>
 </div>
-<a id="a15ff010ed0be2f35178bd09f28e812df" name="a15ff010ed0be2f35178bd09f28e812df"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a15ff010ed0be2f35178bd09f28e812df">&#9670;&#160;</a></span>IRQn_DRAM</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define IRQn_DRAM&#160;&#160;&#160;53                  /* DRAM IRQ */</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="a31bd22789ca74d4f5bca1bdfa0045326" name="a31bd22789ca74d4f5bca1bdfa0045326"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a31bd22789ca74d4f5bca1bdfa0045326">&#9670;&#160;</a></span>IRQn_ENET0</h2>
 
@@ -3519,6 +3505,20 @@ Macros</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">#define IRQn_ENET0&#160;&#160;&#160;62                  /* ENET0 IRQ */</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab8cbef6e0183fbadc19be84ea4cc0bc1" name="ab8cbef6e0183fbadc19be84ea4cc0bc1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab8cbef6e0183fbadc19be84ea4cc0bc1">&#9670;&#160;</a></span>IRQn_FEMC</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define IRQn_FEMC&#160;&#160;&#160;53                  /* FEMC IRQ */</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -4385,7 +4385,7 @@ Macros</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_19d806e154b23a5f4c4c08b2e30365a6.html">soc</a></li><li class="navelem"><a class="el" href="dir_622e407f8e793b06738bcf11372ab915.html">HPM6350</a></li><li class="navelem"><a class="el" href="HPM6350_2hpm__soc_8h.html">hpm_soc.h</a></li>
-    <li class="footer">Generated on Mon Oct 31 2022 20:47:07 for HPM SDK by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
+    <li class="footer">Generated on Sat Dec 31 2022 19:59:44 for HPM SDK by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
   </ul>
 </div>
 </body>

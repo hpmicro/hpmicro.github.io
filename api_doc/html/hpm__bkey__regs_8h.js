@@ -1,10 +1,6 @@
 var hpm__bkey__regs_8h =
 [
     [ "BKEY_Type", "structBKEY__Type.html", "structBKEY__Type" ],
-    [ "BKEY_DATA_DATA_GET", "hpm__bkey__regs_8h.html#a78eaeb370601565b62156ec8857ce47f", null ],
-    [ "BKEY_DATA_DATA_MASK", "hpm__bkey__regs_8h.html#a1aa9af77114f59f76aace73423d8be4f", null ],
-    [ "BKEY_DATA_DATA_SET", "hpm__bkey__regs_8h.html#a4fdfa1ea3a4c86addba3e43369940d81", null ],
-    [ "BKEY_DATA_DATA_SHIFT", "hpm__bkey__regs_8h.html#af01e8a06656002b86fcd7bddf09f1127", null ],
     [ "BKEY_ECC_ECC_GET", "hpm__bkey__regs_8h.html#ac1fccd6b610f41e01c75c4fe65ae33e5", null ],
     [ "BKEY_ECC_ECC_MASK", "hpm__bkey__regs_8h.html#a1024f54ec8efa7a1d0b50a21b585d003", null ],
     [ "BKEY_ECC_ECC_SET", "hpm__bkey__regs_8h.html#ad2a936a319d7f7fc8c36a479965d4650", null ],
@@ -29,6 +25,10 @@ var hpm__bkey__regs_8h =
     [ "BKEY_KEY_DATA_5", "hpm__bkey__regs_8h.html#a5cf941ccb27f0b9ede5ca23183fcebcf", null ],
     [ "BKEY_KEY_DATA_6", "hpm__bkey__regs_8h.html#a6b5d58970f76a077ee2f496718a22059", null ],
     [ "BKEY_KEY_DATA_7", "hpm__bkey__regs_8h.html#a3d1072f6bbe9263592e54c8d77c09dd9", null ],
+    [ "BKEY_KEY_DATA_DATA_GET", "hpm__bkey__regs_8h.html#ab6b47441fcb504e75a795d7777366e2c", null ],
+    [ "BKEY_KEY_DATA_DATA_MASK", "hpm__bkey__regs_8h.html#adc83ec133ff276f84d0cd2f48f50d2d5", null ],
+    [ "BKEY_KEY_DATA_DATA_SET", "hpm__bkey__regs_8h.html#a90fc7269de63d6c99952c4e190da9d62", null ],
+    [ "BKEY_KEY_DATA_DATA_SHIFT", "hpm__bkey__regs_8h.html#a08f92ac46d6d6682c614b6a791f37979", null ],
     [ "BKEY_SELECT_SELECT_GET", "hpm__bkey__regs_8h.html#aede568e074ad4caf4708b95f341b0e3c", null ],
     [ "BKEY_SELECT_SELECT_MASK", "hpm__bkey__regs_8h.html#ab7be5830703f3508ac9b9dd70fc76694", null ],
     [ "BKEY_SELECT_SELECT_SET", "hpm__bkey__regs_8h.html#a3c7282957ef0bc88bfa6121d7f25809d", null ],

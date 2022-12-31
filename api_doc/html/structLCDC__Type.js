@@ -13,7 +13,7 @@ var structLCDC__Type =
     [ "HSYNC_PARA", "structLCDC__Type.html#a23e3eb6baf8ee46e49bb1070efe806a9", null ],
     [ "INT_EN", "structLCDC__Type.html#af0973c396d4efc10e279025493841139", null ],
     [ "LAYCTRL", "structLCDC__Type.html#a371f646d2dd56a1b41aa27e3bea4baa3", null ],
-    [ "LAYER", "structLCDC__Type.html#a853a525cb1077aa2890a887ce1e983c0", null ],
+    [ "LAYER", "structLCDC__Type.html#aebb0e5892f4aaebe7e73ab65d7893182", null ],
     [ "LAYPOS", "structLCDC__Type.html#a6fc376ba7eb53538b7de91445a5f0055", null ],
     [ "LAYSIZE", "structLCDC__Type.html#acae6f25478ebba82decf10cb791e0eb1", null ],
     [ "LINECFG", "structLCDC__Type.html#a3b3fc234109c319bccc847e74f394514", null ],

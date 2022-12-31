@@ -18,7 +18,7 @@ var searchData=
   ['high_5flimit_15',['HIGH_LIMIT',['../structSYSCTL__Type.html#a6494b14dbc75b70bbb28c4072a34c0ab',1,'SYSCTL_Type']]],
   ['high_5flimit_16',['high_limit',['../structmonitor__config.html#a36bee0a70f63691f81ccb319f90adfa3',1,'monitor_config']]],
   ['high_5fspeed_5fsupport_17',['high_speed_support',['../structsdxc__capabilities__t.html#aea2900caa83ad543ad6fd62866f73571',1,'sdxc_capabilities_t']]],
-  ['his_18',['HIS',['../structHALL__Type.html#a47016631fb6ab40ad597215b5337e67f',1,'HALL_Type']]],
+  ['his_18',['HIS',['../structHALL__Type.html#a2157f79bb457ebbe6b562b904f772537',1,'HALL_Type']]],
   ['his0_19',['HIS0',['../structHALL__Type.html#afcdb16f20e809f2e772bb58c1e93881f',1,'HALL_Type']]],
   ['his1_20',['HIS1',['../structHALL__Type.html#a697961775b31856c7a8a0510077f9da5',1,'HALL_Type']]],
   ['histogram_5ffifo_21',['HISTOGRAM_FIFO',['../structCAM__Type.html#ac49491e423b41beb3380ea004a37a1a0',1,'CAM_Type']]],

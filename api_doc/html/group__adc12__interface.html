@@ -141,7 +141,7 @@ Macros</h2></td></tr>
 <tr class="memitem:ga3992d2b6165d0ac8161aa52ee05669d6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__adc12__interface.html#ga3992d2b6165d0ac8161aa52ee05669d6">ADC12_IS_SIGNAL_TYPE_INVALID</a>(TYPE)&#160;&#160;&#160;(TYPE &gt; (uint32_t)<a class="el" href="group__adc12__interface.html#ggac39e2f0d4c899dbc13f237e20418dea2a9cbfcdc1e79f30f31bd0f26380a9b595">adc12_sample_signal_count</a>)</td></tr>
 <tr class="memdesc:ga3992d2b6165d0ac8161aa52ee05669d6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Define ADC12 validity check for the signal type.  <a href="group__adc12__interface.html#ga3992d2b6165d0ac8161aa52ee05669d6">More...</a><br /></td></tr>
 <tr class="separator:ga3992d2b6165d0ac8161aa52ee05669d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga468d7157710877056154850b2bcb7afe"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__adc12__interface.html#ga468d7157710877056154850b2bcb7afe">ADC12_IS_CHANNEL_INVALID</a>(PTR,  CH)</td></tr>
+<tr class="memitem:ga468d7157710877056154850b2bcb7afe"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__adc12__interface.html#ga468d7157710877056154850b2bcb7afe">ADC12_IS_CHANNEL_INVALID</a>(PTR,  CH)&#160;&#160;&#160;(CH &gt; <a class="el" href="HPM6750_2hpm__soc__feature_8h.html#a177192710ddc50c0cbbaa75656b5f0c1">ADC12_SOC_MAX_CH_NUM</a>)</td></tr>
 <tr class="memdesc:ga468d7157710877056154850b2bcb7afe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Define ADC12 validity check for the channel number.  <a href="group__adc12__interface.html#ga468d7157710877056154850b2bcb7afe">More...</a><br /></td></tr>
 <tr class="separator:ga468d7157710877056154850b2bcb7afe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaa8461bfb163931972692de73888e6043"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__adc12__interface.html#gaa8461bfb163931972692de73888e6043">ADC12_IS_TRIG_CH_INVLAID</a>(CH)&#160;&#160;&#160;(CH &gt; ADC12_SOC_MAX_TRIG_CH_NUM)</td></tr>
@@ -231,7 +231,7 @@ Enumerations</h2></td></tr>
 <tr class="memdesc:ga2fab3d40d8b501b436719835e7d7aaf2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configure the start address of DMA write operation for the preemption mode.  <a href="group__adc12__interface.html#ga2fab3d40d8b501b436719835e7d7aaf2">More...</a><br /></td></tr>
 <tr class="separator:ga2fab3d40d8b501b436719835e7d7aaf2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga423c716b99ab4717b25ed5efe51f5128"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__common__interface.html#ga087efae82a4b174a0363363d9d5ece19">hpm_stat_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__adc12__interface.html#ga423c716b99ab4717b25ed5efe51f5128">adc12_init_seq_dma</a> (<a class="el" href="structADC12__Type.html">ADC12_Type</a> *ptr, <a class="el" href="structadc12__dma__config__t.html">adc12_dma_config_t</a> *config)</td></tr>
-<tr class="memdesc:ga423c716b99ab4717b25ed5efe51f5128"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configure the start address of DMA write operation for the preemption mode.  <a href="group__adc12__interface.html#ga423c716b99ab4717b25ed5efe51f5128">More...</a><br /></td></tr>
+<tr class="memdesc:ga423c716b99ab4717b25ed5efe51f5128"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configure the start address of DMA write operation for the sequence mode.  <a href="group__adc12__interface.html#ga423c716b99ab4717b25ed5efe51f5128">More...</a><br /></td></tr>
 <tr class="separator:ga423c716b99ab4717b25ed5efe51f5128"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader">Status</h2></td></tr>
@@ -257,9 +257,9 @@ Enumerations</h2></td></tr>
 <tr class="separator:ga4cc106c0c8134cb793fa93df9e7d4fb1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader">Trigger and Conversion</h2></td></tr>
-<tr class="memitem:gaee7b408b57c8d0515ffb4ad4c5327eb2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__adc12__interface.html#gaee7b408b57c8d0515ffb4ad4c5327eb2">adc12_trigger_seq_by_sw</a> (<a class="el" href="structADC12__Type.html">ADC12_Type</a> *ptr)</td></tr>
-<tr class="memdesc:gaee7b408b57c8d0515ffb4ad4c5327eb2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Trigger ADC coversions by software.  <a href="group__adc12__interface.html#gaee7b408b57c8d0515ffb4ad4c5327eb2">More...</a><br /></td></tr>
-<tr class="separator:gaee7b408b57c8d0515ffb4ad4c5327eb2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga5697c916a8214ca305d81bf8f33b9aaa"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__common__interface.html#ga087efae82a4b174a0363363d9d5ece19">hpm_stat_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__adc12__interface.html#ga5697c916a8214ca305d81bf8f33b9aaa">adc12_trigger_seq_by_sw</a> (<a class="el" href="structADC12__Type.html">ADC12_Type</a> *ptr)</td></tr>
+<tr class="memdesc:ga5697c916a8214ca305d81bf8f33b9aaa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Trigger ADC conversions by software.  <a href="group__adc12__interface.html#ga5697c916a8214ca305d81bf8f33b9aaa">More...</a><br /></td></tr>
+<tr class="separator:ga5697c916a8214ca305d81bf8f33b9aaa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga1785f7ec47fbaf77b637ed7640110a24"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__common__interface.html#ga087efae82a4b174a0363363d9d5ece19">hpm_stat_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__adc12__interface.html#ga1785f7ec47fbaf77b637ed7640110a24">adc12_get_oneshot_result</a> (<a class="el" href="structADC12__Type.html">ADC12_Type</a> *ptr, uint8_t ch, uint16_t *result)</td></tr>
 <tr class="memdesc:ga1785f7ec47fbaf77b637ed7640110a24"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the result in oneshot mode.  <a href="group__adc12__interface.html#ga1785f7ec47fbaf77b637ed7640110a24">More...</a><br /></td></tr>
 <tr class="separator:ga1785f7ec47fbaf77b637ed7640110a24"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -291,18 +291,13 @@ Enumerations</h2></td></tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td></td>
+          <td></td><td>&#160;&#160;&#160;(CH &gt; <a class="el" href="HPM6750_2hpm__soc__feature_8h.html#a177192710ddc50c0cbbaa75656b5f0c1">ADC12_SOC_MAX_CH_NUM</a>)</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 <p><code>#include &lt;<a class="el" href="hpm__adc12__drv_8h.html">drivers/inc/hpm_adc12_drv.h</a>&gt;</code></p>
-<b>Value:</b><div class="fragment"><div class="line">                                           ((CH &gt; <a class="code hl_define" href="HPM6750_2hpm__soc__feature_8h.html#a177192710ddc50c0cbbaa75656b5f0c1">ADC12_SOC_MAX_CH_NUM</a> &amp;&amp; CH != <a class="code hl_define" href="HPM6750_2hpm__soc__feature_8h.html#a09359173bcc9c8919c0d53bbdb2e0d88">ADC12_SOC_TEMP_CH_NUM</a>) || \</div>
-<div class="line">                                           ((uint32_t)PTR == <a class="code hl_define" href="HPM6750_2hpm__soc__feature_8h.html#a9ac37a27839b690386ba8569b4c7bb5c">ADC12_SOC_INVALID_TEMP_BASE</a> &amp;&amp; CH == <a class="code hl_define" href="HPM6750_2hpm__soc__feature_8h.html#a09359173bcc9c8919c0d53bbdb2e0d88">ADC12_SOC_TEMP_CH_NUM</a>))</div>
-<div class="ttc" id="aHPM6750_2hpm__soc__feature_8h_html_a09359173bcc9c8919c0d53bbdb2e0d88"><div class="ttname"><a href="HPM6750_2hpm__soc__feature_8h.html#a09359173bcc9c8919c0d53bbdb2e0d88">ADC12_SOC_TEMP_CH_NUM</a></div><div class="ttdeci">#define ADC12_SOC_TEMP_CH_NUM</div><div class="ttdef"><b>Definition:</b> hpm_soc_feature.h:128</div></div>
-<div class="ttc" id="aHPM6750_2hpm__soc__feature_8h_html_a177192710ddc50c0cbbaa75656b5f0c1"><div class="ttname"><a href="HPM6750_2hpm__soc__feature_8h.html#a177192710ddc50c0cbbaa75656b5f0c1">ADC12_SOC_MAX_CH_NUM</a></div><div class="ttdeci">#define ADC12_SOC_MAX_CH_NUM</div><div class="ttdef"><b>Definition:</b> hpm_soc_feature.h:127</div></div>
-<div class="ttc" id="aHPM6750_2hpm__soc__feature_8h_html_a9ac37a27839b690386ba8569b4c7bb5c"><div class="ttname"><a href="HPM6750_2hpm__soc__feature_8h.html#a9ac37a27839b690386ba8569b4c7bb5c">ADC12_SOC_INVALID_TEMP_BASE</a></div><div class="ttdeci">#define ADC12_SOC_INVALID_TEMP_BASE</div><div class="ttdef"><b>Definition:</b> hpm_soc_feature.h:129</div></div>
-</div><!-- fragment -->
+
 <p>Define ADC12 validity check for the channel number. </p>
 
 </div>
@@ -850,8 +845,8 @@ Enumerations</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd>An implementation result of getting an ADC12 conversion result in oneshot mode. </dd></dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">status_success</td><td>Get the result of an ADC12 conversion in oneshot mode successfully. Please refert to <a class="el" href="group__common__interface.html#ga087efae82a4b174a0363363d9d5ece19">hpm_stat_t</a>. </td></tr>
-    <tr><td class="paramname">status_invalid_argument</td><td>Get the result of an ADC12 conversion in oneshot mode unsuccessfully due to passing invalid arguments. Please refert to <a class="el" href="group__common__interface.html#ga087efae82a4b174a0363363d9d5ece19">hpm_stat_t</a>. </td></tr>
+    <tr><td class="paramname">status_success</td><td>Get the result of an ADC12 conversion in oneshot mode successfully. Please refer to <a class="el" href="group__common__interface.html#ga087efae82a4b174a0363363d9d5ece19">hpm_stat_t</a>. </td></tr>
+    <tr><td class="paramname">status_invalid_argument</td><td>Get the result of an ADC12 conversion in oneshot mode unsuccessfully due to passing invalid arguments. Please refer to <a class="el" href="group__common__interface.html#ga087efae82a4b174a0363363d9d5ece19">hpm_stat_t</a>. </td></tr>
   </table>
   </dd>
 </dl>
@@ -904,8 +899,8 @@ Enumerations</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd>An implementation of getting an ADC12 conversion result in the period mode. </dd></dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">status_success</td><td>Get the result of an ADC12 conversion in the period mode successfully. Please refert to <a class="el" href="group__common__interface.html#ga087efae82a4b174a0363363d9d5ece19">hpm_stat_t</a>. </td></tr>
-    <tr><td class="paramname">status_invalid_argument</td><td>Get the result of an ADC12 conversion in the period mode unsuccessfully due to passing invalid arguments. Please refert to <a class="el" href="group__common__interface.html#ga087efae82a4b174a0363363d9d5ece19">hpm_stat_t</a>. </td></tr>
+    <tr><td class="paramname">status_success</td><td>Get the result of an ADC12 conversion in the period mode successfully. Please refer to <a class="el" href="group__common__interface.html#ga087efae82a4b174a0363363d9d5ece19">hpm_stat_t</a>. </td></tr>
+    <tr><td class="paramname">status_invalid_argument</td><td>Get the result of an ADC12 conversion in the period mode unsuccessfully due to passing invalid arguments. Please refer to <a class="el" href="group__common__interface.html#ga087efae82a4b174a0363363d9d5ece19">hpm_stat_t</a>. </td></tr>
   </table>
   </dd>
 </dl>
@@ -1039,7 +1034,7 @@ Enumerations</h2></td></tr>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
     <tr><td class="paramname">status_success</td><td>Initialize an ADC12 instance successfully. Please refer to <a class="el" href="group__common__interface.html#ga087efae82a4b174a0363363d9d5ece19">hpm_stat_t</a>. </td></tr>
-    <tr><td class="paramname">status_invalid_argument</td><td>Initialize an ADC12 instance unsuccessfully due to passing one or more invalid arguments. Please refert to <a class="el" href="group__common__interface.html#ga087efae82a4b174a0363363d9d5ece19">hpm_stat_t</a>. </td></tr>
+    <tr><td class="paramname">status_invalid_argument</td><td>Initialize an ADC12 instance unsuccessfully due to passing one or more invalid arguments. Please refer to <a class="el" href="group__common__interface.html#ga087efae82a4b174a0363363d9d5ece19">hpm_stat_t</a>. </td></tr>
   </table>
   </dd>
 </dl>
@@ -1086,8 +1081,8 @@ Enumerations</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd>A result of initializing an ADC12 channel. </dd></dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">status_success</td><td>Initialize an ADC12 channel successfully. Please refert to <a class="el" href="group__common__interface.html#ga087efae82a4b174a0363363d9d5ece19">hpm_stat_t</a>. </td></tr>
-    <tr><td class="paramname">status_invalid_argument</td><td>Initialize an ADC12 channel unsuccessfully due to passing one or more invalid arguments. Please refert to <a class="el" href="group__common__interface.html#ga087efae82a4b174a0363363d9d5ece19">hpm_stat_t</a>. </td></tr>
+    <tr><td class="paramname">status_success</td><td>Initialize an ADC12 channel successfully. Please refer to <a class="el" href="group__common__interface.html#ga087efae82a4b174a0363363d9d5ece19">hpm_stat_t</a>. </td></tr>
+    <tr><td class="paramname">status_invalid_argument</td><td>Initialize an ADC12 channel unsuccessfully due to passing one or more invalid arguments. Please refer to <a class="el" href="group__common__interface.html#ga087efae82a4b174a0363363d9d5ece19">hpm_stat_t</a>. </td></tr>
   </table>
   </dd>
 </dl>
@@ -1169,7 +1164,7 @@ Enumerations</h2></td></tr>
 
 <p><code>#include &lt;<a class="el" href="hpm__adc12__drv_8h.html">drivers/inc/hpm_adc12_drv.h</a>&gt;</code></p>
 
-<p>Configure the start address of DMA write operation for the preemption mode. </p>
+<p>Configure the start address of DMA write operation for the sequence mode. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">ptr</td><td>An ADC12 peripheral base address. </td></tr>
@@ -1227,8 +1222,8 @@ Enumerations</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd>A result of configuring the preemption mode for an ADC12 instance. </dd></dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">status_success</td><td>Configure the preemption mode successfully. Please refert to <a class="el" href="group__common__interface.html#ga087efae82a4b174a0363363d9d5ece19">hpm_stat_t</a>. </td></tr>
-    <tr><td class="paramname">status_invalid_argument</td><td>Configure the preemption mode unsuccessfully due to passing one or more invalid arguments. Please refert to <a class="el" href="group__common__interface.html#ga087efae82a4b174a0363363d9d5ece19">hpm_stat_t</a>. </td></tr>
+    <tr><td class="paramname">status_success</td><td>Configure the preemption mode successfully. Please refer to <a class="el" href="group__common__interface.html#ga087efae82a4b174a0363363d9d5ece19">hpm_stat_t</a>. </td></tr>
+    <tr><td class="paramname">status_invalid_argument</td><td>Configure the preemption mode unsuccessfully due to passing one or more invalid arguments. Please refer to <a class="el" href="group__common__interface.html#ga087efae82a4b174a0363363d9d5ece19">hpm_stat_t</a>. </td></tr>
   </table>
   </dd>
 </dl>
@@ -1274,8 +1269,8 @@ Enumerations</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd>A result of configuring the the period mode for an ADC12 instance. </dd></dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">status_success</td><td>Configure the the period mode successfully. Please refert to <a class="el" href="group__common__interface.html#ga087efae82a4b174a0363363d9d5ece19">hpm_stat_t</a>. </td></tr>
-    <tr><td class="paramname">status_invalid_argument</td><td>Configure the the period mode unsuccessfully due to passing one or more invalid arguments. Please refert to <a class="el" href="group__common__interface.html#ga087efae82a4b174a0363363d9d5ece19">hpm_stat_t</a>. </td></tr>
+    <tr><td class="paramname">status_success</td><td>Configure the the period mode successfully. Please refer to <a class="el" href="group__common__interface.html#ga087efae82a4b174a0363363d9d5ece19">hpm_stat_t</a>. </td></tr>
+    <tr><td class="paramname">status_invalid_argument</td><td>Configure the the period mode unsuccessfully due to passing one or more invalid arguments. Please refer to <a class="el" href="group__common__interface.html#ga087efae82a4b174a0363363d9d5ece19">hpm_stat_t</a>. </td></tr>
   </table>
   </dd>
 </dl>
@@ -1321,8 +1316,8 @@ Enumerations</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd>A result of configuring the the sequence mode for an ADC12 instance. </dd></dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">status_success</td><td>Configure the the sequence mode successfully. Please refert to <a class="el" href="group__common__interface.html#ga087efae82a4b174a0363363d9d5ece19">hpm_stat_t</a>. </td></tr>
-    <tr><td class="paramname">status_invalid_argument</td><td>Configure the the sequence mode unsuccessfully due to passing one or more invalid arguments. Please refert to <a class="el" href="group__common__interface.html#ga087efae82a4b174a0363363d9d5ece19">hpm_stat_t</a>. </td></tr>
+    <tr><td class="paramname">status_success</td><td>Configure the the sequence mode successfully. Please refer to <a class="el" href="group__common__interface.html#ga087efae82a4b174a0363363d9d5ece19">hpm_stat_t</a>. </td></tr>
+    <tr><td class="paramname">status_invalid_argument</td><td>Configure the the sequence mode unsuccessfully due to passing one or more invalid arguments. Please refer to <a class="el" href="group__common__interface.html#ga087efae82a4b174a0363363d9d5ece19">hpm_stat_t</a>. </td></tr>
   </table>
   </dd>
 </dl>
@@ -1376,14 +1371,14 @@ Enumerations</h2></td></tr>
 
 </div>
 </div>
-<a id="gaee7b408b57c8d0515ffb4ad4c5327eb2" name="gaee7b408b57c8d0515ffb4ad4c5327eb2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaee7b408b57c8d0515ffb4ad4c5327eb2">&#9670;&#160;</a></span>adc12_trigger_seq_by_sw()</h2>
+<a id="ga5697c916a8214ca305d81bf8f33b9aaa" name="ga5697c916a8214ca305d81bf8f33b9aaa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga5697c916a8214ca305d81bf8f33b9aaa">&#9670;&#160;</a></span>adc12_trigger_seq_by_sw()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void adc12_trigger_seq_by_sw </td>
+          <td class="memname"><a class="el" href="group__common__interface.html#ga087efae82a4b174a0363363d9d5ece19">hpm_stat_t</a> adc12_trigger_seq_by_sw </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structADC12__Type.html">ADC12_Type</a> *&#160;</td>
           <td class="paramname"><em>ptr</em></td><td>)</td>
@@ -1394,10 +1389,18 @@ Enumerations</h2></td></tr>
 
 <p><code>#include &lt;<a class="el" href="hpm__adc12__drv_8h.html">drivers/inc/hpm_adc12_drv.h</a>&gt;</code></p>
 
-<p>Trigger ADC coversions by software. </p>
+<p>Trigger ADC conversions by software. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">ptr</td><td>An ADC12 peripheral base address. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>An implementation result of getting an ADC12 software trigger. </dd></dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">status_success</td><td>ADC12 software triggers successfully. Please refer to <a class="el" href="group__common__interface.html#ga087efae82a4b174a0363363d9d5ece19">hpm_stat_t</a>. </td></tr>
+    <tr><td class="paramname">status_fail</td><td>ADC12 software triggers unsuccessfully. Please refer to <a class="el" href="group__common__interface.html#ga087efae82a4b174a0363363d9d5ece19">hpm_stat_t</a>. </td></tr>
   </table>
   </dd>
 </dl>
@@ -1409,7 +1412,7 @@ Enumerations</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Mon Oct 31 2022 20:47:08 for HPM SDK by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
+    <li class="footer">Generated on Sat Dec 31 2022 19:59:45 for HPM SDK by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
   </ul>
 </div>
 </body>

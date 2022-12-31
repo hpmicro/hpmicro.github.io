@@ -120,7 +120,7 @@ $(document).ready(function(){initNavTree('hpm__pdma__regs_8h_source.html',''); i
 <div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>    <span class="keyword">struct </span>{</div>
 <div class="line"><a id="l00021" name="l00021"></a><span class="lineno"><a class="line" href="structPDMA__Type.html#aba7d1e82133107407f120cbb9ce56e40">   21</a></span>        __RW uint32_t <a class="code hl_variable" href="structPDMA__Type.html#aba7d1e82133107407f120cbb9ce56e40">ULC</a>;                     <span class="comment">/* 0x1C: Layer Upper Left Corner Register */</span></div>
 <div class="line"><a id="l00022" name="l00022"></a><span class="lineno"><a class="line" href="structPDMA__Type.html#a47d802d0842d77c6d34ccd80dd748f7a">   22</a></span>        __RW uint32_t <a class="code hl_variable" href="structPDMA__Type.html#a47d802d0842d77c6d34ccd80dd748f7a">LRC</a>;                     <span class="comment">/* 0x20: Layer Lower Right Corner Register */</span></div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno"><a class="line" href="structPDMA__Type.html#a8a098c89db02dc9f2f13dbd4ebdbfdfe">   23</a></span>    } OUT_PS[2];</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno"><a class="line" href="structPDMA__Type.html#add56790834bed03f9db0cbb04e0bd8b2">   23</a></span>    } OUT_PS[2];</div>
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno"><a class="line" href="structPDMA__Type.html#a6a7a63af0988c5d866b6e292fee405eb">   24</a></span>    __R  uint8_t  RESERVED1[4];                <span class="comment">/* 0x2C - 0x2F: Reserved */</span></div>
 <div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>    <span class="keyword">struct </span>{</div>
 <div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>        __RW uint32_t CTRL;                    <span class="comment">/* 0x30: Layer Control Register */</span></div>
@@ -134,7 +134,7 @@ $(document).ready(function(){initNavTree('hpm__pdma__regs_8h_source.html',''); i
 <div class="line"><a id="l00034" name="l00034"></a><span class="lineno"><a class="line" href="structPDMA__Type.html#a72787fb1d0237d04c9af163993a25d19">   34</a></span>        __RW uint32_t <a class="code hl_variable" href="structPDMA__Type.html#a72787fb1d0237d04c9af163993a25d19">CLRKEY_HIGH</a>;             <span class="comment">/* 0x54: Layer high color key register */</span></div>
 <div class="line"><a id="l00035" name="l00035"></a><span class="lineno"><a class="line" href="structPDMA__Type.html#a6fec011dd45413e46b42b03bd51ae2fe">   35</a></span>        __RW uint32_t <a class="code hl_variable" href="structPDMA__Type.html#a6fec011dd45413e46b42b03bd51ae2fe">ORG</a>;                     <span class="comment">/* 0x58: Layer original size register */</span></div>
 <div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>        __R  uint8_t  RESERVED1[4];            <span class="comment">/* 0x5C - 0x5F: Reserved */</span></div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno"><a class="line" href="structPDMA__Type.html#a22b20b30a1dcf7972977dd514ef4f8cd">   37</a></span>    } PS[2];</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno"><a class="line" href="structPDMA__Type.html#a9f21b5270b65d836b7c013b23d97b1e0">   37</a></span>    } PS[2];</div>
 <div class="line"><a id="l00038" name="l00038"></a><span class="lineno"><a class="line" href="structPDMA__Type.html#accfac071c3a4d1efa686f100fb2b0c05">   38</a></span>    __R  uint8_t  RESERVED2[16];               <span class="comment">/* 0x90 - 0x9F: Reserved */</span></div>
 <div class="line"><a id="l00039" name="l00039"></a><span class="lineno"><a class="line" href="structPDMA__Type.html#aeff4705ea343aefe1d660dad7124f392">   39</a></span>    __RW uint32_t <a class="code hl_variable" href="structPDMA__Type.html#aeff4705ea343aefe1d660dad7124f392">YUV2RGB_COEF0</a>;               <span class="comment">/* 0xA0: YUV2RGB coefficients register 0 */</span></div>
 <div class="line"><a id="l00040" name="l00040"></a><span class="lineno"><a class="line" href="structPDMA__Type.html#a6a312a5586a41a6e6d04530337dd5452">   40</a></span>    __RW uint32_t <a class="code hl_variable" href="structPDMA__Type.html#a6a312a5586a41a6e6d04530337dd5452">YUV2RGB_COEF1</a>;               <span class="comment">/* 0xA4: YUV2RGB coefficients register 1 */</span></div>
@@ -276,7 +276,7 @@ $(document).ready(function(){initNavTree('hpm__pdma__regs_8h_source.html',''); i
 <div class="line"><a id="l00176" name="l00176"></a><span class="lineno">  176</span> </div>
 <div class="line"><a id="l00177" name="l00177"></a><span class="lineno">  177</span><span class="comment">/* Bitfield definition for register: STAT */</span></div>
 <div class="line"><a id="l00178" name="l00178"></a><span class="lineno">  178</span><span class="comment">/*</span></div>
-<div class="line"><a id="l00179" name="l00179"></a><span class="lineno">  179</span><span class="comment"> * BLOCKY (ROI)</span></div>
+<div class="line"><a id="l00179" name="l00179"></a><span class="lineno">  179</span><span class="comment"> * BLOCKY (RO)</span></div>
 <div class="line"><a id="l00180" name="l00180"></a><span class="lineno">  180</span><span class="comment"> *</span></div>
 <div class="line"><a id="l00181" name="l00181"></a><span class="lineno">  181</span><span class="comment"> * Y block that is processing</span></div>
 <div class="line"><a id="l00182" name="l00182"></a><span class="lineno">  182</span><span class="comment"> */</span></div>
@@ -285,7 +285,7 @@ $(document).ready(function(){initNavTree('hpm__pdma__regs_8h_source.html',''); i
 <div class="line"><a id="l00185" name="l00185"></a><span class="lineno"><a class="line" href="hpm__pdma__regs_8h.html#a755144476c7ed4501967eb2b1a8b5c1d">  185</a></span><span class="preprocessor">#define PDMA_STAT_BLOCKY_GET(x) (((uint32_t)(x) &amp; PDMA_STAT_BLOCKY_MASK) &gt;&gt; PDMA_STAT_BLOCKY_SHIFT)</span></div>
 <div class="line"><a id="l00186" name="l00186"></a><span class="lineno">  186</span> </div>
 <div class="line"><a id="l00187" name="l00187"></a><span class="lineno">  187</span><span class="comment">/*</span></div>
-<div class="line"><a id="l00188" name="l00188"></a><span class="lineno">  188</span><span class="comment"> * BLOCKX (ROI)</span></div>
+<div class="line"><a id="l00188" name="l00188"></a><span class="lineno">  188</span><span class="comment"> * BLOCKX (RO)</span></div>
 <div class="line"><a id="l00189" name="l00189"></a><span class="lineno">  189</span><span class="comment"> *</span></div>
 <div class="line"><a id="l00190" name="l00190"></a><span class="lineno">  190</span><span class="comment"> * X block that is processing</span></div>
 <div class="line"><a id="l00191" name="l00191"></a><span class="lineno">  191</span><span class="comment"> */</span></div>
@@ -294,7 +294,7 @@ $(document).ready(function(){initNavTree('hpm__pdma__regs_8h_source.html',''); i
 <div class="line"><a id="l00194" name="l00194"></a><span class="lineno"><a class="line" href="hpm__pdma__regs_8h.html#a847774a49aec2af5a9ef812f4e289694">  194</a></span><span class="preprocessor">#define PDMA_STAT_BLOCKX_GET(x) (((uint32_t)(x) &amp; PDMA_STAT_BLOCKX_MASK) &gt;&gt; PDMA_STAT_BLOCKX_SHIFT)</span></div>
 <div class="line"><a id="l00195" name="l00195"></a><span class="lineno">  195</span> </div>
 <div class="line"><a id="l00196" name="l00196"></a><span class="lineno">  196</span><span class="comment">/*</span></div>
-<div class="line"><a id="l00197" name="l00197"></a><span class="lineno">  197</span><span class="comment"> * PDMA_DONE (ROI)</span></div>
+<div class="line"><a id="l00197" name="l00197"></a><span class="lineno">  197</span><span class="comment"> * PDMA_DONE (RO)</span></div>
 <div class="line"><a id="l00198" name="l00198"></a><span class="lineno">  198</span><span class="comment"> *</span></div>
 <div class="line"><a id="l00199" name="l00199"></a><span class="lineno">  199</span><span class="comment"> * PDMA one image done</span></div>
 <div class="line"><a id="l00200" name="l00200"></a><span class="lineno">  200</span><span class="comment"> */</span></div>
@@ -303,7 +303,7 @@ $(document).ready(function(){initNavTree('hpm__pdma__regs_8h_source.html',''); i
 <div class="line"><a id="l00203" name="l00203"></a><span class="lineno"><a class="line" href="hpm__pdma__regs_8h.html#a7b4d2c800d1940e00843bf3fff04f725">  203</a></span><span class="preprocessor">#define PDMA_STAT_PDMA_DONE_GET(x) (((uint32_t)(x) &amp; PDMA_STAT_PDMA_DONE_MASK) &gt;&gt; PDMA_STAT_PDMA_DONE_SHIFT)</span></div>
 <div class="line"><a id="l00204" name="l00204"></a><span class="lineno">  204</span> </div>
 <div class="line"><a id="l00205" name="l00205"></a><span class="lineno">  205</span><span class="comment">/*</span></div>
-<div class="line"><a id="l00206" name="l00206"></a><span class="lineno">  206</span><span class="comment"> * AXI_ERR_ID (ROI)</span></div>
+<div class="line"><a id="l00206" name="l00206"></a><span class="lineno">  206</span><span class="comment"> * AXI_ERR_ID (RO)</span></div>
 <div class="line"><a id="l00207" name="l00207"></a><span class="lineno">  207</span><span class="comment"> *</span></div>
 <div class="line"><a id="l00208" name="l00208"></a><span class="lineno">  208</span><span class="comment"> * AXI error ID</span></div>
 <div class="line"><a id="l00209" name="l00209"></a><span class="lineno">  209</span><span class="comment"> */</span></div>
@@ -1041,7 +1041,7 @@ $(document).ready(function(){initNavTree('hpm__pdma__regs_8h_source.html',''); i
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_19d806e154b23a5f4c4c08b2e30365a6.html">soc</a></li><li class="navelem"><a class="el" href="dir_d94d62557b5dc917ac9fc81e6b5b3244.html">ip</a></li><li class="navelem"><a class="el" href="hpm__pdma__regs_8h.html">hpm_pdma_regs.h</a></li>
-    <li class="footer">Generated on Mon Oct 31 2022 20:47:06 for HPM SDK by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
+    <li class="footer">Generated on Sat Dec 31 2022 19:59:43 for HPM SDK by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
   </ul>
 </div>
 </body>

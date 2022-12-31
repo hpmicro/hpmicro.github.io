@@ -104,6 +104,7 @@ $(document).ready(function(){initNavTree('globals_defs_s.html',''); initResizabl
 <li>SAVE_DSP_CONTEXT&#160;:&#160;<a class="el" href="group__irq__interface.html#ga024f4308fcafd04e84c8d2e1bc429459">hpm_interrupt.h</a></li>
 <li>SAVE_FCSR&#160;:&#160;<a class="el" href="group__irq__interface.html#gacf0505d982d1e6717de136c6992bba10">hpm_interrupt.h</a></li>
 <li>SAVE_FPU_CONTEXT&#160;:&#160;<a class="el" href="group__irq__interface.html#ga84c57d7bc6ecc4dcb457283e84636cb0">hpm_interrupt.h</a></li>
+<li>SAVE_FPU_STATE&#160;:&#160;<a class="el" href="group__irq__interface.html#ga866bd57a04fa82ed736240ac959df148">hpm_interrupt.h</a></li>
 <li>SAVE_MXSTATUS&#160;:&#160;<a class="el" href="group__irq__interface.html#ga5648c18ae88142d1d1a5fb3db6b5954a">hpm_interrupt.h</a></li>
 <li>SAVE_UCODE&#160;:&#160;<a class="el" href="group__irq__interface.html#ga79becbbcaa74a03a1f4c359c2cbb5b9c">hpm_interrupt.h</a></li>
 <li>SDK_DECLARE_EXT_ISR_M&#160;:&#160;<a class="el" href="group__irq__interface.html#ga1c1735362e546e3b44b2023fbad8bf96">hpm_interrupt.h</a></li>
@@ -1300,10 +1301,6 @@ $(document).ready(function(){initNavTree('globals_defs_s.html',''); initResizabl
 <li>SDXC_MBIU_CTRL_UNDEFL_INCR_EN_MASK&#160;:&#160;<a class="el" href="hpm__sdxc__regs_8h.html#acba1763768eb53136a93cef16f10c8cb">hpm_sdxc_regs.h</a></li>
 <li>SDXC_MBIU_CTRL_UNDEFL_INCR_EN_SET&#160;:&#160;<a class="el" href="hpm__sdxc__regs_8h.html#a2f0dbbe0ddaa0d5b40f46057eafca30c">hpm_sdxc_regs.h</a></li>
 <li>SDXC_MBIU_CTRL_UNDEFL_INCR_EN_SHIFT&#160;:&#160;<a class="el" href="hpm__sdxc__regs_8h.html#aade1f5d0c300c57393ab9d7140ae0801">hpm_sdxc_regs.h</a></li>
-<li>SDXC_MISC_CTRL0_CARDCLK_EN_SW_GET&#160;:&#160;<a class="el" href="hpm__sdxc__regs_8h.html#a21e7f1d8709114341d315deaf9834c41">hpm_sdxc_regs.h</a></li>
-<li>SDXC_MISC_CTRL0_CARDCLK_EN_SW_MASK&#160;:&#160;<a class="el" href="hpm__sdxc__regs_8h.html#a3df84c5b124a3e610c2343490546825d">hpm_sdxc_regs.h</a></li>
-<li>SDXC_MISC_CTRL0_CARDCLK_EN_SW_SET&#160;:&#160;<a class="el" href="hpm__sdxc__regs_8h.html#add0e303143758410fcf843475631fac7">hpm_sdxc_regs.h</a></li>
-<li>SDXC_MISC_CTRL0_CARDCLK_EN_SW_SHIFT&#160;:&#160;<a class="el" href="hpm__sdxc__regs_8h.html#a0e0626446a1973f0808713d93c85ceef">hpm_sdxc_regs.h</a></li>
 <li>SDXC_MISC_CTRL0_CARDCLK_INV_EN_GET&#160;:&#160;<a class="el" href="hpm__sdxc__regs_8h.html#adb28d91228ed204ac25b690bc10235f0">hpm_sdxc_regs.h</a></li>
 <li>SDXC_MISC_CTRL0_CARDCLK_INV_EN_MASK&#160;:&#160;<a class="el" href="hpm__sdxc__regs_8h.html#acb639015fa66e67fdfa9cf7099ef6614">hpm_sdxc_regs.h</a></li>
 <li>SDXC_MISC_CTRL0_CARDCLK_INV_EN_SET&#160;:&#160;<a class="el" href="hpm__sdxc__regs_8h.html#aa78230abe40b04da487d834e0c0ca3d0">hpm_sdxc_regs.h</a></li>
@@ -1328,6 +1325,10 @@ $(document).ready(function(){initNavTree('globals_defs_s.html',''); initResizabl
 <li>SDXC_MISC_CTRL0_TMCLK_EN_MASK&#160;:&#160;<a class="el" href="hpm__sdxc__regs_8h.html#aa482138252738aa14e9707b9e4d8a87c">hpm_sdxc_regs.h</a></li>
 <li>SDXC_MISC_CTRL0_TMCLK_EN_SET&#160;:&#160;<a class="el" href="hpm__sdxc__regs_8h.html#a93650fbf0173d7a24a7a6be27b10eb6c">hpm_sdxc_regs.h</a></li>
 <li>SDXC_MISC_CTRL0_TMCLK_EN_SHIFT&#160;:&#160;<a class="el" href="hpm__sdxc__regs_8h.html#a79e0ccfa5ca8826a3f683907675335d7">hpm_sdxc_regs.h</a></li>
+<li>SDXC_MISC_CTRL1_AUTOTUNING_CCLK_SEL0_GET&#160;:&#160;<a class="el" href="hpm__sdxc__regs_8h.html#accbca7e0fa1e974fb70cf1ebc909d3d0">hpm_sdxc_regs.h</a></li>
+<li>SDXC_MISC_CTRL1_AUTOTUNING_CCLK_SEL0_MASK&#160;:&#160;<a class="el" href="hpm__sdxc__regs_8h.html#a1deb51796a1c8b401263e3bc514aed1c">hpm_sdxc_regs.h</a></li>
+<li>SDXC_MISC_CTRL1_AUTOTUNING_CCLK_SEL0_SET&#160;:&#160;<a class="el" href="hpm__sdxc__regs_8h.html#ac406fa6571e09b40f966ab19f49793ce">hpm_sdxc_regs.h</a></li>
+<li>SDXC_MISC_CTRL1_AUTOTUNING_CCLK_SEL0_SHIFT&#160;:&#160;<a class="el" href="hpm__sdxc__regs_8h.html#a19a91d1cce368137efe3b1308c6e0c6d">hpm_sdxc_regs.h</a></li>
 <li>SDXC_MISC_CTRL1_CARD_ACTIVE_GET&#160;:&#160;<a class="el" href="hpm__sdxc__regs_8h.html#ab8d116c5a518901b64988c98fad45d4d">hpm_sdxc_regs.h</a></li>
 <li>SDXC_MISC_CTRL1_CARD_ACTIVE_MASK&#160;:&#160;<a class="el" href="hpm__sdxc__regs_8h.html#abdcc689cbff48802b6d6f177103c2dff">hpm_sdxc_regs.h</a></li>
 <li>SDXC_MISC_CTRL1_CARD_ACTIVE_PERIOD_SEL_GET&#160;:&#160;<a class="el" href="hpm__sdxc__regs_8h.html#a385a9d87286c326ca05ea9704e6673ca">hpm_sdxc_regs.h</a></li>
@@ -1336,6 +1337,30 @@ $(document).ready(function(){initNavTree('globals_defs_s.html',''); initResizabl
 <li>SDXC_MISC_CTRL1_CARD_ACTIVE_PERIOD_SEL_SHIFT&#160;:&#160;<a class="el" href="hpm__sdxc__regs_8h.html#a13c72290d13a23df8b6da915a44ddabd">hpm_sdxc_regs.h</a></li>
 <li>SDXC_MISC_CTRL1_CARD_ACTIVE_SET&#160;:&#160;<a class="el" href="hpm__sdxc__regs_8h.html#a353ab891826855a9a70c5e9c8611cfa4">hpm_sdxc_regs.h</a></li>
 <li>SDXC_MISC_CTRL1_CARD_ACTIVE_SHIFT&#160;:&#160;<a class="el" href="hpm__sdxc__regs_8h.html#a6934639d80b6ad9425f1a38243ad171b">hpm_sdxc_regs.h</a></li>
+<li>SDXC_MISC_CTRL1_CCLK_RX_DLY_SW_FORCE_GET&#160;:&#160;<a class="el" href="hpm__sdxc__regs_8h.html#a0c4d9bc6bef6da0c9d3643de5b611db7">hpm_sdxc_regs.h</a></li>
+<li>SDXC_MISC_CTRL1_CCLK_RX_DLY_SW_FORCE_MASK&#160;:&#160;<a class="el" href="hpm__sdxc__regs_8h.html#a442b40e8089749da4359c236f7c9a693">hpm_sdxc_regs.h</a></li>
+<li>SDXC_MISC_CTRL1_CCLK_RX_DLY_SW_FORCE_SET&#160;:&#160;<a class="el" href="hpm__sdxc__regs_8h.html#a77a3edb5a961edcaeec969c3c9122648">hpm_sdxc_regs.h</a></li>
+<li>SDXC_MISC_CTRL1_CCLK_RX_DLY_SW_FORCE_SHIFT&#160;:&#160;<a class="el" href="hpm__sdxc__regs_8h.html#a81f284c981739f194e8a794ff0d678d8">hpm_sdxc_regs.h</a></li>
+<li>SDXC_MISC_CTRL1_CCLK_RX_DLY_SW_SEL_GET&#160;:&#160;<a class="el" href="hpm__sdxc__regs_8h.html#a8370b08f753bf00344f12e74f794587e">hpm_sdxc_regs.h</a></li>
+<li>SDXC_MISC_CTRL1_CCLK_RX_DLY_SW_SEL_MASK&#160;:&#160;<a class="el" href="hpm__sdxc__regs_8h.html#a6af0b639cd8f47c59ad361ac2de79417">hpm_sdxc_regs.h</a></li>
+<li>SDXC_MISC_CTRL1_CCLK_RX_DLY_SW_SEL_SET&#160;:&#160;<a class="el" href="hpm__sdxc__regs_8h.html#afd8019a260ba406dcc64cf0cd321928a">hpm_sdxc_regs.h</a></li>
+<li>SDXC_MISC_CTRL1_CCLK_RX_DLY_SW_SEL_SHIFT&#160;:&#160;<a class="el" href="hpm__sdxc__regs_8h.html#a0f06db660f57b9de0537fb07117ddba3">hpm_sdxc_regs.h</a></li>
+<li>SDXC_MISC_CTRL1_STROBE_IN_ENABLE_GET&#160;:&#160;<a class="el" href="hpm__sdxc__regs_8h.html#a66b9488a488c03e743be0f1e77884bb8">hpm_sdxc_regs.h</a></li>
+<li>SDXC_MISC_CTRL1_STROBE_IN_ENABLE_MASK&#160;:&#160;<a class="el" href="hpm__sdxc__regs_8h.html#a9eff38a569ba8994d86e1cf7a5dd4f0d">hpm_sdxc_regs.h</a></li>
+<li>SDXC_MISC_CTRL1_STROBE_IN_ENABLE_SET&#160;:&#160;<a class="el" href="hpm__sdxc__regs_8h.html#a67f88174dce3575b5d8792b9589ba9f7">hpm_sdxc_regs.h</a></li>
+<li>SDXC_MISC_CTRL1_STROBE_IN_ENABLE_SHIFT&#160;:&#160;<a class="el" href="hpm__sdxc__regs_8h.html#ad1c3d1e4efe1a37a48505e8b6e767244">hpm_sdxc_regs.h</a></li>
+<li>SDXC_MISC_CTRL1_TUNING_CARD_CLK_SEL_GET&#160;:&#160;<a class="el" href="hpm__sdxc__regs_8h.html#ae6c74a715927686af041dccaa7f518ae">hpm_sdxc_regs.h</a></li>
+<li>SDXC_MISC_CTRL1_TUNING_CARD_CLK_SEL_MASK&#160;:&#160;<a class="el" href="hpm__sdxc__regs_8h.html#a0494b61af6620d6f224465d43f0ca858">hpm_sdxc_regs.h</a></li>
+<li>SDXC_MISC_CTRL1_TUNING_CARD_CLK_SEL_SET&#160;:&#160;<a class="el" href="hpm__sdxc__regs_8h.html#ab1bddd6a97302ac86e8c6ba638388d23">hpm_sdxc_regs.h</a></li>
+<li>SDXC_MISC_CTRL1_TUNING_CARD_CLK_SEL_SHIFT&#160;:&#160;<a class="el" href="hpm__sdxc__regs_8h.html#a3aa53cf539fa5f97166c4e5ec82cd037">hpm_sdxc_regs.h</a></li>
+<li>SDXC_MISC_CTRL1_TUNING_STROBE_SEL_GET&#160;:&#160;<a class="el" href="hpm__sdxc__regs_8h.html#a2920aa87f201ce06f2d46241a3b23b5a">hpm_sdxc_regs.h</a></li>
+<li>SDXC_MISC_CTRL1_TUNING_STROBE_SEL_MASK&#160;:&#160;<a class="el" href="hpm__sdxc__regs_8h.html#a2b40a3313b1d6f19cd85ecbf533e0d80">hpm_sdxc_regs.h</a></li>
+<li>SDXC_MISC_CTRL1_TUNING_STROBE_SEL_SET&#160;:&#160;<a class="el" href="hpm__sdxc__regs_8h.html#aaab4ace55bd97c573668f08a2e427406">hpm_sdxc_regs.h</a></li>
+<li>SDXC_MISC_CTRL1_TUNING_STROBE_SEL_SHIFT&#160;:&#160;<a class="el" href="hpm__sdxc__regs_8h.html#a02afbb902e0adbe9f0d95a5151b4a4db">hpm_sdxc_regs.h</a></li>
+<li>SDXC_MSHC_CTRL_CMD_CONFLICT_CHECK_GET&#160;:&#160;<a class="el" href="hpm__sdxc__regs_8h.html#a61215c1da05e79adb9782b655c57b13a">hpm_sdxc_regs.h</a></li>
+<li>SDXC_MSHC_CTRL_CMD_CONFLICT_CHECK_MASK&#160;:&#160;<a class="el" href="hpm__sdxc__regs_8h.html#a4fabe6f74d2e9fd8777322168757792d">hpm_sdxc_regs.h</a></li>
+<li>SDXC_MSHC_CTRL_CMD_CONFLICT_CHECK_SET&#160;:&#160;<a class="el" href="hpm__sdxc__regs_8h.html#a126ea1be2803f0172efa9cccb18df0d9">hpm_sdxc_regs.h</a></li>
+<li>SDXC_MSHC_CTRL_CMD_CONFLICT_CHECK_SHIFT&#160;:&#160;<a class="el" href="hpm__sdxc__regs_8h.html#a1d4730fb8d51d59bee6810add288d01e">hpm_sdxc_regs.h</a></li>
 <li>SDXC_MSHC_VER_ID_VER_ID_GET&#160;:&#160;<a class="el" href="hpm__sdxc__regs_8h.html#a1214ae2d0774ce3d728af46e86bf9cd1">hpm_sdxc_regs.h</a></li>
 <li>SDXC_MSHC_VER_ID_VER_ID_MASK&#160;:&#160;<a class="el" href="hpm__sdxc__regs_8h.html#a953e24e52e799e36990d032d42a37346">hpm_sdxc_regs.h</a></li>
 <li>SDXC_MSHC_VER_ID_VER_ID_SHIFT&#160;:&#160;<a class="el" href="hpm__sdxc__regs_8h.html#aa6803f4eab52963d21eae19700ea75b0">hpm_sdxc_regs.h</a></li>
@@ -1406,6 +1431,10 @@ $(document).ready(function(){initNavTree('globals_defs_s.html',''); initResizabl
 <li>SDXC_PROT_CTRL_RD_WAIT_CTRL_MASK&#160;:&#160;<a class="el" href="hpm__sdxc__regs_8h.html#a87e70526c83aa8f1d466579180eefbc3">hpm_sdxc_regs.h</a></li>
 <li>SDXC_PROT_CTRL_RD_WAIT_CTRL_SET&#160;:&#160;<a class="el" href="hpm__sdxc__regs_8h.html#a88c54462894d76fa305909dc06366cb6">hpm_sdxc_regs.h</a></li>
 <li>SDXC_PROT_CTRL_RD_WAIT_CTRL_SHIFT&#160;:&#160;<a class="el" href="hpm__sdxc__regs_8h.html#a754dd931782bee2b02744cd906e28847">hpm_sdxc_regs.h</a></li>
+<li>SDXC_PROT_CTRL_SD_BUS_PWR_VDD1_GET&#160;:&#160;<a class="el" href="hpm__sdxc__regs_8h.html#a03c62eae480f824b1ea341da62766096">hpm_sdxc_regs.h</a></li>
+<li>SDXC_PROT_CTRL_SD_BUS_PWR_VDD1_MASK&#160;:&#160;<a class="el" href="hpm__sdxc__regs_8h.html#ab25bba6de742ae617ef01511553f0b58">hpm_sdxc_regs.h</a></li>
+<li>SDXC_PROT_CTRL_SD_BUS_PWR_VDD1_SET&#160;:&#160;<a class="el" href="hpm__sdxc__regs_8h.html#a195bdd5c0be067d90d164e44e2677473">hpm_sdxc_regs.h</a></li>
+<li>SDXC_PROT_CTRL_SD_BUS_PWR_VDD1_SHIFT&#160;:&#160;<a class="el" href="hpm__sdxc__regs_8h.html#a5286835984630130e36cb11c0117d42f">hpm_sdxc_regs.h</a></li>
 <li>SDXC_PROT_CTRL_SD_BUS_VOL_VDD1_GET&#160;:&#160;<a class="el" href="hpm__sdxc__regs_8h.html#ab9179748ecbdce7009e7f8c78a097a38">hpm_sdxc_regs.h</a></li>
 <li>SDXC_PROT_CTRL_SD_BUS_VOL_VDD1_MASK&#160;:&#160;<a class="el" href="hpm__sdxc__regs_8h.html#a5519739d8ee57c50eceb132c343690e5">hpm_sdxc_regs.h</a></li>
 <li>SDXC_PROT_CTRL_SD_BUS_VOL_VDD1_SET&#160;:&#160;<a class="el" href="hpm__sdxc__regs_8h.html#a3b3f6f10d50ef364c8aa3073722325d3">hpm_sdxc_regs.h</a></li>
@@ -1809,6 +1838,7 @@ $(document).ready(function(){initNavTree('globals_defs_s.html',''); initResizabl
 <li>SPI_SLVST_READY_SHIFT&#160;:&#160;<a class="el" href="hpm__spi__regs_8h.html#ac0473294e469e61ee3603fbeff01f17a">hpm_spi_regs.h</a></li>
 <li>SPI_SLVST_UNDERRUN_GET&#160;:&#160;<a class="el" href="hpm__spi__regs_8h.html#a48daba7a8f66fb72ae63b84ba9e1f031">hpm_spi_regs.h</a></li>
 <li>SPI_SLVST_UNDERRUN_MASK&#160;:&#160;<a class="el" href="hpm__spi__regs_8h.html#a6b8cc332d61e87d2b6969b38e3381ac0">hpm_spi_regs.h</a></li>
+<li>SPI_SLVST_UNDERRUN_SET&#160;:&#160;<a class="el" href="hpm__spi__regs_8h.html#a5d5749a4e3752603d3fc2e1866c78b3d">hpm_spi_regs.h</a></li>
 <li>SPI_SLVST_UNDERRUN_SHIFT&#160;:&#160;<a class="el" href="hpm__spi__regs_8h.html#a2bd285612b3e914035b6a520c111d35a">hpm_spi_regs.h</a></li>
 <li>SPI_SLVST_USR_STATUS_GET&#160;:&#160;<a class="el" href="hpm__spi__regs_8h.html#a1d8608ac27971f75aa9bc74f7b7615c7">hpm_spi_regs.h</a></li>
 <li>SPI_SLVST_USR_STATUS_MASK&#160;:&#160;<a class="el" href="hpm__spi__regs_8h.html#af99986581d841d4854ba34d6e51150fd">hpm_spi_regs.h</a></li>
@@ -2009,10 +2039,10 @@ $(document).ready(function(){initNavTree('globals_defs_s.html',''); initResizabl
 <li>SYSCTL_CLOCK_CLK_TOP_CONN&#160;:&#160;<a class="el" href="HPM6110_2hpm__sysctl__regs_8h.html#a72140c12e4eeb57a66579101a08175b8">hpm_sysctl_regs.h</a></li>
 <li>SYSCTL_CLOCK_CLK_TOP_CPU0&#160;:&#160;<a class="el" href="HPM6110_2hpm__sysctl__regs_8h.html#abeb33842ee93729a7d92b232d9ccd6db">hpm_sysctl_regs.h</a></li>
 <li>SYSCTL_CLOCK_CLK_TOP_CPU1&#160;:&#160;<a class="el" href="HPM6110_2hpm__sysctl__regs_8h.html#a5f0416809d3e9eb907d102659524869d">hpm_sysctl_regs.h</a></li>
-<li>SYSCTL_CLOCK_CLK_TOP_DRAM&#160;:&#160;<a class="el" href="HPM6110_2hpm__sysctl__regs_8h.html#ad6422a8b2ca5ea1f4b7f337ccb40ae90">hpm_sysctl_regs.h</a></li>
 <li>SYSCTL_CLOCK_CLK_TOP_ENET0&#160;:&#160;<a class="el" href="HPM6110_2hpm__sysctl__regs_8h.html#abccf93a2a52eee75df7deb5f477b2e8e">hpm_sysctl_regs.h</a></li>
 <li>SYSCTL_CLOCK_CLK_TOP_ENET1&#160;:&#160;<a class="el" href="HPM6110_2hpm__sysctl__regs_8h.html#a4c4ae4a389217480eb3548c2e310fb43">hpm_sysctl_regs.h</a></li>
 <li>SYSCTL_CLOCK_CLK_TOP_ETH0&#160;:&#160;<a class="el" href="HPM6320_2hpm__sysctl__regs_8h.html#af20f112c5594861ad2792f820d2b224c">hpm_sysctl_regs.h</a></li>
+<li>SYSCTL_CLOCK_CLK_TOP_FEMC&#160;:&#160;<a class="el" href="HPM6110_2hpm__sysctl__regs_8h.html#ae821d97b64d262ff269d94bfb0bf9036">hpm_sysctl_regs.h</a></li>
 <li>SYSCTL_CLOCK_CLK_TOP_GPTMR0&#160;:&#160;<a class="el" href="HPM6110_2hpm__sysctl__regs_8h.html#a2be3760bc52d77dc5f2ad7b437af5a4b">hpm_sysctl_regs.h</a></li>
 <li>SYSCTL_CLOCK_CLK_TOP_GPTMR1&#160;:&#160;<a class="el" href="HPM6110_2hpm__sysctl__regs_8h.html#a3d7e8cab2e2ac8d39296c4dcaffffb98">hpm_sysctl_regs.h</a></li>
 <li>SYSCTL_CLOCK_CLK_TOP_GPTMR2&#160;:&#160;<a class="el" href="HPM6110_2hpm__sysctl__regs_8h.html#a958307da5f9f28c809429ccb6fcb48fa">hpm_sysctl_regs.h</a></li>
@@ -2136,6 +2166,10 @@ $(document).ready(function(){initNavTree('globals_defs_s.html',''); initResizabl
 <li>SYSCTL_CPU_GPR_GPR7&#160;:&#160;<a class="el" href="HPM6110_2hpm__sysctl__regs_8h.html#a5b808fcdcc007a149ec57c9cc08a8390">hpm_sysctl_regs.h</a></li>
 <li>SYSCTL_CPU_GPR_GPR8&#160;:&#160;<a class="el" href="HPM6110_2hpm__sysctl__regs_8h.html#a9ec0ddff428f59ff7f061a9830a686f8">hpm_sysctl_regs.h</a></li>
 <li>SYSCTL_CPU_GPR_GPR9&#160;:&#160;<a class="el" href="HPM6110_2hpm__sysctl__regs_8h.html#af14db3d5ab9870e40256de054a467c96">hpm_sysctl_regs.h</a></li>
+<li>SYSCTL_CPU_GPR_GPR_GET&#160;:&#160;<a class="el" href="HPM6110_2hpm__sysctl__regs_8h.html#a8b87907d1fc0dde5649a0a0affdf8ccc">hpm_sysctl_regs.h</a></li>
+<li>SYSCTL_CPU_GPR_GPR_MASK&#160;:&#160;<a class="el" href="HPM6110_2hpm__sysctl__regs_8h.html#a72e20c33f8768e119acb02c30725af19">hpm_sysctl_regs.h</a></li>
+<li>SYSCTL_CPU_GPR_GPR_SET&#160;:&#160;<a class="el" href="HPM6110_2hpm__sysctl__regs_8h.html#acdcdcf2faec9278672c48be287f7f77c">hpm_sysctl_regs.h</a></li>
+<li>SYSCTL_CPU_GPR_GPR_SHIFT&#160;:&#160;<a class="el" href="HPM6110_2hpm__sysctl__regs_8h.html#aaaf3757dba063f5ca7c2ab8cc2cc0c0c">hpm_sysctl_regs.h</a></li>
 <li>SYSCTL_CPU_LOCK_GPR_GET&#160;:&#160;<a class="el" href="HPM6110_2hpm__sysctl__regs_8h.html#a95575df2b29b622832a55c2040479094">hpm_sysctl_regs.h</a></li>
 <li>SYSCTL_CPU_LOCK_GPR_MASK&#160;:&#160;<a class="el" href="HPM6110_2hpm__sysctl__regs_8h.html#adda5f3c99a08ae8976019761abd77101">hpm_sysctl_regs.h</a></li>
 <li>SYSCTL_CPU_LOCK_GPR_SET&#160;:&#160;<a class="el" href="HPM6110_2hpm__sysctl__regs_8h.html#a15e97bf021533c99964ce793622565af">hpm_sysctl_regs.h</a></li>
@@ -2183,6 +2217,10 @@ $(document).ready(function(){initNavTree('globals_defs_s.html',''); initResizabl
 <li>SYSCTL_CPU_WAKEUP_ENABLE_ENABLE5&#160;:&#160;<a class="el" href="HPM6110_2hpm__sysctl__regs_8h.html#a1cc11fb5ffa63e1638e5b871a363e0e3">hpm_sysctl_regs.h</a></li>
 <li>SYSCTL_CPU_WAKEUP_ENABLE_ENABLE6&#160;:&#160;<a class="el" href="HPM6110_2hpm__sysctl__regs_8h.html#af8f4fbf9a78a32c9df4ab8c401f2843e">hpm_sysctl_regs.h</a></li>
 <li>SYSCTL_CPU_WAKEUP_ENABLE_ENABLE7&#160;:&#160;<a class="el" href="HPM6110_2hpm__sysctl__regs_8h.html#a62df8b16089890d966dfdde3252ef44c">hpm_sysctl_regs.h</a></li>
+<li>SYSCTL_CPU_WAKEUP_ENABLE_ENABLE_GET&#160;:&#160;<a class="el" href="HPM6110_2hpm__sysctl__regs_8h.html#ae64584777246302c7c768b61bdcc7af4">hpm_sysctl_regs.h</a></li>
+<li>SYSCTL_CPU_WAKEUP_ENABLE_ENABLE_MASK&#160;:&#160;<a class="el" href="HPM6110_2hpm__sysctl__regs_8h.html#aaebb9499d9b2c2117e4a1d8635dc8796">hpm_sysctl_regs.h</a></li>
+<li>SYSCTL_CPU_WAKEUP_ENABLE_ENABLE_SET&#160;:&#160;<a class="el" href="HPM6110_2hpm__sysctl__regs_8h.html#a1004591548ceeb7f4f9f336a3c9a5245">hpm_sysctl_regs.h</a></li>
+<li>SYSCTL_CPU_WAKEUP_ENABLE_ENABLE_SHIFT&#160;:&#160;<a class="el" href="HPM6110_2hpm__sysctl__regs_8h.html#a7d4089ac1063ee7719cc309bfeea9c9f">hpm_sysctl_regs.h</a></li>
 <li>SYSCTL_CPU_WAKEUP_STATUS_STATUS0&#160;:&#160;<a class="el" href="HPM6110_2hpm__sysctl__regs_8h.html#a6f23bf308cd7d5c4759f0d7801500e76">hpm_sysctl_regs.h</a></li>
 <li>SYSCTL_CPU_WAKEUP_STATUS_STATUS1&#160;:&#160;<a class="el" href="HPM6110_2hpm__sysctl__regs_8h.html#a713ea864f2b2002774d3a25944f5a6ed">hpm_sysctl_regs.h</a></li>
 <li>SYSCTL_CPU_WAKEUP_STATUS_STATUS2&#160;:&#160;<a class="el" href="HPM6110_2hpm__sysctl__regs_8h.html#a762d53672bb27f83708383b96d815873">hpm_sysctl_regs.h</a></li>
@@ -2191,6 +2229,9 @@ $(document).ready(function(){initNavTree('globals_defs_s.html',''); initResizabl
 <li>SYSCTL_CPU_WAKEUP_STATUS_STATUS5&#160;:&#160;<a class="el" href="HPM6110_2hpm__sysctl__regs_8h.html#a1581d35637bed4e7a9c465bb5a7326ea">hpm_sysctl_regs.h</a></li>
 <li>SYSCTL_CPU_WAKEUP_STATUS_STATUS6&#160;:&#160;<a class="el" href="HPM6110_2hpm__sysctl__regs_8h.html#a62767652ddcc93a0e02826d2086865f1">hpm_sysctl_regs.h</a></li>
 <li>SYSCTL_CPU_WAKEUP_STATUS_STATUS7&#160;:&#160;<a class="el" href="HPM6110_2hpm__sysctl__regs_8h.html#a622af03ead17b74548b6e5401c1ef1da">hpm_sysctl_regs.h</a></li>
+<li>SYSCTL_CPU_WAKEUP_STATUS_STATUS_GET&#160;:&#160;<a class="el" href="HPM6110_2hpm__sysctl__regs_8h.html#a9d4eb1e6fdbca31e986ed7745ab2e340">hpm_sysctl_regs.h</a></li>
+<li>SYSCTL_CPU_WAKEUP_STATUS_STATUS_MASK&#160;:&#160;<a class="el" href="HPM6110_2hpm__sysctl__regs_8h.html#af19cf3cebbc637e2fab12fde96c91466">hpm_sysctl_regs.h</a></li>
+<li>SYSCTL_CPU_WAKEUP_STATUS_STATUS_SHIFT&#160;:&#160;<a class="el" href="HPM6110_2hpm__sysctl__regs_8h.html#aa446157443807ce6da88e41a88af560b">hpm_sysctl_regs.h</a></li>
 <li>SYSCTL_DACCLK_CLK_TOP_DAC0&#160;:&#160;<a class="el" href="HPM6320_2hpm__sysctl__regs_8h.html#a949b6f75013be5636b93101244385f34">hpm_sysctl_regs.h</a></li>
 <li>SYSCTL_DACCLK_GLB_BUSY_GET&#160;:&#160;<a class="el" href="HPM6320_2hpm__sysctl__regs_8h.html#a0bb75c5d8c6312a75f8778ee4bfc48ed">hpm_sysctl_regs.h</a></li>
 <li>SYSCTL_DACCLK_GLB_BUSY_MASK&#160;:&#160;<a class="el" href="HPM6320_2hpm__sysctl__regs_8h.html#a35aec247fa5960c0c2dd160a021a7d4b">hpm_sysctl_regs.h</a></li>
@@ -2214,10 +2255,6 @@ $(document).ready(function(){initNavTree('globals_defs_s.html',''); initResizabl
 <li>SYSCTL_GLOBAL00_PRESET_MASK&#160;:&#160;<a class="el" href="HPM6110_2hpm__sysctl__regs_8h.html#ad3bc31aa8b7a779e0acb5630be0534cc">hpm_sysctl_regs.h</a></li>
 <li>SYSCTL_GLOBAL00_PRESET_SET&#160;:&#160;<a class="el" href="HPM6110_2hpm__sysctl__regs_8h.html#a6b6d1c9cd8ca597b006ed9f96c006b45">hpm_sysctl_regs.h</a></li>
 <li>SYSCTL_GLOBAL00_PRESET_SHIFT&#160;:&#160;<a class="el" href="HPM6110_2hpm__sysctl__regs_8h.html#a9bd3b8b5ca23127dac647f2aa8041cc0">hpm_sysctl_regs.h</a></li>
-<li>SYSCTL_GPR_GPR_GET&#160;:&#160;<a class="el" href="HPM6110_2hpm__sysctl__regs_8h.html#a0ce32cf95e4a65b2bc99a3ec2ccb6de1">hpm_sysctl_regs.h</a></li>
-<li>SYSCTL_GPR_GPR_MASK&#160;:&#160;<a class="el" href="HPM6110_2hpm__sysctl__regs_8h.html#a0e2852307eed8b4950971fc18c5d73f0">hpm_sysctl_regs.h</a></li>
-<li>SYSCTL_GPR_GPR_SET&#160;:&#160;<a class="el" href="HPM6110_2hpm__sysctl__regs_8h.html#a3457e0447b50220cc9e3af0ca8c2fe58">hpm_sysctl_regs.h</a></li>
-<li>SYSCTL_GPR_GPR_SHIFT&#160;:&#160;<a class="el" href="HPM6110_2hpm__sysctl__regs_8h.html#af5e837eeb76cd59f4346da7e1083859d">hpm_sysctl_regs.h</a></li>
 <li>SYSCTL_GROUP0_0&#160;:&#160;<a class="el" href="HPM6110_2hpm__sysctl__regs_8h.html#af1c325b1767666bc98de398eada45e99">hpm_sysctl_regs.h</a></li>
 <li>SYSCTL_GROUP0_1&#160;:&#160;<a class="el" href="HPM6110_2hpm__sysctl__regs_8h.html#af6db5a20d7b2bcd74eabdcc3fbdd5c70">hpm_sysctl_regs.h</a></li>
 <li>SYSCTL_GROUP0_2&#160;:&#160;<a class="el" href="HPM6110_2hpm__sysctl__regs_8h.html#a17182cd0bf7c8df432d49816bb14ec70">hpm_sysctl_regs.h</a></li>
@@ -2461,10 +2498,10 @@ $(document).ready(function(){initNavTree('globals_defs_s.html',''); initResizabl
 <li>SYSCTL_RESOURCE_CLK_TOP_CPU0&#160;:&#160;<a class="el" href="HPM6110_2hpm__sysctl__regs_8h.html#a753b3e29bc629b6178ee88dd4e55a4ac">hpm_sysctl_regs.h</a></li>
 <li>SYSCTL_RESOURCE_CLK_TOP_CPU1&#160;:&#160;<a class="el" href="HPM6110_2hpm__sysctl__regs_8h.html#a5ced8f3d55d056f41e4e636752257208">hpm_sysctl_regs.h</a></li>
 <li>SYSCTL_RESOURCE_CLK_TOP_DAC0&#160;:&#160;<a class="el" href="HPM6320_2hpm__sysctl__regs_8h.html#a19b3614720b1fc86bd46aada811588b4">hpm_sysctl_regs.h</a></li>
-<li>SYSCTL_RESOURCE_CLK_TOP_DRAM&#160;:&#160;<a class="el" href="HPM6110_2hpm__sysctl__regs_8h.html#a09cfdc60d01e859c4403da2f92a937b5">hpm_sysctl_regs.h</a></li>
 <li>SYSCTL_RESOURCE_CLK_TOP_ENET0&#160;:&#160;<a class="el" href="HPM6110_2hpm__sysctl__regs_8h.html#a499c3f2a7917ff311e08ac684befefcd">hpm_sysctl_regs.h</a></li>
 <li>SYSCTL_RESOURCE_CLK_TOP_ENET1&#160;:&#160;<a class="el" href="HPM6110_2hpm__sysctl__regs_8h.html#a28473abbbf6a7b94f76527a029b3b6b0">hpm_sysctl_regs.h</a></li>
 <li>SYSCTL_RESOURCE_CLK_TOP_ETH0&#160;:&#160;<a class="el" href="HPM6320_2hpm__sysctl__regs_8h.html#acee603a048e248fe2a8dc17378e9e6f0">hpm_sysctl_regs.h</a></li>
+<li>SYSCTL_RESOURCE_CLK_TOP_FEMC&#160;:&#160;<a class="el" href="HPM6110_2hpm__sysctl__regs_8h.html#a1b4615ea372b632eb76f8c4ce3d3001a">hpm_sysctl_regs.h</a></li>
 <li>SYSCTL_RESOURCE_CLK_TOP_GPTMR0&#160;:&#160;<a class="el" href="HPM6110_2hpm__sysctl__regs_8h.html#adb168a15837409cf301fe62620e85682">hpm_sysctl_regs.h</a></li>
 <li>SYSCTL_RESOURCE_CLK_TOP_GPTMR1&#160;:&#160;<a class="el" href="HPM6110_2hpm__sysctl__regs_8h.html#a12d32dffcb63d5db57ce81f9b946f169">hpm_sysctl_regs.h</a></li>
 <li>SYSCTL_RESOURCE_CLK_TOP_GPTMR2&#160;:&#160;<a class="el" href="HPM6110_2hpm__sysctl__regs_8h.html#aca91ae0adc946508c70da51b664aefcc">hpm_sysctl_regs.h</a></li>
@@ -2542,10 +2579,10 @@ $(document).ready(function(){initNavTree('globals_defs_s.html',''); initResizabl
 <li>SYSCTL_RESOURCE_DAO&#160;:&#160;<a class="el" href="HPM6110_2hpm__sysctl__regs_8h.html#a38c4c381790b7aeb729bd0fce4ad8728">hpm_sysctl_regs.h</a></li>
 <li>SYSCTL_RESOURCE_DMA0&#160;:&#160;<a class="el" href="HPM6320_2hpm__sysctl__regs_8h.html#a6877d9849e92b6a3a1f4678e2980b381">hpm_sysctl_regs.h</a></li>
 <li>SYSCTL_RESOURCE_DMA1&#160;:&#160;<a class="el" href="HPM6320_2hpm__sysctl__regs_8h.html#a437629799c8de097d6b8e7b4f308cf65">hpm_sysctl_regs.h</a></li>
-<li>SYSCTL_RESOURCE_DRAM&#160;:&#160;<a class="el" href="HPM6110_2hpm__sysctl__regs_8h.html#a7357d8906a34a5d4cc3cff5d42f38c2d">hpm_sysctl_regs.h</a></li>
 <li>SYSCTL_RESOURCE_ENET0&#160;:&#160;<a class="el" href="HPM6110_2hpm__sysctl__regs_8h.html#ab5c7c4e3ee492e617dec9982c56546d7">hpm_sysctl_regs.h</a></li>
 <li>SYSCTL_RESOURCE_ENET1&#160;:&#160;<a class="el" href="HPM6110_2hpm__sysctl__regs_8h.html#a215dee4e7894fe65e36084f850e3f09f">hpm_sysctl_regs.h</a></li>
 <li>SYSCTL_RESOURCE_ETH0&#160;:&#160;<a class="el" href="HPM6320_2hpm__sysctl__regs_8h.html#ac5df182358c84e6e793378c6e2a270d5">hpm_sysctl_regs.h</a></li>
+<li>SYSCTL_RESOURCE_FEMC&#160;:&#160;<a class="el" href="HPM6110_2hpm__sysctl__regs_8h.html#acff2e70c2df148d1284ac4f4ac983237">hpm_sysctl_regs.h</a></li>
 <li>SYSCTL_RESOURCE_FFA0&#160;:&#160;<a class="el" href="HPM6320_2hpm__sysctl__regs_8h.html#ad48618fb09c30b7a974f590ad6d7cfa5">hpm_sysctl_regs.h</a></li>
 <li>SYSCTL_RESOURCE_GLB_BUSY_GET&#160;:&#160;<a class="el" href="HPM6110_2hpm__sysctl__regs_8h.html#acc60f8be4d7d19ec69fe042c433091f9">hpm_sysctl_regs.h</a></li>
 <li>SYSCTL_RESOURCE_GLB_BUSY_MASK&#160;:&#160;<a class="el" href="HPM6110_2hpm__sysctl__regs_8h.html#ab5a94cf0fcadcc8d8b56e52296a6aa17">hpm_sysctl_regs.h</a></li>
@@ -2685,13 +2722,6 @@ $(document).ready(function(){initNavTree('globals_defs_s.html',''); initResizabl
 <li>SYSCTL_RETENTION_VALUE_LINK_SHIFT&#160;:&#160;<a class="el" href="HPM6110_2hpm__sysctl__regs_8h.html#aede1c55bbadab25ca0cad679948ddffa">hpm_sysctl_regs.h</a></li>
 <li>SYSCTL_SOC_CPU_GPR_COUNT&#160;:&#160;<a class="el" href="HPM6360_2hpm__soc__feature_8h.html#a0385fcb7932313d980d3726e3328ab68">hpm_soc_feature.h</a></li>
 <li>SYSCTL_SOC_MONITOR_SLICE_COUNT&#160;:&#160;<a class="el" href="HPM6360_2hpm__soc__feature_8h.html#a4edd57e9d7dcd276abe6024f9820ddbd">hpm_soc_feature.h</a></li>
-<li>SYSCTL_WAKEUP_ENABLE_ENABLE_GET&#160;:&#160;<a class="el" href="HPM6110_2hpm__sysctl__regs_8h.html#a072edf1ac36ed5fe72c02427559f6cda">hpm_sysctl_regs.h</a></li>
-<li>SYSCTL_WAKEUP_ENABLE_ENABLE_MASK&#160;:&#160;<a class="el" href="HPM6110_2hpm__sysctl__regs_8h.html#a4e5aa4b52b9b8e2d1367d49ce12286af">hpm_sysctl_regs.h</a></li>
-<li>SYSCTL_WAKEUP_ENABLE_ENABLE_SET&#160;:&#160;<a class="el" href="HPM6110_2hpm__sysctl__regs_8h.html#af99ebea94caed41ab7a192afa2c559a5">hpm_sysctl_regs.h</a></li>
-<li>SYSCTL_WAKEUP_ENABLE_ENABLE_SHIFT&#160;:&#160;<a class="el" href="HPM6110_2hpm__sysctl__regs_8h.html#a5e3dcc1aa841f846d34c71c7a035baaf">hpm_sysctl_regs.h</a></li>
-<li>SYSCTL_WAKEUP_STATUS_STATUS_GET&#160;:&#160;<a class="el" href="HPM6110_2hpm__sysctl__regs_8h.html#af480a039556058970694d1d79fb879ab">hpm_sysctl_regs.h</a></li>
-<li>SYSCTL_WAKEUP_STATUS_STATUS_MASK&#160;:&#160;<a class="el" href="HPM6110_2hpm__sysctl__regs_8h.html#a24b268caba9974648e21a48b92fc28d7">hpm_sysctl_regs.h</a></li>
-<li>SYSCTL_WAKEUP_STATUS_STATUS_SHIFT&#160;:&#160;<a class="el" href="HPM6110_2hpm__sysctl__regs_8h.html#ab7e17504e87c5c36bcbe174ed4d372a8">hpm_sysctl_regs.h</a></li>
 <li>SYSTEM_TO_DLM&#160;:&#160;<a class="el" href="HPM6360_2hpm__misc_8h.html#aec98228ee982bd76b35572caa6f154bb">hpm_misc.h</a></li>
 </ul>
 </div><!-- contents -->
@@ -2699,7 +2729,7 @@ $(document).ready(function(){initNavTree('globals_defs_s.html',''); initResizabl
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Mon Oct 31 2022 20:47:09 for HPM SDK by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
+    <li class="footer">Generated on Sat Dec 31 2022 19:59:46 for HPM SDK by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
   </ul>
 </div>
 </body>

@@ -108,6 +108,8 @@ $(document).ready(function(){initNavTree('hpm__pdma__drv_8c.html',''); initResiz
 Macros</h2></td></tr>
 <tr class="memitem:a16b1dda9b87e3a2ae67546fd5c4557f9"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hpm__pdma__drv_8c.html#a16b1dda9b87e3a2ae67546fd5c4557f9">PDMA_SCALE_FRAC_BITS</a>&#160;&#160;&#160;12</td></tr>
 <tr class="separator:a16b1dda9b87e3a2ae67546fd5c4557f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1a08b10e3d0517422d287427c019dd9b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hpm__pdma__drv_8c.html#a1a08b10e3d0517422d287427c019dd9b">PDMA_YUV_SCALE_DEFAULT_X_OFFSET</a>&#160;&#160;&#160;(0x800)</td></tr>
+<tr class="separator:a1a08b10e3d0517422d287427c019dd9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a64ea7ccf855e761624d56bba0cae865f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hpm__pdma__drv_8c.html#a64ea7ccf855e761624d56bba0cae865f">PDMA_ERROR_STATUS_MASK</a></td></tr>
 <tr class="separator:a64ea7ccf855e761624d56bba0cae865f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa4d371a4c0d7b556261ebe9e2dc7b11b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hpm__pdma__drv_8c.html#aa4d371a4c0d7b556261ebe9e2dc7b11b">PDMA_BUSY_STATUS_MASK</a></td></tr>
@@ -141,8 +143,8 @@ Functions</h2></td></tr>
 <tr class="memitem:ga69452a43e91eda705fdffce906886e71"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pdma__interface.html#ga69452a43e91eda705fdffce906886e71">pdma_init</a> (<a class="el" href="structPDMA__Type.html">PDMA_Type</a> *ptr, <a class="el" href="group__pdma__interface.html#ga32505b3e11c395d11d638910acb42c95">pdma_config_t</a> *config)</td></tr>
 <tr class="memdesc:ga69452a43e91eda705fdffce906886e71"><td class="mdescLeft">&#160;</td><td class="mdescRight">PDMA initialization.  <a href="group__pdma__interface.html#ga69452a43e91eda705fdffce906886e71">More...</a><br /></td></tr>
 <tr class="separator:ga69452a43e91eda705fdffce906886e71"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aadaee02fb01d37914f998b3d665408db"><td class="memItemLeft" align="right" valign="top">static uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hpm__pdma__drv_8c.html#aadaee02fb01d37914f998b3d665408db">pdma_pixel_format</a> (<a class="el" href="group__Display__common__interface.html#ga3609d1a38c447089436d67c313916bf8">display_pixel_format_t</a> display_format)</td></tr>
-<tr class="separator:aadaee02fb01d37914f998b3d665408db"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9164b4fa26cd3dd398012ce97103bd95"><td class="memItemLeft" align="right" valign="top">static uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hpm__pdma__drv_8c.html#a9164b4fa26cd3dd398012ce97103bd95">pdma_pixel_format</a> (<a class="el" href="group__Display__common__interface.html#ga3609d1a38c447089436d67c313916bf8">display_pixel_format_t</a> display_format, bool is_out_plane)</td></tr>
+<tr class="separator:a9164b4fa26cd3dd398012ce97103bd95"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga2aac2869501893b85179d1c73d40a462"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pdma__interface.html#ga2aac2869501893b85179d1c73d40a462">pdma_config_planes</a> (<a class="el" href="structPDMA__Type.html">PDMA_Type</a> *ptr, void *plane_src_config, void *plane_dst_config, void *yuv2rgb_coef)</td></tr>
 <tr class="memdesc:ga2aac2869501893b85179d1c73d40a462"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configure PDMA planes.  <a href="group__pdma__interface.html#ga2aac2869501893b85179d1c73d40a462">More...</a><br /></td></tr>
 <tr class="separator:ga2aac2869501893b85179d1c73d40a462"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -214,6 +216,20 @@ Functions</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">#define PDMA_SCALE_FRAC_BITS&#160;&#160;&#160;12</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a1a08b10e3d0517422d287427c019dd9b" name="a1a08b10e3d0517422d287427c019dd9b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1a08b10e3d0517422d287427c019dd9b">&#9670;&#160;</a></span>PDMA_YUV_SCALE_DEFAULT_X_OFFSET</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define PDMA_YUV_SCALE_DEFAULT_X_OFFSET&#160;&#160;&#160;(0x800)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -303,8 +319,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="aadaee02fb01d37914f998b3d665408db" name="aadaee02fb01d37914f998b3d665408db"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aadaee02fb01d37914f998b3d665408db">&#9670;&#160;</a></span>pdma_pixel_format()</h2>
+<a id="a9164b4fa26cd3dd398012ce97103bd95" name="a9164b4fa26cd3dd398012ce97103bd95"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9164b4fa26cd3dd398012ce97103bd95">&#9670;&#160;</a></span>pdma_pixel_format()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -316,8 +332,18 @@ Functions</h2></td></tr>
           <td class="memname">static uint32_t pdma_pixel_format </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="group__Display__common__interface.html#ga3609d1a38c447089436d67c313916bf8">display_pixel_format_t</a>&#160;</td>
-          <td class="paramname"><em>display_format</em></td><td>)</td>
+          <td class="paramname"><em>display_format</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>is_out_plane</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
   </td>
@@ -335,7 +361,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_14bc92f4b96c8519b376567118ac28b3.html">drivers</a></li><li class="navelem"><a class="el" href="dir_507bca872cbea0e05b5ebdf850947a53.html">src</a></li><li class="navelem"><a class="el" href="hpm__pdma__drv_8c.html">hpm_pdma_drv.c</a></li>
-    <li class="footer">Generated on Mon Oct 31 2022 20:47:06 for HPM SDK by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
+    <li class="footer">Generated on Sat Dec 31 2022 19:59:43 for HPM SDK by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
   </ul>
 </div>
 </body>

@@ -134,6 +134,6 @@ var HPM6360_2hpm__l1c__drv_8h =
     [ "l1c_ic_fill_lock", "group__l1cache__interface.html#ga4073f07e3a52cbf0d73a44617c38edaf", null ],
     [ "l1c_ic_get_config", "group__l1cache__interface.html#ga5edf4c3b37f3ff3e1b68013242e50448", null ],
     [ "l1c_ic_invalidate", "group__l1cache__interface.html#ga00c98114bdb68f33cbd1f573d2507d17", null ],
-    [ "write_csr", "group__l1cache__interface.html#gab3f2017cd211c3e87f8c90086c4963a7", null ],
+    [ "write_csr", "group__l1cache__interface.html#ga9332ab725904ed8c02f7002ffc5764f8", null ],
     [ "address", "group__l1cache__interface.html#gac0d31ca829f934cccd89f8054e02773e", null ]
 ];

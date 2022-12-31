@@ -1,6 +1,8 @@
 var hpm__adc16__drv_8c =
 [
+    [ "adc16_disable_temp_sensor", "group__adc16__interface.html#gac709701ab7b5aac39236d75cf8c51af2", null ],
     [ "adc16_do_calibration", "hpm__adc16__drv_8c.html#aa6d12a87217a2106f4916d6a10d5e2aa", null ],
+    [ "adc16_enable_temp_sensor", "group__adc16__interface.html#gaa2417746b36c136797f3b96ea207b20d", null ],
     [ "adc16_get_channel_default_config", "group__adc16__interface.html#ga7092dae99754cdaf414a1927bc660764", null ],
     [ "adc16_get_default_config", "group__adc16__interface.html#ga528d2bc629d60cf2a651302d7b0b89de", null ],
     [ "adc16_get_oneshot_result", "group__adc16__interface.html#ga162458b8a08cb0775f388c97158c0433", null ],
@@ -12,5 +14,5 @@ var hpm__adc16__drv_8c =
     [ "adc16_set_pmt_queue_enable", "group__adc16__interface.html#ga46bf5e0678374a216b2ddd3f259f2aef", null ],
     [ "adc16_set_prd_config", "group__adc16__interface.html#gad9104b000a0efa16b6b65e31d2b017ed", null ],
     [ "adc16_set_seq_config", "group__adc16__interface.html#ga74997d3d122564904c4894470e23c220", null ],
-    [ "adc16_trigger_seq_by_sw", "group__adc16__interface.html#ga051f1805fa381d99407532021917e86b", null ]
+    [ "adc16_trigger_seq_by_sw", "group__adc16__interface.html#ga1ba1954e47c0f7dd4f2ad63586f1e0f8", null ]
 ];

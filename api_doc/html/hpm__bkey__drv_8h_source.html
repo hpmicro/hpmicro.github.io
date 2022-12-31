@@ -124,14 +124,14 @@ $(document).ready(function(){initNavTree('hpm__bkey__drv_8h_source.html',''); in
 <div class="line"><a id="l00046" name="l00046"></a><span class="lineno"><a class="line" href="group__bkey__interface.html#ga8b9d010a2f5641d8c4834fd4186e2fad">   46</a></span><span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code hl_function" href="group__bkey__interface.html#ga8b9d010a2f5641d8c4834fd4186e2fad">bkey_set_key_data</a>(<a class="code hl_struct" href="structBKEY__Type.html">BKEY_Type</a> *ptr, uint8_t key, uint8_t start, uint32_t *data, uint8_t size)</div>
 <div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>{</div>
 <div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>    <span class="keywordflow">for</span> (uint8_t i = 0; i &lt; size; i++) {</div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>        ptr-&gt;<a class="code hl_variable" href="structBKEY__Type.html#a1f35b0fc9cdefab1e18c2afcd9c70d74">KEY</a>[key].<a class="code hl_variable" href="structBKEY__Type.html#a65407b8a1b6fd34b184ac14b3f036d43">DATA</a>[start + i] = *(data + i);</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>        ptr-&gt;<a class="code hl_variable" href="structBKEY__Type.html#a4d6ac2e9add074ee40d6557e819e0f63">KEY</a>[key].<a class="code hl_variable" href="structBKEY__Type.html#a65407b8a1b6fd34b184ac14b3f036d43">DATA</a>[start + i] = *(data + i);</div>
 <div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>    }</div>
 <div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>}</div>
 <div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span> </div>
 <div class="line"><a id="l00064" name="l00064"></a><span class="lineno"><a class="line" href="group__bkey__interface.html#ga6b8d7bd775f71ed63abab3035af50f3e">   64</a></span><span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code hl_function" href="group__bkey__interface.html#ga6b8d7bd775f71ed63abab3035af50f3e">bkey_get_key_data</a>(<a class="code hl_struct" href="structBKEY__Type.html">BKEY_Type</a> *ptr, uint8_t key, uint8_t start, uint32_t *data, uint8_t size)</div>
 <div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>{</div>
 <div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>    <span class="keywordflow">for</span> (uint8_t i = 0; i &lt; size; i++) {</div>
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>        *(data + i) = ptr-&gt;<a class="code hl_variable" href="structBKEY__Type.html#a1f35b0fc9cdefab1e18c2afcd9c70d74">KEY</a>[key].<a class="code hl_variable" href="structBKEY__Type.html#a65407b8a1b6fd34b184ac14b3f036d43">DATA</a>[start + i];</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>        *(data + i) = ptr-&gt;<a class="code hl_variable" href="structBKEY__Type.html#a4d6ac2e9add074ee40d6557e819e0f63">KEY</a>[key].<a class="code hl_variable" href="structBKEY__Type.html#a65407b8a1b6fd34b184ac14b3f036d43">DATA</a>[start + i];</div>
 <div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>    }</div>
 <div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>}</div>
 <div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span> </div>
@@ -165,7 +165,7 @@ $(document).ready(function(){initNavTree('hpm__bkey__drv_8h_source.html',''); in
 <div class="ttc" id="ahpm__bkey__regs_8h_html_ad2a936a319d7f7fc8c36a479965d4650"><div class="ttname"><a href="hpm__bkey__regs_8h.html#ad2a936a319d7f7fc8c36a479965d4650">BKEY_ECC_ECC_SET</a></div><div class="ttdeci">#define BKEY_ECC_ECC_SET(x)</div><div class="ttdef"><b>Definition:</b> hpm_bkey_regs.h:64</div></div>
 <div class="ttc" id="ahpm__common_8h_html"><div class="ttname"><a href="hpm__common_8h.html">hpm_common.h</a></div></div>
 <div class="ttc" id="astructBKEY__Type_html"><div class="ttname"><a href="structBKEY__Type.html">BKEY_Type</a></div><div class="ttdef"><b>Definition:</b> hpm_bkey_regs.h:12</div></div>
-<div class="ttc" id="astructBKEY__Type_html_a1f35b0fc9cdefab1e18c2afcd9c70d74"><div class="ttname"><a href="structBKEY__Type.html#a1f35b0fc9cdefab1e18c2afcd9c70d74">BKEY_Type::KEY</a></div><div class="ttdeci">struct BKEY_Type::@272 KEY[2]</div></div>
+<div class="ttc" id="astructBKEY__Type_html_a4d6ac2e9add074ee40d6557e819e0f63"><div class="ttname"><a href="structBKEY__Type.html#a4d6ac2e9add074ee40d6557e819e0f63">BKEY_Type::KEY</a></div><div class="ttdeci">struct BKEY_Type::@281 KEY[2]</div></div>
 <div class="ttc" id="astructBKEY__Type_html_a59fed981bd7a76ae1372c960760f5b91"><div class="ttname"><a href="structBKEY__Type.html#a59fed981bd7a76ae1372c960760f5b91">BKEY_Type::SELECT</a></div><div class="ttdeci">__RW uint32_t SELECT</div><div class="ttdef"><b>Definition:</b> hpm_bkey_regs.h:17</div></div>
 <div class="ttc" id="astructBKEY__Type_html_a65407b8a1b6fd34b184ac14b3f036d43"><div class="ttname"><a href="structBKEY__Type.html#a65407b8a1b6fd34b184ac14b3f036d43">BKEY_Type::DATA</a></div><div class="ttdeci">__RW uint32_t DATA[8]</div><div class="ttdef"><b>Definition:</b> hpm_bkey_regs.h:14</div></div>
 <div class="ttc" id="astructBKEY__Type_html_aa1695dbbdaa391979991f8825e74dd61"><div class="ttname"><a href="structBKEY__Type.html#aa1695dbbdaa391979991f8825e74dd61">BKEY_Type::ECC</a></div><div class="ttdeci">__RW uint32_t ECC[2]</div><div class="ttdef"><b>Definition:</b> hpm_bkey_regs.h:16</div></div>
@@ -175,7 +175,7 @@ $(document).ready(function(){initNavTree('hpm__bkey__drv_8h_source.html',''); in
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_14bc92f4b96c8519b376567118ac28b3.html">drivers</a></li><li class="navelem"><a class="el" href="dir_445f1c1c73deccb146d16af27ad5c1d1.html">inc</a></li><li class="navelem"><a class="el" href="hpm__bkey__drv_8h.html">hpm_bkey_drv.h</a></li>
-    <li class="footer">Generated on Mon Oct 31 2022 20:47:05 for HPM SDK by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
+    <li class="footer">Generated on Sat Dec 31 2022 19:59:42 for HPM SDK by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
   </ul>
 </div>
 </body>

@@ -17,7 +17,6 @@ var HPM6360_2hpm__sysctl__drv_8c =
     [ "sysctl_remove_resource_from_cpu0", "group__sysctl__interface.html#ga65f302ea84d0f7bcd3e769eb764e6809", null ],
     [ "sysctl_set_adc_i2s_clock_mux", "group__sysctl__interface.html#ga975ee82adb6b5889d839bd7960947168", null ],
     [ "sysctl_set_cpu0_wakeup_entry", "group__sysctl__interface.html#ga4dc0f643f5c4ed3751d7b777c733edc5", null ],
-    [ "sysctl_set_cpu_lp_mode", "group__sysctl__interface.html#ga55a0702bdb7279e8d013a3b0e852cc52", null ],
     [ "sysctl_update_divider", "HPM6360_2hpm__sysctl__drv_8c.html#ae74526813ccb67067e4015e21dbe87fd", null ],
     [ "sysctl_valid_cpu_index", "HPM6360_2hpm__sysctl__drv_8c.html#a318146b7e51a2caedae78a4fc3fc07bc", null ]
 ];

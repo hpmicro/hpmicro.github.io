@@ -112,7 +112,7 @@ $(document).ready(function(){initNavTree('HPM6350_2hpm__gpiom__regs_8h_source.ht
 <div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="keyword">typedef</span> <span class="keyword">struct </span>{</div>
 <div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>    <span class="keyword">struct </span>{</div>
 <div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>        __RW uint32_t PIN[32];                 <span class="comment">/* 0x0 - 0x7C: GPIO mananger */</span></div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno"><a class="line" href="structGPIOM__Type.html#aecb96c32b9e76872f6135363ae5dba12">   15</a></span>    } ASSIGN[16];</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno"><a class="line" href="structGPIOM__Type.html#ac9c707d7ddede5506f8bca4fe4e40cb8">   15</a></span>    } ASSIGN[16];</div>
 <div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>} <a class="code hl_struct" href="structGPIOM__Type.html">GPIOM_Type</a>;</div>
 <div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span> </div>
 <div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span> </div>
@@ -124,10 +124,10 @@ $(document).ready(function(){initNavTree('HPM6350_2hpm__gpiom__regs_8h_source.ht
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="comment"> * 0: fields can be changed</span></div>
 <div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="comment"> * 1: fields locked to current value, not changeable</span></div>
 <div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="comment"> */</span></div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno"><a class="line" href="HPM6350_2hpm__gpiom__regs_8h.html#a06914d35650b38fd79197ed13bd09a3a">   27</a></span><span class="preprocessor">#define GPIOM_PIN_LOCK_MASK (0x80000000UL)</span></div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno"><a class="line" href="HPM6350_2hpm__gpiom__regs_8h.html#a8315ef5dc30595f8aa9013bbe12e6cee">   28</a></span><span class="preprocessor">#define GPIOM_PIN_LOCK_SHIFT (31U)</span></div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno"><a class="line" href="HPM6350_2hpm__gpiom__regs_8h.html#a62842a5648c2ada51dc7dfcb5e088b3f">   29</a></span><span class="preprocessor">#define GPIOM_PIN_LOCK_SET(x) (((uint32_t)(x) &lt;&lt; GPIOM_PIN_LOCK_SHIFT) &amp; GPIOM_PIN_LOCK_MASK)</span></div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno"><a class="line" href="HPM6350_2hpm__gpiom__regs_8h.html#a596ed8554936da281908058ffcb5c3c9">   30</a></span><span class="preprocessor">#define GPIOM_PIN_LOCK_GET(x) (((uint32_t)(x) &amp; GPIOM_PIN_LOCK_MASK) &gt;&gt; GPIOM_PIN_LOCK_SHIFT)</span></div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno"><a class="line" href="HPM6350_2hpm__gpiom__regs_8h.html#a0655ab26c36e5bc8a7f81a9d49e15e69">   27</a></span><span class="preprocessor">#define GPIOM_ASSIGN_PIN_LOCK_MASK (0x80000000UL)</span></div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno"><a class="line" href="HPM6350_2hpm__gpiom__regs_8h.html#a14fcbd3f09975115720796c535e116f8">   28</a></span><span class="preprocessor">#define GPIOM_ASSIGN_PIN_LOCK_SHIFT (31U)</span></div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno"><a class="line" href="HPM6350_2hpm__gpiom__regs_8h.html#a0c88d73f0af1227e26dbf8f7f42fbc1b">   29</a></span><span class="preprocessor">#define GPIOM_ASSIGN_PIN_LOCK_SET(x) (((uint32_t)(x) &lt;&lt; GPIOM_ASSIGN_PIN_LOCK_SHIFT) &amp; GPIOM_ASSIGN_PIN_LOCK_MASK)</span></div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno"><a class="line" href="HPM6350_2hpm__gpiom__regs_8h.html#a96dd92acd125d778d6e3600973f1e7d7">   30</a></span><span class="preprocessor">#define GPIOM_ASSIGN_PIN_LOCK_GET(x) (((uint32_t)(x) &amp; GPIOM_ASSIGN_PIN_LOCK_MASK) &gt;&gt; GPIOM_ASSIGN_PIN_LOCK_SHIFT)</span></div>
 <div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span> </div>
 <div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span><span class="comment">/*</span></div>
 <div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span><span class="comment"> * HIDE (RW)</span></div>
@@ -136,10 +136,10 @@ $(document).ready(function(){initNavTree('HPM6350_2hpm__gpiom__regs_8h_source.ht
 <div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span><span class="comment"> * bit0: 1, invisible to soc gpio0; 0: visible to soc gpio0</span></div>
 <div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span><span class="comment"> * bit1: 1, invisible to cpu0 fast gpio; 0: visible to cpu0 fast gpio</span></div>
 <div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span><span class="comment"> */</span></div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno"><a class="line" href="HPM6350_2hpm__gpiom__regs_8h.html#a4f87b685795d54c9e556f5dee01e9506">   39</a></span><span class="preprocessor">#define GPIOM_PIN_HIDE_MASK (0x300U)</span></div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno"><a class="line" href="HPM6350_2hpm__gpiom__regs_8h.html#af3ecaa4b9bfd7346513a3cdb412cd31e">   40</a></span><span class="preprocessor">#define GPIOM_PIN_HIDE_SHIFT (8U)</span></div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno"><a class="line" href="HPM6350_2hpm__gpiom__regs_8h.html#a701ea3798288a043eb2ef532940b2fb4">   41</a></span><span class="preprocessor">#define GPIOM_PIN_HIDE_SET(x) (((uint32_t)(x) &lt;&lt; GPIOM_PIN_HIDE_SHIFT) &amp; GPIOM_PIN_HIDE_MASK)</span></div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno"><a class="line" href="HPM6350_2hpm__gpiom__regs_8h.html#a400de80e0ab03ff56d6606da3ea83e78">   42</a></span><span class="preprocessor">#define GPIOM_PIN_HIDE_GET(x) (((uint32_t)(x) &amp; GPIOM_PIN_HIDE_MASK) &gt;&gt; GPIOM_PIN_HIDE_SHIFT)</span></div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno"><a class="line" href="HPM6350_2hpm__gpiom__regs_8h.html#af3553bea7da17b8c7d9ab7eecd7e10c0">   39</a></span><span class="preprocessor">#define GPIOM_ASSIGN_PIN_HIDE_MASK (0x300U)</span></div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno"><a class="line" href="HPM6350_2hpm__gpiom__regs_8h.html#ae11e401cd22bd2aea609efb86a454c60">   40</a></span><span class="preprocessor">#define GPIOM_ASSIGN_PIN_HIDE_SHIFT (8U)</span></div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno"><a class="line" href="HPM6350_2hpm__gpiom__regs_8h.html#aed38a779a708285441da226449b34e05">   41</a></span><span class="preprocessor">#define GPIOM_ASSIGN_PIN_HIDE_SET(x) (((uint32_t)(x) &lt;&lt; GPIOM_ASSIGN_PIN_HIDE_SHIFT) &amp; GPIOM_ASSIGN_PIN_HIDE_MASK)</span></div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno"><a class="line" href="HPM6350_2hpm__gpiom__regs_8h.html#ac164fa40d7a3b1a15e31234c171aac70">   42</a></span><span class="preprocessor">#define GPIOM_ASSIGN_PIN_HIDE_GET(x) (((uint32_t)(x) &amp; GPIOM_ASSIGN_PIN_HIDE_MASK) &gt;&gt; GPIOM_ASSIGN_PIN_HIDE_SHIFT)</span></div>
 <div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span> </div>
 <div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span><span class="comment">/*</span></div>
 <div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span><span class="comment"> * SELECT (RW)</span></div>
@@ -148,10 +148,10 @@ $(document).ready(function(){initNavTree('HPM6350_2hpm__gpiom__regs_8h_source.ht
 <div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span><span class="comment"> * 0: soc gpio0;</span></div>
 <div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span><span class="comment"> * 1: cpu0 fastgpio</span></div>
 <div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span><span class="comment"> */</span></div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno"><a class="line" href="HPM6350_2hpm__gpiom__regs_8h.html#aca6510b7f33410d60f028a085104966f">   51</a></span><span class="preprocessor">#define GPIOM_PIN_SELECT_MASK (0x1U)</span></div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno"><a class="line" href="HPM6350_2hpm__gpiom__regs_8h.html#ac4e6be78cb89e87dd0872efe096e1b67">   52</a></span><span class="preprocessor">#define GPIOM_PIN_SELECT_SHIFT (0U)</span></div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno"><a class="line" href="HPM6350_2hpm__gpiom__regs_8h.html#aac157f665ee78d9b7c8d8a058d1b6235">   53</a></span><span class="preprocessor">#define GPIOM_PIN_SELECT_SET(x) (((uint32_t)(x) &lt;&lt; GPIOM_PIN_SELECT_SHIFT) &amp; GPIOM_PIN_SELECT_MASK)</span></div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno"><a class="line" href="HPM6350_2hpm__gpiom__regs_8h.html#abb47ad60f8359a0fc9c154e66364c1ce">   54</a></span><span class="preprocessor">#define GPIOM_PIN_SELECT_GET(x) (((uint32_t)(x) &amp; GPIOM_PIN_SELECT_MASK) &gt;&gt; GPIOM_PIN_SELECT_SHIFT)</span></div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno"><a class="line" href="HPM6350_2hpm__gpiom__regs_8h.html#af9afcf6d2909d02537aaf31266b150ee">   51</a></span><span class="preprocessor">#define GPIOM_ASSIGN_PIN_SELECT_MASK (0x1U)</span></div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno"><a class="line" href="HPM6350_2hpm__gpiom__regs_8h.html#a31ced7ea44d9ce60cad194ab775788e8">   52</a></span><span class="preprocessor">#define GPIOM_ASSIGN_PIN_SELECT_SHIFT (0U)</span></div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno"><a class="line" href="HPM6350_2hpm__gpiom__regs_8h.html#a77bc89f371b61e3a76d9f74f9d0bbc92">   53</a></span><span class="preprocessor">#define GPIOM_ASSIGN_PIN_SELECT_SET(x) (((uint32_t)(x) &lt;&lt; GPIOM_ASSIGN_PIN_SELECT_SHIFT) &amp; GPIOM_ASSIGN_PIN_SELECT_MASK)</span></div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno"><a class="line" href="HPM6350_2hpm__gpiom__regs_8h.html#a5d814e8cd379a51eb601bd7bfead7b18">   54</a></span><span class="preprocessor">#define GPIOM_ASSIGN_PIN_SELECT_GET(x) (((uint32_t)(x) &amp; GPIOM_ASSIGN_PIN_SELECT_MASK) &gt;&gt; GPIOM_ASSIGN_PIN_SELECT_SHIFT)</span></div>
 <div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span> </div>
 <div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span> </div>
 <div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span> </div>
@@ -193,12 +193,13 @@ $(document).ready(function(){initNavTree('HPM6350_2hpm__gpiom__regs_8h_source.ht
 <div class="line"><a id="l00093" name="l00093"></a><span class="lineno"><a class="line" href="HPM6350_2hpm__gpiom__regs_8h.html#a6d0f8c406f1eb6d094755dc57d10dd43">   93</a></span><span class="preprocessor">#define GPIOM_ASSIGN_GPIOA (0UL)</span></div>
 <div class="line"><a id="l00094" name="l00094"></a><span class="lineno"><a class="line" href="HPM6350_2hpm__gpiom__regs_8h.html#a9fca8a6f80066262fabce19c10c5e496">   94</a></span><span class="preprocessor">#define GPIOM_ASSIGN_GPIOB (1UL)</span></div>
 <div class="line"><a id="l00095" name="l00095"></a><span class="lineno"><a class="line" href="HPM6350_2hpm__gpiom__regs_8h.html#a3454c2d462a0ff1741e4d0d49e6e0954">   95</a></span><span class="preprocessor">#define GPIOM_ASSIGN_GPIOC (2UL)</span></div>
-<div class="line"><a id="l00096" name="l00096"></a><span class="lineno"><a class="line" href="HPM6350_2hpm__gpiom__regs_8h.html#a25ceae19f3888ef0e2f7e988e89a5281">   96</a></span><span class="preprocessor">#define GPIOM_ASSIGN_GPIOX (13UL)</span></div>
-<div class="line"><a id="l00097" name="l00097"></a><span class="lineno"><a class="line" href="HPM6350_2hpm__gpiom__regs_8h.html#a27a8edda70f99f2dd75440857a246426">   97</a></span><span class="preprocessor">#define GPIOM_ASSIGN_GPIOY (14UL)</span></div>
-<div class="line"><a id="l00098" name="l00098"></a><span class="lineno"><a class="line" href="HPM6350_2hpm__gpiom__regs_8h.html#aa8c170847f2c9dab680c4fd49287a8b4">   98</a></span><span class="preprocessor">#define GPIOM_ASSIGN_GPIOZ (15UL)</span></div>
-<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span> </div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno"><a class="line" href="HPM6350_2hpm__gpiom__regs_8h.html#afb976033d5b0db95943d23d37dad68f9">   96</a></span><span class="preprocessor">#define GPIOM_ASSIGN_GPIOD (3UL)</span></div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno"><a class="line" href="HPM6350_2hpm__gpiom__regs_8h.html#a25ceae19f3888ef0e2f7e988e89a5281">   97</a></span><span class="preprocessor">#define GPIOM_ASSIGN_GPIOX (13UL)</span></div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno"><a class="line" href="HPM6350_2hpm__gpiom__regs_8h.html#a27a8edda70f99f2dd75440857a246426">   98</a></span><span class="preprocessor">#define GPIOM_ASSIGN_GPIOY (14UL)</span></div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno"><a class="line" href="HPM6350_2hpm__gpiom__regs_8h.html#aa8c170847f2c9dab680c4fd49287a8b4">   99</a></span><span class="preprocessor">#define GPIOM_ASSIGN_GPIOZ (15UL)</span></div>
 <div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span> </div>
-<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span><span class="preprocessor">#endif </span><span class="comment">/* HPM_GPIOM_H */</span><span class="preprocessor"></span></div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span> </div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span><span class="preprocessor">#endif </span><span class="comment">/* HPM_GPIOM_H */</span><span class="preprocessor"></span></div>
 <div class="ttc" id="astructGPIOM__Type_html"><div class="ttname"><a href="structGPIOM__Type.html">GPIOM_Type</a></div><div class="ttdef"><b>Definition:</b> hpm_gpiom_regs.h:12</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
@@ -206,7 +207,7 @@ $(document).ready(function(){initNavTree('HPM6350_2hpm__gpiom__regs_8h_source.ht
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_19d806e154b23a5f4c4c08b2e30365a6.html">soc</a></li><li class="navelem"><a class="el" href="dir_622e407f8e793b06738bcf11372ab915.html">HPM6350</a></li><li class="navelem"><a class="el" href="HPM6350_2hpm__gpiom__regs_8h.html">hpm_gpiom_regs.h</a></li>
-    <li class="footer">Generated on Mon Oct 31 2022 20:47:05 for HPM SDK by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
+    <li class="footer">Generated on Sat Dec 31 2022 19:59:42 for HPM SDK by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
   </ul>
 </div>
 </body>

@@ -348,9 +348,10 @@ var searchData=
   ['otp_5fshadow_5fshadow_5fmask_345',['OTP_SHADOW_SHADOW_MASK',['../hpm__otp__regs_8h.html#a8108fbc225a699f67fa58598dffe7d1f',1,'hpm_otp_regs.h']]],
   ['otp_5fshadow_5fshadow_5fset_346',['OTP_SHADOW_SHADOW_SET',['../hpm__otp__regs_8h.html#a9001dda762deef46a0a1622afc1781bb',1,'hpm_otp_regs.h']]],
   ['otp_5fshadow_5fshadow_5fshift_347',['OTP_SHADOW_SHADOW_SHIFT',['../hpm__otp__regs_8h.html#a6f67fd7d3be9bcac4fffeecf12e0de31',1,'hpm_otp_regs.h']]],
-  ['otp_5funlock_5fmagic_5fnum_348',['OTP_UNLOCK_MAGIC_NUM',['../HPM6360_2hpm__otp__drv_8c.html#a5470da22f762ae0cd7b4e0dbc0377344',1,'OTP_UNLOCK_MAGIC_NUM():&#160;hpm_otp_drv.c'],['../HPM6750_2hpm__otp__drv_8c.html#a5470da22f762ae0cd7b4e0dbc0377344',1,'OTP_UNLOCK_MAGIC_NUM():&#160;hpm_otp_drv.c']]],
-  ['otp_5funlock_5funlock_5fget_349',['OTP_UNLOCK_UNLOCK_GET',['../hpm__otp__regs_8h.html#af776eae6684239f63405a62bbfd5056c',1,'hpm_otp_regs.h']]],
-  ['otp_5funlock_5funlock_5fmask_350',['OTP_UNLOCK_UNLOCK_MASK',['../hpm__otp__regs_8h.html#a2dd7ced718c5becc20b2a976ed17b25e',1,'hpm_otp_regs.h']]],
-  ['otp_5funlock_5funlock_5fset_351',['OTP_UNLOCK_UNLOCK_SET',['../hpm__otp__regs_8h.html#a4f414b27d64d2583f18414472103acf6',1,'hpm_otp_regs.h']]],
-  ['otp_5funlock_5funlock_5fshift_352',['OTP_UNLOCK_UNLOCK_SHIFT',['../hpm__otp__regs_8h.html#ab1c72b6693814800a5c698361d88afb4',1,'hpm_otp_regs.h']]]
+  ['otp_5fsoc_5fuuid_5fidx_348',['OTP_SOC_UUID_IDX',['../HPM6360_2hpm__soc__feature_8h.html#a7ce027a4e91d981d8810eb1a55187924',1,'OTP_SOC_UUID_IDX():&#160;hpm_soc_feature.h'],['../HPM6750_2hpm__soc__feature_8h.html#a7ce027a4e91d981d8810eb1a55187924',1,'OTP_SOC_UUID_IDX():&#160;hpm_soc_feature.h']]],
+  ['otp_5funlock_5fmagic_5fnum_349',['OTP_UNLOCK_MAGIC_NUM',['../HPM6360_2hpm__otp__drv_8c.html#a5470da22f762ae0cd7b4e0dbc0377344',1,'OTP_UNLOCK_MAGIC_NUM():&#160;hpm_otp_drv.c'],['../HPM6750_2hpm__otp__drv_8c.html#a5470da22f762ae0cd7b4e0dbc0377344',1,'OTP_UNLOCK_MAGIC_NUM():&#160;hpm_otp_drv.c']]],
+  ['otp_5funlock_5funlock_5fget_350',['OTP_UNLOCK_UNLOCK_GET',['../hpm__otp__regs_8h.html#af776eae6684239f63405a62bbfd5056c',1,'hpm_otp_regs.h']]],
+  ['otp_5funlock_5funlock_5fmask_351',['OTP_UNLOCK_UNLOCK_MASK',['../hpm__otp__regs_8h.html#a2dd7ced718c5becc20b2a976ed17b25e',1,'hpm_otp_regs.h']]],
+  ['otp_5funlock_5funlock_5fset_352',['OTP_UNLOCK_UNLOCK_SET',['../hpm__otp__regs_8h.html#a4f414b27d64d2583f18414472103acf6',1,'hpm_otp_regs.h']]],
+  ['otp_5funlock_5funlock_5fshift_353',['OTP_UNLOCK_UNLOCK_SHIFT',['../hpm__otp__regs_8h.html#ab1c72b6693814800a5c698361d88afb4',1,'hpm_otp_regs.h']]]
 ];

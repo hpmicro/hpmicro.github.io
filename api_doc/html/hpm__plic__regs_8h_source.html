@@ -123,7 +123,7 @@ $(document).ready(function(){initNavTree('hpm__plic__regs_8h_source.html',''); i
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>    <span class="keyword">struct </span>{</div>
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno"><a class="line" href="structPLIC__Type.html#ac63ed147602e134d8a9fa1ecaf1c059a">   24</a></span>        __RW uint32_t INTEN[4];                <span class="comment">/* 0x2000 - 0x200C: machine interrupt enable */</span></div>
 <div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>        __R  uint8_t  RESERVED0[112];          <span class="comment">/* 0x2010 - 0x207F: Reserved */</span></div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno"><a class="line" href="structPLIC__Type.html#aca138531c80defb97fe57b551678b7a2">   26</a></span>    } TARGETINT[2];</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno"><a class="line" href="structPLIC__Type.html#ab1e6c3a31e7f950dacc26fa629a53973">   26</a></span>    } TARGETINT[2];</div>
 <div class="line"><a id="l00027" name="l00027"></a><span class="lineno"><a class="line" href="structPLIC__Type.html#aad1d230935512f031e3b23eaabea7be4">   27</a></span>    __R  uint8_t  RESERVED4[2088704];          <span class="comment">/* 0x2100 - 0x1FFFFF: Reserved */</span></div>
 <div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>    <span class="keyword">struct </span>{</div>
 <div class="line"><a id="l00029" name="l00029"></a><span class="lineno"><a class="line" href="structPLIC__Type.html#a4a7c10c48482e4aa36131d09221cc1b8">   29</a></span>        __RW uint32_t <a class="code hl_variable" href="structPLIC__Type.html#a4a7c10c48482e4aa36131d09221cc1b8">THRESHOLD</a>;               <span class="comment">/* 0x200000: Target0 priority threshold */</span></div>
@@ -131,7 +131,7 @@ $(document).ready(function(){initNavTree('hpm__plic__regs_8h_source.html',''); i
 <div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>        __R  uint8_t  RESERVED0[1016];         <span class="comment">/* 0x200008 - 0x2003FF: Reserved */</span></div>
 <div class="line"><a id="l00032" name="l00032"></a><span class="lineno"><a class="line" href="structPLIC__Type.html#aa1a7731b48b534aa8e3ce69cd894718b">   32</a></span>        __RW uint32_t <a class="code hl_variable" href="structPLIC__Type.html#aa1a7731b48b534aa8e3ce69cd894718b">PPS</a>;                     <span class="comment">/* 0x200400: Preempted priority stack */</span></div>
 <div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>        __R  uint8_t  RESERVED1[3068];         <span class="comment">/* 0x200404 - 0x200FFF: Reserved */</span></div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno"><a class="line" href="structPLIC__Type.html#ab8c6213c12e460c023e2d63b6990152a">   34</a></span>    } TARGETCONFIG[2];</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno"><a class="line" href="structPLIC__Type.html#ad5b8abb1d619a2710fbb3151fa36f859">   34</a></span>    } TARGETCONFIG[2];</div>
 <div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>} <a class="code hl_struct" href="structPLIC__Type.html">PLIC_Type</a>;</div>
 <div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span> </div>
 <div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span> </div>
@@ -240,10 +240,10 @@ $(document).ready(function(){initNavTree('hpm__plic__regs_8h_source.html',''); i
 <div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span><span class="comment"> *</span></div>
 <div class="line"><a id="l00141" name="l00141"></a><span class="lineno">  141</span><span class="comment"> * The interrupt enable bit for interrupt. Every interrupt source occupies 1 bit.</span></div>
 <div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span><span class="comment"> */</span></div>
-<div class="line"><a id="l00143" name="l00143"></a><span class="lineno"><a class="line" href="hpm__plic__regs_8h.html#a67a57e3f647147550e2f80cf142f7ac2">  143</a></span><span class="preprocessor">#define PLIC_INTEN_INTERRUPT_MASK (0xFFFFFFFFUL)</span></div>
-<div class="line"><a id="l00144" name="l00144"></a><span class="lineno"><a class="line" href="hpm__plic__regs_8h.html#ad8284daf354aadf99a46c2ffbcfcae69">  144</a></span><span class="preprocessor">#define PLIC_INTEN_INTERRUPT_SHIFT (0U)</span></div>
-<div class="line"><a id="l00145" name="l00145"></a><span class="lineno"><a class="line" href="hpm__plic__regs_8h.html#ab2e11df4aa908403826056777514a512">  145</a></span><span class="preprocessor">#define PLIC_INTEN_INTERRUPT_SET(x) (((uint32_t)(x) &lt;&lt; PLIC_INTEN_INTERRUPT_SHIFT) &amp; PLIC_INTEN_INTERRUPT_MASK)</span></div>
-<div class="line"><a id="l00146" name="l00146"></a><span class="lineno"><a class="line" href="hpm__plic__regs_8h.html#abad21530492b9008de3427ceb99b6fe2">  146</a></span><span class="preprocessor">#define PLIC_INTEN_INTERRUPT_GET(x) (((uint32_t)(x) &amp; PLIC_INTEN_INTERRUPT_MASK) &gt;&gt; PLIC_INTEN_INTERRUPT_SHIFT)</span></div>
+<div class="line"><a id="l00143" name="l00143"></a><span class="lineno"><a class="line" href="hpm__plic__regs_8h.html#a05120924206eea5e1ce314638d4c8a32">  143</a></span><span class="preprocessor">#define PLIC_TARGETINT_INTEN_INTERRUPT_MASK (0xFFFFFFFFUL)</span></div>
+<div class="line"><a id="l00144" name="l00144"></a><span class="lineno"><a class="line" href="hpm__plic__regs_8h.html#a0d86f1621e6fee0b5d511e9515df025a">  144</a></span><span class="preprocessor">#define PLIC_TARGETINT_INTEN_INTERRUPT_SHIFT (0U)</span></div>
+<div class="line"><a id="l00145" name="l00145"></a><span class="lineno"><a class="line" href="hpm__plic__regs_8h.html#a3fbc6aa151f6329b28cf6afe7d6a134c">  145</a></span><span class="preprocessor">#define PLIC_TARGETINT_INTEN_INTERRUPT_SET(x) (((uint32_t)(x) &lt;&lt; PLIC_TARGETINT_INTEN_INTERRUPT_SHIFT) &amp; PLIC_TARGETINT_INTEN_INTERRUPT_MASK)</span></div>
+<div class="line"><a id="l00146" name="l00146"></a><span class="lineno"><a class="line" href="hpm__plic__regs_8h.html#a0d0a4ad287f60aef477ce5b23e6d632d">  146</a></span><span class="preprocessor">#define PLIC_TARGETINT_INTEN_INTERRUPT_GET(x) (((uint32_t)(x) &amp; PLIC_TARGETINT_INTEN_INTERRUPT_MASK) &gt;&gt; PLIC_TARGETINT_INTEN_INTERRUPT_SHIFT)</span></div>
 <div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span> </div>
 <div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span><span class="comment">/* Bitfield definition for register of struct array TARGETCONFIG: THRESHOLD */</span></div>
 <div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span><span class="comment">/*</span></div>
@@ -450,7 +450,7 @@ $(document).ready(function(){initNavTree('hpm__plic__regs_8h_source.html',''); i
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_19d806e154b23a5f4c4c08b2e30365a6.html">soc</a></li><li class="navelem"><a class="el" href="dir_d94d62557b5dc917ac9fc81e6b5b3244.html">ip</a></li><li class="navelem"><a class="el" href="hpm__plic__regs_8h.html">hpm_plic_regs.h</a></li>
-    <li class="footer">Generated on Mon Oct 31 2022 20:47:06 for HPM SDK by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
+    <li class="footer">Generated on Sat Dec 31 2022 19:59:43 for HPM SDK by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
   </ul>
 </div>
 </body>

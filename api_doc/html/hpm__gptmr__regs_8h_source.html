@@ -122,7 +122,7 @@ $(document).ready(function(){initNavTree('hpm__gptmr__regs_8h_source.html',''); 
 <div class="line"><a id="l00022" name="l00022"></a><span class="lineno"><a class="line" href="structGPTMR__Type.html#aaf01ba7009eb46e498b18fdd09c1e34b">   22</a></span>        __R  uint32_t <a class="code hl_variable" href="structGPTMR__Type.html#aaf01ba7009eb46e498b18fdd09c1e34b">CAPDTY</a>;                  <span class="comment">/* 0x2C: PWM duty cycle measure register */</span></div>
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno"><a class="line" href="structGPTMR__Type.html#a649ad26ab078134061e627b30f853c52">   23</a></span>        __R  uint32_t <a class="code hl_variable" href="structGPTMR__Type.html#a649ad26ab078134061e627b30f853c52">CNT</a>;                     <span class="comment">/* 0x30: Counter */</span></div>
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno"><a class="line" href="structGPTMR__Type.html#a74b221dd76d65d5f9e2c3785134a0fae">   24</a></span>        __R  uint8_t  RESERVED1[12];           <span class="comment">/* 0x34 - 0x3F: Reserved */</span></div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno"><a class="line" href="structGPTMR__Type.html#af7075cdc275631dab0a050d5b97ae824">   25</a></span>    } CHANNEL[4];</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno"><a class="line" href="structGPTMR__Type.html#ad6cd1a512079c3cdefdba9546891d5de">   25</a></span>    } CHANNEL[4];</div>
 <div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>    __R  uint8_t  RESERVED0[256];              <span class="comment">/* 0x100 - 0x1FF: Reserved */</span></div>
 <div class="line"><a id="l00027" name="l00027"></a><span class="lineno"><a class="line" href="structGPTMR__Type.html#a424bda5f2df5c0c0fc6c15bc2271d237">   27</a></span>    __RW uint32_t <a class="code hl_variable" href="structGPTMR__Type.html#a424bda5f2df5c0c0fc6c15bc2271d237">SR</a>;                          <span class="comment">/* 0x200: Status register */</span></div>
 <div class="line"><a id="l00028" name="l00028"></a><span class="lineno"><a class="line" href="structGPTMR__Type.html#a75930bfb9e9db8ce917e5a30a4bb7139">   28</a></span>    __RW uint32_t <a class="code hl_variable" href="structGPTMR__Type.html#a75930bfb9e9db8ce917e5a30a4bb7139">IRQEN</a>;                       <span class="comment">/* 0x204: Interrupt request enable register */</span></div>
@@ -220,10 +220,10 @@ $(document).ready(function(){initNavTree('hpm__gptmr__regs_8h_source.html',''); 
 <div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span><span class="comment"> * DMASEL (RW)</span></div>
 <div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span><span class="comment"> *</span></div>
 <div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span><span class="comment"> * select one of DMA request:</span></div>
-<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span><span class="comment"> * 00- RLD flag, counter reload;</span></div>
-<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span><span class="comment"> * 01- Input signal toggle captured</span></div>
-<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span><span class="comment"> * 10- CMP0 flag</span></div>
-<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span><span class="comment"> * 11- CMP1 flag</span></div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span><span class="comment"> * 00- CMP0 flag</span></div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span><span class="comment"> * 01- CMP1 flag</span></div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span><span class="comment"> * 10- Input signal toggle captured</span></div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span><span class="comment"> * 11- RLD flag, counter reload;</span></div>
 <div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span><span class="comment"> */</span></div>
 <div class="line"><a id="l00128" name="l00128"></a><span class="lineno"><a class="line" href="hpm__gptmr__regs_8h.html#a34320b62a3a374e5d6ccc4481cac672f">  128</a></span><span class="preprocessor">#define GPTMR_CHANNEL_CR_DMASEL_MASK (0xC0U)</span></div>
 <div class="line"><a id="l00129" name="l00129"></a><span class="lineno"><a class="line" href="hpm__gptmr__regs_8h.html#ae4975004db570fbdb3762b4b25941f3f">  129</a></span><span class="preprocessor">#define GPTMR_CHANNEL_CR_DMASEL_SHIFT (6U)</span></div>
@@ -281,10 +281,10 @@ $(document).ready(function(){initNavTree('hpm__gptmr__regs_8h_source.html',''); 
 <div class="line"><a id="l00181" name="l00181"></a><span class="lineno">  181</span><span class="comment"> *</span></div>
 <div class="line"><a id="l00182" name="l00182"></a><span class="lineno">  182</span><span class="comment"> * compare value 0</span></div>
 <div class="line"><a id="l00183" name="l00183"></a><span class="lineno">  183</span><span class="comment"> */</span></div>
-<div class="line"><a id="l00184" name="l00184"></a><span class="lineno"><a class="line" href="hpm__gptmr__regs_8h.html#ae8b123e5678916bcb76c7d04658ffe55">  184</a></span><span class="preprocessor">#define GPTMR_CMP_CMP_MASK (0xFFFFFFFFUL)</span></div>
-<div class="line"><a id="l00185" name="l00185"></a><span class="lineno"><a class="line" href="hpm__gptmr__regs_8h.html#a49fab9b661eb31f88ea412cf81d99bba">  185</a></span><span class="preprocessor">#define GPTMR_CMP_CMP_SHIFT (0U)</span></div>
-<div class="line"><a id="l00186" name="l00186"></a><span class="lineno"><a class="line" href="hpm__gptmr__regs_8h.html#a98faa582b566396c8e6221d844fdafbe">  186</a></span><span class="preprocessor">#define GPTMR_CMP_CMP_SET(x) (((uint32_t)(x) &lt;&lt; GPTMR_CMP_CMP_SHIFT) &amp; GPTMR_CMP_CMP_MASK)</span></div>
-<div class="line"><a id="l00187" name="l00187"></a><span class="lineno"><a class="line" href="hpm__gptmr__regs_8h.html#a833c9194e102b848391627a25eea53ad">  187</a></span><span class="preprocessor">#define GPTMR_CMP_CMP_GET(x) (((uint32_t)(x) &amp; GPTMR_CMP_CMP_MASK) &gt;&gt; GPTMR_CMP_CMP_SHIFT)</span></div>
+<div class="line"><a id="l00184" name="l00184"></a><span class="lineno"><a class="line" href="hpm__gptmr__regs_8h.html#a4a4a4934db91090901f276665c4d331b">  184</a></span><span class="preprocessor">#define GPTMR_CHANNEL_CMP_CMP_MASK (0xFFFFFFFFUL)</span></div>
+<div class="line"><a id="l00185" name="l00185"></a><span class="lineno"><a class="line" href="hpm__gptmr__regs_8h.html#a806076321926d058d2c627e9b088eee4">  185</a></span><span class="preprocessor">#define GPTMR_CHANNEL_CMP_CMP_SHIFT (0U)</span></div>
+<div class="line"><a id="l00186" name="l00186"></a><span class="lineno"><a class="line" href="hpm__gptmr__regs_8h.html#a4ae45bba40f21f41de46f3d1ac0e1a13">  186</a></span><span class="preprocessor">#define GPTMR_CHANNEL_CMP_CMP_SET(x) (((uint32_t)(x) &lt;&lt; GPTMR_CHANNEL_CMP_CMP_SHIFT) &amp; GPTMR_CHANNEL_CMP_CMP_MASK)</span></div>
+<div class="line"><a id="l00187" name="l00187"></a><span class="lineno"><a class="line" href="hpm__gptmr__regs_8h.html#a7477872c0129cfb974de55d56ef4d46e">  187</a></span><span class="preprocessor">#define GPTMR_CHANNEL_CMP_CMP_GET(x) (((uint32_t)(x) &amp; GPTMR_CHANNEL_CMP_CMP_MASK) &gt;&gt; GPTMR_CHANNEL_CMP_CMP_SHIFT)</span></div>
 <div class="line"><a id="l00188" name="l00188"></a><span class="lineno">  188</span> </div>
 <div class="line"><a id="l00189" name="l00189"></a><span class="lineno">  189</span><span class="comment">/* Bitfield definition for register of struct array CHANNEL: RLD */</span></div>
 <div class="line"><a id="l00190" name="l00190"></a><span class="lineno">  190</span><span class="comment">/*</span></div>
@@ -723,7 +723,7 @@ $(document).ready(function(){initNavTree('hpm__gptmr__regs_8h_source.html',''); 
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_19d806e154b23a5f4c4c08b2e30365a6.html">soc</a></li><li class="navelem"><a class="el" href="dir_d94d62557b5dc917ac9fc81e6b5b3244.html">ip</a></li><li class="navelem"><a class="el" href="hpm__gptmr__regs_8h.html">hpm_gptmr_regs.h</a></li>
-    <li class="footer">Generated on Mon Oct 31 2022 20:47:06 for HPM SDK by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
+    <li class="footer">Generated on Sat Dec 31 2022 19:59:43 for HPM SDK by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
   </ul>
 </div>
 </body>

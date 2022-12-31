@@ -1,13 +1,13 @@
 var structbldc__motor__par =
 [
     [ "func_smc_const", "structbldc__motor__par.html#a846ddd51586d7aa11653f67199e19784", null ],
-    [ "I_Lstator_h", "structbldc__motor__par.html#ac0eb2151c5b217b11380d821a5804993", null ],
-    [ "I_MaxSpeed_rs", "structbldc__motor__par.html#a34d6dea54cc60f45b1791005ff7f8f09", null ],
-    [ "I_PhaseCur_a", "structbldc__motor__par.html#a1618b1a5b62360b15a75f40da74e9f28", null ],
-    [ "I_PhaseVol_v", "structbldc__motor__par.html#adcab94988e3cc8d331d5f96edca409ec", null ],
-    [ "I_Poles_n", "structbldc__motor__par.html#a8c62ddcd7613052e051c1e1af4f9a2cc", null ],
-    [ "I_Rstator_ohm", "structbldc__motor__par.html#a5422616b461fcf18ca21eacd61119418", null ],
-    [ "I_SamplingPer_s", "structbldc__motor__par.html#a313cfd056712daf2381450f34ead1096", null ],
-    [ "O_smc_f", "structbldc__motor__par.html#a56514ad9d6261009fa6ea08db30ea99c", null ],
-    [ "O_smc_g", "structbldc__motor__par.html#a047775570502c41f23077e48c143b806", null ]
+    [ "i_lstator_h", "structbldc__motor__par.html#ad6018bde60b0b03353df6a0bc879809e", null ],
+    [ "i_maxspeed_rs", "structbldc__motor__par.html#af1c317b1c124081d8afd4363fae00ce3", null ],
+    [ "i_phasecur_a", "structbldc__motor__par.html#aaebe8766adbf78480b0236a96b708a51", null ],
+    [ "i_phasevol_v", "structbldc__motor__par.html#a0ab2826a550ff9b6415e39b70b29171d", null ],
+    [ "i_poles_n", "structbldc__motor__par.html#a3e123097b1872a51c54b849d27494ec9", null ],
+    [ "i_rstator_ohm", "structbldc__motor__par.html#ae4c00ba8fa622e7811b0b51ddd2ccb70", null ],
+    [ "i_samplingper_s", "structbldc__motor__par.html#a0367f7732409867148af3dd4895fb912", null ],
+    [ "o_smc_f", "structbldc__motor__par.html#a9c4cf5a4db7a6e88b5121d5d3fc222ae", null ],
+    [ "o_smc_g", "structbldc__motor__par.html#a052b9aa72d611fd3484d88f338fc5412", null ]
 ];

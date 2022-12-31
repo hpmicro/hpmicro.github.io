@@ -285,7 +285,7 @@ var searchData=
   ['qei_5fzcmp_5fzcmp_5fmask_282',['QEI_ZCMP_ZCMP_MASK',['../hpm__qei__regs_8h.html#ac6b79269eb89df61c643b8b5889aa86a',1,'hpm_qei_regs.h']]],
   ['qei_5fzcmp_5fzcmp_5fset_283',['QEI_ZCMP_ZCMP_SET',['../hpm__qei__regs_8h.html#a8ea2eba28ba2a19677fc170a88af4330',1,'hpm_qei_regs.h']]],
   ['qei_5fzcmp_5fzcmp_5fshift_284',['QEI_ZCMP_ZCMP_SHIFT',['../hpm__qei__regs_8h.html#adb95279a1dee28cf9bcbc897c7d5c625',1,'hpm_qei_regs.h']]],
-  ['qos_285',['qos',['../structdram__axi__q__weight__t.html#ac01fc8d8cc8316d41cfd1619ccf1ab14',1,'dram_axi_q_weight_t']]],
+  ['qos_285',['qos',['../structfemc__axi__q__weight__t.html#a469607f7ad2d57bdf9e22877246ad2b3',1,'femc_axi_q_weight_t']]],
   ['quad_5fenable_5fseq_286',['quad_enable_seq',['../structxpi__nor__config__option__t.html#a284fcc87e1ba9552105f0dd0aa85001c',1,'xpi_nor_config_option_t']]],
   ['queue_287',['queue',['../structadc16__seq__config__t.html#aac9b19360bd9de3ae8322b668fc29ef3',1,'adc16_seq_config_t::queue()'],['../structadc12__seq__config__t.html#a7d23304eb7753e1733c2c64a3753bf4e',1,'adc12_seq_config_t::queue()']]]
 ];

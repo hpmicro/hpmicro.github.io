@@ -4,7 +4,7 @@
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>15. TinyUF2 &mdash; HPM SDK Project Documentation</title>
+  <title>23. TinyUF2 &mdash; HPM SDK Project Documentation</title>
       <link rel="stylesheet" href="../../static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="../../static/css/theme.css" type="text/css" />
       <link rel="stylesheet" href="../../static/tabs.css" type="text/css" />
@@ -18,14 +18,15 @@
         <script src="../../static/underscore.js"></script>
         <script src="../../static/_sphinx_javascript_frameworks_compat.js"></script>
         <script src="../../static/doctools.js"></script>
+        <script src="../../static/sphinx_highlight.js"></script>
         <script src="../../static/tabs.js"></script>
         <script type="module" src="../../_static/js/dark-mode-toggle.min.mjs"></script>
         <script src="../../_static/js/ga-tracker.js"></script>
     <script src="../../static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="16. RGB LED" href="../rgb_led/README.html" />
-    <link rel="prev" title="14.4. lv_demo_stress" href="../littlevgl/lv_demo_stress/README.html" />
+    <link rel="next" title="24. USB Communication" href="../tinyusb/index.html" />
+    <link rel="prev" title="22.11. SHA-HMAC algorithm" href="../tinycrypt/sha256_hmac_prng_example/README.html" />
   <meta name="color-scheme" content="dark light">
   
   <link rel="stylesheet" href="../../static/css/light.css" type="text/css" media="(prefers-color-scheme: light)"/>
@@ -68,7 +69,7 @@
           </dd>
         
           <dd>
-            <a onclick="RelativeAddress('/0.14.0/html/index.html')">0.14.0</a>
+            <a onclick="RelativeAddress('/1.0.0/html/index.html')">1.0.0</a>
           </dd>
         
       </dl>
@@ -106,38 +107,40 @@
 <li class="toctree-l1"><a class="reference internal" href="../../README.html#community-support">Community Support</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../boards/index.html">HPM Development Board Introduction</a></li>
 <li class="toctree-l1 current"><a class="reference internal" href="../index.html">HPM SDK Samples</a><ul class="current">
-<li class="toctree-l2"><a class="reference internal" href="../hello_world/README.html">1. Hello World</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../audio_codec/index.html">2. Audio Codec</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../audio_codec/index.html">1. Audio Codec</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../cherryusb/index.html">2. USB Communication</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../coremark/README.html">3. Core Mark</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../touch_panel/README.html">4. Touch Panel</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../rtos/index.html">5. RTOS Samples</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../dhrystone/README.html">4. dhrystone</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../dma_manager/README.html">5. DMA Manager</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../drivers/index.html">6. Drivers</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../motor_ctrl/index.html">7. Motor Control</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../jpeg/index.html">8. JPEG</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../tinycrypt/index.html">9. Tinycrypt</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../multicore/index.html">10. Multicore Samples</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../rom_api/index.html">11. ROMAPI Samples</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../tflm/README.html">12. TensorFlowLiteMicro</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../tinyusb/index.html">13. USB Communication</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../littlevgl/index.html">14. littlevgl</a></li>
-<li class="toctree-l2 current"><a class="current reference internal" href="#">15. TinyUF2</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#overview">15.1. Overview</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#uf2-container">15.1.1. UF2 container</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#enter-bootloader-mode">15.1.2. Enter bootloader mode</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../dsp/README.html">7. DSP</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../hello_world/README.html">8. Hello World</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../hpm_math/index.html">9. HPMicro MATH</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../jpeg/index.html">10. JPEG</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../littlevgl/index.html">11. littlevgl</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../lwip/index.html">12. lwIP</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../memstress/index.html">13. memstress</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../motor_ctrl/index.html">14. Motor Control</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../multicore/index.html">15. Multicore Samples</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../power_mode_switch/README.html">16. Power Mode Switch</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../rgb_led/README.html">17. RGB LED</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../rom_api/index.html">18. ROMAPI Samples</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../rtos/index.html">19. RTOS Samples</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../segger_rtt/README.html">20. Segger RTT</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../tflm/index.html">21. TensorFlowLiteMicro</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../tinycrypt/index.html">22. Tinycrypt</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">23. TinyUF2</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#overview">23.1. Overview</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#uf2-container">23.1.1. UF2 container</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#enter-bootloader-mode">23.1.2. Enter bootloader mode</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="#board-setting">15.2. Board Setting</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#running-the-example">15.3. Running the example</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#board-setting">23.2. Board Setting</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#running-the-example">23.3. Running the example</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="../rgb_led/README.html">16. RGB LED</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../hpm_math/index.html">17. HPMicro MATH</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../lwip/index.html">18. lwIP</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../memstress/index.html">19. memstress</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../dma_manager/README.html">20. DMA Manager</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../segger_rtt/README.html">21. Segger RTT</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../cherryusb/index.html">22. USB Communication</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../dhrystone/README.html">23. dhrystone</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../tinyusb/index.html">24. USB Communication</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../touch_panel/README.html">25. Touch Panel</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../../doc/src/sdk_doc/README.html">HPM SDK Doc Generation</a></li>
@@ -186,7 +189,7 @@
   
      <li><a href="../index.html">HPM SDK Samples</a> &raquo;</li>
   
-  <li><span class="section-number">15. </span>TinyUF2</li>
+  <li><span class="section-number">23. </span>TinyUF2</li>
 
 
   <li class="wy-breadcrumbs-aside">
@@ -207,9 +210,9 @@
            <div itemprop="articleBody">
              
   <section id="tinyuf2">
-<h1><span class="section-number">15. </span>TinyUF2<a class="headerlink" href="#tinyuf2" title="Permalink to this heading">¶</a></h1>
+<h1><span class="section-number">23. </span>TinyUF2<a class="headerlink" href="#tinyuf2" title="Permalink to this heading">¶</a></h1>
 <section id="overview">
-<h2><span class="section-number">15.1. </span>Overview<a class="headerlink" href="#overview" title="Permalink to this heading">¶</a></h2>
+<h2><span class="section-number">23.1. </span>Overview<a class="headerlink" href="#overview" title="Permalink to this heading">¶</a></h2>
 <p>tinyuf2 example project provides a UF2 bootloader for HPMicro devices.</p>
 <ul class="simple">
 <li><p>At booloader mode, once it’s running, the device will be listed as a USB mass storage device on PC.
@@ -218,7 +221,7 @@ then TinyUF2 bootloader will program it to the onboard flash and jump to the app
 <li><p>At loading mode, once it’s running, it will load the image already programmed by this bootloader and jump to it.</p></li>
 </ul>
 <section id="uf2-container">
-<h3><span class="section-number">15.1.1. </span>UF2 container<a class="headerlink" href="#uf2-container" title="Permalink to this heading">¶</a></h3>
+<h3><span class="section-number">23.1.1. </span>UF2 container<a class="headerlink" href="#uf2-container" title="Permalink to this heading">¶</a></h3>
 <p>Application to be used as TinyUF2 bootable image, it must meet the following conditions:</p>
 <ol class="arabic simple">
 <li><p>it should be built with flash_uf2 or flash_sdram_uf2 linker script released in SDK.</p></li>
@@ -231,16 +234,16 @@ then TinyUF2 bootloader will program it to the onboard flash and jump to the app
 0x0A4D5048: HPMicro UF2 family ID which should be supported by uf2conv.py</p>
 </section>
 <section id="enter-bootloader-mode">
-<h3><span class="section-number">15.1.2. </span>Enter bootloader mode<a class="headerlink" href="#enter-bootloader-mode" title="Permalink to this heading">¶</a></h3>
+<h3><span class="section-number">23.1.2. </span>Enter bootloader mode<a class="headerlink" href="#enter-bootloader-mode" title="Permalink to this heading">¶</a></h3>
 <p>Hold TinyUF2 button (please check <a class="reference internal" href="../../boards/index.html#lab-board-resource"><span class="std std-ref">Button</span></a> section of sepcific board) while presing reset button</p>
 </section>
 </section>
 <section id="board-setting">
-<h2><span class="section-number">15.2. </span>Board Setting<a class="headerlink" href="#board-setting" title="Permalink to this heading">¶</a></h2>
+<h2><span class="section-number">23.2. </span>Board Setting<a class="headerlink" href="#board-setting" title="Permalink to this heading">¶</a></h2>
 <p>No special settings</p>
 </section>
 <section id="running-the-example">
-<h2><span class="section-number">15.3. </span>Running the example<a class="headerlink" href="#running-the-example" title="Permalink to this heading">¶</a></h2>
+<h2><span class="section-number">23.3. </span>Running the example<a class="headerlink" href="#running-the-example" title="Permalink to this heading">¶</a></h2>
 <ul class="simple">
 <li><p>At loading mode, if there’s valid application programmed already, it will jump to that application, and the serial port terminal will output the following information:</p></li>
 </ul>
@@ -268,15 +271,15 @@ Once the programming is completed, the application will run immediately.</p>
           </div>
 
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="../littlevgl/lv_demo_stress/README.html" class="btn btn-neutral float-left" title="14.4. lv_demo_stress" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="../rgb_led/README.html" class="btn btn-neutral float-right" title="16. RGB LED" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="../tinycrypt/sha256_hmac_prng_example/README.html" class="btn btn-neutral float-left" title="22.11. SHA-HMAC algorithm" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="../tinyusb/index.html" class="btn btn-neutral float-right" title="24. USB Communication" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>
 
   <div role="contentinfo">
     <p>&#169; Copyright 2020-2022, hpmicro.
-      <span class="lastupdated">Last updated on Oct 31, 2022.
+      <span class="lastupdated">Last updated on Dec 31, 2022.
       </span></p>
   </div>
 

@@ -1,6 +1,6 @@
 var structQEI__Type =
 [
-    [ "COUNT", "structQEI__Type.html#a58c621e3489359aa5d259e213a05df24", null ],
+    [ "COUNT", "structQEI__Type.html#a886136a05e0cf89022598e3fecfba1d2", null ],
     [ "CR", "structQEI__Type.html#a464015e948e2c8634d8c45cbc2d1a1d2", null ],
     [ "DMAEN", "structQEI__Type.html#afaf2328cf20d66d7c1b53e580034dc4f", null ],
     [ "IRQEN", "structQEI__Type.html#a383ca15d98d43d7cc1fbf276a36f2dd3", null ],

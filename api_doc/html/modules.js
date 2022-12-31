@@ -4,6 +4,7 @@ var modules =
     [ "ADC12 driver APIs", "group__adc12__interface.html", "group__adc12__interface" ],
     [ "ADC16 driver APIs", "group__adc16__interface.html", "group__adc16__interface" ],
     [ "BACC driver APIs", "group__bacc__interface.html", "group__bacc__interface" ],
+    [ "BCFG driver APIs", "group__bcfg__interface.html", "group__bcfg__interface" ],
     [ "BKEY driver APIs", "group__bkey__interface.html", "group__bkey__interface" ],
     [ "BPOR driver APIs", "group__bpor__interface.html", "group__bpor__interface" ],
     [ "BUTN driver APIs", "group__butn__interface.html", "group__butn__interface" ],
@@ -14,7 +15,6 @@ var modules =
     [ "DAO driver APIs", "group__dao__interface.html", "group__dao__interface" ],
     [ "DMA driver APIs", "group__dma__interface.html", "group__dma__interface" ],
     [ "DMAMUX driver APIs", "group__dmamux__interface.html", "group__dmamux__interface" ],
-    [ "DRAM driver APIs", "group__dram__interface.html", "group__dram__interface" ],
     [ "Display_common driver APIs", "group__Display__common__interface.html", "group__Display__common__interface" ],
     [ "Enet driver APIs", "group__enet__interface.html", "group__enet__interface" ],
     [ "FFA driver APIs", "group__ffa__interface.html", "group__ffa__interface" ],
@@ -58,5 +58,6 @@ var modules =
     [ "WDG driver APIs", "group__wdg__interface.html", "group__wdg__interface" ],
     [ "XPI NOR driver APIs", "group__xpi__nor__interface.html", "group__xpi__nor__interface" ],
     [ "XPI RAM driver APIs", "group__xpi__ram__interface.html", "group__xpi__ram__interface" ],
-    [ "XPI driver APIs", "group__xpi__interface.html", "group__xpi__interface" ]
+    [ "XPI driver APIs", "group__xpi__interface.html", "group__xpi__interface" ],
+    [ "femc driver APIs", "group__dram__interface.html", "group__dram__interface" ]
 ];

@@ -41,17 +41,17 @@ var group__enet__interface =
       [ "tbs2", "structenet__tx__desc__t.html#a1e73e5067d40e6dbc91f8384c34a98f1", null ],
       [ "tch", "structenet__tx__desc__t.html#a2a31581eacef9fb7b582dea6d693c4d6", null ],
       [ "tdes0", "structenet__tx__desc__t.html#ae5fd3c243a7dcc69a0b821e6403f8b28", null ],
-      [ "tdes0_bm", "structenet__tx__desc__t.html#afde7a8b8e9100ab31ceb3c58a47cdd0e", null ],
+      [ "tdes0_bm", "structenet__tx__desc__t.html#a1ce33b79219b74e2647ece3777740747", null ],
       [ "tdes1", "structenet__tx__desc__t.html#a4bad2e95c59c8917a8c39c7c0370b0f5", null ],
-      [ "tdes1_bm", "structenet__tx__desc__t.html#a1ecbbf6deb83a48c67d1a811990d106b", null ],
+      [ "tdes1_bm", "structenet__tx__desc__t.html#aa1c6fec235ca349eb9c797ba2717a0f0", null ],
       [ "tdes2", "structenet__tx__desc__t.html#a37922b7a97385f3df26905d071857789", null ],
-      [ "tdes2_bm", "structenet__tx__desc__t.html#a50832e908f34779a744169704df398bd", null ],
+      [ "tdes2_bm", "structenet__tx__desc__t.html#a2a33b7b18a2fdcbadf23b1460ac602e1", null ],
       [ "tdes3", "structenet__tx__desc__t.html#aa590a717e182cfa0a72f861da965fdd3", null ],
-      [ "tdes3_bm", "structenet__tx__desc__t.html#aee096f839321c071e3830bfd90ecb495", null ],
-      [ "tdes4_bm", "structenet__tx__desc__t.html#a30b2ac2d692229159d975d63b1c5bb6e", null ],
-      [ "tdes5_bm", "structenet__tx__desc__t.html#af6c0183188742e1e69e00aa8aa338bf4", null ],
-      [ "tdes6_bm", "structenet__tx__desc__t.html#a5a68a47ee56aff00886525b75257f392", null ],
-      [ "tdes7_bm", "structenet__tx__desc__t.html#aa2174140265b74496e979c0da7d04011", null ],
+      [ "tdes3_bm", "structenet__tx__desc__t.html#a3a5f9d8311455c35813f9e831498c48d", null ],
+      [ "tdes4_bm", "structenet__tx__desc__t.html#af4248bcf62db572e82108e2c29e5ec3d", null ],
+      [ "tdes5_bm", "structenet__tx__desc__t.html#a6850857d59b08945963890c989ac24bf", null ],
+      [ "tdes6_bm", "structenet__tx__desc__t.html#add9ec631e6b61a654fdeaeba20d793ef", null ],
+      [ "tdes7_bm", "structenet__tx__desc__t.html#af1eb6b68c7600ef14d7c9b0a201a95b8", null ],
       [ "ter", "structenet__tx__desc__t.html#a854cc338a30a8a26707bfd373028b208", null ],
       [ "ttse", "structenet__tx__desc__t.html#ada8b993d27df62dd2c93b1e8d4c8fba8", null ],
       [ "ttsh", "structenet__tx__desc__t.html#ac6f0cbc1935a10524e1484075ccc6373", null ],
@@ -98,18 +98,18 @@ var group__enet__interface =
       [ "rbs2", "structenet__rx__desc__t.html#a0b834e84db8b3ac9c71eb8ed42e5f65f", null ],
       [ "rch", "structenet__rx__desc__t.html#a9e83dd4fe367cbc30537bda994fc5901", null ],
       [ "rdes0", "structenet__rx__desc__t.html#a3eb1ce7ef623d87ed32c8dcc80efe77c", null ],
-      [ "rdes0_bm", "structenet__rx__desc__t.html#a68646e78de699f9032ae8a6c6316b57a", null ],
+      [ "rdes0_bm", "structenet__rx__desc__t.html#a12b1debdd6e9956f7ea6b9f871cb7446", null ],
       [ "rdes1", "structenet__rx__desc__t.html#a96565948d022f02b8a62a6e88e075f7d", null ],
-      [ "rdes1_bm", "structenet__rx__desc__t.html#a18f9098b355d91702671ea3254d493f9", null ],
+      [ "rdes1_bm", "structenet__rx__desc__t.html#a3f8f541cf799c9c4c3b4e8df258703f2", null ],
       [ "rdes2", "structenet__rx__desc__t.html#a8f6c72c3bda8d79e8136d7d74c7d537d", null ],
-      [ "rdes2_bm", "structenet__rx__desc__t.html#aa9a122551eeb8080a1c96a38b76bc61b", null ],
+      [ "rdes2_bm", "structenet__rx__desc__t.html#ae81fcdb9745f27251b11f37fb6358206", null ],
       [ "rdes3", "structenet__rx__desc__t.html#a624e2d8750889ac0a17f7b7b191c6b42", null ],
-      [ "rdes3_bm", "structenet__rx__desc__t.html#a1a7dd314e12c1346c357e225ec2ccf7c", null ],
+      [ "rdes3_bm", "structenet__rx__desc__t.html#aa64efb5957205644eb6476482ec1d1af", null ],
       [ "rdes4", "structenet__rx__desc__t.html#a2c3acdc28f9959119ad2bd960702a52f", null ],
-      [ "rdes4_bm", "structenet__rx__desc__t.html#a5fdf454d14c6894da4ecda96085a4096", null ],
-      [ "rdes5_bm", "structenet__rx__desc__t.html#a8ba6e9d3c1d8f56e01185bad3fc072ea", null ],
-      [ "rdes6_bm", "structenet__rx__desc__t.html#aa161a0f1042d349c952b084b935898be", null ],
-      [ "rdes7_bm", "structenet__rx__desc__t.html#aa4d8e7c8b13aaefda7f9e50aa4211f4c", null ],
+      [ "rdes4_bm", "structenet__rx__desc__t.html#ab0e0cda74387eeb5f1cc62022be460b0", null ],
+      [ "rdes5_bm", "structenet__rx__desc__t.html#aad50428bbef8e034239153dd87314c1c", null ],
+      [ "rdes6_bm", "structenet__rx__desc__t.html#afc85657cdc0798f227794e0e79ace0b2", null ],
+      [ "rdes7_bm", "structenet__rx__desc__t.html#aba72a5da8a06af43c6d6ce5427c8af37", null ],
       [ "re", "structenet__rx__desc__t.html#a8b96d227aa8683e0034eccb33d17e853", null ],
       [ "rer", "structenet__rx__desc__t.html#a5087ff7bc557c80b8d7fb9a68fba5947", null ],
       [ "reserved", "structenet__rx__desc__t.html#a90cbd0133740808821b32ba918db6041", null ],
@@ -144,16 +144,34 @@ var group__enet__interface =
       [ "tx_desc_list_cur", "structenet__desc__t.html#ab99f1feed904cee3af967602dbc80504", null ],
       [ "tx_desc_list_head", "structenet__desc__t.html#a056bd8c007aabdd1710af4f1a1dde74e", null ]
     ] ],
-    [ "enet_ptp_time_t", "structenet__ptp__time__t.html", [
-      [ "nsec", "structenet__ptp__time__t.html#a061c5f99986e123d4e89584877c0b331", null ],
-      [ "sec", "structenet__ptp__time__t.html#a55970670aa8ef874d565cbfa32ed9ccd", null ],
-      [ "sign", "structenet__ptp__time__t.html#aedc999d85a3e21f5fecc31b60a5bf30a", null ]
+    [ "enet_ptp_ts_system_t", "structenet__ptp__ts__system__t.html", [
+      [ "nsec", "structenet__ptp__ts__system__t.html#a38388fc4d7df1e4ecee9854ae8758a8b", null ],
+      [ "sec", "structenet__ptp__ts__system__t.html#ab6c8968925bad8e5b0eed976f95b4500", null ]
+    ] ],
+    [ "enet_ptp_ts_update_t", "structenet__ptp__ts__update__t.html", [
+      [ "nsec", "structenet__ptp__ts__update__t.html#a8cab6b46c79f4dd3f565850a1a8ce45c", null ],
+      [ "sec", "structenet__ptp__ts__update__t.html#a0373acc541832bbd5bf1897fd32e9c8f", null ],
+      [ "sign", "structenet__ptp__ts__update__t.html#acaefc1c1ce760e4814ef0471a6f78746", null ]
+    ] ],
+    [ "enet_ptp_ts_target_t", "structenet__ptp__ts__target__t.html", [
+      [ "nsec", "structenet__ptp__ts__target__t.html#ad62890db0be7ee3ae4f3e7ada7760287", null ],
+      [ "sec", "structenet__ptp__ts__target__t.html#ae05a193e7ff49032e68e56d1bf91fa60", null ]
     ] ],
     [ "enet_ptp_config_t", "structenet__ptp__config__t.html", [
       [ "addend", "structenet__ptp__config__t.html#addae91bd5db96bf7cfc45e8613b02330", null ],
       [ "ssinc", "structenet__ptp__config__t.html#ab1ff972c7fd6f10d61197465457bfc50", null ],
-      [ "sub_sec_count_res", "structenet__ptp__config__t.html#ad55d2149bc5f536ce7761e8eda8f92d0", null ],
+      [ "timestamp_rollover_mode", "structenet__ptp__config__t.html#a6dd6407aaa4a6ecac1c8efce1427f528", null ],
       [ "update_method", "structenet__ptp__config__t.html#afe97ffb426331c3fffc26278bb9b8566", null ]
+    ] ],
+    [ "enet_pps_cmd_config_t", "structenet__pps__cmd__config__t.html", [
+      [ "pps_interval", "structenet__pps__cmd__config__t.html#aa20b13b219e330bb15bfe2e90fc54d0a", null ],
+      [ "pps_width", "structenet__pps__cmd__config__t.html#a6627b43bb5ca16bd2d67a951ae122e85", null ],
+      [ "target_nsec", "structenet__pps__cmd__config__t.html#a46146e32f33571d7ac6102a1775e2d1b", null ],
+      [ "target_sec", "structenet__pps__cmd__config__t.html#a9b19d5b941a226f0ad85af5185d98d98", null ]
+    ] ],
+    [ "enet_int_config_t", "structenet__int__config__t.html", [
+      [ "int_enable", "structenet__int__config__t.html#af28a7b8be6913a8d65747c76316b176d", null ],
+      [ "int_mask", "structenet__int__config__t.html#aad3ce49034135f4a160441fd415888ce", null ]
     ] ],
     [ "ENET_ADJ_FREQ_BASE_ADDEND", "group__enet__interface.html#ga559800213a6087d7182db4885efb3e70", null ],
     [ "ENET_CRC", "group__enet__interface.html#gaa5997807a0dcbee6594a4fd8fb1a0a97", null ],
@@ -163,6 +181,7 @@ var group__enet__interface =
     [ "ENET_EXTRA", "group__enet__interface.html#ga0e37095c8afd617ae21fde1efe9413b1", null ],
     [ "ENET_HEADER", "group__enet__interface.html#ga949b4c9512ba76bbaa14308f10ea2428", null ],
     [ "ENET_JUMBO_FRAME_PAYLOAD", "group__enet__interface.html#ga94ade8ff63a3b5e119fb88661b1ce5c1", null ],
+    [ "ENET_MAC", "group__enet__interface.html#ga150445154d5d6fb9e4ecc1e37ee6c0b6", null ],
     [ "ENET_MAX_FRAME_SIZE", "group__enet__interface.html#ga0f368cafab163ddde40eb425a2389529", null ],
     [ "ENET_MAX_PAYLOAD", "group__enet__interface.html#ga01b4c7adc30a3a66f3beed06758c87b7", null ],
     [ "ENET_MIN_PAYLOAD", "group__enet__interface.html#ga1f6f3c7c5de32a4386960407ddd8a4cd", null ],
@@ -203,6 +222,15 @@ var group__enet__interface =
       [ "enet_cic_insert_tcp_udp_icmp", "group__enet__interface.html#gga81d472689685a7a5f4e4e707bef506b0ad84fd57c9c2e76e55b5233b94efb1618", null ],
       [ "enet_cic_insert_tcp_upd_icmp", "group__enet__interface.html#gga81d472689685a7a5f4e4e707bef506b0a9abae248039879f2cf4f41bbe8a60500", null ]
     ] ],
+    [ "enet_interrupt_enable_t", "group__enet__interface.html#gafb9d440ac05cadfab906714b2db65027", [
+      [ "enet_normal_int_sum_en", "group__enet__interface.html#ggafb9d440ac05cadfab906714b2db65027a543bf8e75a15548e6ee7c79c76284542", null ],
+      [ "enet_aboarmal_int_sum_en", "group__enet__interface.html#ggafb9d440ac05cadfab906714b2db65027ace1fa1072a13a9310e5507d3b7bd43f2", null ],
+      [ "enet_receive_int_en", "group__enet__interface.html#ggafb9d440ac05cadfab906714b2db65027a862c62c5d3e6ddea76819575bd639e8c", null ]
+    ] ],
+    [ "enet_interrupt_mask_t", "group__enet__interface.html#gacc7fb55b52389c84a1c4a330ce25bc08", [
+      [ "enet_lpi_int_mask", "group__enet__interface.html#ggacc7fb55b52389c84a1c4a330ce25bc08a93d17e013c1833e692a438aa19d6aa5f", null ],
+      [ "enet_rgsmii_int_mask", "group__enet__interface.html#ggacc7fb55b52389c84a1c4a330ce25bc08a3965352f98751366b7dc0facffaedde2", null ]
+    ] ],
     [ "enet_line_speed_t", "group__enet__interface.html#gaf1e9aeda8546fd009b449e7082a60aaa", [
       [ "enet_line_speed_1000mbps", "group__enet__interface.html#ggaf1e9aeda8546fd009b449e7082a60aaaa5f843060f898bc1515c8897844705165", null ],
       [ "enet_line_speed_10mbps", "group__enet__interface.html#ggaf1e9aeda8546fd009b449e7082a60aaaa643ae79e520a29ebc28ea361b4ae2428", null ],
@@ -220,9 +248,32 @@ var group__enet__interface =
       [ "enet_phy_op_read", "group__enet__interface.html#ggabb7ccd07663339170d67aa832f3bb9e0a5d33c24bf8101526a07deaeaf5fbdec6", null ],
       [ "enet_phy_op_write", "group__enet__interface.html#ggabb7ccd07663339170d67aa832f3bb9e0a5869ba83e7d2192fc412cdbbc413c1f3", null ]
     ] ],
-    [ "enet_ptp_count_res_t", "group__enet__interface.html#gaf8bd6400d1556a7fa148d920d39a822e", [
-      [ "enet_ptp_count_res_high", "group__enet__interface.html#ggaf8bd6400d1556a7fa148d920d39a822ea7fe184225b167b5597550574fc524021", null ],
-      [ "enet_ptp_count_res_low", "group__enet__interface.html#ggaf8bd6400d1556a7fa148d920d39a822eacf5e9d646c41efc71b6a9b6332a6407e", null ]
+    [ "enet_pps_cmd_t", "group__enet__interface.html#gab656223a480f9d014d8a676c57ba6443", [
+      [ "enet_pps_cmd_no_command", "group__enet__interface.html#ggab656223a480f9d014d8a676c57ba6443a9a8fa7551a360669d374d8a58a5d7210", null ],
+      [ "enet_pps_cmd_start_single_pulse", "group__enet__interface.html#ggab656223a480f9d014d8a676c57ba6443a499680446b6695f0ef1aa1f8e6d33705", null ],
+      [ "enet_pps_cmd_start_pulse_train", "group__enet__interface.html#ggab656223a480f9d014d8a676c57ba6443aa1cc8d9bee773e3463da4d44cd89d92f", null ],
+      [ "enet_pps_cmd_cancel_start", "group__enet__interface.html#ggab656223a480f9d014d8a676c57ba6443aec96615a6322d2acbc7e18bac12fd466", null ],
+      [ "enet_pps_cmd_stop_pulse_train_at_time", "group__enet__interface.html#ggab656223a480f9d014d8a676c57ba6443a097c831e4069e94032e6b5b884d8763e", null ],
+      [ "enet_pps_cmd_stop_pulse_train_immediately", "group__enet__interface.html#ggab656223a480f9d014d8a676c57ba6443aca69cdf6b22c65ac7d5d17457e8e2c20", null ],
+      [ "enet_pps_cmd_cancel_stop_pulse_train", "group__enet__interface.html#ggab656223a480f9d014d8a676c57ba6443a470881e0fa021c356115c59385d83f15", null ]
+    ] ],
+    [ "enet_pps_ctrl_t", "group__enet__interface.html#ga4864ea06119820501053114286d4c8f4", [
+      [ "enet_pps_ctrl_pps", "group__enet__interface.html#gga4864ea06119820501053114286d4c8f4ada6f9311ffa62ed86998ecabb0e1f972", null ],
+      [ "enet_pps_ctrl_bin_2hz_digital_1hz", "group__enet__interface.html#gga4864ea06119820501053114286d4c8f4a0bf22c21c63a43b51067c989c56e5b48", null ],
+      [ "enet_pps_ctrl_bin_4hz_digital_2hz", "group__enet__interface.html#gga4864ea06119820501053114286d4c8f4a05ad9248f1a123ae177828921c21fb76", null ],
+      [ "enet_pps_ctrl_bin_8hz_digital_4hz", "group__enet__interface.html#gga4864ea06119820501053114286d4c8f4a5e599e453e920a7de27adc72963ecf95", null ],
+      [ "enet_pps_ctrl_bin_16hz_digital_8hz", "group__enet__interface.html#gga4864ea06119820501053114286d4c8f4a58251eaa6588be521ef1f8d7182a5f5d", null ],
+      [ "enet_pps_ctrl_bin_32hz_digital_16hz", "group__enet__interface.html#gga4864ea06119820501053114286d4c8f4a2ccbf3ab6437e06aca22608a914a4cea", null ],
+      [ "enet_pps_ctrl_bin_64hz_digital_32hz", "group__enet__interface.html#gga4864ea06119820501053114286d4c8f4af6de293b955b23cf95206eb6f4f15670", null ],
+      [ "enet_pps_ctrl_bin_128hz_digital_64hz", "group__enet__interface.html#gga4864ea06119820501053114286d4c8f4affc21ba81e4ac938bd7ca43520881501", null ],
+      [ "enet_pps_ctrl_bin_256hz_digital_128hz", "group__enet__interface.html#gga4864ea06119820501053114286d4c8f4a4b7364dd1496023ced6db511330b4c92", null ],
+      [ "enet_pps_ctrl_bin_512hz_digital_256hz", "group__enet__interface.html#gga4864ea06119820501053114286d4c8f4aec59c502dbfd941f2e486cfc22cea192", null ],
+      [ "enet_pps_ctrl_bin_1024hz_digital_512hz", "group__enet__interface.html#gga4864ea06119820501053114286d4c8f4afc36ead8275f532c4a6258ec4f6e395b", null ],
+      [ "enet_pps_ctrl_bin_2048hz_digital_1024hz", "group__enet__interface.html#gga4864ea06119820501053114286d4c8f4ab06ff2bfd2b0a0932b24b6960781b7f7", null ],
+      [ "enet_pps_ctrl_bin_4096hz_digital_2048hz", "group__enet__interface.html#gga4864ea06119820501053114286d4c8f4aeb5ac5d43d041ba108e7fcba8b52630f", null ],
+      [ "enet_pps_ctrl_bin_8192hz_digital_4096hz", "group__enet__interface.html#gga4864ea06119820501053114286d4c8f4a15737a3683b49b78b45e90b8dc99e384", null ],
+      [ "enet_pps_ctrl_bin_16384hz_digital_8192hz", "group__enet__interface.html#gga4864ea06119820501053114286d4c8f4af53d241005a5bd88e0c5cf8a1a703b15", null ],
+      [ "enet_pps_ctrl_bin_32867hz_digital_16384hz", "group__enet__interface.html#gga4864ea06119820501053114286d4c8f4ac33f96bbc45e31edc796250a48c0b381", null ]
     ] ],
     [ "enet_ptp_frame_type_t", "group__enet__interface.html#ga843ef5dbf1bb8f99db24c64a7ff12369", [
       [ "enet_ptp_frame_ipv4", "group__enet__interface.html#gga843ef5dbf1bb8f99db24c64a7ff12369aa23c5e7b063abf9aa0cd468c52b6a091", null ],
@@ -237,6 +288,10 @@ var group__enet__interface =
       [ "enet_ptp_v1", "group__enet__interface.html#ggaa7aec73456b9f40b02c247263abc7a17af8b872ad7b63ec2d3d8e6c5da4f6b4b6", null ],
       [ "enet_ptp_v2", "group__enet__interface.html#ggaa7aec73456b9f40b02c247263abc7a17add6d2ae31df7c565ab48f0268405f32c", null ]
     ] ],
+    [ "enet_ts_rollover_control_t", "group__enet__interface.html#ga39ce7b0c8162f2dfceea0ffe8196e2d3", [
+      [ "enet_ts_bin_rollover_control", "group__enet__interface.html#gga39ce7b0c8162f2dfceea0ffe8196e2d3a5c499e084ba64f14ef6a25a077fc6bef", null ],
+      [ "enet_ts_dig_rollover_control", "group__enet__interface.html#gga39ce7b0c8162f2dfceea0ffe8196e2d3a4cd4ffd4361832b45f58b95680df251d", null ]
+    ] ],
     [ "enet_ts_ss_ptp_msg_t", "group__enet__interface.html#ga485653ac430734cddee0189313af0298", [
       [ "enet_ts_ss_ptp_msg_0", "group__enet__interface.html#gga485653ac430734cddee0189313af0298ae890f395f6aaef17ba2405b21118ad25", null ],
       [ "enet_ts_ss_ptp_msg_1", "group__enet__interface.html#gga485653ac430734cddee0189313af0298af3bf5da45073c466718b9d1b9cada30b", null ],
@@ -249,12 +304,12 @@ var group__enet__interface =
     ] ],
     [ "enet_adjust_ptp_time_freq", "group__enet__interface.html#ga39728672c004f92451662ee9315fd383", null ],
     [ "enet_check_received_frame", "group__enet__interface.html#gad076ed1579664645114b831208cf055e", null ],
-    [ "enet_controller_init", "group__enet__interface.html#gabd6a65db84b5859e70e73f5a575d3965", null ],
+    [ "enet_controller_init", "group__enet__interface.html#ga59a7aecf9b4d00c69c8a58129416d44a", null ],
     [ "enet_dma_flush", "group__enet__interface.html#ga9302aeb46f3ee471c98cb889b0181b40", null ],
     [ "enet_dma_rx_desc_chain_init", "group__enet__interface.html#ga0ff4f0756c4a6e52792c01bd712b39ac", null ],
     [ "enet_dma_tx_desc_chain_init", "group__enet__interface.html#gaf6848b5fc209bac8932936a235535631", null ],
     [ "enet_enable_ptp_frame_type", "group__enet__interface.html#ga4f4be702511cdfc964bfb825dd5a1561", null ],
-    [ "enet_get_ptp_timestamp", "group__enet__interface.html#ga475480b624c8bacc978686afe20c50f2", null ],
+    [ "enet_get_ptp_timestamp", "group__enet__interface.html#gae0b9019bd267f387f30d4f9456d783c3", null ],
     [ "enet_get_received_frame", "group__enet__interface.html#ga968d4b7debaf3121348013b533595be4", null ],
     [ "enet_get_received_frame_interrupt", "group__enet__interface.html#ga2937fe2458aeeca62bf699ed866d141a", null ],
     [ "enet_init_ptp", "group__enet__interface.html#gaf7a6f41ed9e4cb0b165c87306d0bc4c6", null ],
@@ -262,9 +317,12 @@ var group__enet__interface =
     [ "enet_read_phy", "group__enet__interface.html#ga7c828a6e6da4573e91ed490be41b2724", null ],
     [ "enet_set_duplex_mode", "group__enet__interface.html#ga09fe3c0163ad4508ffbc5159710eea56", null ],
     [ "enet_set_line_speed", "group__enet__interface.html#gab40aadb29a0d4c430d436fe9b06a958b", null ],
-    [ "enet_set_ptp_timestamp", "group__enet__interface.html#gafd932026487c35ba3c50769216c5aebd", null ],
+    [ "enet_set_pps0_cmd", "group__enet__interface.html#ga48b3e05f4e3416de8b9920625bb73147", null ],
+    [ "enet_set_pps0_command_config", "group__enet__interface.html#ga5e563cd64cad6bc4affd83d58d7398f9", null ],
+    [ "enet_set_pps0_control_output", "group__enet__interface.html#ga1baf701964f1133eddb19c85ec50f862", null ],
+    [ "enet_set_ptp_timestamp", "group__enet__interface.html#ga2b7878b691a724ae2471fe6fd73b0e58", null ],
     [ "enet_set_ptp_version", "group__enet__interface.html#gacbe7b2b681b77e2515700e791049fa1c", null ],
     [ "enet_set_snapshot_ptp_message_type", "group__enet__interface.html#ga6e46b48560cf6d29aeaf36cf5e4b00ca", null ],
-    [ "enet_update_ptp_timeoffset", "group__enet__interface.html#ga557075dbf1988b3f63776e6735770da9", null ],
+    [ "enet_update_ptp_timeoffset", "group__enet__interface.html#gafa276e3b1c1e0467bd48d93eb8926ae8", null ],
     [ "enet_write_phy", "group__enet__interface.html#gac54a2012a702fccb28805d5f04e8106e", null ]
 ];

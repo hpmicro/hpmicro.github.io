@@ -229,7 +229,15 @@ $(document).ready(function(){initNavTree('globals_func_s.html',''); initResizabl
 <li>sys_address_to_core_local_mem()&#160;:&#160;<a class="el" href="HPM6360_2hpm__misc_8h.html#a07fa3e7178ed888d2ddd8f077820771a">hpm_misc.h</a></li>
 <li>sysctl_add_resource_to_cpu0()&#160;:&#160;<a class="el" href="group__sysctl__interface.html#ga1c32774372cd44a46c5fe23a1aad6231">hpm_sysctl_drv.c</a>, <a class="el" href="group__sysctl__interface.html#ga1c32774372cd44a46c5fe23a1aad6231">hpm_sysctl_drv.h</a>, <a class="el" href="group__sysctl__interface.html#ga1c32774372cd44a46c5fe23a1aad6231">hpm_sysctl_drv.c</a></li>
 <li>sysctl_add_resource_to_cpu1()&#160;:&#160;<a class="el" href="group__sysctl__interface.html#ga21b429a5c69f56f47ce4680867a919cd">hpm_sysctl_drv.c</a>, <a class="el" href="group__sysctl__interface.html#ga21b429a5c69f56f47ce4680867a919cd">hpm_sysctl_drv.h</a></li>
+<li>sysctl_check_cpu0_wakeup_source_status_with_mask()&#160;:&#160;<a class="el" href="group__sysctl__interface.html#ga870e4bae0efc2b22c3c003e2e4fd1e91">hpm_sysctl_drv.h</a></li>
+<li>sysctl_check_cpu1_wakeup_source_status_with_mask()&#160;:&#160;<a class="el" href="group__sysctl__interface.html#gaabe472d970684354926e71787d7f370f">hpm_sysctl_drv.h</a></li>
 <li>sysctl_check_wakeup_source_status_with_mask()&#160;:&#160;<a class="el" href="group__sysctl__interface.html#ga9289cc2d999754a89b81824dd56c40af">hpm_sysctl_drv.h</a></li>
+<li>sysctl_clear_cpu0_flags()&#160;:&#160;<a class="el" href="group__sysctl__interface.html#gafd7ae03c12ca7f1d0718dfb76c9393bf">hpm_sysctl_drv.h</a></li>
+<li>sysctl_clear_cpu0_lp_retention_with_mask()&#160;:&#160;<a class="el" href="group__sysctl__interface.html#ga1ece73a8f3ad08bf4afd905e714b3b1e">hpm_sysctl_drv.h</a></li>
+<li>sysctl_clear_cpu1_flags()&#160;:&#160;<a class="el" href="group__sysctl__interface.html#gaa4e51bdc0414b380ed53a465bc2bef2f">hpm_sysctl_drv.h</a></li>
+<li>sysctl_clear_cpu1_lp_retention_with_mask()&#160;:&#160;<a class="el" href="group__sysctl__interface.html#ga9f8e8da90d51df3d25e63e14f119bc6a">hpm_sysctl_drv.h</a></li>
+<li>sysctl_clear_cpu_flags()&#160;:&#160;<a class="el" href="group__sysctl__interface.html#gac576fb48d60eda8c6f9edf70cf927108">hpm_sysctl_drv.h</a></li>
+<li>sysctl_clear_cpu_lp_retention_with_mask()&#160;:&#160;<a class="el" href="group__sysctl__interface.html#ga31878ea3c0a3bb0ab5ea1ead04b93a59">hpm_sysctl_drv.h</a></li>
 <li>sysctl_clock_any_is_busy()&#160;:&#160;<a class="el" href="group__sysctl__interface.html#gabe58ff6079fbf09d5f1c80155fe4ce50">hpm_sysctl_drv.h</a></li>
 <li>sysctl_clock_set_preset()&#160;:&#160;<a class="el" href="group__sysctl__interface.html#ga7defea5f8e5c2d82ca39dbbbfa95375f">hpm_sysctl_drv.h</a></li>
 <li>sysctl_clock_target_is_busy()&#160;:&#160;<a class="el" href="group__sysctl__interface.html#gae86815da1c2f387975b120b98b158569">hpm_sysctl_drv.h</a></li>
@@ -244,18 +252,30 @@ $(document).ready(function(){initNavTree('globals_func_s.html',''); initResizabl
 <li>sysctl_cpu1_lock_gpr_with_mask()&#160;:&#160;<a class="el" href="group__sysctl__interface.html#ga2682acbfc2d78bd1319c544aaead18d2">hpm_sysctl_drv.h</a></li>
 <li>sysctl_cpu1_set_gpr()&#160;:&#160;<a class="el" href="group__sysctl__interface.html#ga2c9106e2a084e6cbc105029701a9d194">hpm_sysctl_drv.c</a>, <a class="el" href="group__sysctl__interface.html#ga2c9106e2a084e6cbc105029701a9d194">hpm_sysctl_drv.h</a></li>
 <li>sysctl_cpu_clock_any_is_busy()&#160;:&#160;<a class="el" href="group__sysctl__interface.html#gada1e3a6d54b79c9efaa9876d668fddcd">hpm_sysctl_drv.h</a></li>
-<li>sysctl_cpu_lp_clear_retention_with_mask()&#160;:&#160;<a class="el" href="group__sysctl__interface.html#gadba69773c9f35a55e154b37735f82408">hpm_sysctl_drv.h</a></li>
-<li>sysctl_cpu_lp_retain_domain()&#160;:&#160;<a class="el" href="group__sysctl__interface.html#ga44e9da20f2e3f7ab3cd0d1c88b258ed5">hpm_sysctl_drv.h</a></li>
-<li>sysctl_cpu_lp_set_retention_with_mask()&#160;:&#160;<a class="el" href="group__sysctl__interface.html#gac8b1a2263c9f8f98d62eb80c14dbf890">hpm_sysctl_drv.h</a></li>
+<li>sysctl_cpu_lock()&#160;:&#160;<a class="el" href="group__sysctl__interface.html#ga37cad147177d05d0a0daedea07287781">hpm_sysctl_drv.h</a></li>
+<li>sysctl_cpu_lock_gpr_with_mask()&#160;:&#160;<a class="el" href="group__sysctl__interface.html#ga001a5250902efb56db6c036840c9ccc5">hpm_sysctl_drv.h</a></li>
+<li>sysctl_disable_cpu0_wakeup_source_with_irq()&#160;:&#160;<a class="el" href="group__sysctl__interface.html#ga9a8cec124b55494f65cd58a4f5f6c41f">hpm_sysctl_drv.h</a></li>
+<li>sysctl_disable_cpu0_wakeup_source_with_mask()&#160;:&#160;<a class="el" href="group__sysctl__interface.html#ga1453c9aeaff5078d6528b9021e99cc92">hpm_sysctl_drv.h</a></li>
+<li>sysctl_disable_cpu1_wakeup_source_with_irq()&#160;:&#160;<a class="el" href="group__sysctl__interface.html#ga1a1d6f9ea1dbac8d346988a0e1a66bcb">hpm_sysctl_drv.h</a></li>
+<li>sysctl_disable_cpu1_wakeup_source_with_mask()&#160;:&#160;<a class="el" href="group__sysctl__interface.html#ga2202e08f4670dc6f4cae32e5f9b414a5">hpm_sysctl_drv.h</a></li>
 <li>sysctl_disable_wakeup_source_with_irq()&#160;:&#160;<a class="el" href="group__sysctl__interface.html#ga05aeb5bd20566156e49f82ed05655968">hpm_sysctl_drv.h</a></li>
 <li>sysctl_disable_wakeup_source_with_mask()&#160;:&#160;<a class="el" href="group__sysctl__interface.html#gaa90e1b3ec42ff19b49fa36b00b2a08f5">hpm_sysctl_drv.h</a></li>
+<li>sysctl_enable_cpu0_wakeup_source_with_irq()&#160;:&#160;<a class="el" href="group__sysctl__interface.html#ga4dbde1758eb0e45861519de5c6344bca">hpm_sysctl_drv.h</a></li>
+<li>sysctl_enable_cpu0_wakeup_source_with_mask()&#160;:&#160;<a class="el" href="group__sysctl__interface.html#ga8e70e4bd58c051a58f01476c614547b9">hpm_sysctl_drv.h</a></li>
+<li>sysctl_enable_cpu1_wakeup_source_with_irq()&#160;:&#160;<a class="el" href="group__sysctl__interface.html#ga9a62b72012ae887e3f85d3eec339c3e2">hpm_sysctl_drv.h</a></li>
+<li>sysctl_enable_cpu1_wakeup_source_with_mask()&#160;:&#160;<a class="el" href="group__sysctl__interface.html#ga1f10f8926a323d2f90c422c964d4030a">hpm_sysctl_drv.h</a></li>
 <li>sysctl_enable_group_resource()&#160;:&#160;<a class="el" href="group__sysctl__interface.html#gab79bcd9d69474ff405fa6e3d00fb947e">hpm_sysctl_drv.c</a>, <a class="el" href="group__sysctl__interface.html#gab79bcd9d69474ff405fa6e3d00fb947e">hpm_sysctl_drv.h</a>, <a class="el" href="group__sysctl__interface.html#gab79bcd9d69474ff405fa6e3d00fb947e">hpm_sysctl_drv.c</a></li>
 <li>sysctl_enable_wakeup_source_with_irq()&#160;:&#160;<a class="el" href="group__sysctl__interface.html#ga82d7bcf7419b035d6274bc39d0ddcf2f">hpm_sysctl_drv.h</a></li>
 <li>sysctl_enable_wakeup_source_with_mask()&#160;:&#160;<a class="el" href="group__sysctl__interface.html#ga09ee09599a79c40ba4a26e726ed1aa95">hpm_sysctl_drv.h</a></li>
+<li>sysctl_get_cpu0_flags()&#160;:&#160;<a class="el" href="group__sysctl__interface.html#ga4140551f3104bb4adcfbf7141f711bad">hpm_sysctl_drv.h</a></li>
+<li>sysctl_get_cpu0_wakeup_source_status()&#160;:&#160;<a class="el" href="group__sysctl__interface.html#gaad1832356f4ecf3f149a9229d4cabcd8">hpm_sysctl_drv.h</a></li>
+<li>sysctl_get_cpu1_flags()&#160;:&#160;<a class="el" href="group__sysctl__interface.html#gae8e7da29b22071b696fa99600f7c327f">hpm_sysctl_drv.h</a></li>
 <li>sysctl_get_cpu1_gpr()&#160;:&#160;<a class="el" href="group__sysctl__interface.html#gaecc58913245d3b0850fc400ba6b77573">hpm_sysctl_drv.h</a></li>
+<li>sysctl_get_cpu1_wakeup_source_status()&#160;:&#160;<a class="el" href="group__sysctl__interface.html#ga25d27fb8387d1aa2c212fbaca967cf52">hpm_sysctl_drv.h</a></li>
+<li>sysctl_get_cpu_flags()&#160;:&#160;<a class="el" href="group__sysctl__interface.html#ga3cbca5f0665650e43bb4cab07da18773">hpm_sysctl_drv.h</a></li>
 <li>sysctl_get_cpu_gpr()&#160;:&#160;<a class="el" href="HPM6360_2hpm__sysctl__drv_8c.html#aae8699e8d5a058a687e988d4ba986b50">hpm_sysctl_drv.c</a></li>
 <li>sysctl_get_wakeup_source_status()&#160;:&#160;<a class="el" href="group__sysctl__interface.html#ga982d0f2c90deb6e10c53ceeb5c28357a">hpm_sysctl_drv.h</a></li>
-<li>sysctl_is_cpu1_released()&#160;:&#160;<a class="el" href="group__sysctl__interface.html#gaf59cad65a9a51f78586d3dd4295bf070">hpm_sysctl_drv.c</a>, <a class="el" href="group__sysctl__interface.html#gaf59cad65a9a51f78586d3dd4295bf070">hpm_sysctl_drv.h</a></li>
+<li>sysctl_is_cpu1_released()&#160;:&#160;<a class="el" href="group__sysctl__interface.html#ga200e290888a851df5890f65bb602199b">hpm_sysctl_drv.h</a></li>
 <li>sysctl_monitor_get_current_result()&#160;:&#160;<a class="el" href="group__sysctl__interface.html#gadcc69e28cb9a9aa8581695f5cabb0a5f">hpm_sysctl_drv.h</a></li>
 <li>sysctl_monitor_get_default_config()&#160;:&#160;<a class="el" href="group__sysctl__interface.html#ga6e4e69bcd5152fb14e7331e191b168f7">hpm_sysctl_drv.c</a>, <a class="el" href="group__sysctl__interface.html#ga6e4e69bcd5152fb14e7331e191b168f7">hpm_sysctl_drv.h</a>, <a class="el" href="group__sysctl__interface.html#ga6e4e69bcd5152fb14e7331e191b168f7">hpm_sysctl_drv.c</a></li>
 <li>sysctl_monitor_get_limit_high()&#160;:&#160;<a class="el" href="group__sysctl__interface.html#ga5ad14a9dbc93d6578973f0906e3a4d21">hpm_sysctl_drv.h</a></li>
@@ -267,7 +287,7 @@ $(document).ready(function(){initNavTree('globals_func_s.html',''); initResizabl
 <li>sysctl_monitor_set_limit_high()&#160;:&#160;<a class="el" href="group__sysctl__interface.html#gae024d0e032dc0db616ba531a91aec424">hpm_sysctl_drv.h</a></li>
 <li>sysctl_monitor_set_limit_low()&#160;:&#160;<a class="el" href="group__sysctl__interface.html#ga179a62a293882b26dce1c1f710ba9428">hpm_sysctl_drv.h</a></li>
 <li>sysctl_monitor_set_work_mode()&#160;:&#160;<a class="el" href="group__sysctl__interface.html#ga9a89e71277c178bffe33db7dc3171192">hpm_sysctl_drv.h</a></li>
-<li>sysctl_release_cpu1()&#160;:&#160;<a class="el" href="group__sysctl__interface.html#ga9bf7550626acceabf1ba3400b4803c3b">hpm_sysctl_drv.c</a>, <a class="el" href="group__sysctl__interface.html#ga9bf7550626acceabf1ba3400b4803c3b">hpm_sysctl_drv.h</a></li>
+<li>sysctl_release_cpu1()&#160;:&#160;<a class="el" href="group__sysctl__interface.html#gaf606c05b9f8bdd5160db21a490b7ee87">hpm_sysctl_drv.h</a></li>
 <li>sysctl_remove_resource_from_cpu0()&#160;:&#160;<a class="el" href="group__sysctl__interface.html#ga65f302ea84d0f7bcd3e769eb764e6809">hpm_sysctl_drv.c</a>, <a class="el" href="group__sysctl__interface.html#ga65f302ea84d0f7bcd3e769eb764e6809">hpm_sysctl_drv.h</a>, <a class="el" href="group__sysctl__interface.html#ga65f302ea84d0f7bcd3e769eb764e6809">hpm_sysctl_drv.c</a></li>
 <li>sysctl_remove_resource_from_cpu1()&#160;:&#160;<a class="el" href="group__sysctl__interface.html#ga7bc257e223ee3fee753d0617838e20e2">hpm_sysctl_drv.c</a>, <a class="el" href="group__sysctl__interface.html#ga7bc257e223ee3fee753d0617838e20e2">hpm_sysctl_drv.h</a></li>
 <li>sysctl_reset_check_target_domain_flag()&#160;:&#160;<a class="el" href="group__sysctl__interface.html#ga179c49712665530746f6f812784bd77d">hpm_sysctl_drv.h</a></li>
@@ -279,9 +299,20 @@ $(document).ready(function(){initNavTree('globals_func_s.html',''); initResizabl
 <li>sysctl_resource_target_is_busy()&#160;:&#160;<a class="el" href="group__sysctl__interface.html#ga9b4b6003b86e33877146152b4e1ba83f">hpm_sysctl_drv.h</a></li>
 <li>sysctl_resource_target_set_mode()&#160;:&#160;<a class="el" href="group__sysctl__interface.html#ga61ffb44ad2bb02ea733093e084dd8b1b">hpm_sysctl_drv.h</a></li>
 <li>sysctl_set_adc_i2s_clock_mux()&#160;:&#160;<a class="el" href="group__sysctl__interface.html#ga975ee82adb6b5889d839bd7960947168">hpm_sysctl_drv.c</a>, <a class="el" href="group__sysctl__interface.html#ga975ee82adb6b5889d839bd7960947168">hpm_sysctl_drv.h</a>, <a class="el" href="group__sysctl__interface.html#ga975ee82adb6b5889d839bd7960947168">hpm_sysctl_drv.c</a></li>
+<li>sysctl_set_cpu0_lp_mode()&#160;:&#160;<a class="el" href="group__sysctl__interface.html#gafa03b8709d518da1b7ba5faeb22de854">hpm_sysctl_drv.h</a></li>
+<li>sysctl_set_cpu0_lp_retain_domain()&#160;:&#160;<a class="el" href="group__sysctl__interface.html#ga93d25b9df96bc4235b1a0ffc56895d09">hpm_sysctl_drv.h</a></li>
+<li>sysctl_set_cpu0_lp_retention()&#160;:&#160;<a class="el" href="group__sysctl__interface.html#ga710af41fea784d98d42c98a229ee199d">hpm_sysctl_drv.h</a></li>
+<li>sysctl_set_cpu0_lp_retention_with_mask()&#160;:&#160;<a class="el" href="group__sysctl__interface.html#gae433f7d59756fb58c74256ee8b92a78f">hpm_sysctl_drv.h</a></li>
 <li>sysctl_set_cpu0_wakeup_entry()&#160;:&#160;<a class="el" href="group__sysctl__interface.html#ga4dc0f643f5c4ed3751d7b777c733edc5">hpm_sysctl_drv.c</a>, <a class="el" href="group__sysctl__interface.html#ga4dc0f643f5c4ed3751d7b777c733edc5">hpm_sysctl_drv.h</a>, <a class="el" href="group__sysctl__interface.html#ga4dc0f643f5c4ed3751d7b777c733edc5">hpm_sysctl_drv.c</a></li>
 <li>sysctl_set_cpu1_entry()&#160;:&#160;<a class="el" href="group__sysctl__interface.html#ga76ef7df02fdeb943a11740b517a210cd">hpm_sysctl_drv.c</a>, <a class="el" href="group__sysctl__interface.html#ga76ef7df02fdeb943a11740b517a210cd">hpm_sysctl_drv.h</a></li>
-<li>sysctl_set_cpu_lp_mode()&#160;:&#160;<a class="el" href="group__sysctl__interface.html#ga55a0702bdb7279e8d013a3b0e852cc52">hpm_sysctl_drv.c</a>, <a class="el" href="group__sysctl__interface.html#ga55a0702bdb7279e8d013a3b0e852cc52">hpm_sysctl_drv.h</a>, <a class="el" href="group__sysctl__interface.html#ga55a0702bdb7279e8d013a3b0e852cc52">hpm_sysctl_drv.c</a></li>
+<li>sysctl_set_cpu1_lp_mode()&#160;:&#160;<a class="el" href="group__sysctl__interface.html#ga27f6a91f0b24a03f451fd12a90f575c6">hpm_sysctl_drv.h</a></li>
+<li>sysctl_set_cpu1_lp_retain_domain()&#160;:&#160;<a class="el" href="group__sysctl__interface.html#ga1d72d7e71113564882d58029962d1123">hpm_sysctl_drv.h</a></li>
+<li>sysctl_set_cpu1_lp_retention()&#160;:&#160;<a class="el" href="group__sysctl__interface.html#gaf7768e6a3e7f73bfd35dd4d61aa05c9d">hpm_sysctl_drv.h</a></li>
+<li>sysctl_set_cpu1_lp_retention_with_mask()&#160;:&#160;<a class="el" href="group__sysctl__interface.html#ga10945bb2909e8387bd49ef2b0369a2f1">hpm_sysctl_drv.h</a></li>
+<li>sysctl_set_cpu_lp_mode()&#160;:&#160;<a class="el" href="group__sysctl__interface.html#ga61057fe253360c18bfe4ff0a43b6b640">hpm_sysctl_drv.h</a></li>
+<li>sysctl_set_cpu_lp_retain_domain()&#160;:&#160;<a class="el" href="group__sysctl__interface.html#gac1e7d925f0e21391b96f7e24988b5296">hpm_sysctl_drv.h</a></li>
+<li>sysctl_set_cpu_lp_retention()&#160;:&#160;<a class="el" href="group__sysctl__interface.html#gadf7f3adef76ef86232936fefd798b605">hpm_sysctl_drv.h</a></li>
+<li>sysctl_set_cpu_lp_retention_with_mask()&#160;:&#160;<a class="el" href="group__sysctl__interface.html#gabd110cdce2ab410c80467a3756276787">hpm_sysctl_drv.h</a></li>
 <li>sysctl_set_disable_cpu_affiliate()&#160;:&#160;<a class="el" href="group__sysctl__interface.html#ga9a515fc9f8def73546f2e9c4a5bc1528">hpm_sysctl_drv.h</a></li>
 <li>sysctl_set_enable_cpu_affiliate()&#160;:&#160;<a class="el" href="group__sysctl__interface.html#ga7577840391f5d81c0749696f5a2c9e58">hpm_sysctl_drv.h</a></li>
 <li>sysctl_update_divider()&#160;:&#160;<a class="el" href="HPM6360_2hpm__sysctl__drv_8c.html#ae74526813ccb67067e4015e21dbe87fd">hpm_sysctl_drv.c</a></li>
@@ -293,7 +324,7 @@ $(document).ready(function(){initNavTree('globals_func_s.html',''); initResizabl
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Mon Oct 31 2022 20:47:09 for HPM SDK by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
+    <li class="footer">Generated on Sat Dec 31 2022 19:59:46 for HPM SDK by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
   </ul>
 </div>
 </body>

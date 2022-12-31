@@ -2,36 +2,36 @@ var group__mcl__common =
 [
     [ "bldc_motor_par", "structbldc__motor__par.html", [
       [ "func_smc_const", "structbldc__motor__par.html#a846ddd51586d7aa11653f67199e19784", null ],
-      [ "I_Lstator_h", "structbldc__motor__par.html#ac0eb2151c5b217b11380d821a5804993", null ],
-      [ "I_MaxSpeed_rs", "structbldc__motor__par.html#a34d6dea54cc60f45b1791005ff7f8f09", null ],
-      [ "I_PhaseCur_a", "structbldc__motor__par.html#a1618b1a5b62360b15a75f40da74e9f28", null ],
-      [ "I_PhaseVol_v", "structbldc__motor__par.html#adcab94988e3cc8d331d5f96edca409ec", null ],
-      [ "I_Poles_n", "structbldc__motor__par.html#a8c62ddcd7613052e051c1e1af4f9a2cc", null ],
-      [ "I_Rstator_ohm", "structbldc__motor__par.html#a5422616b461fcf18ca21eacd61119418", null ],
-      [ "I_SamplingPer_s", "structbldc__motor__par.html#a313cfd056712daf2381450f34ead1096", null ],
-      [ "O_smc_f", "structbldc__motor__par.html#a56514ad9d6261009fa6ea08db30ea99c", null ],
-      [ "O_smc_g", "structbldc__motor__par.html#a047775570502c41f23077e48c143b806", null ]
+      [ "i_lstator_h", "structbldc__motor__par.html#ad6018bde60b0b03353df6a0bc879809e", null ],
+      [ "i_maxspeed_rs", "structbldc__motor__par.html#af1c317b1c124081d8afd4363fae00ce3", null ],
+      [ "i_phasecur_a", "structbldc__motor__par.html#aaebe8766adbf78480b0236a96b708a51", null ],
+      [ "i_phasevol_v", "structbldc__motor__par.html#a0ab2826a550ff9b6415e39b70b29171d", null ],
+      [ "i_poles_n", "structbldc__motor__par.html#a3e123097b1872a51c54b849d27494ec9", null ],
+      [ "i_rstator_ohm", "structbldc__motor__par.html#ae4c00ba8fa622e7811b0b51ddd2ccb70", null ],
+      [ "i_samplingper_s", "structbldc__motor__par.html#a0367f7732409867148af3dd4895fb912", null ],
+      [ "o_smc_f", "structbldc__motor__par.html#a9c4cf5a4db7a6e88b5121d5d3fc222ae", null ],
+      [ "o_smc_g", "structbldc__motor__par.html#a052b9aa72d611fd3484d88f338fc5412", null ]
     ] ],
     [ "bldc_contrl_spd_par", "structbldc__contrl__spd__par.html", [
       [ "func_getspd", "structbldc__contrl__spd__par.html#ab91ef926c9a6f21bc10dd1517ff63fa7", null ],
-      [ "I_motorpar", "structbldc__contrl__spd__par.html#af35df5d4c427a3b15eda0619ec8e223f", null ],
-      [ "I_speedacq", "structbldc__contrl__spd__par.html#aabd08c48ed7d5215076beccb1ad498ef", null ],
-      [ "I_speedfilter", "structbldc__contrl__spd__par.html#ab28f912f0c59d852d0f901414f99ec55", null ],
-      [ "I_speedLooptime_s", "structbldc__contrl__spd__par.html#a1631c3c050b6bf4ef9c8b52bcbd7ca31", null ],
+      [ "i_motorpar", "structbldc__contrl__spd__par.html#a642e1d86cfaf203b8d16a418dd1b1b85", null ],
+      [ "i_speedacq", "structbldc__contrl__spd__par.html#aaf5431e6a02f734a023393c3252cd5ab", null ],
+      [ "i_speedfilter", "structbldc__contrl__spd__par.html#a85d8a3ff6514959af8679d966714450c", null ],
+      [ "i_speedlooptime_s", "structbldc__contrl__spd__par.html#a1b5a38249d839503ddbc0b88356f2afc", null ],
       [ "num", "structbldc__contrl__spd__par.html#af13571e0493199ddb24e1327ed3f75bd", null ],
-      [ "O_speedout", "structbldc__contrl__spd__par.html#a6db8b5f758c7a58feb0efe342e44ccb4", null ],
-      [ "O_speedout_filter", "structbldc__contrl__spd__par.html#a86779186adeb8e58f3dd8375612820b8", null ],
+      [ "o_speedout", "structbldc__contrl__spd__par.html#a78d6b6154c04821363af4c8f14f9664e", null ],
+      [ "o_speedout_filter", "structbldc__contrl__spd__par.html#aea4874fb28dd7936d2f146fae8ca14b8", null ],
       [ "speedlasttheta", "structbldc__contrl__spd__par.html#aae8c0f55fe5b29fe995a39c2ffce7ea0", null ],
       [ "speedtheta", "structbldc__contrl__spd__par.html#a09afc8ef54dac5877840823b6336834e", null ],
-      [ "speedthetaLastN", "structbldc__contrl__spd__par.html#ac44f66ddb0bb1d2d03437d0c078faf9a", null ]
+      [ "speedthetalastn", "structbldc__contrl__spd__par.html#a48174cf7265634f42352ad4712ef3545", null ]
     ] ],
     [ "bldc_contrl_pid_par", "structbldc__contrl__pid__par.html", [
       [ "cur", "structbldc__contrl__pid__par.html#a0d19b05d1d0538b7aa52c557f2c9858b", null ],
       [ "func_pid", "structbldc__contrl__pid__par.html#ae89130c809f60c6a3eee280b1f1e20cf", null ],
-      [ "I_kd", "structbldc__contrl__pid__par.html#aea3152e5ccbece56bf2557ac0763da6c", null ],
-      [ "I_ki", "structbldc__contrl__pid__par.html#ab198506731dec96287f4064802a2ffb6", null ],
-      [ "I_kp", "structbldc__contrl__pid__par.html#ab9ca490945e8733b40a8abb748607c6f", null ],
-      [ "I_max", "structbldc__contrl__pid__par.html#a08060edd49beb284526c54525ed2b2c1", null ],
+      [ "i_kd", "structbldc__contrl__pid__par.html#a73471ab167e682605873963722770bbf", null ],
+      [ "i_ki", "structbldc__contrl__pid__par.html#a8801678bd468620bab9c8b752728f289", null ],
+      [ "i_kp", "structbldc__contrl__pid__par.html#a4ac217567be814d244a10888616496c6", null ],
+      [ "i_max", "structbldc__contrl__pid__par.html#a8528f4d2de7604af531beaa910325e5d", null ],
       [ "mem", "structbldc__contrl__pid__par.html#ac9b12722fdf27d755fe71c298257c067", null ],
       [ "outval", "structbldc__contrl__pid__par.html#a7bc7d7e2360ac33b70fcb1890c7a9b0b", null ],
       [ "target", "structbldc__contrl__pid__par.html#a0bfe7b8c1eeb6eb9327d6ff12bf17666", null ]
@@ -51,16 +51,16 @@ var group__mcl__common =
     ] ],
     [ "bldc_control_pwmout_par", "structbldc__control__pwmout__par.html", [
       [ "func_set_pwm", "structbldc__control__pwmout__par.html#a8b725459fd62ab86514483b8673f1696", null ],
-      [ "I_motor_id", "structbldc__control__pwmout__par.html#a0ab3ec99580fbbcd16a8ef8966669733", null ],
-      [ "I_pwm_reload", "structbldc__control__pwmout__par.html#a657f7548e27e7a1b8f69bb719fd5440a", null ],
-      [ "I_sync_id", "structbldc__control__pwmout__par.html#a6d9d29fba3da7b18fa14105eb51b4d44", null ],
+      [ "i_motor_id", "structbldc__control__pwmout__par.html#aa8596f8b1295bf40b53272fc9a4c7885", null ],
+      [ "i_pwm_reload", "structbldc__control__pwmout__par.html#ae397fc33c02c8b2fbaa565f43d295d73", null ],
+      [ "i_sync_id", "structbldc__control__pwmout__par.html#a50bd3f083e3b1cb311f376ac8dda0729", null ],
       [ "pwm_u", "structbldc__control__pwmout__par.html#a0def2216d1b979d91b18b1a5c43eaeb9", null ],
       [ "pwm_v", "structbldc__control__pwmout__par.html#af4d7e389687a09763217d10e22906729", null ],
       [ "pwm_w", "structbldc__control__pwmout__par.html#a0b076b71433403a1387b2ea3cb8ad28f", null ]
     ] ],
     [ "bldc_control_pwm_par", "structbldc__control__pwm__par.html", [
       [ "func_spwm", "structbldc__control__pwm__par.html#abe01c545036a6fa5c444019e03920235", null ],
-      [ "I_pwm_reload_max", "structbldc__control__pwm__par.html#a83d456a56af915f2c0a794926e05f9a5", null ],
+      [ "i_pwm_reload_max", "structbldc__control__pwm__par.html#a50aa17c9530c8ad489d60742e5488638", null ],
       [ "pwmout", "structbldc__control__pwm__par.html#abe14eeb06caf312542bc4c68d1b3d191", null ],
       [ "sector", "structbldc__control__pwm__par.html#afc97b7062c3a7313e401790f6ce7bf1d", null ],
       [ "target_alpha", "structbldc__control__pwm__par.html#a9f5cf5d16aeeb1b0eb2845d9674752b3", null ],
@@ -70,10 +70,10 @@ var group__mcl__common =
       [ "alpha_cal", "structbldc__control__smc__par.html#ae9e6607fdaf7fd2c863f6bd67cccfb67", null ],
       [ "beta_cal", "structbldc__control__smc__par.html#a1432776e38840cf0a7b95b42b27c927d", null ],
       [ "func_smc", "structbldc__control__smc__par.html#a34d9897a5a918677e870e5af4a4d6d1d", null ],
-      [ "I_Ezero", "structbldc__control__smc__par.html#a182789b7844a95ab43c1345eae3022c9", null ],
-      [ "I_kfil", "structbldc__control__smc__par.html#a471c0cd976345ceefd8bffd42b99a1be", null ],
-      [ "I_ksmc", "structbldc__control__smc__par.html#ad587779a2c546d7b9962792bc952612f", null ],
-      [ "I_motorpar", "structbldc__control__smc__par.html#a12bbf4a11f0c197a443e92d1803252e0", null ],
+      [ "i_ezero", "structbldc__control__smc__par.html#abdde6bf8b7ae29291d7557f3c4f196f0", null ],
+      [ "i_kfil", "structbldc__control__smc__par.html#ad6ca77f677031cbc4b691f56e26ad635", null ],
+      [ "i_ksmc", "structbldc__control__smc__par.html#a6ffe99e579bb9229f6d79cb443bf83c4", null ],
+      [ "i_motorpar", "structbldc__control__smc__par.html#a4243b2879285749541a8a5498868908b", null ],
       [ "ialpha", "structbldc__control__smc__par.html#aed870c4d84850a0325cbdbd5cbaa3460", null ],
       [ "ialpha_mem", "structbldc__control__smc__par.html#a75fb3b9ac752012b006a6f3c5c7dec36", null ],
       [ "ibeta", "structbldc__control__smc__par.html#aae26e35fc010c09e89857a5d6101158f", null ],
@@ -89,19 +89,19 @@ var group__mcl__common =
       [ "par", "structbldc__func__cal.html#a1f67b5bb1437b8e51ebb0bba9cada3ad", null ]
     ] ],
     [ "bldc_contrl_foc_par", "structbldc__contrl__foc__par.html", [
-      [ "CurrentDPiPar", "structbldc__contrl__foc__par.html#a1032223f96fc99f278f11a198a37ff9a", null ],
-      [ "CurrentQPiPar", "structbldc__contrl__foc__par.html#a1694086427ad3d238aea856f9bc629d6", null ],
+      [ "currentdpipar", "structbldc__contrl__foc__par.html#a446fcb7c53fc998abfd0ce6434a35524", null ],
+      [ "currentqpipar", "structbldc__contrl__foc__par.html#a4fe0f3d05b84240b93b94087781075b0", null ],
       [ "electric_angle", "structbldc__contrl__foc__par.html#abff28641a2ef3aa01a993df4164b3aac", null ],
       [ "func_dqsvpwm", "structbldc__contrl__foc__par.html#a72fe1fa856bba53220bd98cc550ea8b2", null ],
-      [ "i_alpha", "structbldc__contrl__foc__par.html#a7402b56b6749dcab24128401406b4889", null ],
-      [ "i_beta", "structbldc__contrl__foc__par.html#a867cade4cfd453ec209f8c0ff37ee1d2", null ],
+      [ "ialpha", "structbldc__contrl__foc__par.html#a2458a1fbf176e422507751ceb28e117e", null ],
+      [ "ibeta", "structbldc__contrl__foc__par.html#a3efcb888dad9b9c253b60700d2e94331", null ],
       [ "motorpar", "structbldc__contrl__foc__par.html#a99b02716df2e029e034caa554c35d459", null ],
       [ "pos_estimator_par", "structbldc__contrl__foc__par.html#a2c872d506969991aac6c2af18459b451", null ],
       [ "pwmpar", "structbldc__contrl__foc__par.html#ad2d97b7dc6bf92f8d96b021b9c6da7b0", null ],
-      [ "samplCurpar", "structbldc__contrl__foc__par.html#a45f43916935f7dac90574ea5cb9338a5", null ],
-      [ "SpeedCalPar", "structbldc__contrl__foc__par.html#afb3a819c57282fc2c93e396fd9c24221", null ],
-      [ "u_alpha", "structbldc__contrl__foc__par.html#af283e0ed8878faf90b31d5b9d6462def", null ],
-      [ "u_beta", "structbldc__contrl__foc__par.html#a42b0ce4fdd3c3e9968dbc848947ccff4", null ]
+      [ "samplcurpar", "structbldc__contrl__foc__par.html#a5e8134c2d138ff9d8f4f0dc3034616d2", null ],
+      [ "speedcalpar", "structbldc__contrl__foc__par.html#ad17ff3cf7602b2b7e9e688d562a7a736", null ],
+      [ "ualpha", "structbldc__contrl__foc__par.html#af4083570644b122dbb3ad9e3f2b2b4fb", null ],
+      [ "ubeta", "structbldc__contrl__foc__par.html#aedd4335eff1e2263725dafed82d899df", null ]
     ] ],
     [ "BLDC_CONTRL_PID_PARA_DEFAULTS", "group__mcl__common.html#gab8911ba2cdd1013021b7fa4ad9d6b8b7", null ],
     [ "BLDC_CONTRL_SPD_PARA_DEFAULTS", "group__mcl__common.html#gae913fa1e840cd4a97d699d046c19caf3", null ],
@@ -141,5 +141,5 @@ var group__mcl__common =
       [ "bldc_hall_phase_60", "group__mcl__common.html#gga2268a36fa22f30afe732834b5a6b67feab00af5b40c8920b130690a87cf6fa183", null ],
       [ "bldc_hall_phase_120", "group__mcl__common.html#gga2268a36fa22f30afe732834b5a6b67fea69d9a7fde41fda42092e5b6dab8de35e", null ]
     ] ],
-    [ "bldc_nullcallback_func", "group__mcl__common.html#ga3454e16e5dd928feba621a8501c4220e", null ]
+    [ "hpm_mcl_nullcallback_func", "group__mcl__common.html#ga21e6e0160fa2456207aacf377918d06e", null ]
 ];

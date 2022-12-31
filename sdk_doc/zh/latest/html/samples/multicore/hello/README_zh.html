@@ -4,7 +4,7 @@
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>10.1. Hello 示例 &mdash; HPM SDK Project Documentation</title>
+  <title>15.5. Hello 示例 &mdash; HPM SDK Project Documentation</title>
       <link rel="stylesheet" href="../../../static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="../../../static/css/theme.css" type="text/css" />
       <link rel="stylesheet" href="../../../static/tabs.css" type="text/css" />
@@ -18,14 +18,15 @@
         <script src="../../../static/underscore.js"></script>
         <script src="../../../static/_sphinx_javascript_frameworks_compat.js"></script>
         <script src="../../../static/doctools.js"></script>
+        <script src="../../../static/sphinx_highlight.js"></script>
         <script src="../../../static/tabs.js"></script>
         <script type="module" src="../../../_static/js/dark-mode-toggle.min.mjs"></script>
         <script src="../../../_static/js/ga-tracker.js"></script>
     <script src="../../../static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../../genindex.html" />
     <link rel="search" title="Search" href="../../../search.html" />
-    <link rel="next" title="10.2. LVGL Coremark 示例" href="../lvgl_coremark/README_zh.html" />
-    <link rel="prev" title="10. 多核例程" href="../index_zh.html" />
+    <link rel="next" title="15.6. LVGL Coremark 示例" href="../lvgl_coremark/README_zh.html" />
+    <link rel="prev" title="15.4. eRPC 双向调用示例" href="../erpc/erpc_two_way_rpc_rpmsg_rtos/README_zh.html" />
   <meta name="color-scheme" content="dark light">
   
   <link rel="stylesheet" href="../../../static/css/light.css" type="text/css" media="(prefers-color-scheme: light)"/>
@@ -68,7 +69,7 @@
           </dd>
         
           <dd>
-            <a onclick="RelativeAddress('/0.14.0/html/index_zh.html')">0.14.0</a>
+            <a onclick="RelativeAddress('/1.0.0/html/index_zh.html')">1.0.0</a>
           </dd>
         
       </dl>
@@ -105,42 +106,48 @@
 <li class="toctree-l1"><a class="reference internal" href="../../../README_zh.html">HPM SDK 概述</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../boards/index_zh.html">HPM 开发板介绍</a></li>
 <li class="toctree-l1 current"><a class="reference internal" href="../../index_zh.html">HPM SDK 例程</a><ul class="current">
-<li class="toctree-l2"><a class="reference internal" href="../../hello_world/README_zh.html">1. Hello World</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../audio_codec/index_zh.html">2. 音频编解码</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../audio_codec/index_zh.html">1. 音频编解码</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../cherryusb/index_zh.html">2. USB 通讯</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../coremark/README_zh.html">3. Core Mark</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../touch_panel/README_zh.html">4. Touch Panel</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../rtos/index_zh.html">5. RTOS 例程</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../dhrystone/README_zh.html">4. dhrystone</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../dma_manager/README_zh.html">5. DMA Manager</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../drivers/index_zh.html">6. 驱动</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../motor_ctrl/index_zh.html">7. 电机控制</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../jpeg/index_zh.html">8. JPEG</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../tinycrypt/index_zh.html">9. Tinycrypt</a></li>
-<li class="toctree-l2 current"><a class="reference internal" href="../index_zh.html">10. 多核例程</a><ul class="current">
-<li class="toctree-l3 current"><a class="current reference internal" href="#">10.1. Hello 示例</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#id1">10.1.1. 概述</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#id2">10.1.2. 硬件设置</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#id3">10.1.3. 生成和编译多核工程</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#id4">10.1.4. 调试示例</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#id5">10.1.5. 运行示例</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../dsp/README_zh.html">7. DSP</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../hello_world/README_zh.html">8. Hello World</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../hpm_math/index_zh.html">9. HPMICRO MATH</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../jpeg/index_zh.html">10. JPEG</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../littlevgl/index_zh.html">11. littlevgl</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../lwip/index_zh.html">12. lwIP</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../memstress/index_zh.html">13. 内存测试</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../motor_ctrl/index_zh.html">14. 电机控制</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../index_zh.html">15. 多核例程</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="../console_coremark/README_zh.html">15.1. Console Coremark 示例</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../erpc/erpc_matrix_multiply_rpmsg_bm/README_zh.html">15.2. eRPC 示例</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../erpc/erpc_matrix_multiply_rpmsg_rtos/README_zh.html">15.3. eRPC 示例</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../erpc/erpc_two_way_rpc_rpmsg_rtos/README_zh.html">15.4. eRPC 双向调用示例</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">15.5. Hello 示例</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#id1">15.5.1. 概述</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id2">15.5.2. 硬件设置</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#core1">15.5.3. 生成core1工程</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#core0">15.5.4. 生成core0工程</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id3">15.5.5. 编译工程</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id4">15.5.6. 调试示例</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id5">15.5.7. 运行示例</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="../lvgl_coremark/README_zh.html">10.2. LVGL Coremark 示例</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../console_coremark/README_zh.html">10.3. Console Coremark 示例</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../erpc/README_zh.html">10.4. eRPC 示例</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../lvgl_coremark/README_zh.html">15.6. LVGL Coremark 示例</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="../../rom_api/index_zh.html">11. ROMAPI 例程</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../tflm/README_zh.html">12. TensorFlowLiteMicro</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../tinyusb/index_zh.html">13. USB 通讯</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../littlevgl/index_zh.html">14. littlevgl</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../tinyuf2/README_zh.html">15. TinyUF2</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../rgb_led/README_zh.html">16. RGB LED</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../hpm_math/index_zh.html">17. HPMICRO MATH</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../lwip/index_zh.html">18. lwIP</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../memstress/index_zh.html">19. 内存测试</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../dma_manager/README_zh.html">20. DMA Manager</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../segger_rtt/README_zh.html">21. Segger RTT</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../cherryusb/index_zh.html">22. USB 通讯</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../dhrystone/README_zh.html">23. dhrystone</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../power_mode_switch/README_zh.html">16. Power Mode Switch</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../rgb_led/README_zh.html">17. RGB LED</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../rom_api/index_zh.html">18. ROMAPI 例程</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../rtos/index_zh.html">19. RTOS 例程</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../segger_rtt/README_zh.html">20. Segger RTT</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../tflm/index_zh.html">21. TensorFlowLiteMicro</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../tinycrypt/index_zh.html">22. Tinycrypt</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../tinyuf2/README_zh.html">23. TinyUF2</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../tinyusb/index_zh.html">24. USB 通讯</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../touch_panel/README_zh.html">25. Touch Panel</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../../../doc/src/sdk_doc/README_zh.html">HPM SDK文档生成</a></li>
@@ -189,9 +196,9 @@
   
      <li><a href="../../index_zh.html">HPM SDK 例程</a> &raquo;</li>
   
-     <li><a href="../index_zh.html"><span class="section-number">10. </span>多核例程</a> &raquo;</li>
+     <li><a href="../index_zh.html"><span class="section-number">15. </span>多核例程</a> &raquo;</li>
   
-  <li><span class="section-number">10.1. </span>Hello 示例</li>
+  <li><span class="section-number">15.5. </span>Hello 示例</li>
 
 
   <li class="wy-breadcrumbs-aside">
@@ -212,9 +219,9 @@
            <div itemprop="articleBody">
              
   <section id="hello">
-<h1><span class="section-number">10.1. </span>Hello 示例<a class="headerlink" href="#hello" title="Permalink to this heading">¶</a></h1>
+<h1><span class="section-number">15.5. </span>Hello 示例<a class="headerlink" href="#hello" title="Permalink to this heading">¶</a></h1>
 <section id="id1">
-<h2><span class="section-number">10.1.1. </span>概述<a class="headerlink" href="#id1" title="Permalink to this heading">¶</a></h2>
+<h2><span class="section-number">15.5.1. </span>概述<a class="headerlink" href="#id1" title="Permalink to this heading">¶</a></h2>
 <p>多核示例工程在Core0上运行”hello word”示例，在core1上运行”rgb_led”示例。</p>
 <p>在本工程中:</p>
 <ul class="simple">
@@ -223,51 +230,48 @@
 </ul>
 </section>
 <section id="id2">
-<h2><span class="section-number">10.1.2. </span>硬件设置<a class="headerlink" href="#id2" title="Permalink to this heading">¶</a></h2>
+<h2><span class="section-number">15.5.2. </span>硬件设置<a class="headerlink" href="#id2" title="Permalink to this heading">¶</a></h2>
 <p>BOOT_PIN 应该设置为：0-OFF, 1-OFF</p>
 </section>
-<section id="id3">
-<h2><span class="section-number">10.1.3. </span>生成和编译多核工程<a class="headerlink" href="#id3" title="Permalink to this heading">¶</a></h2>
-<p>本示例中：core0示例在FLASH中原地执行， core1工程在ILM里执行。</p>
-<p>用户须先生成 <strong>Core0</strong> 工程，<strong>core1</strong> 工程作为关联工程会被自动生成</p>
-<p>用户必须在编译完core1工程后再编译__Core0__工程</p>
-<section id="core0">
-<h3><span class="section-number">10.1.3.1. </span>生成core0工程<a class="headerlink" href="#core0" title="Permalink to this heading">¶</a></h3>
-<p><strong>CMAKE_BUILD_TYPE</strong> 强制为 <em>“debug”</em>，用户无需关心。</p>
+<section id="core1">
+<h2><span class="section-number">15.5.3. </span>生成core1工程<a class="headerlink" href="#core1" title="Permalink to this heading">¶</a></h2>
+<p><strong>CMAKE_BUILD_TYPE</strong> 为 <em>“sec_core_img”</em></p>
 </section>
+<section id="core0">
+<h2><span class="section-number">15.5.4. </span>生成core0工程<a class="headerlink" href="#core0" title="Permalink to this heading">¶</a></h2>
+<p><strong>CMAKE_BUILD_TYPE</strong> 用户可指定为 <em>“debug”</em> 或 <em>“flash_xip”</em> 等。</p>
+</section>
+<section id="id3">
+<h2><span class="section-number">15.5.5. </span>编译工程<a class="headerlink" href="#id3" title="Permalink to this heading">¶</a></h2>
+<p>用户必须在编译完 <strong>core1</strong> 工程后，再编译 <strong>core0</strong> 工程。</p>
 </section>
 <section id="id4">
-<h2><span class="section-number">10.1.4. </span>调试示例<a class="headerlink" href="#id4" title="Permalink to this heading">¶</a></h2>
+<h2><span class="section-number">15.5.6. </span>调试示例<a class="headerlink" href="#id4" title="Permalink to this heading">¶</a></h2>
 <ul class="simple">
 <li><p>下载core0示例到设备并运行</p></li>
 <li><p>下载core1示例到设备并运行</p></li>
 </ul>
 <p><em>注意</em></p>
 <ul>
-<li><p>如果用户希望单步调试core0和core1的示例，用户需确保在core0示例中的board_init()执行完后再调试core1示例。因为core1示例使用了需要core0 board_init()函数初始化的硬件资源
-当core示例正常运行的时候,</p></li>
-<li><p>串口终端会打印如下信息:</p>
-<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>    Copying secondary core image to destination memory...
-    Starting secondary core...
-    Secondary core started, RGB leds are blinking...
-
-    hello world
+<li><p>如果用户希望单步调试core0和core1的示例，用户需确保在core0示例中的board_init()执行完后再调试core1示例。因为core1示例使用了需要core0 board_init()函数初始化的硬件资源</p></li>
+<li><p>当调试执行core0程序时，串口终端会打印如下信息:</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>    hello world from primary core
 </pre></div>
 </div>
 </li>
-<li><p>RGB LED会在红、绿、蓝三色中依次切换</p></li>
+<li><p>当调试执行core1程序时，RGB LED会在红、绿、蓝三色中依次切换</p></li>
 </ul>
 </section>
 <section id="id5">
-<h2><span class="section-number">10.1.5. </span>运行示例<a class="headerlink" href="#id5" title="Permalink to this heading">¶</a></h2>
+<h2><span class="section-number">15.5.7. </span>运行示例<a class="headerlink" href="#id5" title="Permalink to this heading">¶</a></h2>
 <ul>
-<li><p>下载core0示例到设备，然后断开调试，按板子上的reset键。当双核示例正常支持的时候，会打印如下信息：</p></li>
+<li><p>当使用flash_xip编译类型时，下载core0示例到设备，然后断开调试，按板子上的reset键。当双核示例正常支持的时候，会打印如下信息：</p></li>
 <li><p>串口终端会打印如下信息:</p>
 <div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>    Copying secondary core image to destination memory...
     Starting secondary core...
     Secondary core started, RGB leds are blinking...
 
-    hello world
+    hello world from primary core
 </pre></div>
 </div>
 </li>
@@ -281,15 +285,15 @@
           </div>
 
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="../index_zh.html" class="btn btn-neutral float-left" title="10. 多核例程" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="../lvgl_coremark/README_zh.html" class="btn btn-neutral float-right" title="10.2. LVGL Coremark 示例" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="../erpc/erpc_two_way_rpc_rpmsg_rtos/README_zh.html" class="btn btn-neutral float-left" title="15.4. eRPC 双向调用示例" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="../lvgl_coremark/README_zh.html" class="btn btn-neutral float-right" title="15.6. LVGL Coremark 示例" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>
 
   <div role="contentinfo">
     <p>&#169; Copyright 2020-2022, hpmicro.
-      <span class="lastupdated">Last updated on Oct 31, 2022.
+      <span class="lastupdated">Last updated on Dec 31, 2022.
       </span></p>
   </div>
 

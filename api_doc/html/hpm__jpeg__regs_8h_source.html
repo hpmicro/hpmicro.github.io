@@ -691,7 +691,7 @@ $(document).ready(function(){initNavTree('hpm__jpeg__regs_8h_source.html',''); i
 <div class="line"><a id="l00591" name="l00591"></a><span class="lineno">  591</span> </div>
 <div class="line"><a id="l00592" name="l00592"></a><span class="lineno">  592</span><span class="comment">/* Bitfield definition for register: STAT */</span></div>
 <div class="line"><a id="l00593" name="l00593"></a><span class="lineno">  593</span><span class="comment">/*</span></div>
-<div class="line"><a id="l00594" name="l00594"></a><span class="lineno">  594</span><span class="comment"> * BUSY (ROI)</span></div>
+<div class="line"><a id="l00594" name="l00594"></a><span class="lineno">  594</span><span class="comment"> * BUSY (RO)</span></div>
 <div class="line"><a id="l00595" name="l00595"></a><span class="lineno">  595</span><span class="comment"> *</span></div>
 <div class="line"><a id="l00596" name="l00596"></a><span class="lineno">  596</span><span class="comment"> * When 1 means that the module is busy doing conversion and data transfer.</span></div>
 <div class="line"><a id="l00597" name="l00597"></a><span class="lineno">  597</span><span class="comment"> */</span></div>
@@ -700,7 +700,7 @@ $(document).ready(function(){initNavTree('hpm__jpeg__regs_8h_source.html',''); i
 <div class="line"><a id="l00600" name="l00600"></a><span class="lineno"><a class="line" href="hpm__jpeg__regs_8h.html#a34022cd51e6145ee0de34d435f596de3">  600</a></span><span class="preprocessor">#define JPEG_STAT_BUSY_GET(x) (((uint32_t)(x) &amp; JPEG_STAT_BUSY_MASK) &gt;&gt; JPEG_STAT_BUSY_SHIFT)</span></div>
 <div class="line"><a id="l00601" name="l00601"></a><span class="lineno">  601</span> </div>
 <div class="line"><a id="l00602" name="l00602"></a><span class="lineno">  602</span><span class="comment">/*</span></div>
-<div class="line"><a id="l00603" name="l00603"></a><span class="lineno">  603</span><span class="comment"> * AXI_ERR_ID (ROI)</span></div>
+<div class="line"><a id="l00603" name="l00603"></a><span class="lineno">  603</span><span class="comment"> * AXI_ERR_ID (RO)</span></div>
 <div class="line"><a id="l00604" name="l00604"></a><span class="lineno">  604</span><span class="comment"> *</span></div>
 <div class="line"><a id="l00605" name="l00605"></a><span class="lineno">  605</span><span class="comment"> * the axi err id</span></div>
 <div class="line"><a id="l00606" name="l00606"></a><span class="lineno">  606</span><span class="comment"> */</span></div>
@@ -709,7 +709,7 @@ $(document).ready(function(){initNavTree('hpm__jpeg__regs_8h_source.html',''); i
 <div class="line"><a id="l00609" name="l00609"></a><span class="lineno"><a class="line" href="hpm__jpeg__regs_8h.html#a54e0e56de652573749f70dd638c60a54">  609</a></span><span class="preprocessor">#define JPEG_STAT_AXI_ERR_ID_GET(x) (((uint32_t)(x) &amp; JPEG_STAT_AXI_ERR_ID_MASK) &gt;&gt; JPEG_STAT_AXI_ERR_ID_SHIFT)</span></div>
 <div class="line"><a id="l00610" name="l00610"></a><span class="lineno">  610</span> </div>
 <div class="line"><a id="l00611" name="l00611"></a><span class="lineno">  611</span><span class="comment">/*</span></div>
-<div class="line"><a id="l00612" name="l00612"></a><span class="lineno">  612</span><span class="comment"> * AXI_READ_ERR (ROI)</span></div>
+<div class="line"><a id="l00612" name="l00612"></a><span class="lineno">  612</span><span class="comment"> * AXI_READ_ERR (RO)</span></div>
 <div class="line"><a id="l00613" name="l00613"></a><span class="lineno">  613</span><span class="comment"> *</span></div>
 <div class="line"><a id="l00614" name="l00614"></a><span class="lineno">  614</span><span class="comment"> * in-dma axi bus error</span></div>
 <div class="line"><a id="l00615" name="l00615"></a><span class="lineno">  615</span><span class="comment"> */</span></div>
@@ -718,7 +718,7 @@ $(document).ready(function(){initNavTree('hpm__jpeg__regs_8h_source.html',''); i
 <div class="line"><a id="l00618" name="l00618"></a><span class="lineno"><a class="line" href="hpm__jpeg__regs_8h.html#ab02eb7898b36b5f2a2638746a83bc8fb">  618</a></span><span class="preprocessor">#define JPEG_STAT_AXI_READ_ERR_GET(x) (((uint32_t)(x) &amp; JPEG_STAT_AXI_READ_ERR_MASK) &gt;&gt; JPEG_STAT_AXI_READ_ERR_SHIFT)</span></div>
 <div class="line"><a id="l00619" name="l00619"></a><span class="lineno">  619</span> </div>
 <div class="line"><a id="l00620" name="l00620"></a><span class="lineno">  620</span><span class="comment">/*</span></div>
-<div class="line"><a id="l00621" name="l00621"></a><span class="lineno">  621</span><span class="comment"> * AXI_WRITE_ERR (ROI)</span></div>
+<div class="line"><a id="l00621" name="l00621"></a><span class="lineno">  621</span><span class="comment"> * AXI_WRITE_ERR (RO)</span></div>
 <div class="line"><a id="l00622" name="l00622"></a><span class="lineno">  622</span><span class="comment"> *</span></div>
 <div class="line"><a id="l00623" name="l00623"></a><span class="lineno">  623</span><span class="comment"> * out-dma axi bus error</span></div>
 <div class="line"><a id="l00624" name="l00624"></a><span class="lineno">  624</span><span class="comment"> */</span></div>
@@ -850,7 +850,7 @@ $(document).ready(function(){initNavTree('hpm__jpeg__regs_8h_source.html',''); i
 <div class="line"><a id="l00750" name="l00750"></a><span class="lineno">  750</span> </div>
 <div class="line"><a id="l00751" name="l00751"></a><span class="lineno">  751</span><span class="comment">/* Bitfield definition for register: OUTDMACNT */</span></div>
 <div class="line"><a id="l00752" name="l00752"></a><span class="lineno">  752</span><span class="comment">/*</span></div>
-<div class="line"><a id="l00753" name="l00753"></a><span class="lineno">  753</span><span class="comment"> * VAL (ROI)</span></div>
+<div class="line"><a id="l00753" name="l00753"></a><span class="lineno">  753</span><span class="comment"> * VAL (RO)</span></div>
 <div class="line"><a id="l00754" name="l00754"></a><span class="lineno">  754</span><span class="comment"> *</span></div>
 <div class="line"><a id="l00755" name="l00755"></a><span class="lineno">  755</span><span class="comment"> * The out DMA counter</span></div>
 <div class="line"><a id="l00756" name="l00756"></a><span class="lineno">  756</span><span class="comment"> */</span></div>
@@ -1228,7 +1228,7 @@ $(document).ready(function(){initNavTree('hpm__jpeg__regs_8h_source.html',''); i
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_19d806e154b23a5f4c4c08b2e30365a6.html">soc</a></li><li class="navelem"><a class="el" href="dir_d94d62557b5dc917ac9fc81e6b5b3244.html">ip</a></li><li class="navelem"><a class="el" href="hpm__jpeg__regs_8h.html">hpm_jpeg_regs.h</a></li>
-    <li class="footer">Generated on Mon Oct 31 2022 20:47:06 for HPM SDK by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
+    <li class="footer">Generated on Sat Dec 31 2022 19:59:43 for HPM SDK by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
   </ul>
 </div>
 </body>

@@ -1382,7 +1382,7 @@ Functions</h2></td></tr>
 <p >This function configures SPI RX FIFO threshold.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">base</td><td>SPI base address. </td></tr>
+    <tr><td class="paramname">ptr</td><td>SPI base address. </td></tr>
     <tr><td class="paramname">threshold</td><td>The FIFO threshold value, the value should not greater than FIFO size. </td></tr>
   </table>
   </dd>
@@ -1430,7 +1430,7 @@ Functions</h2></td></tr>
 <p >This function configures SPI TX FIFO threshold.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">base</td><td>SPI base address. </td></tr>
+    <tr><td class="paramname">ptr</td><td>SPI base address. </td></tr>
     <tr><td class="paramname">threshold</td><td>The FIFO threshold value, the value should not greater than FIFO size. </td></tr>
   </table>
   </dd>
@@ -1636,7 +1636,7 @@ Functions</h2></td></tr>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">ptr</td><td>SPI base address </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">config</td><td><a class="el" href="structspi__control__config__t.html" title="spi control config structure">spi_control_config_t</a> </td></tr>
-    <tr><td class="paramdir"></td><td class="paramname">[in/out]</td><td>cmd spi transfer command address </td></tr>
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">cmd</td><td>spi transfer command address </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">addr</td><td>spi transfer target address </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">wbuff</td><td>spi sent data buff address </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">wcount</td><td>spi sent data count, not greater than SPI_SOC_TRANSFER_COUNT_MAX </td></tr>
@@ -1769,7 +1769,7 @@ Functions</h2></td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">ptr</td><td>SPI base address </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">mode</td><td>spi mode, use the spi_mode_selection_t </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">config</td><td>point to <a class="el" href="structspi__control__config__t.html" title="spi control config structure">spi_control_config_t</a> </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">cmd</td><td>command data address </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">addr</td><td>point to address </td></tr>
   </table>
   </dd>
 </dl>
@@ -1981,7 +1981,7 @@ Functions</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Mon Oct 31 2022 20:47:08 for HPM SDK by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
+    <li class="footer">Generated on Sat Dec 31 2022 19:59:45 for HPM SDK by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
   </ul>
 </div>
 </body>

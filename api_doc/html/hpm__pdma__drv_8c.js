@@ -3,6 +3,7 @@ var hpm__pdma__drv_8c =
     [ "PDMA_BUSY_STATUS_MASK", "hpm__pdma__drv_8c.html#aa4d371a4c0d7b556261ebe9e2dc7b11b", null ],
     [ "PDMA_ERROR_STATUS_MASK", "hpm__pdma__drv_8c.html#a64ea7ccf855e761624d56bba0cae865f", null ],
     [ "PDMA_SCALE_FRAC_BITS", "hpm__pdma__drv_8c.html#a16b1dda9b87e3a2ae67546fd5c4557f9", null ],
+    [ "PDMA_YUV_SCALE_DEFAULT_X_OFFSET", "hpm__pdma__drv_8c.html#a1a08b10e3d0517422d287427c019dd9b", null ],
     [ "pdma_blit", "group__pdma__interface.html#ga2f10949b765b412d7dde0c7e3ff129d1", null ],
     [ "pdma_calculate_scale", "hpm__pdma__drv_8c.html#ac66c6f252e9dd101c60f4cc561a14532", null ],
     [ "pdma_check_status", "group__pdma__interface.html#ga39813b2b88126c2593e174f982fa54d8", null ],
@@ -17,7 +18,7 @@ var hpm__pdma__drv_8c =
     [ "pdma_get_default_plane_config", "group__pdma__interface.html#ga26ff9186154bd3e45b17fa9b2374dab0", null ],
     [ "pdma_get_default_yuv2rgb_coef_config", "group__pdma__interface.html#ga4d4cb56c6df9ef721256d660a3eecb16", null ],
     [ "pdma_init", "group__pdma__interface.html#ga69452a43e91eda705fdffce906886e71", null ],
-    [ "pdma_pixel_format", "hpm__pdma__drv_8c.html#aadaee02fb01d37914f998b3d665408db", null ],
+    [ "pdma_pixel_format", "hpm__pdma__drv_8c.html#a9164b4fa26cd3dd398012ce97103bd95", null ],
     [ "pdma_scale", "group__pdma__interface.html#ga3221775ddb2f05825cd292cb0f7a561e", null ],
     [ "pdma_set_block_size", "group__pdma__interface.html#gaadf1b309c85956db1bc9f167d333e740", null ],
     [ "pdma_stop", "group__pdma__interface.html#gaa865c1b63ae64af32586e8a52973bda2", null ]

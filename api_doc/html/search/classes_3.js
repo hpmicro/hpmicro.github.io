@@ -19,10 +19,5 @@ var searchData=
   ['dma_5fhandshake_5fconfig_16',['dma_handshake_config',['../structdma__handshake__config.html',1,'']]],
   ['dma_5flinked_5fdescriptor_17',['dma_linked_descriptor',['../structdma__linked__descriptor.html',1,'']]],
   ['dma_5ftype_18',['DMA_Type',['../structDMA__Type.html',1,'']]],
-  ['dmamux_5ftype_19',['DMAMUX_Type',['../structDMAMUX__Type.html',1,'']]],
-  ['dram_5faxi_5fq_5fweight_5ft_20',['dram_axi_q_weight_t',['../structdram__axi__q__weight__t.html',1,'']]],
-  ['dram_5fcmd_5ft_21',['dram_cmd_t',['../structdram__cmd__t.html',1,'']]],
-  ['dram_5fconfig_5ft_22',['dram_config_t',['../structdram__config__t.html',1,'']]],
-  ['dram_5fsdram_5fconfig_5ft_23',['dram_sdram_config_t',['../structdram__sdram__config__t.html',1,'']]],
-  ['dram_5ftype_24',['DRAM_Type',['../structDRAM__Type.html',1,'']]]
+  ['dmamux_5ftype_19',['DMAMUX_Type',['../structDMAMUX__Type.html',1,'']]]
 ];

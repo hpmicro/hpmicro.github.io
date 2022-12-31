@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>15.2. eRPC demo &mdash; HPM SDK Project Documentation</title>
+      <link rel="stylesheet" href="../../../../static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../../../static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../../../../static/tabs.css" type="text/css" />
+      <link rel="stylesheet" href="../../../../static/css/custom.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../../../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../../../../" id="documentation_options" src="../../../../static/documentation_options.js"></script>
+        <script src="../../../../static/jquery.js"></script>
+        <script src="../../../../static/underscore.js"></script>
+        <script src="../../../../static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="../../../../static/doctools.js"></script>
+        <script src="../../../../static/sphinx_highlight.js"></script>
+        <script src="../../../../static/tabs.js"></script>
+        <script type="module" src="../../../../_static/js/dark-mode-toggle.min.mjs"></script>
+        <script src="../../../../_static/js/ga-tracker.js"></script>
+    <script src="../../../../static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../../search.html" />
+    <link rel="next" title="15.3. eRPC demo" href="../erpc_matrix_multiply_rpmsg_rtos/README.html" />
+    <link rel="prev" title="15.1. Console Coremark Demo" href="../../console_coremark/README.html" />
+  <meta name="color-scheme" content="dark light">
+  
+  <link rel="stylesheet" href="../../../../static/css/light.css" type="text/css" media="(prefers-color-scheme: light)"/>
+  <link rel="stylesheet" href="../../../../static/css/dark.css" type="text/css" media="(prefers-color-scheme: dark)"/>
+
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../../../../index.html">
+            <img src="../../../../static/logo.png" class="logo" alt="Logo"/>
+          </a>
+              <div class="version">
+                1.0.0-0
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+  
+  <div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="versions">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      <span class="fa fa-book"> HPM SDK Project</span>
+      v: 1.0.0-0
+      <span class="fa fa-caret-down"></span>
+    </span>
+    <div class="rst-other-versions">
+      <dl>
+        <dt>Document Release Versions</dt>
+        
+          <dd>
+            <a onclick="RelativeAddress('/latest/html/index.html')">latest</a>
+          </dd>
+        
+      </dl>
+      <dl>
+        <dt>Downloads</dt>
+        
+        <dd><a href="/1.0.0-0/hpmsdk.pdf">PDF</a></dd>
+      </dl>
+      <dl>
+        <dt>HPMicro</dt>
+          <dd>
+            <a href="https://www.hpmicro.com/">Project Home</a>
+          </dd>
+          <dd>
+            <a href="https://www.hpmicro.com/">SDK</a>
+          </dd>
+          <dd>
+            <a href="https://www.hpmicro.com/">Releases</a>
+          </dd>
+      </dl>
+    </div>
+  </div>
+  <script language="javascript">
+    function RelativeAddress(url1) {
+      var str=window.location.href;
+      window.location.href=str.match(/(\S*)\/(en|zh)/)[0]+url1;
+      
+    }
+  </script>
+  
+              <p class="caption" role="heading"><span class="caption-text">Contents</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../../../CHANGELOG.html">Change Log</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../README.html">HPM SDK Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../README.html#community-support">Community Support</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../boards/index.html">HPM Development Board Introduction</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../../../index.html">HPM SDK Samples</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../../../audio_codec/index.html">1. Audio Codec</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../cherryusb/index.html">2. USB Communication</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../coremark/README.html">3. Core Mark</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../dhrystone/README.html">4. dhrystone</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../dma_manager/README.html">5. DMA Manager</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../drivers/index.html">6. Drivers</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../dsp/README.html">7. DSP</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../hello_world/README.html">8. Hello World</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../hpm_math/index.html">9. HPMicro MATH</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../jpeg/index.html">10. JPEG</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../littlevgl/index.html">11. littlevgl</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../lwip/index.html">12. lwIP</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../memstress/index.html">13. memstress</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../motor_ctrl/index.html">14. Motor Control</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../../index.html">15. Multicore Samples</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="../../console_coremark/README.html">15.1. Console Coremark Demo</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">15.2. eRPC demo</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#overview">15.2.1. Overview</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#idl-file-generate-project-files">15.2.2. IDL file generate project files</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#importing-client-server-files">15.2.3. Importing client/server files</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#generate-core1-project">15.2.4. Generate core1 project</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#generate-core0-project">15.2.5. Generate core0 project</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#build-project">15.2.6. Build project</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#debugging">15.2.7. Debugging</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#running-results">15.2.8. Running Results</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../erpc_matrix_multiply_rpmsg_rtos/README.html">15.3. eRPC demo</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../erpc_two_way_rpc_rpmsg_rtos/README.html">15.4. eRPC two_way_rpc demo</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../hello/README.html">15.5. Hello demo</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../lvgl_coremark/README.html">15.6. LVGL Coremark Demo</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../../power_mode_switch/README.html">16. Power Mode Switch</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../rgb_led/README.html">17. RGB LED</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../rom_api/index.html">18. ROMAPI Samples</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../rtos/index.html">19. RTOS Samples</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../segger_rtt/README.html">20. Segger RTT</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../tflm/index.html">21. TensorFlowLiteMicro</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../tinycrypt/index.html">22. Tinycrypt</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../tinyuf2/README.html">23. TinyUF2</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../tinyusb/index.html">24. USB Communication</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../touch_panel/README.html">25. Touch Panel</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../doc/src/sdk_doc/README.html">HPM SDK Doc Generation</a></li>
+</ul>
+
+  
+  <div class="toctree-wrapper compound">
+    <p class="caption"><span class="caption-text">Reference</span></p>
+    <ul>
+      
+      <li class="toctree-l1">
+        <a class="reference internal" onclick="ApiRelativeAddress()">API DOC</a>
+      </li>
+      
+    </ul>
+  </div>
+  <script language="javascript">
+    function ApiRelativeAddress() {
+      var str=window.location.href;
+      window.location.href=str.match(/(\S*)sdk_doc/)[1]+"api_doc/html/index.html";
+      
+    }
+  </script>
+  
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../../index.html">hpm_sdk readme</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+  <!--  -->
+  
+  
+  
+  
+
+  <li><a href="../../../../index.html">Docs</a> &raquo;</li>
+  
+     <li><a href="../../../index.html">HPM SDK Samples</a> &raquo;</li>
+  
+     <li><a href="../../index.html"><span class="section-number">15. </span>Multicore Samples</a> &raquo;</li>
+  
+  <li><span class="section-number">15.2. </span>eRPC demo</li>
+
+
+  <li class="wy-breadcrumbs-aside">
+    <dark-mode-toggle id="dark-mode-toggle" appearance="toggle" permanent="true"/>
+  </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+  
+    <div class="wy-alert wy-alert-danger">
+      The <a onclick="RelativeAddressLatest('/latest/html','samples/multicore/erpc/erpc_matrix_multiply_rpmsg_bm/README')">latest development version</a>
+      of this page may be more current than this released 1.0.0-0 version.
+    </div>
+    <script language="javascript">
+      function RelativeAddressLatest(url1,name) {
+        var str=window.location.href;
+        window.location.href=str.match(/(\S*)\/(en|zh)/)[0]+url1+"/"+name+".html";
+        
+      }
+    </script>
+  
+  
+           <div itemprop="articleBody">
+             
+  <section id="erpc-demo">
+<h1><span class="section-number">15.2. </span>eRPC demo<a class="headerlink" href="#erpc-demo" title="Permalink to this heading">¶</a></h1>
+<section id="overview">
+<h2><span class="section-number">15.2.1. </span>Overview<a class="headerlink" href="#overview" title="Permalink to this heading">¶</a></h2>
+<p>This project executes eRPC example, uses RPMSG as transport layer protocol, uses MBX as message notification.</p>
+<p>Core0 as the Client and Core1 as the Server.</p>
+<p>Please refer to <a class="reference external" href="https://github.com/EmbeddedRPC/erpc">official eRPC github</a>和<a class="reference external" href="https://github.com/NXPmicro/rpmsg-lite">official rpmsg_lite github</a></p>
+</section>
+<section id="idl-file-generate-project-files">
+<h2><span class="section-number">15.2.2. </span>IDL file generate project files<a class="headerlink" href="#idl-file-generate-project-files" title="Permalink to this heading">¶</a></h2>
+<p>IDL files contains all declarations used in eRPC calls. This demo IDL file as follows:
+erpc_matrix_multiply.erpc:</p>
+<div class="highlight-C notranslate"><div class="highlight"><pre><span></span>/*!
+ * You can write copyrights rules here. These rules will be copied into the outputs.
+ */
+@outputDir(&quot;erpc_outputs&quot;) // output directory
+program erpc_matrix_multiply; // specify name of output files
+
+/*! This const defines the matrix size. The value has to be the same as the
+    Matrix array dimension. Do not forget to re-generate the eRPC code once the
+    matrix size is changed in the eRPC file */
+const int32 matrix_size = 5;
+
+/*! This is the matrix array type. The dimension has to be the same as the
+    matrix size const. Do not forget to re-generate the eRPC code once the
+    matrix size is changed in the eRPC file */
+type Matrix = int32[matrix_size][matrix_size];
+
+interface MatrixMultiplyService // cover functions for same topic
+{
+    erpcMatrixMultiply(in Matrix matrix1, in Matrix matrix2, out Matrix result_matrix) -&gt; void
+    oneway erpcSwitchLightLed()
+}
+</pre></div>
+</div>
+<p>Please refer to <span class="xref myst">docs/IDL-Reference</span></p>
+<p>The easiest way for generating code is have both the tool and the IDL file in same directory (generated). Then, the following command needs be executed:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">../../../../../</span><span class="n">middleware</span><span class="o">/</span><span class="n">erpc</span><span class="o">/</span><span class="n">erpc</span><span class="o">/</span><span class="n">tools</span><span class="o">/</span><span class="n">erpcgen</span><span class="o">/</span><span class="n">Windows</span><span class="o">/</span><span class="n">erpcgen</span><span class="o">.</span><span class="n">exe</span> <span class="n">erpc_matrix_multiply</span><span class="o">.</span><span class="n">erpc</span>
+</pre></div>
+</div>
+<p>This action creates four files in current folder:</p>
+<ul class="simple">
+<li><p>erpc_matrix_multiply.h</p></li>
+<li><p>erpc_matrix_multiply_client.cpp</p></li>
+<li><p>erpc_matrix_multiply_server.h</p></li>
+<li><p>erpc_matrix_multiply_server.cpp</p></li>
+</ul>
+</section>
+<section id="importing-client-server-files">
+<h2><span class="section-number">15.2.3. </span>Importing client/server files<a class="headerlink" href="#importing-client-server-files" title="Permalink to this heading">¶</a></h2>
+<p><code class="docutils literal notranslate"><span class="pre">Client</span> <span class="pre">project</span></code> needs to count with <strong>erpc_matrix_multiply.h</strong> and <strong>erpc_matrix_multiply_client.cpp</strong> files. In the source file where the eRPC functions are called, the <strong>erpc_matrix_multiply.h</strong> header file needs to be included.</p>
+<p><code class="docutils literal notranslate"><span class="pre">Server</span> <span class="pre">project</span></code> needs to count with <strong>erpc_matrix_multiply.h</strong>, <strong>erpc_matrix_multiply_server.h</strong>, and <strong>erpc_matrix_multiply_server.cpp</strong> files. In source file where eRPC functions calls are implemented, the <strong>erpc_matrix_multiply_server.h</strong> header file needs to be included.</p>
+</section>
+<section id="generate-core1-project">
+<h2><span class="section-number">15.2.4. </span>Generate core1 project<a class="headerlink" href="#generate-core1-project" title="Permalink to this heading">¶</a></h2>
+<p><strong>CMAKE_BUILD_TYPE</strong> must be <em>“sec_core_img”</em></p>
+</section>
+<section id="generate-core0-project">
+<h2><span class="section-number">15.2.5. </span>Generate core0 project<a class="headerlink" href="#generate-core0-project" title="Permalink to this heading">¶</a></h2>
+<p><strong>CMAKE_BUILD_TYPE</strong> user can specify <em>“flash_sdram_xip”</em> or <em>“flash_xip”</em>, etc.</p>
+</section>
+<section id="build-project">
+<h2><span class="section-number">15.2.6. </span>Build project<a class="headerlink" href="#build-project" title="Permalink to this heading">¶</a></h2>
+<p><strong>Core1</strong> project must be generated and built first
+<strong>Core0</strong> project must be generated after the core1 project has been built successfully.</p>
+</section>
+<section id="debugging">
+<h2><span class="section-number">15.2.7. </span>Debugging<a class="headerlink" href="#debugging" title="Permalink to this heading">¶</a></h2>
+<ul class="simple">
+<li><p>Download the core0 example to the target and run core0 example first</p></li>
+<li><p>Download the core1 example to the target and run the core1 example</p></li>
+<li><p>If users expects to debug the core0 and core1 example step by step, users must ensure the <em>board_init()</em> function is executed before debugging the core1 example as some hardware resoruces needs to be initialized by <em>board_init()</em> in core0 example.</p></li>
+</ul>
+</section>
+<section id="running-results">
+<h2><span class="section-number">15.2.8. </span>Running Results<a class="headerlink" href="#running-results" title="Permalink to this heading">¶</a></h2>
+<ul>
+<li><p>When the project runs successfully, The serial port terminal will output the following information:</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>    Primary core started
+    Starting secondary core...
+
+    Secondary core started...
+
+    Matrix <span class="c1">#1</span>
+    <span class="o">=========</span>
+      <span class="m">38</span>   <span class="m">13</span>    <span class="m">1</span>   <span class="m">10</span>   <span class="m">12</span>
+      <span class="m">49</span>   <span class="m">34</span>   <span class="m">25</span>   <span class="m">39</span>   <span class="m">37</span>
+      <span class="m">16</span>   <span class="m">45</span>   <span class="m">17</span>   <span class="m">31</span>   <span class="m">32</span>
+      <span class="m">24</span>   <span class="m">44</span>    <span class="m">1</span>    <span class="m">4</span>   <span class="m">11</span>
+      <span class="m">28</span>   <span class="m">35</span>   <span class="m">17</span>   <span class="m">15</span>   <span class="m">12</span>
+
+    Matrix <span class="c1">#2</span>
+    <span class="o">=========</span>
+      <span class="m">8</span>   <span class="m">15</span>   <span class="m">27</span>   <span class="m">19</span>   <span class="m">36</span>
+      <span class="m">17</span>   <span class="m">10</span>   <span class="m">43</span>   <span class="m">33</span>   <span class="m">16</span>
+      <span class="m">28</span>   <span class="m">11</span>    <span class="m">4</span>   <span class="m">45</span>   <span class="m">36</span>
+       <span class="m">5</span>    <span class="m">2</span>   <span class="m">17</span>    <span class="m">3</span>   <span class="m">46</span>
+      <span class="m">38</span>   <span class="m">43</span>    <span class="m">6</span>    <span class="m">3</span>   <span class="m">34</span>
+
+    eRPC request is sent to the server
+
+    Result <span class="nv">matrix</span>
+    <span class="o">=============</span>
+    <span class="m">1059</span> <span class="m">1247</span> <span class="m">1831</span> <span class="m">1262</span> <span class="m">2480</span>
+    <span class="m">3271</span> <span class="m">3019</span> <span class="m">3770</span> <span class="m">3406</span> <span class="m">6260</span>
+    <span class="m">2740</span> <span class="m">2315</span> <span class="m">3154</span> <span class="m">2743</span> <span class="m">4422</span>
+    <span class="m">1406</span> <span class="m">1292</span> <span class="m">2678</span> <span class="m">1998</span> <span class="m">2162</span>
+    <span class="m">1826</span> <span class="m">1503</span> <span class="m">2656</span> <span class="m">2533</span> <span class="m">3278</span>
+
+    Switch Light LED
+    Press the PBUTN button to initiate the next matrix multiplication
+</pre></div>
+</div>
+</li>
+<li><p>Press the PBUTN button to initiate the next matrix multiplication, and red led and green led will be toggle.</p></li>
+</ul>
+</section>
+</section>
+
+
+           </div>
+          </div>
+
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="../../console_coremark/README.html" class="btn btn-neutral float-left" title="15.1. Console Coremark Demo" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="../erpc_matrix_multiply_rpmsg_rtos/README.html" class="btn btn-neutral float-right" title="15.3. eRPC demo" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2020-2022, hpmicro.
+      <span class="lastupdated">Last updated on Dec 31, 2022.
+      </span></p>
+  </div>
+
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

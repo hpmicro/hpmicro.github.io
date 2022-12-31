@@ -118,22 +118,24 @@ $(document).ready(function(){initNavTree('riscv__core_8h_source.html',''); initR
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
 <div class="line"><a id="l00030" name="l00030"></a><span class="lineno"><a class="line" href="riscv__core_8h.html#a6e47bb37be423161621eef2bf509a718">   30</a></span><span class="preprocessor">#define clear_csr(csr_num, bit) __asm volatile(&quot;csrc %0, %1&quot;</span> : : &quot;i&quot;(csr_num), &quot;r&quot;(bit))</div>
 <div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span> </div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno"><a class="line" href="riscv__core_8h.html#a1a8316ee010091f2994d0fc29ff35e95">   38</a></span><span class="preprocessor">#define set_csr(csr_num, bit) __asm volatile(&quot;csrs %0, %1&quot;</span> : : &quot;i&quot;(csr_num), &quot;r&quot;(bit))</div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span> </div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno"><a class="line" href="riscv__core_8h.html#a1c9c31d1835837140288aef5c00b0ece">   46</a></span><span class="preprocessor">#define write_csr(csr_num, v) __asm volatile(&quot;csrw %0, %1&quot;</span> : : &quot;i&quot;(csr_num), &quot;r&quot;(v))</div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span> </div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno"><a class="line" href="riscv__core_8h.html#a2f5e461a1b86b178fa1b436a066b9306">   55</a></span><span class="preprocessor">#define read_csr(csr_num) ({ uint32_t v; __asm volatile(&quot;csrr %0, %1&quot;</span> : &quot;=r&quot;(v) : &quot;i&quot;(csr_num)); v; })</div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span> </div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno"><a class="line" href="riscv__core_8h.html#a31a888fd8e5eb239f7a291f83b5a146b">   62</a></span><span class="preprocessor">#define read_fcsr() ({ uint32_t v; __asm volatile(&quot;frcsr %0&quot;</span> : &quot;=r&quot;(v)); v; })</div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span> </div>
-<div class="line"><a id="l00068" name="l00068"></a><span class="lineno"><a class="line" href="riscv__core_8h.html#a806cbb3bc7fd59a0be13059cc401098a">   68</a></span><span class="preprocessor">#define fencei() __asm volatile(&quot;fence.i&quot;</span>)</div>
-<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span> </div>
-<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span><span class="preprocessor">#ifdef __cplusplus</span></div>
-<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>}</div>
-<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno"><a class="line" href="riscv__core_8h.html#a84c73adc1bddf2271f0faeee407be80c">   40</a></span><span class="preprocessor">#define read_clear_csr(csr_num, bit) ({ uint32_t v; __asm volatile(&quot;csrrc %0, %1, %2&quot;</span> : &quot;=r&quot;(v) : &quot;i&quot;(csr_num), &quot;r&quot;(bit)); v; })</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span> </div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno"><a class="line" href="riscv__core_8h.html#a1a8316ee010091f2994d0fc29ff35e95">   48</a></span><span class="preprocessor">#define set_csr(csr_num, bit) __asm volatile(&quot;csrs %0, %1&quot;</span> : : &quot;i&quot;(csr_num), &quot;r&quot;(bit))</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span> </div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno"><a class="line" href="riscv__core_8h.html#a1c9c31d1835837140288aef5c00b0ece">   56</a></span><span class="preprocessor">#define write_csr(csr_num, v) __asm volatile(&quot;csrw %0, %1&quot;</span> : : &quot;i&quot;(csr_num), &quot;r&quot;(v))</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span> </div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno"><a class="line" href="riscv__core_8h.html#a2f5e461a1b86b178fa1b436a066b9306">   65</a></span><span class="preprocessor">#define read_csr(csr_num) ({ uint32_t v; __asm volatile(&quot;csrr %0, %1&quot;</span> : &quot;=r&quot;(v) : &quot;i&quot;(csr_num)); v; })</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span> </div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno"><a class="line" href="riscv__core_8h.html#a31a888fd8e5eb239f7a291f83b5a146b">   72</a></span><span class="preprocessor">#define read_fcsr() ({ uint32_t v; __asm volatile(&quot;frcsr %0&quot;</span> : &quot;=r&quot;(v)); v; })</div>
 <div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span> </div>
-<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span> </div>
-<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span><span class="preprocessor">#endif </span><span class="comment">/* RISCV_CORE_H */</span><span class="preprocessor"></span></div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno"><a class="line" href="riscv__core_8h.html#a806cbb3bc7fd59a0be13059cc401098a">   78</a></span><span class="preprocessor">#define fencei() __asm volatile(&quot;fence.i&quot;</span>)</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span> </div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span><span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>}</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span> </div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span> </div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span><span class="preprocessor">#endif </span><span class="comment">/* RISCV_CORE_H */</span><span class="preprocessor"></span></div>
 <div class="ttc" id="ahpm__common_8h_html"><div class="ttname"><a href="hpm__common_8h.html">hpm_common.h</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
@@ -141,7 +143,7 @@ $(document).ready(function(){initNavTree('riscv__core_8h_source.html',''); initR
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_ea9599923402ca8ab47fc3e495999dea.html">arch</a></li><li class="navelem"><a class="el" href="dir_3c75b97fd2e926b9d7ac3bb5a854706c.html">riscv</a></li><li class="navelem"><a class="el" href="riscv__core_8h.html">riscv_core.h</a></li>
-    <li class="footer">Generated on Mon Oct 31 2022 20:47:05 for HPM SDK by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
+    <li class="footer">Generated on Sat Dec 31 2022 19:59:42 for HPM SDK by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
   </ul>
 </div>
 </body>

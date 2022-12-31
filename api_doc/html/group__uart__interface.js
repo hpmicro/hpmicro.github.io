@@ -110,6 +110,7 @@ var group__uart__interface =
     [ "uart_modem_disable_loopback", "group__uart__interface.html#gafe3cd88cdbb1b7115ecba4a5550a8ac1", null ],
     [ "uart_modem_enable_auto_flow_control", "group__uart__interface.html#ga6c95e7f6553d0ba0aa082c7f89b735d1", null ],
     [ "uart_modem_enable_loopback", "group__uart__interface.html#ga1626aac0f400b31ab492490cdeff4714", null ],
+    [ "uart_read_byte", "group__uart__interface.html#ga8c22069f7bfd868e751c8112bbd7feff", null ],
     [ "uart_receive_byte", "group__uart__interface.html#gac68249468a133a73a3c8889e6f47ca45", null ],
     [ "uart_receive_data", "group__uart__interface.html#ga1c64e085c9c2d10f4fe8f9ca6e34fa38", null ],
     [ "uart_reset_all_fifo", "group__uart__interface.html#gac8d91c4e633bb159373692cfb3bc7657", null ],
@@ -118,5 +119,6 @@ var group__uart__interface =
     [ "uart_send_byte", "group__uart__interface.html#ga768c24bffe679cf9a18c4b7a14deff3b", null ],
     [ "uart_send_data", "group__uart__interface.html#ga44ab912005a3f999aa77c67eaa649ffd", null ],
     [ "uart_set_baudrate", "group__uart__interface.html#ga2c8de76bae1caada7c302a05bb351083", null ],
-    [ "uart_set_signal_level", "group__uart__interface.html#gad319f13e3e38f2852fa94df527c16d87", null ]
+    [ "uart_set_signal_level", "group__uart__interface.html#gad319f13e3e38f2852fa94df527c16d87", null ],
+    [ "uart_write_byte", "group__uart__interface.html#gab90cf78727f9f8907b121cf1b8b1e54f", null ]
 ];

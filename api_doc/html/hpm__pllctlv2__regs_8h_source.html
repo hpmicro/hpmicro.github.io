@@ -125,7 +125,7 @@ $(document).ready(function(){initNavTree('hpm__pllctlv2__regs_8h_source.html',''
 <div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>        __R  uint8_t  RESERVED0[28];           <span class="comment">/* 0xA4 - 0xBF: Reserved */</span></div>
 <div class="line"><a id="l00026" name="l00026"></a><span class="lineno"><a class="line" href="structPLLCTLV2__Type.html#aca57af1e0e8db17f7e7c60a39d451dc0">   26</a></span>        __RW uint32_t DIV[3];                  <span class="comment">/* 0xC0 - 0xC8: PLL0 divider output 0 configuration register */</span></div>
 <div class="line"><a id="l00027" name="l00027"></a><span class="lineno"><a class="line" href="structPLLCTLV2__Type.html#a562f31054492bab16f67572d9e58f482">   27</a></span>        __R  uint8_t  RESERVED1[52];           <span class="comment">/* 0xCC - 0xFF: Reserved */</span></div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno"><a class="line" href="structPLLCTLV2__Type.html#a20eb3f646368a04a749a408b3e194869">   28</a></span>    } PLL[3];</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno"><a class="line" href="structPLLCTLV2__Type.html#a603409cb28254fa397ae8be1adb2e51c">   28</a></span>    } PLL[3];</div>
 <div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>} <a class="code hl_struct" href="structPLLCTLV2__Type.html">PLLCTLV2_Type</a>;</div>
 <div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span> </div>
 <div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span> </div>
@@ -349,9 +349,9 @@ $(document).ready(function(){initNavTree('hpm__pllctlv2__regs_8h_source.html',''
 <div class="line"><a id="l00249" name="l00249"></a><span class="lineno">  249</span><span class="comment"> * 0: divider is working</span></div>
 <div class="line"><a id="l00250" name="l00250"></a><span class="lineno">  250</span><span class="comment"> * 1: divider is changing status</span></div>
 <div class="line"><a id="l00251" name="l00251"></a><span class="lineno">  251</span><span class="comment"> */</span></div>
-<div class="line"><a id="l00252" name="l00252"></a><span class="lineno"><a class="line" href="hpm__pllctlv2__regs_8h.html#a09dea2c974e90ac745c98b8059dbdaaf">  252</a></span><span class="preprocessor">#define PLLCTLV2_DIV_BUSY_MASK (0x80000000UL)</span></div>
-<div class="line"><a id="l00253" name="l00253"></a><span class="lineno"><a class="line" href="hpm__pllctlv2__regs_8h.html#adaff0ec2f161b47fa3750364c196307f">  253</a></span><span class="preprocessor">#define PLLCTLV2_DIV_BUSY_SHIFT (31U)</span></div>
-<div class="line"><a id="l00254" name="l00254"></a><span class="lineno"><a class="line" href="hpm__pllctlv2__regs_8h.html#ad29bcd9f88bea2182ea7545b7334a73e">  254</a></span><span class="preprocessor">#define PLLCTLV2_DIV_BUSY_GET(x) (((uint32_t)(x) &amp; PLLCTLV2_DIV_BUSY_MASK) &gt;&gt; PLLCTLV2_DIV_BUSY_SHIFT)</span></div>
+<div class="line"><a id="l00252" name="l00252"></a><span class="lineno"><a class="line" href="hpm__pllctlv2__regs_8h.html#a261d9735f7add499d1d5937687fb898f">  252</a></span><span class="preprocessor">#define PLLCTLV2_PLL_DIV_BUSY_MASK (0x80000000UL)</span></div>
+<div class="line"><a id="l00253" name="l00253"></a><span class="lineno"><a class="line" href="hpm__pllctlv2__regs_8h.html#ae809a116ff62f783b80318acf83a1dd1">  253</a></span><span class="preprocessor">#define PLLCTLV2_PLL_DIV_BUSY_SHIFT (31U)</span></div>
+<div class="line"><a id="l00254" name="l00254"></a><span class="lineno"><a class="line" href="hpm__pllctlv2__regs_8h.html#a960c4a253db0584f980ca4efb881d892">  254</a></span><span class="preprocessor">#define PLLCTLV2_PLL_DIV_BUSY_GET(x) (((uint32_t)(x) &amp; PLLCTLV2_PLL_DIV_BUSY_MASK) &gt;&gt; PLLCTLV2_PLL_DIV_BUSY_SHIFT)</span></div>
 <div class="line"><a id="l00255" name="l00255"></a><span class="lineno">  255</span> </div>
 <div class="line"><a id="l00256" name="l00256"></a><span class="lineno">  256</span><span class="comment">/*</span></div>
 <div class="line"><a id="l00257" name="l00257"></a><span class="lineno">  257</span><span class="comment"> * RESPONSE (RO)</span></div>
@@ -360,9 +360,9 @@ $(document).ready(function(){initNavTree('hpm__pllctlv2__regs_8h_source.html',''
 <div class="line"><a id="l00260" name="l00260"></a><span class="lineno">  260</span><span class="comment"> * 0: Divider is not stable</span></div>
 <div class="line"><a id="l00261" name="l00261"></a><span class="lineno">  261</span><span class="comment"> * 1: Divider is stable for use</span></div>
 <div class="line"><a id="l00262" name="l00262"></a><span class="lineno">  262</span><span class="comment"> */</span></div>
-<div class="line"><a id="l00263" name="l00263"></a><span class="lineno"><a class="line" href="hpm__pllctlv2__regs_8h.html#a806d27dc8f20610a2c3537303f32bc35">  263</a></span><span class="preprocessor">#define PLLCTLV2_DIV_RESPONSE_MASK (0x20000000UL)</span></div>
-<div class="line"><a id="l00264" name="l00264"></a><span class="lineno"><a class="line" href="hpm__pllctlv2__regs_8h.html#a7e1871bded0bc2cdb476e69e1b769266">  264</a></span><span class="preprocessor">#define PLLCTLV2_DIV_RESPONSE_SHIFT (29U)</span></div>
-<div class="line"><a id="l00265" name="l00265"></a><span class="lineno"><a class="line" href="hpm__pllctlv2__regs_8h.html#afc5cecb702b53cb81624a37177f64cde">  265</a></span><span class="preprocessor">#define PLLCTLV2_DIV_RESPONSE_GET(x) (((uint32_t)(x) &amp; PLLCTLV2_DIV_RESPONSE_MASK) &gt;&gt; PLLCTLV2_DIV_RESPONSE_SHIFT)</span></div>
+<div class="line"><a id="l00263" name="l00263"></a><span class="lineno"><a class="line" href="hpm__pllctlv2__regs_8h.html#a466c7e3e446c2cd1a8964d84ec8ce8df">  263</a></span><span class="preprocessor">#define PLLCTLV2_PLL_DIV_RESPONSE_MASK (0x20000000UL)</span></div>
+<div class="line"><a id="l00264" name="l00264"></a><span class="lineno"><a class="line" href="hpm__pllctlv2__regs_8h.html#aadccd3f2c02579122f70fbecfd1f1846">  264</a></span><span class="preprocessor">#define PLLCTLV2_PLL_DIV_RESPONSE_SHIFT (29U)</span></div>
+<div class="line"><a id="l00265" name="l00265"></a><span class="lineno"><a class="line" href="hpm__pllctlv2__regs_8h.html#a38de5c8e6497199c7ec1bb7238e67747">  265</a></span><span class="preprocessor">#define PLLCTLV2_PLL_DIV_RESPONSE_GET(x) (((uint32_t)(x) &amp; PLLCTLV2_PLL_DIV_RESPONSE_MASK) &gt;&gt; PLLCTLV2_PLL_DIV_RESPONSE_SHIFT)</span></div>
 <div class="line"><a id="l00266" name="l00266"></a><span class="lineno">  266</span> </div>
 <div class="line"><a id="l00267" name="l00267"></a><span class="lineno">  267</span><span class="comment">/*</span></div>
 <div class="line"><a id="l00268" name="l00268"></a><span class="lineno">  268</span><span class="comment"> * ENABLE (RO)</span></div>
@@ -371,9 +371,9 @@ $(document).ready(function(){initNavTree('hpm__pllctlv2__regs_8h_source.html',''
 <div class="line"><a id="l00271" name="l00271"></a><span class="lineno">  271</span><span class="comment"> * 0: Divider is off</span></div>
 <div class="line"><a id="l00272" name="l00272"></a><span class="lineno">  272</span><span class="comment"> * 1: Divider is on</span></div>
 <div class="line"><a id="l00273" name="l00273"></a><span class="lineno">  273</span><span class="comment"> */</span></div>
-<div class="line"><a id="l00274" name="l00274"></a><span class="lineno"><a class="line" href="hpm__pllctlv2__regs_8h.html#a7e793386911f6ba67a25859569ecfe51">  274</a></span><span class="preprocessor">#define PLLCTLV2_DIV_ENABLE_MASK (0x10000000UL)</span></div>
-<div class="line"><a id="l00275" name="l00275"></a><span class="lineno"><a class="line" href="hpm__pllctlv2__regs_8h.html#aab7d75203848ad5ecfca2055d6c9e8a6">  275</a></span><span class="preprocessor">#define PLLCTLV2_DIV_ENABLE_SHIFT (28U)</span></div>
-<div class="line"><a id="l00276" name="l00276"></a><span class="lineno"><a class="line" href="hpm__pllctlv2__regs_8h.html#ab082d6612b18162fafd0784f0cb3cb9c">  276</a></span><span class="preprocessor">#define PLLCTLV2_DIV_ENABLE_GET(x) (((uint32_t)(x) &amp; PLLCTLV2_DIV_ENABLE_MASK) &gt;&gt; PLLCTLV2_DIV_ENABLE_SHIFT)</span></div>
+<div class="line"><a id="l00274" name="l00274"></a><span class="lineno"><a class="line" href="hpm__pllctlv2__regs_8h.html#a3363228206f034907eb8137fe6ccc180">  274</a></span><span class="preprocessor">#define PLLCTLV2_PLL_DIV_ENABLE_MASK (0x10000000UL)</span></div>
+<div class="line"><a id="l00275" name="l00275"></a><span class="lineno"><a class="line" href="hpm__pllctlv2__regs_8h.html#a0810a189c58d0a33ac403f3af6f836d1">  275</a></span><span class="preprocessor">#define PLLCTLV2_PLL_DIV_ENABLE_SHIFT (28U)</span></div>
+<div class="line"><a id="l00276" name="l00276"></a><span class="lineno"><a class="line" href="hpm__pllctlv2__regs_8h.html#a0a11f7bedc0a6abd3211ba6f112b5ae3">  276</a></span><span class="preprocessor">#define PLLCTLV2_PLL_DIV_ENABLE_GET(x) (((uint32_t)(x) &amp; PLLCTLV2_PLL_DIV_ENABLE_MASK) &gt;&gt; PLLCTLV2_PLL_DIV_ENABLE_SHIFT)</span></div>
 <div class="line"><a id="l00277" name="l00277"></a><span class="lineno">  277</span> </div>
 <div class="line"><a id="l00278" name="l00278"></a><span class="lineno">  278</span><span class="comment">/*</span></div>
 <div class="line"><a id="l00279" name="l00279"></a><span class="lineno">  279</span><span class="comment"> * DIV (RW)</span></div>
@@ -385,10 +385,10 @@ $(document).ready(function(){initNavTree('hpm__pllctlv2__regs_8h_source.html',''
 <div class="line"><a id="l00285" name="l00285"></a><span class="lineno">  285</span><span class="comment"> * . . .</span></div>
 <div class="line"><a id="l00286" name="l00286"></a><span class="lineno">  286</span><span class="comment"> * 63: divide by 13.6</span></div>
 <div class="line"><a id="l00287" name="l00287"></a><span class="lineno">  287</span><span class="comment"> */</span></div>
-<div class="line"><a id="l00288" name="l00288"></a><span class="lineno"><a class="line" href="hpm__pllctlv2__regs_8h.html#a00ba72ade3cfc5e3eebef12a2a7e50e7">  288</a></span><span class="preprocessor">#define PLLCTLV2_DIV_DIV_MASK (0x3FU)</span></div>
-<div class="line"><a id="l00289" name="l00289"></a><span class="lineno"><a class="line" href="hpm__pllctlv2__regs_8h.html#a8796b3377a41170ebf9293c6c221d14f">  289</a></span><span class="preprocessor">#define PLLCTLV2_DIV_DIV_SHIFT (0U)</span></div>
-<div class="line"><a id="l00290" name="l00290"></a><span class="lineno"><a class="line" href="hpm__pllctlv2__regs_8h.html#ad56185653ccafb4251dac7d521cd4f78">  290</a></span><span class="preprocessor">#define PLLCTLV2_DIV_DIV_SET(x) (((uint32_t)(x) &lt;&lt; PLLCTLV2_DIV_DIV_SHIFT) &amp; PLLCTLV2_DIV_DIV_MASK)</span></div>
-<div class="line"><a id="l00291" name="l00291"></a><span class="lineno"><a class="line" href="hpm__pllctlv2__regs_8h.html#a4d864f261096ab9a20e359475a792faa">  291</a></span><span class="preprocessor">#define PLLCTLV2_DIV_DIV_GET(x) (((uint32_t)(x) &amp; PLLCTLV2_DIV_DIV_MASK) &gt;&gt; PLLCTLV2_DIV_DIV_SHIFT)</span></div>
+<div class="line"><a id="l00288" name="l00288"></a><span class="lineno"><a class="line" href="hpm__pllctlv2__regs_8h.html#adfb32aebc6338e1c7077674a5a786dde">  288</a></span><span class="preprocessor">#define PLLCTLV2_PLL_DIV_DIV_MASK (0x3FU)</span></div>
+<div class="line"><a id="l00289" name="l00289"></a><span class="lineno"><a class="line" href="hpm__pllctlv2__regs_8h.html#a014c7cfb45bf536e51559c88f9f664aa">  289</a></span><span class="preprocessor">#define PLLCTLV2_PLL_DIV_DIV_SHIFT (0U)</span></div>
+<div class="line"><a id="l00290" name="l00290"></a><span class="lineno"><a class="line" href="hpm__pllctlv2__regs_8h.html#a4399f95f13821ac7e0d074b3adc47319">  290</a></span><span class="preprocessor">#define PLLCTLV2_PLL_DIV_DIV_SET(x) (((uint32_t)(x) &lt;&lt; PLLCTLV2_PLL_DIV_DIV_SHIFT) &amp; PLLCTLV2_PLL_DIV_DIV_MASK)</span></div>
+<div class="line"><a id="l00291" name="l00291"></a><span class="lineno"><a class="line" href="hpm__pllctlv2__regs_8h.html#a02586b7d02051a8fc3c88b3432a8d821">  291</a></span><span class="preprocessor">#define PLLCTLV2_PLL_DIV_DIV_GET(x) (((uint32_t)(x) &amp; PLLCTLV2_PLL_DIV_DIV_MASK) &gt;&gt; PLLCTLV2_PLL_DIV_DIV_SHIFT)</span></div>
 <div class="line"><a id="l00292" name="l00292"></a><span class="lineno">  292</span> </div>
 <div class="line"><a id="l00293" name="l00293"></a><span class="lineno">  293</span> </div>
 <div class="line"><a id="l00294" name="l00294"></a><span class="lineno">  294</span> </div>
@@ -421,7 +421,7 @@ $(document).ready(function(){initNavTree('hpm__pllctlv2__regs_8h_source.html',''
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_19d806e154b23a5f4c4c08b2e30365a6.html">soc</a></li><li class="navelem"><a class="el" href="dir_d94d62557b5dc917ac9fc81e6b5b3244.html">ip</a></li><li class="navelem"><a class="el" href="hpm__pllctlv2__regs_8h.html">hpm_pllctlv2_regs.h</a></li>
-    <li class="footer">Generated on Mon Oct 31 2022 20:47:06 for HPM SDK by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
+    <li class="footer">Generated on Sat Dec 31 2022 19:59:43 for HPM SDK by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
   </ul>
 </div>
 </body>

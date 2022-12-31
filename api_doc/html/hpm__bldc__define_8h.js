@@ -38,5 +38,5 @@ var hpm__bldc__define_8h =
       [ "bldc_hall_phase_60", "group__mcl__common.html#gga2268a36fa22f30afe732834b5a6b67feab00af5b40c8920b130690a87cf6fa183", null ],
       [ "bldc_hall_phase_120", "group__mcl__common.html#gga2268a36fa22f30afe732834b5a6b67fea69d9a7fde41fda42092e5b6dab8de35e", null ]
     ] ],
-    [ "bldc_nullcallback_func", "group__mcl__common.html#ga3454e16e5dd928feba621a8501c4220e", null ]
+    [ "hpm_mcl_nullcallback_func", "group__mcl__common.html#ga21e6e0160fa2456207aacf377918d06e", null ]
 ];

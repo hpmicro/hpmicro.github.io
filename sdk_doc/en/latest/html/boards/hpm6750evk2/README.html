@@ -4,7 +4,7 @@
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>2. HPM6750E2VK &mdash; HPM SDK Project Documentation</title>
+  <title>2. HPM6750EVK2 &mdash; HPM SDK Project Documentation</title>
       <link rel="stylesheet" href="../../static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="../../static/css/theme.css" type="text/css" />
       <link rel="stylesheet" href="../../static/tabs.css" type="text/css" />
@@ -18,6 +18,7 @@
         <script src="../../static/underscore.js"></script>
         <script src="../../static/_sphinx_javascript_frameworks_compat.js"></script>
         <script src="../../static/doctools.js"></script>
+        <script src="../../static/sphinx_highlight.js"></script>
         <script src="../../static/tabs.js"></script>
         <script type="module" src="../../_static/js/dark-mode-toggle.min.mjs"></script>
         <script src="../../_static/js/ga-tracker.js"></script>
@@ -68,7 +69,7 @@
           </dd>
         
           <dd>
-            <a onclick="RelativeAddress('/0.14.0/html/index.html')">0.14.0</a>
+            <a onclick="RelativeAddress('/1.0.0/html/index.html')">1.0.0</a>
           </dd>
         
       </dl>
@@ -106,7 +107,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../../README.html#community-support">Community Support</a></li>
 <li class="toctree-l1 current"><a class="reference internal" href="../index.html">HPM Development Board Introduction</a><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="../hpm6750evk/README.html">1. HPM6750EVK</a></li>
-<li class="toctree-l2 current"><a class="current reference internal" href="#">2. HPM6750E2VK</a><ul>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">2. HPM6750EVK2</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#overview">2.1. Overview</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#hardware">2.2. Hardware</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#dip-switch-s1">2.3. DIP Switch S1</a></li>
@@ -168,7 +169,7 @@
   
      <li><a href="../index.html">HPM Development Board Introduction</a> &raquo;</li>
   
-  <li><span class="section-number">2. </span>HPM6750E2VK</li>
+  <li><span class="section-number">2. </span>HPM6750EVK2</li>
 
 
   <li class="wy-breadcrumbs-aside">
@@ -188,8 +189,8 @@
   
            <div itemprop="articleBody">
              
-  <section id="hpm6750e2vk">
-<h1><span class="section-number">2. </span>HPM6750E2VK<a class="headerlink" href="#hpm6750e2vk" title="Permalink to this heading">¶</a></h1>
+  <section id="hpm6750evk2">
+<h1><span class="section-number">2. </span>HPM6750EVK2<a class="headerlink" href="#hpm6750evk2" title="Permalink to this heading">¶</a></h1>
 <section id="overview">
 <h2><span class="section-number">2.1. </span>Overview<a class="headerlink" href="#overview" title="Permalink to this heading">¶</a></h2>
 <p>The HPM6750 is a dual-core flashless MCU running 816Mhz. It has a 2MB continuous on-chip ram. Also, it provides various memory interfaces, including SDRAM, Quad SPI NOR Flash, SD/eMMC. It integrates rich audio and video interfaces, including LCD, pixel DMA, camera， and I2S audio interfaces.</p>
@@ -198,7 +199,7 @@
 <section id="hardware">
 <h2><span class="section-number">2.2. </span>Hardware<a class="headerlink" href="#hardware" title="Permalink to this heading">¶</a></h2>
 <ul class="simple">
-<li><p>HPM6750IVM MCU (816Mhz, 2MB OCRAM)</p></li>
+<li><p>HPM6750IVM MCU (816MHz, 2MB OCRAM)</p></li>
 <li><p>Onboard Memory</p>
 <ul>
 <li><p>256Mb SDRAM</p></li>
@@ -232,7 +233,6 @@
 <li><p>Others</p>
 <ul>
 <li><p>TF Slot</p></li>
-<li><p>FT2232</p></li>
 <li><p>RGB LED</p></li>
 <li><p>CAN</p></li>
 </ul>
@@ -335,66 +335,124 @@
 </section>
 <section id="pin-description">
 <h2><span class="section-number">2.7. </span>Pin Description<a class="headerlink" href="#pin-description" title="Permalink to this heading">¶</a></h2>
-<ul>
-<li><p>PWM Pin:</p>
-<p><img alt="image-1" src="../../images/hpm6750evk_pwm_output_pin.png" /></p>
-</li>
+<ul class="simple">
+<li><p>UART0 Pin:</p></li>
+</ul>
+<p>The UART0 pin leads to three positions:</p>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Function</p></th>
+<th class="head"><p>Pin</p></th>
+<th class="head"><p>Position1</p></th>
+<th class="head"><p>Position2</p></th>
+<th class="head"><p>Position3</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>UART0.TX</p></td>
+<td><p>PY06</p></td>
+<td><p>J109[1]</p></td>
+<td><p>JTAG P4[7]</p></td>
+<td><p>USB2UART0</p></td>
+</tr>
+<tr class="row-odd"><td><p>UART0.RX</p></td>
+<td><p>PY07</p></td>
+<td><p>J109[3]</p></td>
+<td><p>JTAG P4[9]</p></td>
+<td><p>USB2UART0</p></td>
+</tr>
+</tbody>
+</table>
+<p>Note: To avoid abnormal functions caused by multiple connections, please ensure that there is only one connection. For example, if the JTAG interface is connected to UART0, USB2UART0 interface send data to UART0 will be abnormal.</p>
+<ul class="simple">
 <li><p>SPI Pin：</p></li>
 </ul>
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Function</p></th>
+<th class="head"><p>Pin</p></th>
 <th class="head"><p>Position</p></th>
 </tr>
 </thead>
 <tbody>
 <tr class="row-even"><td><p>SPI2.CSN</p></td>
-<td><p>J20[7]</p></td>
+<td><p>PE31</p></td>
+<td><p>J11[7]</p></td>
 </tr>
 <tr class="row-odd"><td><p>SPI2.SCLK</p></td>
-<td><p>J20[8]</p></td>
+<td><p>PE27</p></td>
+<td><p>J11[8]</p></td>
 </tr>
 <tr class="row-even"><td><p>SPI2.MISO</p></td>
-<td><p>J20[9]</p></td>
+<td><p>PE28</p></td>
+<td><p>J11[9]</p></td>
 </tr>
 <tr class="row-odd"><td><p>SPI2.MOSI</p></td>
-<td><p>J20[10]</p></td>
+<td><p>PE30</p></td>
+<td><p>J11[10]</p></td>
 </tr>
 </tbody>
 </table>
 <ul class="simple">
-<li><p>I2C Pin：</p></li>
+<li><p>I2C Pin：：</p></li>
 </ul>
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Function</p></th>
+<th class="head"><p>Pin</p></th>
 <th class="head"><p>Position</p></th>
 </tr>
 </thead>
 <tbody>
 <tr class="row-even"><td><p>I2C0.SCL</p></td>
-<td><p>J20[3]</p></td>
+<td><p>PZ11</p></td>
+<td><p>J11[3]</p></td>
 </tr>
 <tr class="row-odd"><td><p>I2C0.SDA</p></td>
-<td><p>J20[4]</p></td>
+<td><p>PZ10</p></td>
+<td><p>J11[4]</p></td>
 </tr>
 </tbody>
 </table>
 <ul class="simple">
-<li><p>UART for core1 debug console</p></li>
+<li><p>UART for core1 debug console：</p></li>
 </ul>
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Function</p></th>
+<th class="head"><p>Pin</p></th>
 <th class="head"><p>Position</p></th>
 </tr>
 </thead>
 <tbody>
 <tr class="row-even"><td><p>UART13.TXD</p></td>
-<td><p>J20[5]</p></td>
+<td><p>PZ09</p></td>
+<td><p>J11[5]</p></td>
 </tr>
 <tr class="row-odd"><td><p>UART13.RXD</p></td>
-<td><p>J20[6]</p></td>
+<td><p>PZ08</p></td>
+<td><p>J11[6]</p></td>
+</tr>
+</tbody>
+</table>
+<ul class="simple">
+<li><p>PWM Pin:</p></li>
+</ul>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Function</p></th>
+<th class="head"><p>Pin</p></th>
+<th class="head"><p>Position</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>PWM2.P[0]</p></td>
+<td><p>PD31</p></td>
+<td><p>J10[14]</p></td>
+</tr>
+<tr class="row-odd"><td><p>PWM2.P[1]</p></td>
+<td><p>PD30</p></td>
+<td><p>J10[13]</p></td>
 </tr>
 </tbody>
 </table>
@@ -404,14 +462,17 @@
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Function</p></th>
+<th class="head"><p>Pin</p></th>
 <th class="head"><p>Position</p></th>
 </tr>
 </thead>
 <tbody>
 <tr class="row-even"><td><p>CMP.INN6</p></td>
+<td><p>PE21</p></td>
 <td><p>J10[8]</p></td>
 </tr>
 <tr class="row-odd"><td><p>CMP.COMP_1</p></td>
+<td><p>PE25</p></td>
 <td><p>J10[6]</p></td>
 </tr>
 </tbody>
@@ -422,14 +483,17 @@
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Function</p></th>
+<th class="head"><p>Pin</p></th>
 <th class="head"><p>Position</p></th>
 </tr>
 </thead>
 <tbody>
 <tr class="row-even"><td><p>GPTMR4.CAPT_1</p></td>
+<td><p>PE25</p></td>
 <td><p>J10[6]</p></td>
 </tr>
 <tr class="row-odd"><td><p>GPTMR3.COMP_1</p></td>
+<td><p>PE24</p></td>
 <td><p>J10[7]</p></td>
 </tr>
 </tbody>
@@ -440,17 +504,21 @@
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Function</p></th>
+<th class="head"><p>Pin</p></th>
 <th class="head"><p>Position</p></th>
 </tr>
 </thead>
 <tbody>
 <tr class="row-even"><td><p>ADC0/1/2.VINP11</p></td>
+<td><p>PE25</p></td>
 <td><p>J10[6]</p></td>
 </tr>
 <tr class="row-odd"><td><p>ADC0/1/2.VINP10</p></td>
+<td><p>PE24</p></td>
 <td><p>J10[7]</p></td>
 </tr>
 <tr class="row-even"><td><p>ADC0/1/2.VINP7</p></td>
+<td><p>PE21</p></td>
 <td><p>J10[8]</p></td>
 </tr>
 </tbody>
@@ -460,13 +528,60 @@
 </ul>
 <table class="docutils align-default">
 <thead>
-<tr class="row-odd"><th class="head text-left"><p>Function</p></th>
+<tr class="row-odd"><th class="head"><p>Function</p></th>
+<th class="head"><p>Pin</p></th>
 <th class="head"><p>Position</p></th>
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td class="text-left"><p>ADC3.INA2</p></td>
+<tr class="row-even"><td><p>ADC3.INA2</p></td>
+<td><p>PE29</p></td>
 <td><p>J10[5]</p></td>
+</tr>
+</tbody>
+</table>
+<ul class="simple">
+<li><p>headphone interface</p></li>
+</ul>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Function</p></th>
+<th class="head"><p>Position</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>3.5mm headphone</p></td>
+<td><p>J13</p></td>
+</tr>
+</tbody>
+</table>
+<ul class="simple">
+<li><p>audio input interface</p></li>
+</ul>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Function</p></th>
+<th class="head"><p>Position</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>microphone</p></td>
+<td><p>P3</p></td>
+</tr>
+</tbody>
+</table>
+<ul class="simple">
+<li><p>DAO interface</p></li>
+</ul>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Function</p></th>
+<th class="head"><p>Position</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>DAO-SPK</p></td>
+<td><p>J12</p></td>
 </tr>
 </tbody>
 </table>
@@ -486,7 +601,7 @@
 
   <div role="contentinfo">
     <p>&#169; Copyright 2020-2022, hpmicro.
-      <span class="lastupdated">Last updated on Oct 31, 2022.
+      <span class="lastupdated">Last updated on Dec 31, 2022.
       </span></p>
   </div>
 

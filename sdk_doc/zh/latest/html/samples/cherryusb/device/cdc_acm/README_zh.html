@@ -4,7 +4,7 @@
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>22.1. USB CDC 串口 &mdash; HPM SDK Project Documentation</title>
+  <title>2.1. USB CDC 串口 &mdash; HPM SDK Project Documentation</title>
       <link rel="stylesheet" href="../../../../static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="../../../../static/css/theme.css" type="text/css" />
       <link rel="stylesheet" href="../../../../static/tabs.css" type="text/css" />
@@ -18,14 +18,15 @@
         <script src="../../../../static/underscore.js"></script>
         <script src="../../../../static/_sphinx_javascript_frameworks_compat.js"></script>
         <script src="../../../../static/doctools.js"></script>
+        <script src="../../../../static/sphinx_highlight.js"></script>
         <script src="../../../../static/tabs.js"></script>
         <script type="module" src="../../../../_static/js/dark-mode-toggle.min.mjs"></script>
         <script src="../../../../_static/js/ga-tracker.js"></script>
     <script src="../../../../static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../../../genindex.html" />
     <link rel="search" title="Search" href="../../../../search.html" />
-    <link rel="next" title="22.2. USB组合类设备" href="../composite/cdc_acm_hid_msc/README_zh.html" />
-    <link rel="prev" title="22. USB 通讯" href="../../index_zh.html" />
+    <link rel="next" title="2.2. USB组合类设备" href="../composite/cdc_acm_hid_msc/README_zh.html" />
+    <link rel="prev" title="2. USB 通讯" href="../../index_zh.html" />
   <meta name="color-scheme" content="dark light">
   
   <link rel="stylesheet" href="../../../../static/css/light.css" type="text/css" media="(prefers-color-scheme: light)"/>
@@ -68,7 +69,7 @@
           </dd>
         
           <dd>
-            <a onclick="RelativeAddress('/0.14.0/html/index_zh.html')">0.14.0</a>
+            <a onclick="RelativeAddress('/1.0.0/html/index_zh.html')">1.0.0</a>
           </dd>
         
       </dl>
@@ -105,45 +106,47 @@
 <li class="toctree-l1"><a class="reference internal" href="../../../../README_zh.html">HPM SDK 概述</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../../boards/index_zh.html">HPM 开发板介绍</a></li>
 <li class="toctree-l1 current"><a class="reference internal" href="../../../index_zh.html">HPM SDK 例程</a><ul class="current">
-<li class="toctree-l2"><a class="reference internal" href="../../../hello_world/README_zh.html">1. Hello World</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../../audio_codec/index_zh.html">2. 音频编解码</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../audio_codec/index_zh.html">1. 音频编解码</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../../index_zh.html">2. USB 通讯</a><ul class="current">
+<li class="toctree-l3 current"><a class="current reference internal" href="#">2.1. USB CDC 串口</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#id1">2.1.1. 概述</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id2">2.1.2. 硬件设置</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id3">2.1.3. 运行现象</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id4">2.1.4. 备注</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../composite/cdc_acm_hid_msc/README_zh.html">2.2. USB组合类设备</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../hid/custom_inout/README_zh.html">2.3. USB HID 自定义传输</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../hid/keyboard/README_zh.html">2.4. USB HID 键盘</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../hid/mouse/README_zh.html">2.5. USB HID 鼠标</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../msc/ram_disk/README_zh.html">2.6. USB MSC RAM DISK</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../host/hid/README_zh.html">2.7. USB HID HOST</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../host/msc/README_zh.html">2.8. USB MSC HOST</a></li>
+</ul>
+</li>
 <li class="toctree-l2"><a class="reference internal" href="../../../coremark/README_zh.html">3. Core Mark</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../../touch_panel/README_zh.html">4. Touch Panel</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../../rtos/index_zh.html">5. RTOS 例程</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../dhrystone/README_zh.html">4. dhrystone</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../dma_manager/README_zh.html">5. DMA Manager</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../../drivers/index_zh.html">6. 驱动</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../../motor_ctrl/index_zh.html">7. 电机控制</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../../jpeg/index_zh.html">8. JPEG</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../../tinycrypt/index_zh.html">9. Tinycrypt</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../../multicore/index_zh.html">10. 多核例程</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../../rom_api/index_zh.html">11. ROMAPI 例程</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../../tflm/README_zh.html">12. TensorFlowLiteMicro</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../../tinyusb/index_zh.html">13. USB 通讯</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../../littlevgl/index_zh.html">14. littlevgl</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../../tinyuf2/README_zh.html">15. TinyUF2</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../../rgb_led/README_zh.html">16. RGB LED</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../../hpm_math/index_zh.html">17. HPMICRO MATH</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../../lwip/index_zh.html">18. lwIP</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../../memstress/index_zh.html">19. 内存测试</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../../dma_manager/README_zh.html">20. DMA Manager</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../../segger_rtt/README_zh.html">21. Segger RTT</a></li>
-<li class="toctree-l2 current"><a class="reference internal" href="../../index_zh.html">22. USB 通讯</a><ul class="current">
-<li class="toctree-l3 current"><a class="current reference internal" href="#">22.1. USB CDC 串口</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#id1">22.1.1. 概述</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#id2">22.1.2. 硬件设置</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#id3">22.1.3. 运行现象</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#id4">22.1.4. 备注</a></li>
-</ul>
-</li>
-<li class="toctree-l3"><a class="reference internal" href="../composite/cdc_acm_hid_msc/README_zh.html">22.2. USB组合类设备</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../hid/custom_inout/README_zh.html">22.3. USB HID 自定义传输</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../hid/keyboard/README_zh.html">22.4. USB HID 键盘</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../hid/mouse/README_zh.html">22.5. USB HID 鼠标</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../msc/ram_disk/README_zh.html">22.6. USB MSC RAM DISK</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../../host/hid/README_zh.html">22.7. USB HID HOST</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../../host/msc/README_zh.html">22.8. USB MSC HOST</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="../../../dhrystone/README_zh.html">23. dhrystone</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../dsp/README_zh.html">7. DSP</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../hello_world/README_zh.html">8. Hello World</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../hpm_math/index_zh.html">9. HPMICRO MATH</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../jpeg/index_zh.html">10. JPEG</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../littlevgl/index_zh.html">11. littlevgl</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../lwip/index_zh.html">12. lwIP</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../memstress/index_zh.html">13. 内存测试</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../motor_ctrl/index_zh.html">14. 电机控制</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../multicore/index_zh.html">15. 多核例程</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../power_mode_switch/README_zh.html">16. Power Mode Switch</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../rgb_led/README_zh.html">17. RGB LED</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../rom_api/index_zh.html">18. ROMAPI 例程</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../rtos/index_zh.html">19. RTOS 例程</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../segger_rtt/README_zh.html">20. Segger RTT</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../tflm/index_zh.html">21. TensorFlowLiteMicro</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../tinycrypt/index_zh.html">22. Tinycrypt</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../tinyuf2/README_zh.html">23. TinyUF2</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../tinyusb/index_zh.html">24. USB 通讯</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../touch_panel/README_zh.html">25. Touch Panel</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../../../../doc/src/sdk_doc/README_zh.html">HPM SDK文档生成</a></li>
@@ -192,9 +195,9 @@
   
      <li><a href="../../../index_zh.html">HPM SDK 例程</a> &raquo;</li>
   
-     <li><a href="../../index_zh.html"><span class="section-number">22. </span>USB 通讯</a> &raquo;</li>
+     <li><a href="../../index_zh.html"><span class="section-number">2. </span>USB 通讯</a> &raquo;</li>
   
-  <li><span class="section-number">22.1. </span>USB CDC 串口</li>
+  <li><span class="section-number">2.1. </span>USB CDC 串口</li>
 
 
   <li class="wy-breadcrumbs-aside">
@@ -215,23 +218,23 @@
            <div itemprop="articleBody">
              
   <section id="usb-cdc">
-<h1><span class="section-number">22.1. </span>USB CDC 串口<a class="headerlink" href="#usb-cdc" title="Permalink to this heading">¶</a></h1>
+<h1><span class="section-number">2.1. </span>USB CDC 串口<a class="headerlink" href="#usb-cdc" title="Permalink to this heading">¶</a></h1>
 <section id="id1">
-<h2><span class="section-number">22.1.1. </span>概述<a class="headerlink" href="#id1" title="Permalink to this heading">¶</a></h2>
+<h2><span class="section-number">2.1.1. </span>概述<a class="headerlink" href="#id1" title="Permalink to this heading">¶</a></h2>
 <p>本示例工程展示USB CDC设备虚拟串口</p>
 <ul class="simple">
 <li><p>PC 通过设备管理器查看得到一个串口</p></li>
 </ul>
 </section>
 <section id="id2">
-<h2><span class="section-number">22.1.2. </span>硬件设置<a class="headerlink" href="#id2" title="Permalink to this heading">¶</a></h2>
+<h2><span class="section-number">2.1.2. </span>硬件设置<a class="headerlink" href="#id2" title="Permalink to this heading">¶</a></h2>
 <ul class="simple">
 <li><p>使用USB Type-C线缆连接PC USB端口和PWR DEBUG端口</p></li>
 <li><p>使用USB Type-C线缆连接PC USB端口和开发板USB0端口</p></li>
 </ul>
 </section>
 <section id="id3">
-<h2><span class="section-number">22.1.3. </span>运行现象<a class="headerlink" href="#id3" title="Permalink to this heading">¶</a></h2>
+<h2><span class="section-number">2.1.3. </span>运行现象<a class="headerlink" href="#id3" title="Permalink to this heading">¶</a></h2>
 <hr class="docutils" />
 <ul class="simple">
 <li><p>将程序下载至开发板运行，电脑可自动识别并安装串口驱动，枚举出具有一个com口的设备</p></li>
@@ -249,7 +252,7 @@
 </ul>
 </section>
 <section id="id4">
-<h2><span class="section-number">22.1.4. </span>备注<a class="headerlink" href="#id4" title="Permalink to this heading">¶</a></h2>
+<h2><span class="section-number">2.1.4. </span>备注<a class="headerlink" href="#id4" title="Permalink to this heading">¶</a></h2>
 <p>本串口调试助手在win10的【Microsoft Store】中下载的。</p>
 </section>
 </section>
@@ -259,15 +262,15 @@
           </div>
 
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="../../index_zh.html" class="btn btn-neutral float-left" title="22. USB 通讯" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="../composite/cdc_acm_hid_msc/README_zh.html" class="btn btn-neutral float-right" title="22.2. USB组合类设备" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="../../index_zh.html" class="btn btn-neutral float-left" title="2. USB 通讯" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="../composite/cdc_acm_hid_msc/README_zh.html" class="btn btn-neutral float-right" title="2.2. USB组合类设备" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>
 
   <div role="contentinfo">
     <p>&#169; Copyright 2020-2022, hpmicro.
-      <span class="lastupdated">Last updated on Oct 31, 2022.
+      <span class="lastupdated">Last updated on Dec 31, 2022.
       </span></p>
   </div>
 

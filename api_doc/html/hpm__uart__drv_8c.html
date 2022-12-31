@@ -135,13 +135,13 @@ Functions</h2></td></tr>
 <tr class="memdesc:ga2c8de76bae1caada7c302a05bb351083"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets UART baudrate.  <a href="group__uart__interface.html#ga2c8de76bae1caada7c302a05bb351083">More...</a><br /></td></tr>
 <tr class="separator:ga2c8de76bae1caada7c302a05bb351083"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga768c24bffe679cf9a18c4b7a14deff3b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__common__interface.html#ga087efae82a4b174a0363363d9d5ece19">hpm_stat_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__uart__interface.html#ga768c24bffe679cf9a18c4b7a14deff3b">uart_send_byte</a> (<a class="el" href="structUART__Type.html">UART_Type</a> *ptr, uint8_t c)</td></tr>
-<tr class="memdesc:ga768c24bffe679cf9a18c4b7a14deff3b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send one byte.  <a href="group__uart__interface.html#ga768c24bffe679cf9a18c4b7a14deff3b">More...</a><br /></td></tr>
+<tr class="memdesc:ga768c24bffe679cf9a18c4b7a14deff3b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send one byte after checking thresh hold status.  <a href="group__uart__interface.html#ga768c24bffe679cf9a18c4b7a14deff3b">More...</a><br /></td></tr>
 <tr class="separator:ga768c24bffe679cf9a18c4b7a14deff3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga093b15f7a263041a2d7144f35b5ebdac"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__common__interface.html#ga087efae82a4b174a0363363d9d5ece19">hpm_stat_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__uart__interface.html#ga093b15f7a263041a2d7144f35b5ebdac">uart_flush</a> (<a class="el" href="structUART__Type.html">UART_Type</a> *ptr)</td></tr>
 <tr class="memdesc:ga093b15f7a263041a2d7144f35b5ebdac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Flush sending buffer/fifo.  <a href="group__uart__interface.html#ga093b15f7a263041a2d7144f35b5ebdac">More...</a><br /></td></tr>
 <tr class="separator:ga093b15f7a263041a2d7144f35b5ebdac"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gac68249468a133a73a3c8889e6f47ca45"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__common__interface.html#ga087efae82a4b174a0363363d9d5ece19">hpm_stat_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__uart__interface.html#gac68249468a133a73a3c8889e6f47ca45">uart_receive_byte</a> (<a class="el" href="structUART__Type.html">UART_Type</a> *ptr, uint8_t *byte)</td></tr>
-<tr class="memdesc:gac68249468a133a73a3c8889e6f47ca45"><td class="mdescLeft">&#160;</td><td class="mdescRight">Receive one byte.  <a href="group__uart__interface.html#gac68249468a133a73a3c8889e6f47ca45">More...</a><br /></td></tr>
+<tr class="memdesc:gac68249468a133a73a3c8889e6f47ca45"><td class="mdescLeft">&#160;</td><td class="mdescRight">Receive one byte after checking data ready status.  <a href="group__uart__interface.html#gac68249468a133a73a3c8889e6f47ca45">More...</a><br /></td></tr>
 <tr class="separator:gac68249468a133a73a3c8889e6f47ca45"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gad319f13e3e38f2852fa94df527c16d87"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__uart__interface.html#gad319f13e3e38f2852fa94df527c16d87">uart_set_signal_level</a> (<a class="el" href="structUART__Type.html">UART_Type</a> *ptr, <a class="el" href="group__uart__interface.html#gaabeb807de70635ecab1bc70dd6db895f">uart_signal_t</a> signal, <a class="el" href="group__uart__interface.html#ga9e7c512e46b16def679a98e7832818d9">uart_signal_level_t</a> level)</td></tr>
 <tr class="memdesc:gad319f13e3e38f2852fa94df527c16d87"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set uart signal output level.  <a href="group__uart__interface.html#gad319f13e3e38f2852fa94df527c16d87">More...</a><br /></td></tr>
@@ -307,7 +307,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_14bc92f4b96c8519b376567118ac28b3.html">drivers</a></li><li class="navelem"><a class="el" href="dir_507bca872cbea0e05b5ebdf850947a53.html">src</a></li><li class="navelem"><a class="el" href="hpm__uart__drv_8c.html">hpm_uart_drv.c</a></li>
-    <li class="footer">Generated on Mon Oct 31 2022 20:47:06 for HPM SDK by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
+    <li class="footer">Generated on Sat Dec 31 2022 19:59:43 for HPM SDK by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
   </ul>
 </div>
 </body>

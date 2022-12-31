@@ -112,7 +112,7 @@ $(document).ready(function(){initNavTree('hpm__bkey__regs_8h_source.html',''); i
 <div class="line"><a id="l00012" name="l00012"></a><span class="lineno"><a class="line" href="structBKEY__Type.html">   12</a></span><span class="keyword">typedef</span> <span class="keyword">struct </span>{</div>
 <div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>    <span class="keyword">struct </span>{</div>
 <div class="line"><a id="l00014" name="l00014"></a><span class="lineno"><a class="line" href="structBKEY__Type.html#a65407b8a1b6fd34b184ac14b3f036d43">   14</a></span>        __RW uint32_t DATA[8];                 <span class="comment">/* 0x0 - 0x1C: Key data */</span></div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno"><a class="line" href="structBKEY__Type.html#a1f35b0fc9cdefab1e18c2afcd9c70d74">   15</a></span>    } KEY[2];</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno"><a class="line" href="structBKEY__Type.html#a4d6ac2e9add074ee40d6557e819e0f63">   15</a></span>    } KEY[2];</div>
 <div class="line"><a id="l00016" name="l00016"></a><span class="lineno"><a class="line" href="structBKEY__Type.html#aa1695dbbdaa391979991f8825e74dd61">   16</a></span>    __RW uint32_t ECC[2];                      <span class="comment">/* 0x40 - 0x44: Key ECC and access control */</span></div>
 <div class="line"><a id="l00017" name="l00017"></a><span class="lineno"><a class="line" href="structBKEY__Type.html#a59fed981bd7a76ae1372c960760f5b91">   17</a></span>    __RW uint32_t <a class="code hl_variable" href="structBKEY__Type.html#a59fed981bd7a76ae1372c960760f5b91">SELECT</a>;                      <span class="comment">/* 0x48: Key selection */</span></div>
 <div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>} <a class="code hl_struct" href="structBKEY__Type.html">BKEY_Type</a>;</div>
@@ -124,10 +124,10 @@ $(document).ready(function(){initNavTree('hpm__bkey__regs_8h_source.html',''); i
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="comment"> *</span></div>
 <div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="comment"> * security key data</span></div>
 <div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="comment"> */</span></div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno"><a class="line" href="hpm__bkey__regs_8h.html#a1aa9af77114f59f76aace73423d8be4f">   27</a></span><span class="preprocessor">#define BKEY_DATA_DATA_MASK (0xFFFFFFFFUL)</span></div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno"><a class="line" href="hpm__bkey__regs_8h.html#af01e8a06656002b86fcd7bddf09f1127">   28</a></span><span class="preprocessor">#define BKEY_DATA_DATA_SHIFT (0U)</span></div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno"><a class="line" href="hpm__bkey__regs_8h.html#a4fdfa1ea3a4c86addba3e43369940d81">   29</a></span><span class="preprocessor">#define BKEY_DATA_DATA_SET(x) (((uint32_t)(x) &lt;&lt; BKEY_DATA_DATA_SHIFT) &amp; BKEY_DATA_DATA_MASK)</span></div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno"><a class="line" href="hpm__bkey__regs_8h.html#a78eaeb370601565b62156ec8857ce47f">   30</a></span><span class="preprocessor">#define BKEY_DATA_DATA_GET(x) (((uint32_t)(x) &amp; BKEY_DATA_DATA_MASK) &gt;&gt; BKEY_DATA_DATA_SHIFT)</span></div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno"><a class="line" href="hpm__bkey__regs_8h.html#adc83ec133ff276f84d0cd2f48f50d2d5">   27</a></span><span class="preprocessor">#define BKEY_KEY_DATA_DATA_MASK (0xFFFFFFFFUL)</span></div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno"><a class="line" href="hpm__bkey__regs_8h.html#a08f92ac46d6d6682c614b6a791f37979">   28</a></span><span class="preprocessor">#define BKEY_KEY_DATA_DATA_SHIFT (0U)</span></div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno"><a class="line" href="hpm__bkey__regs_8h.html#a90fc7269de63d6c99952c4e190da9d62">   29</a></span><span class="preprocessor">#define BKEY_KEY_DATA_DATA_SET(x) (((uint32_t)(x) &lt;&lt; BKEY_KEY_DATA_DATA_SHIFT) &amp; BKEY_KEY_DATA_DATA_MASK)</span></div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno"><a class="line" href="hpm__bkey__regs_8h.html#ab6b47441fcb504e75a795d7777366e2c">   30</a></span><span class="preprocessor">#define BKEY_KEY_DATA_DATA_GET(x) (((uint32_t)(x) &amp; BKEY_KEY_DATA_DATA_MASK) &gt;&gt; BKEY_KEY_DATA_DATA_SHIFT)</span></div>
 <div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span> </div>
 <div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span><span class="comment">/* Bitfield definition for register array: ECC */</span></div>
 <div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span><span class="comment">/*</span></div>
@@ -207,7 +207,7 @@ $(document).ready(function(){initNavTree('hpm__bkey__regs_8h_source.html',''); i
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_19d806e154b23a5f4c4c08b2e30365a6.html">soc</a></li><li class="navelem"><a class="el" href="dir_d94d62557b5dc917ac9fc81e6b5b3244.html">ip</a></li><li class="navelem"><a class="el" href="hpm__bkey__regs_8h.html">hpm_bkey_regs.h</a></li>
-    <li class="footer">Generated on Mon Oct 31 2022 20:47:05 for HPM SDK by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
+    <li class="footer">Generated on Sat Dec 31 2022 19:59:43 for HPM SDK by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
   </ul>
 </div>
 </body>

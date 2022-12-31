@@ -111,6 +111,8 @@ Functions</h2></td></tr>
 <tr class="separator:ace888521cd59af48b65aa578b68a5d1a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af65a40f06f957d666df5fd997bda88ab"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hpm__enet__drv_8c.html#af65a40f06f957d666df5fd997bda88ab">enet_mac_init</a> (<a class="el" href="structENET__Type.html">ENET_Type</a> *ptr, <a class="el" href="structenet__mac__config__t.html">enet_mac_config_t</a> *config, <a class="el" href="group__enet__interface.html#ga1d0f4f56326364f7d55dfd77c144f34e">enet_inf_type_t</a> inf_type)</td></tr>
 <tr class="separator:af65a40f06f957d666df5fd997bda88ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a40f52cfed9448ca46aebdd7ce0f3ce4e"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hpm__enet__drv_8c.html#a40f52cfed9448ca46aebdd7ce0f3ce4e">enet_mask_interrupt_event</a> (<a class="el" href="structENET__Type.html">ENET_Type</a> *ptr, uint32_t mask)</td></tr>
+<tr class="separator:a40f52cfed9448ca46aebdd7ce0f3ce4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga9302aeb46f3ee471c98cb889b0181b40"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__enet__interface.html#ga9302aeb46f3ee471c98cb889b0181b40">enet_dma_flush</a> (<a class="el" href="structENET__Type.html">ENET_Type</a> *ptr)</td></tr>
 <tr class="memdesc:ga9302aeb46f3ee471c98cb889b0181b40"><td class="mdescLeft">&#160;</td><td class="mdescRight">Flush DMA.  <a href="group__enet__interface.html#ga9302aeb46f3ee471c98cb889b0181b40">More...</a><br /></td></tr>
 <tr class="separator:ga9302aeb46f3ee471c98cb889b0181b40"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -126,9 +128,9 @@ Functions</h2></td></tr>
 <tr class="memitem:ga09fe3c0163ad4508ffbc5159710eea56"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__enet__interface.html#ga09fe3c0163ad4508ffbc5159710eea56">enet_set_duplex_mode</a> (<a class="el" href="structENET__Type.html">ENET_Type</a> *ptr, <a class="el" href="group__enet__interface.html#gacf0c750606f890977d3e78d4ac605256">enet_duplex_mode_t</a> mode)</td></tr>
 <tr class="memdesc:ga09fe3c0163ad4508ffbc5159710eea56"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set duplex mode.  <a href="group__enet__interface.html#ga09fe3c0163ad4508ffbc5159710eea56">More...</a><br /></td></tr>
 <tr class="separator:ga09fe3c0163ad4508ffbc5159710eea56"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gabd6a65db84b5859e70e73f5a575d3965"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__enet__interface.html#gabd6a65db84b5859e70e73f5a575d3965">enet_controller_init</a> (<a class="el" href="structENET__Type.html">ENET_Type</a> *ptr, <a class="el" href="group__enet__interface.html#ga1d0f4f56326364f7d55dfd77c144f34e">enet_inf_type_t</a> inf_type, <a class="el" href="structenet__desc__t.html">enet_desc_t</a> *desc, <a class="el" href="structenet__mac__config__t.html">enet_mac_config_t</a> *config, uint32_t intr)</td></tr>
-<tr class="memdesc:gabd6a65db84b5859e70e73f5a575d3965"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize controller.  <a href="group__enet__interface.html#gabd6a65db84b5859e70e73f5a575d3965">More...</a><br /></td></tr>
-<tr class="separator:gabd6a65db84b5859e70e73f5a575d3965"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga59a7aecf9b4d00c69c8a58129416d44a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__enet__interface.html#ga59a7aecf9b4d00c69c8a58129416d44a">enet_controller_init</a> (<a class="el" href="structENET__Type.html">ENET_Type</a> *ptr, <a class="el" href="group__enet__interface.html#ga1d0f4f56326364f7d55dfd77c144f34e">enet_inf_type_t</a> inf_type, <a class="el" href="structenet__desc__t.html">enet_desc_t</a> *desc, <a class="el" href="structenet__mac__config__t.html">enet_mac_config_t</a> *config, <a class="el" href="structenet__int__config__t.html">enet_int_config_t</a> *int_config)</td></tr>
+<tr class="memdesc:ga59a7aecf9b4d00c69c8a58129416d44a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize controller.  <a href="group__enet__interface.html#ga59a7aecf9b4d00c69c8a58129416d44a">More...</a><br /></td></tr>
+<tr class="separator:ga59a7aecf9b4d00c69c8a58129416d44a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gad076ed1579664645114b831208cf055e"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__enet__interface.html#gad076ed1579664645114b831208cf055e">enet_check_received_frame</a> (<a class="el" href="structenet__rx__desc__t.html">enet_rx_desc_t</a> **parent_rx_desc_list_cur, <a class="el" href="structenet__rx__frame__info__t.html">enet_rx_frame_info_t</a> *rx_frame_info)</td></tr>
 <tr class="memdesc:gad076ed1579664645114b831208cf055e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if there is a received frame.  <a href="group__enet__interface.html#gad076ed1579664645114b831208cf055e">More...</a><br /></td></tr>
 <tr class="separator:gad076ed1579664645114b831208cf055e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -147,21 +149,19 @@ Functions</h2></td></tr>
 <tr class="memitem:ga0ff4f0756c4a6e52792c01bd712b39ac"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__enet__interface.html#ga0ff4f0756c4a6e52792c01bd712b39ac">enet_dma_rx_desc_chain_init</a> (<a class="el" href="structENET__Type.html">ENET_Type</a> *ptr, <a class="el" href="structenet__desc__t.html">enet_desc_t</a> *desc)</td></tr>
 <tr class="memdesc:ga0ff4f0756c4a6e52792c01bd712b39ac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize DMA reception descriptors in chain mode.  <a href="group__enet__interface.html#ga0ff4f0756c4a6e52792c01bd712b39ac">More...</a><br /></td></tr>
 <tr class="separator:ga0ff4f0756c4a6e52792c01bd712b39ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab797330bf93a6e76ccd88c9d5dff9134"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hpm__enet__drv_8c.html#ab797330bf93a6e76ccd88c9d5dff9134">enet_mask_interrupt_event</a> (<a class="el" href="structENET__Type.html">ENET_Type</a> *ptr, uint32_t mask)</td></tr>
-<tr class="separator:ab797330bf93a6e76ccd88c9d5dff9134"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a94882d076da533e624427b81cb87e8c0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hpm__enet__drv_8c.html#a94882d076da533e624427b81cb87e8c0">enet_timestamp_enable</a> (<a class="el" href="structENET__Type.html">ENET_Type</a> *ptr, bool enable)</td></tr>
 <tr class="separator:a94882d076da533e624427b81cb87e8c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a154a53a74acd4c38ac7e713b30174913"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hpm__enet__drv_8c.html#a154a53a74acd4c38ac7e713b30174913">enet_set_subsecond_increment</a> (<a class="el" href="structENET__Type.html">ENET_Type</a> *ptr, uint8_t ssinc)</td></tr>
 <tr class="separator:a154a53a74acd4c38ac7e713b30174913"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gafd932026487c35ba3c50769216c5aebd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__enet__interface.html#gafd932026487c35ba3c50769216c5aebd">enet_set_ptp_timestamp</a> (<a class="el" href="structENET__Type.html">ENET_Type</a> *ptr, <a class="el" href="structenet__ptp__time__t.html">enet_ptp_time_t</a> *timestamp)</td></tr>
-<tr class="memdesc:gafd932026487c35ba3c50769216c5aebd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set a timestamp to the PTP timer.  <a href="group__enet__interface.html#gafd932026487c35ba3c50769216c5aebd">More...</a><br /></td></tr>
-<tr class="separator:gafd932026487c35ba3c50769216c5aebd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga475480b624c8bacc978686afe20c50f2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__enet__interface.html#ga475480b624c8bacc978686afe20c50f2">enet_get_ptp_timestamp</a> (<a class="el" href="structENET__Type.html">ENET_Type</a> *ptr, <a class="el" href="structenet__ptp__time__t.html">enet_ptp_time_t</a> *timestamp)</td></tr>
-<tr class="memdesc:ga475480b624c8bacc978686afe20c50f2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a timestamp from the PTP timer.  <a href="group__enet__interface.html#ga475480b624c8bacc978686afe20c50f2">More...</a><br /></td></tr>
-<tr class="separator:ga475480b624c8bacc978686afe20c50f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga557075dbf1988b3f63776e6735770da9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__enet__interface.html#ga557075dbf1988b3f63776e6735770da9">enet_update_ptp_timeoffset</a> (<a class="el" href="structENET__Type.html">ENET_Type</a> *ptr, <a class="el" href="structenet__ptp__time__t.html">enet_ptp_time_t</a> *timeoffset)</td></tr>
-<tr class="memdesc:ga557075dbf1988b3f63776e6735770da9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update a timestamp to the PTP timer.  <a href="group__enet__interface.html#ga557075dbf1988b3f63776e6735770da9">More...</a><br /></td></tr>
-<tr class="separator:ga557075dbf1988b3f63776e6735770da9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga2b7878b691a724ae2471fe6fd73b0e58"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__enet__interface.html#ga2b7878b691a724ae2471fe6fd73b0e58">enet_set_ptp_timestamp</a> (<a class="el" href="structENET__Type.html">ENET_Type</a> *ptr, <a class="el" href="structenet__ptp__ts__update__t.html">enet_ptp_ts_update_t</a> *timestamp)</td></tr>
+<tr class="memdesc:ga2b7878b691a724ae2471fe6fd73b0e58"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set a timestamp to the PTP timer.  <a href="group__enet__interface.html#ga2b7878b691a724ae2471fe6fd73b0e58">More...</a><br /></td></tr>
+<tr class="separator:ga2b7878b691a724ae2471fe6fd73b0e58"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae0b9019bd267f387f30d4f9456d783c3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__enet__interface.html#gae0b9019bd267f387f30d4f9456d783c3">enet_get_ptp_timestamp</a> (<a class="el" href="structENET__Type.html">ENET_Type</a> *ptr, <a class="el" href="structenet__ptp__ts__system__t.html">enet_ptp_ts_system_t</a> *timestamp)</td></tr>
+<tr class="memdesc:gae0b9019bd267f387f30d4f9456d783c3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a timestamp from the PTP timer.  <a href="group__enet__interface.html#gae0b9019bd267f387f30d4f9456d783c3">More...</a><br /></td></tr>
+<tr class="separator:gae0b9019bd267f387f30d4f9456d783c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gafa276e3b1c1e0467bd48d93eb8926ae8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__enet__interface.html#gafa276e3b1c1e0467bd48d93eb8926ae8">enet_update_ptp_timeoffset</a> (<a class="el" href="structENET__Type.html">ENET_Type</a> *ptr, <a class="el" href="structenet__ptp__ts__update__t.html">enet_ptp_ts_update_t</a> *timeoffset)</td></tr>
+<tr class="memdesc:gafa276e3b1c1e0467bd48d93eb8926ae8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update a timestamp to the PTP timer.  <a href="group__enet__interface.html#gafa276e3b1c1e0467bd48d93eb8926ae8">More...</a><br /></td></tr>
+<tr class="separator:gafa276e3b1c1e0467bd48d93eb8926ae8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga39728672c004f92451662ee9315fd383"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__enet__interface.html#ga39728672c004f92451662ee9315fd383">enet_adjust_ptp_time_freq</a> (<a class="el" href="structENET__Type.html">ENET_Type</a> *ptr, int32_t adj)</td></tr>
 <tr class="memdesc:ga39728672c004f92451662ee9315fd383"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adjust the count frequency of the PTP timer.  <a href="group__enet__interface.html#ga39728672c004f92451662ee9315fd383">More...</a><br /></td></tr>
 <tr class="separator:ga39728672c004f92451662ee9315fd383"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -177,6 +177,15 @@ Functions</h2></td></tr>
 <tr class="memitem:gaf7a6f41ed9e4cb0b165c87306d0bc4c6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__enet__interface.html#gaf7a6f41ed9e4cb0b165c87306d0bc4c6">enet_init_ptp</a> (<a class="el" href="structENET__Type.html">ENET_Type</a> *ptr, <a class="el" href="structenet__ptp__config__t.html">enet_ptp_config_t</a> *config)</td></tr>
 <tr class="memdesc:gaf7a6f41ed9e4cb0b165c87306d0bc4c6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize a PTP timer.  <a href="group__enet__interface.html#gaf7a6f41ed9e4cb0b165c87306d0bc4c6">More...</a><br /></td></tr>
 <tr class="separator:gaf7a6f41ed9e4cb0b165c87306d0bc4c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga1baf701964f1133eddb19c85ec50f862"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__enet__interface.html#ga1baf701964f1133eddb19c85ec50f862">enet_set_pps0_control_output</a> (<a class="el" href="structENET__Type.html">ENET_Type</a> *ptr, <a class="el" href="group__enet__interface.html#ga4864ea06119820501053114286d4c8f4">enet_pps_ctrl_t</a> freq)</td></tr>
+<tr class="memdesc:ga1baf701964f1133eddb19c85ec50f862"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the pps0 control output.  <a href="group__enet__interface.html#ga1baf701964f1133eddb19c85ec50f862">More...</a><br /></td></tr>
+<tr class="separator:ga1baf701964f1133eddb19c85ec50f862"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga48b3e05f4e3416de8b9920625bb73147"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__enet__interface.html#ga48b3e05f4e3416de8b9920625bb73147">enet_set_pps0_cmd</a> (<a class="el" href="structENET__Type.html">ENET_Type</a> *ptr, <a class="el" href="group__enet__interface.html#gab656223a480f9d014d8a676c57ba6443">enet_pps_cmd_t</a> cmd)</td></tr>
+<tr class="memdesc:ga48b3e05f4e3416de8b9920625bb73147"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the pps0 control config.  <a href="group__enet__interface.html#ga48b3e05f4e3416de8b9920625bb73147">More...</a><br /></td></tr>
+<tr class="separator:ga48b3e05f4e3416de8b9920625bb73147"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga5e563cd64cad6bc4affd83d58d7398f9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__enet__interface.html#ga5e563cd64cad6bc4affd83d58d7398f9">enet_set_pps0_command_config</a> (<a class="el" href="structENET__Type.html">ENET_Type</a> *ptr, <a class="el" href="structenet__pps__cmd__config__t.html">enet_pps_cmd_config_t</a> *cmd_cfg)</td></tr>
+<tr class="memdesc:ga5e563cd64cad6bc4affd83d58d7398f9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the pps0 control config.  <a href="group__enet__interface.html#ga5e563cd64cad6bc4affd83d58d7398f9">More...</a><br /></td></tr>
+<tr class="separator:ga5e563cd64cad6bc4affd83d58d7398f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
 <a id="ace888521cd59af48b65aa578b68a5d1a" name="ace888521cd59af48b65aa578b68a5d1a"></a>
@@ -269,14 +278,17 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ab797330bf93a6e76ccd88c9d5dff9134" name="ab797330bf93a6e76ccd88c9d5dff9134"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab797330bf93a6e76ccd88c9d5dff9134">&#9670;&#160;</a></span>enet_mask_interrupt_event()</h2>
+<a id="a40f52cfed9448ca46aebdd7ce0f3ce4e" name="a40f52cfed9448ca46aebdd7ce0f3ce4e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a40f52cfed9448ca46aebdd7ce0f3ce4e">&#9670;&#160;</a></span>enet_mask_interrupt_event()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void enet_mask_interrupt_event </td>
+          <td class="memname">static void enet_mask_interrupt_event </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structENET__Type.html">ENET_Type</a> *&#160;</td>
           <td class="paramname"><em>ptr</em>, </td>
@@ -293,6 +305,11 @@ Functions</h2></td></tr>
           <td></td><td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 </div>
@@ -395,7 +412,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_14bc92f4b96c8519b376567118ac28b3.html">drivers</a></li><li class="navelem"><a class="el" href="dir_507bca872cbea0e05b5ebdf850947a53.html">src</a></li><li class="navelem"><a class="el" href="hpm__enet__drv_8c.html">hpm_enet_drv.c</a></li>
-    <li class="footer">Generated on Mon Oct 31 2022 20:47:06 for HPM SDK by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
+    <li class="footer">Generated on Sat Dec 31 2022 19:59:43 for HPM SDK by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
   </ul>
 </div>
 </body>
